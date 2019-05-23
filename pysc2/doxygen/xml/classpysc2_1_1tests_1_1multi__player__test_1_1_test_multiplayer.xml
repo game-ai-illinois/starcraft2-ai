@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1multi__player__test_1_1_test_multiplayer" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::multi_player_test::TestMultiplayer</compoundname>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1multi__player__test_1_1_test_multiplayer_1a78c8b864db364712d08f9fb051a0c80c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.multi_player_test.TestMultiplayer.test_multi_player</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_multi_player</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/multi_player_test.py" line="44" column="1" bodyfile="tests/multi_player_test.py" bodystart="44" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="737">
+        <label>pysc2.tests.multi_player_test.TestMultiplayer</label>
+        <link refid="classpysc2_1_1tests_1_1multi__player__test_1_1_test_multiplayer"/>
+        <childnode refid="738" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="739">
+        <label>TestCase</label>
+      </node>
+      <node id="738">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="739" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="740">
+        <label>pysc2.tests.multi_player_test.TestMultiplayer</label>
+        <link refid="classpysc2_1_1tests_1_1multi__player__test_1_1_test_multiplayer"/>
+        <childnode refid="741" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="742">
+        <label>TestCase</label>
+      </node>
+      <node id="741">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="742" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/multi_player_test.py" line="42" column="1" bodyfile="tests/multi_player_test.py" bodystart="42" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::multi_player_test::TestMultiplayer</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::multi_player_test::TestMultiplayer</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1multi__player__test_1_1_test_multiplayer_1a78c8b864db364712d08f9fb051a0c80c" prot="public" virt="non-virtual"><scope>pysc2::tests::multi_player_test::TestMultiplayer</scope><name>test_multi_player</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

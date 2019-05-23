@@ -1,0 +1,101 @@
+.TH "pysc2.bin.gen_actions" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.bin.gen_actions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBget_data\fP ()"
+.br
+.ti -1c
+.RI "def \fBgenerate_name\fP (ability)"
+.br
+.ti -1c
+.RI "def \fBsort_key\fP (data, ability)"
+.br
+.ti -1c
+.RI "def \fBgenerate_csv\fP (data)"
+.br
+.ti -1c
+.RI "def \fBgenerate_py_abilities\fP (data)"
+.br
+.ti -1c
+.RI "def \fBmain\fP (unused_argv)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBFLAGS\fP = flags\&.FLAGS"
+.br
+.ti -1c
+.RI "dictionary \fBused_abilities\fP"
+.br
+.ti -1c
+.RI "dictionary \fBfrivolous\fP = {6, 7}"
+.br
+.ti -1c
+.RI "dictionary \fBcancel_slot\fP = {313, 1039, 305, 307, 309, 1832, 1834, 3672}"
+.br
+.ti -1c
+.RI "dictionary \fBunload_unit\fP = {410, 415, 397, 1440, 2373, 1409, 914, 3670}"
+.br
+.ti -1c
+.RI "dictionary \fBskip_abilities\fP = \fBcancel_slot\fP | \fBunload_unit\fP | \fBfrivolous\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def pysc2\&.bin\&.gen_actions\&.generate_csv ( data)"
+
+.PP
+.nf
+Generate a CSV of the abilities for easy commenting.
+.fi
+.PP
+ 
+.SS "def pysc2\&.bin\&.gen_actions\&.generate_name ( ability)"
+
+.SS "def pysc2\&.bin\&.gen_actions\&.generate_py_abilities ( data)"
+
+.PP
+.nf
+Generate the list of functions in actions.py.
+.fi
+.PP
+ 
+.SS "def pysc2\&.bin\&.gen_actions\&.get_data ()"
+
+.PP
+.nf
+Retrieve static data from the game.
+.fi
+.PP
+ 
+.SS "def pysc2\&.bin\&.gen_actions\&.main ( unused_argv)"
+
+.SS "def pysc2\&.bin\&.gen_actions\&.sort_key ( data,  ability)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "dictionary pysc2\&.bin\&.gen_actions\&.cancel_slot = {313, 1039, 305, 307, 309, 1832, 1834, 3672}"
+
+.SS "pysc2\&.bin\&.gen_actions\&.FLAGS = flags\&.FLAGS"
+
+.SS "dictionary pysc2\&.bin\&.gen_actions\&.frivolous = {6, 7}"
+
+.SS "dictionary pysc2\&.bin\&.gen_actions\&.skip_abilities = \fBcancel_slot\fP | \fBunload_unit\fP | \fBfrivolous\fP"
+
+.SS "dictionary pysc2\&.bin\&.gen_actions\&.unload_unit = {410, 415, 397, 1440, 2373, 1409, 914, 3670}"
+
+.SS "dictionary pysc2\&.bin\&.gen_actions\&.used_abilities"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

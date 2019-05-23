@@ -1,0 +1,196 @@
+\hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch}{}\section{pysc2.\+lib.\+stopwatch.\+Stop\+Watch Class Reference}
+\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch}\index{pysc2.\+lib.\+stopwatch.\+Stop\+Watch@{pysc2.\+lib.\+stopwatch.\+Stop\+Watch}}
+Inheritance diagram for pysc2.\+lib.\+stopwatch.\+Stop\+Watch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_ac8f219c810684d77e8d2d94f5e7aa271}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a7ef71d8389c2f81c3194986f4343736e}{enabled}}=True, \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a953ca11fe39ca3fb2d7a8c9b5cab0695}{trace}}=False)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a37f8cde10a5ad19daa03b1502deef325}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, name)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a506109bfd7df110925425466a59c0c13}{decorate}} (self, name\+\_\+or\+\_\+func)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a2f99d8b7587c25a4184da0ed7f3570b1}{push}} (self, name)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a875fd6c31e7c755974a76d2e6928ff43}{pop}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a759df931b3202016cd9a30698c77be1f}{cur\+\_\+stack}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a771061ad85cf730f642317c091c95a10}{clear}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a3462ad000bfa5c8b6a92482772840d28}{add}} (self, name, duration)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_ad8dc8f5cf6bb11796e0309c8f7717cf9}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, name)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a30e36bd45ab8e1398b6ca5d52e6a255d}{times}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a59d7e0986c4de0c33aa63c027e109a47}{merge}} (self, other)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a163c0391e3f3faef71eb21de71b60391}{str}} (self, threshold=0.\+1)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a1f7ffa52fb52dba1b9e4a2e941670478}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a74d4c6108011d2d25c32d24f6aeaf47d}{parse}} (s)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a7ef71d8389c2f81c3194986f4343736e}{enabled}}
+\item 
+\mbox{\hyperlink{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a953ca11fe39ca3fb2d7a8c9b5cab0695}{trace}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A context manager that tracks call count and latency, and other stats.
+
+Usage:
+    sw = stopwatch.Stopwatch()
+    with sw("foo"):
+      foo()
+    with sw("bar"):
+      bar()
+    @sw.decorate
+    def func():
+      pass
+    func()
+    print(sw)
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_ac8f219c810684d77e8d2d94f5e7aa271}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_ac8f219c810684d77e8d2d94f5e7aa271}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{enabled = {\ttfamily True},  }\item[{}]{trace = {\ttfamily False} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a37f8cde10a5ad19daa03b1502deef325}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a37f8cde10a5ad19daa03b1502deef325}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+call\+\_\+\+\_\+()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_ad8dc8f5cf6bb11796e0309c8f7717cf9}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_ad8dc8f5cf6bb11796e0309c8f7717cf9}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!\+\_\+\+\_\+getitem\+\_\+\+\_\+@{\+\_\+\+\_\+getitem\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+getitem\+\_\+\+\_\+@{\+\_\+\+\_\+getitem\+\_\+\+\_\+}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+getitem\+\_\+\+\_\+()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a1f7ffa52fb52dba1b9e4a2e941670478}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a1f7ffa52fb52dba1b9e4a2e941670478}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a3462ad000bfa5c8b6a92482772840d28}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a3462ad000bfa5c8b6a92482772840d28}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!add@{add}}
+\index{add@{add}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+add (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{duration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a771061ad85cf730f642317c091c95a10}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a771061ad85cf730f642317c091c95a10}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!clear@{clear}}
+\index{clear@{clear}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+clear (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a759df931b3202016cd9a30698c77be1f}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a759df931b3202016cd9a30698c77be1f}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!cur\+\_\+stack@{cur\+\_\+stack}}
+\index{cur\+\_\+stack@{cur\+\_\+stack}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{cur\+\_\+stack()}{cur\_stack()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+cur\+\_\+stack (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a506109bfd7df110925425466a59c0c13}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a506109bfd7df110925425466a59c0c13}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!decorate@{decorate}}
+\index{decorate@{decorate}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{decorate()}{decorate()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+decorate (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name\+\_\+or\+\_\+func }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorate a function/method to check its timings.
+
+To use the function's name:
+  @sw.decorate
+  def func():
+pass
+
+To name it explicitly:
+  @sw.decorate("name")
+  def random_func_name():
+pass
+
+Args:
+  name_or_func: the name or the function to decorate.
+
+Returns:
+  If a name is passed, returns this as a decorator, otherwise returns the
+  decorated function.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a59d7e0986c4de0c33aa63c027e109a47}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a59d7e0986c4de0c33aa63c027e109a47}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!merge@{merge}}
+\index{merge@{merge}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{merge()}{merge()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+merge (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{other }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a74d4c6108011d2d25c32d24f6aeaf47d}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a74d4c6108011d2d25c32d24f6aeaf47d}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!parse@{parse}}
+\index{parse@{parse}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+parse (\begin{DoxyParamCaption}\item[{}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a875fd6c31e7c755974a76d2e6928ff43}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a875fd6c31e7c755974a76d2e6928ff43}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!pop@{pop}}
+\index{pop@{pop}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+pop (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a2f99d8b7587c25a4184da0ed7f3570b1}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a2f99d8b7587c25a4184da0ed7f3570b1}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!push@{push}}
+\index{push@{push}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+push (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a163c0391e3f3faef71eb21de71b60391}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a163c0391e3f3faef71eb21de71b60391}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!str@{str}}
+\index{str@{str}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{str()}{str()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+str (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{threshold = {\ttfamily 0.1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a string representation of the timings.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a30e36bd45ab8e1398b6ca5d52e6a255d}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a30e36bd45ab8e1398b6ca5d52e6a255d}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!times@{times}}
+\index{times@{times}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{times()}{times()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+times (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a7ef71d8389c2f81c3194986f4343736e}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a7ef71d8389c2f81c3194986f4343736e}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!enabled@{enabled}}
+\index{enabled@{enabled}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{enabled}{enabled}}
+{\footnotesize\ttfamily pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+enabled}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a953ca11fe39ca3fb2d7a8c9b5cab0695}\label{classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_a953ca11fe39ca3fb2d7a8c9b5cab0695}} 
+\index{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}!trace@{trace}}
+\index{trace@{trace}!pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch@{pysc2\+::lib\+::stopwatch\+::\+Stop\+Watch}}
+\subsubsection{\texorpdfstring{trace}{trace}}
+{\footnotesize\ttfamily pysc2.\+lib.\+stopwatch.\+Stop\+Watch.\+trace}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{stopwatch_8py}{stopwatch.\+py}}\end{DoxyCompactItemize}

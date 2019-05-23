@@ -1,0 +1,148 @@
+\hypertarget{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env}{}\section{pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env Class Reference}
+\label{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env}\index{pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env@{pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env}}
+Inheritance diagram for pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_ac2a49052b728228f1ed327d31ab37fcc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \+\_\+only\+\_\+use\+\_\+kwargs=None, map\+\_\+name=None, players=None, agent\+\_\+race=None, bot\+\_\+race=None, difficulty=None, screen\+\_\+size\+\_\+px=None, minimap\+\_\+size\+\_\+px=None, agent\+\_\+interface\+\_\+format=None, discount=1., visualize=False, step\+\_\+mul=None, save\+\_\+replay\+\_\+episodes=0, replay\+\_\+dir=None, game\+\_\+steps\+\_\+per\+\_\+episode=None, score\+\_\+index=None, score\+\_\+multiplier=None, random\+\_\+seed=None, disable\+\_\+fog=False)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a37bf2e2d461e4268feaa30862cd520cb}{observation\+\_\+spec}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_af686189f9be833a222756233fed0191f}{action\+\_\+spec}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a11123fe4b74625eca2d88a2b837d681f}{reset}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_afde565357f8e64e50a8e03df0c1a1d4c}{step}} (self, actions)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_aa4cf7a2cf39426085b9d14ef2ecac855}{send\+\_\+chat\+\_\+messages}} (self, messages)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a55d7cb43c5efffa9cc249a5fd37cfba6}{save\+\_\+replay}} (self, replay\+\_\+dir, prefix=None)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a87aad830e9c5bb6741e3774e685766ae}{close}} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A Starcraft II environment.
+
+The implementation details of the action and observation specs are in
+lib/features.py
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_ac2a49052b728228f1ed327d31ab37fcc}\label{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_ac2a49052b728228f1ed327d31ab37fcc}} 
+\index{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{\+\_\+only\+\_\+use\+\_\+kwargs = {\ttfamily None},  }\item[{}]{map\+\_\+name = {\ttfamily None},  }\item[{}]{players = {\ttfamily None},  }\item[{}]{agent\+\_\+race = {\ttfamily None},  }\item[{}]{bot\+\_\+race = {\ttfamily None},  }\item[{}]{difficulty = {\ttfamily None},  }\item[{}]{screen\+\_\+size\+\_\+px = {\ttfamily None},  }\item[{}]{minimap\+\_\+size\+\_\+px = {\ttfamily None},  }\item[{}]{agent\+\_\+interface\+\_\+format = {\ttfamily None},  }\item[{}]{discount = {\ttfamily 1.},  }\item[{}]{visualize = {\ttfamily False},  }\item[{}]{step\+\_\+mul = {\ttfamily None},  }\item[{}]{save\+\_\+replay\+\_\+episodes = {\ttfamily 0},  }\item[{}]{replay\+\_\+dir = {\ttfamily None},  }\item[{}]{game\+\_\+steps\+\_\+per\+\_\+episode = {\ttfamily None},  }\item[{}]{score\+\_\+index = {\ttfamily None},  }\item[{}]{score\+\_\+multiplier = {\ttfamily None},  }\item[{}]{random\+\_\+seed = {\ttfamily None},  }\item[{}]{disable\+\_\+fog = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a SC2 Env.
+
+You must pass a resolution that you want to play at. You can send either
+feature layer resolution or rgb resolution or both. If you send both you
+must also choose which to use as your action space. Regardless of which you
+choose you must send both the screen and minimap resolutions.
+
+For each of the 4 resolutions, either specify size or both width and
+height. If you specify size then both width and height will take that value.
+
+Args:
+  _only_use_kwargs: Don't pass args, only kwargs.
+  map_name: Name of a SC2 map. Run bin/map_list to get the full list of
+  known maps. Alternatively, pass a Map instance. Take a look at the
+  docs in maps/README.md for more information on available maps.
+  players: A list of Agent and Bot instances that specify who will play.
+  agent_race: Deprecated. Use players instead.
+  bot_race: Deprecated. Use players instead.
+  difficulty: Deprecated. Use players instead.
+  screen_size_px: Deprecated. Use agent_interface_formats instead.
+  minimap_size_px: Deprecated. Use agent_interface_formats instead.
+  agent_interface_format: A sequence containing one AgentInterfaceFormat
+per agent, matching the order of agents specified in the players list.
+Or a single AgentInterfaceFormat to be used for all agents.
+  discount: Returned as part of the observation.
+  visualize: Whether to pop up a window showing the camera and feature
+  layers. This won't work without access to a window manager.
+  step_mul: How many game steps per agent step (action/observation). None
+  means use the map default.
+  save_replay_episodes: Save a replay after this many episodes. Default of 0
+  means don't save replays.
+  replay_dir: Directory to save replays. Required with save_replay_episodes.
+  game_steps_per_episode: Game steps per episode, independent of the
+  step_mul. 0 means no limit. None means use the map default.
+  score_index: -1 means use the win/loss reward, >=0 is the index into the
+  score_cumulative with 0 being the curriculum score. None means use
+  the map default.
+  score_multiplier: How much to multiply the score by. Useful for negating.
+  random_seed: Random number seed to use when initializing the game. This
+  lets you run repeatable games/tests.
+  disable_fog: Whether to disable fog of war.
+
+Raises:
+  ValueError: if the agent_race, bot_race or difficulty are invalid.
+  ValueError: if too many players are requested for a map.
+  ValueError: if the resolutions aren't specified correctly.
+  DeprecationWarning: if screen_size_px or minimap_size_px are sent.
+  DeprecationWarning: if agent_race, bot_race or difficulty are sent.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_af686189f9be833a222756233fed0191f}\label{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_af686189f9be833a222756233fed0191f}} 
+\index{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}!action\+\_\+spec@{action\+\_\+spec}}
+\index{action\+\_\+spec@{action\+\_\+spec}!pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}}
+\subsubsection{\texorpdfstring{action\+\_\+spec()}{action\_spec()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env.\+action\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Look at Features for full specs.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a87aad830e9c5bb6741e3774e685766ae}\label{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a87aad830e9c5bb6741e3774e685766ae}} 
+\index{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}!close@{close}}
+\index{close@{close}!pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a37bf2e2d461e4268feaa30862cd520cb}\label{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a37bf2e2d461e4268feaa30862cd520cb}} 
+\index{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}!observation\+\_\+spec@{observation\+\_\+spec}}
+\index{observation\+\_\+spec@{observation\+\_\+spec}!pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}}
+\subsubsection{\texorpdfstring{observation\+\_\+spec()}{observation\_spec()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env.\+observation\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Look at Features for full specs.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a11123fe4b74625eca2d88a2b837d681f}\label{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a11123fe4b74625eca2d88a2b837d681f}} 
+\index{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}!reset@{reset}}
+\index{reset@{reset}!pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Start a new episode.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a55d7cb43c5efffa9cc249a5fd37cfba6}\label{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_a55d7cb43c5efffa9cc249a5fd37cfba6}} 
+\index{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}!save\+\_\+replay@{save\+\_\+replay}}
+\index{save\+\_\+replay@{save\+\_\+replay}!pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}}
+\subsubsection{\texorpdfstring{save\+\_\+replay()}{save\_replay()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env.\+save\+\_\+replay (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{replay\+\_\+dir,  }\item[{}]{prefix = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_aa4cf7a2cf39426085b9d14ef2ecac855}\label{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_aa4cf7a2cf39426085b9d14ef2ecac855}} 
+\index{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}!send\+\_\+chat\+\_\+messages@{send\+\_\+chat\+\_\+messages}}
+\index{send\+\_\+chat\+\_\+messages@{send\+\_\+chat\+\_\+messages}!pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}}
+\subsubsection{\texorpdfstring{send\+\_\+chat\+\_\+messages()}{send\_chat\_messages()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env.\+send\+\_\+chat\+\_\+messages (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{messages }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Useful for logging messages into the replay.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_afde565357f8e64e50a8e03df0c1a1d4c}\label{classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_afde565357f8e64e50a8e03df0c1a1d4c}} 
+\index{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}!step@{step}}
+\index{step@{step}!pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env@{pysc2\+::env\+::sc2\+\_\+env\+::\+S\+C2\+Env}}
+\subsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+sc2\+\_\+env.\+S\+C2\+Env.\+step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{actions }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply actions, step the world forward, and return observations.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+env/\mbox{\hyperlink{sc2__env_8py}{sc2\+\_\+env.\+py}}\end{DoxyCompactItemize}

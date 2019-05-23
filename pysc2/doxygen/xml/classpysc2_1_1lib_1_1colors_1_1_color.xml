@@ -1,0 +1,318 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1colors_1_1_color" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::colors::Color</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">r</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">g</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">b</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1colors_1_1_color_1ab5726b368b8047b3f8ca3ff684bc7c84" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.colors.Color::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="32" column="1" bodyfile="lib/colors.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1colors_1_1_color_1a21025758dba771c0d62d806b8cfad8c5" prot="private" static="yes" mutable="no">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color::__div__</definition>
+        <argsstring></argsstring>
+        <name>__div__</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1colors_1_1_color_1a232910e9fbb61b4ed2a71c70223be937" kindref="member">__truediv__</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="66" column="1" bodyfile="lib/colors.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1colors_1_1_color_1a4f85933c31b5eee882ee02bc276c2910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color.set</definition>
+        <argsstring>(self, r=None, g=None, b=None)</argsstring>
+        <name>set</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>r</type>
+          <defname>r</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>g</type>
+          <defname>g</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="34" column="1" bodyfile="lib/colors.py" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1colors_1_1_color_1a38a169169ccba8887056f2411b48919a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color.round</definition>
+        <argsstring>(self)</argsstring>
+        <name>round</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="37" column="1" bodyfile="lib/colors.py" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1colors_1_1_color_1a1d574e03aa1e9eaedbd7693efcd96c49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color.floor</definition>
+        <argsstring>(self)</argsstring>
+        <name>floor</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="40" column="1" bodyfile="lib/colors.py" bodystart="40" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1colors_1_1_color_1aa0516d088a354d745b86a855c972d8ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color.ceil</definition>
+        <argsstring>(self)</argsstring>
+        <name>ceil</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="44" column="1" bodyfile="lib/colors.py" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1colors_1_1_color_1ad3c3b8cc2e506b1d2aaedc50aae52016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="48" column="1" bodyfile="lib/colors.py" bodystart="48" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1colors_1_1_color_1af1b1d0a84bcc91484781007d63e6113b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color.__add__</definition>
+        <argsstring>(self, o)</argsstring>
+        <name>__add__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="51" column="1" bodyfile="lib/colors.py" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1colors_1_1_color_1af38ed2fff40bacddd1dd02d9676f7486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color.__sub__</definition>
+        <argsstring>(self, o)</argsstring>
+        <name>__sub__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>o</type>
+          <defname>o</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="54" column="1" bodyfile="lib/colors.py" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1colors_1_1_color_1a4cc27cb2b3f1f2be14e671f0def6c9da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color.__mul__</definition>
+        <argsstring>(self, val)</argsstring>
+        <name>__mul__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>val</type>
+          <defname>val</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="57" column="1" bodyfile="lib/colors.py" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1colors_1_1_color_1a232910e9fbb61b4ed2a71c70223be937" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color.__truediv__</definition>
+        <argsstring>(self, val)</argsstring>
+        <name>__truediv__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>val</type>
+          <defname>val</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="60" column="1" bodyfile="lib/colors.py" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1colors_1_1_color_1a1b8de342848c1a509ea27131ce6aedc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.Color.__floordiv__</definition>
+        <argsstring>(self, val)</argsstring>
+        <name>__floordiv__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>val</type>
+          <defname>val</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="63" column="1" bodyfile="lib/colors.py" bodystart="63" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A basic Color class.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="169">
+        <label>b</label>
+      </node>
+      <node id="168">
+        <label>g</label>
+      </node>
+      <node id="167">
+        <label>r</label>
+      </node>
+      <node id="165">
+        <label>pysc2.lib.colors.Color</label>
+        <link refid="classpysc2_1_1lib_1_1colors_1_1_color"/>
+        <childnode refid="166" relation="public-inheritance">
+        </childnode>
+        <childnode refid="167" relation="public-inheritance">
+        </childnode>
+        <childnode refid="168" relation="public-inheritance">
+        </childnode>
+        <childnode refid="169" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="166">
+        <label>namedtuple</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="174">
+        <label>b</label>
+      </node>
+      <node id="173">
+        <label>g</label>
+      </node>
+      <node id="172">
+        <label>r</label>
+      </node>
+      <node id="170">
+        <label>pysc2.lib.colors.Color</label>
+        <link refid="classpysc2_1_1lib_1_1colors_1_1_color"/>
+        <childnode refid="171" relation="public-inheritance">
+        </childnode>
+        <childnode refid="172" relation="public-inheritance">
+        </childnode>
+        <childnode refid="173" relation="public-inheritance">
+        </childnode>
+        <childnode refid="174" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>namedtuple</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/colors.py" line="30" column="1" bodyfile="lib/colors.py" bodystart="30" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1af1b1d0a84bcc91484781007d63e6113b" prot="public" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>__add__</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1a21025758dba771c0d62d806b8cfad8c5" prot="private" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>__div__</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1a1b8de342848c1a509ea27131ce6aedc3" prot="public" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>__floordiv__</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1a4cc27cb2b3f1f2be14e671f0def6c9da" prot="public" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>__mul__</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1ab5726b368b8047b3f8ca3ff684bc7c84" prot="private" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>__slots__</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1ad3c3b8cc2e506b1d2aaedc50aae52016" prot="public" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1af38ed2fff40bacddd1dd02d9676f7486" prot="public" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>__sub__</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1a232910e9fbb61b4ed2a71c70223be937" prot="public" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>__truediv__</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1aa0516d088a354d745b86a855c972d8ba" prot="public" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>ceil</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1a1d574e03aa1e9eaedbd7693efcd96c49" prot="public" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>floor</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1a38a169169ccba8887056f2411b48919a" prot="public" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>round</name></member>
+      <member refid="classpysc2_1_1lib_1_1colors_1_1_color_1a4f85933c31b5eee882ee02bc276c2910" prot="public" virt="non-virtual"><scope>pysc2::lib::colors::Color</scope><name>set</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

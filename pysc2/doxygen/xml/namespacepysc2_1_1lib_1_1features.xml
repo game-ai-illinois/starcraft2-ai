@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1features" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::features</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format" prot="public">pysc2::lib::features::AgentInterfaceFormat</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_dimensions" prot="public">pysc2::lib::features::Dimensions</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_effects" prot="public">pysc2::lib::features::Effects</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_feature" prot="public">pysc2::lib::features::Feature</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_features" prot="public">pysc2::lib::features::Features</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_feature_type" prot="public">pysc2::lib::features::FeatureType</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_feature_unit" prot="public">pysc2::lib::features::FeatureUnit</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_minimap_features" prot="public">pysc2::lib::features::MinimapFeatures</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_player" prot="public">pysc2::lib::features::Player</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_player_relative" prot="public">pysc2::lib::features::PlayerRelative</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative" prot="public">pysc2::lib::features::ScoreCumulative</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_screen_features" prot="public">pysc2::lib::features::ScreenFeatures</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_unit_layer" prot="public">pysc2::lib::features::UnitLayer</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features_1_1_visibility" prot="public">pysc2::lib::features::Visibility</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1features_1a062cf1836da62c7466fa1666e71541d3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::features.sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <initializer>=  stopwatch.sw</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="37" column="1" bodyfile="lib/features.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1features_1a13e90de46283a5e5191bab0451492127" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::features.SCREEN_FEATURES</definition>
+        <argsstring></argsstring>
+        <name>SCREEN_FEATURES</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1features_1_1_screen_features" kindref="compound">ScreenFeatures</ref>(
+    height_map=(256, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" kindref="member">FeatureType.SCALAR</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1ac3ee96fe4f9d521165e949a436b76968" kindref="member">colors.winter</ref>, False),
+    visibility_map=(4, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>,
+                    <ref refid="namespacepysc2_1_1lib_1_1colors_1a49a89c28c4139d4865ac3afbaa75dadb" kindref="member">colors.VISIBILITY_PALETTE</ref>, False),
+    creep=(2, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a076e50289bc6951b799f3e001d170159" kindref="member">colors.CREEP_PALETTE</ref>, False),
+    power=(2, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1ae0244020a31c05a609bdc2bff344eaf5" kindref="member">colors.POWER_PALETTE</ref>, False),
+    player_id=(17, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>,
+               <ref refid="namespacepysc2_1_1lib_1_1colors_1a41162e76daca963013e431682a2012b9" kindref="member">colors.PLAYER_ABSOLUTE_PALETTE</ref>, False),
+    player_relative=(5, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>,
+                     <ref refid="namespacepysc2_1_1lib_1_1colors_1ad26728a45e354e2342bdbca4b84b6561" kindref="member">colors.PLAYER_RELATIVE_PALETTE</ref>, False),
+    unit_type=(max(<ref refid="namespacepysc2_1_1lib_1_1static__data_1a5118e45819ff327a98e557243d29937f" kindref="member">static_data.UNIT_TYPES</ref>) + 1, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>,
+               <ref refid="namespacepysc2_1_1lib_1_1colors_1ae0af5a08f5570f8eb5b2b66fcf26ea15" kindref="member">colors.unit_type</ref>, False),
+    selected=(2, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1aea6779f03892d10b11f7615e99443400" kindref="member">colors.SELECTED_PALETTE</ref>, False),
+    unit_hit_points=(1600, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" kindref="member">FeatureType.SCALAR</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a8f4a49eb3a5ca2bf529362e14e3d711c" kindref="member">colors.hot</ref>, True),
+    unit_hit_points_ratio=(256, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" kindref="member">FeatureType.SCALAR</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a8f4a49eb3a5ca2bf529362e14e3d711c" kindref="member">colors.hot</ref>, False),
+    unit_energy=(1000, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" kindref="member">FeatureType.SCALAR</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a8f4a49eb3a5ca2bf529362e14e3d711c" kindref="member">colors.hot</ref>, True),
+    unit_energy_ratio=(256, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" kindref="member">FeatureType.SCALAR</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a8f4a49eb3a5ca2bf529362e14e3d711c" kindref="member">colors.hot</ref>, False),
+    unit_shields=(1000, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" kindref="member">FeatureType.SCALAR</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a8f4a49eb3a5ca2bf529362e14e3d711c" kindref="member">colors.hot</ref>, True),
+    unit_shields_ratio=(256, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" kindref="member">FeatureType.SCALAR</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a8f4a49eb3a5ca2bf529362e14e3d711c" kindref="member">colors.hot</ref>, False),
+    unit_density=(16, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" kindref="member">FeatureType.SCALAR</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a8f4a49eb3a5ca2bf529362e14e3d711c" kindref="member">colors.hot</ref>, True),
+    unit_density_aa=(256, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" kindref="member">FeatureType.SCALAR</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a8f4a49eb3a5ca2bf529362e14e3d711c" kindref="member">colors.hot</ref>, False),
+    effects=(16, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1ac5b107d158a7a27a2c746e740761e34a" kindref="member">colors.effects</ref>, False),
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="260" column="1" bodyfile="lib/features.py" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1features_1aa68d4b004db555d191b198bcf0d0e699" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::features.MINIMAP_FEATURES</definition>
+        <argsstring></argsstring>
+        <name>MINIMAP_FEATURES</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1features_1_1_minimap_features" kindref="compound">MinimapFeatures</ref>(
+    height_map=(256, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" kindref="member">FeatureType.SCALAR</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1ac3ee96fe4f9d521165e949a436b76968" kindref="member">colors.winter</ref>),
+    visibility_map=(4, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a49a89c28c4139d4865ac3afbaa75dadb" kindref="member">colors.VISIBILITY_PALETTE</ref>),
+    creep=(2, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a076e50289bc6951b799f3e001d170159" kindref="member">colors.CREEP_PALETTE</ref>),
+    camera=(2, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a1be837fbf1fcca5bad293e5d6c15ae9a" kindref="member">colors.CAMERA_PALETTE</ref>),
+    player_id=(17, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a41162e76daca963013e431682a2012b9" kindref="member">colors.PLAYER_ABSOLUTE_PALETTE</ref>),
+    player_relative=(5, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>,
+                     <ref refid="namespacepysc2_1_1lib_1_1colors_1ad26728a45e354e2342bdbca4b84b6561" kindref="member">colors.PLAYER_RELATIVE_PALETTE</ref>),
+    selected=(2, <ref refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" kindref="member">FeatureType.CATEGORICAL</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1ac3ee96fe4f9d521165e949a436b76968" kindref="member">colors.winter</ref>),
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="284" column="1" bodyfile="lib/features.py" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1features_1a196ab0f94a7b545ecab460acc6db133b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features._to_point</definition>
+        <argsstring>(dims)</argsstring>
+        <name>_to_point</name>
+        <param>
+          <type>dims</type>
+          <defname>dims</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Convert (width, height) or size -&gt; point.Point.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="296" column="1" bodyfile="lib/features.py" bodystart="296" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1features_1a5075b8a72e7dbe879edda0d3dbe902fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.parse_agent_interface_format</definition>
+        <argsstring>(feature_screen=None, feature_minimap=None, rgb_screen=None, rgb_minimap=None, action_space=None, camera_width_world_units=None, use_feature_units=False)</argsstring>
+        <name>parse_agent_interface_format</name>
+        <param>
+          <type>feature_screen</type>
+          <defname>feature_screen</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>feature_minimap</type>
+          <defname>feature_minimap</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>rgb_screen</type>
+          <defname>rgb_screen</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>rgb_minimap</type>
+          <defname>rgb_minimap</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>camera_width_world_units</type>
+          <defname>camera_width_world_units</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>use_feature_units</type>
+          <defname>use_feature_units</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Creates an AgentInterfaceFormat object from keyword args.
+
+Convenient when using dictionaries or command-line arguments for config.
+
+Note that the feature_* and rgb_* properties define the respective spatial
+observation dimensions and accept:
+    * None or 0 to disable that spatial observation.
+    * A single int for a square observation with that side length.
+    * A (int, int) tuple for a rectangular (width, height) observation.
+
+Args:
+  feature_screen: If specified, so must feature_minimap be.
+  feature_minimap: If specified, so must feature_screen be.
+  rgb_screen: If specified, so must rgb_minimap be.
+  rgb_minimap: If specified, so must rgb_screen be.
+  action_space: [&quot;FEATURES&quot;, &quot;RGB&quot;].
+  camera_width_world_units: An int.
+  use_feature_units: A boolean, defaults to False.
+
+Returns:
+  An `AgentInterfaceFormat` object.
+
+Raises:
+  ValueError: If an invalid parameter is specified.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="464" column="1" bodyfile="lib/features.py" bodystart="471" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1features_1a633aa1ab712129e68a37ec8e7ddbef10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.features_from_game_info</definition>
+        <argsstring>(game_info, use_feature_units=False, action_space=None, hide_specific_actions=True)</argsstring>
+        <name>features_from_game_info</name>
+        <param>
+          <type>game_info</type>
+          <defname>game_info</defname>
+        </param>
+        <param>
+          <type>use_feature_units</type>
+          <defname>use_feature_units</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>hide_specific_actions</type>
+          <defname>hide_specific_actions</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Construct a Features object using data extracted from game info.
+
+Args:
+  game_info: A `sc_pb.ResponseGameInfo` from the game.
+  use_feature_units: Whether to include the feature unit observation.
+  action_space: If you pass both feature and rgb sizes, then you must also
+      specify which you want to use for your actions as an ActionSpace enum.
+  hide_specific_actions: [bool] Some actions (eg cancel) have many
+      specific versions (cancel this building, cancel that spell) and can
+      be represented in a more general form. If a specific action is
+      available, the general will also be available. If you set
+      `hide_specific_actions` to False, the specific versions will also be
+      available, but if it&apos;s True, the specific ones will be hidden.
+      Similarly, when transforming back, a specific action will be returned
+      as the general action. This simplifies the action space, though can
+      lead to some actions in replays not being exactly representable using
+      only the general actions.
+
+Returns:
+  A features object matching the specified parameterisation.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="520" column="1" bodyfile="lib/features.py" bodystart="524" bodyend="577"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1features_1a98726af751d4390bab71a474ae4ba66f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features._init_valid_functions</definition>
+        <argsstring>(action_dimensions)</argsstring>
+        <name>_init_valid_functions</name>
+        <param>
+          <type>action_dimensions</type>
+          <defname>action_dimensions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize ValidFunctions and set up the callbacks.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="578" column="1" bodyfile="lib/features.py" bodystart="578" bodyend="596"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/features.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

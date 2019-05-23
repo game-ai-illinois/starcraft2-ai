@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::stopwatch_test::StatTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test_1a08881b8c285f4b47606e1570888154ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch_test.StatTest.testRange</definition>
+        <argsstring>(self)</argsstring>
+        <name>testRange</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch_test.py" line="36" column="1" bodyfile="lib/stopwatch_test.py" bodystart="36" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test_1a134279ac681d8a4d5c9d2e193e2c8f44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch_test.StatTest.testParse</definition>
+        <argsstring>(self)</argsstring>
+        <name>testParse</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch_test.py" line="47" column="1" bodyfile="lib/stopwatch_test.py" bodystart="47" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="675">
+        <label>absltest::TestCase</label>
+      </node>
+      <node id="674">
+        <label>pysc2.lib.stopwatch_test.StatTest</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test"/>
+        <childnode refid="675" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="677">
+        <label>absltest::TestCase</label>
+      </node>
+      <node id="676">
+        <label>pysc2.lib.stopwatch_test.StatTest</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test"/>
+        <childnode refid="677" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/stopwatch_test.py" line="34" column="1" bodyfile="lib/stopwatch_test.py" bodystart="34" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test_1a134279ac681d8a4d5c9d2e193e2c8f44" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch_test::StatTest</scope><name>testParse</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test_1a08881b8c285f4b47606e1570888154ab" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch_test::StatTest</scope><name>testRange</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

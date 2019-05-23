@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::replay_obs_test::ReplayObsTest</compoundname>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test_1aae9b05e2dd0d7b83cffb13324af2ff97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.replay_obs_test.ReplayObsTest._get_replay_data</definition>
+        <argsstring>(self, controller, config)</argsstring>
+        <name>_get_replay_data</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>controller</type>
+          <defname>controller</defname>
+        </param>
+        <param>
+          <type>config</type>
+          <defname>config</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Runs a replay to get the replay data.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="215" column="1" bodyfile="tests/replay_obs_test.py" bodystart="215" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test_1a97151ba3a92ff02154f7ea22be891681" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.replay_obs_test.ReplayObsTest._process_replay</definition>
+        <argsstring>(self, controller, observations, config)</argsstring>
+        <name>_process_replay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>controller</type>
+          <defname>controller</defname>
+        </param>
+        <param>
+          <type>observations</type>
+          <defname>observations</defname>
+        </param>
+        <param>
+          <type>config</type>
+          <defname>config</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="271" column="1" bodyfile="tests/replay_obs_test.py" bodystart="271" bodyend="313"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test_1aa6c8b849a8a750ae988d2682f4d19860" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.replay_obs_test.ReplayObsTest.test_replay_observations_match</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_replay_observations_match</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="314" column="1" bodyfile="tests/replay_obs_test.py" bodystart="314" bodyend="325"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="552">
+        <label>pysc2.tests.replay_obs_test.ReplayObsTest</label>
+        <link refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test"/>
+        <childnode refid="553" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="554">
+        <label>TestCase</label>
+      </node>
+      <node id="553">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="554" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="555">
+        <label>pysc2.tests.replay_obs_test.ReplayObsTest</label>
+        <link refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test"/>
+        <childnode refid="556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="557">
+        <label>TestCase</label>
+      </node>
+      <node id="556">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="557" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/replay_obs_test.py" line="213" column="1" bodyfile="tests/replay_obs_test.py" bodystart="213" bodyend="326"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test_1aae9b05e2dd0d7b83cffb13324af2ff97" prot="private" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::ReplayObsTest</scope><name>_get_replay_data</name></member>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test_1a97151ba3a92ff02154f7ea22be891681" prot="private" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::ReplayObsTest</scope><name>_process_replay</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::ReplayObsTest</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::ReplayObsTest</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test_1aa6c8b849a8a750ae988d2682f4d19860" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::ReplayObsTest</scope><name>test_replay_observations_match</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

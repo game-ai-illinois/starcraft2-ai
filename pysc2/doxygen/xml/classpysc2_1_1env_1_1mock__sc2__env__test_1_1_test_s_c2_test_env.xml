@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</compoundname>
+    <basecompoundref refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin" prot="public" virt="non-virtual">pysc2.env.mock_sc2_env_test._TestMixin</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env_1ad285bc2ff468325655c78a6000222e47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test.TestSC2TestEnv.test_episode</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_episode</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="124" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="124" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env_1a3fba2feb0d91797855af1055a7d3bddc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test.TestSC2TestEnv.test_episode_length</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_episode_length</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="132" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="132" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env_1aac0359cf409eb577dc65434e8c4e632d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test.TestSC2TestEnv.test_screen_minimap_size</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_screen_minimap_size</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="140" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="140" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env_1a9f019526eaf1abf6164d07cc892a3e7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test.TestSC2TestEnv.test_feature_units_are_supported</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_feature_units_are_supported</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="154" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="154" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="800">
+        <label>pysc2.env.mock_sc2_env_test._TestMixin</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin"/>
+        <childnode refid="801" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="802">
+        <label>TestCase</label>
+      </node>
+      <node id="801">
+        <label>object</label>
+      </node>
+      <node id="799">
+        <label>pysc2.env.mock_sc2_env_test.TestSC2TestEnv</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env"/>
+        <childnode refid="800" relation="public-inheritance">
+        </childnode>
+        <childnode refid="802" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="804">
+        <label>pysc2.env.mock_sc2_env_test._TestMixin</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin"/>
+        <childnode refid="805" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="806">
+        <label>TestCase</label>
+      </node>
+      <node id="805">
+        <label>object</label>
+      </node>
+      <node id="803">
+        <label>pysc2.env.mock_sc2_env_test.TestSC2TestEnv</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env"/>
+        <childnode refid="804" relation="public-inheritance">
+        </childnode>
+        <childnode refid="806" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="env/mock_sc2_env_test.py" line="122" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="122" bodyend="164"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1adadfb2c15fcb2d44285adfe0abdda38b" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</scope><name>assert_equal</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1a4c77f1899a786872425080daa843b2c4" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</scope><name>assert_first_step</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1a52dcd33d92eb8498d7986def1cb48626" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</scope><name>assert_last_step</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1ae0bece3faa1dfe55f8a9057fe33e6522" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</scope><name>assert_mid_step</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1ae9e82d6e4019a1f2c3101bebbb570988" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</scope><name>assert_reset</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1ae44862283422b3f9f4cff0364e7718fe" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</scope><name>assert_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env_1ad285bc2ff468325655c78a6000222e47" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</scope><name>test_episode</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env_1a3fba2feb0d91797855af1055a7d3bddc" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</scope><name>test_episode_length</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env_1a9f019526eaf1abf6164d07cc892a3e7d" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</scope><name>test_feature_units_are_supported</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env_1aac0359cf409eb577dc65434e8c4e632d" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::TestSC2TestEnv</scope><name>test_screen_minimap_size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1actions_1_1_arguments" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::actions::Arguments</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">screen</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">minimap</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">screen2</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">queued</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">control_group_act</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">control_group_id</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">select_point_act</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">select_add</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">select_unit_act</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">select_unit_id</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">select_worker</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">build_queue_id</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">unload_id</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1actions_1_1_arguments_1a71aab30ed205839bf73707aaf681f874" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.actions.Arguments::___slots__</definition>
+        <argsstring></argsstring>
+        <name>___slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="223" column="1" bodyfile="lib/actions.py" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_arguments_1ab78c631c19bfc340e35069612a5b1f22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Arguments.types</definition>
+        <argsstring>(cls, kwargs)</argsstring>
+        <name>types</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create an Arguments of the possible Types.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="226" column="1" bodyfile="lib/actions.py" bodystart="226" bodyend="232"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>The full list of argument types.
+
+Take a look at TYPES and FUNCTION_TYPES for more details.
+
+Attributes:
+  screen: A point on the screen.
+  minimap: A point on the minimap.
+  screen2: The second point for a rectangle. This is needed so that no
+      function takes the same type twice.
+  queued: Whether the action should be done now or later.
+  control_group_act: What to do with the control group.
+  control_group_id: Which control group to do it with.
+  select_point_act: What to do with the unit at the point.
+  select_add: Whether to add the unit to the selection or replace it.
+  select_unit_act: What to do when selecting a unit by id.
+  select_unit_id: Which unit to select by id.
+  select_worker: What to do when selecting a worker.
+  build_queue_id: Which build queue index to target.
+  unload_id: Which unit to target in a transport/nydus/command center.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="46">
+        <label>minimap</label>
+      </node>
+      <node id="43">
+        <label>pysc2.lib.actions.Arguments</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_arguments"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+        <childnode refid="48" relation="public-inheritance">
+        </childnode>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+        <childnode refid="50" relation="public-inheritance">
+        </childnode>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+        <childnode refid="55" relation="public-inheritance">
+        </childnode>
+        <childnode refid="56" relation="public-inheritance">
+        </childnode>
+        <childnode refid="57" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>select_unit_id</label>
+      </node>
+      <node id="52">
+        <label>select_add</label>
+      </node>
+      <node id="50">
+        <label>control_group_id</label>
+      </node>
+      <node id="44">
+        <label>namedtuple</label>
+      </node>
+      <node id="49">
+        <label>control_group_act</label>
+      </node>
+      <node id="51">
+        <label>select_point_act</label>
+      </node>
+      <node id="47">
+        <label>screen2</label>
+      </node>
+      <node id="56">
+        <label>build_queue_id</label>
+      </node>
+      <node id="57">
+        <label>unload_id</label>
+      </node>
+      <node id="55">
+        <label>select_worker</label>
+      </node>
+      <node id="53">
+        <label>select_unit_act</label>
+      </node>
+      <node id="48">
+        <label>queued</label>
+      </node>
+      <node id="45">
+        <label>screen</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="61">
+        <label>minimap</label>
+      </node>
+      <node id="58">
+        <label>pysc2.lib.actions.Arguments</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_arguments"/>
+        <childnode refid="59" relation="public-inheritance">
+        </childnode>
+        <childnode refid="60" relation="public-inheritance">
+        </childnode>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+        <childnode refid="63" relation="public-inheritance">
+        </childnode>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+        <childnode refid="67" relation="public-inheritance">
+        </childnode>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>select_unit_id</label>
+      </node>
+      <node id="67">
+        <label>select_add</label>
+      </node>
+      <node id="65">
+        <label>control_group_id</label>
+      </node>
+      <node id="59">
+        <label>namedtuple</label>
+      </node>
+      <node id="64">
+        <label>control_group_act</label>
+      </node>
+      <node id="66">
+        <label>select_point_act</label>
+      </node>
+      <node id="62">
+        <label>screen2</label>
+      </node>
+      <node id="71">
+        <label>build_queue_id</label>
+      </node>
+      <node id="72">
+        <label>unload_id</label>
+      </node>
+      <node id="70">
+        <label>select_worker</label>
+      </node>
+      <node id="68">
+        <label>select_unit_act</label>
+      </node>
+      <node id="63">
+        <label>queued</label>
+      </node>
+      <node id="60">
+        <label>screen</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/actions.py" line="199" column="1" bodyfile="lib/actions.py" bodystart="202" bodyend="233"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_arguments_1a71aab30ed205839bf73707aaf681f874" prot="private" virt="non-virtual"><scope>pysc2::lib::actions::Arguments</scope><name>___slots__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_arguments_1ab78c631c19bfc340e35069612a5b1f22" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Arguments</scope><name>types</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

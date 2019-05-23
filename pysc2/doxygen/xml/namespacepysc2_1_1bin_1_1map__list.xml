@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1bin_1_1map__list" kind="namespace" language="Python">
+    <compoundname>pysc2::bin::map_list</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1map__list_1a7fa0a5dc43a6b5ea8042028479f4edcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.map_list.main</definition>
+        <argsstring>(unused_argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>unused_argv</type>
+          <defname>unused_argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/map_list.py" line="26" column="1" bodyfile="bin/map_list.py" bodystart="26" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bin/map_list.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::run_parallel::RunParallel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1a1728fd65b70f801a017d41666da61191" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.run_parallel.RunParallel::_timeout</definition>
+        <argsstring></argsstring>
+        <name>_timeout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel.py" line="33" column="1" bodyfile="lib/run_parallel.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1a89ccc914a1c77fd67d9e016cbc82d07f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.run_parallel.RunParallel::_executor</definition>
+        <argsstring></argsstring>
+        <name>_executor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel.py" line="34" column="1" bodyfile="lib/run_parallel.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1a11c9fd84fd9f2f5f0605b2cf25120e54" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.run_parallel.RunParallel::_workers</definition>
+        <argsstring></argsstring>
+        <name>_workers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel.py" line="35" column="1" bodyfile="lib/run_parallel.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1aa887a194de13532b110dfe92f0789b82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel.RunParallel.__init__</definition>
+        <argsstring>(self, timeout=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel.py" line="32" column="1" bodyfile="lib/run_parallel.py" bodystart="32" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1a2f255ba938812c81a7ef748dc358d10e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel.RunParallel.run</definition>
+        <argsstring>(self, funcs)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>funcs</type>
+          <defname>funcs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Run a set of functions in parallel, returning their results.
+
+Make sure any function you pass exits with a reasonable timeout. If it
+doesn&apos;t return within the timeout or the result is ignored due an exception
+in a separate thread it will continue to stick around until it finishes,
+including blocking process exit.
+
+Args:
+  funcs: An iterable of functions or iterable of args to functools.partial.
+
+Returns:
+  A list of return values with the values matching the order in funcs.
+
+Raises:
+  Propagates the first exception encountered in one of the functions.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel.py" line="37" column="1" bodyfile="lib/run_parallel.py" bodystart="37" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1a3a4d5322d86770d3b32f58b76b544723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel.RunParallel.shutdown</definition>
+        <argsstring>(self, wait=True)</argsstring>
+        <name>shutdown</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>wait</type>
+          <defname>wait</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel.py" line="77" column="1" bodyfile="lib/run_parallel.py" bodystart="77" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1ac948b68a569a8c31a3a0099513c187dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel.RunParallel.__del__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__del__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel.py" line="83" column="1" bodyfile="lib/run_parallel.py" bodystart="83" bodyend="85"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Run all funcs in parallel.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="588">
+        <label>object</label>
+      </node>
+      <node id="587">
+        <label>pysc2.lib.run_parallel.RunParallel</label>
+        <link refid="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel"/>
+        <childnode refid="588" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="590">
+        <label>object</label>
+      </node>
+      <node id="589">
+        <label>pysc2.lib.run_parallel.RunParallel</label>
+        <link refid="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel"/>
+        <childnode refid="590" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/run_parallel.py" line="29" column="1" bodyfile="lib/run_parallel.py" bodystart="29" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1ac948b68a569a8c31a3a0099513c187dc" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel::RunParallel</scope><name>__del__</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1aa887a194de13532b110dfe92f0789b82" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel::RunParallel</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1a89ccc914a1c77fd67d9e016cbc82d07f" prot="private" virt="non-virtual"><scope>pysc2::lib::run_parallel::RunParallel</scope><name>_executor</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1a1728fd65b70f801a017d41666da61191" prot="private" virt="non-virtual"><scope>pysc2::lib::run_parallel::RunParallel</scope><name>_timeout</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1a11c9fd84fd9f2f5f0605b2cf25120e54" prot="private" virt="non-virtual"><scope>pysc2::lib::run_parallel::RunParallel</scope><name>_workers</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1a2f255ba938812c81a7ef748dc358d10e" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel::RunParallel</scope><name>run</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel_1_1_run_parallel_1a3a4d5322d86770d3b32f58b76b544723" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel::RunParallel</scope><name>shutdown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

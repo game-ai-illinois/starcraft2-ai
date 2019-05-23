@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_e51542386d3b21171ca4996d416c0411" kind="dir">
+    <compoundname>env</compoundname>
+    <innerfile refid="env_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="available__actions__printer_8py">available_actions_printer.py</innerfile>
+    <innerfile refid="base__env__wrapper_8py">base_env_wrapper.py</innerfile>
+    <innerfile refid="environment_8py">environment.py</innerfile>
+    <innerfile refid="lan__sc2__env_8py">lan_sc2_env.py</innerfile>
+    <innerfile refid="mock__sc2__env_8py">mock_sc2_env.py</innerfile>
+    <innerfile refid="mock__sc2__env__comparison__test_8py">mock_sc2_env_comparison_test.py</innerfile>
+    <innerfile refid="mock__sc2__env__test_8py">mock_sc2_env_test.py</innerfile>
+    <innerfile refid="remote__sc2__env_8py">remote_sc2_env.py</innerfile>
+    <innerfile refid="run__loop_8py">run_loop.py</innerfile>
+    <innerfile refid="sc2__env_8py">sc2_env.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="env/"/>
+  </compounddef>
+</doxygen>

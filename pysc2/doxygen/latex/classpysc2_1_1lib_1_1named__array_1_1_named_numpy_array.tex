@@ -1,0 +1,117 @@
+\hypertarget{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array}{}\section{pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array Class Reference}
+\label{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array}\index{pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array@{pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array}}
+Inheritance diagram for pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a430c1d678e959482fa73622ba8dc276a}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls, values, names, args, kwargs)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a2bd5549c57fae992baaa4c99a0e3bcfb}{\+\_\+\+\_\+array\+\_\+finalize\+\_\+\+\_\+}} (self, obj)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a965ef9165993aa61f2a828c2d74d8e2b}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, name)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_ae20f52f3047bba90d9deb658d8145306}{\+\_\+\+\_\+setattr\+\_\+\+\_\+}} (self, name, value)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a2b0e1e4edb82572b308b1144cc1e2835}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, indices)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a5731267b4680b51ed45c4ecd3255dbf0}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, indices, value)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a3b773f155fcf8ff1a25074f7e44b1f90}{\+\_\+\+\_\+getslice\+\_\+\+\_\+}} (self, i, j)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a8642b7f0cc04d088f9e46ddf375cee65}{\+\_\+\+\_\+setslice\+\_\+\+\_\+}} (self, i, j, seq)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a60a056d2104ac21e599185e1f5da7367}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A subclass of ndarray that lets you give names to indices.
+
+This is a normal ndarray in the sense that you can always index by numbers and
+slices, though elipses don't work. Also, all elements have the same type,
+unlike a record array.
+
+Names should be a list of names per dimension in the ndarray shape. The names
+should be a list or tuple of strings, a namedtuple class (with names taken
+from _fields), or an IntEnum. Alternatively if you don't want to give a name
+to a particular dimension, use None. If your array only has one dimension, the
+second level of list can be skipped.
+
+Example usage:
+  a = named_array.NamedNumpyArray([1, 3, 6], ["a", "b", "c"])
+  a.a, a[1], a["c"] => 1, 3, 6
+  b = named_array.NamedNumpyArray([[1, 3], [6, 8]], [["a", "b"], None])
+  b.a, b[1], b["a", 1] => [1, 3], [6, 8], 3
+  c = named_array.NamedNumpyArray([[1, 3], [6, 8]], [None, ["a", "b"]])
+  c[0].a, b[1, 0], b[1, "b"] => 1, 6, 8
+Look at the tests for more examples including using enums and named tuples.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a2bd5549c57fae992baaa4c99a0e3bcfb}\label{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a2bd5549c57fae992baaa4c99a0e3bcfb}} 
+\index{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}!\+\_\+\+\_\+array\+\_\+finalize\+\_\+\+\_\+@{\+\_\+\+\_\+array\+\_\+finalize\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+array\+\_\+finalize\+\_\+\+\_\+@{\+\_\+\+\_\+array\+\_\+finalize\+\_\+\+\_\+}!pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+array\+\_\+finalize\+\_\+\+\_\+()}{\_\_array\_finalize\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array.\+\_\+\+\_\+array\+\_\+finalize\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obj }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a965ef9165993aa61f2a828c2d74d8e2b}\label{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a965ef9165993aa61f2a828c2d74d8e2b}} 
+\index{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}!\+\_\+\+\_\+getattr\+\_\+\+\_\+@{\+\_\+\+\_\+getattr\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+getattr\+\_\+\+\_\+@{\+\_\+\+\_\+getattr\+\_\+\+\_\+}!pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+getattr\+\_\+\+\_\+()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a2b0e1e4edb82572b308b1144cc1e2835}\label{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a2b0e1e4edb82572b308b1144cc1e2835}} 
+\index{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}!\+\_\+\+\_\+getitem\+\_\+\+\_\+@{\+\_\+\+\_\+getitem\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+getitem\+\_\+\+\_\+@{\+\_\+\+\_\+getitem\+\_\+\+\_\+}!pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+getitem\+\_\+\+\_\+()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{indices }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get by indexing lookup.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a3b773f155fcf8ff1a25074f7e44b1f90}\label{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a3b773f155fcf8ff1a25074f7e44b1f90}} 
+\index{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}!\+\_\+\+\_\+getslice\+\_\+\+\_\+@{\+\_\+\+\_\+getslice\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+getslice\+\_\+\+\_\+@{\+\_\+\+\_\+getslice\+\_\+\+\_\+}!pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+getslice\+\_\+\+\_\+()}{\_\_getslice\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array.\+\_\+\+\_\+getslice\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{i,  }\item[{}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a430c1d678e959482fa73622ba8dc276a}\label{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a430c1d678e959482fa73622ba8dc276a}} 
+\index{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}!\+\_\+\+\_\+new\+\_\+\+\_\+@{\+\_\+\+\_\+new\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+new\+\_\+\+\_\+@{\+\_\+\+\_\+new\+\_\+\+\_\+}!pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+new\+\_\+\+\_\+()}{\_\_new\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array.\+\_\+\+\_\+new\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{values,  }\item[{}]{names,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a60a056d2104ac21e599185e1f5da7367}\label{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a60a056d2104ac21e599185e1f5da7367}} 
+\index{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}!\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+repr\+\_\+\+\_\+@{\+\_\+\+\_\+repr\+\_\+\+\_\+}!pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+repr\+\_\+\+\_\+()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A repr, parsing the original and adding the names param.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_ae20f52f3047bba90d9deb658d8145306}\label{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_ae20f52f3047bba90d9deb658d8145306}} 
+\index{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}!\+\_\+\+\_\+setattr\+\_\+\+\_\+@{\+\_\+\+\_\+setattr\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+setattr\+\_\+\+\_\+@{\+\_\+\+\_\+setattr\+\_\+\+\_\+}!pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+setattr\+\_\+\+\_\+()}{\_\_setattr\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array.\+\_\+\+\_\+setattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a5731267b4680b51ed45c4ecd3255dbf0}\label{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a5731267b4680b51ed45c4ecd3255dbf0}} 
+\index{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}!\+\_\+\+\_\+setitem\+\_\+\+\_\+@{\+\_\+\+\_\+setitem\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+setitem\+\_\+\+\_\+@{\+\_\+\+\_\+setitem\+\_\+\+\_\+}!pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+setitem\+\_\+\+\_\+()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{indices,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a8642b7f0cc04d088f9e46ddf375cee65}\label{classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_a8642b7f0cc04d088f9e46ddf375cee65}} 
+\index{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}!\+\_\+\+\_\+setslice\+\_\+\+\_\+@{\+\_\+\+\_\+setslice\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+setslice\+\_\+\+\_\+@{\+\_\+\+\_\+setslice\+\_\+\+\_\+}!pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array@{pysc2\+::lib\+::named\+\_\+array\+::\+Named\+Numpy\+Array}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+setslice\+\_\+\+\_\+()}{\_\_setslice\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+named\+\_\+array.\+Named\+Numpy\+Array.\+\_\+\+\_\+setslice\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{i,  }\item[{}]{j,  }\item[{}]{seq }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{named__array_8py}{named\+\_\+array.\+py}}\end{DoxyCompactItemize}

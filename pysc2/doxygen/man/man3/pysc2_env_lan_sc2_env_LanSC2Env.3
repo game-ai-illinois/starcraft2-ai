@@ -1,0 +1,84 @@
+.TH "pysc2.env.lan_sc2_env.LanSC2Env" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.env.lan_sc2_env.LanSC2Env
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBpysc2\&.env\&.sc2_env\&.SC2Env\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, _only_use_kwargs=None, host='127\&.0\&.0\&.1', config_port=None, race=None, agent_interface_format=None, discount=1\&., visualize=False, step_mul=None, replay_dir=None)"
+.br
+.ti -1c
+.RI "def \fBclose\fP (self)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A Starcraft II environment for playing vs humans over LAN.
+
+This owns a single instance, and expects to join a game hosted by some other
+script, likely play_vs_agent.py.
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.env\&.lan_sc2_env\&.LanSC2Env\&.__init__ ( self,  _only_use_kwargs = \fCNone\fP,  host = \fC'127\&.0\&.0\&.1'\fP,  config_port = \fCNone\fP,  race = \fCNone\fP,  agent_interface_format = \fCNone\fP,  discount = \fC1\&.\fP,  visualize = \fCFalse\fP,  step_mul = \fCNone\fP,  replay_dir = \fCNone\fP)"
+
+.PP
+.nf
+Create a SC2 Env that connects to a remote instance of the game.
+
+This assumes that the game is already up and running, and it only needs to
+join. You need some other script to launch the process and call
+RequestCreateGame. It also assumes that it's a multiplayer game, and that
+the ports are consecutive.
+
+You must pass a resolution that you want to play at. You can send either
+feature layer resolution or rgb resolution or both. If you send both you
+must also choose which to use as your action space. Regardless of which you
+choose you must send both the screen and minimap resolutions.
+
+For each of the 4 resolutions, either specify size or both width and
+height. If you specify size then both width and height will take that value.
+
+Args:
+  _only_use_kwargs: Don't pass args, only kwargs.
+  host: Which ip to use. Either ipv4 or ipv6 localhost.
+  config_port: Where to find the config port.
+  race: Race for this agent.
+  agent_interface_format: AgentInterfaceFormat object describing the
+  format of communication between the agent and the environment.
+  discount: Returned as part of the observation.
+  visualize: Whether to pop up a window showing the camera and feature
+  layers. This won't work without access to a window manager.
+  step_mul: How many game steps per agent step (action/observation). None
+  means use the map default.
+  replay_dir: Directory to save a replay.
+
+Raises:
+  ValueError: if the race is invalid.
+  ValueError: if the resolutions aren't specified correctly.
+  ValueError: if the host or port are invalid.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.env\&.lan_sc2_env\&.LanSC2Env\&.close ( self)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

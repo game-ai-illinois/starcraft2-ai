@@ -1,0 +1,241 @@
+.TH "pysc2.lib.remote_controller.RemoteController" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.remote_controller.RemoteController
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, host, port, proc=None, timeout_seconds=None)"
+.br
+.ti -1c
+.RI "def \fBclose\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcreate_game\fP (self, req_create_game)"
+.br
+.ti -1c
+.RI "def \fBsave_map\fP (self, map_path, map_data)"
+.br
+.ti -1c
+.RI "def \fBjoin_game\fP (self, req_join_game)"
+.br
+.ti -1c
+.RI "def \fBrestart\fP (self)"
+.br
+.ti -1c
+.RI "def \fBstart_replay\fP (self, req_start_replay)"
+.br
+.ti -1c
+.RI "def \fBgame_info\fP (self)"
+.br
+.ti -1c
+.RI "def \fBdata_raw\fP (self)"
+.br
+.ti -1c
+.RI "def \fBdata\fP (self)"
+.br
+.ti -1c
+.RI "def \fBobserve\fP (self)"
+.br
+.ti -1c
+.RI "def \fBstep\fP (self, count=1)"
+.br
+.ti -1c
+.RI "def \fBactions\fP (self, req_action)"
+.br
+.ti -1c
+.RI "def \fBact\fP (self, action)"
+.br
+.ti -1c
+.RI "def \fBchat\fP (self, message)"
+.br
+.ti -1c
+.RI "def \fBleave\fP (self)"
+.br
+.ti -1c
+.RI "def \fBsave_replay\fP (self)"
+.br
+.ti -1c
+.RI "def \fBquit\fP (self)"
+.br
+.ti -1c
+.RI "def \fBping\fP (self)"
+.br
+.ti -1c
+.RI "def \fBreplay_info\fP (self, replay_data)"
+.br
+.ti -1c
+.RI "def \fBstatus\fP (self)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Implements a python interface to interact with the SC2 binary.
+
+All of these are implemented as blocking calls, so wait for the response
+before returning.
+
+Many of these functions take a Request* object and respond with the
+corresponding Response* object as returned from SC2. The simpler functions
+take a value and construct the Request itself, or return something more useful
+than a Response* object.
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.__init__ ( self,  host,  port,  proc = \fCNone\fP,  timeout_seconds = \fCNone\fP)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.act ( self,  action)"
+
+.PP
+.nf
+Send a single action. This is a shortcut for `actions`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.actions ( self,  req_action)"
+
+.PP
+.nf
+Send a `sc_pb.RequestAction`, which may include multiple actions.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.chat ( self,  message)"
+
+.PP
+.nf
+Send chat message as a broadcast.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.close ( self)"
+
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.create_game ( self,  req_create_game)"
+
+.PP
+.nf
+Create a new game. This can only be done by the host.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.data ( self)"
+
+.PP
+.nf
+Get the static data for the current game.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.data_raw ( self)"
+
+.PP
+.nf
+Get the raw static data for the current game. Prefer `data` instead.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.game_info ( self)"
+
+.PP
+.nf
+Get the basic information about the game.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.join_game ( self,  req_join_game)"
+
+.PP
+.nf
+Join a game, done by all connected clients.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.leave ( self)"
+
+.PP
+.nf
+Disconnect from a multiplayer game.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.observe ( self)"
+
+.PP
+.nf
+Get a current observation.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.ping ( self)"
+
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.quit ( self)"
+
+.PP
+.nf
+Shut down the SC2 process.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.replay_info ( self,  replay_data)"
+
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.restart ( self)"
+
+.PP
+.nf
+Restart the game. Only done by the host.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.save_map ( self,  map_path,  map_data)"
+
+.PP
+.nf
+Save a map into temp dir so create game can access it in multiplayer.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.save_replay ( self)"
+
+.PP
+.nf
+Save a replay, returning the data.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.start_replay ( self,  req_start_replay)"
+
+.PP
+.nf
+Start a replay.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.status ( self)"
+
+.SS "def pysc2\&.lib\&.remote_controller\&.RemoteController\&.step ( self,  count = \fC1\fP)"
+
+.PP
+.nf
+Step the engine forward by one (or more) step.
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

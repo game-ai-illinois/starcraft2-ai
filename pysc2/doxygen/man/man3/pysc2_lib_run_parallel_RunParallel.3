@@ -1,0 +1,72 @@
+.TH "pysc2.lib.run_parallel.RunParallel" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.run_parallel.RunParallel
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, timeout=None)"
+.br
+.ti -1c
+.RI "def \fBrun\fP (self, funcs)"
+.br
+.ti -1c
+.RI "def \fBshutdown\fP (self, wait=True)"
+.br
+.ti -1c
+.RI "def \fB__del__\fP (self)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Run all funcs in parallel.
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.run_parallel\&.RunParallel\&.__init__ ( self,  timeout = \fCNone\fP)"
+
+.SS "def pysc2\&.lib\&.run_parallel\&.RunParallel\&.__del__ ( self)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.run_parallel\&.RunParallel\&.run ( self,  funcs)"
+
+.PP
+.nf
+Run a set of functions in parallel, returning their results.
+
+Make sure any function you pass exits with a reasonable timeout. If it
+doesn't return within the timeout or the result is ignored due an exception
+in a separate thread it will continue to stick around until it finishes,
+including blocking process exit.
+
+Args:
+  funcs: An iterable of functions or iterable of args to functools.partial.
+
+Returns:
+  A list of return values with the values matching the order in funcs.
+
+Raises:
+  Propagates the first exception encountered in one of the functions.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.run_parallel\&.RunParallel\&.shutdown ( self,  wait = \fCTrue\fP)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

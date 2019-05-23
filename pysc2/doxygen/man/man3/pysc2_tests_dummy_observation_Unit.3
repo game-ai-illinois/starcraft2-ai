@@ -1,0 +1,104 @@
+.TH "pysc2.tests.dummy_observation.Unit" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.tests.dummy_observation.Unit
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBunit_type\fP, \fBplayer_relative\fP, \fBhealth\fP, \fBshields\fP=0, \fBenergy\fP=0, \fBtransport_slots_taken\fP=0, \fBbuild_progress\fP=1\&.0)"
+.br
+.ti -1c
+.RI "def \fBfill\fP (self, unit_proto)"
+.br
+.ti -1c
+.RI "def \fBas_array\fP (self)"
+.br
+.ti -1c
+.RI "def \fBas_dict\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBunit_type\fP"
+.br
+.ti -1c
+.RI "\fBplayer_relative\fP"
+.br
+.ti -1c
+.RI "\fBhealth\fP"
+.br
+.ti -1c
+.RI "\fBshields\fP"
+.br
+.ti -1c
+.RI "\fBenergy\fP"
+.br
+.ti -1c
+.RI "\fBtransport_slots_taken\fP"
+.br
+.ti -1c
+.RI "\fBbuild_progress\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Class to hold unit data for the builder.
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.tests\&.dummy_observation\&.Unit\&.__init__ ( self,  unit_type,  player_relative,  health,  shields = \fC0\fP,  energy = \fC0\fP,  transport_slots_taken = \fC0\fP,  build_progress = \fC1\&.0\fP)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.tests\&.dummy_observation\&.Unit\&.as_array ( self)"
+
+.PP
+.nf
+Return the unit represented as a numpy array.
+.fi
+.PP
+ 
+.SS "def pysc2\&.tests\&.dummy_observation\&.Unit\&.as_dict ( self)"
+
+.SS "def pysc2\&.tests\&.dummy_observation\&.Unit\&.fill ( self,  unit_proto)"
+
+.PP
+.nf
+Fill a proto unit data object from this Unit.
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "pysc2\&.tests\&.dummy_observation\&.Unit\&.build_progress"
+
+.SS "pysc2\&.tests\&.dummy_observation\&.Unit\&.energy"
+
+.SS "pysc2\&.tests\&.dummy_observation\&.Unit\&.health"
+
+.SS "pysc2\&.tests\&.dummy_observation\&.Unit\&.player_relative"
+
+.SS "pysc2\&.tests\&.dummy_observation\&.Unit\&.shields"
+
+.SS "pysc2\&.tests\&.dummy_observation\&.Unit\&.transport_slots_taken"
+
+.SS "pysc2\&.tests\&.dummy_observation\&.Unit\&.unit_type"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

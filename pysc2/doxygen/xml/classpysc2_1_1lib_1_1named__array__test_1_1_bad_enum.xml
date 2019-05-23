@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1named__array__test_1_1_bad_enum" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::named_array_test::BadEnum</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1named__array__test_1_1_bad_enum_1ac2011267dad627afd1b66d5974f69b4c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.named_array_test.BadEnum::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array_test.py" line="50" column="1" bodyfile="lib/named_array_test.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1named__array__test_1_1_bad_enum_1a39852f4bebf93c49f8043f731bf1990d" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.named_array_test.BadEnum::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array_test.py" line="51" column="1" bodyfile="lib/named_array_test.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1named__array__test_1_1_bad_enum_1a08a980fdbdc2e50c68ccf8db768948f6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.named_array_test.BadEnum::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array_test.py" line="52" column="1" bodyfile="lib/named_array_test.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="99">
+        <label>pysc2.lib.named_array_test.BadEnum</label>
+        <link refid="classpysc2_1_1lib_1_1named__array__test_1_1_bad_enum"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="103">
+        <label>int</label>
+      </node>
+      <node id="101">
+        <label>pysc2.lib.named_array_test.BadEnum</label>
+        <link refid="classpysc2_1_1lib_1_1named__array__test_1_1_bad_enum"/>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+        <childnode refid="103" relation="usage">
+          <edgelabel>a</edgelabel>
+          <edgelabel>b</edgelabel>
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="102">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/named_array_test.py" line="49" column="1" bodyfile="lib/named_array_test.py" bodystart="49" bodyend="55"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1named__array__test_1_1_bad_enum_1ac2011267dad627afd1b66d5974f69b4c" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array_test::BadEnum</scope><name>a</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array__test_1_1_bad_enum_1a39852f4bebf93c49f8043f731bf1990d" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array_test::BadEnum</scope><name>b</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array__test_1_1_bad_enum_1a08a980fdbdc2e50c68ccf8db768948f6" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array_test::BadEnum</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

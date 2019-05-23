@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1tests_1_1dummy__observation" kind="namespace" language="Python">
+    <compoundname>pysc2::tests::dummy_observation</compoundname>
+    <innerclass refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder" prot="public">pysc2::tests::dummy_observation::Builder</innerclass>
+    <innerclass refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit" prot="public">pysc2::tests::dummy_observation::FeatureUnit</innerclass>
+    <innerclass refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit" prot="public">pysc2::tests::dummy_observation::Unit</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/dummy_observation.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

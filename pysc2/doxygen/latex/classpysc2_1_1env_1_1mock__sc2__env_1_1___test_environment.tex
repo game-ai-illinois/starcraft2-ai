@@ -1,0 +1,123 @@
+\hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment}{}\section{pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment Class Reference}
+\label{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment}\index{pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment@{pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment}}
+Inheritance diagram for pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_ad3acb8d357a313a916e134895503f4bd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, num\+\_\+agents, \mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_a231da0c879e81efdb7a929be37f22311}{observation\+\_\+spec}}, \mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_ae7ce75b41709291c06f255bf682172bb}{action\+\_\+spec}})
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_a995a511044613e7d5f4452a6238cd3eb}{reset}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_affd351d46e26ada4c242072c08418ae1}{step}} (self, actions)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_ae7ce75b41709291c06f255bf682172bb}{action\+\_\+spec}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_a231da0c879e81efdb7a929be37f22311}{observation\+\_\+spec}} (self)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_ae8d2e3dc5088a409252d626f2d35203d}{next\+\_\+timestep}}
+\item 
+\mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_a2c0bd6e676d1490b3b528831ca501534}{episode\+\_\+length}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A simple generic test environment.
+
+This class is a lightweight implementation of `environment.Base` that returns
+the same timesteps on every observation call. By default, each returned
+timestep (one per agent) is reward 0., discount 1., and the observations are
+zero `np.ndarrays` of dtype `np.int32` and the shape specified by the
+environment's spec.
+
+However, the behavior of the `TestEnvironment` can be configured using the
+object's attributes.
+
+Attributes:
+  next_timestep: The `environment.TimeStep`s to return on the next call to
+    `step`. When necessary, some fields will be overridden to ensure the
+    `step_type` contract.
+  episode_length: if the episode length (number of transitions) exceeds
+    `episode_length` on a call to `step`, the `step-type` will be set to
+    `environment.StepType.LAST`, forcing an end of episode. This allows a
+    stub of a production environment to have end_episodes. Will be ignored if
+    set to `float('inf')` (the default).
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_ad3acb8d357a313a916e134895503f4bd}\label{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_ad3acb8d357a313a916e134895503f4bd}} 
+\index{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{num\+\_\+agents,  }\item[{}]{observation\+\_\+spec,  }\item[{}]{action\+\_\+spec }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes the TestEnvironment.
+
+The `next_observation` is initialized to be reward = 0., discount = 1.,
+and an appropriately sized observation of all zeros. `episode_length` is set
+to `float('inf')`.
+
+Args:
+  num_agents: The number of agents.
+  observation_spec: The observation specs for each player.
+  action_spec: The action specs for each player.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_ae7ce75b41709291c06f255bf682172bb}\label{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_ae7ce75b41709291c06f255bf682172bb}} 
+\index{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}!action\+\_\+spec@{action\+\_\+spec}}
+\index{action\+\_\+spec@{action\+\_\+spec}!pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}}
+\subsubsection{\texorpdfstring{action\+\_\+spec()}{action\_spec()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment.\+action\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}See base class.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_a231da0c879e81efdb7a929be37f22311}\label{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_a231da0c879e81efdb7a929be37f22311}} 
+\index{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}!observation\+\_\+spec@{observation\+\_\+spec}}
+\index{observation\+\_\+spec@{observation\+\_\+spec}!pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}}
+\subsubsection{\texorpdfstring{observation\+\_\+spec()}{observation\_spec()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment.\+observation\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}See base class.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_a995a511044613e7d5f4452a6238cd3eb}\label{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_a995a511044613e7d5f4452a6238cd3eb}} 
+\index{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}!reset@{reset}}
+\index{reset@{reset}!pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Restarts episode and returns `next_observation` with `StepType.FIRST`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_affd351d46e26ada4c242072c08418ae1}\label{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_affd351d46e26ada4c242072c08418ae1}} 
+\index{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}!step@{step}}
+\index{step@{step}!pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}}
+\subsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment.\+step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{actions }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns `next_observation` modifying its `step_type` if necessary.\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_a2c0bd6e676d1490b3b528831ca501534}\label{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_a2c0bd6e676d1490b3b528831ca501534}} 
+\index{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}!episode\+\_\+length@{episode\+\_\+length}}
+\index{episode\+\_\+length@{episode\+\_\+length}!pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}}
+\subsubsection{\texorpdfstring{episode\+\_\+length}{episode\_length}}
+{\footnotesize\ttfamily pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment.\+episode\+\_\+length}
+
+\mbox{\Hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_ae8d2e3dc5088a409252d626f2d35203d}\label{classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_ae8d2e3dc5088a409252d626f2d35203d}} 
+\index{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}!next\+\_\+timestep@{next\+\_\+timestep}}
+\index{next\+\_\+timestep@{next\+\_\+timestep}!pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+\_\+\+Test\+Environment}}
+\subsubsection{\texorpdfstring{next\+\_\+timestep}{next\_timestep}}
+{\footnotesize\ttfamily pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+\_\+\+Test\+Environment.\+next\+\_\+timestep}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+env/\mbox{\hyperlink{mock__sc2__env_8py}{mock\+\_\+sc2\+\_\+env.\+py}}\end{DoxyCompactItemize}

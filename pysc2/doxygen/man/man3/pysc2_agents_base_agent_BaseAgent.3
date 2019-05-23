@@ -1,0 +1,87 @@
+.TH "pysc2.agents.base_agent.BaseAgent" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.agents.base_agent.BaseAgent
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.PP
+Inherited by \fBpysc2\&.agents\&.random_agent\&.RandomAgent\fP, \fBpysc2\&.agents\&.scripted_agent\&.CollectMineralShards\fP, \fBpysc2\&.agents\&.scripted_agent\&.CollectMineralShardsFeatureUnits\fP, \fBpysc2\&.agents\&.scripted_agent\&.DefeatRoaches\fP, and \fBpysc2\&.agents\&.scripted_agent\&.MoveToBeacon\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBsetup\fP (self, \fBobs_spec\fP, \fBaction_spec\fP)"
+.br
+.ti -1c
+.RI "def \fBreset\fP (self)"
+.br
+.ti -1c
+.RI "def \fBstep\fP (self, obs)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBreward\fP"
+.br
+.ti -1c
+.RI "\fBepisodes\fP"
+.br
+.ti -1c
+.RI "\fBsteps\fP"
+.br
+.ti -1c
+.RI "\fBobs_spec\fP"
+.br
+.ti -1c
+.RI "\fBaction_spec\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A base agent to write custom scripted agents.
+
+It can also act as a passive agent that does nothing but no-ops.
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.agents\&.base_agent\&.BaseAgent\&.__init__ ( self)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.agents\&.base_agent\&.BaseAgent\&.reset ( self)"
+
+.SS "def pysc2\&.agents\&.base_agent\&.BaseAgent\&.setup ( self,  obs_spec,  action_spec)"
+
+.SS "def pysc2\&.agents\&.base_agent\&.BaseAgent\&.step ( self,  obs)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "pysc2\&.agents\&.base_agent\&.BaseAgent\&.action_spec"
+
+.SS "pysc2\&.agents\&.base_agent\&.BaseAgent\&.episodes"
+
+.SS "pysc2\&.agents\&.base_agent\&.BaseAgent\&.obs_spec"
+
+.SS "pysc2\&.agents\&.base_agent\&.BaseAgent\&.reward"
+
+.SS "pysc2\&.agents\&.base_agent\&.BaseAgent\&.steps"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

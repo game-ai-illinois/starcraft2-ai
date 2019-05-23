@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1agents_1_1base__agent_1_1_base_agent" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::agents::base_agent::BaseAgent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classpysc2_1_1agents_1_1random__agent_1_1_random_agent" prot="public" virt="non-virtual">pysc2.agents.random_agent.RandomAgent</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards" prot="public" virt="non-virtual">pysc2.agents.scripted_agent.CollectMineralShards</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units" prot="public" virt="non-virtual">pysc2.agents.scripted_agent.CollectMineralShardsFeatureUnits</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1agents_1_1scripted__agent_1_1_defeat_roaches" prot="public" virt="non-virtual">pysc2.agents.scripted_agent.DefeatRoaches</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1agents_1_1scripted__agent_1_1_move_to_beacon" prot="public" virt="non-virtual">pysc2.agents.scripted_agent.MoveToBeacon</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a9081eba1a1a529a08d1309e35a1f7ad9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.agents.base_agent.BaseAgent::reward</definition>
+        <argsstring></argsstring>
+        <name>reward</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/base_agent.py" line="30" column="1" bodyfile="agents/base_agent.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a46c85c12c80d0ceceff90c5889f0a13a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.agents.base_agent.BaseAgent::episodes</definition>
+        <argsstring></argsstring>
+        <name>episodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/base_agent.py" line="31" column="1" bodyfile="agents/base_agent.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1aac3b906e1bc4bfc1fad84e8a1fb6ef87" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.agents.base_agent.BaseAgent::steps</definition>
+        <argsstring></argsstring>
+        <name>steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/base_agent.py" line="32" column="1" bodyfile="agents/base_agent.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1ad6cefb81724b9d234887cea543c4f06e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.agents.base_agent.BaseAgent::obs_spec</definition>
+        <argsstring></argsstring>
+        <name>obs_spec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/base_agent.py" line="33" column="1" bodyfile="agents/base_agent.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a550b216b98ae40b2da1b2fd9015d3019" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.agents.base_agent.BaseAgent::action_spec</definition>
+        <argsstring></argsstring>
+        <name>action_spec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/base_agent.py" line="34" column="1" bodyfile="agents/base_agent.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a03935d754145f417240d25e0192c57bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.agents.base_agent.BaseAgent.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/base_agent.py" line="29" column="1" bodyfile="agents/base_agent.py" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1afba8f06273c8740b105573f1a422ba05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.agents.base_agent.BaseAgent.setup</definition>
+        <argsstring>(self, obs_spec, action_spec)</argsstring>
+        <name>setup</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1ad6cefb81724b9d234887cea543c4f06e" kindref="member">obs_spec</ref></type>
+          <defname>obs_spec</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a550b216b98ae40b2da1b2fd9015d3019" kindref="member">action_spec</ref></type>
+          <defname>action_spec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/base_agent.py" line="36" column="1" bodyfile="agents/base_agent.py" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a9814c84f6f2eefa13b69f45f36afcca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.agents.base_agent.BaseAgent.reset</definition>
+        <argsstring>(self)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/base_agent.py" line="40" column="1" bodyfile="agents/base_agent.py" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a64b82c5e648902378e9485b27be6dc0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.agents.base_agent.BaseAgent.step</definition>
+        <argsstring>(self, obs)</argsstring>
+        <name>step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/base_agent.py" line="43" column="1" bodyfile="agents/base_agent.py" bodystart="43" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A base agent to write custom scripted agents.
+
+It can also act as a passive agent that does nothing but no-ops.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="133">
+        <label>pysc2.agents.scripted_agent.MoveToBeacon</label>
+        <link refid="classpysc2_1_1agents_1_1scripted__agent_1_1_move_to_beacon"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>pysc2.agents.scripted_agent.DefeatRoaches</label>
+        <link refid="classpysc2_1_1agents_1_1scripted__agent_1_1_defeat_roaches"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="131">
+        <label>pysc2.agents.scripted_agent.CollectMineralShardsFeatureUnits</label>
+        <link refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>object</label>
+      </node>
+      <node id="127">
+        <label>pysc2.agents.base_agent.BaseAgent</label>
+        <link refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="130">
+        <label>pysc2.agents.scripted_agent.CollectMineralShards</label>
+        <link refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>pysc2.agents.random_agent.RandomAgent</label>
+        <link refid="classpysc2_1_1agents_1_1random__agent_1_1_random_agent"/>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="135">
+        <label>object</label>
+      </node>
+      <node id="134">
+        <label>pysc2.agents.base_agent.BaseAgent</label>
+        <link refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent"/>
+        <childnode refid="135" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agents/base_agent.py" line="23" column="1" bodyfile="agents/base_agent.py" bodystart="23" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a03935d754145f417240d25e0192c57bc" prot="public" virt="non-virtual"><scope>pysc2::agents::base_agent::BaseAgent</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a550b216b98ae40b2da1b2fd9015d3019" prot="public" virt="non-virtual"><scope>pysc2::agents::base_agent::BaseAgent</scope><name>action_spec</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a46c85c12c80d0ceceff90c5889f0a13a" prot="public" virt="non-virtual"><scope>pysc2::agents::base_agent::BaseAgent</scope><name>episodes</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1ad6cefb81724b9d234887cea543c4f06e" prot="public" virt="non-virtual"><scope>pysc2::agents::base_agent::BaseAgent</scope><name>obs_spec</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a9814c84f6f2eefa13b69f45f36afcca4" prot="public" virt="non-virtual"><scope>pysc2::agents::base_agent::BaseAgent</scope><name>reset</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a9081eba1a1a529a08d1309e35a1f7ad9" prot="public" virt="non-virtual"><scope>pysc2::agents::base_agent::BaseAgent</scope><name>reward</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1afba8f06273c8740b105573f1a422ba05" prot="public" virt="non-virtual"><scope>pysc2::agents::base_agent::BaseAgent</scope><name>setup</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a64b82c5e648902378e9485b27be6dc0b" prot="public" virt="non-virtual"><scope>pysc2::agents::base_agent::BaseAgent</scope><name>step</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1aac3b906e1bc4bfc1fad84e8a1fb6ef87" prot="public" virt="non-virtual"><scope>pysc2::agents::base_agent::BaseAgent</scope><name>steps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

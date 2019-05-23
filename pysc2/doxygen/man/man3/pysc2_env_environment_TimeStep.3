@@ -1,0 +1,61 @@
+.TH "pysc2.env.environment.TimeStep" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.env.environment.TimeStep
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits namedtuple, step_type, reward, discount, and observation\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBfirst\fP (self)"
+.br
+.ti -1c
+.RI "def \fBmid\fP (self)"
+.br
+.ti -1c
+.RI "def \fBlast\fP (self)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Returned with every call to `step` and `reset` on an environment.
+
+A `TimeStep` contains the data emitted by an environment at each step of
+interaction. A `TimeStep` holds a `step_type`, an `observation`, and an
+associated `reward` and `discount`.
+
+The first `TimeStep` in a sequence will have `StepType.FIRST`. The final
+`TimeStep` will have `StepType.LAST`. All other `TimeStep`s in a sequence will
+have `StepType.MID.
+
+Attributes:
+  step_type: A `StepType` enum value.
+  reward: A scalar, or `None` if `step_type` is `StepType.FIRST`, i.e. at the
+    start of a sequence.
+  discount: A discount value in the range `[0, 1]`, or `None` if `step_type`
+    is `StepType.FIRST`, i.e. at the start of a sequence.
+  observation: A NumPy array, or a dict, list or tuple of arrays.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.env\&.environment\&.TimeStep\&.first ( self)"
+
+.SS "def pysc2\&.env\&.environment\&.TimeStep\&.last ( self)"
+
+.SS "def pysc2\&.env\&.environment\&.TimeStep\&.mid ( self)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

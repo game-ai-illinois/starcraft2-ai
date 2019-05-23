@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1stopwatch_1_1_tracing_stop_watch_context" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::stopwatch::TracingStopWatchContext</compoundname>
+    <basecompoundref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_context" prot="public" virt="non-virtual">pysc2.lib.stopwatch.StopWatchContext</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_tracing_stop_watch_context_1a96c77e38100ba8407a72cb39c2db9ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.TracingStopWatchContext.__enter__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__enter__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="115" column="1" bodyfile="lib/stopwatch.py" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_tracing_stop_watch_context_1a41722e8b20fbdde29145c764e8bee690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.TracingStopWatchContext.__exit__</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>__exit__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="119" column="1" bodyfile="lib/stopwatch.py" bodystart="119" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_tracing_stop_watch_context_1a5b5578f5373ce7c60db84cd4c6b80626" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.TracingStopWatchContext._log</definition>
+        <argsstring>(self, s)</argsstring>
+        <name>_log</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="124" column="1" bodyfile="lib/stopwatch.py" bodystart="124" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Time an individual call, but also output all the enter/exit calls.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="835">
+        <label>pysc2.lib.stopwatch.TracingStopWatchContext</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch_1_1_tracing_stop_watch_context"/>
+        <childnode refid="836" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="837">
+        <label>object</label>
+      </node>
+      <node id="836">
+        <label>pysc2.lib.stopwatch.StopWatchContext</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_context"/>
+        <childnode refid="837" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="838">
+        <label>pysc2.lib.stopwatch.TracingStopWatchContext</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch_1_1_tracing_stop_watch_context"/>
+        <childnode refid="839" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="840">
+        <label>object</label>
+      </node>
+      <node id="839">
+        <label>pysc2.lib.stopwatch.StopWatchContext</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_context"/>
+        <childnode refid="840" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/stopwatch.py" line="112" column="1" bodyfile="lib/stopwatch.py" bodystart="112" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_tracing_stop_watch_context_1a96c77e38100ba8407a72cb39c2db9ae7" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::TracingStopWatchContext</scope><name>__enter__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_tracing_stop_watch_context_1a41722e8b20fbdde29145c764e8bee690" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::TracingStopWatchContext</scope><name>__exit__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_context_1ac60f1449ee817c0fccf36816828f5c5b" prot="public" virt="non-virtual" ambiguityscope="pysc2::lib::stopwatch::StopWatchContext."><scope>pysc2::lib::stopwatch::TracingStopWatchContext</scope><name>__exit__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_context_1abff3f9b53287c986522e7b1c8fca4730" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::TracingStopWatchContext</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_tracing_stop_watch_context_1a5b5578f5373ce7c60db84cd4c6b80626" prot="private" virt="non-virtual"><scope>pysc2::lib::stopwatch::TracingStopWatchContext</scope><name>_log</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

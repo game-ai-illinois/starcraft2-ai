@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::base_env_wrapper::BaseEnvWrapper</compoundname>
+    <basecompoundref refid="classpysc2_1_1env_1_1environment_1_1_base" prot="public" virt="non-virtual">pysc2.env.environment.Base</basecompoundref>
+    <derivedcompoundref refid="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer" prot="public" virt="non-virtual">pysc2.env.available_actions_printer.AvailableActionsPrinter</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1aa257e135cfc669df065293d2e8ed148d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.base_env_wrapper.BaseEnvWrapper::_env</definition>
+        <argsstring></argsstring>
+        <name>_env</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/base_env_wrapper.py" line="27" column="1" bodyfile="env/base_env_wrapper.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a559e7740680ee3bea19dad409eaba8e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.base_env_wrapper.BaseEnvWrapper.__init__</definition>
+        <argsstring>(self, env)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env</type>
+          <defname>env</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/base_env_wrapper.py" line="26" column="1" bodyfile="env/base_env_wrapper.py" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a7c67bf47a58d4ca0857fbca0664842b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.base_env_wrapper.BaseEnvWrapper.close</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/base_env_wrapper.py" line="29" column="1" bodyfile="env/base_env_wrapper.py" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1aceb8c9f065aac5de979d8b9fe2dde82b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.base_env_wrapper.BaseEnvWrapper.action_spec</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>action_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/base_env_wrapper.py" line="32" column="1" bodyfile="env/base_env_wrapper.py" bodystart="32" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a1b4fec660232a73e8985d96f77b30ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.base_env_wrapper.BaseEnvWrapper.observation_spec</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>observation_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/base_env_wrapper.py" line="35" column="1" bodyfile="env/base_env_wrapper.py" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a6b528f10880414b3adbf2d55cf25d48b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.base_env_wrapper.BaseEnvWrapper.reset</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/base_env_wrapper.py" line="38" column="1" bodyfile="env/base_env_wrapper.py" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1ab491e6f3a60fb773ba3573ebbd49cfc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.base_env_wrapper.BaseEnvWrapper.step</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/base_env_wrapper.py" line="41" column="1" bodyfile="env/base_env_wrapper.py" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a60cf932110b1a4ec35d36c719ae8b045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.base_env_wrapper.BaseEnvWrapper.save_replay</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>save_replay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/base_env_wrapper.py" line="44" column="1" bodyfile="env/base_env_wrapper.py" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a8b4ada1faebd56dfdc44640b74078e91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.base_env_wrapper.BaseEnvWrapper.state</definition>
+        <argsstring>(self)</argsstring>
+        <name>state</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/base_env_wrapper.py" line="48" column="1" bodyfile="env/base_env_wrapper.py" bodystart="48" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A base env wrapper so we don&apos;t need to override everything every time.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="136">
+        <label>pysc2.env.base_env_wrapper.BaseEnvWrapper</label>
+        <link refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>object</label>
+      </node>
+      <node id="139">
+        <label>pysc2.env.available_actions_printer.AvailableActionsPrinter</label>
+        <link refid="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer"/>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="140">
+        <label>pysc2.env.base_env_wrapper.BaseEnvWrapper</label>
+        <link refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="141">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/base_env_wrapper.py" line="23" column="1" bodyfile="env/base_env_wrapper.py" bodystart="23" bodyend="50"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a559e7740680ee3bea19dad409eaba8e6" prot="public" virt="non-virtual"><scope>pysc2::env::base_env_wrapper::BaseEnvWrapper</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1aa257e135cfc669df065293d2e8ed148d" prot="private" virt="non-virtual"><scope>pysc2::env::base_env_wrapper::BaseEnvWrapper</scope><name>_env</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1aceb8c9f065aac5de979d8b9fe2dde82b" prot="public" virt="non-virtual"><scope>pysc2::env::base_env_wrapper::BaseEnvWrapper</scope><name>action_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a7c67bf47a58d4ca0857fbca0664842b0" prot="public" virt="non-virtual"><scope>pysc2::env::base_env_wrapper::BaseEnvWrapper</scope><name>close</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a1b4fec660232a73e8985d96f77b30ec3" prot="public" virt="non-virtual"><scope>pysc2::env::base_env_wrapper::BaseEnvWrapper</scope><name>observation_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a6b528f10880414b3adbf2d55cf25d48b" prot="public" virt="non-virtual"><scope>pysc2::env::base_env_wrapper::BaseEnvWrapper</scope><name>reset</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a60cf932110b1a4ec35d36c719ae8b045" prot="public" virt="non-virtual"><scope>pysc2::env::base_env_wrapper::BaseEnvWrapper</scope><name>save_replay</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a8b4ada1faebd56dfdc44640b74078e91" prot="public" virt="non-virtual"><scope>pysc2::env::base_env_wrapper::BaseEnvWrapper</scope><name>state</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1ab491e6f3a60fb773ba3573ebbd49cfc5" prot="public" virt="non-virtual"><scope>pysc2::env::base_env_wrapper::BaseEnvWrapper</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

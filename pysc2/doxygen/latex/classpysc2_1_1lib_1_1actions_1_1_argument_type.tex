@@ -1,0 +1,77 @@
+\hypertarget{classpysc2_1_1lib_1_1actions_1_1_argument_type}{}\section{pysc2.\+lib.\+actions.\+Argument\+Type Class Reference}
+\label{classpysc2_1_1lib_1_1actions_1_1_argument_type}\index{pysc2.\+lib.\+actions.\+Argument\+Type@{pysc2.\+lib.\+actions.\+Argument\+Type}}
+Inheritance diagram for pysc2.\+lib.\+actions.\+Argument\+Type\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.928690cm]{classpysc2_1_1lib_1_1actions_1_1_argument_type}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_argument_type_a9adbb0aefcb2fc39e36b1c718889f9cc}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_argument_type_a7b139c13ef12cd5bffa45c09af082140}{enum}} (cls, options, values)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_argument_type_a6440b4d3ca6308d338405b4dd456abab}{scalar}} (cls, value)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_argument_type_acd7c52464b761ade90cc6d63957a0739}{point}} (cls)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_argument_type_abeda01e4e7ab3656447b9b4af4ed26d3}{spec}} (cls, id\+\_\+, name, sizes)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Represents a single argument type.
+
+Attributes:
+  id: The argument id. This is unique.
+  name: The name of the argument, also unique.
+  sizes: The max+1 of each of the dimensions this argument takes.
+  fn: The function to convert the list of integers into something more
+      meaningful to be set in the protos to send to the game.
+  values: An enum representing the values this argument type could hold. None
+      if this isn't an enum argument type.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_argument_type_a9adbb0aefcb2fc39e36b1c718889f9cc}\label{classpysc2_1_1lib_1_1actions_1_1_argument_type_a9adbb0aefcb2fc39e36b1c718889f9cc}} 
+\index{pysc2\+::lib\+::actions\+::\+Argument\+Type@{pysc2\+::lib\+::actions\+::\+Argument\+Type}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!pysc2\+::lib\+::actions\+::\+Argument\+Type@{pysc2\+::lib\+::actions\+::\+Argument\+Type}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Argument\+Type.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_argument_type_a7b139c13ef12cd5bffa45c09af082140}\label{classpysc2_1_1lib_1_1actions_1_1_argument_type_a7b139c13ef12cd5bffa45c09af082140}} 
+\index{pysc2\+::lib\+::actions\+::\+Argument\+Type@{pysc2\+::lib\+::actions\+::\+Argument\+Type}!enum@{enum}}
+\index{enum@{enum}!pysc2\+::lib\+::actions\+::\+Argument\+Type@{pysc2\+::lib\+::actions\+::\+Argument\+Type}}
+\subsubsection{\texorpdfstring{enum()}{enum()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Argument\+Type.\+enum (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{options,  }\item[{}]{values }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an ArgumentType where you choose one of a set of known values.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_argument_type_acd7c52464b761ade90cc6d63957a0739}\label{classpysc2_1_1lib_1_1actions_1_1_argument_type_acd7c52464b761ade90cc6d63957a0739}} 
+\index{pysc2\+::lib\+::actions\+::\+Argument\+Type@{pysc2\+::lib\+::actions\+::\+Argument\+Type}!point@{point}}
+\index{point@{point}!pysc2\+::lib\+::actions\+::\+Argument\+Type@{pysc2\+::lib\+::actions\+::\+Argument\+Type}}
+\subsubsection{\texorpdfstring{point()}{point()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Argument\+Type.\+point (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an ArgumentType that is represented by a point.Point.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_argument_type_a6440b4d3ca6308d338405b4dd456abab}\label{classpysc2_1_1lib_1_1actions_1_1_argument_type_a6440b4d3ca6308d338405b4dd456abab}} 
+\index{pysc2\+::lib\+::actions\+::\+Argument\+Type@{pysc2\+::lib\+::actions\+::\+Argument\+Type}!scalar@{scalar}}
+\index{scalar@{scalar}!pysc2\+::lib\+::actions\+::\+Argument\+Type@{pysc2\+::lib\+::actions\+::\+Argument\+Type}}
+\subsubsection{\texorpdfstring{scalar()}{scalar()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Argument\+Type.\+scalar (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{value }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an ArgumentType with a single scalar in range(value).\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_argument_type_abeda01e4e7ab3656447b9b4af4ed26d3}\label{classpysc2_1_1lib_1_1actions_1_1_argument_type_abeda01e4e7ab3656447b9b4af4ed26d3}} 
+\index{pysc2\+::lib\+::actions\+::\+Argument\+Type@{pysc2\+::lib\+::actions\+::\+Argument\+Type}!spec@{spec}}
+\index{spec@{spec}!pysc2\+::lib\+::actions\+::\+Argument\+Type@{pysc2\+::lib\+::actions\+::\+Argument\+Type}}
+\subsubsection{\texorpdfstring{spec()}{spec()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Argument\+Type.\+spec (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{id\+\_\+,  }\item[{}]{name,  }\item[{}]{sizes }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an ArgumentType to be used in ValidActions.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{actions_8py}{actions.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1bin_1_1play__vs__agent" kind="namespace" language="Python">
+    <compoundname>pysc2::bin::play_vs_agent</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1bin_1_1play__vs__agent_1aace2dbb3aa812758befa95f2464b9e1b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::bin::play_vs_agent.FLAGS</definition>
+        <argsstring></argsstring>
+        <name>FLAGS</name>
+        <initializer>=  flags.FLAGS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/play_vs_agent.py" line="60" column="1" bodyfile="bin/play_vs_agent.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1play__vs__agent_1a11b2481682bfad4f4f6d8e53013d30af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.play_vs_agent.main</definition>
+        <argsstring>(unused_argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>unused_argv</type>
+          <defname>unused_argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/play_vs_agent.py" line="106" column="1" bodyfile="bin/play_vs_agent.py" bodystart="106" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1play__vs__agent_1aa9df43db0ef5f88ea3e8cafdf567539f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.play_vs_agent.agent</definition>
+        <argsstring>()</argsstring>
+        <name>agent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Run the agent, connecting to a (remote) host started independently.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/play_vs_agent.py" line="113" column="1" bodyfile="bin/play_vs_agent.py" bodystart="113" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1play__vs__agent_1ab547f6e1ea0e36cedea05e8c21188e35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.play_vs_agent.human</definition>
+        <argsstring>()</argsstring>
+        <name>human</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Run a host which expects one player to connect remotely.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/play_vs_agent.py" line="141" column="1" bodyfile="bin/play_vs_agent.py" bodystart="141" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1play__vs__agent_1a611c6ec219a4c1681c5e5e383f4ff090" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.play_vs_agent.entry_point</definition>
+        <argsstring>()</argsstring>
+        <name>entry_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/play_vs_agent.py" line="268" column="1" bodyfile="bin/play_vs_agent.py" bodystart="268" bodyend="271"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bin/play_vs_agent.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

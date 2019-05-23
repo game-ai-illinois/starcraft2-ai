@@ -1,0 +1,59 @@
+.TH "pysc2.lib.features.Dimensions" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.features.Dimensions
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBscreen\fP=None, \fBminimap\fP=None)"
+.br
+.ti -1c
+.RI "def \fBscreen\fP (self)"
+.br
+.ti -1c
+.RI "def \fBminimap\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__repr__\fP (self)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Screen and minimap dimensions configuration.
+
+Both screen and minimap must be specified. Sizes must be positive.
+Screen size must be greater than or equal to minimap size in both dimensions.
+
+Args:
+  screen: A (width, height) int tuple or a single int to be used for both.
+  minimap: A (width, height) int tuple or a single int to be used for both.
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.features\&.Dimensions\&.__init__ ( self,  screen = \fCNone\fP,  minimap = \fCNone\fP)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.features\&.Dimensions\&.__repr__ ( self)"
+
+.SS "def pysc2\&.lib\&.features\&.Dimensions\&.minimap ( self)"
+
+.SS "def pysc2\&.lib\&.features\&.Dimensions\&.screen ( self)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

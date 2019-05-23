@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_score_cumulative" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::ScoreCumulative</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1ab7c3d4ffa69657e6ed9c7bf91253c298" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="81" column="1" bodyfile="lib/features.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1afa2d48ac9f680f777d23130ec2eafd38" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::idle_production_time</definition>
+        <argsstring></argsstring>
+        <name>idle_production_time</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="82" column="1" bodyfile="lib/features.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1adc2df24bc2bce110aec7d7f038d33021" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::idle_worker_time</definition>
+        <argsstring></argsstring>
+        <name>idle_worker_time</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="83" column="1" bodyfile="lib/features.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a0d0e3e2d4ab6bf8b8db97fe0d877193e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::total_value_units</definition>
+        <argsstring></argsstring>
+        <name>total_value_units</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="84" column="1" bodyfile="lib/features.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a46051021c264abb824d671cf1026b208" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::total_value_structures</definition>
+        <argsstring></argsstring>
+        <name>total_value_structures</name>
+        <initializer>=  4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="85" column="1" bodyfile="lib/features.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a3c91120b1f1a78c3fd14e5fe36c27b13" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::killed_value_units</definition>
+        <argsstring></argsstring>
+        <name>killed_value_units</name>
+        <initializer>=  5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="86" column="1" bodyfile="lib/features.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a8a3f77c8f7c7a0edf265c4f8f0a9ff8c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::killed_value_structures</definition>
+        <argsstring></argsstring>
+        <name>killed_value_structures</name>
+        <initializer>=  6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="87" column="1" bodyfile="lib/features.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1adc4740918132917a49dd5d712f5f3db7" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::collected_minerals</definition>
+        <argsstring></argsstring>
+        <name>collected_minerals</name>
+        <initializer>=  7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="88" column="1" bodyfile="lib/features.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1aa7b0fdd3500d378bbcc7d63331dbf621" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::collected_vespene</definition>
+        <argsstring></argsstring>
+        <name>collected_vespene</name>
+        <initializer>=  8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="89" column="1" bodyfile="lib/features.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a0bdb39aa8bea6ce80892d7a67a7fba26" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::collection_rate_minerals</definition>
+        <argsstring></argsstring>
+        <name>collection_rate_minerals</name>
+        <initializer>=  9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="90" column="1" bodyfile="lib/features.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a14b0f91bd0c1bb05889efe197b2997b7" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::collection_rate_vespene</definition>
+        <argsstring></argsstring>
+        <name>collection_rate_vespene</name>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="91" column="1" bodyfile="lib/features.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1afe35efca534f2e62a6d59ad9a0c5cd89" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::spent_minerals</definition>
+        <argsstring></argsstring>
+        <name>spent_minerals</name>
+        <initializer>=  11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="92" column="1" bodyfile="lib/features.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1aafc5617676f79d6885b267ebee9b8a86" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.ScoreCumulative::spent_vespene</definition>
+        <argsstring></argsstring>
+        <name>spent_vespene</name>
+        <initializer>=  12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="93" column="1" bodyfile="lib/features.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Indices into the `score_cumulative` observation.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="615">
+        <label>pysc2.lib.features.ScoreCumulative</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative"/>
+        <childnode refid="616" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="616">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="617">
+        <label>pysc2.lib.features.ScoreCumulative</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative"/>
+        <childnode refid="618" relation="public-inheritance">
+        </childnode>
+        <childnode refid="619" relation="usage">
+          <edgelabel>collection_rate_vespene</edgelabel>
+          <edgelabel>idle_production_time</edgelabel>
+          <edgelabel>spent_vespene</edgelabel>
+          <edgelabel>killed_value_structures</edgelabel>
+          <edgelabel>killed_value_units</edgelabel>
+          <edgelabel>collected_minerals</edgelabel>
+          <edgelabel>spent_minerals</edgelabel>
+          <edgelabel>total_value_structures</edgelabel>
+          <edgelabel>collection_rate_minerals</edgelabel>
+          <edgelabel>collected_vespene</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="619">
+        <label>int</label>
+      </node>
+      <node id="618">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="79" column="1" bodyfile="lib/features.py" bodystart="79" bodyend="96"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1adc4740918132917a49dd5d712f5f3db7" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>collected_minerals</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1aa7b0fdd3500d378bbcc7d63331dbf621" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>collected_vespene</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a0bdb39aa8bea6ce80892d7a67a7fba26" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>collection_rate_minerals</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a14b0f91bd0c1bb05889efe197b2997b7" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>collection_rate_vespene</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1afa2d48ac9f680f777d23130ec2eafd38" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>idle_production_time</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1adc2df24bc2bce110aec7d7f038d33021" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>idle_worker_time</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a8a3f77c8f7c7a0edf265c4f8f0a9ff8c" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>killed_value_structures</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a3c91120b1f1a78c3fd14e5fe36c27b13" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>killed_value_units</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1ab7c3d4ffa69657e6ed9c7bf91253c298" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>score</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1afe35efca534f2e62a6d59ad9a0c5cd89" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>spent_minerals</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1aafc5617676f79d6885b267ebee9b8a86" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>spent_vespene</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a46051021c264abb824d671cf1026b208" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>total_value_structures</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_score_cumulative_1a0d0e3e2d4ab6bf8b8db97fe0d877193e" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScoreCumulative</scope><name>total_value_units</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

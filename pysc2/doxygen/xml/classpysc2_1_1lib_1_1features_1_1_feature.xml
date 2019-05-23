@@ -1,0 +1,258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_feature" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::Feature</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">index</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">name</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">layer_set</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">full_name</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">scale</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">type</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">palette</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">clip</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_1a93b5258809c1849fffd688819c329879" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.features.Feature::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="167" column="1" bodyfile="lib/features.py" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_1a3d5ce47166a2026a4370d0bfb1857a91" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2.lib.features.Feature::dtypes</definition>
+        <argsstring></argsstring>
+        <name>dtypes</name>
+        <initializer>=  {
+      1: np.uint8,
+      8: np.uint8,
+      16: np.uint16,
+      32: np.int32,
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="169" column="1" bodyfile="lib/features.py" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_feature_1a840859c8cc0f2bc3c80b665a38e879d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Feature.unpack</definition>
+        <argsstring>(self, obs)</argsstring>
+        <name>unpack</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a correctly shaped numpy array for this feature.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="176" column="1" bodyfile="lib/features.py" bodystart="176" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_feature_1a08f6ecbdfc49803c7221b5948d91df9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Feature.color</definition>
+        <argsstring>(self, plane)</argsstring>
+        <name>color</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>plane</type>
+          <defname>plane</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="210" column="1" bodyfile="lib/features.py" bodystart="210" bodyend="215"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_feature_1ae2deeb3c743654425193f0b225c388e8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Feature.unpack_layer</definition>
+        <argsstring>(plane)</argsstring>
+        <name>unpack_layer</name>
+        <param>
+          <type>plane</type>
+          <defname>plane</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a correctly shaped numpy array given the feature layer bytes.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="184" column="1" bodyfile="lib/features.py" bodystart="184" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_feature_1addc5dd18d59ef32762876df736f4509d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Feature.unpack_rgb_image</definition>
+        <argsstring>(plane)</argsstring>
+        <name>unpack_rgb_image</name>
+        <param>
+          <type>plane</type>
+          <defname>plane</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a correctly shaped numpy array given the image bytes.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="202" column="1" bodyfile="lib/features.py" bodystart="202" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Define properties of a feature layer.
+
+Attributes:
+  index: Index of this layer into the set of layers.
+  name: The name of the layer within the set.
+  layer_set: Which set of feature layers to look at in the observation proto.
+  full_name: The full name including for visualization.
+  scale: Max value (+1) of this layer, used to scale the values.
+  type: A FeatureType for scalar vs categorical.
+  palette: A color palette for rendering.
+  clip: Whether to clip the values for coloring.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="239">
+        <label>full_name</label>
+      </node>
+      <node id="243">
+        <label>clip</label>
+      </node>
+      <node id="235">
+        <label>collections::namedtuple</label>
+      </node>
+      <node id="234">
+        <label>pysc2.lib.features.Feature</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_feature"/>
+        <childnode refid="235" relation="public-inheritance">
+        </childnode>
+        <childnode refid="236" relation="public-inheritance">
+        </childnode>
+        <childnode refid="237" relation="public-inheritance">
+        </childnode>
+        <childnode refid="238" relation="public-inheritance">
+        </childnode>
+        <childnode refid="239" relation="public-inheritance">
+        </childnode>
+        <childnode refid="240" relation="public-inheritance">
+        </childnode>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+        <childnode refid="242" relation="public-inheritance">
+        </childnode>
+        <childnode refid="243" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>type</label>
+      </node>
+      <node id="236">
+        <label>index</label>
+      </node>
+      <node id="238">
+        <label>layer_set</label>
+      </node>
+      <node id="240">
+        <label>scale</label>
+      </node>
+      <node id="242">
+        <label>palette</label>
+      </node>
+      <node id="237">
+        <label>name</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="249">
+        <label>full_name</label>
+      </node>
+      <node id="253">
+        <label>clip</label>
+      </node>
+      <node id="245">
+        <label>collections::namedtuple</label>
+      </node>
+      <node id="244">
+        <label>pysc2.lib.features.Feature</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_feature"/>
+        <childnode refid="245" relation="public-inheritance">
+        </childnode>
+        <childnode refid="246" relation="public-inheritance">
+        </childnode>
+        <childnode refid="247" relation="public-inheritance">
+        </childnode>
+        <childnode refid="248" relation="public-inheritance">
+        </childnode>
+        <childnode refid="249" relation="public-inheritance">
+        </childnode>
+        <childnode refid="250" relation="public-inheritance">
+        </childnode>
+        <childnode refid="251" relation="public-inheritance">
+        </childnode>
+        <childnode refid="252" relation="public-inheritance">
+        </childnode>
+        <childnode refid="253" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="251">
+        <label>type</label>
+      </node>
+      <node id="246">
+        <label>index</label>
+      </node>
+      <node id="248">
+        <label>layer_set</label>
+      </node>
+      <node id="250">
+        <label>scale</label>
+      </node>
+      <node id="252">
+        <label>palette</label>
+      </node>
+      <node id="247">
+        <label>name</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="152" column="1" bodyfile="lib/features.py" bodystart="154" bodyend="216"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_1a93b5258809c1849fffd688819c329879" prot="private" virt="non-virtual"><scope>pysc2::lib::features::Feature</scope><name>__slots__</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_1a08f6ecbdfc49803c7221b5948d91df9e" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Feature</scope><name>color</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_1a3d5ce47166a2026a4370d0bfb1857a91" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Feature</scope><name>dtypes</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_1a840859c8cc0f2bc3c80b665a38e879d7" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Feature</scope><name>unpack</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_1ae2deeb3c743654425193f0b225c388e8" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Feature</scope><name>unpack_layer</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_1addc5dd18d59ef32762876df736f4509d" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Feature</scope><name>unpack_rgb_image</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

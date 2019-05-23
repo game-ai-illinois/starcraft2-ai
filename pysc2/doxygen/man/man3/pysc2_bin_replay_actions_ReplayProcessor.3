@@ -1,0 +1,78 @@
+.TH "pysc2.bin.replay_actions.ReplayProcessor" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.bin.replay_actions.ReplayProcessor
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits Process\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, proc_id, \fBrun_config\fP, \fBreplay_queue\fP, \fBstats_queue\fP)"
+.br
+.ti -1c
+.RI "def \fBrun\fP (self)"
+.br
+.ti -1c
+.RI "def \fBprocess_replay\fP (self, controller, replay_data, map_data, player_id)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBstats\fP"
+.br
+.ti -1c
+.RI "\fBrun_config\fP"
+.br
+.ti -1c
+.RI "\fBreplay_queue\fP"
+.br
+.ti -1c
+.RI "\fBstats_queue\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A Process that pulls replays and processes them.
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.bin\&.replay_actions\&.ReplayProcessor\&.__init__ ( self,  proc_id,  run_config,  replay_queue,  stats_queue)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.bin\&.replay_actions\&.ReplayProcessor\&.process_replay ( self,  controller,  replay_data,  map_data,  player_id)"
+
+.PP
+.nf
+Process a single replay, updating the stats.
+.fi
+.PP
+ 
+.SS "def pysc2\&.bin\&.replay_actions\&.ReplayProcessor\&.run ( self)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "pysc2\&.bin\&.replay_actions\&.ReplayProcessor\&.replay_queue"
+
+.SS "pysc2\&.bin\&.replay_actions\&.ReplayProcessor\&.run_config"
+
+.SS "pysc2\&.bin\&.replay_actions\&.ReplayProcessor\&.stats"
+
+.SS "pysc2\&.bin\&.replay_actions\&.ReplayProcessor\&.stats_queue"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

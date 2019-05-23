@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1protocol" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::protocol</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1protocol_1_1_connection_error" prot="public">pysc2::lib::protocol::ConnectionError</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1protocol_1_1_protocol_error" prot="public">pysc2::lib::protocol::ProtocolError</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol" prot="public">pysc2::lib::protocol::StarcraftProtocol</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1protocol_1a0f9d2fb7be1ab1b9bb882c2b68046203" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::protocol.FLAGS</definition>
+        <argsstring></argsstring>
+        <name>FLAGS</name>
+        <initializer>=  flags.FLAGS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="39" column="1" bodyfile="lib/protocol.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1protocol_1a8612b29bdee56dc470fda95c8bbd8cb2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::protocol.sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <initializer>=  stopwatch.sw</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="42" column="1" bodyfile="lib/protocol.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1protocol_1adfe00ba6b54424ee04479b5340d49293" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::protocol.Status</definition>
+        <argsstring></argsstring>
+        <name>Status</name>
+        <initializer>=  enum.Enum(&quot;Status&quot;, sc_pb.Status.items())</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="45" column="1" bodyfile="lib/protocol.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1protocol_1a9dc3f36956ad7b672f9910dc3d7fac62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.catch_websocket_connection_errors</definition>
+        <argsstring>()</argsstring>
+        <name>catch_websocket_connection_errors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A context manager that translates websocket errors into ConnectionError.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="59" column="1" bodyfile="lib/protocol.py" bodystart="59" bodyend="71"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/protocol.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

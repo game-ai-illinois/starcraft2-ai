@@ -1,0 +1,344 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1point__test_1_1_point_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::point_test::PointTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ad12a19dcb832316fa8d1f886a7170ee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testBuild</definition>
+        <argsstring>(self)</argsstring>
+        <name>testBuild</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="36" column="1" bodyfile="lib/point_test.py" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a437c584557a8bd89608f4d2b7031772d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testAssignTo</definition>
+        <argsstring>(self)</argsstring>
+        <name>testAssignTo</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="39" column="1" bodyfile="lib/point_test.py" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a859a1f0935cc6fb30847cce427f8e86c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testDist</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="47" column="1" bodyfile="lib/point_test.py" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1aea852a2f277b80c7ce0284529566d060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testDistSq</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDistSq</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="52" column="1" bodyfile="lib/point_test.py" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a30da6dc96b15c2ca483ee8fa9f523547" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testLen</definition>
+        <argsstring>(self)</argsstring>
+        <name>testLen</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="57" column="1" bodyfile="lib/point_test.py" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ab3fac4980cacfe3de6798039647a1e57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testScale</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScale</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="61" column="1" bodyfile="lib/point_test.py" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ad83d5d0d2bd253f254e7f88c2267f9b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testScaleMaxSize</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScaleMaxSize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="65" column="1" bodyfile="lib/point_test.py" bodystart="65" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a4a1bbfdbfcb124ef6711f9f80e74751d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testScaleMinSize</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScaleMinSize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="72" column="1" bodyfile="lib/point_test.py" bodystart="72" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ad410f51e3943e335b48988c43ae29292" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testMinDim</definition>
+        <argsstring>(self)</argsstring>
+        <name>testMinDim</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="79" column="1" bodyfile="lib/point_test.py" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a02721028156d77d78a3b40b0f4728f17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testMaxDim</definition>
+        <argsstring>(self)</argsstring>
+        <name>testMaxDim</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="82" column="1" bodyfile="lib/point_test.py" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1af76618e86853e5aaa46189849b05fba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testTranspose</definition>
+        <argsstring>(self)</argsstring>
+        <name>testTranspose</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="85" column="1" bodyfile="lib/point_test.py" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ad68fffc4b5078c5994109db0e261929e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testRound</definition>
+        <argsstring>(self)</argsstring>
+        <name>testRound</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="88" column="1" bodyfile="lib/point_test.py" bodystart="88" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a17b74dbbc38f4de18338b1ac5c3345cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testCeil</definition>
+        <argsstring>(self)</argsstring>
+        <name>testCeil</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="94" column="1" bodyfile="lib/point_test.py" bodystart="94" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a078ea743680d548a84054a49214c750b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testFloor</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFloor</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="100" column="1" bodyfile="lib/point_test.py" bodystart="100" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ae34b180630e932d59d61d7c0925473c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testRotate</definition>
+        <argsstring>(self)</argsstring>
+        <name>testRotate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="106" column="1" bodyfile="lib/point_test.py" bodystart="106" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a7b34a7d475a708d56c3f8e42643a6eea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testContainedCircle</definition>
+        <argsstring>(self)</argsstring>
+        <name>testContainedCircle</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="112" column="1" bodyfile="lib/point_test.py" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ae45d018988b644631a6be793de0a07a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.PointTest.testBound</definition>
+        <argsstring>(self)</argsstring>
+        <name>testBound</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="116" column="1" bodyfile="lib/point_test.py" bodystart="116" bodyend="123"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="494">
+        <label>TestCase</label>
+      </node>
+      <node id="493">
+        <label>pysc2.lib.point_test.PointTest</label>
+        <link refid="classpysc2_1_1lib_1_1point__test_1_1_point_test"/>
+        <childnode refid="494" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="496">
+        <label>TestCase</label>
+      </node>
+      <node id="495">
+        <label>pysc2.lib.point_test.PointTest</label>
+        <link refid="classpysc2_1_1lib_1_1point__test_1_1_point_test"/>
+        <childnode refid="496" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/point_test.py" line="34" column="1" bodyfile="lib/point_test.py" bodystart="34" bodyend="124"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a437c584557a8bd89608f4d2b7031772d" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testAssignTo</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ae45d018988b644631a6be793de0a07a9" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testBound</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ad12a19dcb832316fa8d1f886a7170ee3" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testBuild</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a17b74dbbc38f4de18338b1ac5c3345cc" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testCeil</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a7b34a7d475a708d56c3f8e42643a6eea" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testContainedCircle</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a859a1f0935cc6fb30847cce427f8e86c" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testDist</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1aea852a2f277b80c7ce0284529566d060" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testDistSq</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a078ea743680d548a84054a49214c750b" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testFloor</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a30da6dc96b15c2ca483ee8fa9f523547" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testLen</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a02721028156d77d78a3b40b0f4728f17" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testMaxDim</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ad410f51e3943e335b48988c43ae29292" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testMinDim</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ae34b180630e932d59d61d7c0925473c5" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testRotate</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ad68fffc4b5078c5994109db0e261929e" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testRound</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ab3fac4980cacfe3de6798039647a1e57" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testScale</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1ad83d5d0d2bd253f254e7f88c2267f9b1" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testScaleMaxSize</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1a4a1bbfdbfcb124ef6711f9f80e74751d" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testScaleMinSize</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_point_test_1af76618e86853e5aaa46189849b05fba8" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::PointTest</scope><name>testTranspose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

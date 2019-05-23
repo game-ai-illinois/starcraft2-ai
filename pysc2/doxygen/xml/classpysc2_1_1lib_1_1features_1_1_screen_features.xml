@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_screen_features" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::ScreenFeatures</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">height_map</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">visibility_map</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">creep</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">power</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">player_id</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">player_relative</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">unit_type</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">selected</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">unit_hit_points</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">unit_hit_points_ratio</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">unit_energy</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">unit_energy_ratio</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">unit_shields</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">unit_shields_ratio</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">unit_density</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">unit_density_aa</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">effects</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_screen_features_1af8754f93989a724ee78b8969ff665c35" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.features.ScreenFeatures::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="222" column="1" bodyfile="lib/features.py" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_screen_features_1a30f47c7db2836974eb515784b1efe33b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.ScreenFeatures.__new__</definition>
+        <argsstring>(cls, kwargs)</argsstring>
+        <name>__new__</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="224" column="1" bodyfile="lib/features.py" bodystart="224" bodyend="238"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>The set of screen feature layers.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="633">
+        <label>unit_energy_ratio</label>
+      </node>
+      <node id="627">
+        <label>player_relative</label>
+      </node>
+      <node id="630">
+        <label>unit_hit_points</label>
+      </node>
+      <node id="625">
+        <label>power</label>
+      </node>
+      <node id="626">
+        <label>player_id</label>
+      </node>
+      <node id="624">
+        <label>creep</label>
+      </node>
+      <node id="631">
+        <label>unit_hit_points_ratio</label>
+      </node>
+      <node id="621">
+        <label>namedtuple</label>
+      </node>
+      <node id="620">
+        <label>pysc2.lib.features.ScreenFeatures</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_screen_features"/>
+        <childnode refid="621" relation="public-inheritance">
+        </childnode>
+        <childnode refid="622" relation="public-inheritance">
+        </childnode>
+        <childnode refid="623" relation="public-inheritance">
+        </childnode>
+        <childnode refid="624" relation="public-inheritance">
+        </childnode>
+        <childnode refid="625" relation="public-inheritance">
+        </childnode>
+        <childnode refid="626" relation="public-inheritance">
+        </childnode>
+        <childnode refid="627" relation="public-inheritance">
+        </childnode>
+        <childnode refid="628" relation="public-inheritance">
+        </childnode>
+        <childnode refid="629" relation="public-inheritance">
+        </childnode>
+        <childnode refid="630" relation="public-inheritance">
+        </childnode>
+        <childnode refid="631" relation="public-inheritance">
+        </childnode>
+        <childnode refid="632" relation="public-inheritance">
+        </childnode>
+        <childnode refid="633" relation="public-inheritance">
+        </childnode>
+        <childnode refid="634" relation="public-inheritance">
+        </childnode>
+        <childnode refid="635" relation="public-inheritance">
+        </childnode>
+        <childnode refid="636" relation="public-inheritance">
+        </childnode>
+        <childnode refid="637" relation="public-inheritance">
+        </childnode>
+        <childnode refid="638" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="636">
+        <label>unit_density</label>
+      </node>
+      <node id="635">
+        <label>unit_shields_ratio</label>
+      </node>
+      <node id="623">
+        <label>visibility_map</label>
+      </node>
+      <node id="629">
+        <label>selected</label>
+      </node>
+      <node id="638">
+        <label>effects</label>
+      </node>
+      <node id="622">
+        <label>height_map</label>
+      </node>
+      <node id="628">
+        <label>unit_type</label>
+      </node>
+      <node id="634">
+        <label>unit_shields</label>
+      </node>
+      <node id="637">
+        <label>unit_density_aa</label>
+      </node>
+      <node id="632">
+        <label>unit_energy</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="652">
+        <label>unit_energy_ratio</label>
+      </node>
+      <node id="646">
+        <label>player_relative</label>
+      </node>
+      <node id="649">
+        <label>unit_hit_points</label>
+      </node>
+      <node id="644">
+        <label>power</label>
+      </node>
+      <node id="645">
+        <label>player_id</label>
+      </node>
+      <node id="643">
+        <label>creep</label>
+      </node>
+      <node id="650">
+        <label>unit_hit_points_ratio</label>
+      </node>
+      <node id="640">
+        <label>namedtuple</label>
+      </node>
+      <node id="639">
+        <label>pysc2.lib.features.ScreenFeatures</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_screen_features"/>
+        <childnode refid="640" relation="public-inheritance">
+        </childnode>
+        <childnode refid="641" relation="public-inheritance">
+        </childnode>
+        <childnode refid="642" relation="public-inheritance">
+        </childnode>
+        <childnode refid="643" relation="public-inheritance">
+        </childnode>
+        <childnode refid="644" relation="public-inheritance">
+        </childnode>
+        <childnode refid="645" relation="public-inheritance">
+        </childnode>
+        <childnode refid="646" relation="public-inheritance">
+        </childnode>
+        <childnode refid="647" relation="public-inheritance">
+        </childnode>
+        <childnode refid="648" relation="public-inheritance">
+        </childnode>
+        <childnode refid="649" relation="public-inheritance">
+        </childnode>
+        <childnode refid="650" relation="public-inheritance">
+        </childnode>
+        <childnode refid="651" relation="public-inheritance">
+        </childnode>
+        <childnode refid="652" relation="public-inheritance">
+        </childnode>
+        <childnode refid="653" relation="public-inheritance">
+        </childnode>
+        <childnode refid="654" relation="public-inheritance">
+        </childnode>
+        <childnode refid="655" relation="public-inheritance">
+        </childnode>
+        <childnode refid="656" relation="public-inheritance">
+        </childnode>
+        <childnode refid="657" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="655">
+        <label>unit_density</label>
+      </node>
+      <node id="654">
+        <label>unit_shields_ratio</label>
+      </node>
+      <node id="642">
+        <label>visibility_map</label>
+      </node>
+      <node id="648">
+        <label>selected</label>
+      </node>
+      <node id="657">
+        <label>effects</label>
+      </node>
+      <node id="641">
+        <label>height_map</label>
+      </node>
+      <node id="647">
+        <label>unit_type</label>
+      </node>
+      <node id="653">
+        <label>unit_shields</label>
+      </node>
+      <node id="656">
+        <label>unit_density_aa</label>
+      </node>
+      <node id="651">
+        <label>unit_energy</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="216" column="1" bodyfile="lib/features.py" bodystart="220" bodyend="239"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_screen_features_1a30f47c7db2836974eb515784b1efe33b" prot="public" virt="non-virtual"><scope>pysc2::lib::features::ScreenFeatures</scope><name>__new__</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_screen_features_1af8754f93989a724ee78b8969ff665c35" prot="private" virt="non-virtual"><scope>pysc2::lib::features::ScreenFeatures</scope><name>__slots__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

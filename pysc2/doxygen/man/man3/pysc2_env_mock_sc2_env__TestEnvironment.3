@@ -1,0 +1,134 @@
+.TH "pysc2.env.mock_sc2_env._TestEnvironment" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.env.mock_sc2_env._TestEnvironment
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBpysc2\&.env\&.environment\&.Base\fP\&.
+.PP
+Inherited by \fBpysc2\&.env\&.mock_sc2_env\&.SC2TestEnv\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, num_agents, \fBobservation_spec\fP, \fBaction_spec\fP)"
+.br
+.ti -1c
+.RI "def \fBreset\fP (self)"
+.br
+.ti -1c
+.RI "def \fBstep\fP (self, actions)"
+.br
+.ti -1c
+.RI "def \fBaction_spec\fP (self)"
+.br
+.ti -1c
+.RI "def \fBobservation_spec\fP (self)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBnext_timestep\fP"
+.br
+.ti -1c
+.RI "\fBepisode_length\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A simple generic test environment.
+
+This class is a lightweight implementation of `environment.Base` that returns
+the same timesteps on every observation call. By default, each returned
+timestep (one per agent) is reward 0., discount 1., and the observations are
+zero `np.ndarrays` of dtype `np.int32` and the shape specified by the
+environment's spec.
+
+However, the behavior of the `TestEnvironment` can be configured using the
+object's attributes.
+
+Attributes:
+  next_timestep: The `environment.TimeStep`s to return on the next call to
+    `step`. When necessary, some fields will be overridden to ensure the
+    `step_type` contract.
+  episode_length: if the episode length (number of transitions) exceeds
+    `episode_length` on a call to `step`, the `step-type` will be set to
+    `environment.StepType.LAST`, forcing an end of episode. This allows a
+    stub of a production environment to have end_episodes. Will be ignored if
+    set to `float('inf')` (the default).
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.env\&.mock_sc2_env\&._TestEnvironment\&.__init__ ( self,  num_agents,  observation_spec,  action_spec)"
+
+.PP
+.nf
+Initializes the TestEnvironment.
+
+The `next_observation` is initialized to be reward = 0., discount = 1.,
+and an appropriately sized observation of all zeros. `episode_length` is set
+to `float('inf')`.
+
+Args:
+  num_agents: The number of agents.
+  observation_spec: The observation specs for each player.
+  action_spec: The action specs for each player.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.env\&.mock_sc2_env\&._TestEnvironment\&.action_spec ( self)"
+
+.PP
+.nf
+See base class.
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.mock_sc2_env\&._TestEnvironment\&.observation_spec ( self)"
+
+.PP
+.nf
+See base class.
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.mock_sc2_env\&._TestEnvironment\&.reset ( self)"
+
+.PP
+.nf
+Restarts episode and returns `next_observation` with `StepType.FIRST`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.mock_sc2_env\&._TestEnvironment\&.step ( self,  actions)"
+
+.PP
+.nf
+Returns `next_observation` modifying its `step_type` if necessary.
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "pysc2\&.env\&.mock_sc2_env\&._TestEnvironment\&.episode_length"
+
+.SS "pysc2\&.env\&.mock_sc2_env\&._TestEnvironment\&.next_timestep"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1renderer__human" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::renderer_human</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface" prot="public">pysc2::lib::renderer_human::_Surface</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd" prot="public">pysc2::lib::renderer_human::ActionCmd</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1renderer__human_1_1_mouse_buttons" prot="public">pysc2::lib::renderer_human::MouseButtons</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1renderer__human_1_1_mouse_pos" prot="public">pysc2::lib::renderer_human::MousePos</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1renderer__human_1_1_past_action" prot="public">pysc2::lib::renderer_human::PastAction</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human" prot="public">pysc2::lib::renderer_human::RendererHuman</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type" prot="public">pysc2::lib::renderer_human::SurfType</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1renderer__human_1a525c0fe2d94497910def33790b2de7bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::renderer_human.sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <initializer>=  stopwatch.sw</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="55" column="1" bodyfile="lib/renderer_human.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1renderer__human_1a635b7ec9724fdd7abf92a897cc68d1a3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::renderer_human.render_lock</definition>
+        <argsstring></argsstring>
+        <name>render_lock</name>
+        <initializer>=  threading.Lock()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="57" column="1" bodyfile="lib/renderer_human.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1renderer__human_1ac8b75284cbccdee5fe651010cff8b0ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.with_lock</definition>
+        <argsstring>(lock)</argsstring>
+        <name>with_lock</name>
+        <param>
+          <type>lock</type>
+          <defname>lock</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Make sure the lock is held while in this function.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="60" column="1" bodyfile="lib/renderer_human.py" bodystart="60" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1renderer__human_1a7c996020daec061b02fc9323a98a7c7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.clamp</definition>
+        <argsstring>(n, smallest, largest)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>n</type>
+          <defname>n</defname>
+        </param>
+        <param>
+          <type>smallest</type>
+          <defname>smallest</defname>
+        </param>
+        <param>
+          <type>largest</type>
+          <defname>largest</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="71" column="1" bodyfile="lib/renderer_human.py" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1renderer__human_1a62f0be971fbee232317422b7c7347126" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human._get_desktop_size</definition>
+        <argsstring>()</argsstring>
+        <name>_get_desktop_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the desktop size.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="196" column="1" bodyfile="lib/renderer_human.py" bodystart="196" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1renderer__human_1a1c2b1e37eac77e0d171c8a38dacc9f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.circle_mask</definition>
+        <argsstring>(shape, pt, radius)</argsstring>
+        <name>circle_mask</name>
+        <param>
+          <type>shape</type>
+          <defname>shape</defname>
+        </param>
+        <param>
+          <type>pt</type>
+          <defname>pt</defname>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="212" column="1" bodyfile="lib/renderer_human.py" bodystart="212" bodyend="220"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/renderer_human.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

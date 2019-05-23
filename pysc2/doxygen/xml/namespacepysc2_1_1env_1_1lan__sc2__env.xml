@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1env_1_1lan__sc2__env" kind="namespace" language="Python">
+    <compoundname>pysc2::env::lan_sc2_env</compoundname>
+    <innerclass refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_addr" prot="public">pysc2::env::lan_sc2_env::Addr</innerclass>
+    <innerclass refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env" prot="public">pysc2::env::lan_sc2_env::LanSC2Env</innerclass>
+    <innerclass refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_restart_exception" prot="public">pysc2::env::lan_sc2_env::RestartException</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1a3270fe764af5013a8b59a23bd0b71269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.daemon_thread</definition>
+        <argsstring>(target, args)</argsstring>
+        <name>daemon_thread</name>
+        <param>
+          <type>target</type>
+          <defname>target</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="49" column="1" bodyfile="env/lan_sc2_env.py" bodystart="49" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1a204dc3d18091f4b60f807a981af37f93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.udp_server</definition>
+        <argsstring>(addr)</argsstring>
+        <name>udp_server</name>
+        <param>
+          <type>addr</type>
+          <defname>addr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="56" column="1" bodyfile="env/lan_sc2_env.py" bodystart="56" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1afbc0f05c4223cd53205fab03764798d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.tcp_server</definition>
+        <argsstring>(tcp_addr, settings)</argsstring>
+        <name>tcp_server</name>
+        <param>
+          <type>tcp_addr</type>
+          <defname>tcp_addr</defname>
+        </param>
+        <param>
+          <type>settings</type>
+          <defname>settings</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Start up the tcp server, send the settings.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="63" column="1" bodyfile="env/lan_sc2_env.py" bodystart="63" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1a9bec6c3280a64bbca62248322a780da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.tcp_client</definition>
+        <argsstring>(tcp_addr)</argsstring>
+        <name>tcp_client</name>
+        <param>
+          <type>tcp_addr</type>
+          <defname>tcp_addr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Connect to the tcp server, and return the settings.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="81" column="1" bodyfile="env/lan_sc2_env.py" bodystart="81" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1ac87a5369e364472d49c7d9cf29d61712" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.log_msg</definition>
+        <argsstring>(prefix, msg)</argsstring>
+        <name>log_msg</name>
+        <param>
+          <type>prefix</type>
+          <defname>prefix</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="100" column="1" bodyfile="env/lan_sc2_env.py" bodystart="100" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1aeaaac75d1c4f888f2420f17fe66c91e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.udp_to_tcp</definition>
+        <argsstring>(udp_sock, tcp_conn)</argsstring>
+        <name>udp_to_tcp</name>
+        <param>
+          <type>udp_sock</type>
+          <defname>udp_sock</defname>
+        </param>
+        <param>
+          <type>tcp_conn</type>
+          <defname>tcp_conn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="105" column="1" bodyfile="env/lan_sc2_env.py" bodystart="105" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1a61cc2ab183c1d44e6608cf31714b6ce5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.tcp_to_udp</definition>
+        <argsstring>(tcp_conn, udp_sock, udp_to_addr)</argsstring>
+        <name>tcp_to_udp</name>
+        <param>
+          <type>tcp_conn</type>
+          <defname>tcp_conn</defname>
+        </param>
+        <param>
+          <type>udp_sock</type>
+          <defname>udp_sock</defname>
+        </param>
+        <param>
+          <type>udp_to_addr</type>
+          <defname>udp_to_addr</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="114" column="1" bodyfile="env/lan_sc2_env.py" bodystart="114" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1aee36eac17320044abe68836c1cac2e62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.read_tcp</definition>
+        <argsstring>(conn)</argsstring>
+        <name>read_tcp</name>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="123" column="1" bodyfile="env/lan_sc2_env.py" bodystart="123" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1adaab988a6e1afb1f3068ffee790bc421" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.read_tcp_size</definition>
+        <argsstring>(conn, size)</argsstring>
+        <name>read_tcp_size</name>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <param>
+          <type>size</type>
+          <defname>size</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Read `size` number of bytes from `conn`, retrying as needed.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="133" column="1" bodyfile="env/lan_sc2_env.py" bodystart="133" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1a3a528c599229d1ff814b2da870b0761e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.write_tcp</definition>
+        <argsstring>(conn, msg)</argsstring>
+        <name>write_tcp</name>
+        <param>
+          <type>conn</type>
+          <defname>conn</defname>
+        </param>
+        <param>
+          <type>msg</type>
+          <defname>msg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="148" column="1" bodyfile="env/lan_sc2_env.py" bodystart="148" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1lan__sc2__env_1a8382bec2e77ada186d50420c6b6e2c49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.forward_ports</definition>
+        <argsstring>(remote_host, local_host, local_listen_ports, remote_listen_ports)</argsstring>
+        <name>forward_ports</name>
+        <param>
+          <type>remote_host</type>
+          <defname>remote_host</defname>
+        </param>
+        <param>
+          <type>local_host</type>
+          <defname>local_host</defname>
+        </param>
+        <param>
+          <type>local_listen_ports</type>
+          <defname>local_listen_ports</defname>
+        </param>
+        <param>
+          <type>remote_listen_ports</type>
+          <defname>remote_listen_ports</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Forwards ports such that multiplayer works between machines.
+
+Args:
+  remote_host: Where to ssh to.
+  local_host: &quot;127.0.0.1&quot; or &quot;::1&quot;.
+  local_listen_ports: Which ports to listen on locally to forward remotely.
+  remote_listen_ports: Which ports to listen on remotely to forward locally.
+
+Returns:
+  The ssh process.
+
+Raises:
+  ValueError: if it can&apos;t find ssh.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="154" column="1" bodyfile="env/lan_sc2_env.py" bodystart="155" bodyend="189"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="env/lan_sc2_env.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

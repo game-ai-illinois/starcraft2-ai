@@ -1,0 +1,117 @@
+.TH "pysc2.lib.sc_process.StarcraftProcess" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.sc_process.StarcraftProcess
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, run_config, exec_path, \fBversion\fP, full_screen=False, extra_args=None, verbose=False, \fBhost\fP=None, \fBport\fP=None, connect=True, timeout_seconds=None, window_size=(640, 480), window_loc=(50, 50), kwargs)"
+.br
+.ti -1c
+.RI "def \fBclose\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcontroller\fP (self)"
+.br
+.ti -1c
+.RI "def \fBhost\fP (self)"
+.br
+.ti -1c
+.RI "def \fBport\fP (self)"
+.br
+.ti -1c
+.RI "def \fBversion\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__enter__\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__exit__\fP (self, unused_exception_type, unused_exc_value, unused_traceback)"
+.br
+.ti -1c
+.RI "def \fB__del__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBrunning\fP (self)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Launch a starcraft server, initialize a controller, and later, clean up.
+
+This is best used from run_configs, which decides which version to run, and
+where to find it.
+
+It is important to call `close` or use it as a context manager, otherwise
+you'll likely leak temp files and SC2 processes.
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.sc_process\&.StarcraftProcess\&.__init__ ( self,  run_config,  exec_path,  version,  full_screen = \fCFalse\fP,  extra_args = \fCNone\fP,  verbose = \fCFalse\fP,  host = \fCNone\fP,  port = \fCNone\fP,  connect = \fCTrue\fP,  timeout_seconds = \fCNone\fP,  window_size = \fC(640, 480)\fP,  window_loc = \fC(50, 50)\fP,  kwargs)"
+
+.PP
+.nf
+Launch the SC2 process.
+
+Args:
+  run_config: `run_configs.lib.RunConfig` object.
+  exec_path: Path to the binary to run.
+  version: `run_configs.lib.Version` object.
+  full_screen: Whether to launch the game window full_screen on win/mac.
+  extra_args: List of additional args for the SC2 process.
+  verbose: Whether to have the SC2 process do verbose logging.
+  host: IP for the game to listen on for its websocket. This is
+  usually "127.0.0.1", or "::1", but could be others as well.
+  port: Port SC2 should listen on for the websocket.
+  connect: Whether to create a RemoteController to connect.
+  timeout_seconds: Timeout for the remote controller.
+  window_size: Screen size if not full screen.
+  window_loc: Screen location if not full screen.
+  **kwargs: Extra arguments for _launch (useful for subclasses).
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.sc_process\&.StarcraftProcess\&.__del__ ( self)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.sc_process\&.StarcraftProcess\&.__enter__ ( self)"
+
+.SS "def pysc2\&.lib\&.sc_process\&.StarcraftProcess\&.__exit__ ( self,  unused_exception_type,  unused_exc_value,  unused_traceback)"
+
+.SS "def pysc2\&.lib\&.sc_process\&.StarcraftProcess\&.close ( self)"
+
+.PP
+.nf
+Shut down the game and clean up.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.sc_process\&.StarcraftProcess\&.controller ( self)"
+
+.SS "def pysc2\&.lib\&.sc_process\&.StarcraftProcess\&.host ( self)"
+
+.SS "def pysc2\&.lib\&.sc_process\&.StarcraftProcess\&.port ( self)"
+
+.SS "def pysc2\&.lib\&.sc_process\&.StarcraftProcess\&.running ( self)"
+
+.SS "def pysc2\&.lib\&.sc_process\&.StarcraftProcess\&.version ( self)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

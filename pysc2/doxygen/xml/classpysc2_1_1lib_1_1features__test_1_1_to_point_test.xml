@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features__test_1_1_to_point_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features_test::ToPointTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a14f6d3c6e3d2451942ef0c66a44451de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.ToPointTest.testIntAsString</definition>
+        <argsstring>(self)</argsstring>
+        <name>testIntAsString</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="213" column="1" bodyfile="lib/features_test.py" bodystart="213" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a43fc921aaffa77540dc976de5f3bd8cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.ToPointTest.testIntStringTwoTuple</definition>
+        <argsstring>(self)</argsstring>
+        <name>testIntStringTwoTuple</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="217" column="1" bodyfile="lib/features_test.py" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a4ef667637e5ccc52e0b726ef1051aa64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.ToPointTest.testNoneInputReturnsNoneOutput</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNoneInputReturnsNoneOutput</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="221" column="1" bodyfile="lib/features_test.py" bodystart="221" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1ac4272f810b837ad6728a8d1fd82e359f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.ToPointTest.testNoneAsFirstElementOfTupleRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNoneAsFirstElementOfTupleRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="225" column="1" bodyfile="lib/features_test.py" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a08a5a31ac47f983590735d071ee31188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.ToPointTest.testNoneAsSecondElementOfTupleRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNoneAsSecondElementOfTupleRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="229" column="1" bodyfile="lib/features_test.py" bodystart="229" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a58067e629bc6a94a0e7a8eaf00c1a654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.ToPointTest.testSingletonTupleRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSingletonTupleRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="233" column="1" bodyfile="lib/features_test.py" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a78db58e7a01b6843e85527ed7782a1b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.ToPointTest.testThreeTupleRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testThreeTupleRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="237" column="1" bodyfile="lib/features_test.py" bodystart="237" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="831">
+        <label>pysc2.lib.features_test.ToPointTest</label>
+        <link refid="classpysc2_1_1lib_1_1features__test_1_1_to_point_test"/>
+        <childnode refid="832" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="832">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="833">
+        <label>pysc2.lib.features_test.ToPointTest</label>
+        <link refid="classpysc2_1_1lib_1_1features__test_1_1_to_point_test"/>
+        <childnode refid="834" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="834">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features_test.py" line="211" column="1" bodyfile="lib/features_test.py" bodystart="211" bodyend="242"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a14f6d3c6e3d2451942ef0c66a44451de" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::ToPointTest</scope><name>testIntAsString</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a43fc921aaffa77540dc976de5f3bd8cc" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::ToPointTest</scope><name>testIntStringTwoTuple</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1ac4272f810b837ad6728a8d1fd82e359f" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::ToPointTest</scope><name>testNoneAsFirstElementOfTupleRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a08a5a31ac47f983590735d071ee31188" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::ToPointTest</scope><name>testNoneAsSecondElementOfTupleRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a4ef667637e5ccc52e0b726ef1051aa64" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::ToPointTest</scope><name>testNoneInputReturnsNoneOutput</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a58067e629bc6a94a0e7a8eaf00c1a654" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::ToPointTest</scope><name>testSingletonTupleRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_to_point_test_1a78db58e7a01b6843e85527ed7782a1b8" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::ToPointTest</scope><name>testThreeTupleRaises</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

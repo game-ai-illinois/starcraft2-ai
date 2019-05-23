@@ -1,0 +1,669 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1units_1_1_neutral" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::units::Neutral</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1aededb06af968e5807534fba61ba392b6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::BattleStationMineralField</definition>
+        <argsstring></argsstring>
+        <name>BattleStationMineralField</name>
+        <initializer>=  886</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="26" column="1" bodyfile="lib/units.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a6c4353dd6fab5c38d650d5a7f52da42a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::BattleStationMineralField750</definition>
+        <argsstring></argsstring>
+        <name>BattleStationMineralField750</name>
+        <initializer>=  887</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="27" column="1" bodyfile="lib/units.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1afc8aca3b1ecd08bbfe0e9a4997cbfc41" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::CollapsibleRockTowerDebris</definition>
+        <argsstring></argsstring>
+        <name>CollapsibleRockTowerDebris</name>
+        <initializer>=  490</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="28" column="1" bodyfile="lib/units.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1afbe0a16baf1cb03a50f1169bd2c9f799" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::CollapsibleRockTowerDiagonal</definition>
+        <argsstring></argsstring>
+        <name>CollapsibleRockTowerDiagonal</name>
+        <initializer>=  588</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="29" column="1" bodyfile="lib/units.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1ac448846754dd7e60014120cbe9ac63a6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::CollapsibleRockTowerPushUnit</definition>
+        <argsstring></argsstring>
+        <name>CollapsibleRockTowerPushUnit</name>
+        <initializer>=  561</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="30" column="1" bodyfile="lib/units.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1af99c13e4d7e1575a14ce2de1c14d764c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::CollapsibleTerranTowerDebris</definition>
+        <argsstring></argsstring>
+        <name>CollapsibleTerranTowerDebris</name>
+        <initializer>=  485</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="31" column="1" bodyfile="lib/units.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a17b68d7734877039e0a529ca9601e49c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::CollapsibleTerranTowerDiagonal</definition>
+        <argsstring></argsstring>
+        <name>CollapsibleTerranTowerDiagonal</name>
+        <initializer>=  589</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="32" column="1" bodyfile="lib/units.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a7390b218ce1f46abf822197dada66ebd" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::CollapsibleTerranTowerPushUnit</definition>
+        <argsstring></argsstring>
+        <name>CollapsibleTerranTowerPushUnit</name>
+        <initializer>=  562</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="33" column="1" bodyfile="lib/units.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1aae94e67ae481648ab6042d0d4da09f0f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::CollapsibleTerranTowerPushUnitRampLeft</definition>
+        <argsstring></argsstring>
+        <name>CollapsibleTerranTowerPushUnitRampLeft</name>
+        <initializer>=  559</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="34" column="1" bodyfile="lib/units.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1acb751054dbf015881b3660bcaa702c35" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::CollapsibleTerranTowerPushUnitRampRight</definition>
+        <argsstring></argsstring>
+        <name>CollapsibleTerranTowerPushUnitRampRight</name>
+        <initializer>=  560</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="35" column="1" bodyfile="lib/units.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a78706abdd06cea1c2e9e24e1da1455d0" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::CollapsibleTerranTowerRampLeft</definition>
+        <argsstring></argsstring>
+        <name>CollapsibleTerranTowerRampLeft</name>
+        <initializer>=  590</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="36" column="1" bodyfile="lib/units.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1ae96bed90e58e1d0a092e716c4e967b50" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::CollapsibleTerranTowerRampRight</definition>
+        <argsstring></argsstring>
+        <name>CollapsibleTerranTowerRampRight</name>
+        <initializer>=  591</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="37" column="1" bodyfile="lib/units.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a28d0dd911ca2e0777e6f76d5a90ab0b8" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::DebrisRampLeft</definition>
+        <argsstring></argsstring>
+        <name>DebrisRampLeft</name>
+        <initializer>=  486</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="38" column="1" bodyfile="lib/units.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a2f3356b28866171e97553c9fb9e312ad" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::DebrisRampRight</definition>
+        <argsstring></argsstring>
+        <name>DebrisRampRight</name>
+        <initializer>=  487</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="39" column="1" bodyfile="lib/units.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a3d33f8f26dad757e183f352f9a64f2dc" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::DestructibleDebris6x6</definition>
+        <argsstring></argsstring>
+        <name>DestructibleDebris6x6</name>
+        <initializer>=  365</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="40" column="1" bodyfile="lib/units.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a113654acaba97bd91b616cdf291da063" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::DestructibleDebrisRampDiagonalHugeBLUR</definition>
+        <argsstring></argsstring>
+        <name>DestructibleDebrisRampDiagonalHugeBLUR</name>
+        <initializer>=  377</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="41" column="1" bodyfile="lib/units.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1acbb0428afd8431d0a38f3360b9234630" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::DestructibleDebrisRampDiagonalHugeULBR</definition>
+        <argsstring></argsstring>
+        <name>DestructibleDebrisRampDiagonalHugeULBR</name>
+        <initializer>=  376</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="42" column="1" bodyfile="lib/units.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a841a1c4e53107103e919e9142fd5c8b9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::DestructibleRock6x6</definition>
+        <argsstring></argsstring>
+        <name>DestructibleRock6x6</name>
+        <initializer>=  371</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="43" column="1" bodyfile="lib/units.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1ab1dcbcd47747a635b63dcbce1b118578" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::DestructibleRockEx1DiagonalHugeBLUR</definition>
+        <argsstring></argsstring>
+        <name>DestructibleRockEx1DiagonalHugeBLUR</name>
+        <initializer>=  641</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="44" column="1" bodyfile="lib/units.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a700f25838a81188ae88d01ad5e3ab78e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::KarakFemale</definition>
+        <argsstring></argsstring>
+        <name>KarakFemale</name>
+        <initializer>=  324</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="45" column="1" bodyfile="lib/units.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a1dff180e1ac116ae7bfcf83d25f7b21c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::LabMineralField</definition>
+        <argsstring></argsstring>
+        <name>LabMineralField</name>
+        <initializer>=  665</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="46" column="1" bodyfile="lib/units.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a0cd4f93ed1f225d21abda60597f9ec22" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::LabMineralField750</definition>
+        <argsstring></argsstring>
+        <name>LabMineralField750</name>
+        <initializer>=  666</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="47" column="1" bodyfile="lib/units.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a0020d30d9df9c5e7d0b6fa272d6b9601" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::MineralField</definition>
+        <argsstring></argsstring>
+        <name>MineralField</name>
+        <initializer>=  341</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="48" column="1" bodyfile="lib/units.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a0865e4778c16e17ef6531327adefb235" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::MineralField750</definition>
+        <argsstring></argsstring>
+        <name>MineralField750</name>
+        <initializer>=  483</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="49" column="1" bodyfile="lib/units.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a6682670e427abae006d5f7cb68d88989" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::ProtossVespeneGeyser</definition>
+        <argsstring></argsstring>
+        <name>ProtossVespeneGeyser</name>
+        <initializer>=  608</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="50" column="1" bodyfile="lib/units.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a7e21b8510aaf126a3662f89f982e9107" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::PurifierMineralField</definition>
+        <argsstring></argsstring>
+        <name>PurifierMineralField</name>
+        <initializer>=  884</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="51" column="1" bodyfile="lib/units.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a1fda5566b928ab5854316309a2237140" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::PurifierMineralField750</definition>
+        <argsstring></argsstring>
+        <name>PurifierMineralField750</name>
+        <initializer>=  885</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="52" column="1" bodyfile="lib/units.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a0a05126799307b48e7b42f8e312b4016" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::PurifierRichMineralField</definition>
+        <argsstring></argsstring>
+        <name>PurifierRichMineralField</name>
+        <initializer>=  796</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="53" column="1" bodyfile="lib/units.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a0f57f5ece1545db152b1f007bd1c8c2c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::PurifierRichMineralField750</definition>
+        <argsstring></argsstring>
+        <name>PurifierRichMineralField750</name>
+        <initializer>=  797</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="54" column="1" bodyfile="lib/units.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a3fa28a1c905bc5def7bc4ab27d670c3a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::PurifierVespeneGeyser</definition>
+        <argsstring></argsstring>
+        <name>PurifierVespeneGeyser</name>
+        <initializer>=  880</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="55" column="1" bodyfile="lib/units.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a22bf2bbb65fd4b300bd691a43fcb3267" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::RichMineralField</definition>
+        <argsstring></argsstring>
+        <name>RichMineralField</name>
+        <initializer>=  146</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="56" column="1" bodyfile="lib/units.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1af697f73aaa45b38a12cc4974d367629d" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::RichMineralField750</definition>
+        <argsstring></argsstring>
+        <name>RichMineralField750</name>
+        <initializer>=  147</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="57" column="1" bodyfile="lib/units.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1af12044ee001a8ea812a9bc467986bdfa" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::RichVespeneGeyser</definition>
+        <argsstring></argsstring>
+        <name>RichVespeneGeyser</name>
+        <initializer>=  344</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="58" column="1" bodyfile="lib/units.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1ac9718c3189cc9597fdc2a222c8506f54" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::Scantipede</definition>
+        <argsstring></argsstring>
+        <name>Scantipede</name>
+        <initializer>=  335</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="59" column="1" bodyfile="lib/units.py" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a8c8deae99120bbecbeef5cc77418e15c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::ShakurasVespeneGeyser</definition>
+        <argsstring></argsstring>
+        <name>ShakurasVespeneGeyser</name>
+        <initializer>=  881</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="60" column="1" bodyfile="lib/units.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1ad5919b3bb0b81202a21a4c51bbecdbfd" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::SpacePlatformGeyser</definition>
+        <argsstring></argsstring>
+        <name>SpacePlatformGeyser</name>
+        <initializer>=  343</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="61" column="1" bodyfile="lib/units.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a21f8b5ae9873d93a3f92ecfa15d44b33" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::UnbuildableBricksDestructible</definition>
+        <argsstring></argsstring>
+        <name>UnbuildableBricksDestructible</name>
+        <initializer>=  473</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="62" column="1" bodyfile="lib/units.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a45675546ddcf80a426d7e580c4636873" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::UnbuildablePlatesDestructible</definition>
+        <argsstring></argsstring>
+        <name>UnbuildablePlatesDestructible</name>
+        <initializer>=  474</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="63" column="1" bodyfile="lib/units.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1ad0bef92e86c719656fe677020bd92d40" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::UtilityBot</definition>
+        <argsstring></argsstring>
+        <name>UtilityBot</name>
+        <initializer>=  330</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="64" column="1" bodyfile="lib/units.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1af542249a0900a2dce94cf0661f841fe9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::VespeneGeyser</definition>
+        <argsstring></argsstring>
+        <name>VespeneGeyser</name>
+        <initializer>=  342</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="65" column="1" bodyfile="lib/units.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_neutral_1a97413685f1a5fd11a88c713ed304c576" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Neutral::XelNagaTower</definition>
+        <argsstring></argsstring>
+        <name>XelNagaTower</name>
+        <initializer>=  149</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="66" column="1" bodyfile="lib/units.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Neutral units.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="442">
+        <label>pysc2.lib.units.Neutral</label>
+        <link refid="classpysc2_1_1lib_1_1units_1_1_neutral"/>
+        <childnode refid="443" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="446">
+        <label>int</label>
+      </node>
+      <node id="444">
+        <label>pysc2.lib.units.Neutral</label>
+        <link refid="classpysc2_1_1lib_1_1units_1_1_neutral"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+        <childnode refid="446" relation="usage">
+          <edgelabel>XelNagaTower</edgelabel>
+          <edgelabel>UnbuildablePlatesDestructible</edgelabel>
+          <edgelabel>ShakurasVespeneGeyser</edgelabel>
+          <edgelabel>DestructibleDebris6x6</edgelabel>
+          <edgelabel>CollapsibleRockTowerPushUnit</edgelabel>
+          <edgelabel>UtilityBot</edgelabel>
+          <edgelabel>MineralField750</edgelabel>
+          <edgelabel>MineralField</edgelabel>
+          <edgelabel>DestructibleRockEx1DiagonalHugeBLUR</edgelabel>
+          <edgelabel>CollapsibleTerranTowerRampRight</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="445">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/units.py" line="24" column="1" bodyfile="lib/units.py" bodystart="24" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1aededb06af968e5807534fba61ba392b6" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>BattleStationMineralField</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a6c4353dd6fab5c38d650d5a7f52da42a" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>BattleStationMineralField750</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1afc8aca3b1ecd08bbfe0e9a4997cbfc41" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>CollapsibleRockTowerDebris</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1afbe0a16baf1cb03a50f1169bd2c9f799" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>CollapsibleRockTowerDiagonal</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1ac448846754dd7e60014120cbe9ac63a6" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>CollapsibleRockTowerPushUnit</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1af99c13e4d7e1575a14ce2de1c14d764c" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>CollapsibleTerranTowerDebris</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a17b68d7734877039e0a529ca9601e49c" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>CollapsibleTerranTowerDiagonal</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a7390b218ce1f46abf822197dada66ebd" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>CollapsibleTerranTowerPushUnit</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1aae94e67ae481648ab6042d0d4da09f0f" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>CollapsibleTerranTowerPushUnitRampLeft</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1acb751054dbf015881b3660bcaa702c35" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>CollapsibleTerranTowerPushUnitRampRight</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a78706abdd06cea1c2e9e24e1da1455d0" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>CollapsibleTerranTowerRampLeft</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1ae96bed90e58e1d0a092e716c4e967b50" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>CollapsibleTerranTowerRampRight</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a28d0dd911ca2e0777e6f76d5a90ab0b8" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>DebrisRampLeft</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a2f3356b28866171e97553c9fb9e312ad" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>DebrisRampRight</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a3d33f8f26dad757e183f352f9a64f2dc" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>DestructibleDebris6x6</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a113654acaba97bd91b616cdf291da063" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>DestructibleDebrisRampDiagonalHugeBLUR</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1acbb0428afd8431d0a38f3360b9234630" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>DestructibleDebrisRampDiagonalHugeULBR</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a841a1c4e53107103e919e9142fd5c8b9" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>DestructibleRock6x6</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1ab1dcbcd47747a635b63dcbce1b118578" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>DestructibleRockEx1DiagonalHugeBLUR</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a700f25838a81188ae88d01ad5e3ab78e" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>KarakFemale</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a1dff180e1ac116ae7bfcf83d25f7b21c" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>LabMineralField</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a0cd4f93ed1f225d21abda60597f9ec22" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>LabMineralField750</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a0020d30d9df9c5e7d0b6fa272d6b9601" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>MineralField</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a0865e4778c16e17ef6531327adefb235" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>MineralField750</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a6682670e427abae006d5f7cb68d88989" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>ProtossVespeneGeyser</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a7e21b8510aaf126a3662f89f982e9107" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>PurifierMineralField</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a1fda5566b928ab5854316309a2237140" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>PurifierMineralField750</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a0a05126799307b48e7b42f8e312b4016" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>PurifierRichMineralField</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a0f57f5ece1545db152b1f007bd1c8c2c" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>PurifierRichMineralField750</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a3fa28a1c905bc5def7bc4ab27d670c3a" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>PurifierVespeneGeyser</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a22bf2bbb65fd4b300bd691a43fcb3267" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>RichMineralField</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1af697f73aaa45b38a12cc4974d367629d" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>RichMineralField750</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1af12044ee001a8ea812a9bc467986bdfa" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>RichVespeneGeyser</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1ac9718c3189cc9597fdc2a222c8506f54" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>Scantipede</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a8c8deae99120bbecbeef5cc77418e15c" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>ShakurasVespeneGeyser</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1ad5919b3bb0b81202a21a4c51bbecdbfd" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>SpacePlatformGeyser</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a21f8b5ae9873d93a3f92ecfa15d44b33" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>UnbuildableBricksDestructible</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a45675546ddcf80a426d7e580c4636873" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>UnbuildablePlatesDestructible</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1ad0bef92e86c719656fe677020bd92d40" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>UtilityBot</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1af542249a0900a2dce94cf0661f841fe9" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>VespeneGeyser</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_neutral_1a97413685f1a5fd11a88c713ed304c576" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Neutral</scope><name>XelNagaTower</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+.TH "pysc2.lib.renderer_human" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.renderer_human
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fB_Surface\fP"
+.br
+.ti -1c
+.RI "class \fBActionCmd\fP"
+.br
+.ti -1c
+.RI "class \fBMouseButtons\fP"
+.br
+.ti -1c
+.RI "class \fBMousePos\fP"
+.br
+.ti -1c
+.RI "class \fBPastAction\fP"
+.br
+.ti -1c
+.RI "class \fBRendererHuman\fP"
+.br
+.ti -1c
+.RI "class \fBSurfType\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBwith_lock\fP (lock)"
+.br
+.ti -1c
+.RI "def \fBclamp\fP (n, smallest, largest)"
+.br
+.ti -1c
+.RI "def \fBcircle_mask\fP (shape, pt, radius)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBsw\fP = stopwatch\&.sw"
+.br
+.ti -1c
+.RI "\fBrender_lock\fP = threading\&.Lock()"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.renderer_human\&.circle_mask ( shape,  pt,  radius)"
+
+.SS "def pysc2\&.lib\&.renderer_human\&.clamp ( n,  smallest,  largest)"
+
+.SS "def pysc2\&.lib\&.renderer_human\&.with_lock ( lock)"
+
+.PP
+.nf
+Make sure the lock is held while in this function.
+.fi
+.PP
+ 
+.SH "Variable Documentation"
+.PP 
+.SS "pysc2\&.lib\&.renderer_human\&.render_lock = threading\&.Lock()"
+
+.SS "pysc2\&.lib\&.renderer_human\&.sw = stopwatch\&.sw"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

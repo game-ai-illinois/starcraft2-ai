@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::mock_sc2_env::SC2TestEnv</compoundname>
+    <basecompoundref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment" prot="public" virt="non-virtual">pysc2.env.mock_sc2_env._TestEnvironment</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a52f34f13c5f57f73e218cc1cd9a45139" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.mock_sc2_env.SC2TestEnv::_features</definition>
+        <argsstring></argsstring>
+        <name>_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env.py" line="224" column="1" bodyfile="env/mock_sc2_env.py" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a21adbb6c71fbb4da2f27281744f06fa6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.mock_sc2_env.SC2TestEnv::episode_length</definition>
+        <argsstring></argsstring>
+        <name>episode_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env.py" line="232" column="1" bodyfile="env/mock_sc2_env.py" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a1b3b490081a13ad71d95e11ea649c467" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env.SC2TestEnv.__init__</definition>
+        <argsstring>(self, _only_use_kwargs=None, map_name=None, players=None, agent_interface_format=None, discount=1., visualize=False, step_mul=None, save_replay_episodes=0, replay_dir=None, game_steps_per_episode=None, score_index=None, score_multiplier=None, random_seed=None, disable_fog=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>_only_use_kwargs</type>
+          <defname>_only_use_kwargs</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>map_name</type>
+          <defname>map_name</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>players</type>
+          <defname>players</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>agent_interface_format</type>
+          <defname>agent_interface_format</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>discount</type>
+          <defname>discount</defname>
+          <defval>1.</defval>
+        </param>
+        <param>
+          <type>visualize</type>
+          <defname>visualize</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>step_mul</type>
+          <defname>step_mul</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>save_replay_episodes</type>
+          <defname>save_replay_episodes</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>replay_dir</type>
+          <defname>replay_dir</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>game_steps_per_episode</type>
+          <defname>game_steps_per_episode</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>score_index</type>
+          <defname>score_index</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>score_multiplier</type>
+          <defname>score_multiplier</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>random_seed</type>
+          <defname>random_seed</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>disable_fog</type>
+          <defname>disable_fog</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initializes an SC2TestEnv.
+
+Args:
+  _only_use_kwargs: Don&apos;t pass args, only kwargs.
+  map_name: Map name. Ignored.
+  players: A list of Agent and Bot instances that specify who will play.
+  agent_interface_format: A sequence containing one AgentInterfaceFormat
+per agent, matching the order of agents specified in the players list.
+Or a single AgentInterfaceFormat to be used for all agents.
+  discount: Unused.
+  visualize: Unused.
+  step_mul: Unused.
+  save_replay_episodes: Unused.
+  replay_dir: Unused.
+  game_steps_per_episode: Unused.
+  score_index: Unused.
+  score_multiplier: Unused.
+  random_seed: Unused.
+  disable_fog: Unused.
+
+Raises:
+  ValueError: if args are passed.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env.py" line="155" column="1" bodyfile="env/mock_sc2_env.py" bodystart="169" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1ad9a54c6db41759dbfd25d042552fbb61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env.SC2TestEnv.save_replay</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>save_replay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Does nothing.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env.py" line="234" column="1" bodyfile="env/mock_sc2_env.py" bodystart="234" bodyend="236"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a6abbcb6d32234f34a351098624c1b628" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env.SC2TestEnv._default_observation</definition>
+        <argsstring>(self, obs_spec, agent_index)</argsstring>
+        <name>_default_observation</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs_spec</type>
+          <defname>obs_spec</defname>
+        </param>
+        <param>
+          <type>agent_index</type>
+          <defname>agent_index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns a mock observation from an SC2Env.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env.py" line="237" column="1" bodyfile="env/mock_sc2_env.py" bodystart="237" bodyend="252"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A TestEnvironment to swap in for `starcraft2.env.sc2_env.SC2Env`.
+
+Repeatedly returns a mock observation for 10 calls to `step` whereupon it
+sets discount to 0. and changes state to READY_TO_END_EPISODE.
+
+Example:
+
+```
+@mock.patch(
+    &apos;starcraft2.env.sc2_env.SC2Env&apos;,
+    mock_sc2_env.SC2TestEnv)
+def test_method(self):
+  env = sc2_env.SC2Env(&apos;nonexisting map&apos;)  # Really a SC2TestEnv.
+  ...
+```
+
+See base class for more details.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="609">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="610" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="608">
+        <label>pysc2.env.mock_sc2_env._TestEnvironment</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment"/>
+        <childnode refid="609" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="610">
+        <label>object</label>
+      </node>
+      <node id="607">
+        <label>pysc2.env.mock_sc2_env.SC2TestEnv</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env"/>
+        <childnode refid="608" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="613">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="614" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="612">
+        <label>pysc2.env.mock_sc2_env._TestEnvironment</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment"/>
+        <childnode refid="613" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="614">
+        <label>object</label>
+      </node>
+      <node id="611">
+        <label>pysc2.env.mock_sc2_env.SC2TestEnv</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env"/>
+        <childnode refid="612" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="env/mock_sc2_env.py" line="135" column="1" bodyfile="env/mock_sc2_env.py" bodystart="135" bodyend="252"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a1b3b490081a13ad71d95e11ea649c467" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1ad3acb8d357a313a916e134895503f4bd" prot="public" virt="non-virtual" ambiguityscope="pysc2::env::mock_sc2_env::_TestEnvironment."><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a6abbcb6d32234f34a351098624c1b628" prot="private" virt="non-virtual"><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>_default_observation</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a52f34f13c5f57f73e218cc1cd9a45139" prot="private" virt="non-virtual"><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>_features</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1ae7ce75b41709291c06f255bf682172bb" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>action_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a21adbb6c71fbb4da2f27281744f06fa6" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>episode_length</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1ae8d2e3dc5088a409252d626f2d35203d" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>next_timestep</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a231da0c879e81efdb7a929be37f22311" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>observation_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a995a511044613e7d5f4452a6238cd3eb" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>reset</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1ad9a54c6db41759dbfd25d042552fbb61" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>save_replay</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1affd351d46e26ada4c242072c08418ae1" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env::SC2TestEnv</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

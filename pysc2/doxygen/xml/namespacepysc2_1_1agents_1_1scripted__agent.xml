@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1agents_1_1scripted__agent" kind="namespace" language="Python">
+    <compoundname>pysc2::agents::scripted_agent</compoundname>
+    <innerclass refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards" prot="public">pysc2::agents::scripted_agent::CollectMineralShards</innerclass>
+    <innerclass refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units" prot="public">pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</innerclass>
+    <innerclass refid="classpysc2_1_1agents_1_1scripted__agent_1_1_defeat_roaches" prot="public">pysc2::agents::scripted_agent::DefeatRoaches</innerclass>
+    <innerclass refid="classpysc2_1_1agents_1_1scripted__agent_1_1_move_to_beacon" prot="public">pysc2::agents::scripted_agent::MoveToBeacon</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1agents_1_1scripted__agent_1ab5515bb443275f097bac6f243abea61d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::agents::scripted_agent._PLAYER_SELF</definition>
+        <argsstring></argsstring>
+        <name>_PLAYER_SELF</name>
+        <initializer>=  features.PlayerRelative.SELF</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="26" column="1" bodyfile="agents/scripted_agent.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1agents_1_1scripted__agent_1a933e6895f748d9f92e34f5aefa01d223" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::agents::scripted_agent._PLAYER_NEUTRAL</definition>
+        <argsstring></argsstring>
+        <name>_PLAYER_NEUTRAL</name>
+        <initializer>=  features.PlayerRelative.NEUTRAL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="27" column="1" bodyfile="agents/scripted_agent.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1agents_1_1scripted__agent_1ac3e275dc871f900adc4c376e727c6933" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::agents::scripted_agent._PLAYER_ENEMY</definition>
+        <argsstring></argsstring>
+        <name>_PLAYER_ENEMY</name>
+        <initializer>=  features.PlayerRelative.ENEMY</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="28" column="1" bodyfile="agents/scripted_agent.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1agents_1_1scripted__agent_1ad8d2653e73869b6a677af4802071848a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::agents::scripted_agent.FUNCTIONS</definition>
+        <argsstring></argsstring>
+        <name>FUNCTIONS</name>
+        <initializer>=  actions.FUNCTIONS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="30" column="1" bodyfile="agents/scripted_agent.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1agents_1_1scripted__agent_1a039982216b8908e11d42a09a538ffa63" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.agents.scripted_agent._xy_locs</definition>
+        <argsstring>(mask)</argsstring>
+        <name>_xy_locs</name>
+        <param>
+          <type>mask</type>
+          <defname>mask</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Mask should be a set of bools from comparison with a feature layer.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="33" column="1" bodyfile="agents/scripted_agent.py" bodystart="33" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agents/scripted_agent.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1remote__controller" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::remote_controller</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1remote__controller_1_1_connect_error" prot="public">pysc2::lib::remote_controller::ConnectError</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller" prot="public">pysc2::lib::remote_controller::RemoteController</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1remote__controller_1_1_request_error" prot="public">pysc2::lib::remote_controller::RequestError</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1remote__controller_1a89070c143c0a826424cc4e556f2c86ec" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::remote_controller.sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <initializer>=  stopwatch.sw</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="32" column="1" bodyfile="lib/remote_controller.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1remote__controller_1a5617a762b1212f364946016f69def53f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::remote_controller.Status</definition>
+        <argsstring></argsstring>
+        <name>Status</name>
+        <initializer>=  protocol.Status</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="34" column="1" bodyfile="lib/remote_controller.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1remote__controller_1a834075572df5617084fb9618de135fc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.check_error</definition>
+        <argsstring>(res, error_enum)</argsstring>
+        <name>check_error</name>
+        <param>
+          <type>res</type>
+          <defname>res</defname>
+        </param>
+        <param>
+          <type>error_enum</type>
+          <defname>error_enum</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Raise if the result has an error, otherwise return the result.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="48" column="1" bodyfile="lib/remote_controller.py" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1remote__controller_1a469c0be9c668884747bc6317be726499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.decorate_check_error</definition>
+        <argsstring>(error_enum)</argsstring>
+        <name>decorate_check_error</name>
+        <param>
+          <type>error_enum</type>
+          <defname>error_enum</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Decorator to call `check_error` on the return value.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="58" column="1" bodyfile="lib/remote_controller.py" bodystart="58" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1remote__controller_1a52dd1ac8e959e3c832344293a330a92a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.skip_status</definition>
+        <argsstring>(skipped)</argsstring>
+        <name>skip_status</name>
+        <param>
+          <type>skipped</type>
+          <defname>skipped</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Decorator to skip this call if we&apos;re in one of the skipped states.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="68" column="1" bodyfile="lib/remote_controller.py" bodystart="68" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1remote__controller_1a8c5dd194ab269c652caa84cb3cf55188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.valid_status</definition>
+        <argsstring>(valid)</argsstring>
+        <name>valid_status</name>
+        <param>
+          <type>valid</type>
+          <defname>valid</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Decorator to assert that we&apos;re in a valid state.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="79" column="1" bodyfile="lib/remote_controller.py" bodystart="79" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/remote_controller.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

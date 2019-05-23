@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1actions_1_1_valid_actions" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::actions::ValidActions</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">types</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">functions</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1actions_1_1_valid_actions_1adf408abf8a6fbb60ad1808b02b94844a" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.actions.ValidActions::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="1092" column="1" bodyfile="lib/actions.py" bodystart="1092" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>The set of types and functions that are valid for an agent to use.
+
+Attributes:
+  types: A namedtuple of the types that the functions require. Unlike TYPES
+      above, this includes the sizes for screen and minimap.
+  functions: A namedtuple of all the functions.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="860">
+        <label>functions</label>
+      </node>
+      <node id="857">
+        <label>pysc2.lib.actions.ValidActions</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_valid_actions"/>
+        <childnode refid="858" relation="public-inheritance">
+        </childnode>
+        <childnode refid="859" relation="public-inheritance">
+        </childnode>
+        <childnode refid="860" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="858">
+        <label>namedtuple</label>
+      </node>
+      <node id="859">
+        <label>types</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="864">
+        <label>functions</label>
+      </node>
+      <node id="861">
+        <label>pysc2.lib.actions.ValidActions</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_valid_actions"/>
+        <childnode refid="862" relation="public-inheritance">
+        </childnode>
+        <childnode refid="863" relation="public-inheritance">
+        </childnode>
+        <childnode refid="864" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="862">
+        <label>namedtuple</label>
+      </node>
+      <node id="863">
+        <label>types</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/actions.py" line="1083" column="1" bodyfile="lib/actions.py" bodystart="1084" bodyend="1093"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_valid_actions_1adf408abf8a6fbb60ad1808b02b94844a" prot="private" virt="non-virtual"><scope>pysc2::lib::actions::ValidActions</scope><name>__slots__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

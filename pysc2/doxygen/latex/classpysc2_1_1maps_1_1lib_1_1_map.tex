@@ -1,0 +1,149 @@
+\hypertarget{classpysc2_1_1maps_1_1lib_1_1_map}{}\section{pysc2.\+maps.\+lib.\+Map Class Reference}
+\label{classpysc2_1_1maps_1_1lib_1_1_map}\index{pysc2.\+maps.\+lib.\+Map@{pysc2.\+maps.\+lib.\+Map}}
+Inheritance diagram for pysc2.\+maps.\+lib.\+Map\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.592592cm]{classpysc2_1_1maps_1_1lib_1_1_map}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_a6d5499d1d1f2c0aaedbf7b7787a8ba05}{path}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_a07aee252bcbdc30771a9160cc7b604d1}{data}} (self, run\+\_\+config)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_afdbca854775c5c09c0ce09f0a532261b}{name}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_a7c2eff51fb8cf13b42fa0cfe39bd02c2}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_a9c1ce36a2df01702d5b30e3189f5b565}{all\+\_\+subclasses}} (cls)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_a4201f79683b533aaa76ee296bca9862a}{directory}} = \char`\"{}\char`\"{}
+\item 
+\mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_abbeaa1936043d4e2ac896a73952bc7cd}{filename}} = None
+\item 
+\mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_af2d3ca026051441ae2607a00f69bcab3}{download}} = None
+\item 
+int \mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_a8ad3432166948ae45fc1641e1b5e7cf2}{game\+\_\+steps\+\_\+per\+\_\+episode}} = 0
+\item 
+int \mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_a7dce4185a3d781a4fd6f6a38a0ff64aa}{step\+\_\+mul}} = 8
+\item 
+int \mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_afa81bf47be6e6d9893f91f5265e4520e}{score\+\_\+index}} = -\/1
+\item 
+int \mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_a46dae41b5720bd53a7846b4a97022951}{score\+\_\+multiplier}} = 1
+\item 
+\mbox{\hyperlink{classpysc2_1_1maps_1_1lib_1_1_map_ade47838a6cb1202f48b38235c95de6d4}{players}} = None
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Base map object to configure a map. To define a map just subclass this.
+
+Properties:
+  directory: Directory for the map
+  filename: Actual filename. You can skip the ".SC2Map" file ending.
+  download: Where to download the map.
+  game_steps_per_episode: Game steps per episode, independent of the step_mul.
+      0 (default) means no limit.
+  step_mul: How many game steps per agent step?
+  score_index: Which score to give for this map. -1 means the win/loss
+      reward. >=0 is the index into score_cumulative.
+  score_multiplier: A score multiplier to allow make small scores good.
+  players: Max number of players for this map.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_a7c2eff51fb8cf13b42fa0cfe39bd02c2}\label{classpysc2_1_1maps_1_1lib_1_1_map_a7c2eff51fb8cf13b42fa0cfe39bd02c2}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+maps.\+lib.\+Map.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_a9c1ce36a2df01702d5b30e3189f5b565}\label{classpysc2_1_1maps_1_1lib_1_1_map_a9c1ce36a2df01702d5b30e3189f5b565}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!all\+\_\+subclasses@{all\+\_\+subclasses}}
+\index{all\+\_\+subclasses@{all\+\_\+subclasses}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{all\+\_\+subclasses()}{all\_subclasses()}}
+{\footnotesize\ttfamily def pysc2.\+maps.\+lib.\+Map.\+all\+\_\+subclasses (\begin{DoxyParamCaption}\item[{}]{cls }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}An iterator over all subclasses of `cls`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_a07aee252bcbdc30771a9160cc7b604d1}\label{classpysc2_1_1maps_1_1lib_1_1_map_a07aee252bcbdc30771a9160cc7b604d1}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!data@{data}}
+\index{data@{data}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily def pysc2.\+maps.\+lib.\+Map.\+data (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{run\+\_\+config }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the map data.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_afdbca854775c5c09c0ce09f0a532261b}\label{classpysc2_1_1maps_1_1lib_1_1_map_afdbca854775c5c09c0ce09f0a532261b}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!name@{name}}
+\index{name@{name}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily def pysc2.\+maps.\+lib.\+Map.\+name (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_a6d5499d1d1f2c0aaedbf7b7787a8ba05}\label{classpysc2_1_1maps_1_1lib_1_1_map_a6d5499d1d1f2c0aaedbf7b7787a8ba05}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!path@{path}}
+\index{path@{path}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily def pysc2.\+maps.\+lib.\+Map.\+path (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The full path to the map file: directory, filename and file ending.\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_a4201f79683b533aaa76ee296bca9862a}\label{classpysc2_1_1maps_1_1lib_1_1_map_a4201f79683b533aaa76ee296bca9862a}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!directory@{directory}}
+\index{directory@{directory}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{directory}{directory}}
+{\footnotesize\ttfamily string pysc2.\+maps.\+lib.\+Map.\+directory = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_af2d3ca026051441ae2607a00f69bcab3}\label{classpysc2_1_1maps_1_1lib_1_1_map_af2d3ca026051441ae2607a00f69bcab3}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!download@{download}}
+\index{download@{download}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{download}{download}}
+{\footnotesize\ttfamily pysc2.\+maps.\+lib.\+Map.\+download = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_abbeaa1936043d4e2ac896a73952bc7cd}\label{classpysc2_1_1maps_1_1lib_1_1_map_abbeaa1936043d4e2ac896a73952bc7cd}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!filename@{filename}}
+\index{filename@{filename}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily pysc2.\+maps.\+lib.\+Map.\+filename = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_a8ad3432166948ae45fc1641e1b5e7cf2}\label{classpysc2_1_1maps_1_1lib_1_1_map_a8ad3432166948ae45fc1641e1b5e7cf2}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!game\+\_\+steps\+\_\+per\+\_\+episode@{game\+\_\+steps\+\_\+per\+\_\+episode}}
+\index{game\+\_\+steps\+\_\+per\+\_\+episode@{game\+\_\+steps\+\_\+per\+\_\+episode}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{game\+\_\+steps\+\_\+per\+\_\+episode}{game\_steps\_per\_episode}}
+{\footnotesize\ttfamily int pysc2.\+maps.\+lib.\+Map.\+game\+\_\+steps\+\_\+per\+\_\+episode = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_ade47838a6cb1202f48b38235c95de6d4}\label{classpysc2_1_1maps_1_1lib_1_1_map_ade47838a6cb1202f48b38235c95de6d4}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!players@{players}}
+\index{players@{players}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{players}{players}}
+{\footnotesize\ttfamily pysc2.\+maps.\+lib.\+Map.\+players = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_afa81bf47be6e6d9893f91f5265e4520e}\label{classpysc2_1_1maps_1_1lib_1_1_map_afa81bf47be6e6d9893f91f5265e4520e}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!score\+\_\+index@{score\+\_\+index}}
+\index{score\+\_\+index@{score\+\_\+index}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{score\+\_\+index}{score\_index}}
+{\footnotesize\ttfamily int pysc2.\+maps.\+lib.\+Map.\+score\+\_\+index = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_a46dae41b5720bd53a7846b4a97022951}\label{classpysc2_1_1maps_1_1lib_1_1_map_a46dae41b5720bd53a7846b4a97022951}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!score\+\_\+multiplier@{score\+\_\+multiplier}}
+\index{score\+\_\+multiplier@{score\+\_\+multiplier}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{score\+\_\+multiplier}{score\_multiplier}}
+{\footnotesize\ttfamily int pysc2.\+maps.\+lib.\+Map.\+score\+\_\+multiplier = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classpysc2_1_1maps_1_1lib_1_1_map_a7dce4185a3d781a4fd6f6a38a0ff64aa}\label{classpysc2_1_1maps_1_1lib_1_1_map_a7dce4185a3d781a4fd6f6a38a0ff64aa}} 
+\index{pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}!step\+\_\+mul@{step\+\_\+mul}}
+\index{step\+\_\+mul@{step\+\_\+mul}!pysc2\+::maps\+::lib\+::\+Map@{pysc2\+::maps\+::lib\+::\+Map}}
+\subsubsection{\texorpdfstring{step\+\_\+mul}{step\_mul}}
+{\footnotesize\ttfamily int pysc2.\+maps.\+lib.\+Map.\+step\+\_\+mul = 8\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+maps/\mbox{\hyperlink{maps_2lib_8py}{lib.\+py}}\end{DoxyCompactItemize}

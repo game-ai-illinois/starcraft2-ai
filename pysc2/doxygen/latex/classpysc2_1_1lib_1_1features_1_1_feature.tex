@@ -1,0 +1,95 @@
+\hypertarget{classpysc2_1_1lib_1_1features_1_1_feature}{}\section{pysc2.\+lib.\+features.\+Feature Class Reference}
+\label{classpysc2_1_1lib_1_1features_1_1_feature}\index{pysc2.\+lib.\+features.\+Feature@{pysc2.\+lib.\+features.\+Feature}}
+Inheritance diagram for pysc2.\+lib.\+features.\+Feature\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{classpysc2_1_1lib_1_1features_1_1_feature}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_feature_a840859c8cc0f2bc3c80b665a38e879d7}{unpack}} (self, obs)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_feature_a08f6ecbdfc49803c7221b5948d91df9e}{color}} (self, plane)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_feature_ae2deeb3c743654425193f0b225c388e8}{unpack\+\_\+layer}} (plane)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_feature_addc5dd18d59ef32762876df736f4509d}{unpack\+\_\+rgb\+\_\+image}} (plane)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dictionary \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_feature_a3d5ce47166a2026a4370d0bfb1857a91}{dtypes}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Define properties of a feature layer.
+
+Attributes:
+  index: Index of this layer into the set of layers.
+  name: The name of the layer within the set.
+  layer_set: Which set of feature layers to look at in the observation proto.
+  full_name: The full name including for visualization.
+  scale: Max value (+1) of this layer, used to scale the values.
+  type: A FeatureType for scalar vs categorical.
+  palette: A color palette for rendering.
+  clip: Whether to clip the values for coloring.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_feature_a08f6ecbdfc49803c7221b5948d91df9e}\label{classpysc2_1_1lib_1_1features_1_1_feature_a08f6ecbdfc49803c7221b5948d91df9e}} 
+\index{pysc2\+::lib\+::features\+::\+Feature@{pysc2\+::lib\+::features\+::\+Feature}!color@{color}}
+\index{color@{color}!pysc2\+::lib\+::features\+::\+Feature@{pysc2\+::lib\+::features\+::\+Feature}}
+\subsubsection{\texorpdfstring{color()}{color()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Feature.\+color (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plane }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_feature_a840859c8cc0f2bc3c80b665a38e879d7}\label{classpysc2_1_1lib_1_1features_1_1_feature_a840859c8cc0f2bc3c80b665a38e879d7}} 
+\index{pysc2\+::lib\+::features\+::\+Feature@{pysc2\+::lib\+::features\+::\+Feature}!unpack@{unpack}}
+\index{unpack@{unpack}!pysc2\+::lib\+::features\+::\+Feature@{pysc2\+::lib\+::features\+::\+Feature}}
+\subsubsection{\texorpdfstring{unpack()}{unpack()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Feature.\+unpack (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a correctly shaped numpy array for this feature.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_feature_ae2deeb3c743654425193f0b225c388e8}\label{classpysc2_1_1lib_1_1features_1_1_feature_ae2deeb3c743654425193f0b225c388e8}} 
+\index{pysc2\+::lib\+::features\+::\+Feature@{pysc2\+::lib\+::features\+::\+Feature}!unpack\+\_\+layer@{unpack\+\_\+layer}}
+\index{unpack\+\_\+layer@{unpack\+\_\+layer}!pysc2\+::lib\+::features\+::\+Feature@{pysc2\+::lib\+::features\+::\+Feature}}
+\subsubsection{\texorpdfstring{unpack\+\_\+layer()}{unpack\_layer()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Feature.\+unpack\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Return a correctly shaped numpy array given the feature layer bytes.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_feature_addc5dd18d59ef32762876df736f4509d}\label{classpysc2_1_1lib_1_1features_1_1_feature_addc5dd18d59ef32762876df736f4509d}} 
+\index{pysc2\+::lib\+::features\+::\+Feature@{pysc2\+::lib\+::features\+::\+Feature}!unpack\+\_\+rgb\+\_\+image@{unpack\+\_\+rgb\+\_\+image}}
+\index{unpack\+\_\+rgb\+\_\+image@{unpack\+\_\+rgb\+\_\+image}!pysc2\+::lib\+::features\+::\+Feature@{pysc2\+::lib\+::features\+::\+Feature}}
+\subsubsection{\texorpdfstring{unpack\+\_\+rgb\+\_\+image()}{unpack\_rgb\_image()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Feature.\+unpack\+\_\+rgb\+\_\+image (\begin{DoxyParamCaption}\item[{}]{plane }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Return a correctly shaped numpy array given the image bytes.\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_feature_a3d5ce47166a2026a4370d0bfb1857a91}\label{classpysc2_1_1lib_1_1features_1_1_feature_a3d5ce47166a2026a4370d0bfb1857a91}} 
+\index{pysc2\+::lib\+::features\+::\+Feature@{pysc2\+::lib\+::features\+::\+Feature}!dtypes@{dtypes}}
+\index{dtypes@{dtypes}!pysc2\+::lib\+::features\+::\+Feature@{pysc2\+::lib\+::features\+::\+Feature}}
+\subsubsection{\texorpdfstring{dtypes}{dtypes}}
+{\footnotesize\ttfamily dictionary pysc2.\+lib.\+features.\+Feature.\+dtypes\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=  \{
+      1: np.uint8,
+      8: np.uint8,
+      16: np.uint16,
+      32: np.int32,
+  \}
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{features_8py}{features.\+py}}\end{DoxyCompactItemize}

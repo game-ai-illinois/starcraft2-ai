@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1transform" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::transform</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1transform_1_1_chain" prot="public">pysc2::lib::transform::Chain</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1transform_1_1_linear" prot="public">pysc2::lib::transform::Linear</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord" prot="public">pysc2::lib::transform::PixelToCoord</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1transform_1_1_transform" prot="public">pysc2::lib::transform::Transform</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/transform.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,117 @@
+.TH "pysc2.lib.stopwatch.Stat" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.stopwatch.Stat
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBreset\fP (self)"
+.br
+.ti -1c
+.RI "def \fBadd\fP (self, val)"
+.br
+.ti -1c
+.RI "def \fBavg\fP (self)"
+.br
+.ti -1c
+.RI "def \fBdev\fP (self)"
+.br
+.ti -1c
+.RI "def \fBmerge\fP (self, other)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBbuild\fP (summation, average, standard_deviation, minimum, maximum, number)"
+.br
+.ti -1c
+.RI "def \fBparse\fP (s)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBnum\fP"
+.br
+.ti -1c
+.RI "\fBmin\fP"
+.br
+.ti -1c
+.RI "\fBmax\fP"
+.br
+.ti -1c
+.RI "\fBsum\fP"
+.br
+.ti -1c
+.RI "\fBsum_sq\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A set of statistics about a single value series.
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.stopwatch\&.Stat\&.__init__ ( self)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.stopwatch\&.Stat\&.__str__ ( self)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.Stat\&.add ( self,  val)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.Stat\&.avg ( self)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.Stat\&.build ( summation,  average,  standard_deviation,  minimum,  maximum,  number)\fC [static]\fP"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.Stat\&.dev ( self)"
+
+.PP
+.nf
+Standard deviation.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.stopwatch\&.Stat\&.merge ( self,  other)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.Stat\&.parse ( s)\fC [static]\fP"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.Stat\&.reset ( self)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "pysc2\&.lib\&.stopwatch\&.Stat\&.max"
+
+.SS "pysc2\&.lib\&.stopwatch\&.Stat\&.min"
+
+.SS "pysc2\&.lib\&.stopwatch\&.Stat\&.num"
+
+.SS "pysc2\&.lib\&.stopwatch\&.Stat\&.sum"
+
+.SS "pysc2\&.lib\&.stopwatch\&.Stat\&.sum_sq"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

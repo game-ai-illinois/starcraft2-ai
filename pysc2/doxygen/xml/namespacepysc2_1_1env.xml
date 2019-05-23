@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1env" kind="namespace" language="Python">
+    <compoundname>pysc2::env</compoundname>
+    <innernamespace refid="namespacepysc2_1_1env_1_1available__actions__printer">pysc2::env::available_actions_printer</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1env_1_1base__env__wrapper">pysc2::env::base_env_wrapper</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1env_1_1environment">pysc2::env::environment</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1env_1_1lan__sc2__env">pysc2::env::lan_sc2_env</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1env_1_1mock__sc2__env">pysc2::env::mock_sc2_env</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1env_1_1mock__sc2__env__comparison__test">pysc2::env::mock_sc2_env_comparison_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1env_1_1mock__sc2__env__test">pysc2::env::mock_sc2_env_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1env_1_1remote__sc2__env">pysc2::env::remote_sc2_env</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1env_1_1run__loop">pysc2::env::run_loop</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1env_1_1sc2__env">pysc2::env::sc2_env</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="env/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

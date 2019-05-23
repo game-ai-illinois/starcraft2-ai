@@ -1,0 +1,82 @@
+.TH "pysc2.env.remote_sc2_env.RemoteSC2Env" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.env.remote_sc2_env.RemoteSC2Env
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBpysc2\&.env\&.sc2_env\&.SC2Env\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, _only_use_kwargs=None, map_name=None, host='127\&.0\&.0\&.1', host_port=None, lan_port=None, race=None, agent_interface_format=None, discount=1\&., visualize=False, step_mul=None, replay_dir=None)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A Remote Starcraft II environment for playing vs other agents or humans.
+
+Unlike SC2Env, this doesn't actually start any instances and only connects
+to a remote instance.
+
+This assumes a 2 player game, and works best with play_vs_agent.py.
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.env\&.remote_sc2_env\&.RemoteSC2Env\&.__init__ ( self,  _only_use_kwargs = \fCNone\fP,  map_name = \fCNone\fP,  host = \fC'127\&.0\&.0\&.1'\fP,  host_port = \fCNone\fP,  lan_port = \fCNone\fP,  race = \fCNone\fP,  agent_interface_format = \fCNone\fP,  discount = \fC1\&.\fP,  visualize = \fCFalse\fP,  step_mul = \fCNone\fP,  replay_dir = \fCNone\fP)"
+
+.PP
+.nf
+Create a SC2 Env that connects to a remote instance of the game.
+
+This assumes that the game is already up and running, and it only needs to
+join. You need some other script to launch the process and call
+RequestCreateGame. It also assumes that it's a multiplayer game, and that
+the ports are consecutive.
+
+You must pass a resolution that you want to play at. You can send either
+feature layer resolution or rgb resolution or both. If you send both you
+must also choose which to use as your action space. Regardless of which you
+choose you must send both the screen and minimap resolutions.
+
+For each of the 4 resolutions, either specify size or both width and
+height. If you specify size then both width and height will take that value.
+
+Args:
+  _only_use_kwargs: Don't pass args, only kwargs.
+  map_name: Name of a SC2 map. Run bin/map_list to get the full list of
+  known maps. Alternatively, pass a Map instance. Take a look at the
+  docs in maps/README.md for more information on available maps.
+  host: Host where the server is running.
+  host_port: The port for the host.
+  lan_port: Where to connect to the other SC2 instance.
+  race: Race for this agent.
+  agent_interface_format: AgentInterfaceFormat object describing the
+  format of communication between the agent and the environment.
+  discount: Returned as part of the observation.
+  visualize: Whether to pop up a window showing the camera and feature
+  layers. This won't work without access to a window manager.
+  step_mul: How many game steps per agent step (action/observation). None
+  means use the map default.
+  replay_dir: Directory to save a replay.
+
+Raises:
+  ValueError: if the race is invalid.
+  ValueError: if the resolutions aren't specified correctly.
+
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::renderer_human::ActionCmd</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Enum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd_1a481c5c5b3a9a827342d2dfa3d9f051f8" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.renderer_human.ActionCmd::STEP</definition>
+        <argsstring></argsstring>
+        <name>STEP</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="94" column="1" bodyfile="lib/renderer_human.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd_1a41f806188a045304567cbe763e982904" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.renderer_human.ActionCmd::RESTART</definition>
+        <argsstring></argsstring>
+        <name>RESTART</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="95" column="1" bodyfile="lib/renderer_human.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd_1ae18886cbd175c7d2627fc1963bcf3695" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.renderer_human.ActionCmd::QUIT</definition>
+        <argsstring></argsstring>
+        <name>QUIT</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="96" column="1" bodyfile="lib/renderer_human.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="21">
+        <label>pysc2.lib.renderer_human.ActionCmd</label>
+        <link refid="classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>Enum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="25">
+        <label>int</label>
+      </node>
+      <node id="23">
+        <label>pysc2.lib.renderer_human.ActionCmd</label>
+        <link refid="classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>RESTART</edgelabel>
+          <edgelabel>STEP</edgelabel>
+          <edgelabel>QUIT</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>Enum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/renderer_human.py" line="93" column="1" bodyfile="lib/renderer_human.py" bodystart="93" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd_1ae18886cbd175c7d2627fc1963bcf3695" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::ActionCmd</scope><name>QUIT</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd_1a41f806188a045304567cbe763e982904" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::ActionCmd</scope><name>RESTART</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd_1a481c5c5b3a9a827342d2dfa3d9f051f8" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::ActionCmd</scope><name>STEP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1features__test" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::features_test</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test" prot="public">pysc2::lib::features_test::AvailableActionsTest</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test" prot="public">pysc2::lib::features_test::DimensionsTest</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features__test_1_1_features_test" prot="public">pysc2::lib::features_test::FeaturesTest</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format" prot="public">pysc2::lib::features_test::TestParseAgentInterfaceFormat</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1features__test_1_1_to_point_test" prot="public">pysc2::lib::features_test::ToPointTest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1features__test_1adce0a02e86e8ca843a83f901dbb707fc" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string pysc2::lib::features_test.observation_text_proto</definition>
+        <argsstring></argsstring>
+        <name>observation_text_proto</name>
+        <initializer>=  &quot;&quot;&quot;
+player_common {
+  player_id: 1
+  minerals: 0
+  vespene: 0
+  food_cap: 10
+  food_used: 0
+  food_army: 0
+  food_workers: 0
+  idle_worker_count: 0
+  army_count: 0
+  warp_gate_count: 0
+  larva_count: 0
+}
+game_loop: 20
+&quot;&quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="38" column="1" bodyfile="lib/features_test.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1features__test_1ae8989bfb42e5bf07b18085dd10a25410" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::features_test.RECTANGULAR_DIMENSIONS</definition>
+        <argsstring></argsstring>
+        <name>RECTANGULAR_DIMENSIONS</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1features_1_1_dimensions" kindref="compound">features.Dimensions</ref>(screen=(84, 80), minimap=(64, 67))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="56" column="1" bodyfile="lib/features_test.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1features__test_1a88ac2c6cec70b80ef99c15b0c468ca8e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::features_test.SQUARE_DIMENSIONS</definition>
+        <argsstring></argsstring>
+        <name>SQUARE_DIMENSIONS</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1features_1_1_dimensions" kindref="compound">features.Dimensions</ref>(screen=84, minimap=64)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="57" column="1" bodyfile="lib/features_test.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/features_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

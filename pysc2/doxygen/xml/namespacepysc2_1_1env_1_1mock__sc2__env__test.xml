@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1env_1_1mock__sc2__env__test" kind="namespace" language="Python">
+    <compoundname>pysc2::env::mock_sc2_env_test</compoundname>
+    <innerclass refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin" prot="public">pysc2::env::mock_sc2_env_test::_TestMixin</innerclass>
+    <innerclass refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env" prot="public">pysc2::env::mock_sc2_env_test::TestSC2TestEnv</innerclass>
+    <innerclass refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_test_environment" prot="public">pysc2::env::mock_sc2_env_test::TestTestEnvironment</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="env/mock_sc2_env_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

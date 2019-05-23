@@ -1,0 +1,148 @@
+\hypertarget{namespacepysc2_1_1env_1_1environment}{}\section{pysc2.\+env.\+environment Namespace Reference}
+\label{namespacepysc2_1_1env_1_1environment}\index{pysc2.\+env.\+environment@{pysc2.\+env.\+environment}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1env_1_1environment_1_1_base}{Base}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1env_1_1environment_1_1_step_type}{Step\+Type}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1env_1_1environment_1_1_time_step}{Time\+Step}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1env_1_1environment_ac382d147632a99ed4f259f8f0359d1c2}{reset}} (self)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1env_1_1environment_a33a961f4eae86ee2fd8faf7bfa56ec28}{step}} (self, action)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1env_1_1environment_a0fee225a83b098e54d402bb36016a26c}{observation\+\_\+spec}} (self)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1env_1_1environment_a74074388916b1ee75fe907ba1ef89cd9}{action\+\_\+spec}} (self)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1env_1_1environment_a12f1f831e94b51902434a752e0b2785f}{close}} (self)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1env_1_1environment_a896e68af7de52dfdd215668735cb8a05}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1env_1_1environment_a2d6e14089315a0f114774a210e08737a}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, unused\+\_\+exception\+\_\+type, unused\+\_\+exc\+\_\+value, unused\+\_\+traceback)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1env_1_1environment_adb20b87cd19dde16fe8b2b12d1bf2a7d}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepysc2_1_1env_1_1environment_adb20b87cd19dde16fe8b2b12d1bf2a7d}\label{namespacepysc2_1_1env_1_1environment_adb20b87cd19dde16fe8b2b12d1bf2a7d}} 
+\index{pysc2\+::env\+::environment@{pysc2\+::env\+::environment}!\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}!pysc2\+::env\+::environment@{pysc2\+::env\+::environment}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+del\+\_\+\+\_\+()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepysc2_1_1env_1_1environment_a896e68af7de52dfdd215668735cb8a05}\label{namespacepysc2_1_1env_1_1environment_a896e68af7de52dfdd215668735cb8a05}} 
+\index{pysc2\+::env\+::environment@{pysc2\+::env\+::environment}!\+\_\+\+\_\+enter\+\_\+\+\_\+@{\+\_\+\+\_\+enter\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+enter\+\_\+\+\_\+@{\+\_\+\+\_\+enter\+\_\+\+\_\+}!pysc2\+::env\+::environment@{pysc2\+::env\+::environment}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+enter\+\_\+\+\_\+()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allows the environment to be used in a with-statement context.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1env_1_1environment_a2d6e14089315a0f114774a210e08737a}\label{namespacepysc2_1_1env_1_1environment_a2d6e14089315a0f114774a210e08737a}} 
+\index{pysc2\+::env\+::environment@{pysc2\+::env\+::environment}!\+\_\+\+\_\+exit\+\_\+\+\_\+@{\+\_\+\+\_\+exit\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+exit\+\_\+\+\_\+@{\+\_\+\+\_\+exit\+\_\+\+\_\+}!pysc2\+::env\+::environment@{pysc2\+::env\+::environment}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+exit\+\_\+\+\_\+()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{unused\+\_\+exception\+\_\+type,  }\item[{}]{unused\+\_\+exc\+\_\+value,  }\item[{}]{unused\+\_\+traceback }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allows the environment to be used in a with-statement context.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1env_1_1environment_a74074388916b1ee75fe907ba1ef89cd9}\label{namespacepysc2_1_1env_1_1environment_a74074388916b1ee75fe907ba1ef89cd9}} 
+\index{pysc2\+::env\+::environment@{pysc2\+::env\+::environment}!action\+\_\+spec@{action\+\_\+spec}}
+\index{action\+\_\+spec@{action\+\_\+spec}!pysc2\+::env\+::environment@{pysc2\+::env\+::environment}}
+\subsubsection{\texorpdfstring{action\+\_\+spec()}{action\_spec()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+action\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Defines the actions that should be provided to `step`.
+
+Returns:
+  A tuple of specs (one per agent), where each spec is something that
+    defines the shape of the actions.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1env_1_1environment_a12f1f831e94b51902434a752e0b2785f}\label{namespacepysc2_1_1env_1_1environment_a12f1f831e94b51902434a752e0b2785f}} 
+\index{pysc2\+::env\+::environment@{pysc2\+::env\+::environment}!close@{close}}
+\index{close@{close}!pysc2\+::env\+::environment@{pysc2\+::env\+::environment}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Frees any resources used by the environment.
+
+Implement this method for an environment backed by an external process.
+
+This method be used directly
+
+```python
+env = Env(...)
+# Use env.
+env.close()
+```
+
+or via a context manager
+
+```python
+with Env(...) as env:
+  # Use env.
+```
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1env_1_1environment_a0fee225a83b098e54d402bb36016a26c}\label{namespacepysc2_1_1env_1_1environment_a0fee225a83b098e54d402bb36016a26c}} 
+\index{pysc2\+::env\+::environment@{pysc2\+::env\+::environment}!observation\+\_\+spec@{observation\+\_\+spec}}
+\index{observation\+\_\+spec@{observation\+\_\+spec}!pysc2\+::env\+::environment@{pysc2\+::env\+::environment}}
+\subsubsection{\texorpdfstring{observation\+\_\+spec()}{observation\_spec()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+observation\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Defines the observations provided by the environment.
+
+Returns:
+  A tuple of specs (one per agent), where each spec is a dict of shape
+    tuples.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1env_1_1environment_ac382d147632a99ed4f259f8f0359d1c2}\label{namespacepysc2_1_1env_1_1environment_ac382d147632a99ed4f259f8f0359d1c2}} 
+\index{pysc2\+::env\+::environment@{pysc2\+::env\+::environment}!reset@{reset}}
+\index{reset@{reset}!pysc2\+::env\+::environment@{pysc2\+::env\+::environment}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+reset (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Abstract base class for Python RL environments.\end{DoxyVerb}
+\begin{DoxyVerb}Starts a new sequence and returns the first `TimeStep` of this sequence.
+
+Returns:
+  A `TimeStep` namedtuple containing:
+    step_type: A `StepType` of `FIRST`.
+    reward: `None`, indicating the reward is undefined.
+    discount: `None`, indicating the discount is undefined.
+    observation: A NumPy array, or a dict, list or tuple of arrays
+      corresponding to `observation_spec()`.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1env_1_1environment_a33a961f4eae86ee2fd8faf7bfa56ec28}\label{namespacepysc2_1_1env_1_1environment_a33a961f4eae86ee2fd8faf7bfa56ec28}} 
+\index{pysc2\+::env\+::environment@{pysc2\+::env\+::environment}!step@{step}}
+\index{step@{step}!pysc2\+::env\+::environment@{pysc2\+::env\+::environment}}
+\subsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{action }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the environment according to the action and returns a `TimeStep`.
+
+If the environment returned a `TimeStep` with `StepType.LAST` at the
+previous step, this call to `step` will start a new sequence and `action`
+will be ignored.
+
+This method will also start a new sequence if called after the environment
+has been constructed and `restart` has not been called. Again, in this case
+`action` will be ignored.
+
+Args:
+  action: A NumPy array, or a dict, list or tuple of arrays corresponding to
+    `action_spec()`.
+
+Returns:
+  A `TimeStep` namedtuple containing:
+    step_type: A `StepType` value.
+    reward: Reward at this timestep.
+    discount: A discount in the range [0, 1].
+    observation: A NumPy array, or a dict, list or tuple of arrays
+      corresponding to `observation_spec()`.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,59 @@
+.TH "pysc2.lib.actions.Arguments" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.actions.Arguments
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits namedtuple, screen, minimap, screen2, queued, control_group_act, control_group_id, select_point_act, select_add, select_unit_act, select_unit_id, select_worker, build_queue_id, and unload_id\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBtypes\fP (cls, kwargs)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+The full list of argument types.
+
+Take a look at TYPES and FUNCTION_TYPES for more details.
+
+Attributes:
+  screen: A point on the screen.
+  minimap: A point on the minimap.
+  screen2: The second point for a rectangle. This is needed so that no
+      function takes the same type twice.
+  queued: Whether the action should be done now or later.
+  control_group_act: What to do with the control group.
+  control_group_id: Which control group to do it with.
+  select_point_act: What to do with the unit at the point.
+  select_add: Whether to add the unit to the selection or replace it.
+  select_unit_act: What to do when selecting a unit by id.
+  select_unit_id: Which unit to select by id.
+  select_worker: What to do when selecting a worker.
+  build_queue_id: Which build queue index to target.
+  unload_id: Which unit to target in a transport/nydus/command center.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.actions\&.Arguments\&.types ( cls,  kwargs)"
+
+.PP
+.nf
+Create an Arguments of the possible Types.
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

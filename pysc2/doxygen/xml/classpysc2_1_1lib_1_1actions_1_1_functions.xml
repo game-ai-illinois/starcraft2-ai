@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1actions_1_1_functions" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::actions::Functions</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1actions_1_1_functions_1a3d765f472a53037d026459a1509160d0" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.actions.Functions::_func_list</definition>
+        <argsstring></argsstring>
+        <name>_func_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="407" column="1" bodyfile="lib/actions.py" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1actions_1_1_functions_1afd958eb92376d2a5a06f46b796e0eb92" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.actions.Functions::_func_dict</definition>
+        <argsstring></argsstring>
+        <name>_func_dict</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="408" column="1" bodyfile="lib/actions.py" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_functions_1aed31349597035050c81dcd25e5a4e9db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Functions.__init__</definition>
+        <argsstring>(self, functions)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>functions</type>
+          <defname>functions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="401" column="1" bodyfile="lib/actions.py" bodystart="401" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_functions_1a4f7c465199f65341bb825bd63de76e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Functions.__getattr__</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>__getattr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="412" column="1" bodyfile="lib/actions.py" bodystart="412" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_functions_1a3a39a75a47ed27754783141ae8089b40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Functions.__getitem__</definition>
+        <argsstring>(self, key)</argsstring>
+        <name>__getitem__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>key</type>
+          <defname>key</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="415" column="1" bodyfile="lib/actions.py" bodystart="415" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_functions_1a0b586278648ee7d86ab7636954e441c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Functions.__getstate__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__getstate__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="420" column="1" bodyfile="lib/actions.py" bodystart="420" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_functions_1afeec98d7917f5f74ece2df8d52d53eb5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Functions.__setstate__</definition>
+        <argsstring>(self, functions)</argsstring>
+        <name>__setstate__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>functions</type>
+          <defname>functions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="424" column="1" bodyfile="lib/actions.py" bodystart="424" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_functions_1ad17534c7035c7516b1605fbd15a9a0d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Functions.__iter__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__iter__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="428" column="1" bodyfile="lib/actions.py" bodystart="428" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_functions_1a1ec383fa6fb756cb62a584e86b9a756f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Functions.__len__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__len__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="431" column="1" bodyfile="lib/actions.py" bodystart="431" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_functions_1a44e72099c126871d34471a673b9d23db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Functions.__eq__</definition>
+        <argsstring>(self, other)</argsstring>
+        <name>__eq__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>other</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="434" column="1" bodyfile="lib/actions.py" bodystart="434" bodyend="440"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Represents the full set of functions.
+
+Can&apos;t use namedtuple since python3 has a limit of 255 function arguments, so
+build something similar.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="302">
+        <label>pysc2.lib.actions.Functions</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_functions"/>
+        <childnode refid="303" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="304">
+        <label>pysc2.lib.actions.Functions</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_functions"/>
+        <childnode refid="305" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/actions.py" line="394" column="1" bodyfile="lib/actions.py" bodystart="394" bodyend="441"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_functions_1a44e72099c126871d34471a673b9d23db" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Functions</scope><name>__eq__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_functions_1a4f7c465199f65341bb825bd63de76e7e" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Functions</scope><name>__getattr__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_functions_1a3a39a75a47ed27754783141ae8089b40" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Functions</scope><name>__getitem__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_functions_1a0b586278648ee7d86ab7636954e441c7" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Functions</scope><name>__getstate__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_functions_1aed31349597035050c81dcd25e5a4e9db" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Functions</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_functions_1ad17534c7035c7516b1605fbd15a9a0d7" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Functions</scope><name>__iter__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_functions_1a1ec383fa6fb756cb62a584e86b9a756f" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Functions</scope><name>__len__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_functions_1afeec98d7917f5f74ece2df8d52d53eb5" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Functions</scope><name>__setstate__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_functions_1afd958eb92376d2a5a06f46b796e0eb92" prot="private" virt="non-virtual"><scope>pysc2::lib::actions::Functions</scope><name>_func_dict</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_functions_1a3d765f472a53037d026459a1509160d0" prot="private" virt="non-virtual"><scope>pysc2::lib::actions::Functions</scope><name>_func_list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

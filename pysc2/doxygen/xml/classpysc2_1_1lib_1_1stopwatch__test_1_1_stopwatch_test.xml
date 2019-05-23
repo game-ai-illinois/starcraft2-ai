@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::stopwatch_test::StopwatchTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test_1a6a127bb92911432cfc6b2566453c3d71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch_test.StopwatchTest.testStopwatch</definition>
+        <argsstring>(self, mock_time)</argsstring>
+        <name>testStopwatch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>mock_time</type>
+          <defname>mock_time</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch_test.py" line="61" column="1" bodyfile="lib/stopwatch_test.py" bodystart="61" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test_1a5369dcd57d03704c6276c3f4838b0f0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch_test.StopwatchTest.testDivideZero</definition>
+        <argsstring>(self)</argsstring>
+        <name>testDivideZero</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch_test.py" line="98" column="1" bodyfile="lib/stopwatch_test.py" bodystart="98" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test_1a33e9450263a55fc60359d7b6407d450e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch_test.StopwatchTest.testSpeed</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSpeed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch_test.py" line="106" column="1" bodyfile="lib/stopwatch_test.py" bodystart="106" bodyend="134"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="692">
+        <label>pysc2.lib.stopwatch_test.StopwatchTest</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test"/>
+        <childnode refid="693" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="693">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="694">
+        <label>pysc2.lib.stopwatch_test.StopwatchTest</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test"/>
+        <childnode refid="695" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="695">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/stopwatch_test.py" line="58" column="1" bodyfile="lib/stopwatch_test.py" bodystart="58" bodyend="135"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test_1a5369dcd57d03704c6276c3f4838b0f0f" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch_test::StopwatchTest</scope><name>testDivideZero</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test_1a33e9450263a55fc60359d7b6407d450e" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch_test::StopwatchTest</scope><name>testSpeed</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test_1a6a127bb92911432cfc6b2566453c3d71" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch_test::StopwatchTest</scope><name>testStopwatch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::easy_scripted_test::TestEasy</compoundname>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1afd9dd7b88e7158ab14d8086ae572e330" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.tests.easy_scripted_test.TestEasy::steps</definition>
+        <argsstring></argsstring>
+        <name>steps</name>
+        <initializer>=  200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/easy_scripted_test.py" line="30" column="1" bodyfile="tests/easy_scripted_test.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1ae2a8b3a6f1f768ce20327daaba987658" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.tests.easy_scripted_test.TestEasy::step_mul</definition>
+        <argsstring></argsstring>
+        <name>step_mul</name>
+        <initializer>=  16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/easy_scripted_test.py" line="31" column="1" bodyfile="tests/easy_scripted_test.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1a53ebbfab405592290de3305fe675f5c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.easy_scripted_test.TestEasy.test_move_to_beacon</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_move_to_beacon</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/easy_scripted_test.py" line="33" column="1" bodyfile="tests/easy_scripted_test.py" bodystart="33" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1a9c8bc74aeeeda3f90f6f112c1f32768b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.easy_scripted_test.TestEasy.test_collect_mineral_shards</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_collect_mineral_shards</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/easy_scripted_test.py" line="49" column="1" bodyfile="tests/easy_scripted_test.py" bodystart="49" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1a99f272d05a7ce04dc71706df70a7d4e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.easy_scripted_test.TestEasy.test_collect_mineral_shards_feature_units</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_collect_mineral_shards_feature_units</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/easy_scripted_test.py" line="65" column="1" bodyfile="tests/easy_scripted_test.py" bodystart="65" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1a07a4825397ecbce5112a024843a5aeb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.easy_scripted_test.TestEasy.test_defeat_roaches</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_defeat_roaches</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/easy_scripted_test.py" line="82" column="1" bodyfile="tests/easy_scripted_test.py" bodystart="82" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="727">
+        <label>TestCase</label>
+      </node>
+      <node id="725">
+        <label>pysc2.tests.easy_scripted_test.TestEasy</label>
+        <link refid="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy"/>
+        <childnode refid="726" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="726">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="727" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="731">
+        <label>int</label>
+      </node>
+      <node id="730">
+        <label>TestCase</label>
+      </node>
+      <node id="728">
+        <label>pysc2.tests.easy_scripted_test.TestEasy</label>
+        <link refid="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy"/>
+        <childnode refid="729" relation="public-inheritance">
+        </childnode>
+        <childnode refid="731" relation="usage">
+          <edgelabel>steps</edgelabel>
+          <edgelabel>step_mul</edgelabel>
+        </childnode>
+      </node>
+      <node id="729">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="730" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/easy_scripted_test.py" line="29" column="1" bodyfile="tests/easy_scripted_test.py" bodystart="29" bodyend="99"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::easy_scripted_test::TestEasy</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1ae2a8b3a6f1f768ce20327daaba987658" prot="public" virt="non-virtual"><scope>pysc2::tests::easy_scripted_test::TestEasy</scope><name>step_mul</name></member>
+      <member refid="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1afd9dd7b88e7158ab14d8086ae572e330" prot="public" virt="non-virtual"><scope>pysc2::tests::easy_scripted_test::TestEasy</scope><name>steps</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::easy_scripted_test::TestEasy</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1a9c8bc74aeeeda3f90f6f112c1f32768b" prot="public" virt="non-virtual"><scope>pysc2::tests::easy_scripted_test::TestEasy</scope><name>test_collect_mineral_shards</name></member>
+      <member refid="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1a99f272d05a7ce04dc71706df70a7d4e2" prot="public" virt="non-virtual"><scope>pysc2::tests::easy_scripted_test::TestEasy</scope><name>test_collect_mineral_shards_feature_units</name></member>
+      <member refid="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1a07a4825397ecbce5112a024843a5aeb7" prot="public" virt="non-virtual"><scope>pysc2::tests::easy_scripted_test::TestEasy</scope><name>test_defeat_roaches</name></member>
+      <member refid="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy_1a53ebbfab405592290de3305fe675f5c3" prot="public" virt="non-virtual"><scope>pysc2::tests::easy_scripted_test::TestEasy</scope><name>test_move_to_beacon</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,107 @@
+.TH "pysc2.lib.actions.Function" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.actions.Function
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits namedtuple, id, name, ability_id, general_id, function_type, args, and avail_fn\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBui_func\fP (cls, id_, name, function_type, avail_fn=\fBalways\fP)"
+.br
+.ti -1c
+.RI "def \fBability\fP (cls, id_, name, function_type, ability_id, general_id=0)"
+.br
+.ti -1c
+.RI "def \fBspec\fP (cls, id_, name, args)"
+.br
+.ti -1c
+.RI "def \fB__hash__\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__call__\fP (self, args)"
+.br
+.ti -1c
+.RI "def \fBstr\fP (self, space=False)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Represents a function action.
+
+Attributes:
+  id: The function id, which is what the agent will use.
+  name: The name of the function. Should be unique.
+  ability_id: The ability id to pass to sc2.
+  general_id: 0 for normal abilities, and the ability_id of another ability if
+      it can be represented by a more general action.
+  function_type: One of the functions in FUNCTION_TYPES for how to construct
+      the sc2 action proto out of python types.
+  args: A list of the types of args passed to function_type.
+  avail_fn: For non-abilities, this function returns whether the function is
+      valid.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.actions\&.Function\&.__call__ ( self,  args)"
+
+.PP
+.nf
+A convenient way to create a FunctionCall from this Function.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.Function\&.__hash__ ( self)"
+
+.SS "def pysc2\&.lib\&.actions\&.Function\&.__str__ ( self)"
+
+.SS "def pysc2\&.lib\&.actions\&.Function\&.ability ( cls,  id_,  name,  function_type,  ability_id,  general_id = \fC0\fP)"
+
+.PP
+.nf
+Define a function represented as a game ability.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.Function\&.spec ( cls,  id_,  name,  args)"
+
+.PP
+.nf
+Create a Function to be used in ValidActions.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.Function\&.str ( self,  space = \fCFalse\fP)"
+
+.PP
+.nf
+String version. Set space=True to line them all up nicely.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.Function\&.ui_func ( cls,  id_,  name,  function_type,  avail_fn = \fC\fBalways\fP\fP)"
+
+.PP
+.nf
+Define a function representing a ui action.
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

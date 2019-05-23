@@ -1,0 +1,90 @@
+.TH "pysc2.lib.remote_controller" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.remote_controller
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBConnectError\fP"
+.br
+.ti -1c
+.RI "class \fBRemoteController\fP"
+.br
+.ti -1c
+.RI "class \fBRequestError\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBcheck_error\fP (res, error_enum)"
+.br
+.ti -1c
+.RI "def \fBdecorate_check_error\fP (error_enum)"
+.br
+.ti -1c
+.RI "def \fBskip_status\fP (skipped)"
+.br
+.ti -1c
+.RI "def \fBvalid_status\fP (valid)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBsw\fP = stopwatch\&.sw"
+.br
+.ti -1c
+.RI "\fBStatus\fP = protocol\&.Status"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.remote_controller\&.check_error ( res,  error_enum)"
+
+.PP
+.nf
+Raise if the result has an error, otherwise return the result.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.decorate_check_error ( error_enum)"
+
+.PP
+.nf
+Decorator to call `check_error` on the return value.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.skip_status ( skipped)"
+
+.PP
+.nf
+Decorator to skip this call if we're in one of the skipped states.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.remote_controller\&.valid_status ( valid)"
+
+.PP
+.nf
+Decorator to assert that we're in a valid state.
+.fi
+.PP
+ 
+.SH "Variable Documentation"
+.PP 
+.SS "pysc2\&.lib\&.remote_controller\&.Status = protocol\&.Status"
+
+.SS "pysc2\&.lib\&.remote_controller\&.sw = stopwatch\&.sw"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

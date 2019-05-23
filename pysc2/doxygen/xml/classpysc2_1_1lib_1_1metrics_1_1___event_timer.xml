@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1metrics_1_1___event_timer" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::metrics::_EventTimer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1metrics_1_1___event_timer_1a57a5b0557d7da12374767386bf2ba818" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.metrics._EventTimer.__enter__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__enter__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/metrics.py" line="24" column="1" bodyfile="lib/metrics.py" bodystart="24" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1metrics_1_1___event_timer_1a41da3f624cce120628f8f6a2d1ec3a2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.metrics._EventTimer.__exit__</definition>
+        <argsstring>(self, unused_exception_type, unused_exc_value, unused_traceback)</argsstring>
+        <name>__exit__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>unused_exception_type</type>
+          <defname>unused_exception_type</defname>
+        </param>
+        <param>
+          <type>unused_exc_value</type>
+          <defname>unused_exc_value</defname>
+        </param>
+        <param>
+          <type>unused_traceback</type>
+          <defname>unused_traceback</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/metrics.py" line="27" column="1" bodyfile="lib/metrics.py" bodystart="27" bodyend="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Example event timer to measure step and observation times.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>pysc2.lib.metrics._EventTimer</label>
+        <link refid="classpysc2_1_1lib_1_1metrics_1_1___event_timer"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>pysc2.lib.metrics._EventTimer</label>
+        <link refid="classpysc2_1_1lib_1_1metrics_1_1___event_timer"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/metrics.py" line="21" column="1" bodyfile="lib/metrics.py" bodystart="21" bodyend="31"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1metrics_1_1___event_timer_1a57a5b0557d7da12374767386bf2ba818" prot="public" virt="non-virtual"><scope>pysc2::lib::metrics::_EventTimer</scope><name>__enter__</name></member>
+      <member refid="classpysc2_1_1lib_1_1metrics_1_1___event_timer_1a41da3f624cce120628f8f6a2d1ec3a2c" prot="public" virt="non-virtual"><scope>pysc2::lib::metrics::_EventTimer</scope><name>__exit__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

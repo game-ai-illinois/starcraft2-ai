@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_feature_unit" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::FeatureUnit</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a984d41a1fb3501844c91f06db01df36e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::unit_type</definition>
+        <argsstring></argsstring>
+        <name>unit_type</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="124" column="1" bodyfile="lib/features.py" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a1851bf7e1192818d533104abefb9bebe" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::alliance</definition>
+        <argsstring></argsstring>
+        <name>alliance</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="125" column="1" bodyfile="lib/features.py" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a0ae8311cdeac1c2e6a2c8054884884bf" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="126" column="1" bodyfile="lib/features.py" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a74785179227770fa126f8c2711731cd2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::shield</definition>
+        <argsstring></argsstring>
+        <name>shield</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="127" column="1" bodyfile="lib/features.py" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1abd505bf044c3a0e9dbc0b706b55c52b9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::energy</definition>
+        <argsstring></argsstring>
+        <name>energy</name>
+        <initializer>=  4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="128" column="1" bodyfile="lib/features.py" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1ab4efafc4a507de84958c06911238097b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::cargo_space_taken</definition>
+        <argsstring></argsstring>
+        <name>cargo_space_taken</name>
+        <initializer>=  5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="129" column="1" bodyfile="lib/features.py" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a44d315908a65730ac43e35a2788bba34" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::build_progress</definition>
+        <argsstring></argsstring>
+        <name>build_progress</name>
+        <initializer>=  6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="130" column="1" bodyfile="lib/features.py" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a3e572b847d1be4468461f1859b30f237" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::health_ratio</definition>
+        <argsstring></argsstring>
+        <name>health_ratio</name>
+        <initializer>=  7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="131" column="1" bodyfile="lib/features.py" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a603ea33bd99e5bc81bcc6c0329301830" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::shield_ratio</definition>
+        <argsstring></argsstring>
+        <name>shield_ratio</name>
+        <initializer>=  8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="132" column="1" bodyfile="lib/features.py" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a67bb060d4d31601806053ff3d7a2e463" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::energy_ratio</definition>
+        <argsstring></argsstring>
+        <name>energy_ratio</name>
+        <initializer>=  9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="133" column="1" bodyfile="lib/features.py" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1acdac6d62f36fc9623ba2ea2cd328ea8f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::display_type</definition>
+        <argsstring></argsstring>
+        <name>display_type</name>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="134" column="1" bodyfile="lib/features.py" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1af878a27434fcd99e7714eacda482087f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::owner</definition>
+        <argsstring></argsstring>
+        <name>owner</name>
+        <initializer>=  11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="135" column="1" bodyfile="lib/features.py" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1ad947e850a2efadb4d6e4b6347574f260" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <initializer>=  12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="136" column="1" bodyfile="lib/features.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a450e6fffdc395bc7b3809aa5ecf8c550" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <initializer>=  13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="137" column="1" bodyfile="lib/features.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a45067cf8a883cd2233ba0462565890a2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::facing</definition>
+        <argsstring></argsstring>
+        <name>facing</name>
+        <initializer>=  14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="138" column="1" bodyfile="lib/features.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a9b25b2fc95c9397202c1e7912cb63320" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::radius</definition>
+        <argsstring></argsstring>
+        <name>radius</name>
+        <initializer>=  15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="139" column="1" bodyfile="lib/features.py" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a21224cb1c4d2caabdcc9806cd59a02cb" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::cloak</definition>
+        <argsstring></argsstring>
+        <name>cloak</name>
+        <initializer>=  16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="140" column="1" bodyfile="lib/features.py" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a64bce8f6b2d9f64bf4a372f5aa6cf220" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::is_selected</definition>
+        <argsstring></argsstring>
+        <name>is_selected</name>
+        <initializer>=  17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="141" column="1" bodyfile="lib/features.py" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a3dbaac94007fad92391a89a2bc4190cc" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::is_blip</definition>
+        <argsstring></argsstring>
+        <name>is_blip</name>
+        <initializer>=  18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="142" column="1" bodyfile="lib/features.py" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a905c1fab12f9fb2c3cfe564d63fd8ba0" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::is_powered</definition>
+        <argsstring></argsstring>
+        <name>is_powered</name>
+        <initializer>=  19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="143" column="1" bodyfile="lib/features.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a92bb15e577996b56367e18a5eade17c7" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::mineral_contents</definition>
+        <argsstring></argsstring>
+        <name>mineral_contents</name>
+        <initializer>=  20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="144" column="1" bodyfile="lib/features.py" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a351e5ddcbd5c0f193846c37757d2ea5e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::vespene_contents</definition>
+        <argsstring></argsstring>
+        <name>vespene_contents</name>
+        <initializer>=  21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="145" column="1" bodyfile="lib/features.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a7ed363d7533c5e87093934c9e8d95d56" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::cargo_space_max</definition>
+        <argsstring></argsstring>
+        <name>cargo_space_max</name>
+        <initializer>=  22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="146" column="1" bodyfile="lib/features.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1aad54c92e27aa800d72f03170ad0bb57c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::assigned_harvesters</definition>
+        <argsstring></argsstring>
+        <name>assigned_harvesters</name>
+        <initializer>=  23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="147" column="1" bodyfile="lib/features.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1ae768c5813efa8a31ee72fffb3cb51e6f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::ideal_harvesters</definition>
+        <argsstring></argsstring>
+        <name>ideal_harvesters</name>
+        <initializer>=  24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="148" column="1" bodyfile="lib/features.py" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_unit_1aa7f016cfc4f741c5998152568f1293d8" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureUnit::weapon_cooldown</definition>
+        <argsstring></argsstring>
+        <name>weapon_cooldown</name>
+        <initializer>=  25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="149" column="1" bodyfile="lib/features.py" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Indices for the `feature_unit` observations.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="267">
+        <label>pysc2.lib.features.FeatureUnit</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_feature_unit"/>
+        <childnode refid="268" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="271">
+        <label>int</label>
+      </node>
+      <node id="269">
+        <label>pysc2.lib.features.FeatureUnit</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_feature_unit"/>
+        <childnode refid="270" relation="public-inheritance">
+        </childnode>
+        <childnode refid="271" relation="usage">
+          <edgelabel>is_blip</edgelabel>
+          <edgelabel>x</edgelabel>
+          <edgelabel>cargo_space_taken</edgelabel>
+          <edgelabel>y</edgelabel>
+          <edgelabel>cargo_space_max</edgelabel>
+          <edgelabel>radius</edgelabel>
+          <edgelabel>display_type</edgelabel>
+          <edgelabel>build_progress</edgelabel>
+          <edgelabel>energy_ratio</edgelabel>
+          <edgelabel>energy</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="270">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="122" column="1" bodyfile="lib/features.py" bodystart="122" bodyend="152"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a1851bf7e1192818d533104abefb9bebe" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>alliance</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1aad54c92e27aa800d72f03170ad0bb57c" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>assigned_harvesters</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a44d315908a65730ac43e35a2788bba34" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>build_progress</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a7ed363d7533c5e87093934c9e8d95d56" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>cargo_space_max</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1ab4efafc4a507de84958c06911238097b" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>cargo_space_taken</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a21224cb1c4d2caabdcc9806cd59a02cb" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>cloak</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1acdac6d62f36fc9623ba2ea2cd328ea8f" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>display_type</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1abd505bf044c3a0e9dbc0b706b55c52b9" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>energy</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a67bb060d4d31601806053ff3d7a2e463" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>energy_ratio</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a45067cf8a883cd2233ba0462565890a2" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>facing</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a0ae8311cdeac1c2e6a2c8054884884bf" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>health</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a3e572b847d1be4468461f1859b30f237" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>health_ratio</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1ae768c5813efa8a31ee72fffb3cb51e6f" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>ideal_harvesters</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a3dbaac94007fad92391a89a2bc4190cc" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>is_blip</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a905c1fab12f9fb2c3cfe564d63fd8ba0" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>is_powered</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a64bce8f6b2d9f64bf4a372f5aa6cf220" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>is_selected</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a92bb15e577996b56367e18a5eade17c7" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>mineral_contents</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1af878a27434fcd99e7714eacda482087f" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>owner</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a9b25b2fc95c9397202c1e7912cb63320" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>radius</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a74785179227770fa126f8c2711731cd2" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>shield</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a603ea33bd99e5bc81bcc6c0329301830" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>shield_ratio</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a984d41a1fb3501844c91f06db01df36e" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>unit_type</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a351e5ddcbd5c0f193846c37757d2ea5e" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>vespene_contents</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1aa7f016cfc4f741c5998152568f1293d8" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>weapon_cooldown</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1ad947e850a2efadb4d6e4b6347574f260" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>x</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_unit_1a450e6fffdc395bc7b3809aa5ecf8c550" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureUnit</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

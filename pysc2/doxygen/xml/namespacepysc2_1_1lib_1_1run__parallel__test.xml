@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1run__parallel__test" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::run_parallel_test</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier" prot="public">pysc2::lib::run_parallel_test::Barrier</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test" prot="public">pysc2::lib::run_parallel_test::RunParallelTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1run__parallel__test_1ae7dde1edcb45cf14df1fd863e91f2080" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel_test.bad</definition>
+        <argsstring>()</argsstring>
+        <name>bad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="52" column="1" bodyfile="lib/run_parallel_test.py" bodystart="52" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/run_parallel_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

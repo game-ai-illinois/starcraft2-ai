@@ -1,0 +1,910 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::sc2_env::SC2Env</compoundname>
+    <basecompoundref refid="classpysc2_1_1env_1_1environment_1_1_base" prot="public" virt="non-virtual">pysc2.env.environment.Base</basecompoundref>
+    <derivedcompoundref refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env" prot="public" virt="non-virtual">pysc2.env.lan_sc2_env.LanSC2Env</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env" prot="public" virt="non-virtual">pysc2.env.remote_sc2_env.RemoteSC2Env</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a7e6bfdd4ef367b5786bb470d511b7a55" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_map_name</definition>
+        <argsstring></argsstring>
+        <name>_map_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="193" column="1" bodyfile="env/sc2_env.py" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ad756f0526ebc84be1da564b328a57e0a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_num_agents</definition>
+        <argsstring></argsstring>
+        <name>_num_agents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="208" column="1" bodyfile="env/sc2_env.py" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a3677d57350fe9ed1918f76e1df2e05ea" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_players</definition>
+        <argsstring></argsstring>
+        <name>_players</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="209" column="1" bodyfile="env/sc2_env.py" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ac7eafa8a2abeb4b3ee719029ce871ac1" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_discount</definition>
+        <argsstring></argsstring>
+        <name>_discount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="224" column="1" bodyfile="env/sc2_env.py" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aaa619bbd9bc1ebd0c32b24c41e91505a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_step_mul</definition>
+        <argsstring></argsstring>
+        <name>_step_mul</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="225" column="1" bodyfile="env/sc2_env.py" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a52542f12c3667afd3dbf0b3493949dca" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_save_replay_episodes</definition>
+        <argsstring></argsstring>
+        <name>_save_replay_episodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="226" column="1" bodyfile="env/sc2_env.py" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ae364c459f389c59983ac1669230a7995" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_replay_dir</definition>
+        <argsstring></argsstring>
+        <name>_replay_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="227" column="1" bodyfile="env/sc2_env.py" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1af6309f1bbc80340b9ff1af6798685690" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_random_seed</definition>
+        <argsstring></argsstring>
+        <name>_random_seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="228" column="1" bodyfile="env/sc2_env.py" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1af7d3a9690ad1c7dbf90ec279ade44cdf" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_disable_fog</definition>
+        <argsstring></argsstring>
+        <name>_disable_fog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="229" column="1" bodyfile="env/sc2_env.py" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a154caffdd75e88db1524d9214b3e3dbf" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_score_index</definition>
+        <argsstring></argsstring>
+        <name>_score_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="232" column="1" bodyfile="env/sc2_env.py" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a51e70754e1bec1207dc3ead2f764e773" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_score_multiplier</definition>
+        <argsstring></argsstring>
+        <name>_score_multiplier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="236" column="1" bodyfile="env/sc2_env.py" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a263341e6b356ac33eac907abbee2bb88" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_episode_length</definition>
+        <argsstring></argsstring>
+        <name>_episode_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="240" column="1" bodyfile="env/sc2_env.py" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a8274583a55c3c8a51e7f8dfb93a3bd8d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_run_config</definition>
+        <argsstring></argsstring>
+        <name>_run_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="244" column="1" bodyfile="env/sc2_env.py" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a6762f938855775c0f83f5111cc606968" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_parallel</definition>
+        <argsstring></argsstring>
+        <name>_parallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="245" column="1" bodyfile="env/sc2_env.py" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ac1d3712adacba9fab43c4d52a48070e5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_features</definition>
+        <argsstring></argsstring>
+        <name>_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="281" column="1" bodyfile="env/sc2_env.py" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ad95cc056296adeef3b1f302860c90b94" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_renderer_human</definition>
+        <argsstring></argsstring>
+        <name>_renderer_human</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="292" column="1" bodyfile="env/sc2_env.py" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a0495ff05141679a766496df8f1124b4b" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_metrics</definition>
+        <argsstring></argsstring>
+        <name>_metrics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="297" column="1" bodyfile="env/sc2_env.py" bodystart="297" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ac5880c07d5434e5ff9697ba2e5cb75c7" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_last_score</definition>
+        <argsstring></argsstring>
+        <name>_last_score</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="300" column="1" bodyfile="env/sc2_env.py" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1afa5fe0df5a79e74d31febcae6f098004" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_total_steps</definition>
+        <argsstring></argsstring>
+        <name>_total_steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="301" column="1" bodyfile="env/sc2_env.py" bodystart="301" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aa6c8ad18bbf23835346574183a791d9c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_episode_steps</definition>
+        <argsstring></argsstring>
+        <name>_episode_steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="302" column="1" bodyfile="env/sc2_env.py" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a6f92086195aa992856e8097d8693cf5c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_episode_count</definition>
+        <argsstring></argsstring>
+        <name>_episode_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="303" column="1" bodyfile="env/sc2_env.py" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a94e1ef342657def58223f8f253e58e99" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_obs</definition>
+        <argsstring></argsstring>
+        <name>_obs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="304" column="1" bodyfile="env/sc2_env.py" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a8f6786ff6d523d8ad4e2359c899f0035" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_state</definition>
+        <argsstring></argsstring>
+        <name>_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="305" column="1" bodyfile="env/sc2_env.py" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a8ab52e089065f61cac29e6593369e418" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_sc2_procs</definition>
+        <argsstring></argsstring>
+        <name>_sc2_procs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="331" column="1" bodyfile="env/sc2_env.py" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a3a5d71d324d45ddb718b9cd70017a8fe" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_controllers</definition>
+        <argsstring></argsstring>
+        <name>_controllers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="332" column="1" bodyfile="env/sc2_env.py" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a8faf48fe9d7ad5915e07a9f7017a5986" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_ports</definition>
+        <argsstring></argsstring>
+        <name>_ports</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="356" column="1" bodyfile="env/sc2_env.py" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aaddf6461ebb0dd07c892ad1554cafbf6" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_create_req</definition>
+        <argsstring></argsstring>
+        <name>_create_req</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="404" column="1" bodyfile="env/sc2_env.py" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a40322cc626248a619446a75ffaf711a5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.SC2Env::_join_reqs</definition>
+        <argsstring></argsstring>
+        <name>_join_reqs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="405" column="1" bodyfile="env/sc2_env.py" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ac2a49052b728228f1ed327d31ab37fcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env.__init__</definition>
+        <argsstring>(self, _only_use_kwargs=None, map_name=None, players=None, agent_race=None, bot_race=None, difficulty=None, screen_size_px=None, minimap_size_px=None, agent_interface_format=None, discount=1., visualize=False, step_mul=None, save_replay_episodes=0, replay_dir=None, game_steps_per_episode=None, score_index=None, score_multiplier=None, random_seed=None, disable_fog=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>_only_use_kwargs</type>
+          <defname>_only_use_kwargs</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>map_name</type>
+          <defname>map_name</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>players</type>
+          <defname>players</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>agent_race</type>
+          <defname>agent_race</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>bot_race</type>
+          <defname>bot_race</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>difficulty</type>
+          <defname>difficulty</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>screen_size_px</type>
+          <defname>screen_size_px</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>minimap_size_px</type>
+          <defname>minimap_size_px</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>agent_interface_format</type>
+          <defname>agent_interface_format</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>discount</type>
+          <defname>discount</defname>
+          <defval>1.</defval>
+        </param>
+        <param>
+          <type>visualize</type>
+          <defname>visualize</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>step_mul</type>
+          <defname>step_mul</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>save_replay_episodes</type>
+          <defname>save_replay_episodes</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>replay_dir</type>
+          <defname>replay_dir</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>game_steps_per_episode</type>
+          <defname>game_steps_per_episode</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>score_index</type>
+          <defname>score_index</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>score_multiplier</type>
+          <defname>score_multiplier</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>random_seed</type>
+          <defname>random_seed</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>disable_fog</type>
+          <defname>disable_fog</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create a SC2 Env.
+
+You must pass a resolution that you want to play at. You can send either
+feature layer resolution or rgb resolution or both. If you send both you
+must also choose which to use as your action space. Regardless of which you
+choose you must send both the screen and minimap resolutions.
+
+For each of the 4 resolutions, either specify size or both width and
+height. If you specify size then both width and height will take that value.
+
+Args:
+  _only_use_kwargs: Don&apos;t pass args, only kwargs.
+  map_name: Name of a SC2 map. Run bin/map_list to get the full list of
+  known maps. Alternatively, pass a Map instance. Take a look at the
+  docs in maps/README.md for more information on available maps.
+  players: A list of Agent and Bot instances that specify who will play.
+  agent_race: Deprecated. Use players instead.
+  bot_race: Deprecated. Use players instead.
+  difficulty: Deprecated. Use players instead.
+  screen_size_px: Deprecated. Use agent_interface_formats instead.
+  minimap_size_px: Deprecated. Use agent_interface_formats instead.
+  agent_interface_format: A sequence containing one AgentInterfaceFormat
+per agent, matching the order of agents specified in the players list.
+Or a single AgentInterfaceFormat to be used for all agents.
+  discount: Returned as part of the observation.
+  visualize: Whether to pop up a window showing the camera and feature
+  layers. This won&apos;t work without access to a window manager.
+  step_mul: How many game steps per agent step (action/observation). None
+  means use the map default.
+  save_replay_episodes: Save a replay after this many episodes. Default of 0
+  means don&apos;t save replays.
+  replay_dir: Directory to save replays. Required with save_replay_episodes.
+  game_steps_per_episode: Game steps per episode, independent of the
+  step_mul. 0 means no limit. None means use the map default.
+  score_index: -1 means use the win/loss reward, &gt;=0 is the index into the
+  score_cumulative with 0 being the curriculum score. None means use
+  the map default.
+  score_multiplier: How much to multiply the score by. Useful for negating.
+  random_seed: Random number seed to use when initializing the game. This
+  lets you run repeatable games/tests.
+  disable_fog: Whether to disable fog of war.
+
+Raises:
+  ValueError: if the agent_race, bot_race or difficulty are invalid.
+  ValueError: if too many players are requested for a map.
+  ValueError: if the resolutions aren&apos;t specified correctly.
+  DeprecationWarning: if screen_size_px or minimap_size_px are sent.
+  DeprecationWarning: if agent_race, bot_race or difficulty are sent.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="108" column="1" bodyfile="env/sc2_env.py" bodystart="127" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a37bf2e2d461e4268feaa30862cd520cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env.observation_spec</definition>
+        <argsstring>(self)</argsstring>
+        <name>observation_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Look at Features for full specs.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="407" column="1" bodyfile="env/sc2_env.py" bodystart="407" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1af686189f9be833a222756233fed0191f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env.action_spec</definition>
+        <argsstring>(self)</argsstring>
+        <name>action_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Look at Features for full specs.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="411" column="1" bodyfile="env/sc2_env.py" bodystart="411" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a11123fe4b74625eca2d88a2b837d681f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env.reset</definition>
+        <argsstring>(self)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Start a new episode.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="425" column="1" bodyfile="env/sc2_env.py" bodystart="425" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1afde565357f8e64e50a8e03df0c1a1d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env.step</definition>
+        <argsstring>(self, actions)</argsstring>
+        <name>step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>actions</type>
+          <defname>actions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Apply actions, step the world forward, and return observations.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="441" column="1" bodyfile="env/sc2_env.py" bodystart="441" bodyend="453"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aa4cf7a2cf39426085b9d14ef2ecac855" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env.send_chat_messages</definition>
+        <argsstring>(self, messages)</argsstring>
+        <name>send_chat_messages</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>messages</type>
+          <defname>messages</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Useful for logging messages into the replay.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="517" column="1" bodyfile="env/sc2_env.py" bodystart="517" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a55d7cb43c5efffa9cc249a5fd37cfba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env.save_replay</definition>
+        <argsstring>(self, replay_dir, prefix=None)</argsstring>
+        <name>save_replay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>replay_dir</type>
+          <defname>replay_dir</defname>
+        </param>
+        <param>
+          <type>prefix</type>
+          <defname>prefix</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="522" column="1" bodyfile="env/sc2_env.py" bodystart="522" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a87aad830e9c5bb6741e3774e685766ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env.close</definition>
+        <argsstring>(self)</argsstring>
+        <name>close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="530" column="1" bodyfile="env/sc2_env.py" bodystart="530" bodyend="553"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ae6806e458aff7a2c0fcc4094935484b7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env._finalize</definition>
+        <argsstring>(self, agent_interface_formats, interfaces, visualize)</argsstring>
+        <name>_finalize</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>agent_interface_formats</type>
+          <defname>agent_interface_formats</defname>
+        </param>
+        <param>
+          <type>interfaces</type>
+          <defname>interfaces</defname>
+        </param>
+        <param>
+          <type>visualize</type>
+          <defname>visualize</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="270" column="1" bodyfile="env/sc2_env.py" bodystart="270" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ad569909cef776f11189166dd6201ced4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env._launch_sp</definition>
+        <argsstring>(self, map_inst, interface)</argsstring>
+        <name>_launch_sp</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>map_inst</type>
+          <defname>map_inst</defname>
+        </param>
+        <param>
+          <type>interface</type>
+          <defname>interface</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="330" column="1" bodyfile="env/sc2_env.py" bodystart="330" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aa948513b418e9d2cafc510ac5dde08e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env._launch_mp</definition>
+        <argsstring>(self, map_inst, interfaces)</argsstring>
+        <name>_launch_mp</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>map_inst</type>
+          <defname>map_inst</defname>
+        </param>
+        <param>
+          <type>interfaces</type>
+          <defname>interfaces</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="354" column="1" bodyfile="env/sc2_env.py" bodystart="354" bodyend="406"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1af76f6b2dec4a4cd7547d5a885dfe43fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env._restart</definition>
+        <argsstring>(self)</argsstring>
+        <name>_restart</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="415" column="1" bodyfile="env/sc2_env.py" bodystart="415" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a6d425ce993cafb8b8355616ac84fdeb3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env._step</definition>
+        <argsstring>(self)</argsstring>
+        <name>_step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="454" column="1" bodyfile="env/sc2_env.py" bodystart="454" bodyend="516"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1adfc8a19c0cea1d7479a5fb46ee505d0c" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env.SC2Env._get_interface</definition>
+        <argsstring>(agent_interface_format, require_raw)</argsstring>
+        <name>_get_interface</name>
+        <param>
+          <type>agent_interface_format</type>
+          <defname>agent_interface_format</defname>
+        </param>
+        <param>
+          <type>require_raw</type>
+          <defname>require_raw</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="309" column="1" bodyfile="env/sc2_env.py" bodystart="309" bodyend="329"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A Starcraft II environment.
+
+The implementation details of the action and observation specs are in
+lib/features.py
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="595">
+        <label>pysc2.env.sc2_env.SC2Env</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env"/>
+        <childnode refid="596" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="596">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="597" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="598">
+        <label>pysc2.env.lan_sc2_env.LanSC2Env</label>
+        <link refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env"/>
+        <childnode refid="595" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="599">
+        <label>pysc2.env.remote_sc2_env.RemoteSC2Env</label>
+        <link refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env"/>
+        <childnode refid="595" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="597">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="600">
+        <label>pysc2.env.sc2_env.SC2Env</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env"/>
+        <childnode refid="601" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="601">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="602" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="602">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/sc2_env.py" line="101" column="1" bodyfile="env/sc2_env.py" bodystart="101" bodyend="553"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ac2a49052b728228f1ed327d31ab37fcc" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a3a5d71d324d45ddb718b9cd70017a8fe" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_controllers</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aaddf6461ebb0dd07c892ad1554cafbf6" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_create_req</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1af7d3a9690ad1c7dbf90ec279ade44cdf" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_disable_fog</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ac7eafa8a2abeb4b3ee719029ce871ac1" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_discount</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a6f92086195aa992856e8097d8693cf5c" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_episode_count</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a263341e6b356ac33eac907abbee2bb88" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_episode_length</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aa6c8ad18bbf23835346574183a791d9c" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_episode_steps</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ac1d3712adacba9fab43c4d52a48070e5" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_features</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ae6806e458aff7a2c0fcc4094935484b7" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_finalize</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1adfc8a19c0cea1d7479a5fb46ee505d0c" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_get_interface</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a40322cc626248a619446a75ffaf711a5" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_join_reqs</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ac5880c07d5434e5ff9697ba2e5cb75c7" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_last_score</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aa948513b418e9d2cafc510ac5dde08e4" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_launch_mp</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ad569909cef776f11189166dd6201ced4" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_launch_sp</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a7e6bfdd4ef367b5786bb470d511b7a55" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_map_name</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a0495ff05141679a766496df8f1124b4b" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_metrics</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ad756f0526ebc84be1da564b328a57e0a" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_num_agents</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a94e1ef342657def58223f8f253e58e99" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_obs</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a6762f938855775c0f83f5111cc606968" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_parallel</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a3677d57350fe9ed1918f76e1df2e05ea" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_players</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a8faf48fe9d7ad5915e07a9f7017a5986" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_ports</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1af6309f1bbc80340b9ff1af6798685690" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_random_seed</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ad95cc056296adeef3b1f302860c90b94" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_renderer_human</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ae364c459f389c59983ac1669230a7995" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_replay_dir</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1af76f6b2dec4a4cd7547d5a885dfe43fa" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_restart</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a8274583a55c3c8a51e7f8dfb93a3bd8d" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_run_config</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a52542f12c3667afd3dbf0b3493949dca" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_save_replay_episodes</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a8ab52e089065f61cac29e6593369e418" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_sc2_procs</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a154caffdd75e88db1524d9214b3e3dbf" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_score_index</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a51e70754e1bec1207dc3ead2f764e773" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_score_multiplier</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a8f6786ff6d523d8ad4e2359c899f0035" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_state</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a6d425ce993cafb8b8355616ac84fdeb3" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_step</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aaa619bbd9bc1ebd0c32b24c41e91505a" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_step_mul</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1afa5fe0df5a79e74d31febcae6f098004" prot="private" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>_total_steps</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1af686189f9be833a222756233fed0191f" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>action_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a87aad830e9c5bb6741e3774e685766ae" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>close</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a37bf2e2d461e4268feaa30862cd520cb" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>observation_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a11123fe4b74625eca2d88a2b837d681f" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>reset</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a55d7cb43c5efffa9cc249a5fd37cfba6" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>save_replay</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aa4cf7a2cf39426085b9d14ef2ecac855" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>send_chat_messages</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1afde565357f8e64e50a8e03df0c1a1d4c" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::SC2Env</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features_test::TestParseAgentInterfaceFormat</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1ab7e830cda6ac5cd5b2b7df2de3d3d987" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.TestParseAgentInterfaceFormat.test_no_arguments_raises</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_no_arguments_raises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="303" column="1" bodyfile="lib/features_test.py" bodystart="303" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a0aac626ffc7c5f1395a73e044b2cbbfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.TestParseAgentInterfaceFormat.test_invalid_feature_combinations_raise</definition>
+        <argsstring>(self, screen, minimap)</argsstring>
+        <name>test_invalid_feature_combinations_raise</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <param>
+          <type>minimap</type>
+          <defname>minimap</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="308" column="1" bodyfile="lib/features_test.py" bodystart="308" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a0b68ba647c6054b50fce7db1aa1510bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.TestParseAgentInterfaceFormat.test_valid_feature_specification_is_parsed</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_valid_feature_specification_is_parsed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="314" column="1" bodyfile="lib/features_test.py" bodystart="314" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a2f3976383c3c180d453170333b2ebe87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.TestParseAgentInterfaceFormat.test_invalid_minimap_combinations_raise</definition>
+        <argsstring>(self, screen, minimap)</argsstring>
+        <name>test_invalid_minimap_combinations_raise</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <param>
+          <type>minimap</type>
+          <defname>minimap</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="328" column="1" bodyfile="lib/features_test.py" bodystart="328" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a9653bf89a6d54bcb364f525432a61a67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.TestParseAgentInterfaceFormat.test_valid_minimap_specification_is_parsed</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_valid_minimap_specification_is_parsed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="334" column="1" bodyfile="lib/features_test.py" bodystart="334" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1ad09fc74c7bdbc03a947d97363e2f9e8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.TestParseAgentInterfaceFormat.test_invalid_action_space_raises</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_invalid_action_space_raises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="347" column="1" bodyfile="lib/features_test.py" bodystart="347" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a739eb383d26cc2c5a3a11caf2843ca68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.TestParseAgentInterfaceFormat.test_valid_action_space_is_parsed</definition>
+        <argsstring>(self, action_space)</argsstring>
+        <name>test_valid_action_space_is_parsed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="355" column="1" bodyfile="lib/features_test.py" bodystart="355" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a29240436a6e58284a0ab15c0f8533286" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.TestParseAgentInterfaceFormat.test_camera_width_world_units_are_parsed</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_camera_width_world_units_are_parsed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="367" column="1" bodyfile="lib/features_test.py" bodystart="367" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a097e74a89a782ff9f9922d3e2a5b0d07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.TestParseAgentInterfaceFormat.test_use_feature_units_is_parsed</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_use_feature_units_is_parsed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="375" column="1" bodyfile="lib/features_test.py" bodystart="375" bodyend="383"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="772">
+        <label>TestCase</label>
+      </node>
+      <node id="771">
+        <label>pysc2.lib.features_test.TestParseAgentInterfaceFormat</label>
+        <link refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format"/>
+        <childnode refid="772" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="774">
+        <label>TestCase</label>
+      </node>
+      <node id="773">
+        <label>pysc2.lib.features_test.TestParseAgentInterfaceFormat</label>
+        <link refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format"/>
+        <childnode refid="774" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features_test.py" line="301" column="1" bodyfile="lib/features_test.py" bodystart="301" bodyend="384"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a29240436a6e58284a0ab15c0f8533286" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::TestParseAgentInterfaceFormat</scope><name>test_camera_width_world_units_are_parsed</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1ad09fc74c7bdbc03a947d97363e2f9e8b" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::TestParseAgentInterfaceFormat</scope><name>test_invalid_action_space_raises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a0aac626ffc7c5f1395a73e044b2cbbfe" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::TestParseAgentInterfaceFormat</scope><name>test_invalid_feature_combinations_raise</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a2f3976383c3c180d453170333b2ebe87" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::TestParseAgentInterfaceFormat</scope><name>test_invalid_minimap_combinations_raise</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1ab7e830cda6ac5cd5b2b7df2de3d3d987" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::TestParseAgentInterfaceFormat</scope><name>test_no_arguments_raises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a097e74a89a782ff9f9922d3e2a5b0d07" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::TestParseAgentInterfaceFormat</scope><name>test_use_feature_units_is_parsed</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a739eb383d26cc2c5a3a11caf2843ca68" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::TestParseAgentInterfaceFormat</scope><name>test_valid_action_space_is_parsed</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a0b68ba647c6054b50fce7db1aa1510bf" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::TestParseAgentInterfaceFormat</scope><name>test_valid_feature_specification_is_parsed</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_test_parse_agent_interface_format_1a9653bf89a6d54bcb364f525432a61a67" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::TestParseAgentInterfaceFormat</scope><name>test_valid_minimap_specification_is_parsed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

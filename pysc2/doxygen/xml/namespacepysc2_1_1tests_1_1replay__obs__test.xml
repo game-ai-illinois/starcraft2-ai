@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1tests_1_1replay__obs__test" kind="namespace" language="Python">
+    <compoundname>pysc2::tests::replay_obs_test</compoundname>
+    <innerclass refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config" prot="public">pysc2::tests::replay_obs_test::Config</innerclass>
+    <innerclass refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_game_controller" prot="public">pysc2::tests::replay_obs_test::GameController</innerclass>
+    <innerclass refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test" prot="public">pysc2::tests::replay_obs_test::ReplayObsTest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1tests_1_1replay__obs__test_1a02c10df5127d62c97e1df956f7cc2dd6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pysc2::tests::replay_obs_test._EMPTY</definition>
+        <argsstring></argsstring>
+        <name>_EMPTY</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="39" column="1" bodyfile="tests/replay_obs_test.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1tests_1_1replay__obs__test_1aa910b5c6f5e70efcba9a20c60ce3af22" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::tests::replay_obs_test.printable_unit_types</definition>
+        <argsstring></argsstring>
+        <name>printable_unit_types</name>
+        <initializer>=  {
+    _EMPTY: &apos;.&apos;,
+    units.Neutral.MineralField: &apos;m&apos;,
+    units.Neutral.MineralField750: &apos;m&apos;,
+    units.Neutral.SpacePlatformGeyser: &apos;G&apos;,
+    units.Neutral.VespeneGeyser: &apos;G&apos;,
+    units.Terran.Barracks: &apos;B&apos;,
+    units.Terran.CommandCenter: &apos;C&apos;,
+    units.Terran.SCV: &apos;s&apos;,
+    units.Terran.Marine: &apos;M&apos;,
+    units.Terran.SupplyDepot: &apos;D&apos;,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="40" column="1" bodyfile="tests/replay_obs_test.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1tests_1_1replay__obs__test_1af1cc750e316025995965c17685a2d2df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.replay_obs_test.identity_function</definition>
+        <argsstring>(name, args)</argsstring>
+        <name>identity_function</name>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="54" column="1" bodyfile="tests/replay_obs_test.py" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1tests_1_1replay__obs__test_1a473c3acd9dcebe3d314c5311d81424af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.replay_obs_test.any_point</definition>
+        <argsstring>(unit_type, obs)</argsstring>
+        <name>any_point</name>
+        <param>
+          <type>unit_type</type>
+          <defname>unit_type</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="58" column="1" bodyfile="tests/replay_obs_test.py" bodystart="58" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1tests_1_1replay__obs__test_1abf760c8b64b088576c2a1ac3888e8d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.replay_obs_test.avg_point</definition>
+        <argsstring>(unit_type, obs)</argsstring>
+        <name>avg_point</name>
+        <param>
+          <type>unit_type</type>
+          <defname>unit_type</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="66" column="1" bodyfile="tests/replay_obs_test.py" bodystart="66" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1tests_1_1replay__obs__test_1a94272f64f4f32513e4e86e680cd4ef4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.replay_obs_test.select</definition>
+        <argsstring>(func, unit_type)</argsstring>
+        <name>select</name>
+        <param>
+          <type>func</type>
+          <defname>func</defname>
+        </param>
+        <param>
+          <type>unit_type</type>
+          <defname>unit_type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="74" column="1" bodyfile="tests/replay_obs_test.py" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1tests_1_1replay__obs__test_1a44d441af2eb573737a8daa0b06be663f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.replay_obs_test._obs_string</definition>
+        <argsstring>(obs)</argsstring>
+        <name>_obs_string</name>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="119" column="1" bodyfile="tests/replay_obs_test.py" bodystart="119" bodyend="142"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/replay_obs_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

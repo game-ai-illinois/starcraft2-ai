@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_effects" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::Effects</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1a13a840bd029e23e205a91edfafbaa8c3" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::PsiStorm</definition>
+        <argsstring></argsstring>
+        <name>PsiStorm</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="64" column="1" bodyfile="lib/features.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1ab74615673cebae9903287968e0b949f0" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::GuardianShield</definition>
+        <argsstring></argsstring>
+        <name>GuardianShield</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="65" column="1" bodyfile="lib/features.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1a48a90cc392c74c0c17c91229a0d8d1c4" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::TemporalFieldGrowing</definition>
+        <argsstring></argsstring>
+        <name>TemporalFieldGrowing</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="66" column="1" bodyfile="lib/features.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1aed31efb4698e8fd3c26a6cfe183c590f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::TemporalField</definition>
+        <argsstring></argsstring>
+        <name>TemporalField</name>
+        <initializer>=  4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="67" column="1" bodyfile="lib/features.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1a19f880ae3f13c285675db46675e86db6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::ThermalLance</definition>
+        <argsstring></argsstring>
+        <name>ThermalLance</name>
+        <initializer>=  5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="68" column="1" bodyfile="lib/features.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1a537c89bacceab397addc4d7cabf56042" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::ScannerSweep</definition>
+        <argsstring></argsstring>
+        <name>ScannerSweep</name>
+        <initializer>=  6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="69" column="1" bodyfile="lib/features.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1ae61b599ec15cf0cac0dfa54e7e5ffb40" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::NukeDot</definition>
+        <argsstring></argsstring>
+        <name>NukeDot</name>
+        <initializer>=  7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="70" column="1" bodyfile="lib/features.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1af0e07c05976e507275f651a7e1ca6017" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::LiberatorDefenderZoneSetup</definition>
+        <argsstring></argsstring>
+        <name>LiberatorDefenderZoneSetup</name>
+        <initializer>=  8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="71" column="1" bodyfile="lib/features.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1af0c1ed1fdfea242888e216419ca05c10" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::LiberatorDefenderZone</definition>
+        <argsstring></argsstring>
+        <name>LiberatorDefenderZone</name>
+        <initializer>=  9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="72" column="1" bodyfile="lib/features.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1aef0d51c221a9c1b80d6e7f3c11986b9d" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::BlindingCloud</definition>
+        <argsstring></argsstring>
+        <name>BlindingCloud</name>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="73" column="1" bodyfile="lib/features.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1acfd91c4b7c29f824809dbc39f0a71e04" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::CorrosiveBile</definition>
+        <argsstring></argsstring>
+        <name>CorrosiveBile</name>
+        <initializer>=  11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="74" column="1" bodyfile="lib/features.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_effects_1a9be68980993549c17e5cb108a1c75af8" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Effects::LurkerSpines</definition>
+        <argsstring></argsstring>
+        <name>LurkerSpines</name>
+        <initializer>=  12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="75" column="1" bodyfile="lib/features.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Values for the `effects` feature layer.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="221">
+        <label>pysc2.lib.features.Effects</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_effects"/>
+        <childnode refid="222" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="222">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="225">
+        <label>int</label>
+      </node>
+      <node id="223">
+        <label>pysc2.lib.features.Effects</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_effects"/>
+        <childnode refid="224" relation="public-inheritance">
+        </childnode>
+        <childnode refid="225" relation="usage">
+          <edgelabel>BlindingCloud</edgelabel>
+          <edgelabel>LiberatorDefenderZone</edgelabel>
+          <edgelabel>ThermalLance</edgelabel>
+          <edgelabel>TemporalFieldGrowing</edgelabel>
+          <edgelabel>CorrosiveBile</edgelabel>
+          <edgelabel>LurkerSpines</edgelabel>
+          <edgelabel>LiberatorDefenderZoneSetup</edgelabel>
+          <edgelabel>TemporalField</edgelabel>
+          <edgelabel>GuardianShield</edgelabel>
+          <edgelabel>PsiStorm</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="224">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="61" column="1" bodyfile="lib/features.py" bodystart="61" bodyend="79"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1aef0d51c221a9c1b80d6e7f3c11986b9d" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>BlindingCloud</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1acfd91c4b7c29f824809dbc39f0a71e04" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>CorrosiveBile</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1ab74615673cebae9903287968e0b949f0" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>GuardianShield</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1af0c1ed1fdfea242888e216419ca05c10" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>LiberatorDefenderZone</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1af0e07c05976e507275f651a7e1ca6017" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>LiberatorDefenderZoneSetup</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1a9be68980993549c17e5cb108a1c75af8" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>LurkerSpines</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1ae61b599ec15cf0cac0dfa54e7e5ffb40" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>NukeDot</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1a13a840bd029e23e205a91edfafbaa8c3" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>PsiStorm</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1a537c89bacceab397addc4d7cabf56042" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>ScannerSweep</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1aed31efb4698e8fd3c26a6cfe183c590f" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>TemporalField</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1a48a90cc392c74c0c17c91229a0d8d1c4" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>TemporalFieldGrowing</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_effects_1a19f880ae3f13c285675db46675e86db6" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Effects</scope><name>ThermalLance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

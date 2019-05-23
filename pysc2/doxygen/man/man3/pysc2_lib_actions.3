@@ -1,0 +1,457 @@
+.TH "pysc2.lib.actions" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.actions
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBActionSpace\fP"
+.br
+.ti -1c
+.RI "class \fBArguments\fP"
+.br
+.ti -1c
+.RI "class \fBArgumentType\fP"
+.br
+.ti -1c
+.RI "class \fBFunction\fP"
+.br
+.ti -1c
+.RI "class \fBFunctionCall\fP"
+.br
+.ti -1c
+.RI "class \fBFunctions\fP"
+.br
+.ti -1c
+.RI "class \fBValidActions\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBspatial\fP (action, action_space)"
+.br
+.ti -1c
+.RI "def \fBno_op\fP (action, action_space)"
+.br
+.ti -1c
+.RI "def \fBmove_camera\fP (action, action_space, minimap)"
+.br
+.ti -1c
+.RI "def \fBselect_point\fP (action, action_space, select_point_act, screen)"
+.br
+.ti -1c
+.RI "def \fBselect_rect\fP (action, action_space, select_add, screen, screen2)"
+.br
+.ti -1c
+.RI "def \fBselect_idle_worker\fP (action, action_space, select_worker)"
+.br
+.ti -1c
+.RI "def \fBselect_army\fP (action, action_space, select_add)"
+.br
+.ti -1c
+.RI "def \fBselect_warp_gates\fP (action, action_space, select_add)"
+.br
+.ti -1c
+.RI "def \fBselect_larva\fP (action, action_space)"
+.br
+.ti -1c
+.RI "def \fBselect_unit\fP (action, action_space, select_unit_act, select_unit_id)"
+.br
+.ti -1c
+.RI "def \fBcontrol_group\fP (action, action_space, control_group_act, control_group_id)"
+.br
+.ti -1c
+.RI "def \fBunload\fP (action, action_space, unload_id)"
+.br
+.ti -1c
+.RI "def \fBbuild_queue\fP (action, action_space, build_queue_id)"
+.br
+.ti -1c
+.RI "def \fBcmd_quick\fP (action, action_space, ability_id, queued)"
+.br
+.ti -1c
+.RI "def \fBcmd_screen\fP (action, action_space, ability_id, queued, screen)"
+.br
+.ti -1c
+.RI "def \fBcmd_minimap\fP (action, action_space, ability_id, queued, minimap)"
+.br
+.ti -1c
+.RI "def \fBautocast\fP (action, action_space, ability_id)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "list \fBQUEUED_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBQueued\fP"
+.br
+.ti -1c
+.RI "list \fBCONTROL_GROUP_ACT_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBControlGroupAct\fP"
+.br
+.ti -1c
+.RI "list \fBSELECT_POINT_ACT_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBSelectPointAct\fP"
+.br
+.ti -1c
+.RI "list \fBSELECT_ADD_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBSelectAdd\fP"
+.br
+.ti -1c
+.RI "list \fBSELECT_UNIT_ACT_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBSelectUnitAct\fP"
+.br
+.ti -1c
+.RI "list \fBSELECT_WORKER_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBSelectWorker\fP"
+.br
+.ti -1c
+.RI "\fBTYPES\fP"
+.br
+.ti -1c
+.RI "dictionary \fBFUNCTION_TYPES\fP"
+.br
+.ti -1c
+.RI "dictionary \fBABILITY_FUNCTIONS\fP = {\fBcmd_quick\fP, \fBcmd_screen\fP, \fBcmd_minimap\fP, \fBautocast\fP}"
+.br
+.ti -1c
+.RI "dictionary \fBPOINT_REQUIRED_FUNCS\fP"
+.br
+.ti -1c
+.RI "bool \fBalways\fP = lambda _: True"
+.br
+.ti -1c
+.RI "\fBFUNCTIONS\fP = \fBFunctions\fP(_FUNCTIONS)"
+.br
+.ti -1c
+.RI "\fBABILITY_IDS\fP = collections\&.defaultdict(set)"
+.br
+.ti -1c
+.RI "dictionary \fBFUNCTIONS_AVAILABLE\fP = {f\&.id: f for f in \fBFUNCTIONS\fP if f\&.avail_fn}"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.actions\&.autocast ( action,  action_space,  ability_id)"
+
+.PP
+.nf
+Toggle autocast.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.build_queue ( action,  action_space,  build_queue_id)"
+
+.PP
+.nf
+Cancel a unit in the build queue.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.cmd_minimap ( action,  action_space,  ability_id,  queued,  minimap)"
+
+.PP
+.nf
+Do a command that needs a point on the minimap.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.cmd_quick ( action,  action_space,  ability_id,  queued)"
+
+.PP
+.nf
+Do a quick command like 'Stop' or 'Stim'.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.cmd_screen ( action,  action_space,  ability_id,  queued,  screen)"
+
+.PP
+.nf
+Do a command that needs a point on the screen.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.control_group ( action,  action_space,  control_group_act,  control_group_id)"
+
+.PP
+.nf
+Act on a control group, selecting, setting, etc.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.move_camera ( action,  action_space,  minimap)"
+
+.PP
+.nf
+Move the camera.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.no_op ( action,  action_space)"
+
+.SS "def pysc2\&.lib\&.actions\&.select_army ( action,  action_space,  select_add)"
+
+.PP
+.nf
+Select the entire army.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.select_idle_worker ( action,  action_space,  select_worker)"
+
+.PP
+.nf
+Select an idle worker.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.select_larva ( action,  action_space)"
+
+.PP
+.nf
+Select all larva.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.select_point ( action,  action_space,  select_point_act,  screen)"
+
+.PP
+.nf
+Select a unit at a point.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.select_rect ( action,  action_space,  select_add,  screen,  screen2)"
+
+.PP
+.nf
+Select units within a rectangle.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.select_unit ( action,  action_space,  select_unit_act,  select_unit_id)"
+
+.PP
+.nf
+Select a specific unit from the multi-unit selection.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.select_warp_gates ( action,  action_space,  select_add)"
+
+.PP
+.nf
+Select all warp gates.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.spatial ( action,  action_space)"
+
+.PP
+.nf
+Choose the action space for the action proto.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.unload ( action,  action_space,  unload_id)"
+
+.PP
+.nf
+Unload a unit from a transport/bunker/nydus/etc.
+.fi
+.PP
+ 
+.SH "Variable Documentation"
+.PP 
+.SS "dictionary pysc2\&.lib\&.actions\&.ABILITY_FUNCTIONS = {\fBcmd_quick\fP, \fBcmd_screen\fP, \fBcmd_minimap\fP, \fBautocast\fP}"
+
+.SS "dictionary pysc2\&.lib\&.actions\&.ABILITY_IDS = collections\&.defaultdict(set)"
+
+.SS "bool pysc2\&.lib\&.actions\&.always = lambda _: True"
+
+.SS "list pysc2\&.lib\&.actions\&.CONTROL_GROUP_ACT_OPTIONS"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  [
+2     ("recall", sc_ui\&.ActionControlGroup\&.Recall),
+3     ("set", sc_ui\&.ActionControlGroup\&.Set),
+4     ("append", sc_ui\&.ActionControlGroup\&.Append),
+5     ("set_and_steal", sc_ui\&.ActionControlGroup\&.SetAndSteal),
+6     ("append_and_steal", sc_ui\&.ActionControlGroup\&.AppendAndSteal),
+7 ]
+.fi
+.SS "def pysc2\&.lib\&.actions\&.ControlGroupAct"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  _define_position_based_enum(  # pylint: disable=invalid-name
+2     "ControlGroupAct", CONTROL_GROUP_ACT_OPTIONS)
+.fi
+.SS "dictionary pysc2\&.lib\&.actions\&.FUNCTION_TYPES"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  {
+2     no_op: [],
+3     move_camera: [TYPES\&.minimap],
+4     select_point: [TYPES\&.select_point_act, TYPES\&.screen],
+5     select_rect: [TYPES\&.select_add, TYPES\&.screen, TYPES\&.screen2],
+6     select_unit: [TYPES\&.select_unit_act, TYPES\&.select_unit_id],
+7     control_group: [TYPES\&.control_group_act, TYPES\&.control_group_id],
+8     select_idle_worker: [TYPES\&.select_worker],
+9     select_army: [TYPES\&.select_add],
+10     select_warp_gates: [TYPES\&.select_add],
+11     select_larva: [],
+12     unload: [TYPES\&.unload_id],
+13     build_queue: [TYPES\&.build_queue_id],
+14     cmd_quick: [TYPES\&.queued],
+15     cmd_screen: [TYPES\&.queued, TYPES\&.screen],
+16     cmd_minimap: [TYPES\&.queued, TYPES\&.minimap],
+17     autocast: [],
+18 }
+.fi
+.SS "pysc2\&.lib\&.actions\&.FUNCTIONS = \fBFunctions\fP(_FUNCTIONS)"
+
+.SS "dictionary pysc2\&.lib\&.actions\&.FUNCTIONS_AVAILABLE = {f\&.id: f for f in \fBFUNCTIONS\fP if f\&.avail_fn}"
+
+.SS "dictionary pysc2\&.lib\&.actions\&.POINT_REQUIRED_FUNCS"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  {
+2     False: {cmd_quick, autocast},
+3     True: {cmd_screen, cmd_minimap, autocast}}
+.fi
+.SS "def pysc2\&.lib\&.actions\&.Queued"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  _define_position_based_enum(  # pylint: disable=invalid-name
+2     "Queued", QUEUED_OPTIONS)
+.fi
+.SS "list pysc2\&.lib\&.actions\&.QUEUED_OPTIONS"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  [
+2     ("now", False),
+3     ("queued", True),
+4 ]
+.fi
+.SS "list pysc2\&.lib\&.actions\&.SELECT_ADD_OPTIONS"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  [
+2     ("select", False),
+3     ("add", True),
+4 ]
+.fi
+.SS "list pysc2\&.lib\&.actions\&.SELECT_POINT_ACT_OPTIONS"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  [
+2     ("select", sc_spatial\&.ActionSpatialUnitSelectionPoint\&.Select),
+3     ("toggle", sc_spatial\&.ActionSpatialUnitSelectionPoint\&.Toggle),
+4     ("select_all_type", sc_spatial\&.ActionSpatialUnitSelectionPoint\&.AllType),
+5     ("add_all_type", sc_spatial\&.ActionSpatialUnitSelectionPoint\&.AddAllType),
+6 ]
+.fi
+.SS "list pysc2\&.lib\&.actions\&.SELECT_UNIT_ACT_OPTIONS"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  [
+2     ("select", sc_ui\&.ActionMultiPanel\&.SingleSelect),
+3     ("deselect", sc_ui\&.ActionMultiPanel\&.DeselectUnit),
+4     ("select_all_type", sc_ui\&.ActionMultiPanel\&.SelectAllOfType),
+5     ("deselect_all_type", sc_ui\&.ActionMultiPanel\&.DeselectAllOfType),
+6 ]
+.fi
+.SS "list pysc2\&.lib\&.actions\&.SELECT_WORKER_OPTIONS"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  [
+2     ("select", sc_ui\&.ActionSelectIdleWorker\&.Set),
+3     ("add", sc_ui\&.ActionSelectIdleWorker\&.Add),
+4     ("select_all", sc_ui\&.ActionSelectIdleWorker\&.All),
+5     ("add_all", sc_ui\&.ActionSelectIdleWorker\&.AddAll),
+6 ]
+.fi
+.SS "def pysc2\&.lib\&.actions\&.SelectAdd"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  _define_position_based_enum(  # pylint: disable=invalid-name
+2     "SelectAdd", SELECT_ADD_OPTIONS)
+.fi
+.SS "def pysc2\&.lib\&.actions\&.SelectPointAct"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  _define_position_based_enum(  # pylint: disable=invalid-name
+2     "SelectPointAct", SELECT_POINT_ACT_OPTIONS)
+.fi
+.SS "def pysc2\&.lib\&.actions\&.SelectUnitAct"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  _define_position_based_enum(  # pylint: disable=invalid-name
+2     "SelectUnitAct", SELECT_UNIT_ACT_OPTIONS)
+.fi
+.SS "def pysc2\&.lib\&.actions\&.SelectWorker"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  _define_position_based_enum(  # pylint: disable=invalid-name
+2     "SelectWorker", SELECT_WORKER_OPTIONS)
+.fi
+.SS "pysc2\&.lib\&.actions\&.TYPES"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  Arguments\&.types(
+2     screen=ArgumentType\&.point(),
+3     minimap=ArgumentType\&.point(),
+4     screen2=ArgumentType\&.point(),
+5     queued=ArgumentType\&.enum(QUEUED_OPTIONS, Queued),
+6     control_group_act=ArgumentType\&.enum(
+7         CONTROL_GROUP_ACT_OPTIONS, ControlGroupAct),
+8     control_group_id=ArgumentType\&.scalar(10),
+9     select_point_act=ArgumentType\&.enum(
+10         SELECT_POINT_ACT_OPTIONS, SelectPointAct),
+11     select_add=ArgumentType\&.enum(SELECT_ADD_OPTIONS, SelectAdd),
+12     select_unit_act=ArgumentType\&.enum(SELECT_UNIT_ACT_OPTIONS, SelectUnitAct),
+13     select_unit_id=ArgumentType\&.scalar(500),  # Depends on current selection\&.
+14     select_worker=ArgumentType\&.enum(SELECT_WORKER_OPTIONS, SelectWorker),
+15     build_queue_id=ArgumentType\&.scalar(10),  # Depends on current build queue\&.
+16     unload_id=ArgumentType\&.scalar(500),  # Depends on the current loaded units\&.
+17 )
+.fi
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

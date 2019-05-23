@@ -1,0 +1,319 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1stopwatch_1_1_stat" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::stopwatch::Stat</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1acd582f8ffd5d60813bfe734b42a659e4" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.stopwatch.Stat::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  (&quot;num&quot;, &quot;<ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1aa12a7c0cababb577e811305283e53c46" kindref="member">min</ref>&quot;, &quot;<ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a359d7d8198ff4be60ab39684c33703bb" kindref="member">max</ref>&quot;, &quot;<ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1accb97d6c4651052a2cf51a6f216a0153" kindref="member">sum</ref>&quot;, &quot;<ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a6d288bd17b08cf8bfa684100c5dd113e" kindref="member">sum_sq</ref>&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="33" column="1" bodyfile="lib/stopwatch.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a8bee98cf43b61c5d1b3ba35de83e7e06" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.stopwatch.Stat::num</definition>
+        <argsstring></argsstring>
+        <name>num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="39" column="1" bodyfile="lib/stopwatch.py" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1aa12a7c0cababb577e811305283e53c46" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.stopwatch.Stat::min</definition>
+        <argsstring></argsstring>
+        <name>min</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="40" column="1" bodyfile="lib/stopwatch.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a359d7d8198ff4be60ab39684c33703bb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.stopwatch.Stat::max</definition>
+        <argsstring></argsstring>
+        <name>max</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="41" column="1" bodyfile="lib/stopwatch.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1accb97d6c4651052a2cf51a6f216a0153" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.stopwatch.Stat::sum</definition>
+        <argsstring></argsstring>
+        <name>sum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="42" column="1" bodyfile="lib/stopwatch.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a6d288bd17b08cf8bfa684100c5dd113e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.stopwatch.Stat::sum_sq</definition>
+        <argsstring></argsstring>
+        <name>sum_sq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="43" column="1" bodyfile="lib/stopwatch.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a3ad7dce5fecb54fa4a9021c35e51989d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.Stat.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="35" column="1" bodyfile="lib/stopwatch.py" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1ad118826fca82844997e9f7b975c60687" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.Stat.reset</definition>
+        <argsstring>(self)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="38" column="1" bodyfile="lib/stopwatch.py" bodystart="38" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1acb6464e0344dd3c3dfd65d5db93ab44b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.Stat.add</definition>
+        <argsstring>(self, val)</argsstring>
+        <name>add</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>val</type>
+          <defname>val</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="45" column="1" bodyfile="lib/stopwatch.py" bodystart="45" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1aefeaafa88878c84bd17b85a3841f0202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.Stat.avg</definition>
+        <argsstring>(self)</argsstring>
+        <name>avg</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="55" column="1" bodyfile="lib/stopwatch.py" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a69773dec32c2376017dedbdc9a019d86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.Stat.dev</definition>
+        <argsstring>(self)</argsstring>
+        <name>dev</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Standard deviation.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="59" column="1" bodyfile="lib/stopwatch.py" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1ab0ec24646c9d8fe5ceaa814a6bccf9b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.Stat.merge</definition>
+        <argsstring>(self, other)</argsstring>
+        <name>merge</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>other</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="65" column="1" bodyfile="lib/stopwatch.py" bodystart="65" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a65849f4bc2bd6fd067f17b1efb4ddf60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.Stat.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="90" column="1" bodyfile="lib/stopwatch.py" bodystart="90" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a53c27533034e381b51873eb04d3a93b1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.Stat.build</definition>
+        <argsstring>(summation, average, standard_deviation, minimum, maximum, number)</argsstring>
+        <name>build</name>
+        <param>
+          <type>summation</type>
+          <defname>summation</defname>
+        </param>
+        <param>
+          <type>average</type>
+          <defname>average</defname>
+        </param>
+        <param>
+          <type>standard_deviation</type>
+          <defname>standard_deviation</defname>
+        </param>
+        <param>
+          <type>minimum</type>
+          <defname>minimum</defname>
+        </param>
+        <param>
+          <type>maximum</type>
+          <defname>maximum</defname>
+        </param>
+        <param>
+          <type>number</type>
+          <defname>number</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="73" column="1" bodyfile="lib/stopwatch.py" bodystart="73" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a193898b3e0c4b737cdfd42c9840d09ad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.Stat.parse</definition>
+        <argsstring>(s)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="84" column="1" bodyfile="lib/stopwatch.py" bodystart="84" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A set of statistics about a single value series.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="666">
+        <label>pysc2.lib.stopwatch.Stat</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat"/>
+        <childnode refid="667" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="667">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="668">
+        <label>pysc2.lib.stopwatch.Stat</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat"/>
+        <childnode refid="669" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="669">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/stopwatch.py" line="31" column="1" bodyfile="lib/stopwatch.py" bodystart="31" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a3ad7dce5fecb54fa4a9021c35e51989d" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1acd582f8ffd5d60813bfe734b42a659e4" prot="private" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>__slots__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a65849f4bc2bd6fd067f17b1efb4ddf60" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1acb6464e0344dd3c3dfd65d5db93ab44b" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>add</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1aefeaafa88878c84bd17b85a3841f0202" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>avg</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a53c27533034e381b51873eb04d3a93b1" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>build</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a69773dec32c2376017dedbdc9a019d86" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>dev</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a359d7d8198ff4be60ab39684c33703bb" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>max</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1ab0ec24646c9d8fe5ceaa814a6bccf9b2" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>merge</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1aa12a7c0cababb577e811305283e53c46" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>min</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a8bee98cf43b61c5d1b3ba35de83e7e06" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>num</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a193898b3e0c4b737cdfd42c9840d09ad" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>parse</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1ad118826fca82844997e9f7b975c60687" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>reset</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1accb97d6c4651052a2cf51a6f216a0153" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>sum</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat_1a6d288bd17b08cf8bfa684100c5dd113e" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::Stat</scope><name>sum_sq</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

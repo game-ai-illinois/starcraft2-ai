@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="stopwatch__test_8py" kind="file" language="Python">
+    <compoundname>stopwatch_test.py</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test" prot="public">pysc2::lib::stopwatch_test::StatTest</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test" prot="public">pysc2::lib::stopwatch_test::StopwatchTest</innerclass>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1stopwatch__test">pysc2::lib::stopwatch_test</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacepysc2_1_1lib_1_1stopwatch__test" refkind="compound"><highlight class="comment">#!/usr/bin/python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Copyright<sp/>2017<sp/>Google<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS-IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">#<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;Tests<sp/>for<sp/>stopwatch.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absolute_import</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>division</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_function</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>absl.testing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absltest</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>future.builtins<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>range<sp/><sp/></highlight><highlight class="comment">#<sp/>pylint:<sp/>disable=redefined-builtin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>mock</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1lib" kindref="compound">pysc2.lib</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>stopwatch</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacepysc2_1_1lib_1_1stopwatch__test_1aefd4dfc1051b785eb96874553b22047a" kindref="member">ham_dist</ref>(str1,<sp/>str2):</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Hamming<sp/>distance.<sp/>Count<sp/>the<sp/>number<sp/>of<sp/>differences<sp/>between<sp/>str1<sp/>and<sp/>str2.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>len(str1)<sp/>==<sp/>len(str2)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sum(c1<sp/>!=<sp/>c2<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>c1,<sp/>c2<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>zip(str1,<sp/>str2))</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test" kindref="compound">StatTest</ref>(absltest.TestCase):</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test_1a08881b8c285f4b47606e1570888154ab" kindref="member">testRange</ref>(self):</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>stat<sp/>=<sp/><ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat" kindref="compound">stopwatch.Stat</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>stat.add(1)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>stat.add(5)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>stat.add(3)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertEqual(stat.num,<sp/>3)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertEqual(stat.sum,<sp/>9)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertEqual(stat.min,<sp/>1)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertEqual(stat.max,<sp/>5)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertEqual(stat.avg,<sp/>3)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test_1a134279ac681d8a4d5c9d2e193e2c8f44" kindref="member">testParse</ref>(self):</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>stat<sp/>=<sp/><ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat" kindref="compound">stopwatch.Stat</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>stat.add(1)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>stat.add(3)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>out<sp/>=<sp/>str(stat)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertEqual(out,<sp/></highlight><highlight class="stringliteral">&quot;sum:<sp/>4.0000,<sp/>avg:<sp/>2.0000,<sp/>dev:<sp/>1.0000,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;min:<sp/>1.0000,<sp/>max:<sp/>3.0000,<sp/>num:<sp/>2&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Allow<sp/>a<sp/>few<sp/>small<sp/>rounding<sp/>errors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertLess(<ref refid="namespacepysc2_1_1lib_1_1stopwatch__test_1aefd4dfc1051b785eb96874553b22047a" kindref="member">ham_dist</ref>(out,<sp/>str(stopwatch.Stat.parse(out))),<sp/>5)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test" kindref="compound">StopwatchTest</ref>(absltest.TestCase):</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>@mock.patch(</highlight><highlight class="stringliteral">&quot;time.time&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test_1a6a127bb92911432cfc6b2566453c3d71" kindref="member">testStopwatch</ref>(self,<sp/>mock_time):</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>mock_time.return_value<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>sw<sp/>=<sp/><ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch" kindref="compound">stopwatch.StopWatch</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1env_1_1sc2__env_1a841ede07ac5c57ba50d466779e15be0d" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;one&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mock_time.return_value<sp/>+=<sp/>0.002</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1env_1_1sc2__env_1a841ede07ac5c57ba50d466779e15be0d" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;one&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mock_time.return_value<sp/>+=<sp/>0.004</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1env_1_1sc2__env_1a841ede07ac5c57ba50d466779e15be0d" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;two&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1env_1_1sc2__env_1a841ede07ac5c57ba50d466779e15be0d" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;three&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mock_time.return_value<sp/>+=<sp/>0.006</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>@sw.decorate</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">four():</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mock_time.return_value<sp/>+=<sp/>0.004</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>four()</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>@sw.decorate(</highlight><highlight class="stringliteral">&quot;five&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">foo():</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mock_time.return_value<sp/>+=<sp/>0.005</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>foo()</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>out<sp/>=<sp/>str(sw)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>The<sp/>names<sp/>should<sp/>be<sp/>in<sp/>sorted<sp/>order.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>names<sp/>=<sp/>[l.split(</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)[0]<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>l<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>out.splitlines()[1:]]</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertEqual(names,<sp/>[</highlight><highlight class="stringliteral">&quot;five&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;four&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;one&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;two&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;two.three&quot;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>one_line<sp/>=<sp/>out.splitlines()[3].split(</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertLess(one_line[5],<sp/>one_line[6])<sp/><sp/></highlight><highlight class="comment">#<sp/>min<sp/>&lt;<sp/>max</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertEqual(one_line[7],<sp/></highlight><highlight class="stringliteral">&quot;2&quot;</highlight><highlight class="normal">)<sp/><sp/></highlight><highlight class="comment">#<sp/>num</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Can&apos;t<sp/>test<sp/>the<sp/>rest<sp/>since<sp/>they&apos;ll<sp/>be<sp/>flaky.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Allow<sp/>a<sp/>few<sp/>small<sp/>rounding<sp/>errors<sp/>for<sp/>the<sp/>round<sp/>trip.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>round_trip<sp/>=<sp/>str(stopwatch.StopWatch.parse(out))</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertLess(<ref refid="namespacepysc2_1_1lib_1_1stopwatch__test_1aefd4dfc1051b785eb96874553b22047a" kindref="member">ham_dist</ref>(out,<sp/>round_trip),<sp/>15,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;%s<sp/>!=<sp/>%s&quot;</highlight><highlight class="normal"><sp/>%<sp/>(out,<sp/>round_trip))</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test_1a5369dcd57d03704c6276c3f4838b0f0f" kindref="member">testDivideZero</ref>(self):</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>sw<sp/>=<sp/><ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch" kindref="compound">stopwatch.StopWatch</ref>()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1env_1_1sc2__env_1a841ede07ac5c57ba50d466779e15be0d" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;zero&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Just<sp/>make<sp/>sure<sp/>this<sp/>doesn&apos;t<sp/>have<sp/>a<sp/>divide<sp/>by<sp/>0<sp/>for<sp/>when<sp/>the<sp/>total<sp/>is<sp/>0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertIn(</highlight><highlight class="stringliteral">&quot;zero&quot;</highlight><highlight class="normal">,<sp/>str(sw))</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test_1a33e9450263a55fc60359d7b6407d450e" kindref="member">testSpeed</ref>(self):</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>count<sp/>=<sp/>1000</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">run():</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>_<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(count):</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1env_1_1sc2__env_1a841ede07ac5c57ba50d466779e15be0d" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;name&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>sw<sp/>=<sp/><ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch" kindref="compound">stopwatch.StopWatch</ref>()</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>_<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(10):</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sw.enabled<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sw.trace<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1env_1_1sc2__env_1a841ede07ac5c57ba50d466779e15be0d" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;enabled&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>run()</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sw.enabled<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sw.trace<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1env_1_1sc2__env_1a841ede07ac5c57ba50d466779e15be0d" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;trace&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>run()</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>sw.enabled<sp/>=<sp/></highlight><highlight class="keyword">True</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">#<sp/>To<sp/>catch<sp/>&quot;disabled&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1env_1_1sc2__env_1a841ede07ac5c57ba50d466779e15be0d" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;disabled&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sw.enabled<sp/>=<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>run()</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>No<sp/>asserts.<sp/>Succeed<sp/>but<sp/>print<sp/>the<sp/>timings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>print(sw)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>absltest.main()</highlight></codeline>
+    </programlisting>
+    <location file="lib/stopwatch_test.py"/>
+  </compounddef>
+</doxygen>

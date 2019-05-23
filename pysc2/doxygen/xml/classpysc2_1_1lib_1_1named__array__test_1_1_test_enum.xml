@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1named__array__test_1_1_test_enum" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::named_array_test::TestEnum</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1named__array__test_1_1_test_enum_1a7e24025574b4a7063ff4b37596fdc116" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.named_array_test.TestEnum::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array_test.py" line="44" column="1" bodyfile="lib/named_array_test.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1named__array__test_1_1_test_enum_1af2f301d69fff844af3a84fb02a336ee3" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.named_array_test.TestEnum::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array_test.py" line="45" column="1" bodyfile="lib/named_array_test.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1named__array__test_1_1_test_enum_1a7667f9b18c7673e513dd2de4043d7d93" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.named_array_test.TestEnum::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array_test.py" line="46" column="1" bodyfile="lib/named_array_test.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="732">
+        <label>pysc2.lib.named_array_test.TestEnum</label>
+        <link refid="classpysc2_1_1lib_1_1named__array__test_1_1_test_enum"/>
+        <childnode refid="733" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="733">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="734">
+        <label>pysc2.lib.named_array_test.TestEnum</label>
+        <link refid="classpysc2_1_1lib_1_1named__array__test_1_1_test_enum"/>
+        <childnode refid="735" relation="public-inheritance">
+        </childnode>
+        <childnode refid="736" relation="usage">
+          <edgelabel>a</edgelabel>
+          <edgelabel>b</edgelabel>
+          <edgelabel>c</edgelabel>
+        </childnode>
+      </node>
+      <node id="736">
+        <label>int</label>
+      </node>
+      <node id="735">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/named_array_test.py" line="43" column="1" bodyfile="lib/named_array_test.py" bodystart="43" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1named__array__test_1_1_test_enum_1a7e24025574b4a7063ff4b37596fdc116" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array_test::TestEnum</scope><name>a</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array__test_1_1_test_enum_1af2f301d69fff844af3a84fb02a336ee3" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array_test::TestEnum</scope><name>b</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array__test_1_1_test_enum_1a7667f9b18c7673e513dd2de4043d7d93" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array_test::TestEnum</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

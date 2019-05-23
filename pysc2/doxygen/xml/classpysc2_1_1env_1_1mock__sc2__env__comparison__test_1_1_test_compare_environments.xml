@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::mock_sc2_env_comparison_test::TestCompareEnvironments</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1a470cd17fafc4ed8de7a953f4fd2f9ff3" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.mock_sc2_env_comparison_test.TestCompareEnvironments::_env</definition>
+        <argsstring></argsstring>
+        <name>_env</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_comparison_test.py" line="55" column="1" bodyfile="env/mock_sc2_env_comparison_test.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1a8b43cf544530a07c4b00837bd2e6146f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.mock_sc2_env_comparison_test.TestCompareEnvironments::_mock_env</definition>
+        <argsstring></argsstring>
+        <name>_mock_env</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_comparison_test.py" line="56" column="1" bodyfile="env/mock_sc2_env_comparison_test.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1a76cbd7c5b511f308ece39037bb137cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_comparison_test.TestCompareEnvironments.setUpClass</definition>
+        <argsstring>(cls)</argsstring>
+        <name>setUpClass</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_comparison_test.py" line="30" column="1" bodyfile="env/mock_sc2_env_comparison_test.py" bodystart="30" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1a56c0f6118f90e9dc8d8abbdeef4262f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_comparison_test.TestCompareEnvironments.tearDownClass</definition>
+        <argsstring>(cls)</argsstring>
+        <name>tearDownClass</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_comparison_test.py" line="59" column="1" bodyfile="env/mock_sc2_env_comparison_test.py" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1adda79fd06c2fe23a5f84a970c916bb18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_comparison_test.TestCompareEnvironments.test_observation_spec</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_observation_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_comparison_test.py" line="63" column="1" bodyfile="env/mock_sc2_env_comparison_test.py" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1aa70c2b18f216a6fdac75499e9e0198b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_comparison_test.TestCompareEnvironments.test_action_spec</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_action_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_comparison_test.py" line="67" column="1" bodyfile="env/mock_sc2_env_comparison_test.py" bodystart="67" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="722">
+        <label>TestCase</label>
+      </node>
+      <node id="721">
+        <label>pysc2.env.mock_sc2_env_comparison_test.TestCompareEnvironments</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments"/>
+        <childnode refid="722" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="724">
+        <label>TestCase</label>
+      </node>
+      <node id="723">
+        <label>pysc2.env.mock_sc2_env_comparison_test.TestCompareEnvironments</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments"/>
+        <childnode refid="724" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="env/mock_sc2_env_comparison_test.py" line="27" column="1" bodyfile="env/mock_sc2_env_comparison_test.py" bodystart="27" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1a470cd17fafc4ed8de7a953f4fd2f9ff3" prot="private" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_comparison_test::TestCompareEnvironments</scope><name>_env</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1a8b43cf544530a07c4b00837bd2e6146f" prot="private" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_comparison_test::TestCompareEnvironments</scope><name>_mock_env</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1a76cbd7c5b511f308ece39037bb137cc5" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_comparison_test::TestCompareEnvironments</scope><name>setUpClass</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1a56c0f6118f90e9dc8d8abbdeef4262f3" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_comparison_test::TestCompareEnvironments</scope><name>tearDownClass</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1aa70c2b18f216a6fdac75499e9e0198b8" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_comparison_test::TestCompareEnvironments</scope><name>test_action_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments_1adda79fd06c2fe23a5f84a970c916bb18" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_comparison_test::TestCompareEnvironments</scope><name>test_observation_spec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

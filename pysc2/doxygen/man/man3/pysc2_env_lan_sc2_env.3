@@ -1,0 +1,122 @@
+.TH "pysc2.env.lan_sc2_env" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.env.lan_sc2_env
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAddr\fP"
+.br
+.ti -1c
+.RI "class \fBLanSC2Env\fP"
+.br
+.ti -1c
+.RI "class \fBRestartException\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBdaemon_thread\fP (target, args)"
+.br
+.ti -1c
+.RI "def \fBudp_server\fP (addr)"
+.br
+.ti -1c
+.RI "def \fBtcp_server\fP (tcp_addr, settings)"
+.br
+.ti -1c
+.RI "def \fBtcp_client\fP (tcp_addr)"
+.br
+.ti -1c
+.RI "def \fBlog_msg\fP (prefix, msg)"
+.br
+.ti -1c
+.RI "def \fBudp_to_tcp\fP (udp_sock, tcp_conn)"
+.br
+.ti -1c
+.RI "def \fBtcp_to_udp\fP (tcp_conn, udp_sock, udp_to_addr)"
+.br
+.ti -1c
+.RI "def \fBread_tcp\fP (conn)"
+.br
+.ti -1c
+.RI "def \fBread_tcp_size\fP (conn, size)"
+.br
+.ti -1c
+.RI "def \fBwrite_tcp\fP (conn, msg)"
+.br
+.ti -1c
+.RI "def \fBforward_ports\fP (remote_host, local_host, local_listen_ports, remote_listen_ports)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def pysc2\&.env\&.lan_sc2_env\&.daemon_thread ( target,  args)"
+
+.SS "def pysc2\&.env\&.lan_sc2_env\&.forward_ports ( remote_host,  local_host,  local_listen_ports,  remote_listen_ports)"
+
+.PP
+.nf
+Forwards ports such that multiplayer works between machines.
+
+Args:
+  remote_host: Where to ssh to.
+  local_host: "127.0.0.1" or "::1".
+  local_listen_ports: Which ports to listen on locally to forward remotely.
+  remote_listen_ports: Which ports to listen on remotely to forward locally.
+
+Returns:
+  The ssh process.
+
+Raises:
+  ValueError: if it can't find ssh.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.lan_sc2_env\&.log_msg ( prefix,  msg)"
+
+.SS "def pysc2\&.env\&.lan_sc2_env\&.read_tcp ( conn)"
+
+.SS "def pysc2\&.env\&.lan_sc2_env\&.read_tcp_size ( conn,  size)"
+
+.PP
+.nf
+Read `size` number of bytes from `conn`, retrying as needed.
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.lan_sc2_env\&.tcp_client ( tcp_addr)"
+
+.PP
+.nf
+Connect to the tcp server, and return the settings.
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.lan_sc2_env\&.tcp_server ( tcp_addr,  settings)"
+
+.PP
+.nf
+Start up the tcp server, send the settings.
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.lan_sc2_env\&.tcp_to_udp ( tcp_conn,  udp_sock,  udp_to_addr)"
+
+.SS "def pysc2\&.env\&.lan_sc2_env\&.udp_server ( addr)"
+
+.SS "def pysc2\&.env\&.lan_sc2_env\&.udp_to_tcp ( udp_sock,  tcp_conn)"
+
+.SS "def pysc2\&.env\&.lan_sc2_env\&.write_tcp ( conn,  msg)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

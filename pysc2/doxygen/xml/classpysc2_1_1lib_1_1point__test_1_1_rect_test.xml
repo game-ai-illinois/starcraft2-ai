@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1point__test_1_1_rect_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::point_test::RectTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a893ea1a07df964e737f34350d0d9c9e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.RectTest.testInit</definition>
+        <argsstring>(self)</argsstring>
+        <name>testInit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="126" column="1" bodyfile="lib/point_test.py" bodystart="126" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a0aba50946172b2be4f7132c35717e0ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.RectTest.testInitBad</definition>
+        <argsstring>(self)</argsstring>
+        <name>testInitBad</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="137" column="1" bodyfile="lib/point_test.py" bodystart="137" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a49ea48bb22c49707212243ebd03ce7e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.RectTest.testInitOnePoint</definition>
+        <argsstring>(self)</argsstring>
+        <name>testInitOnePoint</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="147" column="1" bodyfile="lib/point_test.py" bodystart="147" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1ab9a05e0bcf244c014345d6d9b7436d09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.RectTest.testInitTwoPoints</definition>
+        <argsstring>(self)</argsstring>
+        <name>testInitTwoPoints</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="161" column="1" bodyfile="lib/point_test.py" bodystart="161" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1ae98ee95a8e5ce8f489ba137baeb0ec2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.RectTest.testInitTwoPointsReversed</definition>
+        <argsstring>(self)</argsstring>
+        <name>testInitTwoPointsReversed</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="175" column="1" bodyfile="lib/point_test.py" bodystart="175" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a4c21de209a3a55328d9e18e395a4dc60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.RectTest.testArea</definition>
+        <argsstring>(self)</argsstring>
+        <name>testArea</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="189" column="1" bodyfile="lib/point_test.py" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a80deb542f38aab65a18e3cc76c7ece1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.RectTest.testContains</definition>
+        <argsstring>(self)</argsstring>
+        <name>testContains</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="193" column="1" bodyfile="lib/point_test.py" bodystart="193" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a7238871e6257d01a82844ac7bac60eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_test.RectTest.testIntersectsCircle</definition>
+        <argsstring>(self)</argsstring>
+        <name>testIntersectsCircle</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_test.py" line="200" column="1" bodyfile="lib/point_test.py" bodystart="200" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="532">
+        <label>pysc2.lib.point_test.RectTest</label>
+        <link refid="classpysc2_1_1lib_1_1point__test_1_1_rect_test"/>
+        <childnode refid="533" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="533">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="534">
+        <label>pysc2.lib.point_test.RectTest</label>
+        <link refid="classpysc2_1_1lib_1_1point__test_1_1_rect_test"/>
+        <childnode refid="535" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="535">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/point_test.py" line="124" column="1" bodyfile="lib/point_test.py" bodystart="124" bodyend="208"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a4c21de209a3a55328d9e18e395a4dc60" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::RectTest</scope><name>testArea</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a80deb542f38aab65a18e3cc76c7ece1d" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::RectTest</scope><name>testContains</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a893ea1a07df964e737f34350d0d9c9e1" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::RectTest</scope><name>testInit</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a0aba50946172b2be4f7132c35717e0ac" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::RectTest</scope><name>testInitBad</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a49ea48bb22c49707212243ebd03ce7e6" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::RectTest</scope><name>testInitOnePoint</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1ab9a05e0bcf244c014345d6d9b7436d09" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::RectTest</scope><name>testInitTwoPoints</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1ae98ee95a8e5ce8f489ba137baeb0ec2b" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::RectTest</scope><name>testInitTwoPointsReversed</name></member>
+      <member refid="classpysc2_1_1lib_1_1point__test_1_1_rect_test_1a7238871e6257d01a82844ac7bac60eac" prot="public" virt="non-virtual"><scope>pysc2::lib::point_test::RectTest</scope><name>testIntersectsCircle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

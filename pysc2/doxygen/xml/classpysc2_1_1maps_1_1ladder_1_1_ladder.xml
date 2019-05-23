@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1maps_1_1ladder_1_1_ladder" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::maps::ladder::Ladder</compoundname>
+    <basecompoundref refid="classpysc2_1_1maps_1_1lib_1_1_map" prot="public" virt="non-virtual">pysc2.maps.lib.Map</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1ladder_1_1_ladder_1a6be765133191a3368339407980256040" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.ladder.Ladder::players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/ladder.py" line="28" column="1" bodyfile="maps/ladder.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1ladder_1_1_ladder_1ab08a3654622ac11be5c69543ca974d31" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.ladder.Ladder::game_steps_per_episode</definition>
+        <argsstring></argsstring>
+        <name>game_steps_per_episode</name>
+        <initializer>=  16 * 60 * 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/ladder.py" line="29" column="1" bodyfile="maps/ladder.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1ladder_1_1_ladder_1aa001b72aeee3c8fb4a293a8577d24fb7" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string pysc2.maps.ladder.Ladder::download</definition>
+        <argsstring></argsstring>
+        <name>download</name>
+        <initializer>=  &quot;https://github.com/Blizzard/s2client-proto#map-packs&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/ladder.py" line="30" column="1" bodyfile="maps/ladder.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="310">
+        <label>pysc2.maps.ladder.Ladder</label>
+        <link refid="classpysc2_1_1maps_1_1ladder_1_1_ladder"/>
+        <childnode refid="311" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>pysc2.maps.lib.Map</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_map"/>
+        <childnode refid="312" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="313">
+        <label>pysc2.maps.ladder.Ladder</label>
+        <link refid="classpysc2_1_1maps_1_1ladder_1_1_ladder"/>
+        <childnode refid="314" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="usage">
+          <edgelabel>game_steps_per_episode</edgelabel>
+          <edgelabel>players</edgelabel>
+        </childnode>
+      </node>
+      <node id="314">
+        <label>pysc2.maps.lib.Map</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_map"/>
+        <childnode refid="315" relation="public-inheritance">
+        </childnode>
+        <childnode refid="316" relation="usage">
+          <edgelabel>score_index</edgelabel>
+          <edgelabel>game_steps_per_episode</edgelabel>
+          <edgelabel>score_multiplier</edgelabel>
+          <edgelabel>step_mul</edgelabel>
+        </childnode>
+      </node>
+      <node id="316">
+        <label>int</label>
+      </node>
+      <node id="315">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="maps/ladder.py" line="27" column="1" bodyfile="maps/ladder.py" bodystart="27" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a7c2eff51fb8cf13b42fa0cfe39bd02c2" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a9c1ce36a2df01702d5b30e3189f5b565" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>all_subclasses</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a07aee252bcbdc30771a9160cc7b604d1" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>data</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a4201f79683b533aaa76ee296bca9862a" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>directory</name></member>
+      <member refid="classpysc2_1_1maps_1_1ladder_1_1_ladder_1aa001b72aeee3c8fb4a293a8577d24fb7" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>download</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1abbeaa1936043d4e2ac896a73952bc7cd" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>filename</name></member>
+      <member refid="classpysc2_1_1maps_1_1ladder_1_1_ladder_1ab08a3654622ac11be5c69543ca974d31" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>game_steps_per_episode</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1afdbca854775c5c09c0ce09f0a532261b" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>name</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a6d5499d1d1f2c0aaedbf7b7787a8ba05" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>path</name></member>
+      <member refid="classpysc2_1_1maps_1_1ladder_1_1_ladder_1a6be765133191a3368339407980256040" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>players</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1afa81bf47be6e6d9893f91f5265e4520e" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>score_index</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a46dae41b5720bd53a7846b4a97022951" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>score_multiplier</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a7dce4185a3d781a4fd6f6a38a0ff64aa" prot="public" virt="non-virtual"><scope>pysc2::maps::ladder::Ladder</scope><name>step_mul</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

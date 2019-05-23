@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</compoundname>
+    <basecompoundref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent" prot="public" virt="non-virtual">pysc2.agents.base_agent.BaseAgent</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units_1ae2389ea90b1e980f759032dd134b2c4d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.agents.scripted_agent.CollectMineralShardsFeatureUnits::_marine_selected</definition>
+        <argsstring></argsstring>
+        <name>_marine_selected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="90" column="1" bodyfile="agents/scripted_agent.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units_1ae628a69c9b58818848047447a197f8b0" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.agents.scripted_agent.CollectMineralShardsFeatureUnits::_previous_mineral_xy</definition>
+        <argsstring></argsstring>
+        <name>_previous_mineral_xy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="91" column="1" bodyfile="agents/scripted_agent.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units_1a6f486dbd7973e7d925e70e72ffe44aff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.agents.scripted_agent.CollectMineralShardsFeatureUnits.setup</definition>
+        <argsstring>(self, obs_spec, action_spec)</argsstring>
+        <name>setup</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1ad6cefb81724b9d234887cea543c4f06e" kindref="member">obs_spec</ref></type>
+          <defname>obs_spec</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a550b216b98ae40b2da1b2fd9015d3019" kindref="member">action_spec</ref></type>
+          <defname>action_spec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="83" column="1" bodyfile="agents/scripted_agent.py" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units_1a46a2b6dc43b5fd8e535505d25a29ea1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.agents.scripted_agent.CollectMineralShardsFeatureUnits.reset</definition>
+        <argsstring>(self)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="88" column="1" bodyfile="agents/scripted_agent.py" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units_1ac09e7d23c9cc9ad8b7a26c42561bd4b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.agents.scripted_agent.CollectMineralShardsFeatureUnits.step</definition>
+        <argsstring>(self, obs)</argsstring>
+        <name>step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="93" column="1" bodyfile="agents/scripted_agent.py" bodystart="93" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An agent for solving the CollectMineralShards map with feature units.
+
+Controls the two marines independently:
+- select marine
+- move to nearest mineral shard that wasn&apos;t the previous target
+- swap marine and repeat
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="159">
+        <label>pysc2.agents.scripted_agent.CollectMineralShardsFeatureUnits</label>
+        <link refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units"/>
+        <childnode refid="160" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="161">
+        <label>object</label>
+      </node>
+      <node id="160">
+        <label>pysc2.agents.base_agent.BaseAgent</label>
+        <link refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent"/>
+        <childnode refid="161" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="162">
+        <label>pysc2.agents.scripted_agent.CollectMineralShardsFeatureUnits</label>
+        <link refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units"/>
+        <childnode refid="163" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="164">
+        <label>object</label>
+      </node>
+      <node id="163">
+        <label>pysc2.agents.base_agent.BaseAgent</label>
+        <link refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent"/>
+        <childnode refid="164" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agents/scripted_agent.py" line="74" column="1" bodyfile="agents/scripted_agent.py" bodystart="74" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a03935d754145f417240d25e0192c57bc" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units_1ae2389ea90b1e980f759032dd134b2c4d" prot="private" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>_marine_selected</name></member>
+      <member refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units_1ae628a69c9b58818848047447a197f8b0" prot="private" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>_previous_mineral_xy</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a550b216b98ae40b2da1b2fd9015d3019" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>action_spec</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a46c85c12c80d0ceceff90c5889f0a13a" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>episodes</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1ad6cefb81724b9d234887cea543c4f06e" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>obs_spec</name></member>
+      <member refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units_1a46a2b6dc43b5fd8e535505d25a29ea1d" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>reset</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a9081eba1a1a529a08d1309e35a1f7ad9" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>reward</name></member>
+      <member refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units_1a6f486dbd7973e7d925e70e72ffe44aff" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>setup</name></member>
+      <member refid="classpysc2_1_1agents_1_1scripted__agent_1_1_collect_mineral_shards_feature_units_1ac09e7d23c9cc9ad8b7a26c42561bd4b0" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>step</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1aac3b906e1bc4bfc1fad84e8a1fb6ef87" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::CollectMineralShardsFeatureUnits</scope><name>steps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

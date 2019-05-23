@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1stopwatch" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::stopwatch</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1stopwatch_1_1_fake_stop_watch_context" prot="public">pysc2::lib::stopwatch::FakeStopWatchContext</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1stopwatch_1_1_stat" prot="public">pysc2::lib::stopwatch::Stat</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch" prot="public">pysc2::lib::stopwatch::StopWatch</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_context" prot="public">pysc2::lib::stopwatch::StopWatchContext</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1stopwatch_1_1_tracing_stop_watch_context" prot="public">pysc2::lib::stopwatch::TracingStopWatchContext</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1stopwatch_1a81fcf5689eff012beae495cd3446ab6c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::stopwatch.fake_context</definition>
+        <argsstring></argsstring>
+        <name>fake_context</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_fake_stop_watch_context" kindref="compound">FakeStopWatchContext</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="139" column="1" bodyfile="lib/stopwatch.py" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1stopwatch_1af902a678c1100412f8e448b4eb06e849" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::stopwatch.sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch" kindref="compound">StopWatch</ref>(enabled=False)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="285" column="1" bodyfile="lib/stopwatch.py" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/stopwatch.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

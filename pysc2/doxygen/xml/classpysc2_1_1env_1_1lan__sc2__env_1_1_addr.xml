@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1lan__sc2__env_1_1_addr" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::lan_sc2_env::Addr</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ip</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">port</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_addr_1a7365bf76a5c653b039ec16e22360a7b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.Addr.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="44" column="1" bodyfile="env/lan_sc2_env.py" bodystart="44" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="31">
+        <label>pysc2.env.lan_sc2_env.Addr</label>
+        <link refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_addr"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>namedtuple</label>
+      </node>
+      <node id="34">
+        <label>port</label>
+      </node>
+      <node id="33">
+        <label>ip</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="35">
+        <label>pysc2.env.lan_sc2_env.Addr</label>
+        <link refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_addr"/>
+        <childnode refid="36" relation="public-inheritance">
+        </childnode>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+        <childnode refid="38" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>namedtuple</label>
+      </node>
+      <node id="38">
+        <label>port</label>
+      </node>
+      <node id="37">
+        <label>ip</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/lan_sc2_env.py" line="42" column="1" bodyfile="env/lan_sc2_env.py" bodystart="42" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_addr_1a7365bf76a5c653b039ec16e22360a7b3" prot="public" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::Addr</scope><name>__str__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
+    <compoundname>lib</compoundname>
+    <innerfile refid="lib_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="actions_8py">actions.py</innerfile>
+    <innerfile refid="colors_8py">colors.py</innerfile>
+    <innerfile refid="features_8py">features.py</innerfile>
+    <innerfile refid="features__test_8py">features_test.py</innerfile>
+    <innerfile refid="gfile_8py">gfile.py</innerfile>
+    <innerfile refid="metrics_8py">metrics.py</innerfile>
+    <innerfile refid="named__array_8py">named_array.py</innerfile>
+    <innerfile refid="named__array__test_8py">named_array_test.py</innerfile>
+    <innerfile refid="point_8py">point.py</innerfile>
+    <innerfile refid="point__flag_8py">point_flag.py</innerfile>
+    <innerfile refid="point__test_8py">point_test.py</innerfile>
+    <innerfile refid="protocol_8py">protocol.py</innerfile>
+    <innerfile refid="remote__controller_8py">remote_controller.py</innerfile>
+    <innerfile refid="renderer__human_8py">renderer_human.py</innerfile>
+    <innerfile refid="run__parallel_8py">run_parallel.py</innerfile>
+    <innerfile refid="run__parallel__test_8py">run_parallel_test.py</innerfile>
+    <innerfile refid="sc__process_8py">sc_process.py</innerfile>
+    <innerfile refid="static__data_8py">static_data.py</innerfile>
+    <innerfile refid="stopwatch_8py">stopwatch.py</innerfile>
+    <innerfile refid="stopwatch__test_8py">stopwatch_test.py</innerfile>
+    <innerfile refid="transform_8py">transform.py</innerfile>
+    <innerfile refid="units_8py">units.py</innerfile>
+    <innerfile refid="video__writer_8py">video_writer.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/"/>
+  </compounddef>
+</doxygen>

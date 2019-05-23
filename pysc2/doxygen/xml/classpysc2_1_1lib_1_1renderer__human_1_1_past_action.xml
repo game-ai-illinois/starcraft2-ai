@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1renderer__human_1_1_past_action" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::renderer_human::PastAction</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ability</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">color</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">pos</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">time</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">deadline</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Holds a past action for drawing over time.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="451">
+        <label>pysc2.lib.renderer_human.PastAction</label>
+        <link refid="classpysc2_1_1lib_1_1renderer__human_1_1_past_action"/>
+        <childnode refid="452" relation="public-inheritance">
+        </childnode>
+        <childnode refid="453" relation="public-inheritance">
+        </childnode>
+        <childnode refid="454" relation="public-inheritance">
+        </childnode>
+        <childnode refid="455" relation="public-inheritance">
+        </childnode>
+        <childnode refid="456" relation="public-inheritance">
+        </childnode>
+        <childnode refid="457" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="454">
+        <label>color</label>
+      </node>
+      <node id="457">
+        <label>deadline</label>
+      </node>
+      <node id="455">
+        <label>pos</label>
+      </node>
+      <node id="456">
+        <label>time</label>
+      </node>
+      <node id="453">
+        <label>ability</label>
+      </node>
+      <node id="452">
+        <label>namedtuple</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="458">
+        <label>pysc2.lib.renderer_human.PastAction</label>
+        <link refid="classpysc2_1_1lib_1_1renderer__human_1_1_past_action"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+        <childnode refid="460" relation="public-inheritance">
+        </childnode>
+        <childnode refid="461" relation="public-inheritance">
+        </childnode>
+        <childnode refid="462" relation="public-inheritance">
+        </childnode>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+        <childnode refid="464" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="461">
+        <label>color</label>
+      </node>
+      <node id="464">
+        <label>deadline</label>
+      </node>
+      <node id="462">
+        <label>pos</label>
+      </node>
+      <node id="463">
+        <label>time</label>
+      </node>
+      <node id="460">
+        <label>ability</label>
+      </node>
+      <node id="459">
+        <label>namedtuple</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/renderer_human.py" line="191" column="1" bodyfile="lib/renderer_human.py" bodystart="192" bodyend="196"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

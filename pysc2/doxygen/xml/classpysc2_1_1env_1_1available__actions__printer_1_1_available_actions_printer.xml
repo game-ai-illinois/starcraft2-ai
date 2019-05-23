@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::available_actions_printer::AvailableActionsPrinter</compoundname>
+    <basecompoundref refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper" prot="public" virt="non-virtual">pysc2.env.base_env_wrapper.BaseEnvWrapper</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer_1a8deb9e6263eaa0d722b60839ee6eab23" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.available_actions_printer.AvailableActionsPrinter::_seen</definition>
+        <argsstring></argsstring>
+        <name>_seen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/available_actions_printer.py" line="28" column="1" bodyfile="env/available_actions_printer.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer_1aba10cc77759f60f5ff76b928fc852d72" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.available_actions_printer.AvailableActionsPrinter::_action_spec</definition>
+        <argsstring></argsstring>
+        <name>_action_spec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/available_actions_printer.py" line="29" column="1" bodyfile="env/available_actions_printer.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer_1a65c7b508da0d9b5c0b0f9e8bec02e5c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.available_actions_printer.AvailableActionsPrinter.__init__</definition>
+        <argsstring>(self, env)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env</type>
+          <defname>env</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/available_actions_printer.py" line="26" column="1" bodyfile="env/available_actions_printer.py" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer_1a4a58432803a5d2b7ea60107f71dc2d86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.available_actions_printer.AvailableActionsPrinter.step</definition>
+        <argsstring>(self, args, kwargs)</argsstring>
+        <name>step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/available_actions_printer.py" line="31" column="1" bodyfile="env/available_actions_printer.py" bodystart="31" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer_1acb389a24de7c267bb917449f6a11ed79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.available_actions_printer.AvailableActionsPrinter._print</definition>
+        <argsstring>(self, s)</argsstring>
+        <name>_print</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/available_actions_printer.py" line="40" column="1" bodyfile="env/available_actions_printer.py" bodystart="40" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An env wrapper to print the available actions.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="88">
+        <label>pysc2.env.base_env_wrapper.BaseEnvWrapper</label>
+        <link refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="90" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>object</label>
+      </node>
+      <node id="87">
+        <label>pysc2.env.available_actions_printer.AvailableActionsPrinter</label>
+        <link refid="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="92">
+        <label>pysc2.env.base_env_wrapper.BaseEnvWrapper</label>
+        <link refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>object</label>
+      </node>
+      <node id="91">
+        <label>pysc2.env.available_actions_printer.AvailableActionsPrinter</label>
+        <link refid="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer"/>
+        <childnode refid="92" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="env/available_actions_printer.py" line="23" column="1" bodyfile="env/available_actions_printer.py" bodystart="23" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer_1a65c7b508da0d9b5c0b0f9e8bec02e5c3" prot="public" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer_1aba10cc77759f60f5ff76b928fc852d72" prot="private" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>_action_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer_1acb389a24de7c267bb917449f6a11ed79" prot="private" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>_print</name></member>
+      <member refid="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer_1a8deb9e6263eaa0d722b60839ee6eab23" prot="private" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>_seen</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1aceb8c9f065aac5de979d8b9fe2dde82b" prot="public" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>action_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a7c67bf47a58d4ca0857fbca0664842b0" prot="public" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>close</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a1b4fec660232a73e8985d96f77b30ec3" prot="public" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>observation_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a6b528f10880414b3adbf2d55cf25d48b" prot="public" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>reset</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a60cf932110b1a4ec35d36c719ae8b045" prot="public" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>save_replay</name></member>
+      <member refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper_1a8b4ada1faebd56dfdc44640b74078e91" prot="public" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>state</name></member>
+      <member refid="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer_1a4a58432803a5d2b7ea60107f71dc2d86" prot="public" virt="non-virtual"><scope>pysc2::env::available_actions_printer::AvailableActionsPrinter</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

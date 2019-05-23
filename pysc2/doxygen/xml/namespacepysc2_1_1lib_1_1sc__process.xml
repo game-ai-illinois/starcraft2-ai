@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1sc__process" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::sc_process</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1sc__process_1_1_s_c2_launch_error" prot="public">pysc2::lib::sc_process::SC2LaunchError</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process" prot="public">pysc2::lib::sc_process::StarcraftProcess</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1sc__process_1a920e2ee62ebb8cb875809e53ff2bb7c8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::sc_process.FLAGS</definition>
+        <argsstring></argsstring>
+        <name>FLAGS</name>
+        <initializer>=  flags.FLAGS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="35" column="1" bodyfile="lib/sc_process.py" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1sc__process_1a1c4ebd1d83ad46d099f15a6331d31621" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::sc_process.sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <initializer>=  stopwatch.sw</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="37" column="1" bodyfile="lib/sc_process.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1sc__process_1a66cbfca1d4ab59cbaea1681ecb763e7d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process._shutdown_proc</definition>
+        <argsstring>(p, timeout)</argsstring>
+        <name>_shutdown_proc</name>
+        <param>
+          <type>p</type>
+          <defname>p</defname>
+        </param>
+        <param>
+          <type>timeout</type>
+          <defname>timeout</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Wait for a proc to shut down, then terminate or kill it after `timeout`.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="191" column="1" bodyfile="lib/sc_process.py" bodystart="191" bodyend="203"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/sc_process.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

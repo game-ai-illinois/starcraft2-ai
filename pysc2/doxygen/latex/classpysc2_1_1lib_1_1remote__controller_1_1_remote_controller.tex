@@ -1,0 +1,219 @@
+\hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller}{}\section{pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller Class Reference}
+\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller}\index{pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller@{pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller}}
+Inheritance diagram for pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a12ff18dcbc552d7fb96819b4e2005384}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, host, port, proc=None, timeout\+\_\+seconds=None)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a6eac6b1034679ad54da9eeb309b147f1}{close}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_aa6c03198b58d0ea4c3c6af3d9a29fb5c}{create\+\_\+game}} (self, req\+\_\+create\+\_\+game)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a8d4814c56a3480e8522e1fedf4239742}{save\+\_\+map}} (self, map\+\_\+path, map\+\_\+data)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a2425abd677f568e0a04ae474edc07650}{join\+\_\+game}} (self, req\+\_\+join\+\_\+game)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_ae1a5b202f8b9250778946884c4f6d128}{restart}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a2e7a744b2dcbce22e9d98dafa8ccb66c}{start\+\_\+replay}} (self, req\+\_\+start\+\_\+replay)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a56f229658ab46f3470ea604d431bb793}{game\+\_\+info}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_af7e69dffc014572c52d7c09942cc6901}{data\+\_\+raw}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a8ce6ceb715e8d008c25f8c2f2e7aab0d}{data}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a23ecae343e7a591f3d86a7d2817228eb}{observe}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a4c720cf218cc8a0917f494c24f3957f5}{step}} (self, count=1)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a04e94f4b848edc9217a223e55706f42a}{actions}} (self, req\+\_\+action)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a9a583874ce739176d1b1dfd64d5b66d0}{act}} (self, action)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a6436284406688055f28602f97700b9c9}{chat}} (self, message)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a934b37c346a993c3a0e80027bc22be6f}{leave}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a9383a87328923ffa817caaee6ef043d8}{save\+\_\+replay}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a47d4ab019c27ba0bdcf373c0529654b5}{quit}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a2e120fcac63f5c2c2186f517876bb277}{ping}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a7a905bd345e001db1c5698646d97b476}{replay\+\_\+info}} (self, replay\+\_\+data)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_aa4765773f0754d885cc0f74202ee3210}{status}} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Implements a python interface to interact with the SC2 binary.
+
+All of these are implemented as blocking calls, so wait for the response
+before returning.
+
+Many of these functions take a Request* object and respond with the
+corresponding Response* object as returned from SC2. The simpler functions
+take a value and construct the Request itself, or return something more useful
+than a Response* object.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a12ff18dcbc552d7fb96819b4e2005384}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a12ff18dcbc552d7fb96819b4e2005384}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{host,  }\item[{}]{port,  }\item[{}]{proc = {\ttfamily None},  }\item[{}]{timeout\+\_\+seconds = {\ttfamily None} }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a9a583874ce739176d1b1dfd64d5b66d0}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a9a583874ce739176d1b1dfd64d5b66d0}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!act@{act}}
+\index{act@{act}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{act()}{act()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+act (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{action }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send a single action. This is a shortcut for `actions`.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a04e94f4b848edc9217a223e55706f42a}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a04e94f4b848edc9217a223e55706f42a}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!actions@{actions}}
+\index{actions@{actions}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{actions()}{actions()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+actions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req\+\_\+action }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send a `sc_pb.RequestAction`, which may include multiple actions.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a6436284406688055f28602f97700b9c9}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a6436284406688055f28602f97700b9c9}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!chat@{chat}}
+\index{chat@{chat}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{chat()}{chat()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+chat (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{message }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send chat message as a broadcast.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a6eac6b1034679ad54da9eeb309b147f1}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a6eac6b1034679ad54da9eeb309b147f1}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!close@{close}}
+\index{close@{close}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_aa6c03198b58d0ea4c3c6af3d9a29fb5c}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_aa6c03198b58d0ea4c3c6af3d9a29fb5c}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!create\+\_\+game@{create\+\_\+game}}
+\index{create\+\_\+game@{create\+\_\+game}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{create\+\_\+game()}{create\_game()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+create\+\_\+game (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req\+\_\+create\+\_\+game }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new game. This can only be done by the host.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a8ce6ceb715e8d008c25f8c2f2e7aab0d}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a8ce6ceb715e8d008c25f8c2f2e7aab0d}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!data@{data}}
+\index{data@{data}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+data (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the static data for the current game.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_af7e69dffc014572c52d7c09942cc6901}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_af7e69dffc014572c52d7c09942cc6901}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!data\+\_\+raw@{data\+\_\+raw}}
+\index{data\+\_\+raw@{data\+\_\+raw}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{data\+\_\+raw()}{data\_raw()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+data\+\_\+raw (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the raw static data for the current game. Prefer `data` instead.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a56f229658ab46f3470ea604d431bb793}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a56f229658ab46f3470ea604d431bb793}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!game\+\_\+info@{game\+\_\+info}}
+\index{game\+\_\+info@{game\+\_\+info}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{game\+\_\+info()}{game\_info()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+game\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the basic information about the game.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a2425abd677f568e0a04ae474edc07650}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a2425abd677f568e0a04ae474edc07650}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!join\+\_\+game@{join\+\_\+game}}
+\index{join\+\_\+game@{join\+\_\+game}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{join\+\_\+game()}{join\_game()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+join\+\_\+game (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req\+\_\+join\+\_\+game }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Join a game, done by all connected clients.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a934b37c346a993c3a0e80027bc22be6f}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a934b37c346a993c3a0e80027bc22be6f}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!leave@{leave}}
+\index{leave@{leave}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{leave()}{leave()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+leave (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Disconnect from a multiplayer game.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a23ecae343e7a591f3d86a7d2817228eb}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a23ecae343e7a591f3d86a7d2817228eb}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!observe@{observe}}
+\index{observe@{observe}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{observe()}{observe()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+observe (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a current observation.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a2e120fcac63f5c2c2186f517876bb277}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a2e120fcac63f5c2c2186f517876bb277}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!ping@{ping}}
+\index{ping@{ping}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{ping()}{ping()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+ping (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a47d4ab019c27ba0bdcf373c0529654b5}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a47d4ab019c27ba0bdcf373c0529654b5}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!quit@{quit}}
+\index{quit@{quit}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{quit()}{quit()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+quit (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shut down the SC2 process.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a7a905bd345e001db1c5698646d97b476}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a7a905bd345e001db1c5698646d97b476}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!replay\+\_\+info@{replay\+\_\+info}}
+\index{replay\+\_\+info@{replay\+\_\+info}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{replay\+\_\+info()}{replay\_info()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+replay\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{replay\+\_\+data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_ae1a5b202f8b9250778946884c4f6d128}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_ae1a5b202f8b9250778946884c4f6d128}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!restart@{restart}}
+\index{restart@{restart}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{restart()}{restart()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+restart (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Restart the game. Only done by the host.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a8d4814c56a3480e8522e1fedf4239742}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a8d4814c56a3480e8522e1fedf4239742}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!save\+\_\+map@{save\+\_\+map}}
+\index{save\+\_\+map@{save\+\_\+map}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{save\+\_\+map()}{save\_map()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+save\+\_\+map (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{map\+\_\+path,  }\item[{}]{map\+\_\+data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save a map into temp dir so create game can access it in multiplayer.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a9383a87328923ffa817caaee6ef043d8}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a9383a87328923ffa817caaee6ef043d8}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!save\+\_\+replay@{save\+\_\+replay}}
+\index{save\+\_\+replay@{save\+\_\+replay}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{save\+\_\+replay()}{save\_replay()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+save\+\_\+replay (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save a replay, returning the data.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a2e7a744b2dcbce22e9d98dafa8ccb66c}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a2e7a744b2dcbce22e9d98dafa8ccb66c}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!start\+\_\+replay@{start\+\_\+replay}}
+\index{start\+\_\+replay@{start\+\_\+replay}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{start\+\_\+replay()}{start\_replay()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+start\+\_\+replay (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{req\+\_\+start\+\_\+replay }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Start a replay.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_aa4765773f0754d885cc0f74202ee3210}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_aa4765773f0754d885cc0f74202ee3210}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!status@{status}}
+\index{status@{status}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+status (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a4c720cf218cc8a0917f494c24f3957f5}\label{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_a4c720cf218cc8a0917f494c24f3957f5}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}!step@{step}}
+\index{step@{step}!pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller@{pysc2\+::lib\+::remote\+\_\+controller\+::\+Remote\+Controller}}
+\subsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+Remote\+Controller.\+step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{count = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Step the engine forward by one (or more) step.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{remote__controller_8py}{remote\+\_\+controller.\+py}}\end{DoxyCompactItemize}

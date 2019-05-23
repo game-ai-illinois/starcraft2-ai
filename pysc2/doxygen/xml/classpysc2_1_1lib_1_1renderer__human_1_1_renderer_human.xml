@@ -1,0 +1,1846 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::renderer_human::RendererHuman</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a7e2eeb0419488ec01dd3d8254a66f86a" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2.lib.renderer_human.RendererHuman::camera_actions</definition>
+        <argsstring></argsstring>
+        <name>camera_actions</name>
+        <initializer>=  {  # camera moves by 3 world units.
+      pygame.K_LEFT: <ref refid="classpysc2_1_1lib_1_1point_1_1_point" kindref="compound">point.Point</ref>(-3, 0),
+      pygame.K_RIGHT: <ref refid="classpysc2_1_1lib_1_1point_1_1_point" kindref="compound">point.Point</ref>(3, 0),
+      pygame.K_UP: <ref refid="classpysc2_1_1lib_1_1point_1_1_point" kindref="compound">point.Point</ref>(0, 3),
+      pygame.K_DOWN: <ref refid="classpysc2_1_1lib_1_1point_1_1_point" kindref="compound">point.Point</ref>(0, -3),
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="223" column="1" bodyfile="lib/renderer_human.py" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a144bae56c82766dfef0086979c5564e5" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2.lib.renderer_human.RendererHuman::cmd_group_keys</definition>
+        <argsstring></argsstring>
+        <name>cmd_group_keys</name>
+        <initializer>=  {
+      pygame.K_0: 0,
+      pygame.K_1: 1,
+      pygame.K_2: 2,
+      pygame.K_3: 3,
+      pygame.K_4: 4,
+      pygame.K_5: 5,
+      pygame.K_6: 6,
+      pygame.K_7: 7,
+      pygame.K_8: 8,
+      pygame.K_9: 9,
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="230" column="1" bodyfile="lib/renderer_human.py" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a333c02966efae679e670e9de19640957" prot="public" static="yes" mutable="no">
+        <type>list</type>
+        <definition>list pysc2.lib.renderer_human.RendererHuman::shortcuts</definition>
+        <argsstring></argsstring>
+        <name>shortcuts</name>
+        <initializer>=  [
+      (&quot;F1&quot;, &quot;Select idle worker&quot;),
+      (&quot;F2&quot;, &quot;Select army&quot;),
+      (&quot;F3&quot;, &quot;Select larva (zerg) or warp gates (protoss)&quot;),
+      (&quot;F4&quot;, &quot;Quit the game&quot;),
+      (&quot;F5&quot;, &quot;Restart the map&quot;),
+      (&quot;F7&quot;, &quot;Toggle RGB rendering&quot;),
+      (&quot;F8&quot;, &quot;Toggle synchronous rendering&quot;),
+      (&quot;F9&quot;, &quot;Save a replay&quot;),
+      (&quot;Ctrl++&quot;, &quot;Zoom in&quot;),
+      (&quot;Ctrl+-&quot;, &quot;Zoom out&quot;),
+      (&quot;PgUp/PgDn&quot;, &quot;Increase/decrease the max game speed&quot;),
+      (&quot;Ctrl+PgUp/PgDn&quot;, &quot;Increase/decrease the step multiplier&quot;),
+      (&quot;Pause&quot;, &quot;Pause the game&quot;),
+      (&quot;?&quot;, &quot;This help screen&quot;),
+  ]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="243" column="1" bodyfile="lib/renderer_human.py" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a3e24be5654e9a470b7ba681f21b36ce2" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_fps</definition>
+        <argsstring></argsstring>
+        <name>_fps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="274" column="1" bodyfile="lib/renderer_human.py" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a2b1374127eccda78dbee020f980436e9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_step_mul</definition>
+        <argsstring></argsstring>
+        <name>_step_mul</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="275" column="1" bodyfile="lib/renderer_human.py" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a4754a5d32e8d0c4fee024567e8bceaaf" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_render_sync</definition>
+        <argsstring></argsstring>
+        <name>_render_sync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="276" column="1" bodyfile="lib/renderer_human.py" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ad5eb7e5c3230afd7bd7fe7a70c7832ca" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_render_rgb</definition>
+        <argsstring></argsstring>
+        <name>_render_rgb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="277" column="1" bodyfile="lib/renderer_human.py" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a3a55e87e3397d426af2a96f74b8e428c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_render_feature_grid</definition>
+        <argsstring></argsstring>
+        <name>_render_feature_grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="278" column="1" bodyfile="lib/renderer_human.py" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1abf4121ea9fc57ae0b1d832864bd9c416" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_window</definition>
+        <argsstring></argsstring>
+        <name>_window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="279" column="1" bodyfile="lib/renderer_human.py" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a3e84229aa5f78d4e27b0fd41c8891acc" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_desktop_size</definition>
+        <argsstring></argsstring>
+        <name>_desktop_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="280" column="1" bodyfile="lib/renderer_human.py" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a1f81a273af37ea93366b9b60ff7cb714" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_window_scale</definition>
+        <argsstring></argsstring>
+        <name>_window_scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="281" column="1" bodyfile="lib/renderer_human.py" bodystart="281" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af2ba48eb8d5955a5857d901a784e0411" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_obs_queue</definition>
+        <argsstring></argsstring>
+        <name>_obs_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="282" column="1" bodyfile="lib/renderer_human.py" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a2c495c898a104d27fd9427fa0d8a8a4a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_render_thread</definition>
+        <argsstring></argsstring>
+        <name>_render_thread</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="283" column="1" bodyfile="lib/renderer_human.py" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a992ee74df30aa49ee1f7269284a13f57" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_game_times</definition>
+        <argsstring></argsstring>
+        <name>_game_times</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="286" column="1" bodyfile="lib/renderer_human.py" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ac51c9d1e353608f087b33e74fc9d1dfc" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_render_times</definition>
+        <argsstring></argsstring>
+        <name>_render_times</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="287" column="1" bodyfile="lib/renderer_human.py" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a6829378db061b4066dbf782c70d74a27" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_last_time</definition>
+        <argsstring></argsstring>
+        <name>_last_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="288" column="1" bodyfile="lib/renderer_human.py" bodystart="288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a87f8d7d7f1719743ae3af2e04b17f299" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_last_game_loop</definition>
+        <argsstring></argsstring>
+        <name>_last_game_loop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="289" column="1" bodyfile="lib/renderer_human.py" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a61465d08bd2eb7b9b4502e704fad168c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_name_lengths</definition>
+        <argsstring></argsstring>
+        <name>_name_lengths</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="290" column="1" bodyfile="lib/renderer_human.py" bodystart="290" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ab4b70565ae1d59a2f820d28d9864a14a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_video_writer</definition>
+        <argsstring></argsstring>
+        <name>_video_writer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="291" column="1" bodyfile="lib/renderer_human.py" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a0b9074440c786c9e6beb4c246f2f35a6" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_game_info</definition>
+        <argsstring></argsstring>
+        <name>_game_info</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="315" column="1" bodyfile="lib/renderer_human.py" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a993e0a315158dfa54cb0cfbaa4ad1202" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_static_data</definition>
+        <argsstring></argsstring>
+        <name>_static_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="316" column="1" bodyfile="lib/renderer_human.py" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a4c969020a67b8197505538889147ee94" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_map_size</definition>
+        <argsstring></argsstring>
+        <name>_map_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="321" column="1" bodyfile="lib/renderer_human.py" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a26d2836d6ab2917fdfb7532b32d18305" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_feature_screen_px</definition>
+        <argsstring></argsstring>
+        <name>_feature_screen_px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="325" column="1" bodyfile="lib/renderer_human.py" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a508726c566a156b4cc9a10a2ff0b146b" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_feature_minimap_px</definition>
+        <argsstring></argsstring>
+        <name>_feature_minimap_px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="326" column="1" bodyfile="lib/renderer_human.py" bodystart="326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a1c9feee9f465b44830406e89893a3720" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_feature_camera_width_world_units</definition>
+        <argsstring></argsstring>
+        <name>_feature_camera_width_world_units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="327" column="1" bodyfile="lib/renderer_human.py" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af7429997abf349591239881e118c008a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_rgb_screen_px</definition>
+        <argsstring></argsstring>
+        <name>_rgb_screen_px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="333" column="1" bodyfile="lib/renderer_human.py" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a0d064898ee3519c5f9edffa900cb5c5f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_rgb_minimap_px</definition>
+        <argsstring></argsstring>
+        <name>_rgb_minimap_px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="334" column="1" bodyfile="lib/renderer_human.py" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aca57b7466d09be6cd2636f37c964265d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_initialized</definition>
+        <argsstring></argsstring>
+        <name>_initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="344" column="1" bodyfile="lib/renderer_human.py" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1adda785fa408db044c7dcbff45d62c5c5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_obs</definition>
+        <argsstring></argsstring>
+        <name>_obs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="353" column="1" bodyfile="lib/renderer_human.py" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1acd670b7f6e41a0e385a084d63436d1a0" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_queued_action</definition>
+        <argsstring></argsstring>
+        <name>_queued_action</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="354" column="1" bodyfile="lib/renderer_human.py" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a418f1b61f773bb4c43482175e38e17d5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_queued_hotkey</definition>
+        <argsstring></argsstring>
+        <name>_queued_hotkey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="355" column="1" bodyfile="lib/renderer_human.py" bodystart="355" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aeaac0591b20401d8f6ec3e43cb56dc9c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_select_start</definition>
+        <argsstring></argsstring>
+        <name>_select_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="356" column="1" bodyfile="lib/renderer_human.py" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aa3fe1f7042f587fcca815751e964da3d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_alerts</definition>
+        <argsstring></argsstring>
+        <name>_alerts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="357" column="1" bodyfile="lib/renderer_human.py" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aed29b70b4f7a51ef714e66e020100174" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_past_actions</definition>
+        <argsstring></argsstring>
+        <name>_past_actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="358" column="1" bodyfile="lib/renderer_human.py" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a6401fbee4d6cac9e23683f027bb7298f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_help</definition>
+        <argsstring></argsstring>
+        <name>_help</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="359" column="1" bodyfile="lib/renderer_human.py" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aa0b777018f06df439440f974610dbb3e" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_surfaces</definition>
+        <argsstring></argsstring>
+        <name>_surfaces</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="403" column="1" bodyfile="lib/renderer_human.py" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a486133c3c12087297e615adf4c44ff4b" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_scale</definition>
+        <argsstring></argsstring>
+        <name>_scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="411" column="1" bodyfile="lib/renderer_human.py" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a49c58706c26849de79643570bccaf20f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_font_small</definition>
+        <argsstring></argsstring>
+        <name>_font_small</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="412" column="1" bodyfile="lib/renderer_human.py" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a332a7a68fefb7f9cc004777d853f2cb1" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_font_large</definition>
+        <argsstring></argsstring>
+        <name>_font_large</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="413" column="1" bodyfile="lib/renderer_human.py" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aeba02ba473b0087c4a328f2fc656957b" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_world_to_world_tl</definition>
+        <argsstring></argsstring>
+        <name>_world_to_world_tl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="420" column="1" bodyfile="lib/renderer_human.py" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a6d7b907e186636d7dfb9df3a9b964d54" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_world_tl_to_world_camera_rel</definition>
+        <argsstring></argsstring>
+        <name>_world_tl_to_world_camera_rel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="429" column="1" bodyfile="lib/renderer_human.py" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aa28ec287a0a169cdaf7bedf8507aed0e" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_world_to_feature_screen</definition>
+        <argsstring></argsstring>
+        <name>_world_to_feature_screen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="453" column="1" bodyfile="lib/renderer_human.py" bodystart="453" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a2df99ebcf200ad2657c4c7b136798560" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_world_to_feature_screen_px</definition>
+        <argsstring></argsstring>
+        <name>_world_to_feature_screen_px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="457" column="1" bodyfile="lib/renderer_human.py" bodystart="457" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aebac1f0934bb4896ad394867d53f0fb4" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_world_to_feature_minimap</definition>
+        <argsstring></argsstring>
+        <name>_world_to_feature_minimap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="469" column="1" bodyfile="lib/renderer_human.py" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1abdeddad0002f4e22512f4c9ca66525af" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_world_to_feature_minimap_px</definition>
+        <argsstring></argsstring>
+        <name>_world_to_feature_minimap_px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="472" column="1" bodyfile="lib/renderer_human.py" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a68b1cb49b7a3b8588ed09b7bb1fdaa1b" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_world_to_rgb_screen</definition>
+        <argsstring></argsstring>
+        <name>_world_to_rgb_screen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="491" column="1" bodyfile="lib/renderer_human.py" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a3c307c30f4a8c5b6e231862624644fc0" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_world_to_rgb_screen_px</definition>
+        <argsstring></argsstring>
+        <name>_world_to_rgb_screen_px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="495" column="1" bodyfile="lib/renderer_human.py" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a55767b784c21ad0132622828318a8fae" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_world_to_rgb_minimap</definition>
+        <argsstring></argsstring>
+        <name>_world_to_rgb_minimap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="507" column="1" bodyfile="lib/renderer_human.py" bodystart="507" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a03470ed008af41ee82abd705f7fb1b65" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_world_to_rgb_minimap_px</definition>
+        <argsstring></argsstring>
+        <name>_world_to_rgb_minimap_px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="510" column="1" bodyfile="lib/renderer_human.py" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a8485ee77adc8b535e1729904a336d56a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human.RendererHuman::_camera</definition>
+        <argsstring></argsstring>
+        <name>_camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="640" column="1" bodyfile="lib/renderer_human.py" bodystart="640" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a26faecf964f718dda37529ab44187500" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.__init__</definition>
+        <argsstring>(self, fps=22.4, step_mul=1, render_sync=False, render_feature_grid=True, video=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fps</type>
+          <defname>fps</defname>
+          <defval>22.4</defval>
+        </param>
+        <param>
+          <type>step_mul</type>
+          <defname>step_mul</defname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>render_sync</type>
+          <defname>render_sync</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>render_feature_grid</type>
+          <defname>render_feature_grid</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>video</type>
+          <defname>video</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create a renderer for use by humans.
+
+Make sure to call `init` with the game info, or just use `run`.
+
+Args:
+  fps: How fast should the game be run.
+  step_mul: How many game steps to take per observation.
+  render_sync: Whether to wait for the obs to render before continuing.
+  render_feature_grid: When RGB and feature layers are available, whether
+  to render the grid of feature layers.
+  video: A filename to write the video to. Implicitly enables render_sync.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="260" column="1" bodyfile="lib/renderer_human.py" bodystart="261" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1abe6de0e7fa420c911d5ffe2ed32b8341" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.close</definition>
+        <argsstring>(self)</argsstring>
+        <name>close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="293" column="1" bodyfile="lib/renderer_human.py" bodystart="293" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a5f454c5d09ca1ef6e270fd0b1823ac09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.init</definition>
+        <argsstring>(self, game_info, static_data)</argsstring>
+        <name>init</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game_info</type>
+          <defname>game_info</defname>
+        </param>
+        <param>
+          <type>static_data</type>
+          <defname>static_data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Take the game info and the static data needed to set up the game.
+
+This must be called before render or get_actions for each game or restart.
+
+Args:
+  game_info: A `sc_pb.ResponseGameInfo` object for this game.
+  static_data: A `StaticData` object for this game.
+
+Raises:
+  ValueError: if there is nothing to render.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="303" column="1" bodyfile="lib/renderer_human.py" bodystart="303" bodyend="360"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ab8c4fc4c1c501a62c5f13315c1d0268b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.init_window</definition>
+        <argsstring>(self)</argsstring>
+        <name>init_window</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize the pygame window and lay out the surfaces.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="363" column="1" bodyfile="lib/renderer_human.py" bodystart="363" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ab34c77c2706bd142fb196a0da0e00a93" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.zoom</definition>
+        <argsstring>(self, factor)</argsstring>
+        <name>zoom</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>factor</type>
+          <defname>factor</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Zoom the window in/out.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="644" column="1" bodyfile="lib/renderer_human.py" bodystart="644" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a036b4ec57bccf6059f10d92bb3744b19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.get_mouse_pos</definition>
+        <argsstring>(self, window_pos=None)</argsstring>
+        <name>get_mouse_pos</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>window_pos</type>
+          <defname>window_pos</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a MousePos filled with the world position and surf it hit.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="649" column="1" bodyfile="lib/renderer_human.py" bodystart="649" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aeb3f93dcb528183dafeb97d074674f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.clear_queued_action</definition>
+        <argsstring>(self)</argsstring>
+        <name>clear_queued_action</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="661" column="1" bodyfile="lib/renderer_human.py" bodystart="661" bodyend="664"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af7ca690aa563114ab576736a8d04b83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.save_replay</definition>
+        <argsstring>(self, run_config, controller)</argsstring>
+        <name>save_replay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>run_config</type>
+          <defname>run_config</defname>
+        </param>
+        <param>
+          <type>controller</type>
+          <defname>controller</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="665" column="1" bodyfile="lib/renderer_human.py" bodystart="665" bodyend="671"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a4b69f3cbb695f2cf639fe7f6e5547fb3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.get_actions</definition>
+        <argsstring>(self, run_config, controller)</argsstring>
+        <name>get_actions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>run_config</type>
+          <defname>run_config</defname>
+        </param>
+        <param>
+          <type>controller</type>
+          <defname>controller</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get actions from the UI, apply to controller, and return an ActionCmd.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="673" column="1" bodyfile="lib/renderer_human.py" bodystart="673" bodyend="798"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a8663ab4f864532fb35c3bafc92f9c14c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.camera_action</definition>
+        <argsstring>(self, mouse_pos)</argsstring>
+        <name>camera_action</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>mouse_pos</type>
+          <defname>mouse_pos</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a `sc_pb.Action` with the camera movement filled.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="799" column="1" bodyfile="lib/renderer_human.py" bodystart="799" bodyend="805"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a5646d9167da16ca08f722b83cbf36151" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.camera_action_raw</definition>
+        <argsstring>(self, world_pos)</argsstring>
+        <name>camera_action_raw</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>world_pos</type>
+          <defname>world_pos</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a `sc_pb.Action` with the camera movement filled.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="806" column="1" bodyfile="lib/renderer_human.py" bodystart="806" bodyend="811"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a5a02cefce3f1fd80ce6f5d018aa63ae1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.select_action</definition>
+        <argsstring>(self, pos1, pos2, ctrl, shift)</argsstring>
+        <name>select_action</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pos1</type>
+          <defname>pos1</defname>
+        </param>
+        <param>
+          <type>pos2</type>
+          <defname>pos2</defname>
+        </param>
+        <param>
+          <type>ctrl</type>
+          <defname>ctrl</defname>
+        </param>
+        <param>
+          <type>shift</type>
+          <defname>shift</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a `sc_pb.Action` with the selection filled.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="812" column="1" bodyfile="lib/renderer_human.py" bodystart="812" bodyend="842"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af24db9de7cefaf79d4e3304451874971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.select_idle_worker</definition>
+        <argsstring>(self, ctrl, shift)</argsstring>
+        <name>select_idle_worker</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>ctrl</type>
+          <defname>ctrl</defname>
+        </param>
+        <param>
+          <type>shift</type>
+          <defname>shift</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select an idle worker.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="843" column="1" bodyfile="lib/renderer_human.py" bodystart="843" bodyend="853"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a44ccbd5f0a7ca4f3bf4d8d99d1f359db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.select_army</definition>
+        <argsstring>(self, shift)</argsstring>
+        <name>select_army</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>shift</type>
+          <defname>shift</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select the entire army.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="854" column="1" bodyfile="lib/renderer_human.py" bodystart="854" bodyend="859"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ab22c464f134f2776764bd490510d7625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.select_warp_gates</definition>
+        <argsstring>(self, shift)</argsstring>
+        <name>select_warp_gates</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>shift</type>
+          <defname>shift</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select all warp gates.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="860" column="1" bodyfile="lib/renderer_human.py" bodystart="860" bodyend="865"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a523b4748b3d7d3140444a28d210c6ffa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.select_larva</definition>
+        <argsstring>(self)</argsstring>
+        <name>select_larva</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select all larva.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="866" column="1" bodyfile="lib/renderer_human.py" bodystart="866" bodyend="871"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aee87eb12a9bd8b68cda51b5fc9ddc179" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.control_group</definition>
+        <argsstring>(self, control_group_id, ctrl, shift, alt)</argsstring>
+        <name>control_group</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>control_group_id</type>
+          <defname>control_group_id</defname>
+        </param>
+        <param>
+          <type>ctrl</type>
+          <defname>ctrl</defname>
+        </param>
+        <param>
+          <type>shift</type>
+          <defname>shift</defname>
+        </param>
+        <param>
+          <type>alt</type>
+          <defname>alt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Act on a control group, selecting, setting, etc.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="872" column="1" bodyfile="lib/renderer_human.py" bodystart="872" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ad2533c429123e8b01182751705656831" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.unit_action</definition>
+        <argsstring>(self, cmd, pos, shift)</argsstring>
+        <name>unit_action</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>cmd</type>
+          <defname>cmd</defname>
+        </param>
+        <param>
+          <type>pos</type>
+          <defname>pos</defname>
+        </param>
+        <param>
+          <type>shift</type>
+          <defname>shift</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a `sc_pb.Action` filled with the cmd and appropriate target.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="893" column="1" bodyfile="lib/renderer_human.py" bodystart="893" bodyend="913"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ae85499fb46248e23a7a6fdcd71c576a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.get_unit_name</definition>
+        <argsstring>(self, surf, name, radius)</argsstring>
+        <name>get_unit_name</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get a length limited unit name for drawing units.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="941" column="1" bodyfile="lib/renderer_human.py" bodystart="941" bodyend="953"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ade68e7bc9d5713cdbff1ff7e905e2550" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_units</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_units</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the units and buildings.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="955" column="1" bodyfile="lib/renderer_human.py" bodystart="955" bodyend="984"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ab54385cd728e583992e54234775d64f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_selection</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_selection</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the selection rectange.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="986" column="1" bodyfile="lib/renderer_human.py" bodystart="986" bodyend="995"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ac5a4bf8e1bd71c179bbea141b63b0f73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_build_target</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_build_target</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the build target.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="997" column="1" bodyfile="lib/renderer_human.py" bodystart="997" bodyend="1013"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aeeda39dd88a95065aa09e5e42607f8f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_overlay</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_overlay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the overlay describing resources.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1015" column="1" bodyfile="lib/renderer_human.py" bodystart="1015" bodyend="1044"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ae2b5b91b3849a464443dc7b9a8753972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_help</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_help</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the help dialog.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1046" column="1" bodyfile="lib/renderer_human.py" bodystart="1046" bodyend="1061"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a86f6a72aabfa9db703a7a046d85e4944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_commands</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_commands</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the list of available commands.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1063" column="1" bodyfile="lib/renderer_human.py" bodystart="1063" bodyend="1082"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1adf13e637859856e1bea579b7e864c6d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_panel</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_panel</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the unit selection or build queue.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1084" column="1" bodyfile="lib/renderer_human.py" bodystart="1084" bodyend="1151"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a13c595cf6c121ca2277377b92374b379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_actions</definition>
+        <argsstring>(self)</argsstring>
+        <name>draw_actions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the actions so that they can be inspected for accuracy.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1153" column="1" bodyfile="lib/renderer_human.py" bodystart="1153" bodyend="1165"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1adebb204f609146564f48ab6848a24f32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.prepare_actions</definition>
+        <argsstring>(self, obs)</argsstring>
+        <name>prepare_actions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Keep a list of the past actions so they can be drawn.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1167" column="1" bodyfile="lib/renderer_human.py" bodystart="1167" bodyend="1240"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af63a5bda40912c1505a443ee497728d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_base_map</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_base_map</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the base map.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1242" column="1" bodyfile="lib/renderer_human.py" bodystart="1242" bodyend="1272"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a4d4b724f888cdf61172d98c0275c4417" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_mini_map</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_mini_map</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the minimap.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1274" column="1" bodyfile="lib/renderer_human.py" bodystart="1274" bodyend="1322"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a52e9b9f7a0bc37c672881dbe1f1e262f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.check_valid_queued_action</definition>
+        <argsstring>(self)</argsstring>
+        <name>check_valid_queued_action</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1323" column="1" bodyfile="lib/renderer_human.py" bodystart="1323" bodyend="1331"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aa893875b298c12c987a6050c744323f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_rendered_map</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_rendered_map</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the rendered pixels.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1333" column="1" bodyfile="lib/renderer_human.py" bodystart="1333" bodyend="1337"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a9f4b95d7b641f560d7c4c7151e445b95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_screen</definition>
+        <argsstring>(self, surf)</argsstring>
+        <name>draw_screen</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw the screen area.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1338" column="1" bodyfile="lib/renderer_human.py" bodystart="1338" bodyend="1352"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a8fb3d6fe7070b1176eb54bf153586d8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.draw_feature_layer</definition>
+        <argsstring>(self, surf, feature)</argsstring>
+        <name>draw_feature_layer</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>surf</type>
+          <defname>surf</defname>
+        </param>
+        <param>
+          <type>feature</type>
+          <defname>feature</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw a feature layer.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1354" column="1" bodyfile="lib/renderer_human.py" bodystart="1354" bodyend="1361"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a35641fd0489ce873dab71c737a54363d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.all_surfs</definition>
+        <argsstring>(self, fn, args, kwargs)</argsstring>
+        <name>all_surfs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fn</type>
+          <defname>fn</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1362" column="1" bodyfile="lib/renderer_human.py" bodystart="1362" bodyend="1366"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a53b0f200ed33a914ac4a4159ada4b520" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.render</definition>
+        <argsstring>(self, obs)</argsstring>
+        <name>render</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Push an observation onto the queue to be rendered.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1368" column="1" bodyfile="lib/renderer_human.py" bodystart="1368" bodyend="1381"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a1d0703f86bcb0ba30a30a6aa2b0bbd79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.render_thread</definition>
+        <argsstring>(self)</argsstring>
+        <name>render_thread</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A render loop that pulls observations off the queue to render.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1382" column="1" bodyfile="lib/renderer_human.py" bodystart="1382" bodyend="1401"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a90c82ff358c2166c432d2c1aa530021b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.render_obs</definition>
+        <argsstring>(self, obs)</argsstring>
+        <name>render_obs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Render a frame given an observation.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1404" column="1" bodyfile="lib/renderer_human.py" bodystart="1404" bodyend="1428"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ad30f49178466d7adc7a71ec31ffc61aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.run</definition>
+        <argsstring>(self, run_config, controller, max_game_steps=0, max_episodes=0, game_steps_per_episode=0, save_replay=False)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>run_config</type>
+          <defname>run_config</defname>
+        </param>
+        <param>
+          <type>controller</type>
+          <defname>controller</defname>
+        </param>
+        <param>
+          <type>max_game_steps</type>
+          <defname>max_game_steps</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>max_episodes</type>
+          <defname>max_episodes</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>game_steps_per_episode</type>
+          <defname>game_steps_per_episode</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af7ca690aa563114ab576736a8d04b83a" kindref="member">save_replay</ref></type>
+          <defname>save_replay</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Run loop that gets observations, renders them, and sends back actions.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1429" column="1" bodyfile="lib/renderer_human.py" bodystart="1430" bodyend="1498"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a74cbc7712f1c882681908b038fd2329e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman.__del__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__del__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="1499" column="1" bodyfile="lib/renderer_human.py" bodystart="1499" bodyend="1501"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aceeba1d59d19182a8c00650927d3d8ec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman._update_camera</definition>
+        <argsstring>(self, camera_center)</argsstring>
+        <name>_update_camera</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>camera_center</type>
+          <defname>camera_center</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the camera transform based on the new camera center.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="629" column="1" bodyfile="lib/renderer_human.py" bodystart="629" bodyend="643"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a641c59c93748921a0b4ff82e97801c5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman._abilities</definition>
+        <argsstring>(self, fn=None)</argsstring>
+        <name>_abilities</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>fn</type>
+          <defname>fn</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the list of abilities filtered by `fn`.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="914" column="1" bodyfile="lib/renderer_human.py" bodystart="914" bodyend="926"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a7a4a98f70e0ad8b50cdf9174003d676f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman._visible_units</definition>
+        <argsstring>(self)</argsstring>
+        <name>_visible_units</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A generator of visible units and their positions as `Point`s, sorted.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="927" column="1" bodyfile="lib/renderer_human.py" bodystart="927" bodyend="934"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a4a69e7fc0610e2936ec19c1a7b08d2c7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human.RendererHuman._units_in_area</definition>
+        <argsstring>(self, rect)</argsstring>
+        <name>_units_in_area</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>rect</type>
+          <defname>rect</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the list of units that intersect the rect.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="935" column="1" bodyfile="lib/renderer_human.py" bodystart="935" bodyend="940"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Render starcraft obs with pygame such that it&apos;s playable by humans.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="549">
+        <label>object</label>
+      </node>
+      <node id="548">
+        <label>pysc2.lib.renderer_human.RendererHuman</label>
+        <link refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human"/>
+        <childnode refid="549" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="551">
+        <label>object</label>
+      </node>
+      <node id="550">
+        <label>pysc2.lib.renderer_human.RendererHuman</label>
+        <link refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human"/>
+        <childnode refid="551" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/renderer_human.py" line="221" column="1" bodyfile="lib/renderer_human.py" bodystart="221" bodyend="1501"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a74cbc7712f1c882681908b038fd2329e" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>__del__</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a26faecf964f718dda37529ab44187500" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a641c59c93748921a0b4ff82e97801c5f" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_abilities</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aa3fe1f7042f587fcca815751e964da3d" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_alerts</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a8485ee77adc8b535e1729904a336d56a" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_camera</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a3e84229aa5f78d4e27b0fd41c8891acc" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_desktop_size</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a1c9feee9f465b44830406e89893a3720" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_feature_camera_width_world_units</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a508726c566a156b4cc9a10a2ff0b146b" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_feature_minimap_px</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a26d2836d6ab2917fdfb7532b32d18305" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_feature_screen_px</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a332a7a68fefb7f9cc004777d853f2cb1" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_font_large</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a49c58706c26849de79643570bccaf20f" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_font_small</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a3e24be5654e9a470b7ba681f21b36ce2" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_fps</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a0b9074440c786c9e6beb4c246f2f35a6" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_game_info</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a992ee74df30aa49ee1f7269284a13f57" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_game_times</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a6401fbee4d6cac9e23683f027bb7298f" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_help</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aca57b7466d09be6cd2636f37c964265d" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_initialized</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a87f8d7d7f1719743ae3af2e04b17f299" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_last_game_loop</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a6829378db061b4066dbf782c70d74a27" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_last_time</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a4c969020a67b8197505538889147ee94" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_map_size</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a61465d08bd2eb7b9b4502e704fad168c" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_name_lengths</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1adda785fa408db044c7dcbff45d62c5c5" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_obs</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af2ba48eb8d5955a5857d901a784e0411" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_obs_queue</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aed29b70b4f7a51ef714e66e020100174" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_past_actions</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1acd670b7f6e41a0e385a084d63436d1a0" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_queued_action</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a418f1b61f773bb4c43482175e38e17d5" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_queued_hotkey</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a3a55e87e3397d426af2a96f74b8e428c" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_render_feature_grid</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ad5eb7e5c3230afd7bd7fe7a70c7832ca" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_render_rgb</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a4754a5d32e8d0c4fee024567e8bceaaf" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_render_sync</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a2c495c898a104d27fd9427fa0d8a8a4a" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_render_thread</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ac51c9d1e353608f087b33e74fc9d1dfc" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_render_times</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a0d064898ee3519c5f9edffa900cb5c5f" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_rgb_minimap_px</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af7429997abf349591239881e118c008a" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_rgb_screen_px</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a486133c3c12087297e615adf4c44ff4b" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_scale</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aeaac0591b20401d8f6ec3e43cb56dc9c" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_select_start</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a993e0a315158dfa54cb0cfbaa4ad1202" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_static_data</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a2b1374127eccda78dbee020f980436e9" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_step_mul</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aa0b777018f06df439440f974610dbb3e" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_surfaces</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a4a69e7fc0610e2936ec19c1a7b08d2c7" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_units_in_area</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aceeba1d59d19182a8c00650927d3d8ec" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_update_camera</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ab4b70565ae1d59a2f820d28d9864a14a" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_video_writer</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a7a4a98f70e0ad8b50cdf9174003d676f" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_visible_units</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1abf4121ea9fc57ae0b1d832864bd9c416" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_window</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a1f81a273af37ea93366b9b60ff7cb714" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_window_scale</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a6d7b907e186636d7dfb9df3a9b964d54" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_world_tl_to_world_camera_rel</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aebac1f0934bb4896ad394867d53f0fb4" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_world_to_feature_minimap</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1abdeddad0002f4e22512f4c9ca66525af" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_world_to_feature_minimap_px</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aa28ec287a0a169cdaf7bedf8507aed0e" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_world_to_feature_screen</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a2df99ebcf200ad2657c4c7b136798560" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_world_to_feature_screen_px</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a55767b784c21ad0132622828318a8fae" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_world_to_rgb_minimap</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a03470ed008af41ee82abd705f7fb1b65" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_world_to_rgb_minimap_px</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a68b1cb49b7a3b8588ed09b7bb1fdaa1b" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_world_to_rgb_screen</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a3c307c30f4a8c5b6e231862624644fc0" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_world_to_rgb_screen_px</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aeba02ba473b0087c4a328f2fc656957b" prot="private" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>_world_to_world_tl</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a35641fd0489ce873dab71c737a54363d" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>all_surfs</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a8663ab4f864532fb35c3bafc92f9c14c" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>camera_action</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a5646d9167da16ca08f722b83cbf36151" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>camera_action_raw</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a7e2eeb0419488ec01dd3d8254a66f86a" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>camera_actions</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a52e9b9f7a0bc37c672881dbe1f1e262f" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>check_valid_queued_action</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aeb3f93dcb528183dafeb97d074674f5c" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>clear_queued_action</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1abe6de0e7fa420c911d5ffe2ed32b8341" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>close</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a144bae56c82766dfef0086979c5564e5" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>cmd_group_keys</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aee87eb12a9bd8b68cda51b5fc9ddc179" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>control_group</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a13c595cf6c121ca2277377b92374b379" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_actions</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af63a5bda40912c1505a443ee497728d2" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_base_map</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ac5a4bf8e1bd71c179bbea141b63b0f73" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_build_target</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a86f6a72aabfa9db703a7a046d85e4944" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_commands</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a8fb3d6fe7070b1176eb54bf153586d8d" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_feature_layer</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ae2b5b91b3849a464443dc7b9a8753972" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_help</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a4d4b724f888cdf61172d98c0275c4417" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_mini_map</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aeeda39dd88a95065aa09e5e42607f8f1" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_overlay</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1adf13e637859856e1bea579b7e864c6d1" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_panel</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1aa893875b298c12c987a6050c744323f3" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_rendered_map</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a9f4b95d7b641f560d7c4c7151e445b95" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_screen</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ab54385cd728e583992e54234775d64f2" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_selection</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ade68e7bc9d5713cdbff1ff7e905e2550" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>draw_units</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a4b69f3cbb695f2cf639fe7f6e5547fb3" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>get_actions</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a036b4ec57bccf6059f10d92bb3744b19" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>get_mouse_pos</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ae85499fb46248e23a7a6fdcd71c576a1" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>get_unit_name</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a5f454c5d09ca1ef6e270fd0b1823ac09" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>init</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ab8c4fc4c1c501a62c5f13315c1d0268b" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>init_window</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1adebb204f609146564f48ab6848a24f32" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>prepare_actions</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a53b0f200ed33a914ac4a4159ada4b520" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>render</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a90c82ff358c2166c432d2c1aa530021b" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>render_obs</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a1d0703f86bcb0ba30a30a6aa2b0bbd79" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>render_thread</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ad30f49178466d7adc7a71ec31ffc61aa" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>run</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af7ca690aa563114ab576736a8d04b83a" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>save_replay</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a5a02cefce3f1fd80ce6f5d018aa63ae1" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>select_action</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a44ccbd5f0a7ca4f3bf4d8d99d1f359db" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>select_army</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1af24db9de7cefaf79d4e3304451874971" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>select_idle_worker</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a523b4748b3d7d3140444a28d210c6ffa" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>select_larva</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ab22c464f134f2776764bd490510d7625" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>select_warp_gates</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1a333c02966efae679e670e9de19640957" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>shortcuts</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ad2533c429123e8b01182751705656831" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>unit_action</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human_1ab34c77c2706bd142fb196a0da0e00a93" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::RendererHuman</scope><name>zoom</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

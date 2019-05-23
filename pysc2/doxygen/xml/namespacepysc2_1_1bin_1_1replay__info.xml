@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1bin_1_1replay__info" kind="namespace" language="Python">
+    <compoundname>pysc2::bin::replay_info</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1replay__info_1a0e32387780b827e99a5a1e91893d2cb9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_info._replay_index</definition>
+        <argsstring>(replay_dir)</argsstring>
+        <name>_replay_index</name>
+        <param>
+          <type>replay_dir</type>
+          <defname>replay_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Output information for a directory of replays.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_info.py" line="33" column="1" bodyfile="bin/replay_info.py" bodystart="33" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1replay__info_1a2dc005ab8d4a3412e0633165b49570f9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_info._replay_info</definition>
+        <argsstring>(replay_path)</argsstring>
+        <name>_replay_info</name>
+        <param>
+          <type>replay_path</type>
+          <defname>replay_path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Query a replay for information.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_info.py" line="83" column="1" bodyfile="bin/replay_info.py" bodystart="83" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1replay__info_1a4712b70e7bf10a00126d136369c35c97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_info.main</definition>
+        <argsstring>(argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>argv</type>
+          <defname>argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_info.py" line="96" column="1" bodyfile="bin/replay_info.py" bodystart="96" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1replay__info_1a7b8f6014c12e170330ee2e62f1e1bca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_info.entry_point</definition>
+        <argsstring>()</argsstring>
+        <name>entry_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_info.py" line="112" column="1" bodyfile="bin/replay_info.py" bodystart="112" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bin/replay_info.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

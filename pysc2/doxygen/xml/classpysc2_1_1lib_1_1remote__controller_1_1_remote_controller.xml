@@ -1,0 +1,536 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::remote_controller::RemoteController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a216c923a109116b131ec7194699209da" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.remote_controller.RemoteController::_client</definition>
+        <argsstring></argsstring>
+        <name>_client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="108" column="1" bodyfile="lib/remote_controller.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a12ff18dcbc552d7fb96819b4e2005384" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.__init__</definition>
+        <argsstring>(self, host, port, proc=None, timeout_seconds=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>proc</type>
+          <defname>proc</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>timeout_seconds</type>
+          <defname>timeout_seconds</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="105" column="1" bodyfile="lib/remote_controller.py" bodystart="105" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a6eac6b1034679ad54da9eeb309b147f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.close</definition>
+        <argsstring>(self)</argsstring>
+        <name>close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="140" column="1" bodyfile="lib/remote_controller.py" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1aa6c03198b58d0ea4c3c6af3d9a29fb5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.create_game</definition>
+        <argsstring>(self, req_create_game)</argsstring>
+        <name>create_game</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>req_create_game</type>
+          <defname>req_create_game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create a new game. This can only be done by the host.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="146" column="1" bodyfile="lib/remote_controller.py" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a8d4814c56a3480e8522e1fedf4239742" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.save_map</definition>
+        <argsstring>(self, map_path, map_data)</argsstring>
+        <name>save_map</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>map_path</type>
+          <defname>map_path</defname>
+        </param>
+        <param>
+          <type>map_data</type>
+          <defname>map_data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Save a map into temp dir so create game can access it in multiplayer.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="153" column="1" bodyfile="lib/remote_controller.py" bodystart="153" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a2425abd677f568e0a04ae474edc07650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.join_game</definition>
+        <argsstring>(self, req_join_game)</argsstring>
+        <name>join_game</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>req_join_game</type>
+          <defname>req_join_game</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Join a game, done by all connected clients.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="161" column="1" bodyfile="lib/remote_controller.py" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1ae1a5b202f8b9250778946884c4f6d128" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.restart</definition>
+        <argsstring>(self)</argsstring>
+        <name>restart</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Restart the game. Only done by the host.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="168" column="1" bodyfile="lib/remote_controller.py" bodystart="168" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a2e7a744b2dcbce22e9d98dafa8ccb66c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.start_replay</definition>
+        <argsstring>(self, req_start_replay)</argsstring>
+        <name>start_replay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>req_start_replay</type>
+          <defname>req_start_replay</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Start a replay.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="175" column="1" bodyfile="lib/remote_controller.py" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a56f229658ab46f3470ea604d431bb793" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.game_info</definition>
+        <argsstring>(self)</argsstring>
+        <name>game_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the basic information about the game.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="181" column="1" bodyfile="lib/remote_controller.py" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1af7e69dffc014572c52d7c09942cc6901" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.data_raw</definition>
+        <argsstring>(self)</argsstring>
+        <name>data_raw</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the raw static data for the current game. Prefer `data` instead.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="187" column="1" bodyfile="lib/remote_controller.py" bodystart="187" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a8ce6ceb715e8d008c25f8c2f2e7aab0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.data</definition>
+        <argsstring>(self)</argsstring>
+        <name>data</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the static data for the current game.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="192" column="1" bodyfile="lib/remote_controller.py" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a23ecae343e7a591f3d86a7d2817228eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.observe</definition>
+        <argsstring>(self)</argsstring>
+        <name>observe</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get a current observation.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="198" column="1" bodyfile="lib/remote_controller.py" bodystart="198" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a4c720cf218cc8a0917f494c24f3957f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.step</definition>
+        <argsstring>(self, count=1)</argsstring>
+        <name>step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>count</type>
+          <defname>count</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Step the engine forward by one (or more) step.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="204" column="1" bodyfile="lib/remote_controller.py" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a04e94f4b848edc9217a223e55706f42a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.actions</definition>
+        <argsstring>(self, req_action)</argsstring>
+        <name>actions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>req_action</type>
+          <defname>req_action</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Send a `sc_pb.RequestAction`, which may include multiple actions.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="211" column="1" bodyfile="lib/remote_controller.py" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a9a583874ce739176d1b1dfd64d5b66d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.act</definition>
+        <argsstring>(self, action)</argsstring>
+        <name>act</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Send a single action. This is a shortcut for `actions`.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="215" column="1" bodyfile="lib/remote_controller.py" bodystart="215" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a6436284406688055f28602f97700b9c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.chat</definition>
+        <argsstring>(self, message)</argsstring>
+        <name>chat</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>message</type>
+          <defname>message</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Send chat message as a broadcast.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="220" column="1" bodyfile="lib/remote_controller.py" bodystart="220" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a934b37c346a993c3a0e80027bc22be6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.leave</definition>
+        <argsstring>(self)</argsstring>
+        <name>leave</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Disconnect from a multiplayer game.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="230" column="1" bodyfile="lib/remote_controller.py" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a9383a87328923ffa817caaee6ef043d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.save_replay</definition>
+        <argsstring>(self)</argsstring>
+        <name>save_replay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Save a replay, returning the data.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="236" column="1" bodyfile="lib/remote_controller.py" bodystart="236" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a47d4ab019c27ba0bdcf373c0529654b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.quit</definition>
+        <argsstring>(self)</argsstring>
+        <name>quit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Shut down the SC2 process.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="243" column="1" bodyfile="lib/remote_controller.py" bodystart="243" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a2e120fcac63f5c2c2186f517876bb277" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.ping</definition>
+        <argsstring>(self)</argsstring>
+        <name>ping</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="254" column="1" bodyfile="lib/remote_controller.py" bodystart="254" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a7a905bd345e001db1c5698646d97b476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.replay_info</definition>
+        <argsstring>(self, replay_data)</argsstring>
+        <name>replay_info</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>replay_data</type>
+          <defname>replay_data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="259" column="1" bodyfile="lib/remote_controller.py" bodystart="259" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1aa4765773f0754d885cc0f74202ee3210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController.status</definition>
+        <argsstring>(self)</argsstring>
+        <name>status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="264" column="1" bodyfile="lib/remote_controller.py" bodystart="264" bodyend="266"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a49b7fde8c8d742ba25f687b8cf644745" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RemoteController._connect</definition>
+        <argsstring>(self, host, port, proc, timeout_seconds)</argsstring>
+        <name>_connect</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>port</type>
+          <defname>port</defname>
+        </param>
+        <param>
+          <type>proc</type>
+          <defname>proc</defname>
+        </param>
+        <param>
+          <type>timeout_seconds</type>
+          <defname>timeout_seconds</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Connect to the websocket, retrying as needed. Returns the socket.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="112" column="1" bodyfile="lib/remote_controller.py" bodystart="112" bodyend="139"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Implements a python interface to interact with the SC2 binary.
+
+All of these are implemented as blocking calls, so wait for the response
+before returning.
+
+Many of these functions take a Request* object and respond with the
+corresponding Response* object as returned from SC2. The simpler functions
+take a value and construct the Request itself, or return something more useful
+than a Response* object.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="537">
+        <label>object</label>
+      </node>
+      <node id="536">
+        <label>pysc2.lib.remote_controller.RemoteController</label>
+        <link refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller"/>
+        <childnode refid="537" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="539">
+        <label>object</label>
+      </node>
+      <node id="538">
+        <label>pysc2.lib.remote_controller.RemoteController</label>
+        <link refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller"/>
+        <childnode refid="539" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/remote_controller.py" line="93" column="1" bodyfile="lib/remote_controller.py" bodystart="93" bodyend="266"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a12ff18dcbc552d7fb96819b4e2005384" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a216c923a109116b131ec7194699209da" prot="private" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>_client</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a49b7fde8c8d742ba25f687b8cf644745" prot="private" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>_connect</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a9a583874ce739176d1b1dfd64d5b66d0" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>act</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a04e94f4b848edc9217a223e55706f42a" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>actions</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a6436284406688055f28602f97700b9c9" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>chat</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a6eac6b1034679ad54da9eeb309b147f1" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>close</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1aa6c03198b58d0ea4c3c6af3d9a29fb5c" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>create_game</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a8ce6ceb715e8d008c25f8c2f2e7aab0d" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>data</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1af7e69dffc014572c52d7c09942cc6901" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>data_raw</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a56f229658ab46f3470ea604d431bb793" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>game_info</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a2425abd677f568e0a04ae474edc07650" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>join_game</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a934b37c346a993c3a0e80027bc22be6f" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>leave</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a23ecae343e7a591f3d86a7d2817228eb" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>observe</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a2e120fcac63f5c2c2186f517876bb277" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>ping</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a47d4ab019c27ba0bdcf373c0529654b5" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>quit</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a7a905bd345e001db1c5698646d97b476" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>replay_info</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1ae1a5b202f8b9250778946884c4f6d128" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>restart</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a8d4814c56a3480e8522e1fedf4239742" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>save_map</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a9383a87328923ffa817caaee6ef043d8" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>save_replay</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a2e7a744b2dcbce22e9d98dafa8ccb66c" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>start_replay</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1aa4765773f0754d885cc0f74202ee3210" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>status</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller_1a4c720cf218cc8a0917f494c24f3957f5" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RemoteController</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

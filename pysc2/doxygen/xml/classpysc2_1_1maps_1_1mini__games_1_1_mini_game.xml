@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1maps_1_1mini__games_1_1_mini_game" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::maps::mini_games::MiniGame</compoundname>
+    <basecompoundref refid="classpysc2_1_1maps_1_1lib_1_1_map" prot="public" virt="non-virtual">pysc2.maps.lib.Map</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1ad4787d16362840b59df8ab24cc4c1ef6" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string pysc2.maps.mini_games.MiniGame::directory</definition>
+        <argsstring></argsstring>
+        <name>directory</name>
+        <initializer>=  &quot;mini_games&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/mini_games.py" line="24" column="1" bodyfile="maps/mini_games.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1ab76b62f8285a6e6df13c851b07244ec7" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string pysc2.maps.mini_games.MiniGame::download</definition>
+        <argsstring></argsstring>
+        <name>download</name>
+        <initializer>=  &quot;https://github.com/deepmind/pysc2#<ref refid="namespacepysc2_1_1maps_1a7339e6c1eb478b31383819b34c166f9d" kindref="member">get</ref>-the-maps&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/mini_games.py" line="25" column="1" bodyfile="maps/mini_games.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1a048be4a1c9a84bc2840b02803b0e9bba" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.mini_games.MiniGame::players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/mini_games.py" line="26" column="1" bodyfile="maps/mini_games.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1a3c0c3e70ab74df2db8936a587058d641" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.mini_games.MiniGame::score_index</definition>
+        <argsstring></argsstring>
+        <name>score_index</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/mini_games.py" line="27" column="1" bodyfile="maps/mini_games.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1a05115bbebd6b28e355b240137dba77c6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.mini_games.MiniGame::game_steps_per_episode</definition>
+        <argsstring></argsstring>
+        <name>game_steps_per_episode</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/mini_games.py" line="28" column="1" bodyfile="maps/mini_games.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1a07c09b8eaefe6f1c486f85a3ec6acf36" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.mini_games.MiniGame::step_mul</definition>
+        <argsstring></argsstring>
+        <name>step_mul</name>
+        <initializer>=  8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/mini_games.py" line="29" column="1" bodyfile="maps/mini_games.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="382">
+        <label>pysc2.maps.mini_games.MiniGame</label>
+        <link refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game"/>
+        <childnode refid="383" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="383">
+        <label>pysc2.maps.lib.Map</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_map"/>
+        <childnode refid="384" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="385">
+        <label>pysc2.maps.mini_games.MiniGame</label>
+        <link refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game"/>
+        <childnode refid="386" relation="public-inheritance">
+        </childnode>
+        <childnode refid="388" relation="usage">
+          <edgelabel>score_index</edgelabel>
+          <edgelabel>game_steps_per_episode</edgelabel>
+          <edgelabel>step_mul</edgelabel>
+          <edgelabel>players</edgelabel>
+        </childnode>
+      </node>
+      <node id="386">
+        <label>pysc2.maps.lib.Map</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_map"/>
+        <childnode refid="387" relation="public-inheritance">
+        </childnode>
+        <childnode refid="388" relation="usage">
+          <edgelabel>score_index</edgelabel>
+          <edgelabel>game_steps_per_episode</edgelabel>
+          <edgelabel>score_multiplier</edgelabel>
+          <edgelabel>step_mul</edgelabel>
+        </childnode>
+      </node>
+      <node id="388">
+        <label>int</label>
+      </node>
+      <node id="387">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="maps/mini_games.py" line="23" column="1" bodyfile="maps/mini_games.py" bodystart="23" bodyend="32"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a7c2eff51fb8cf13b42fa0cfe39bd02c2" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a9c1ce36a2df01702d5b30e3189f5b565" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>all_subclasses</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a07aee252bcbdc30771a9160cc7b604d1" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>data</name></member>
+      <member refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1ad4787d16362840b59df8ab24cc4c1ef6" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>directory</name></member>
+      <member refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1ab76b62f8285a6e6df13c851b07244ec7" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>download</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1abbeaa1936043d4e2ac896a73952bc7cd" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>filename</name></member>
+      <member refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1a05115bbebd6b28e355b240137dba77c6" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>game_steps_per_episode</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1afdbca854775c5c09c0ce09f0a532261b" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>name</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a6d5499d1d1f2c0aaedbf7b7787a8ba05" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>path</name></member>
+      <member refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1a048be4a1c9a84bc2840b02803b0e9bba" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>players</name></member>
+      <member refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1a3c0c3e70ab74df2db8936a587058d641" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>score_index</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a46dae41b5720bd53a7846b4a97022951" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>score_multiplier</name></member>
+      <member refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game_1a07c09b8eaefe6f1c486f85a3ec6acf36" prot="public" virt="non-virtual"><scope>pysc2::maps::mini_games::MiniGame</scope><name>step_mul</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

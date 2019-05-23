@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1tests_1_1dummy__observation__test" kind="namespace" language="Python">
+    <compoundname>pysc2::tests::dummy_observation_test</compoundname>
+    <innerclass refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test" prot="public">pysc2::tests::dummy_observation_test::DummyObservationTest</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1tests_1_1dummy__observation__test_1af476f38451c6e056054f1710101b79c3" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::tests::dummy_observation_test._PROBE</definition>
+        <argsstring></argsstring>
+        <name>_PROBE</name>
+        <initializer>=  <ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit" kindref="compound">dummy_observation.Unit</ref>(
+    units.Protoss.Probe, features.PlayerRelative.SELF, 20, 20, 0, 0, 1.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="31" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1tests_1_1dummy__observation__test_1abb3ebf80c7d3a95bf18a88ba7f94c31c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::tests::dummy_observation_test._ZEALOT</definition>
+        <argsstring></argsstring>
+        <name>_ZEALOT</name>
+        <initializer>=  <ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit" kindref="compound">dummy_observation.Unit</ref>(
+    units.Protoss.Zealot, features.PlayerRelative.SELF, 100, 50, 0, 0, 1.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="34" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1tests_1_1dummy__observation__test_1a33adfb85fad2568ede915dbbc455ac74" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::tests::dummy_observation_test._MOTHERSHIP</definition>
+        <argsstring></argsstring>
+        <name>_MOTHERSHIP</name>
+        <initializer>=  <ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit" kindref="compound">dummy_observation.Unit</ref>(
+    units.Protoss.Mothership, features.PlayerRelative.SELF, 350, 7, 200, 0, 1.0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="37" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/dummy_observation_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

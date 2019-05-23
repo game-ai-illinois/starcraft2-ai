@@ -1,0 +1,103 @@
+.TH "pysc2.env.mock_sc2_env.SC2TestEnv" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.env.mock_sc2_env.SC2TestEnv
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBpysc2\&.env\&.mock_sc2_env\&._TestEnvironment\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, _only_use_kwargs=None, map_name=None, players=None, agent_interface_format=None, discount=1\&., visualize=False, step_mul=None, save_replay_episodes=0, replay_dir=None, game_steps_per_episode=None, score_index=None, score_multiplier=None, random_seed=None, disable_fog=False)"
+.br
+.ti -1c
+.RI "def \fBsave_replay\fP (self, args, kwargs)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBepisode_length\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A TestEnvironment to swap in for `starcraft2.env.sc2_env.SC2Env`.
+
+Repeatedly returns a mock observation for 10 calls to `step` whereupon it
+sets discount to 0. and changes state to READY_TO_END_EPISODE.
+
+Example:
+
+```
+@mock.patch(
+    'starcraft2.env.sc2_env.SC2Env',
+    mock_sc2_env.SC2TestEnv)
+def test_method(self):
+  env = sc2_env.SC2Env('nonexisting map')  # Really a SC2TestEnv.
+  ...
+```
+
+See base class for more details.
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.env\&.mock_sc2_env\&.SC2TestEnv\&.__init__ ( self,  _only_use_kwargs = \fCNone\fP,  map_name = \fCNone\fP,  players = \fCNone\fP,  agent_interface_format = \fCNone\fP,  discount = \fC1\&.\fP,  visualize = \fCFalse\fP,  step_mul = \fCNone\fP,  save_replay_episodes = \fC0\fP,  replay_dir = \fCNone\fP,  game_steps_per_episode = \fCNone\fP,  score_index = \fCNone\fP,  score_multiplier = \fCNone\fP,  random_seed = \fCNone\fP,  disable_fog = \fCFalse\fP)"
+
+.PP
+.nf
+Initializes an SC2TestEnv.
+
+Args:
+  _only_use_kwargs: Don't pass args, only kwargs.
+  map_name: Map name. Ignored.
+  players: A list of Agent and Bot instances that specify who will play.
+  agent_interface_format: A sequence containing one AgentInterfaceFormat
+per agent, matching the order of agents specified in the players list.
+Or a single AgentInterfaceFormat to be used for all agents.
+  discount: Unused.
+  visualize: Unused.
+  step_mul: Unused.
+  save_replay_episodes: Unused.
+  replay_dir: Unused.
+  game_steps_per_episode: Unused.
+  score_index: Unused.
+  score_multiplier: Unused.
+  random_seed: Unused.
+  disable_fog: Unused.
+
+Raises:
+  ValueError: if args are passed.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.env\&.mock_sc2_env\&.SC2TestEnv\&.save_replay ( self,  args,  kwargs)"
+
+.PP
+.nf
+Does nothing.
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "pysc2\&.env\&.mock_sc2_env\&.SC2TestEnv\&.episode_length"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

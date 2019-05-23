@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::mock_sc2_env_test::_TestMixin</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env" prot="public" virt="non-virtual">pysc2.env.mock_sc2_env_test.TestSC2TestEnv</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_test_environment" prot="public" virt="non-virtual">pysc2.env.mock_sc2_env_test.TestTestEnvironment</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1ae44862283422b3f9f4cff0364e7718fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test._TestMixin.assert_spec</definition>
+        <argsstring>(self, array, shape, dtype)</argsstring>
+        <name>assert_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>array</type>
+          <defname>array</defname>
+        </param>
+        <param>
+          <type>shape</type>
+          <defname>shape</defname>
+        </param>
+        <param>
+          <type>dtype</type>
+          <defname>dtype</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="32" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1adadfb2c15fcb2d44285adfe0abdda38b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test._TestMixin.assert_equal</definition>
+        <argsstring>(self, actual, expected)</argsstring>
+        <name>assert_equal</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>actual</type>
+          <defname>actual</defname>
+        </param>
+        <param>
+          <type>expected</type>
+          <defname>expected</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="36" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="36" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1ae9e82d6e4019a1f2c3101bebbb570988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test._TestMixin.assert_reset</definition>
+        <argsstring>(self, env)</argsstring>
+        <name>assert_reset</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env</type>
+          <defname>env</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="39" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="39" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1a4c77f1899a786872425080daa843b2c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test._TestMixin.assert_first_step</definition>
+        <argsstring>(self, env)</argsstring>
+        <name>assert_first_step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env</type>
+          <defname>env</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="45" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1ae0bece3faa1dfe55f8a9057fe33e6522" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test._TestMixin.assert_mid_step</definition>
+        <argsstring>(self, env)</argsstring>
+        <name>assert_mid_step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env</type>
+          <defname>env</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="51" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="51" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1a52dcd33d92eb8498d7986def1cb48626" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test._TestMixin.assert_last_step</definition>
+        <argsstring>(self, env)</argsstring>
+        <name>assert_last_step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env</type>
+          <defname>env</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="57" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="57" bodyend="62"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1a9c994be2b4c3b4705c87a5be5347edd4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test._TestMixin._test_episode</definition>
+        <argsstring>(self, env)</argsstring>
+        <name>_test_episode</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env</type>
+          <defname>env</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="63" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="63" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1a2a40c33f7bfae626505adf070f9797ea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.mock_sc2_env_test._TestMixin._test_episode_length</definition>
+        <argsstring>(self, env, length)</argsstring>
+        <name>_test_episode_length</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>env</type>
+          <defname>env</defname>
+        </param>
+        <param>
+          <type>length</type>
+          <defname>length</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/mock_sc2_env_test.py" line="77" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="77" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="18">
+        <label>pysc2.env.mock_sc2_env_test.TestTestEnvironment</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_test_environment"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>pysc2.env.mock_sc2_env_test._TestMixin</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin"/>
+        <childnode refid="16" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>object</label>
+      </node>
+      <node id="17">
+        <label>pysc2.env.mock_sc2_env_test.TestSC2TestEnv</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1_test_s_c2_test_env"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>pysc2.env.mock_sc2_env_test._TestMixin</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/mock_sc2_env_test.py" line="30" column="1" bodyfile="env/mock_sc2_env_test.py" bodystart="30" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1a9c994be2b4c3b4705c87a5be5347edd4" prot="private" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::_TestMixin</scope><name>_test_episode</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1a2a40c33f7bfae626505adf070f9797ea" prot="private" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::_TestMixin</scope><name>_test_episode_length</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1adadfb2c15fcb2d44285adfe0abdda38b" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::_TestMixin</scope><name>assert_equal</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1a4c77f1899a786872425080daa843b2c4" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::_TestMixin</scope><name>assert_first_step</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1a52dcd33d92eb8498d7986def1cb48626" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::_TestMixin</scope><name>assert_last_step</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1ae0bece3faa1dfe55f8a9057fe33e6522" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::_TestMixin</scope><name>assert_mid_step</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1ae9e82d6e4019a1f2c3101bebbb570988" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::_TestMixin</scope><name>assert_reset</name></member>
+      <member refid="classpysc2_1_1env_1_1mock__sc2__env__test_1_1___test_mixin_1ae44862283422b3f9f4cff0364e7718fe" prot="public" virt="non-virtual"><scope>pysc2::env::mock_sc2_env_test::_TestMixin</scope><name>assert_spec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

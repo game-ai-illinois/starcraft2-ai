@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::obs_spec_test::TestObservationSpec</compoundname>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec_1afa14b2bb7166ba3358039b7dc400418a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.obs_spec_test.TestObservationSpec.test_observation_matches_obs_spec</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_observation_matches_obs_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/obs_spec_test.py" line="32" column="1" bodyfile="tests/obs_spec_test.py" bodystart="32" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec_1ab63ceea5ffafcd8abec8a4e594639190" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.obs_spec_test.TestObservationSpec.test_heterogeneous_observations</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_heterogeneous_observations</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/obs_spec_test.py" line="66" column="1" bodyfile="tests/obs_spec_test.py" bodystart="66" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec_1a95f3fcbae5cb9fa6b6a7dd4ab1474a65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.obs_spec_test.TestObservationSpec.check_observation_matches_spec</definition>
+        <argsstring>(self, obs, obs_spec)</argsstring>
+        <name>check_observation_matches_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <param>
+          <type>obs_spec</type>
+          <defname>obs_spec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/obs_spec_test.py" line="117" column="1" bodyfile="tests/obs_spec_test.py" bodystart="117" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="761">
+        <label>TestCase</label>
+      </node>
+      <node id="760">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="761" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="759">
+        <label>pysc2.tests.obs_spec_test.TestObservationSpec</label>
+        <link refid="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec"/>
+        <childnode refid="760" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="764">
+        <label>TestCase</label>
+      </node>
+      <node id="763">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="764" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="762">
+        <label>pysc2.tests.obs_spec_test.TestObservationSpec</label>
+        <link refid="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec"/>
+        <childnode refid="763" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/obs_spec_test.py" line="30" column="1" bodyfile="tests/obs_spec_test.py" bodystart="30" bodyend="131"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec_1a95f3fcbae5cb9fa6b6a7dd4ab1474a65" prot="public" virt="non-virtual"><scope>pysc2::tests::obs_spec_test::TestObservationSpec</scope><name>check_observation_matches_spec</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::obs_spec_test::TestObservationSpec</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::obs_spec_test::TestObservationSpec</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec_1ab63ceea5ffafcd8abec8a4e594639190" prot="public" virt="non-virtual"><scope>pysc2::tests::obs_spec_test::TestObservationSpec</scope><name>test_heterogeneous_observations</name></member>
+      <member refid="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec_1afa14b2bb7166ba3358039b7dc400418a" prot="public" virt="non-virtual"><scope>pysc2::tests::obs_spec_test::TestObservationSpec</scope><name>test_observation_matches_obs_spec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

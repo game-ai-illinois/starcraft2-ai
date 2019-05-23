@@ -1,0 +1,219 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_player" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::Player</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1a3ec243ede3dacff2d874db1a3611449e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::player_id</definition>
+        <argsstring></argsstring>
+        <name>player_id</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="98" column="1" bodyfile="lib/features.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1ac8d94400c53eb95adf137c33fc293d0c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::minerals</definition>
+        <argsstring></argsstring>
+        <name>minerals</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="99" column="1" bodyfile="lib/features.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1ab8f544b7f7c23b9a60a14f63e54111b1" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::vespene</definition>
+        <argsstring></argsstring>
+        <name>vespene</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="100" column="1" bodyfile="lib/features.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1aaf9dc471b0d72a4db1175386080c5d59" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::food_used</definition>
+        <argsstring></argsstring>
+        <name>food_used</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="101" column="1" bodyfile="lib/features.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1a5f18d1fa21b8a7af057098c011934730" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::food_cap</definition>
+        <argsstring></argsstring>
+        <name>food_cap</name>
+        <initializer>=  4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="102" column="1" bodyfile="lib/features.py" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1aee6061e2e25930f8c1a6f25076c1fa89" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::food_army</definition>
+        <argsstring></argsstring>
+        <name>food_army</name>
+        <initializer>=  5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="103" column="1" bodyfile="lib/features.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1a3c1dc3dc499af96710bf96af26091ade" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::food_workers</definition>
+        <argsstring></argsstring>
+        <name>food_workers</name>
+        <initializer>=  6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="104" column="1" bodyfile="lib/features.py" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1a37cd0b61091681d309c1c0e062df4c88" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::idle_worker_count</definition>
+        <argsstring></argsstring>
+        <name>idle_worker_count</name>
+        <initializer>=  7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="105" column="1" bodyfile="lib/features.py" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1ad00f2e5e5106025d21e666ed3bd0f716" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::army_count</definition>
+        <argsstring></argsstring>
+        <name>army_count</name>
+        <initializer>=  8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="106" column="1" bodyfile="lib/features.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1a15a1f28e1f09c5fdfb6cb322ff5b16e0" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::warp_gate_count</definition>
+        <argsstring></argsstring>
+        <name>warp_gate_count</name>
+        <initializer>=  9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="107" column="1" bodyfile="lib/features.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_1a8cdae01d73f99de36f7e5a8b946816a3" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Player::larva_count</definition>
+        <argsstring></argsstring>
+        <name>larva_count</name>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="108" column="1" bodyfile="lib/features.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Indices into the `player` observation.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="471">
+        <label>pysc2.lib.features.Player</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_player"/>
+        <childnode refid="472" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="472">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="473">
+        <label>pysc2.lib.features.Player</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_player"/>
+        <childnode refid="474" relation="public-inheritance">
+        </childnode>
+        <childnode refid="475" relation="usage">
+          <edgelabel>larva_count</edgelabel>
+          <edgelabel>army_count</edgelabel>
+          <edgelabel>vespene</edgelabel>
+          <edgelabel>idle_worker_count</edgelabel>
+          <edgelabel>food_used</edgelabel>
+          <edgelabel>food_workers</edgelabel>
+          <edgelabel>warp_gate_count</edgelabel>
+          <edgelabel>minerals</edgelabel>
+          <edgelabel>player_id</edgelabel>
+          <edgelabel>food_army</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="475">
+        <label>int</label>
+      </node>
+      <node id="474">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="96" column="1" bodyfile="lib/features.py" bodystart="96" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1ad00f2e5e5106025d21e666ed3bd0f716" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>army_count</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1aee6061e2e25930f8c1a6f25076c1fa89" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>food_army</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1a5f18d1fa21b8a7af057098c011934730" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>food_cap</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1aaf9dc471b0d72a4db1175386080c5d59" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>food_used</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1a3c1dc3dc499af96710bf96af26091ade" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>food_workers</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1a37cd0b61091681d309c1c0e062df4c88" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>idle_worker_count</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1a8cdae01d73f99de36f7e5a8b946816a3" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>larva_count</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1ac8d94400c53eb95adf137c33fc293d0c" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>minerals</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1a3ec243ede3dacff2d874db1a3611449e" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>player_id</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1ab8f544b7f7c23b9a60a14f63e54111b1" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>vespene</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_1a15a1f28e1f09c5fdfb6cb322ff5b16e0" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Player</scope><name>warp_gate_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

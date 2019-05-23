@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="base__agent_8py" kind="file" language="Python">
+    <compoundname>base_agent.py</compoundname>
+    <innerclass refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent" prot="public">pysc2::agents::base_agent::BaseAgent</innerclass>
+    <innernamespace refid="namespacepysc2_1_1agents_1_1base__agent">pysc2::agents::base_agent</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacepysc2_1_1agents_1_1base__agent" refkind="compound"><highlight class="comment">#<sp/>Copyright<sp/>2017<sp/>Google<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS-IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;A<sp/>base<sp/>agent<sp/>to<sp/>write<sp/>custom<sp/>scripted<sp/>agents.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absolute_import</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>division</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_function</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1lib" kindref="compound">pysc2.lib</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>actions</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent" kindref="compound">BaseAgent</ref>(object):</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;A<sp/>base<sp/>agent<sp/>to<sp/>write<sp/>custom<sp/>scripted<sp/>agents.</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/>It<sp/>can<sp/>also<sp/>act<sp/>as<sp/>a<sp/>passive<sp/>agent<sp/>that<sp/>does<sp/>nothing<sp/>but<sp/>no-ops.</highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a03935d754145f417240d25e0192c57bc" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a9081eba1a1a529a08d1309e35a1f7ad9" kindref="member">reward</ref><sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a46c85c12c80d0ceceff90c5889f0a13a" kindref="member">episodes</ref><sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1aac3b906e1bc4bfc1fad84e8a1fb6ef87" kindref="member">steps</ref><sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1ad6cefb81724b9d234887cea543c4f06e" kindref="member">obs_spec</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a550b216b98ae40b2da1b2fd9015d3019" kindref="member">action_spec</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1afba8f06273c8740b105573f1a422ba05" kindref="member">setup</ref>(self,<sp/>obs_spec,<sp/>action_spec):</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1ad6cefb81724b9d234887cea543c4f06e" kindref="member">obs_spec</ref><sp/>=<sp/>obs_spec</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a550b216b98ae40b2da1b2fd9015d3019" kindref="member">action_spec</ref><sp/>=<sp/>action_spec</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a9814c84f6f2eefa13b69f45f36afcca4" kindref="member">reset</ref>(self):</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a46c85c12c80d0ceceff90c5889f0a13a" kindref="member">episodes</ref><sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a64b82c5e648902378e9485b27be6dc0b" kindref="member">step</ref>(self,<sp/>obs):</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1aac3b906e1bc4bfc1fad84e8a1fb6ef87" kindref="member">steps</ref><sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a9081eba1a1a529a08d1309e35a1f7ad9" kindref="member">reward</ref><sp/>+=<sp/>obs.reward</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>actions.FunctionCall(actions.FUNCTIONS.no_op.id,<sp/>[])</highlight></codeline>
+    </programlisting>
+    <location file="agents/base_agent.py"/>
+  </compounddef>
+</doxygen>

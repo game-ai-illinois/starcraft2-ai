@@ -1,0 +1,105 @@
+.TH "pysc2.lib.features.AgentInterfaceFormat" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.features.AgentInterfaceFormat
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBfeature_dimensions\fP=None, \fBrgb_dimensions\fP=None, \fBaction_space\fP=None, \fBcamera_width_world_units\fP=None, \fBuse_feature_units\fP=False, \fBhide_specific_actions\fP=True)"
+.br
+.ti -1c
+.RI "def \fBfeature_dimensions\fP (self)"
+.br
+.ti -1c
+.RI "def \fBrgb_dimensions\fP (self)"
+.br
+.ti -1c
+.RI "def \fBaction_space\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcamera_width_world_units\fP (self)"
+.br
+.ti -1c
+.RI "def \fBuse_feature_units\fP (self)"
+.br
+.ti -1c
+.RI "def \fBhide_specific_actions\fP (self)"
+.br
+.ti -1c
+.RI "def \fBaction_dimensions\fP (self)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Observation and action interface format specific to a particular agent.
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.features\&.AgentInterfaceFormat\&.__init__ ( self,  feature_dimensions = \fCNone\fP,  rgb_dimensions = \fCNone\fP,  action_space = \fCNone\fP,  camera_width_world_units = \fCNone\fP,  use_feature_units = \fCFalse\fP,  hide_specific_actions = \fCTrue\fP)"
+
+.PP
+.nf
+Initializer.
+
+Args:
+  feature_dimensions: Feature layer `Dimension`s. Either this or
+  rgb_dimensions (or both) must be set.
+  rgb_dimensions: RGB `Dimension`. Either this or feature_dimensions
+  (or both) must be set.
+  action_space: If you pass both feature and rgb sizes, then you must also
+  specify which you want to use for your actions as an ActionSpace enum.
+  camera_width_world_units: The width of your screen in world units. If your
+  feature_dimensions.screen=(64, 48) and camera_width is 24, then each
+  px represents 24 / 64 = 0.375 world units in each of x and y.
+  It'll then represent a camera of size (24, 0.375 * 48) = (24, 18)
+  world units.
+  use_feature_units: Whether to include feature unit data in observations.
+  hide_specific_actions: [bool] Some actions (eg cancel) have many
+  specific versions (cancel this building, cancel that spell) and can
+  be represented in a more general form. If a specific action is
+  available, the general will also be available. If you set
+  `hide_specific_actions` to False, the specific versions will also be
+  available, but if it's True, the specific ones will be hidden.
+  Similarly, when transforming back, a specific action will be returned
+  as the general action. This simplifies the action space, though can
+  lead to some actions in replays not being exactly representable using
+  only the general actions.
+
+Raises:
+  ValueError: if the parameters are inconsistent.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.features\&.AgentInterfaceFormat\&.action_dimensions ( self)"
+
+.SS "def pysc2\&.lib\&.features\&.AgentInterfaceFormat\&.action_space ( self)"
+
+.SS "def pysc2\&.lib\&.features\&.AgentInterfaceFormat\&.camera_width_world_units ( self)"
+
+.SS "def pysc2\&.lib\&.features\&.AgentInterfaceFormat\&.feature_dimensions ( self)"
+
+.SS "def pysc2\&.lib\&.features\&.AgentInterfaceFormat\&.hide_specific_actions ( self)"
+
+.SS "def pysc2\&.lib\&.features\&.AgentInterfaceFormat\&.rgb_dimensions ( self)"
+
+.SS "def pysc2\&.lib\&.features\&.AgentInterfaceFormat\&.use_feature_units ( self)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

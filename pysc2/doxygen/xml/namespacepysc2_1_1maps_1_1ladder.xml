@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1maps_1_1ladder" kind="namespace" language="Python">
+    <compoundname>pysc2::maps::ladder</compoundname>
+    <innerclass refid="classpysc2_1_1maps_1_1ladder_1_1_ladder" prot="public">pysc2::maps::ladder::Ladder</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1maps_1_1ladder_1a44ba49ec554cb34eb14d42605de8bb79" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::maps::ladder.ladder_seasons</definition>
+        <argsstring></argsstring>
+        <name>ladder_seasons</name>
+        <initializer>=  [
+    &quot;Ladder2017Season1&quot;,
+    &quot;Ladder2017Season2&quot;,
+    &quot;Ladder2017Season3&quot;,
+    &quot;Ladder2017Season4&quot;,
+    &quot;Ladder2018Season1&quot;,
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/ladder.py" line="33" column="1" bodyfile="maps/ladder.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1maps_1_1ladder_1aba8a0a9a1b536f46c248bce91928cbcc" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::maps::ladder.ladder_maps</definition>
+        <argsstring></argsstring>
+        <name>ladder_maps</name>
+        <initializer>=  [
+    (&quot;Abiogenesis&quot;,          Ladder2018Season1, &quot;AbiogenesisLE&quot;, 2),
+    (&quot;AbyssalReef&quot;,          Ladder2017Season4, &quot;AbyssalReefLE&quot;, 2),
+    (&quot;AcidPlant&quot;,            Ladder2018Season1, &quot;AcidPlantLE&quot;, 2),
+    (&quot;Acolyte&quot;,              Ladder2017Season3, &quot;AcolyteLE&quot;, 2),
+    (&quot;AscensiontoAiur&quot;,      Ladder2017Season4, &quot;AscensiontoAiurLE&quot;, 2),
+    (&quot;Backwater&quot;,            Ladder2018Season1, &quot;BackwaterLE&quot;, 2),
+    (&quot;BattleontheBoardwalk&quot;, Ladder2017Season4, &quot;BattleontheBoardwalkLE&quot;, 2),
+    (&quot;BelShirVestige&quot;,       Ladder2017Season1, &quot;BelShirVestigeLE&quot;, 2),
+    (&quot;Blackpink&quot;,            Ladder2018Season1, &quot;BlackpinkLE&quot;, 2),
+    (&quot;BloodBoil&quot;,            Ladder2017Season2, &quot;BloodBoilLE&quot;, 2),
+    (&quot;CactusValley&quot;,         Ladder2017Season1, &quot;CactusValleyLE&quot;, 4),
+    (&quot;Catalyst&quot;,             Ladder2018Season1, &quot;CatalystLE&quot;, 2),
+    (&quot;DefendersLanding&quot;,     Ladder2017Season2, &quot;DefendersLandingLE&quot;, 2),
+    (&quot;Eastwatch&quot;,            Ladder2018Season1, &quot;EastwatchLE&quot;, 2),
+    (&quot;Frost&quot;,                Ladder2017Season3, &quot;FrostLE&quot;, 2),
+    (&quot;Honorgrounds&quot;,         Ladder2017Season1, &quot;HonorgroundsLE&quot;, 4),
+    (&quot;Interloper&quot;,           Ladder2017Season3, &quot;InterloperLE&quot;, 2),
+    (&quot;MechDepot&quot;,            Ladder2017Season3, &quot;MechDepotLE&quot;, 2),
+    (&quot;NewkirkPrecinct&quot;,      Ladder2017Season1, &quot;NewkirkPrecinctTE&quot;, 2),
+    (&quot;Odyssey&quot;,              Ladder2017Season4, &quot;OdysseyLE&quot;, 2),
+    (&quot;PaladinoTerminal&quot;,     Ladder2017Season1, &quot;PaladinoTerminalLE&quot;, 2),
+    (&quot;ProximaStation&quot;,       Ladder2017Season2, &quot;ProximaStationLE&quot;, 2),
+    (&quot;Sequencer&quot;,            Ladder2017Season2, &quot;SequencerLE&quot;, 2),
+
+    # Disabled due to failing on 4.1.2 on Linux (Websocket Timeout).
+    # (&quot;NeonVioletSquare&quot;,     Ladder2018Season1, &quot;NeonVioletSquareLE&quot;, 2),
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/ladder.py" line="47" column="1" bodyfile="maps/ladder.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="maps/ladder.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

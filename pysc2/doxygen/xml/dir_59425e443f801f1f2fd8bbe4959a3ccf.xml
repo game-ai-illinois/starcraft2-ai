@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_59425e443f801f1f2fd8bbe4959a3ccf" kind="dir">
+    <compoundname>tests</compoundname>
+    <innerfile refid="tests_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="dummy__observation_8py">dummy_observation.py</innerfile>
+    <innerfile refid="dummy__observation__test_8py">dummy_observation_test.py</innerfile>
+    <innerfile refid="easy__scripted__test_8py">easy_scripted_test.py</innerfile>
+    <innerfile refid="maps__test_8py">maps_test.py</innerfile>
+    <innerfile refid="multi__player__env__test_8py">multi_player_env_test.py</innerfile>
+    <innerfile refid="multi__player__test_8py">multi_player_test.py</innerfile>
+    <innerfile refid="obs__spec__test_8py">obs_spec_test.py</innerfile>
+    <innerfile refid="observer__test_8py">observer_test.py</innerfile>
+    <innerfile refid="ping__test_8py">ping_test.py</innerfile>
+    <innerfile refid="protocol__error__test_8py">protocol_error_test.py</innerfile>
+    <innerfile refid="random__agent__test_8py">random_agent_test.py</innerfile>
+    <innerfile refid="render__test_8py">render_test.py</innerfile>
+    <innerfile refid="replay__obs__test_8py">replay_obs_test.py</innerfile>
+    <innerfile refid="utils_8py">utils.py</innerfile>
+    <innerfile refid="versions__test_8py">versions_test.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1versions__test_1_1_test_versions" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::versions_test::TestVersions</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1versions__test_1_1_test_versions_1a658ad1f72237553f8ed664c9cdd5e79f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.versions_test.TestVersions.test_version_numbers</definition>
+        <argsstring>(self, game_version, version)</argsstring>
+        <name>test_version_numbers</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game_version</type>
+          <defname>game_version</defname>
+        </param>
+        <param>
+          <type>version</type>
+          <defname>version</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/versions_test.py" line="44" column="1" bodyfile="tests/versions_test.py" bodystart="44" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1versions__test_1_1_test_versions_1a55ee9f281b391b975b80e4f91efabbd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.versions_test.TestVersions.test_versions_create_game</definition>
+        <argsstring>(self, game_version)</argsstring>
+        <name>test_versions_create_game</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>game_version</type>
+          <defname>game_version</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/versions_test.py" line="59" column="1" bodyfile="tests/versions_test.py" bodystart="59" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="815">
+        <label>pysc2.tests.versions_test.TestVersions</label>
+        <link refid="classpysc2_1_1tests_1_1versions__test_1_1_test_versions"/>
+        <childnode refid="816" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="816">
+        <label>parameterized::TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="817">
+        <label>pysc2.tests.versions_test.TestVersions</label>
+        <link refid="classpysc2_1_1tests_1_1versions__test_1_1_test_versions"/>
+        <childnode refid="818" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="818">
+        <label>parameterized::TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="tests/versions_test.py" line="41" column="1" bodyfile="tests/versions_test.py" bodystart="41" bodyend="90"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1versions__test_1_1_test_versions_1a658ad1f72237553f8ed664c9cdd5e79f" prot="public" virt="non-virtual"><scope>pysc2::tests::versions_test::TestVersions</scope><name>test_version_numbers</name></member>
+      <member refid="classpysc2_1_1tests_1_1versions__test_1_1_test_versions_1a55ee9f281b391b975b80e4f91efabbd9" prot="public" virt="non-virtual"><scope>pysc2::tests::versions_test::TestVersions</scope><name>test_versions_create_game</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

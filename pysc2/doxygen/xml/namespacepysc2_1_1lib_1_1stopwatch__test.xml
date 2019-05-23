@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1stopwatch__test" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::stopwatch_test</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stat_test" prot="public">pysc2::lib::stopwatch_test::StatTest</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1stopwatch__test_1_1_stopwatch_test" prot="public">pysc2::lib::stopwatch_test::StopwatchTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1stopwatch__test_1aefd4dfc1051b785eb96874553b22047a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch_test.ham_dist</definition>
+        <argsstring>(str1, str2)</argsstring>
+        <name>ham_dist</name>
+        <param>
+          <type>str1</type>
+          <defname>str1</defname>
+        </param>
+        <param>
+          <type>str2</type>
+          <defname>str2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Hamming distance. Count the number of differences between str1 and str2.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch_test.py" line="28" column="1" bodyfile="lib/stopwatch_test.py" bodystart="28" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/stopwatch_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

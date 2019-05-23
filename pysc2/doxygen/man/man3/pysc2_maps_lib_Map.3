@@ -1,0 +1,133 @@
+.TH "pysc2.maps.lib.Map" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.maps.lib.Map
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.PP
+Inherited by \fBpysc2\&.maps\&.ladder\&.Ladder\fP, \fBpysc2\&.maps\&.melee\&.Melee\fP, and \fBpysc2\&.maps\&.mini_games\&.MiniGame\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBpath\fP (self)"
+.br
+.ti -1c
+.RI "def \fBdata\fP (self, run_config)"
+.br
+.ti -1c
+.RI "def \fBname\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBall_subclasses\fP (cls)"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "string \fBdirectory\fP = ''"
+.br
+.ti -1c
+.RI "\fBfilename\fP = None"
+.br
+.ti -1c
+.RI "\fBdownload\fP = None"
+.br
+.ti -1c
+.RI "int \fBgame_steps_per_episode\fP = 0"
+.br
+.ti -1c
+.RI "int \fBstep_mul\fP = 8"
+.br
+.ti -1c
+.RI "int \fBscore_index\fP = \-1"
+.br
+.ti -1c
+.RI "int \fBscore_multiplier\fP = 1"
+.br
+.ti -1c
+.RI "\fBplayers\fP = None"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Base map object to configure a map. To define a map just subclass this.
+
+Properties:
+  directory: Directory for the map
+  filename: Actual filename. You can skip the ".SC2Map" file ending.
+  download: Where to download the map.
+  game_steps_per_episode: Game steps per episode, independent of the step_mul.
+      0 (default) means no limit.
+  step_mul: How many game steps per agent step?
+  score_index: Which score to give for this map. -1 means the win/loss
+      reward. >=0 is the index into score_cumulative.
+  score_multiplier: A score multiplier to allow make small scores good.
+  players: Max number of players for this map.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.maps\&.lib\&.Map\&.__str__ ( self)"
+
+.SS "def pysc2\&.maps\&.lib\&.Map\&.all_subclasses ( cls)"
+
+.PP
+.nf
+An iterator over all subclasses of `cls`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.maps\&.lib\&.Map\&.data ( self,  run_config)"
+
+.PP
+.nf
+Return the map data.
+.fi
+.PP
+ 
+.SS "def pysc2\&.maps\&.lib\&.Map\&.name ( self)"
+
+.SS "def pysc2\&.maps\&.lib\&.Map\&.path ( self)"
+
+.PP
+.nf
+The full path to the map file: directory, filename and file ending.
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "string pysc2\&.maps\&.lib\&.Map\&.directory = ''\fC [static]\fP"
+
+.SS "pysc2\&.maps\&.lib\&.Map\&.download = None\fC [static]\fP"
+
+.SS "pysc2\&.maps\&.lib\&.Map\&.filename = None\fC [static]\fP"
+
+.SS "int pysc2\&.maps\&.lib\&.Map\&.game_steps_per_episode = 0\fC [static]\fP"
+
+.SS "pysc2\&.maps\&.lib\&.Map\&.players = None\fC [static]\fP"
+
+.SS "int pysc2\&.maps\&.lib\&.Map\&.score_index = \-1\fC [static]\fP"
+
+.SS "int pysc2\&.maps\&.lib\&.Map\&.score_multiplier = 1\fC [static]\fP"
+
+.SS "int pysc2\&.maps\&.lib\&.Map\&.step_mul = 8\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

@@ -1,0 +1,74 @@
+\hypertarget{classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env}{}\section{pysc2.\+env.\+remote\+\_\+sc2\+\_\+env.\+Remote\+S\+C2\+Env Class Reference}
+\label{classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env}\index{pysc2.\+env.\+remote\+\_\+sc2\+\_\+env.\+Remote\+S\+C2\+Env@{pysc2.\+env.\+remote\+\_\+sc2\+\_\+env.\+Remote\+S\+C2\+Env}}
+Inheritance diagram for pysc2.\+env.\+remote\+\_\+sc2\+\_\+env.\+Remote\+S\+C2\+Env\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_a24badc19f47472b86e579ded70a36b97}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \+\_\+only\+\_\+use\+\_\+kwargs=None, map\+\_\+name=None, host=\char`\"{}127.\+0.\+0.\+1\char`\"{}, host\+\_\+port=None, lan\+\_\+port=None, race=None, agent\+\_\+interface\+\_\+format=None, discount=1., visualize=False, step\+\_\+mul=None, replay\+\_\+dir=None)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A Remote Starcraft II environment for playing vs other agents or humans.
+
+Unlike SC2Env, this doesn't actually start any instances and only connects
+to a remote instance.
+
+This assumes a 2 player game, and works best with play_vs_agent.py.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_a24badc19f47472b86e579ded70a36b97}\label{classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_a24badc19f47472b86e579ded70a36b97}} 
+\index{pysc2\+::env\+::remote\+\_\+sc2\+\_\+env\+::\+Remote\+S\+C2\+Env@{pysc2\+::env\+::remote\+\_\+sc2\+\_\+env\+::\+Remote\+S\+C2\+Env}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::env\+::remote\+\_\+sc2\+\_\+env\+::\+Remote\+S\+C2\+Env@{pysc2\+::env\+::remote\+\_\+sc2\+\_\+env\+::\+Remote\+S\+C2\+Env}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+remote\+\_\+sc2\+\_\+env.\+Remote\+S\+C2\+Env.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{\+\_\+only\+\_\+use\+\_\+kwargs = {\ttfamily None},  }\item[{}]{map\+\_\+name = {\ttfamily None},  }\item[{}]{host = {\ttfamily \char`\"{}127.0.0.1\char`\"{}},  }\item[{}]{host\+\_\+port = {\ttfamily None},  }\item[{}]{lan\+\_\+port = {\ttfamily None},  }\item[{}]{race = {\ttfamily None},  }\item[{}]{agent\+\_\+interface\+\_\+format = {\ttfamily None},  }\item[{}]{discount = {\ttfamily 1.},  }\item[{}]{visualize = {\ttfamily False},  }\item[{}]{step\+\_\+mul = {\ttfamily None},  }\item[{}]{replay\+\_\+dir = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a SC2 Env that connects to a remote instance of the game.
+
+This assumes that the game is already up and running, and it only needs to
+join. You need some other script to launch the process and call
+RequestCreateGame. It also assumes that it's a multiplayer game, and that
+the ports are consecutive.
+
+You must pass a resolution that you want to play at. You can send either
+feature layer resolution or rgb resolution or both. If you send both you
+must also choose which to use as your action space. Regardless of which you
+choose you must send both the screen and minimap resolutions.
+
+For each of the 4 resolutions, either specify size or both width and
+height. If you specify size then both width and height will take that value.
+
+Args:
+  _only_use_kwargs: Don't pass args, only kwargs.
+  map_name: Name of a SC2 map. Run bin/map_list to get the full list of
+  known maps. Alternatively, pass a Map instance. Take a look at the
+  docs in maps/README.md for more information on available maps.
+  host: Host where the server is running.
+  host_port: The port for the host.
+  lan_port: Where to connect to the other SC2 instance.
+  race: Race for this agent.
+  agent_interface_format: AgentInterfaceFormat object describing the
+  format of communication between the agent and the environment.
+  discount: Returned as part of the observation.
+  visualize: Whether to pop up a window showing the camera and feature
+  layers. This won't work without access to a window manager.
+  step_mul: How many game steps per agent step (action/observation). None
+  means use the map default.
+  replay_dir: Directory to save a replay.
+
+Raises:
+  ValueError: if the race is invalid.
+  ValueError: if the resolutions aren't specified correctly.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+env/\mbox{\hyperlink{remote__sc2__env_8py}{remote\+\_\+sc2\+\_\+env.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1point__flag" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::point_flag</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1point__flag_1_1_point_parser" prot="public">pysc2::lib::point_flag::PointParser</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1point__flag_1ae293d891e5c5f1884b5a7f2a9cdcb969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point_flag.DEFINE_point</definition>
+        <argsstring>(name, default, help)</argsstring>
+        <name>DEFINE_point</name>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>default</type>
+          <defname>default</defname>
+        </param>
+        <param>
+          <type>help</type>
+          <defname>help</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Registers a flag whose value parses as a point.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point_flag.py" line="55" column="1" bodyfile="lib/point_flag.py" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/point_flag.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

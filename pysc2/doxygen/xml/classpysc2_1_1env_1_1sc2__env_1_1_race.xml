@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1sc2__env_1_1_race" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::sc2_env::Race</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_race_1ab851a3d93680aa43b949758da07fbc62" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Race::random</definition>
+        <argsstring></argsstring>
+        <name>random</name>
+        <initializer>=  sc_common.Random</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="52" column="1" bodyfile="env/sc2_env.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_race_1af22cda726ad62f0bcba391d939dd74a5" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Race::protoss</definition>
+        <argsstring></argsstring>
+        <name>protoss</name>
+        <initializer>=  sc_common.Protoss</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="53" column="1" bodyfile="env/sc2_env.py" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_race_1a90ad58fb22ec0d6d3ac1c84f0aa91eac" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Race::terran</definition>
+        <argsstring></argsstring>
+        <name>terran</name>
+        <initializer>=  sc_common.Terran</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="54" column="1" bodyfile="env/sc2_env.py" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_race_1a8caa8074e5a1e10d7ec21d141274e76a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Race::zerg</definition>
+        <argsstring></argsstring>
+        <name>zerg</name>
+        <initializer>=  sc_common.Zerg</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="55" column="1" bodyfile="env/sc2_env.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="510">
+        <label>pysc2.env.sc2_env.Race</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_race"/>
+        <childnode refid="511" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="511">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="512">
+        <label>pysc2.env.sc2_env.Race</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_race"/>
+        <childnode refid="513" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="513">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/sc2_env.py" line="51" column="1" bodyfile="env/sc2_env.py" bodystart="51" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_race_1af22cda726ad62f0bcba391d939dd74a5" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Race</scope><name>protoss</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_race_1ab851a3d93680aa43b949758da07fbc62" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Race</scope><name>random</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_race_1a90ad58fb22ec0d6d3ac1c84f0aa91eac" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Race</scope><name>terran</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_race_1a8caa8074e5a1e10d7ec21d141274e76a" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Race</scope><name>zerg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

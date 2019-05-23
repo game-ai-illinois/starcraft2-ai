@@ -1,0 +1,162 @@
+.TH "lib/actions.py" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lib/actions.py
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBpysc2\&.lib\&.actions\&.ActionSpace\fP"
+.br
+.ti -1c
+.RI "class \fBpysc2\&.lib\&.actions\&.ArgumentType\fP"
+.br
+.ti -1c
+.RI "class \fBpysc2\&.lib\&.actions\&.Arguments\fP"
+.br
+.ti -1c
+.RI "class \fBpysc2\&.lib\&.actions\&.Function\fP"
+.br
+.ti -1c
+.RI "class \fBpysc2\&.lib\&.actions\&.Functions\fP"
+.br
+.ti -1c
+.RI "class \fBpysc2\&.lib\&.actions\&.FunctionCall\fP"
+.br
+.ti -1c
+.RI "class \fBpysc2\&.lib\&.actions\&.ValidActions\fP"
+.br
+.in -1c
+.SS "Namespaces"
+
+.in +1c
+.ti -1c
+.RI " \fBpysc2\&.lib\&.actions\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.spatial\fP (action, action_space)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.no_op\fP (action, action_space)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.move_camera\fP (action, action_space, minimap)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.select_point\fP (action, action_space, select_point_act, screen)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.select_rect\fP (action, action_space, select_add, screen, screen2)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.select_idle_worker\fP (action, action_space, select_worker)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.select_army\fP (action, action_space, select_add)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.select_warp_gates\fP (action, action_space, select_add)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.select_larva\fP (action, action_space)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.select_unit\fP (action, action_space, select_unit_act, select_unit_id)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.control_group\fP (action, action_space, control_group_act, control_group_id)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.unload\fP (action, action_space, unload_id)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.build_queue\fP (action, action_space, build_queue_id)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.cmd_quick\fP (action, action_space, ability_id, queued)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.cmd_screen\fP (action, action_space, ability_id, queued, screen)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.cmd_minimap\fP (action, action_space, ability_id, queued, minimap)"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.autocast\fP (action, action_space, ability_id)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "list \fBpysc2\&.lib\&.actions\&.QUEUED_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.Queued\fP"
+.br
+.ti -1c
+.RI "list \fBpysc2\&.lib\&.actions\&.CONTROL_GROUP_ACT_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.ControlGroupAct\fP"
+.br
+.ti -1c
+.RI "list \fBpysc2\&.lib\&.actions\&.SELECT_POINT_ACT_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.SelectPointAct\fP"
+.br
+.ti -1c
+.RI "list \fBpysc2\&.lib\&.actions\&.SELECT_ADD_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.SelectAdd\fP"
+.br
+.ti -1c
+.RI "list \fBpysc2\&.lib\&.actions\&.SELECT_UNIT_ACT_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.SelectUnitAct\fP"
+.br
+.ti -1c
+.RI "list \fBpysc2\&.lib\&.actions\&.SELECT_WORKER_OPTIONS\fP"
+.br
+.ti -1c
+.RI "def \fBpysc2\&.lib\&.actions\&.SelectWorker\fP"
+.br
+.ti -1c
+.RI "\fBpysc2\&.lib\&.actions\&.TYPES\fP"
+.br
+.ti -1c
+.RI "dictionary \fBpysc2\&.lib\&.actions\&.FUNCTION_TYPES\fP"
+.br
+.ti -1c
+.RI "dictionary \fBpysc2\&.lib\&.actions\&.ABILITY_FUNCTIONS\fP = {cmd_quick, cmd_screen, cmd_minimap, autocast}"
+.br
+.ti -1c
+.RI "dictionary \fBpysc2\&.lib\&.actions\&.POINT_REQUIRED_FUNCS\fP"
+.br
+.ti -1c
+.RI "bool \fBpysc2\&.lib\&.actions\&.always\fP = lambda _: True"
+.br
+.ti -1c
+.RI "\fBpysc2\&.lib\&.actions\&.FUNCTIONS\fP = Functions(_FUNCTIONS)"
+.br
+.ti -1c
+.RI "\fBpysc2\&.lib\&.actions\&.ABILITY_IDS\fP = collections\&.defaultdict(set)"
+.br
+.ti -1c
+.RI "dictionary \fBpysc2\&.lib\&.actions\&.FUNCTIONS_AVAILABLE\fP = {f\&.id: f for f in FUNCTIONS if f\&.avail_fn}"
+.br
+.in -1c
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

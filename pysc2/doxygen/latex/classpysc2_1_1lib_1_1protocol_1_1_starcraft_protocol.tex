@@ -1,0 +1,95 @@
+\hypertarget{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol}{}\section{pysc2.\+lib.\+protocol.\+Starcraft\+Protocol Class Reference}
+\label{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol}\index{pysc2.\+lib.\+protocol.\+Starcraft\+Protocol@{pysc2.\+lib.\+protocol.\+Starcraft\+Protocol}}
+Inheritance diagram for pysc2.\+lib.\+protocol.\+Starcraft\+Protocol\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a65fca7cc64f33165f660c46142568895}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, sock)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a0dce2570a5feaa1da6e3d282fc2ea83a}{status}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a0388e8e80a71a4a63a000bc52ec92653}{close}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a7633ee8d525381b124b9c09017e2d50d}{read}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a03ee4d6020768e77fd68d290ffa423a5}{write}} (self, request)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a12f0a3837aad92c813ca60416dcc6a89}{send\+\_\+req}} (self, request)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_aac34f8adc8d90d432394760daa65beda}{send}} (self, kwargs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Defines the protocol for chatting with starcraft.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a65fca7cc64f33165f660c46142568895}\label{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a65fca7cc64f33165f660c46142568895}} 
+\index{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+protocol.\+Starcraft\+Protocol.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sock }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a0388e8e80a71a4a63a000bc52ec92653}\label{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a0388e8e80a71a4a63a000bc52ec92653}} 
+\index{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}!close@{close}}
+\index{close@{close}!pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+protocol.\+Starcraft\+Protocol.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a7633ee8d525381b124b9c09017e2d50d}\label{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a7633ee8d525381b124b9c09017e2d50d}} 
+\index{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}!read@{read}}
+\index{read@{read}!pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}}
+\subsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+protocol.\+Starcraft\+Protocol.\+read (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read a Response, do some validation, and return it.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_aac34f8adc8d90d432394760daa65beda}\label{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_aac34f8adc8d90d432394760daa65beda}} 
+\index{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}!send@{send}}
+\index{send@{send}!pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+protocol.\+Starcraft\+Protocol.\+send (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create and send a specific request, and return the response.
+
+For example: send(ping=sc_pb.RequestPing()) => sc_pb.ResponsePing
+
+Args:
+  **kwargs: A single kwarg with the name and value to fill in to Request.
+
+Returns:
+  The Response corresponding to your request.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a12f0a3837aad92c813ca60416dcc6a89}\label{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a12f0a3837aad92c813ca60416dcc6a89}} 
+\index{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}!send\+\_\+req@{send\+\_\+req}}
+\index{send\+\_\+req@{send\+\_\+req}!pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}}
+\subsubsection{\texorpdfstring{send\+\_\+req()}{send\_req()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+protocol.\+Starcraft\+Protocol.\+send\+\_\+req (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write a pre-filled Request and return the Response.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a0dce2570a5feaa1da6e3d282fc2ea83a}\label{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a0dce2570a5feaa1da6e3d282fc2ea83a}} 
+\index{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}!status@{status}}
+\index{status@{status}!pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}}
+\subsubsection{\texorpdfstring{status()}{status()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+protocol.\+Starcraft\+Protocol.\+status (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a03ee4d6020768e77fd68d290ffa423a5}\label{classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_a03ee4d6020768e77fd68d290ffa423a5}} 
+\index{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}!write@{write}}
+\index{write@{write}!pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol@{pysc2\+::lib\+::protocol\+::\+Starcraft\+Protocol}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+protocol.\+Starcraft\+Protocol.\+write (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Write a Request.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{protocol_8py}{protocol.\+py}}\end{DoxyCompactItemize}

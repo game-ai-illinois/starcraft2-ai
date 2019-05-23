@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_player_relative" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::PlayerRelative</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_relative_1a21e8a8563e8a0ab164af1c9f6d9d1387" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.PlayerRelative::NONE</definition>
+        <argsstring></argsstring>
+        <name>NONE</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="47" column="1" bodyfile="lib/features.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_relative_1a1814fca8de9c266a082c20514456ebfa" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.PlayerRelative::SELF</definition>
+        <argsstring></argsstring>
+        <name>SELF</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="48" column="1" bodyfile="lib/features.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_relative_1ae0c9ce2469ca17e68986bb3db8538d8d" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.PlayerRelative::ALLY</definition>
+        <argsstring></argsstring>
+        <name>ALLY</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="49" column="1" bodyfile="lib/features.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_relative_1a389a16bcd7781e679c995d91b7e8b9f5" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.PlayerRelative::NEUTRAL</definition>
+        <argsstring></argsstring>
+        <name>NEUTRAL</name>
+        <initializer>=  3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="50" column="1" bodyfile="lib/features.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_player_relative_1a803b17b26fbbf5fc750a396aaa27a49c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.PlayerRelative::ENEMY</definition>
+        <argsstring></argsstring>
+        <name>ENEMY</name>
+        <initializer>=  4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="51" column="1" bodyfile="lib/features.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>The values for the `player_relative` feature layers.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="476">
+        <label>pysc2.lib.features.PlayerRelative</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_player_relative"/>
+        <childnode refid="477" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="477">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="478">
+        <label>pysc2.lib.features.PlayerRelative</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_player_relative"/>
+        <childnode refid="479" relation="public-inheritance">
+        </childnode>
+        <childnode refid="480" relation="usage">
+          <edgelabel>ENEMY</edgelabel>
+          <edgelabel>ALLY</edgelabel>
+          <edgelabel>NONE</edgelabel>
+          <edgelabel>NEUTRAL</edgelabel>
+          <edgelabel>SELF</edgelabel>
+        </childnode>
+      </node>
+      <node id="480">
+        <label>int</label>
+      </node>
+      <node id="479">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="45" column="1" bodyfile="lib/features.py" bodystart="45" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_relative_1ae0c9ce2469ca17e68986bb3db8538d8d" prot="public" virt="non-virtual"><scope>pysc2::lib::features::PlayerRelative</scope><name>ALLY</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_relative_1a803b17b26fbbf5fc750a396aaa27a49c" prot="public" virt="non-virtual"><scope>pysc2::lib::features::PlayerRelative</scope><name>ENEMY</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_relative_1a389a16bcd7781e679c995d91b7e8b9f5" prot="public" virt="non-virtual"><scope>pysc2::lib::features::PlayerRelative</scope><name>NEUTRAL</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_relative_1a21e8a8563e8a0ab164af1c9f6d9d1387" prot="public" virt="non-virtual"><scope>pysc2::lib::features::PlayerRelative</scope><name>NONE</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_player_relative_1a1814fca8de9c266a082c20514456ebfa" prot="public" virt="non-virtual"><scope>pysc2::lib::features::PlayerRelative</scope><name>SELF</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

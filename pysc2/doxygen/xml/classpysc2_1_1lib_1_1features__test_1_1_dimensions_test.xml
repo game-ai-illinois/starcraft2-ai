@@ -1,0 +1,290 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features_test::DimensionsTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a656658d118ecf0dec068a5f1f840480a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testScreenSizeWithoutMinimapRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScreenSizeWithoutMinimapRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="244" column="1" bodyfile="lib/features_test.py" bodystart="244" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a5d54ae68a70ede7e77ebc5a82f9bb363" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testScreenWidthWithoutHeightRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScreenWidthWithoutHeightRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="248" column="1" bodyfile="lib/features_test.py" bodystart="248" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a98381d48e02f0575e16df437120ad0b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testScreenWidthHeightWithoutMinimapRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScreenWidthHeightWithoutMinimapRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="252" column="1" bodyfile="lib/features_test.py" bodystart="252" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a477eb9b53b64219aa10f5460a1e2735a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testMinimapWidthAndHeightWithoutScreenRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testMinimapWidthAndHeightWithoutScreenRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="256" column="1" bodyfile="lib/features_test.py" bodystart="256" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1af6f69ee9ae5eb17bc7e324caa7add776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testScreenSmallerThanMinimapRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScreenSmallerThanMinimapRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="260" column="1" bodyfile="lib/features_test.py" bodystart="260" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a68a0e81f9af4953ef8e51e2376296c86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testNoneNoneRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNoneNoneRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="264" column="1" bodyfile="lib/features_test.py" bodystart="264" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a715543385b64f77ed16e6370fbba56fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testSingularZeroesRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSingularZeroesRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="268" column="1" bodyfile="lib/features_test.py" bodystart="268" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a415323bb2471aecc5255d210cbd99801" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testTwoZeroesRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testTwoZeroesRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="272" column="1" bodyfile="lib/features_test.py" bodystart="272" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a43f03496b5f601bfcd4a2b43d16bd165" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testThreeTupleScreenRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testThreeTupleScreenRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="276" column="1" bodyfile="lib/features_test.py" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a9bf1bf5fd35bf14528343c64e92cfa3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testThreeTupleMinimapRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testThreeTupleMinimapRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="280" column="1" bodyfile="lib/features_test.py" bodystart="280" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a6818938975cbcea85dcc17ee1d506053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testNegativeScreenRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNegativeScreenRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="284" column="1" bodyfile="lib/features_test.py" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a689adbba28df393a9b16b36413b08d29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testNegativeMinimapRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNegativeMinimapRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="288" column="1" bodyfile="lib/features_test.py" bodystart="288" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a4fa9ba1d024fbee643cca67ed215627d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testNegativeScreenTupleRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNegativeScreenTupleRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="292" column="1" bodyfile="lib/features_test.py" bodystart="292" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1ac762a20913b445f3137cf72191edff70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.DimensionsTest.testNegativeMinimapTupleRaises</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNegativeMinimapTupleRaises</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="296" column="1" bodyfile="lib/features_test.py" bodystart="296" bodyend="300"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="210">
+        <label>TestCase</label>
+      </node>
+      <node id="209">
+        <label>pysc2.lib.features_test.DimensionsTest</label>
+        <link refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test"/>
+        <childnode refid="210" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="212">
+        <label>TestCase</label>
+      </node>
+      <node id="211">
+        <label>pysc2.lib.features_test.DimensionsTest</label>
+        <link refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test"/>
+        <childnode refid="212" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features_test.py" line="242" column="1" bodyfile="lib/features_test.py" bodystart="242" bodyend="301"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a477eb9b53b64219aa10f5460a1e2735a" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testMinimapWidthAndHeightWithoutScreenRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a689adbba28df393a9b16b36413b08d29" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testNegativeMinimapRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1ac762a20913b445f3137cf72191edff70" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testNegativeMinimapTupleRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a6818938975cbcea85dcc17ee1d506053" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testNegativeScreenRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a4fa9ba1d024fbee643cca67ed215627d" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testNegativeScreenTupleRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a68a0e81f9af4953ef8e51e2376296c86" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testNoneNoneRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a656658d118ecf0dec068a5f1f840480a" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testScreenSizeWithoutMinimapRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1af6f69ee9ae5eb17bc7e324caa7add776" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testScreenSmallerThanMinimapRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a98381d48e02f0575e16df437120ad0b6" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testScreenWidthHeightWithoutMinimapRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a5d54ae68a70ede7e77ebc5a82f9bb363" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testScreenWidthWithoutHeightRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a715543385b64f77ed16e6370fbba56fd" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testSingularZeroesRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a9bf1bf5fd35bf14528343c64e92cfa3e" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testThreeTupleMinimapRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a43f03496b5f601bfcd4a2b43d16bd165" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testThreeTupleScreenRaises</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_dimensions_test_1a415323bb2471aecc5255d210cbd99801" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::DimensionsTest</scope><name>testTwoZeroesRaises</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

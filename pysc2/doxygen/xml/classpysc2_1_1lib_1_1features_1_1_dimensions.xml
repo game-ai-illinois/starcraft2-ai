@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_dimensions" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::Dimensions</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_dimensions_1a4c84e2ab76ea9a29f995d1bfb5087285" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.Dimensions::_screen</definition>
+        <argsstring></argsstring>
+        <name>_screen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="337" column="1" bodyfile="lib/features.py" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_dimensions_1afbe7dda3af377c100d0f810990cbebb1" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.Dimensions::_minimap</definition>
+        <argsstring></argsstring>
+        <name>_minimap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="338" column="1" bodyfile="lib/features.py" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_dimensions_1a1baec57f9a7f019d9c9147e10473a15e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Dimensions.__init__</definition>
+        <argsstring>(self, screen=None, minimap=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1features_1_1_dimensions_1a8f2a12331c6acb2070a3cd77ce4019f0" kindref="member">screen</ref></type>
+          <defname>screen</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1features_1_1_dimensions_1ac3367e0b221b72b66beb5f5b1d5a1169" kindref="member">minimap</ref></type>
+          <defname>minimap</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="331" column="1" bodyfile="lib/features.py" bodystart="331" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_dimensions_1a8f2a12331c6acb2070a3cd77ce4019f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Dimensions.screen</definition>
+        <argsstring>(self)</argsstring>
+        <name>screen</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="346" column="1" bodyfile="lib/features.py" bodystart="346" bodyend="348"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_dimensions_1ac3367e0b221b72b66beb5f5b1d5a1169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Dimensions.minimap</definition>
+        <argsstring>(self)</argsstring>
+        <name>minimap</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="350" column="1" bodyfile="lib/features.py" bodystart="350" bodyend="352"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_dimensions_1a8e72e9bec4a76d1f91ecdf0523991cae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Dimensions.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="353" column="1" bodyfile="lib/features.py" bodystart="353" bodyend="356"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Screen and minimap dimensions configuration.
+
+Both screen and minimap must be specified. Sizes must be positive.
+Screen size must be greater than or equal to minimap size in both dimensions.
+
+Args:
+  screen: A (width, height) int tuple or a single int to be used for both.
+  minimap: A (width, height) int tuple or a single int to be used for both.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="205">
+        <label>pysc2.lib.features.Dimensions</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_dimensions"/>
+        <childnode refid="206" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="207">
+        <label>pysc2.lib.features.Dimensions</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_dimensions"/>
+        <childnode refid="208" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="320" column="1" bodyfile="lib/features.py" bodystart="320" bodyend="357"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_dimensions_1a1baec57f9a7f019d9c9147e10473a15e" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Dimensions</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_dimensions_1a8e72e9bec4a76d1f91ecdf0523991cae" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Dimensions</scope><name>__repr__</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_dimensions_1afbe7dda3af377c100d0f810990cbebb1" prot="private" virt="non-virtual"><scope>pysc2::lib::features::Dimensions</scope><name>_minimap</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_dimensions_1a4c84e2ab76ea9a29f995d1bfb5087285" prot="private" virt="non-virtual"><scope>pysc2::lib::features::Dimensions</scope><name>_screen</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_dimensions_1ac3367e0b221b72b66beb5f5b1d5a1169" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Dimensions</scope><name>minimap</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_dimensions_1a8f2a12331c6acb2070a3cd77ce4019f0" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Dimensions</scope><name>screen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1point" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::point</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1point_1_1_point" prot="public">pysc2::lib::point::Point</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1point_1_1_rect" prot="public">pysc2::lib::point::Rect</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1point_1a99891351bc447e5e8e500a7566148d4f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::point.origin</definition>
+        <argsstring></argsstring>
+        <name>origin</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1point_1_1_point" kindref="compound">Point</ref>(0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="156" column="1" bodyfile="lib/point.py" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/point.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

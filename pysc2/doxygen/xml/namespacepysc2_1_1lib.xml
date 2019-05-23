@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib" kind="namespace" language="Python">
+    <compoundname>pysc2::lib</compoundname>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1actions">pysc2::lib::actions</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1colors">pysc2::lib::colors</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1features">pysc2::lib::features</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1features__test">pysc2::lib::features_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1gfile">pysc2::lib::gfile</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1metrics">pysc2::lib::metrics</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1named__array">pysc2::lib::named_array</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1named__array__test">pysc2::lib::named_array_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1point">pysc2::lib::point</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1point__flag">pysc2::lib::point_flag</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1point__test">pysc2::lib::point_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1protocol">pysc2::lib::protocol</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1remote__controller">pysc2::lib::remote_controller</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1renderer__human">pysc2::lib::renderer_human</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1run__parallel">pysc2::lib::run_parallel</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1run__parallel__test">pysc2::lib::run_parallel_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1sc__process">pysc2::lib::sc_process</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1static__data">pysc2::lib::static_data</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1stopwatch">pysc2::lib::stopwatch</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1stopwatch__test">pysc2::lib::stopwatch_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1transform">pysc2::lib::transform</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1units">pysc2::lib::units</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1video__writer">pysc2::lib::video_writer</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1protocol_1_1_connection_error" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::protocol::ConnectionError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Failed to read/write a message, details in the error string.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="184">
+        <label>Exception</label>
+      </node>
+      <node id="183">
+        <label>pysc2.lib.protocol.ConnectionError</label>
+        <link refid="classpysc2_1_1lib_1_1protocol_1_1_connection_error"/>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="186">
+        <label>Exception</label>
+      </node>
+      <node id="185">
+        <label>pysc2.lib.protocol.ConnectionError</label>
+        <link refid="classpysc2_1_1lib_1_1protocol_1_1_connection_error"/>
+        <childnode refid="186" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/protocol.py" line="48" column="1" bodyfile="lib/protocol.py" bodystart="48" bodyend="53"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

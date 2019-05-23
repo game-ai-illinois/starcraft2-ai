@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1utils_1_1_test_case" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::utils::TestCase</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy" prot="public" virt="non-virtual">pysc2.tests.easy_scripted_test.TestEasy</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test" prot="public" virt="non-virtual">pysc2.tests.maps_test.MapsTest</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1multi__player__env__test_1_1_test_multiplayer_env" prot="public" virt="non-virtual">pysc2.tests.multi_player_env_test.TestMultiplayerEnv</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1multi__player__test_1_1_test_multiplayer" prot="public" virt="non-virtual">pysc2.tests.multi_player_test.TestMultiplayer</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec" prot="public" virt="non-virtual">pysc2.tests.obs_spec_test.TestObservationSpec</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1observer__test_1_1_test_observer" prot="public" virt="non-virtual">pysc2.tests.observer_test.TestObserver</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1ping__test_1_1_test_ping" prot="public" virt="non-virtual">pysc2.tests.ping_test.TestPing</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1protocol__error__test_1_1_test_protocol_error" prot="public" virt="non-virtual">pysc2.tests.protocol_error_test.TestProtocolError</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1random__agent__test_1_1_test_random_agent" prot="public" virt="non-virtual">pysc2.tests.random_agent_test.TestRandomAgent</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1render__test_1_1_test_render" prot="public" virt="non-virtual">pysc2.tests.render_test.TestRender</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test" prot="public" virt="non-virtual">pysc2.tests.replay_obs_test.ReplayObsTest</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1utils_1_1_test_case_1a41c0e4bb6afa8a725974880f1fce4305" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.utils.TestCase::_sw_enabled</definition>
+        <argsstring></argsstring>
+        <name>_sw_enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/utils.py" line="32" column="1" bodyfile="tests/utils.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.utils.TestCase.setUp</definition>
+        <argsstring>(self)</argsstring>
+        <name>setUp</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/utils.py" line="29" column="1" bodyfile="tests/utils.py" bodystart="29" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.utils.TestCase.tearDown</definition>
+        <argsstring>(self)</argsstring>
+        <name>tearDown</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/utils.py" line="35" column="1" bodyfile="tests/utils.py" bodystart="35" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A test base class that enables stopwatch profiling.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="717">
+        <label>pysc2.tests.render_test.TestRender</label>
+        <link refid="classpysc2_1_1tests_1_1render__test_1_1_test_render"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="718">
+        <label>pysc2.tests.replay_obs_test.ReplayObsTest</label>
+        <link refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_replay_obs_test"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="710">
+        <label>pysc2.tests.multi_player_env_test.TestMultiplayerEnv</label>
+        <link refid="classpysc2_1_1tests_1_1multi__player__env__test_1_1_test_multiplayer_env"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="715">
+        <label>pysc2.tests.protocol_error_test.TestProtocolError</label>
+        <link refid="classpysc2_1_1tests_1_1protocol__error__test_1_1_test_protocol_error"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="711">
+        <label>pysc2.tests.multi_player_test.TestMultiplayer</label>
+        <link refid="classpysc2_1_1tests_1_1multi__player__test_1_1_test_multiplayer"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="707">
+        <label>TestCase</label>
+      </node>
+      <node id="708">
+        <label>pysc2.tests.easy_scripted_test.TestEasy</label>
+        <link refid="classpysc2_1_1tests_1_1easy__scripted__test_1_1_test_easy"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="716">
+        <label>pysc2.tests.random_agent_test.TestRandomAgent</label>
+        <link refid="classpysc2_1_1tests_1_1random__agent__test_1_1_test_random_agent"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="709">
+        <label>pysc2.tests.maps_test.MapsTest</label>
+        <link refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="714">
+        <label>pysc2.tests.ping_test.TestPing</label>
+        <link refid="classpysc2_1_1tests_1_1ping__test_1_1_test_ping"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="706">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="707" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="712">
+        <label>pysc2.tests.obs_spec_test.TestObservationSpec</label>
+        <link refid="classpysc2_1_1tests_1_1obs__spec__test_1_1_test_observation_spec"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="713">
+        <label>pysc2.tests.observer_test.TestObserver</label>
+        <link refid="classpysc2_1_1tests_1_1observer__test_1_1_test_observer"/>
+        <childnode refid="706" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="720">
+        <label>TestCase</label>
+      </node>
+      <node id="719">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="720" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/utils.py" line="26" column="1" bodyfile="tests/utils.py" bodystart="26" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a41c0e4bb6afa8a725974880f1fce4305" prot="private" virt="non-virtual"><scope>pysc2::tests::utils::TestCase</scope><name>_sw_enabled</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::utils::TestCase</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::utils::TestCase</scope><name>tearDown</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

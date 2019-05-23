@@ -1,0 +1,234 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1actions_1_1_argument_type" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::actions::ArgumentType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">id</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">name</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">sizes</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">fn</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">values</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1actions_1_1_argument_type_1ad6aef37cb25714af6b856ac054f8e9c8" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.actions.ArgumentType::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="166" column="1" bodyfile="lib/actions.py" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a9adbb0aefcb2fc39e36b1c718889f9cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.ArgumentType.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="168" column="1" bodyfile="lib/actions.py" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a7b139c13ef12cd5bffa45c09af082140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.ArgumentType.enum</definition>
+        <argsstring>(cls, options, values)</argsstring>
+        <name>enum</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <param>
+          <type>values</type>
+          <defname>values</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create an ArgumentType where you choose one of a set of known values.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="172" column="1" bodyfile="lib/actions.py" bodystart="172" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a6440b4d3ca6308d338405b4dd456abab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.ArgumentType.scalar</definition>
+        <argsstring>(cls, value)</argsstring>
+        <name>scalar</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create an ArgumentType with a single scalar in range(value).</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="182" column="1" bodyfile="lib/actions.py" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_argument_type_1acd7c52464b761ade90cc6d63957a0739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.ArgumentType.point</definition>
+        <argsstring>(cls)</argsstring>
+        <name>point</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create an ArgumentType that is represented by a point.Point.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="187" column="1" bodyfile="lib/actions.py" bodystart="187" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_argument_type_1abeda01e4e7ab3656447b9b4af4ed26d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.ArgumentType.spec</definition>
+        <argsstring>(cls, id_, name, sizes)</argsstring>
+        <name>spec</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>id_</type>
+          <defname>id_</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>sizes</type>
+          <defname>sizes</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create an ArgumentType to be used in ValidActions.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="194" column="1" bodyfile="lib/actions.py" bodystart="194" bodyend="198"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Represents a single argument type.
+
+Attributes:
+  id: The argument id. This is unique.
+  name: The name of the argument, also unique.
+  sizes: The max+1 of each of the dimensions this argument takes.
+  fn: The function to convert the list of integers into something more
+      meaningful to be set in the protos to send to the game.
+  values: An enum representing the values this argument type could hold. None
+      if this isn&apos;t an enum argument type.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="77">
+        <label>sizes</label>
+      </node>
+      <node id="74">
+        <label>namedtuple</label>
+      </node>
+      <node id="79">
+        <label>values</label>
+      </node>
+      <node id="73">
+        <label>pysc2.lib.actions.ArgumentType</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_argument_type"/>
+        <childnode refid="74" relation="public-inheritance">
+        </childnode>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>fn</label>
+      </node>
+      <node id="75">
+        <label>id</label>
+      </node>
+      <node id="76">
+        <label>name</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="84">
+        <label>sizes</label>
+      </node>
+      <node id="81">
+        <label>namedtuple</label>
+      </node>
+      <node id="86">
+        <label>values</label>
+      </node>
+      <node id="80">
+        <label>pysc2.lib.actions.ArgumentType</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_argument_type"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>fn</label>
+      </node>
+      <node id="82">
+        <label>id</label>
+      </node>
+      <node id="83">
+        <label>name</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/actions.py" line="153" column="1" bodyfile="lib/actions.py" bodystart="154" bodyend="199"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1ad6aef37cb25714af6b856ac054f8e9c8" prot="private" virt="non-virtual"><scope>pysc2::lib::actions::ArgumentType</scope><name>__slots__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a9adbb0aefcb2fc39e36b1c718889f9cc" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::ArgumentType</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a7b139c13ef12cd5bffa45c09af082140" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::ArgumentType</scope><name>enum</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1acd7c52464b761ade90cc6d63957a0739" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::ArgumentType</scope><name>point</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a6440b4d3ca6308d338405b4dd456abab" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::ArgumentType</scope><name>scalar</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1abeda01e4e7ab3656447b9b4af4ed26d3" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::ArgumentType</scope><name>spec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

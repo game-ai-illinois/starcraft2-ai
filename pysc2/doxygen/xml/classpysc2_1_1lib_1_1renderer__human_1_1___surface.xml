@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1renderer__human_1_1___surface" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::renderer_human::_Surface</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a4f0f39530a27df058f01c18e19f705f6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human._Surface::surf</definition>
+        <argsstring></argsstring>
+        <name>surf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="114" column="1" bodyfile="lib/renderer_human.py" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a5f951c622b86c80f949b09f274995ffe" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human._Surface::surf_type</definition>
+        <argsstring></argsstring>
+        <name>surf_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="115" column="1" bodyfile="lib/renderer_human.py" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a3a7c29c8853fde7755b1c9908631a8b3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human._Surface::surf_rect</definition>
+        <argsstring></argsstring>
+        <name>surf_rect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="116" column="1" bodyfile="lib/renderer_human.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a76ded3196283f7e7104ba8f8a784c917" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human._Surface::world_to_surf</definition>
+        <argsstring></argsstring>
+        <name>world_to_surf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="117" column="1" bodyfile="lib/renderer_human.py" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a7fa7b3c456fca16f552252649db7ac44" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human._Surface::world_to_obs</definition>
+        <argsstring></argsstring>
+        <name>world_to_obs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="118" column="1" bodyfile="lib/renderer_human.py" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1ada72ce60001e5107b602d6543007c9de" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.renderer_human._Surface::draw</definition>
+        <argsstring></argsstring>
+        <name>draw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="119" column="1" bodyfile="lib/renderer_human.py" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a1357779bf7813158c9333300636fd107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human._Surface.__init__</definition>
+        <argsstring>(self, surf, surf_type, surf_rect, world_to_surf, world_to_obs, draw)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a4f0f39530a27df058f01c18e19f705f6" kindref="member">surf</ref></type>
+          <defname>surf</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a5f951c622b86c80f949b09f274995ffe" kindref="member">surf_type</ref></type>
+          <defname>surf_type</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a3a7c29c8853fde7755b1c9908631a8b3" kindref="member">surf_rect</ref></type>
+          <defname>surf_rect</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a76ded3196283f7e7104ba8f8a784c917" kindref="member">world_to_surf</ref></type>
+          <defname>world_to_surf</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a7fa7b3c456fca16f552252649db7ac44" kindref="member">world_to_obs</ref></type>
+          <defname>world_to_obs</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1ada72ce60001e5107b602d6543007c9de" kindref="member">draw</ref></type>
+          <defname>draw</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A surface to display on screen.
+
+Args:
+  surf: The actual pygame.Surface (or subsurface).
+  surf_type: A SurfType, used to tell how to treat clicks in that area.
+  surf_rect: Rect of the surface relative to the window.
+  world_to_surf: Convert a world point to a pixel on the surface.
+  world_to_obs: Convert a world point to a pixel in the observation.
+  draw: A function that draws onto the surface.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="102" column="1" bodyfile="lib/renderer_human.py" bodystart="103" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a3147e67c55d537f3903e088ee03f7016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human._Surface.draw_arc</definition>
+        <argsstring>(self, color, world_loc, world_radius, start_angle, stop_angle, thickness=1)</argsstring>
+        <name>draw_arc</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>color</type>
+          <defname>color</defname>
+        </param>
+        <param>
+          <type>world_loc</type>
+          <defname>world_loc</defname>
+        </param>
+        <param>
+          <type>world_radius</type>
+          <defname>world_radius</defname>
+        </param>
+        <param>
+          <type>start_angle</type>
+          <defname>start_angle</defname>
+        </param>
+        <param>
+          <type>stop_angle</type>
+          <defname>stop_angle</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw an arc using world coordinates, radius, start and stop angles.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="121" column="1" bodyfile="lib/renderer_human.py" bodystart="122" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a0dbda25a5a85520c8740e0d2a232848b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human._Surface.draw_circle</definition>
+        <argsstring>(self, color, world_loc, world_radius, thickness=0)</argsstring>
+        <name>draw_circle</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>color</type>
+          <defname>color</defname>
+        </param>
+        <param>
+          <type>world_loc</type>
+          <defname>world_loc</defname>
+        </param>
+        <param>
+          <type>world_radius</type>
+          <defname>world_radius</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw a circle using world coordinates and radius.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="130" column="1" bodyfile="lib/renderer_human.py" bodystart="130" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a8f798a0fa115c799ea7eeed7f0baa842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human._Surface.draw_rect</definition>
+        <argsstring>(self, color, world_rect, thickness=0)</argsstring>
+        <name>draw_rect</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>color</type>
+          <defname>color</defname>
+        </param>
+        <param>
+          <type>world_rect</type>
+          <defname>world_rect</defname>
+        </param>
+        <param>
+          <type>thickness</type>
+          <defname>thickness</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Draw a rectangle using world coordinates.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="138" column="1" bodyfile="lib/renderer_human.py" bodystart="138" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a586834302ec3b26934da8b2d5b3734f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human._Surface.blit_np_array</definition>
+        <argsstring>(self, array)</argsstring>
+        <name>blit_np_array</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>array</type>
+          <defname>array</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fill this surface using the contents of a numpy array.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="145" column="1" bodyfile="lib/renderer_human.py" bodystart="145" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a2ff2cc7e501dfe9713ac4f7b56708a0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.renderer_human._Surface.write_screen</definition>
+        <argsstring>(self, font, color, screen_pos, text, align=&quot;left&quot;, valign=&quot;top&quot;)</argsstring>
+        <name>write_screen</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>font</type>
+          <defname>font</defname>
+        </param>
+        <param>
+          <type>color</type>
+          <defname>color</defname>
+        </param>
+        <param>
+          <type>screen_pos</type>
+          <defname>screen_pos</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <param>
+          <type>align</type>
+          <defname>align</defname>
+          <defval>&quot;left&quot;</defval>
+        </param>
+        <param>
+          <type>valign</type>
+          <defname>valign</defname>
+          <defval>&quot;top&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Write to the screen in font.size relative coordinates.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="152" column="1" bodyfile="lib/renderer_human.py" bodystart="153" bodyend="168"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A surface to display on screen.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>pysc2.lib.renderer_human._Surface</label>
+        <link refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>pysc2.lib.renderer_human._Surface</label>
+        <link refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/renderer_human.py" line="99" column="1" bodyfile="lib/renderer_human.py" bodystart="99" bodyend="169"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a1357779bf7813158c9333300636fd107" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a586834302ec3b26934da8b2d5b3734f6" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>blit_np_array</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1ada72ce60001e5107b602d6543007c9de" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>draw</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a3147e67c55d537f3903e088ee03f7016" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>draw_arc</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a0dbda25a5a85520c8740e0d2a232848b" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>draw_circle</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a8f798a0fa115c799ea7eeed7f0baa842" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>draw_rect</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a4f0f39530a27df058f01c18e19f705f6" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>surf</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a3a7c29c8853fde7755b1c9908631a8b3" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>surf_rect</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a5f951c622b86c80f949b09f274995ffe" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>surf_type</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a7fa7b3c456fca16f552252649db7ac44" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>world_to_obs</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a76ded3196283f7e7104ba8f8a784c917" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>world_to_surf</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1___surface_1a2ff2cc7e501dfe9713ac4f7b56708a0c" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::_Surface</scope><name>write_screen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

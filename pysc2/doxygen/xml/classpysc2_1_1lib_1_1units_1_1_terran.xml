@@ -1,0 +1,909 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1units_1_1_terran" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::units::Terran</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1aee04002a98d46a17aeb4b46e5996cd74" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Armory</definition>
+        <argsstring></argsstring>
+        <name>Armory</name>
+        <initializer>=  29</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="119" column="1" bodyfile="lib/units.py" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ab55b3ff4f1410217e3e9344dbcca9e7b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::AutoTurret</definition>
+        <argsstring></argsstring>
+        <name>AutoTurret</name>
+        <initializer>=  31</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="120" column="1" bodyfile="lib/units.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ab3ca87cc6f5fa92279fa124b4057eece" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Banshee</definition>
+        <argsstring></argsstring>
+        <name>Banshee</name>
+        <initializer>=  55</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="121" column="1" bodyfile="lib/units.py" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1af2239d867dadc8a7d213070b101f6b2c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Barracks</definition>
+        <argsstring></argsstring>
+        <name>Barracks</name>
+        <initializer>=  21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="122" column="1" bodyfile="lib/units.py" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ad9d27fdaf1d51dafd2a3403abf07673d" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::BarracksFlying</definition>
+        <argsstring></argsstring>
+        <name>BarracksFlying</name>
+        <initializer>=  46</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="123" column="1" bodyfile="lib/units.py" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a8400365cd6d0de5c5c4fa058c6565153" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::BarracksReactor</definition>
+        <argsstring></argsstring>
+        <name>BarracksReactor</name>
+        <initializer>=  38</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="124" column="1" bodyfile="lib/units.py" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a78b8c93320a737b2ec9a0503fcdb8c44" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::BarracksTechLab</definition>
+        <argsstring></argsstring>
+        <name>BarracksTechLab</name>
+        <initializer>=  37</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="125" column="1" bodyfile="lib/units.py" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a5b50b1fd25ae20fd08928b97358406d9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Battlecruiser</definition>
+        <argsstring></argsstring>
+        <name>Battlecruiser</name>
+        <initializer>=  57</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="126" column="1" bodyfile="lib/units.py" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a813da9f96ace3a051e73101610de3c2b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Bunker</definition>
+        <argsstring></argsstring>
+        <name>Bunker</name>
+        <initializer>=  24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="127" column="1" bodyfile="lib/units.py" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a0d9dd8b65858ed7118f5043eb3d961dd" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::CommandCenter</definition>
+        <argsstring></argsstring>
+        <name>CommandCenter</name>
+        <initializer>=  18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="128" column="1" bodyfile="lib/units.py" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a937fc57706ce3eb20fda81b63210cb58" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::CommandCenterFlying</definition>
+        <argsstring></argsstring>
+        <name>CommandCenterFlying</name>
+        <initializer>=  36</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="129" column="1" bodyfile="lib/units.py" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a92ce3557fa52a9eb2928ff4f0cd4fa54" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Cyclone</definition>
+        <argsstring></argsstring>
+        <name>Cyclone</name>
+        <initializer>=  692</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="130" column="1" bodyfile="lib/units.py" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a86c01475b1f47718e438d63a610c2c81" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::EngineeringBay</definition>
+        <argsstring></argsstring>
+        <name>EngineeringBay</name>
+        <initializer>=  22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="131" column="1" bodyfile="lib/units.py" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a197f985d1e29b4b953f7e92d4b489227" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Factory</definition>
+        <argsstring></argsstring>
+        <name>Factory</name>
+        <initializer>=  27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="132" column="1" bodyfile="lib/units.py" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1abf6097fc43bcee283f422a10509de1aa" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::FactoryFlying</definition>
+        <argsstring></argsstring>
+        <name>FactoryFlying</name>
+        <initializer>=  43</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="133" column="1" bodyfile="lib/units.py" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ad425fe025c7346f32f91f8abc5921558" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::FactoryReactor</definition>
+        <argsstring></argsstring>
+        <name>FactoryReactor</name>
+        <initializer>=  40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="134" column="1" bodyfile="lib/units.py" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a72df40f81c373f6889b61f168fe7ad44" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::FactoryTechLab</definition>
+        <argsstring></argsstring>
+        <name>FactoryTechLab</name>
+        <initializer>=  39</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="135" column="1" bodyfile="lib/units.py" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a19bf33f3e9436874eb580d0e5ca8f5cf" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::FusionCore</definition>
+        <argsstring></argsstring>
+        <name>FusionCore</name>
+        <initializer>=  30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="136" column="1" bodyfile="lib/units.py" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a12fe72cd0314a7d442dcb459cb0d8328" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Ghost</definition>
+        <argsstring></argsstring>
+        <name>Ghost</name>
+        <initializer>=  50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="137" column="1" bodyfile="lib/units.py" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a33d0a54b40f8bac5b558e1b36e78a621" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::GhostAcademy</definition>
+        <argsstring></argsstring>
+        <name>GhostAcademy</name>
+        <initializer>=  26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="138" column="1" bodyfile="lib/units.py" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a86501a533ffda25cfd1abab24954d718" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Hellion</definition>
+        <argsstring></argsstring>
+        <name>Hellion</name>
+        <initializer>=  53</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="139" column="1" bodyfile="lib/units.py" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a0e5bbf94b391cdd8306b9847f2e80a23" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Hellbat</definition>
+        <argsstring></argsstring>
+        <name>Hellbat</name>
+        <initializer>=  484</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="140" column="1" bodyfile="lib/units.py" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1aa5cc922ceb8d1769e43c7ab70441f07f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::KD8Charge</definition>
+        <argsstring></argsstring>
+        <name>KD8Charge</name>
+        <initializer>=  830</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="141" column="1" bodyfile="lib/units.py" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a4df21b58c6622dc5289486d75940dd89" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Liberator</definition>
+        <argsstring></argsstring>
+        <name>Liberator</name>
+        <initializer>=  689</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="142" column="1" bodyfile="lib/units.py" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a231b4212e952421e2c7567d76fcb8cba" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::LiberatorAG</definition>
+        <argsstring></argsstring>
+        <name>LiberatorAG</name>
+        <initializer>=  734</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="143" column="1" bodyfile="lib/units.py" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a7ea6bd76dd0a370c1e933bf1aa6540ab" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::MULE</definition>
+        <argsstring></argsstring>
+        <name>MULE</name>
+        <initializer>=  268</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="144" column="1" bodyfile="lib/units.py" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a93ac91e1858e8871cfa9abf096dbeed9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Marauder</definition>
+        <argsstring></argsstring>
+        <name>Marauder</name>
+        <initializer>=  51</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="145" column="1" bodyfile="lib/units.py" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ae37d4296f9752e9d7f824df4c10db59f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Marine</definition>
+        <argsstring></argsstring>
+        <name>Marine</name>
+        <initializer>=  48</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="146" column="1" bodyfile="lib/units.py" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ad67510b824a1f07c3a220785398d6d0d" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Medivac</definition>
+        <argsstring></argsstring>
+        <name>Medivac</name>
+        <initializer>=  54</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="147" column="1" bodyfile="lib/units.py" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1aa3e24cc241207f6fc40724f35b859078" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::MissileTurret</definition>
+        <argsstring></argsstring>
+        <name>MissileTurret</name>
+        <initializer>=  23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="148" column="1" bodyfile="lib/units.py" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ab7c9a61296010bc8d6d480c08c4bc923" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Nuke</definition>
+        <argsstring></argsstring>
+        <name>Nuke</name>
+        <initializer>=  58</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="149" column="1" bodyfile="lib/units.py" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a3b1d7138c281fc4923221ec20f0e8f73" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::OrbitalCommand</definition>
+        <argsstring></argsstring>
+        <name>OrbitalCommand</name>
+        <initializer>=  132</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="150" column="1" bodyfile="lib/units.py" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ac623db2a98aacf920b91b157888ae6c4" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::OrbitalCommandFlying</definition>
+        <argsstring></argsstring>
+        <name>OrbitalCommandFlying</name>
+        <initializer>=  134</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="151" column="1" bodyfile="lib/units.py" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a368f5206afc3bdcd0bad5ab209962db5" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::PlanetaryFortress</definition>
+        <argsstring></argsstring>
+        <name>PlanetaryFortress</name>
+        <initializer>=  130</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="152" column="1" bodyfile="lib/units.py" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a31cd4699e1c60f8e7711b7e026f38b1b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::PointDefenseDrone</definition>
+        <argsstring></argsstring>
+        <name>PointDefenseDrone</name>
+        <initializer>=  11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="153" column="1" bodyfile="lib/units.py" bodystart="153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a2a62fba54d8fd24cbf32de3e1abb8bd4" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Raven</definition>
+        <argsstring></argsstring>
+        <name>Raven</name>
+        <initializer>=  56</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="154" column="1" bodyfile="lib/units.py" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1adf698d5900157afbc2a7033bcdbcc442" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Reactor</definition>
+        <argsstring></argsstring>
+        <name>Reactor</name>
+        <initializer>=  6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="155" column="1" bodyfile="lib/units.py" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a10fa61234a4add472bffa2bcc09c1148" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Reaper</definition>
+        <argsstring></argsstring>
+        <name>Reaper</name>
+        <initializer>=  49</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="156" column="1" bodyfile="lib/units.py" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a038515b1c1fdc35e519285454a34819a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Refinery</definition>
+        <argsstring></argsstring>
+        <name>Refinery</name>
+        <initializer>=  20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="157" column="1" bodyfile="lib/units.py" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a253904fe3277d5d551f9f9262db61247" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::RepairDrone</definition>
+        <argsstring></argsstring>
+        <name>RepairDrone</name>
+        <initializer>=  1913</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="158" column="1" bodyfile="lib/units.py" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a9cb15c619e064e7e3ea6748c2ecc0087" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::SCV</definition>
+        <argsstring></argsstring>
+        <name>SCV</name>
+        <initializer>=  45</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="159" column="1" bodyfile="lib/units.py" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a3b0097ee2ad4d531d4736b36f0efde35" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::SensorTower</definition>
+        <argsstring></argsstring>
+        <name>SensorTower</name>
+        <initializer>=  25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="160" column="1" bodyfile="lib/units.py" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ae712a25676ab88122c4604fef3ae0c3e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::SiegeTank</definition>
+        <argsstring></argsstring>
+        <name>SiegeTank</name>
+        <initializer>=  33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="161" column="1" bodyfile="lib/units.py" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ad6c3b2f385f73aac015da29c6d1590c6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::SiegeTankSieged</definition>
+        <argsstring></argsstring>
+        <name>SiegeTankSieged</name>
+        <initializer>=  32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="162" column="1" bodyfile="lib/units.py" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a492c7703a770e1c09857edded700cc14" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Starport</definition>
+        <argsstring></argsstring>
+        <name>Starport</name>
+        <initializer>=  28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="163" column="1" bodyfile="lib/units.py" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a7ecb33a4194bda4c6a05b5cd8edbeae6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::StarportFlying</definition>
+        <argsstring></argsstring>
+        <name>StarportFlying</name>
+        <initializer>=  44</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="164" column="1" bodyfile="lib/units.py" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ab6a904aebaf8fc683fc4a941c628074f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::StarportReactor</definition>
+        <argsstring></argsstring>
+        <name>StarportReactor</name>
+        <initializer>=  42</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="165" column="1" bodyfile="lib/units.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1aa33c332c8919861536b7b87ece80be4a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::StarportTechLab</definition>
+        <argsstring></argsstring>
+        <name>StarportTechLab</name>
+        <initializer>=  41</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="166" column="1" bodyfile="lib/units.py" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ae9b9f213c542ce7b4b3f8d53b99a3deb" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::SupplyDepot</definition>
+        <argsstring></argsstring>
+        <name>SupplyDepot</name>
+        <initializer>=  19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="167" column="1" bodyfile="lib/units.py" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ac438f57260d820f142d654e05afb0e9a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::SupplyDepotLowered</definition>
+        <argsstring></argsstring>
+        <name>SupplyDepotLowered</name>
+        <initializer>=  47</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="168" column="1" bodyfile="lib/units.py" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1acd3541a4f57329f4a09690a69528d1f2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::TechLab</definition>
+        <argsstring></argsstring>
+        <name>TechLab</name>
+        <initializer>=  5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="169" column="1" bodyfile="lib/units.py" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a98605fec91c514cab6e057768dd05c17" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::Thor</definition>
+        <argsstring></argsstring>
+        <name>Thor</name>
+        <initializer>=  52</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="170" column="1" bodyfile="lib/units.py" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a335d04040e16641e6a4901378eb68bdf" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::ThorHighImpactMode</definition>
+        <argsstring></argsstring>
+        <name>ThorHighImpactMode</name>
+        <initializer>=  691</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="171" column="1" bodyfile="lib/units.py" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a52a4fd50145ea56f4ac5d49ce3f10031" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::VikingAssault</definition>
+        <argsstring></argsstring>
+        <name>VikingAssault</name>
+        <initializer>=  34</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="172" column="1" bodyfile="lib/units.py" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1ae1eb9f0f4e79617ecfcb687a5fe823b3" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::VikingFighter</definition>
+        <argsstring></argsstring>
+        <name>VikingFighter</name>
+        <initializer>=  35</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="173" column="1" bodyfile="lib/units.py" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a463d2f5661de81d58309c6ed888bfcb2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::WidowMine</definition>
+        <argsstring></argsstring>
+        <name>WidowMine</name>
+        <initializer>=  498</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="174" column="1" bodyfile="lib/units.py" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_terran_1a650e5fc97428591198f2f69644c44363" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Terran::WidowMineBurrowed</definition>
+        <argsstring></argsstring>
+        <name>WidowMineBurrowed</name>
+        <initializer>=  500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="175" column="1" bodyfile="lib/units.py" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Terran units.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="702">
+        <label>enum::IntEnum</label>
+      </node>
+      <node id="701">
+        <label>pysc2.lib.units.Terran</label>
+        <link refid="classpysc2_1_1lib_1_1units_1_1_terran"/>
+        <childnode refid="702" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="705">
+        <label>int</label>
+      </node>
+      <node id="704">
+        <label>enum::IntEnum</label>
+      </node>
+      <node id="703">
+        <label>pysc2.lib.units.Terran</label>
+        <link refid="classpysc2_1_1lib_1_1units_1_1_terran"/>
+        <childnode refid="704" relation="public-inheritance">
+        </childnode>
+        <childnode refid="705" relation="usage">
+          <edgelabel>VikingFighter</edgelabel>
+          <edgelabel>SupplyDepot</edgelabel>
+          <edgelabel>SCV</edgelabel>
+          <edgelabel>Banshee</edgelabel>
+          <edgelabel>MULE</edgelabel>
+          <edgelabel>Battlecruiser</edgelabel>
+          <edgelabel>AutoTurret</edgelabel>
+          <edgelabel>SensorTower</edgelabel>
+          <edgelabel>Marine</edgelabel>
+          <edgelabel>FactoryFlying</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/units.py" line="117" column="1" bodyfile="lib/units.py" bodystart="117" bodyend="178"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1aee04002a98d46a17aeb4b46e5996cd74" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Armory</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ab55b3ff4f1410217e3e9344dbcca9e7b" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>AutoTurret</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ab3ca87cc6f5fa92279fa124b4057eece" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Banshee</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1af2239d867dadc8a7d213070b101f6b2c" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Barracks</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ad9d27fdaf1d51dafd2a3403abf07673d" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>BarracksFlying</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a8400365cd6d0de5c5c4fa058c6565153" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>BarracksReactor</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a78b8c93320a737b2ec9a0503fcdb8c44" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>BarracksTechLab</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a5b50b1fd25ae20fd08928b97358406d9" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Battlecruiser</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a813da9f96ace3a051e73101610de3c2b" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Bunker</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a0d9dd8b65858ed7118f5043eb3d961dd" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>CommandCenter</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a937fc57706ce3eb20fda81b63210cb58" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>CommandCenterFlying</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a92ce3557fa52a9eb2928ff4f0cd4fa54" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Cyclone</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a86c01475b1f47718e438d63a610c2c81" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>EngineeringBay</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a197f985d1e29b4b953f7e92d4b489227" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Factory</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1abf6097fc43bcee283f422a10509de1aa" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>FactoryFlying</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ad425fe025c7346f32f91f8abc5921558" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>FactoryReactor</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a72df40f81c373f6889b61f168fe7ad44" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>FactoryTechLab</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a19bf33f3e9436874eb580d0e5ca8f5cf" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>FusionCore</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a12fe72cd0314a7d442dcb459cb0d8328" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Ghost</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a33d0a54b40f8bac5b558e1b36e78a621" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>GhostAcademy</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a0e5bbf94b391cdd8306b9847f2e80a23" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Hellbat</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a86501a533ffda25cfd1abab24954d718" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Hellion</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1aa5cc922ceb8d1769e43c7ab70441f07f" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>KD8Charge</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a4df21b58c6622dc5289486d75940dd89" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Liberator</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a231b4212e952421e2c7567d76fcb8cba" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>LiberatorAG</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a93ac91e1858e8871cfa9abf096dbeed9" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Marauder</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ae37d4296f9752e9d7f824df4c10db59f" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Marine</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ad67510b824a1f07c3a220785398d6d0d" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Medivac</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1aa3e24cc241207f6fc40724f35b859078" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>MissileTurret</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a7ea6bd76dd0a370c1e933bf1aa6540ab" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>MULE</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ab7c9a61296010bc8d6d480c08c4bc923" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Nuke</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a3b1d7138c281fc4923221ec20f0e8f73" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>OrbitalCommand</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ac623db2a98aacf920b91b157888ae6c4" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>OrbitalCommandFlying</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a368f5206afc3bdcd0bad5ab209962db5" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>PlanetaryFortress</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a31cd4699e1c60f8e7711b7e026f38b1b" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>PointDefenseDrone</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a2a62fba54d8fd24cbf32de3e1abb8bd4" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Raven</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1adf698d5900157afbc2a7033bcdbcc442" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Reactor</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a10fa61234a4add472bffa2bcc09c1148" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Reaper</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a038515b1c1fdc35e519285454a34819a" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Refinery</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a253904fe3277d5d551f9f9262db61247" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>RepairDrone</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a9cb15c619e064e7e3ea6748c2ecc0087" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>SCV</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a3b0097ee2ad4d531d4736b36f0efde35" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>SensorTower</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ae712a25676ab88122c4604fef3ae0c3e" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>SiegeTank</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ad6c3b2f385f73aac015da29c6d1590c6" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>SiegeTankSieged</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a492c7703a770e1c09857edded700cc14" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Starport</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a7ecb33a4194bda4c6a05b5cd8edbeae6" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>StarportFlying</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ab6a904aebaf8fc683fc4a941c628074f" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>StarportReactor</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1aa33c332c8919861536b7b87ece80be4a" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>StarportTechLab</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ae9b9f213c542ce7b4b3f8d53b99a3deb" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>SupplyDepot</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ac438f57260d820f142d654e05afb0e9a" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>SupplyDepotLowered</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1acd3541a4f57329f4a09690a69528d1f2" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>TechLab</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a98605fec91c514cab6e057768dd05c17" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>Thor</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a335d04040e16641e6a4901378eb68bdf" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>ThorHighImpactMode</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a52a4fd50145ea56f4ac5d49ce3f10031" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>VikingAssault</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1ae1eb9f0f4e79617ecfcb687a5fe823b3" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>VikingFighter</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a463d2f5661de81d58309c6ed888bfcb2" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>WidowMine</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_terran_1a650e5fc97428591198f2f69644c44363" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Terran</scope><name>WidowMineBurrowed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

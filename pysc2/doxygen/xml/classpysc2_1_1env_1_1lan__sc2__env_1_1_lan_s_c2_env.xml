@@ -1,0 +1,453 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::lan_sc2_env::LanSC2Env</compoundname>
+    <basecompoundref refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env" prot="public" virt="non-virtual">pysc2.env.sc2_env.SC2Env</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a49463299189b2844d0d279b9d00c4d70" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_num_agents</definition>
+        <argsstring></argsstring>
+        <name>_num_agents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="259" column="1" bodyfile="env/lan_sc2_env.py" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a72d3466d5005453b1fe254f63167851d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_discount</definition>
+        <argsstring></argsstring>
+        <name>_discount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="260" column="1" bodyfile="env/lan_sc2_env.py" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a99ce77261dc87612032d9cf23e9599fa" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_step_mul</definition>
+        <argsstring></argsstring>
+        <name>_step_mul</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="261" column="1" bodyfile="env/lan_sc2_env.py" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1ac0c69936f89316a5c3285bef692a20a9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_save_replay_episodes</definition>
+        <argsstring></argsstring>
+        <name>_save_replay_episodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="262" column="1" bodyfile="env/lan_sc2_env.py" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a51455ec012755ef81fc84ff741f4a61c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_replay_dir</definition>
+        <argsstring></argsstring>
+        <name>_replay_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="263" column="1" bodyfile="env/lan_sc2_env.py" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1ace14f097b19e6d82b3f615b609e47c82" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_score_index</definition>
+        <argsstring></argsstring>
+        <name>_score_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="265" column="1" bodyfile="env/lan_sc2_env.py" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a795ae018d008bc4d4dee4f976b4955a8" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_score_multiplier</definition>
+        <argsstring></argsstring>
+        <name>_score_multiplier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="266" column="1" bodyfile="env/lan_sc2_env.py" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a6f08e5d68c82dd79e4de6abc0450d07c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_episode_length</definition>
+        <argsstring></argsstring>
+        <name>_episode_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="267" column="1" bodyfile="env/lan_sc2_env.py" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a83469eceeef61004d8eff11d3d717808" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_run_config</definition>
+        <argsstring></argsstring>
+        <name>_run_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="269" column="1" bodyfile="env/lan_sc2_env.py" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a6fdadf29fe3a24c79c4460704368452a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_parallel</definition>
+        <argsstring></argsstring>
+        <name>_parallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="270" column="1" bodyfile="env/lan_sc2_env.py" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1ae328233e1417c98a41cc90fd2465185f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_map_name</definition>
+        <argsstring></argsstring>
+        <name>_map_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="283" column="1" bodyfile="env/lan_sc2_env.py" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1ab0308b1170abc2ab6a1d6e3de49242a9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_udp_sock</definition>
+        <argsstring></argsstring>
+        <name>_udp_sock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="286" column="1" bodyfile="env/lan_sc2_env.py" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a8b6a73f6b8bd96d09238b95ae2739c22" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_sc2_procs</definition>
+        <argsstring></argsstring>
+        <name>_sc2_procs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="302" column="1" bodyfile="env/lan_sc2_env.py" bodystart="302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a8f82226f1e9cea09814aadea47ca1318" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_controllers</definition>
+        <argsstring></argsstring>
+        <name>_controllers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="305" column="1" bodyfile="env/lan_sc2_env.py" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a2411c5251cc16863a4ee0d76031c9c4c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.lan_sc2_env.LanSC2Env::_tcp_conn</definition>
+        <argsstring></argsstring>
+        <name>_tcp_conn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="327" column="1" bodyfile="env/lan_sc2_env.py" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1af811660c93bbe7d4660fcdc7317bb57f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.LanSC2Env.__init__</definition>
+        <argsstring>(self, _only_use_kwargs=None, host=&quot;127.0.0.1&quot;, config_port=None, race=None, agent_interface_format=None, discount=1., visualize=False, step_mul=None, replay_dir=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>_only_use_kwargs</type>
+          <defname>_only_use_kwargs</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+          <defval>&quot;127.0.0.1&quot;</defval>
+        </param>
+        <param>
+          <type>config_port</type>
+          <defname>config_port</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>race</type>
+          <defname>race</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>agent_interface_format</type>
+          <defname>agent_interface_format</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>discount</type>
+          <defname>discount</defname>
+          <defval>1.</defval>
+        </param>
+        <param>
+          <type>visualize</type>
+          <defname>visualize</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>step_mul</type>
+          <defname>step_mul</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>replay_dir</type>
+          <defname>replay_dir</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create a SC2 Env that connects to a remote instance of the game.
+
+This assumes that the game is already up and running, and it only needs to
+join. You need some other script to launch the process and call
+RequestCreateGame. It also assumes that it&apos;s a multiplayer game, and that
+the ports are consecutive.
+
+You must pass a resolution that you want to play at. You can send either
+feature layer resolution or rgb resolution or both. If you send both you
+must also choose which to use as your action space. Regardless of which you
+choose you must send both the screen and minimap resolutions.
+
+For each of the 4 resolutions, either specify size or both width and
+height. If you specify size then both width and height will take that value.
+
+Args:
+  _only_use_kwargs: Don&apos;t pass args, only kwargs.
+  host: Which ip to use. Either ipv4 or ipv6 localhost.
+  config_port: Where to find the config port.
+  race: Race for this agent.
+  agent_interface_format: AgentInterfaceFormat object describing the
+  format of communication between the agent and the environment.
+  discount: Returned as part of the observation.
+  visualize: Whether to pop up a window showing the camera and feature
+  layers. This won&apos;t work without access to a window manager.
+  step_mul: How many game steps per agent step (action/observation). None
+  means use the map default.
+  replay_dir: Directory to save a replay.
+
+Raises:
+  ValueError: if the race is invalid.
+  ValueError: if the resolutions aren&apos;t specified correctly.
+  ValueError: if the host or port are invalid.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="201" column="1" bodyfile="env/lan_sc2_env.py" bodystart="210" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1afe3313585911c165f7128cb6c8afa21f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.LanSC2Env.close</definition>
+        <argsstring>(self)</argsstring>
+        <name>close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="324" column="1" bodyfile="env/lan_sc2_env.py" bodystart="324" bodyend="332"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1aaf15f4c7ae8cc13430a03664bc6ca6b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.LanSC2Env._launch_remote</definition>
+        <argsstring>(self, host, config_port, race, interface)</argsstring>
+        <name>_launch_remote</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>config_port</type>
+          <defname>config_port</defname>
+        </param>
+        <param>
+          <type>race</type>
+          <defname>race</defname>
+        </param>
+        <param>
+          <type>interface</type>
+          <defname>interface</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Make sure this stays synced with bin/play_vs_agent.py.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="279" column="1" bodyfile="env/lan_sc2_env.py" bodystart="279" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a77a0d124ea1b908306c6b789256a0597" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.lan_sc2_env.LanSC2Env._restart</definition>
+        <argsstring>(self)</argsstring>
+        <name>_restart</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/lan_sc2_env.py" line="319" column="1" bodyfile="env/lan_sc2_env.py" bodystart="319" bodyend="323"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A Starcraft II environment for playing vs humans over LAN.
+
+This owns a single instance, and expects to join a game hosted by some other
+script, likely play_vs_agent.py.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="318">
+        <label>pysc2.env.sc2_env.SC2Env</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env"/>
+        <childnode refid="319" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>pysc2.env.lan_sc2_env.LanSC2Env</label>
+        <link refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env"/>
+        <childnode refid="318" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="322">
+        <label>pysc2.env.sc2_env.SC2Env</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env"/>
+        <childnode refid="323" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="324" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>pysc2.env.lan_sc2_env.LanSC2Env</label>
+        <link refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env"/>
+        <childnode refid="322" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/lan_sc2_env.py" line="194" column="1" bodyfile="env/lan_sc2_env.py" bodystart="194" bodyend="332"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1af811660c93bbe7d4660fcdc7317bb57f" prot="public" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ac2a49052b728228f1ed327d31ab37fcc" prot="public" virt="non-virtual" ambiguityscope="pysc2::env::sc2_env::SC2Env."><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a8f82226f1e9cea09814aadea47ca1318" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_controllers</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a72d3466d5005453b1fe254f63167851d" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_discount</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a6f08e5d68c82dd79e4de6abc0450d07c" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_episode_length</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1aaf15f4c7ae8cc13430a03664bc6ca6b5" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_launch_remote</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1ae328233e1417c98a41cc90fd2465185f" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_map_name</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a49463299189b2844d0d279b9d00c4d70" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_num_agents</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a6fdadf29fe3a24c79c4460704368452a" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_parallel</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a51455ec012755ef81fc84ff741f4a61c" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_replay_dir</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a77a0d124ea1b908306c6b789256a0597" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_restart</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a83469eceeef61004d8eff11d3d717808" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_run_config</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1ac0c69936f89316a5c3285bef692a20a9" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_save_replay_episodes</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a8b6a73f6b8bd96d09238b95ae2739c22" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_sc2_procs</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1ace14f097b19e6d82b3f615b609e47c82" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_score_index</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a795ae018d008bc4d4dee4f976b4955a8" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_score_multiplier</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a99ce77261dc87612032d9cf23e9599fa" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_step_mul</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1a2411c5251cc16863a4ee0d76031c9c4c" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_tcp_conn</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1ab0308b1170abc2ab6a1d6e3de49242a9" prot="private" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>_udp_sock</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1af686189f9be833a222756233fed0191f" prot="public" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>action_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env_1afe3313585911c165f7128cb6c8afa21f" prot="public" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>close</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a37bf2e2d461e4268feaa30862cd520cb" prot="public" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>observation_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a11123fe4b74625eca2d88a2b837d681f" prot="public" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>reset</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a55d7cb43c5efffa9cc249a5fd37cfba6" prot="public" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>save_replay</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aa4cf7a2cf39426085b9d14ef2ecac855" prot="public" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>send_chat_messages</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1afde565357f8e64e50a8e03df0c1a1d4c" prot="public" virt="non-virtual"><scope>pysc2::env::lan_sc2_env::LanSC2Env</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

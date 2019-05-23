@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1environment_1_1_time_step" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::environment::TimeStep</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">step_type</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">reward</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">discount</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">observation</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1environment_1_1_time_step_1a4e3fe199cc1dba1fe857b3a52c98b177" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.env.environment.TimeStep::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="47" column="1" bodyfile="env/environment.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1environment_1_1_time_step_1a18be60fc3df62720fad06b591f1e6ba4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.TimeStep.first</definition>
+        <argsstring>(self)</argsstring>
+        <name>first</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="49" column="1" bodyfile="env/environment.py" bodystart="49" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1environment_1_1_time_step_1a78c8f32550b9e2111308630b6e35089c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.TimeStep.mid</definition>
+        <argsstring>(self)</argsstring>
+        <name>mid</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="52" column="1" bodyfile="env/environment.py" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1environment_1_1_time_step_1a81781d0bdeae3de43ffebd4bc08cebac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.TimeStep.last</definition>
+        <argsstring>(self)</argsstring>
+        <name>last</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="55" column="1" bodyfile="env/environment.py" bodystart="55" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Returned with every call to `step` and `reset` on an environment.
+
+A `TimeStep` contains the data emitted by an environment at each step of
+interaction. A `TimeStep` holds a `step_type`, an `observation`, and an
+associated `reward` and `discount`.
+
+The first `TimeStep` in a sequence will have `StepType.FIRST`. The final
+`TimeStep` will have `StepType.LAST`. All other `TimeStep`s in a sequence will
+have `StepType.MID.
+
+Attributes:
+  step_type: A `StepType` enum value.
+  reward: A scalar, or `None` if `step_type` is `StepType.FIRST`, i.e. at the
+    start of a sequence.
+  discount: A discount value in the range `[0, 1]`, or `None` if `step_type`
+    is `StepType.FIRST`, i.e. at the start of a sequence.
+  observation: A NumPy array, or a dict, list or tuple of arrays.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="824">
+        <label>observation</label>
+      </node>
+      <node id="822">
+        <label>reward</label>
+      </node>
+      <node id="821">
+        <label>step_type</label>
+      </node>
+      <node id="819">
+        <label>pysc2.env.environment.TimeStep</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_time_step"/>
+        <childnode refid="820" relation="public-inheritance">
+        </childnode>
+        <childnode refid="821" relation="public-inheritance">
+        </childnode>
+        <childnode refid="822" relation="public-inheritance">
+        </childnode>
+        <childnode refid="823" relation="public-inheritance">
+        </childnode>
+        <childnode refid="824" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="820">
+        <label>namedtuple</label>
+      </node>
+      <node id="823">
+        <label>discount</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="830">
+        <label>observation</label>
+      </node>
+      <node id="828">
+        <label>reward</label>
+      </node>
+      <node id="827">
+        <label>step_type</label>
+      </node>
+      <node id="825">
+        <label>pysc2.env.environment.TimeStep</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_time_step"/>
+        <childnode refid="826" relation="public-inheritance">
+        </childnode>
+        <childnode refid="827" relation="public-inheritance">
+        </childnode>
+        <childnode refid="828" relation="public-inheritance">
+        </childnode>
+        <childnode refid="829" relation="public-inheritance">
+        </childnode>
+        <childnode refid="830" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="826">
+        <label>namedtuple</label>
+      </node>
+      <node id="829">
+        <label>discount</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/environment.py" line="27" column="1" bodyfile="env/environment.py" bodystart="28" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1environment_1_1_time_step_1a4e3fe199cc1dba1fe857b3a52c98b177" prot="private" virt="non-virtual"><scope>pysc2::env::environment::TimeStep</scope><name>__slots__</name></member>
+      <member refid="classpysc2_1_1env_1_1environment_1_1_time_step_1a18be60fc3df62720fad06b591f1e6ba4" prot="public" virt="non-virtual"><scope>pysc2::env::environment::TimeStep</scope><name>first</name></member>
+      <member refid="classpysc2_1_1env_1_1environment_1_1_time_step_1a81781d0bdeae3de43ffebd4bc08cebac" prot="public" virt="non-virtual"><scope>pysc2::env::environment::TimeStep</scope><name>last</name></member>
+      <member refid="classpysc2_1_1env_1_1environment_1_1_time_step_1a78c8f32550b9e2111308630b6e35089c" prot="public" virt="non-virtual"><scope>pysc2::env::environment::TimeStep</scope><name>mid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

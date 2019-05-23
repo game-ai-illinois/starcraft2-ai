@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1bin_1_1valid__actions" kind="namespace" language="Python">
+    <compoundname>pysc2::bin::valid_actions</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1bin_1_1valid__actions_1a5cb3ccb2295ab0ecbf9ddd8f0f4489af" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::bin::valid_actions.FLAGS</definition>
+        <argsstring></argsstring>
+        <name>FLAGS</name>
+        <initializer>=  flags.FLAGS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/valid_actions.py" line="28" column="1" bodyfile="bin/valid_actions.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1valid__actions_1adf8e7682a43cff343fda9fb40b8dcc07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.valid_actions.main</definition>
+        <argsstring>(unused_argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>unused_argv</type>
+          <defname>unused_argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Print the valid actions.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/valid_actions.py" line="34" column="1" bodyfile="bin/valid_actions.py" bodystart="34" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bin/valid_actions.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

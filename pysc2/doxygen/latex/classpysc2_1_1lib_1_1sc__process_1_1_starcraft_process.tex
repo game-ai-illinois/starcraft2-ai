@@ -1,0 +1,132 @@
+\hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process}{}\section{pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process Class Reference}
+\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process}\index{pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process@{pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process}}
+Inheritance diagram for pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a2ed5e56a2a9ee1fd1ff65d9391d64576}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, run\+\_\+config, exec\+\_\+path, \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_afa21c71cb3b5c67ef329b5bd334d3880}{version}}, full\+\_\+screen=False, extra\+\_\+args=None, verbose=False, \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a8d43a3929ca3e95b1a8c67cd6a7a787b}{host}}=None, \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a35b59673e9fe0b5e3d5966629b50570c}{port}}=None, connect=True, timeout\+\_\+seconds=None, window\+\_\+size=(640, 480), window\+\_\+loc=(50, 50), kwargs)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a08f5107eb70dd338f76b625a50ebec01}{close}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a82f3d7c4a499bca4b47d59e6686f759e}{controller}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a8d43a3929ca3e95b1a8c67cd6a7a787b}{host}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a35b59673e9fe0b5e3d5966629b50570c}{port}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_afa21c71cb3b5c67ef329b5bd334d3880}{version}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a3cdbe783d29d2863ba10ec403cb16e30}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a5f633ebeb0a4bb91de5945ed98526970}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, unused\+\_\+exception\+\_\+type, unused\+\_\+exc\+\_\+value, unused\+\_\+traceback)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a2ea4b975a739f0580d91403fe35bc0f1}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a3937176eb8f9c0baf4f18b455fb42243}{running}} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Launch a starcraft server, initialize a controller, and later, clean up.
+
+This is best used from run_configs, which decides which version to run, and
+where to find it.
+
+It is important to call `close` or use it as a context manager, otherwise
+you'll likely leak temp files and SC2 processes.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a2ed5e56a2a9ee1fd1ff65d9391d64576}\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a2ed5e56a2a9ee1fd1ff65d9391d64576}} 
+\index{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{run\+\_\+config,  }\item[{}]{exec\+\_\+path,  }\item[{}]{version,  }\item[{}]{full\+\_\+screen = {\ttfamily False},  }\item[{}]{extra\+\_\+args = {\ttfamily None},  }\item[{}]{verbose = {\ttfamily False},  }\item[{}]{host = {\ttfamily None},  }\item[{}]{port = {\ttfamily None},  }\item[{}]{connect = {\ttfamily True},  }\item[{}]{timeout\+\_\+seconds = {\ttfamily None},  }\item[{}]{window\+\_\+size = {\ttfamily (640,~480)},  }\item[{}]{window\+\_\+loc = {\ttfamily (50,~50)},  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Launch the SC2 process.
+
+Args:
+  run_config: `run_configs.lib.RunConfig` object.
+  exec_path: Path to the binary to run.
+  version: `run_configs.lib.Version` object.
+  full_screen: Whether to launch the game window full_screen on win/mac.
+  extra_args: List of additional args for the SC2 process.
+  verbose: Whether to have the SC2 process do verbose logging.
+  host: IP for the game to listen on for its websocket. This is
+  usually "127.0.0.1", or "::1", but could be others as well.
+  port: Port SC2 should listen on for the websocket.
+  connect: Whether to create a RemoteController to connect.
+  timeout_seconds: Timeout for the remote controller.
+  window_size: Screen size if not full screen.
+  window_loc: Screen location if not full screen.
+  **kwargs: Extra arguments for _launch (useful for subclasses).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a2ea4b975a739f0580d91403fe35bc0f1}\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a2ea4b975a739f0580d91403fe35bc0f1}} 
+\index{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}!\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+del\+\_\+\+\_\+@{\+\_\+\+\_\+del\+\_\+\+\_\+}!pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+del\+\_\+\+\_\+()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a3cdbe783d29d2863ba10ec403cb16e30}\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a3cdbe783d29d2863ba10ec403cb16e30}} 
+\index{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}!\+\_\+\+\_\+enter\+\_\+\+\_\+@{\+\_\+\+\_\+enter\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+enter\+\_\+\+\_\+@{\+\_\+\+\_\+enter\+\_\+\+\_\+}!pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+enter\+\_\+\+\_\+()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a5f633ebeb0a4bb91de5945ed98526970}\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a5f633ebeb0a4bb91de5945ed98526970}} 
+\index{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}!\+\_\+\+\_\+exit\+\_\+\+\_\+@{\+\_\+\+\_\+exit\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+exit\+\_\+\+\_\+@{\+\_\+\+\_\+exit\+\_\+\+\_\+}!pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+exit\+\_\+\+\_\+()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{unused\+\_\+exception\+\_\+type,  }\item[{}]{unused\+\_\+exc\+\_\+value,  }\item[{}]{unused\+\_\+traceback }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a08f5107eb70dd338f76b625a50ebec01}\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a08f5107eb70dd338f76b625a50ebec01}} 
+\index{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}!close@{close}}
+\index{close@{close}!pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}}
+\subsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process.\+close (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Shut down the game and clean up.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a82f3d7c4a499bca4b47d59e6686f759e}\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a82f3d7c4a499bca4b47d59e6686f759e}} 
+\index{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}!controller@{controller}}
+\index{controller@{controller}!pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}}
+\subsubsection{\texorpdfstring{controller()}{controller()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process.\+controller (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a8d43a3929ca3e95b1a8c67cd6a7a787b}\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a8d43a3929ca3e95b1a8c67cd6a7a787b}} 
+\index{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}!host@{host}}
+\index{host@{host}!pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}}
+\subsubsection{\texorpdfstring{host()}{host()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process.\+host (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a35b59673e9fe0b5e3d5966629b50570c}\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a35b59673e9fe0b5e3d5966629b50570c}} 
+\index{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}!port@{port}}
+\index{port@{port}!pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}}
+\subsubsection{\texorpdfstring{port()}{port()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process.\+port (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a3937176eb8f9c0baf4f18b455fb42243}\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_a3937176eb8f9c0baf4f18b455fb42243}} 
+\index{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}!running@{running}}
+\index{running@{running}!pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}}
+\subsubsection{\texorpdfstring{running()}{running()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process.\+running (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_afa21c71cb3b5c67ef329b5bd334d3880}\label{classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_afa21c71cb3b5c67ef329b5bd334d3880}} 
+\index{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}!version@{version}}
+\index{version@{version}!pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process@{pysc2\+::lib\+::sc\+\_\+process\+::\+Starcraft\+Process}}
+\subsubsection{\texorpdfstring{version()}{version()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+sc\+\_\+process.\+Starcraft\+Process.\+version (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{sc__process_8py}{sc\+\_\+process.\+py}}\end{DoxyCompactItemize}

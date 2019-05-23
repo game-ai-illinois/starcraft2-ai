@@ -1,0 +1,872 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1actions" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::actions</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1actions_1_1_action_space" prot="public">pysc2::lib::actions::ActionSpace</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1actions_1_1_arguments" prot="public">pysc2::lib::actions::Arguments</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1actions_1_1_argument_type" prot="public">pysc2::lib::actions::ArgumentType</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1actions_1_1_function" prot="public">pysc2::lib::actions::Function</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1actions_1_1_function_call" prot="public">pysc2::lib::actions::FunctionCall</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1actions_1_1_functions" prot="public">pysc2::lib::actions::Functions</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1actions_1_1_valid_actions" prot="public">pysc2::lib::actions::ValidActions</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a4919350aba12f97d18460d6b159be480" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::lib::actions.QUEUED_OPTIONS</definition>
+        <argsstring></argsstring>
+        <name>QUEUED_OPTIONS</name>
+        <initializer>=  [
+    (&quot;now&quot;, False),
+    (&quot;queued&quot;, True),
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="238" column="1" bodyfile="lib/actions.py" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1afb9a99a2cdd59a23a647d2951093cca5" prot="public" static="no" mutable="no">
+        <type>def</type>
+        <definition>def pysc2::lib::actions.Queued</definition>
+        <argsstring></argsstring>
+        <name>Queued</name>
+        <initializer>=  _define_position_based_enum(  # pylint: disable=invalid-name
+    &quot;Queued&quot;, QUEUED_OPTIONS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="242" column="1" bodyfile="lib/actions.py" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a17f4a8aacbf1bdc057d3650dd38b0ce9" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::lib::actions.CONTROL_GROUP_ACT_OPTIONS</definition>
+        <argsstring></argsstring>
+        <name>CONTROL_GROUP_ACT_OPTIONS</name>
+        <initializer>=  [
+    (&quot;recall&quot;, sc_ui.ActionControlGroup.Recall),
+    (&quot;set&quot;, sc_ui.ActionControlGroup.Set),
+    (&quot;append&quot;, sc_ui.ActionControlGroup.Append),
+    (&quot;set_and_steal&quot;, sc_ui.ActionControlGroup.SetAndSteal),
+    (&quot;append_and_steal&quot;, sc_ui.ActionControlGroup.AppendAndSteal),
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="245" column="1" bodyfile="lib/actions.py" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a135bd6ff599a408124ac73638dbf7705" prot="public" static="no" mutable="no">
+        <type>def</type>
+        <definition>def pysc2::lib::actions.ControlGroupAct</definition>
+        <argsstring></argsstring>
+        <name>ControlGroupAct</name>
+        <initializer>=  _define_position_based_enum(  # pylint: disable=invalid-name
+    &quot;ControlGroupAct&quot;, CONTROL_GROUP_ACT_OPTIONS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="252" column="1" bodyfile="lib/actions.py" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a5958e998483a63351edc01bc714a9c6c" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::lib::actions.SELECT_POINT_ACT_OPTIONS</definition>
+        <argsstring></argsstring>
+        <name>SELECT_POINT_ACT_OPTIONS</name>
+        <initializer>=  [
+    (&quot;select&quot;, sc_spatial.ActionSpatialUnitSelectionPoint.Select),
+    (&quot;toggle&quot;, sc_spatial.ActionSpatialUnitSelectionPoint.Toggle),
+    (&quot;select_all_type&quot;, sc_spatial.ActionSpatialUnitSelectionPoint.AllType),
+    (&quot;add_all_type&quot;, sc_spatial.ActionSpatialUnitSelectionPoint.AddAllType),
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="255" column="1" bodyfile="lib/actions.py" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1ae29abc92bb08d061b049a01106cb855c" prot="public" static="no" mutable="no">
+        <type>def</type>
+        <definition>def pysc2::lib::actions.SelectPointAct</definition>
+        <argsstring></argsstring>
+        <name>SelectPointAct</name>
+        <initializer>=  _define_position_based_enum(  # pylint: disable=invalid-name
+    &quot;SelectPointAct&quot;, SELECT_POINT_ACT_OPTIONS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="261" column="1" bodyfile="lib/actions.py" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1aa11b8e374f2e39dcf0561b70735d9dd6" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::lib::actions.SELECT_ADD_OPTIONS</definition>
+        <argsstring></argsstring>
+        <name>SELECT_ADD_OPTIONS</name>
+        <initializer>=  [
+    (&quot;select&quot;, False),
+    (&quot;add&quot;, True),
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="264" column="1" bodyfile="lib/actions.py" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a9a5eb3a062eade5b7b4aebd9469874d8" prot="public" static="no" mutable="no">
+        <type>def</type>
+        <definition>def pysc2::lib::actions.SelectAdd</definition>
+        <argsstring></argsstring>
+        <name>SelectAdd</name>
+        <initializer>=  _define_position_based_enum(  # pylint: disable=invalid-name
+    &quot;SelectAdd&quot;, SELECT_ADD_OPTIONS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="268" column="1" bodyfile="lib/actions.py" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a2ca5baeefd2b48c36e1153ddc70589bf" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::lib::actions.SELECT_UNIT_ACT_OPTIONS</definition>
+        <argsstring></argsstring>
+        <name>SELECT_UNIT_ACT_OPTIONS</name>
+        <initializer>=  [
+    (&quot;select&quot;, sc_ui.ActionMultiPanel.SingleSelect),
+    (&quot;deselect&quot;, sc_ui.ActionMultiPanel.DeselectUnit),
+    (&quot;select_all_type&quot;, sc_ui.ActionMultiPanel.SelectAllOfType),
+    (&quot;deselect_all_type&quot;, sc_ui.ActionMultiPanel.DeselectAllOfType),
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="271" column="1" bodyfile="lib/actions.py" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a462c6eeb45f37a62f45b91117847af45" prot="public" static="no" mutable="no">
+        <type>def</type>
+        <definition>def pysc2::lib::actions.SelectUnitAct</definition>
+        <argsstring></argsstring>
+        <name>SelectUnitAct</name>
+        <initializer>=  _define_position_based_enum(  # pylint: disable=invalid-name
+    &quot;SelectUnitAct&quot;, SELECT_UNIT_ACT_OPTIONS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="277" column="1" bodyfile="lib/actions.py" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a8e81cb4be4879386dbbbd3f9d1cb3e04" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::lib::actions.SELECT_WORKER_OPTIONS</definition>
+        <argsstring></argsstring>
+        <name>SELECT_WORKER_OPTIONS</name>
+        <initializer>=  [
+    (&quot;select&quot;, sc_ui.ActionSelectIdleWorker.Set),
+    (&quot;add&quot;, sc_ui.ActionSelectIdleWorker.Add),
+    (&quot;select_all&quot;, sc_ui.ActionSelectIdleWorker.All),
+    (&quot;add_all&quot;, sc_ui.ActionSelectIdleWorker.AddAll),
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="280" column="1" bodyfile="lib/actions.py" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a441d65909977d8b5c6cb4175239ad544" prot="public" static="no" mutable="no">
+        <type>def</type>
+        <definition>def pysc2::lib::actions.SelectWorker</definition>
+        <argsstring></argsstring>
+        <name>SelectWorker</name>
+        <initializer>=  _define_position_based_enum(  # pylint: disable=invalid-name
+    &quot;SelectWorker&quot;, SELECT_WORKER_OPTIONS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="286" column="1" bodyfile="lib/actions.py" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1aa7b257e76395d51bdbd857f48f82e9f9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::actions.TYPES</definition>
+        <argsstring></argsstring>
+        <name>TYPES</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1actions_1_1_arguments_1ab78c631c19bfc340e35069612a5b1f22" kindref="member">Arguments.types</ref>(
+    screen=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1acd7c52464b761ade90cc6d63957a0739" kindref="member">ArgumentType.point</ref>(),
+    minimap=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1acd7c52464b761ade90cc6d63957a0739" kindref="member">ArgumentType.point</ref>(),
+    screen2=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1acd7c52464b761ade90cc6d63957a0739" kindref="member">ArgumentType.point</ref>(),
+    queued=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a7b139c13ef12cd5bffa45c09af082140" kindref="member">ArgumentType.enum</ref>(<ref refid="namespacepysc2_1_1lib_1_1actions_1a4919350aba12f97d18460d6b159be480" kindref="member">QUEUED_OPTIONS</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1afb9a99a2cdd59a23a647d2951093cca5" kindref="member">Queued</ref>),
+    control_group_act=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a7b139c13ef12cd5bffa45c09af082140" kindref="member">ArgumentType.enum</ref>(
+        <ref refid="namespacepysc2_1_1lib_1_1actions_1a17f4a8aacbf1bdc057d3650dd38b0ce9" kindref="member">CONTROL_GROUP_ACT_OPTIONS</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1a135bd6ff599a408124ac73638dbf7705" kindref="member">ControlGroupAct</ref>),
+    control_group_id=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a6440b4d3ca6308d338405b4dd456abab" kindref="member">ArgumentType.scalar</ref>(10),
+    select_point_act=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a7b139c13ef12cd5bffa45c09af082140" kindref="member">ArgumentType.enum</ref>(
+        <ref refid="namespacepysc2_1_1lib_1_1actions_1a5958e998483a63351edc01bc714a9c6c" kindref="member">SELECT_POINT_ACT_OPTIONS</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1ae29abc92bb08d061b049a01106cb855c" kindref="member">SelectPointAct</ref>),
+    select_add=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a7b139c13ef12cd5bffa45c09af082140" kindref="member">ArgumentType.enum</ref>(<ref refid="namespacepysc2_1_1lib_1_1actions_1aa11b8e374f2e39dcf0561b70735d9dd6" kindref="member">SELECT_ADD_OPTIONS</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1a9a5eb3a062eade5b7b4aebd9469874d8" kindref="member">SelectAdd</ref>),
+    select_unit_act=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a7b139c13ef12cd5bffa45c09af082140" kindref="member">ArgumentType.enum</ref>(<ref refid="namespacepysc2_1_1lib_1_1actions_1a2ca5baeefd2b48c36e1153ddc70589bf" kindref="member">SELECT_UNIT_ACT_OPTIONS</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1a462c6eeb45f37a62f45b91117847af45" kindref="member">SelectUnitAct</ref>),
+    select_unit_id=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a6440b4d3ca6308d338405b4dd456abab" kindref="member">ArgumentType.scalar</ref>(500),  # Depends on current selection.
+    select_worker=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a7b139c13ef12cd5bffa45c09af082140" kindref="member">ArgumentType.enum</ref>(<ref refid="namespacepysc2_1_1lib_1_1actions_1a8e81cb4be4879386dbbbd3f9d1cb3e04" kindref="member">SELECT_WORKER_OPTIONS</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1a441d65909977d8b5c6cb4175239ad544" kindref="member">SelectWorker</ref>),
+    build_queue_id=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a6440b4d3ca6308d338405b4dd456abab" kindref="member">ArgumentType.scalar</ref>(10),  # Depends on current build queue.
+    unload_id=<ref refid="classpysc2_1_1lib_1_1actions_1_1_argument_type_1a6440b4d3ca6308d338405b4dd456abab" kindref="member">ArgumentType.scalar</ref>(500),  # Depends on the current loaded units.
+)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="291" column="1" bodyfile="lib/actions.py" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a1e7e50490516cc04dd79662a590e9795" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::lib::actions.FUNCTION_TYPES</definition>
+        <argsstring></argsstring>
+        <name>FUNCTION_TYPES</name>
+        <initializer>=  {
+    no_op: [],
+    move_camera: [TYPES.minimap],
+    select_point: [TYPES.select_point_act, TYPES.screen],
+    select_rect: [TYPES.select_add, TYPES.screen, TYPES.screen2],
+    select_unit: [TYPES.select_unit_act, TYPES.select_unit_id],
+    control_group: [TYPES.control_group_act, TYPES.control_group_id],
+    select_idle_worker: [TYPES.select_worker],
+    select_army: [TYPES.select_add],
+    select_warp_gates: [TYPES.select_add],
+    select_larva: [],
+    unload: [TYPES.unload_id],
+    build_queue: [TYPES.build_queue_id],
+    cmd_quick: [TYPES.queued],
+    cmd_screen: [TYPES.queued, TYPES.screen],
+    cmd_minimap: [TYPES.queued, TYPES.minimap],
+    autocast: [],
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="310" column="1" bodyfile="lib/actions.py" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a9760f56ed18b819f0c6a6c4e57bd83d6" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::lib::actions.ABILITY_FUNCTIONS</definition>
+        <argsstring></argsstring>
+        <name>ABILITY_FUNCTIONS</name>
+        <initializer>=  {<ref refid="namespacepysc2_1_1lib_1_1actions_1a2129f1b3173891d9a1d311d1dda40d78" kindref="member">cmd_quick</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1a6a71ca9bf1a3ce76be66fe022c827d4a" kindref="member">cmd_screen</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1a60765a989aa093570dfcb690d81dd2d6" kindref="member">cmd_minimap</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1a30a09b1c2a0e2eb0799bb453dcc00842" kindref="member">autocast</ref>}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="330" column="1" bodyfile="lib/actions.py" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a22bc36b3d88484b563cac8349be53c67" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::lib::actions.POINT_REQUIRED_FUNCS</definition>
+        <argsstring></argsstring>
+        <name>POINT_REQUIRED_FUNCS</name>
+        <initializer>=  {
+    False: {<ref refid="namespacepysc2_1_1lib_1_1actions_1a2129f1b3173891d9a1d311d1dda40d78" kindref="member">cmd_quick</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1a30a09b1c2a0e2eb0799bb453dcc00842" kindref="member">autocast</ref>},
+    True: {<ref refid="namespacepysc2_1_1lib_1_1actions_1a6a71ca9bf1a3ce76be66fe022c827d4a" kindref="member">cmd_screen</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1a60765a989aa093570dfcb690d81dd2d6" kindref="member">cmd_minimap</ref>, <ref refid="namespacepysc2_1_1lib_1_1actions_1a30a09b1c2a0e2eb0799bb453dcc00842" kindref="member">autocast</ref>}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="333" column="1" bodyfile="lib/actions.py" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1ae1dc5f547908d78c7367d3c734b29a59" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool pysc2::lib::actions.always</definition>
+        <argsstring></argsstring>
+        <name>always</name>
+        <initializer>=  lambda _: True</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="337" column="1" bodyfile="lib/actions.py" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a0cdc458380fe9a98a1093bb199076a42" prot="private" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::lib::actions._FUNCTIONS</definition>
+        <argsstring></argsstring>
+        <name>_FUNCTIONS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="441" column="1" bodyfile="lib/actions.py" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a1fad498f9b94127994023ad73257f94f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::actions._Functions</definition>
+        <argsstring></argsstring>
+        <name>_Functions</name>
+        <initializer>=  enum.IntEnum(  # pylint: disable=invalid-name
+    &quot;_Functions&quot;, {f.name: f.id for f in _FUNCTIONS})</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="997" column="1" bodyfile="lib/actions.py" bodystart="997" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1abbcb29aed5164d4b08a733a4415b98ce" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::actions.FUNCTIONS</definition>
+        <argsstring></argsstring>
+        <name>FUNCTIONS</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1actions_1_1_functions" kindref="compound">Functions</ref>(_FUNCTIONS)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="999" column="1" bodyfile="lib/actions.py" bodystart="999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a1a530662a2ee381a88e0f1f3f0667d53" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>dictionary pysc2::lib::actions::ABILITY_IDS</definition>
+        <argsstring></argsstring>
+        <name>ABILITY_IDS</name>
+        <initializer>=  collections.defaultdict(set)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="1002" column="1" bodyfile="lib/actions.py" bodystart="1002" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1actions_1a765ca06e5401167678bcf5766d3556bf" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::lib::actions.FUNCTIONS_AVAILABLE</definition>
+        <argsstring></argsstring>
+        <name>FUNCTIONS_AVAILABLE</name>
+        <initializer>=  {f.id: f for f in <ref refid="namespacepysc2_1_1lib_1_1actions_1abbcb29aed5164d4b08a733a4415b98ce" kindref="member">FUNCTIONS</ref> if f.avail_fn}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="1007" column="1" bodyfile="lib/actions.py" bodystart="1007" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1ae0d64d56d198a225acde0531c61b9fe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.spatial</definition>
+        <argsstring>(action, action_space)</argsstring>
+        <name>spatial</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Choose the action space for the action proto.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="36" column="1" bodyfile="lib/actions.py" bodystart="36" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1aa1af27a4635aaac6b6cf8318b0b13ca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.no_op</definition>
+        <argsstring>(action, action_space)</argsstring>
+        <name>no_op</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="46" column="1" bodyfile="lib/actions.py" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1ab895c4b3b0840b1739c9569f89c76c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.move_camera</definition>
+        <argsstring>(action, action_space, minimap)</argsstring>
+        <name>move_camera</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>minimap</type>
+          <defname>minimap</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Move the camera.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="50" column="1" bodyfile="lib/actions.py" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a39189bc77bff9753e5c577908b5aaa81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.select_point</definition>
+        <argsstring>(action, action_space, select_point_act, screen)</argsstring>
+        <name>select_point</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>select_point_act</type>
+          <defname>select_point_act</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select a unit at a point.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="55" column="1" bodyfile="lib/actions.py" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1afab1681a2cd67f4f272640e32ccf9e0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.select_rect</definition>
+        <argsstring>(action, action_space, select_add, screen, screen2)</argsstring>
+        <name>select_rect</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>select_add</type>
+          <defname>select_add</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <param>
+          <type>screen2</type>
+          <defname>screen2</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select units within a rectangle.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="62" column="1" bodyfile="lib/actions.py" bodystart="62" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a850bf8decf364fdf7fd2bb57fdf7f68e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.select_idle_worker</definition>
+        <argsstring>(action, action_space, select_worker)</argsstring>
+        <name>select_idle_worker</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>select_worker</type>
+          <defname>select_worker</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select an idle worker.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="72" column="1" bodyfile="lib/actions.py" bodystart="72" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a55445acf167169d48bfc90afdcd703f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.select_army</definition>
+        <argsstring>(action, action_space, select_add)</argsstring>
+        <name>select_army</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>select_add</type>
+          <defname>select_add</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select the entire army.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="78" column="1" bodyfile="lib/actions.py" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1afc7eeb20fb416749432c939c229cd861" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.select_warp_gates</definition>
+        <argsstring>(action, action_space, select_add)</argsstring>
+        <name>select_warp_gates</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>select_add</type>
+          <defname>select_add</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select all warp gates.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="84" column="1" bodyfile="lib/actions.py" bodystart="84" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1ab55a64b49122548d923705e802d63a03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.select_larva</definition>
+        <argsstring>(action, action_space)</argsstring>
+        <name>select_larva</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select all larva.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="90" column="1" bodyfile="lib/actions.py" bodystart="90" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a978d483e32717353b683dfa14b5e7ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.select_unit</definition>
+        <argsstring>(action, action_space, select_unit_act, select_unit_id)</argsstring>
+        <name>select_unit</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>select_unit_act</type>
+          <defname>select_unit_act</defname>
+        </param>
+        <param>
+          <type>select_unit_id</type>
+          <defname>select_unit_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Select a specific unit from the multi-unit selection.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="96" column="1" bodyfile="lib/actions.py" bodystart="96" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a3dfc90aaa086b113d41fe641d7afb0d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.control_group</definition>
+        <argsstring>(action, action_space, control_group_act, control_group_id)</argsstring>
+        <name>control_group</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>control_group_act</type>
+          <defname>control_group_act</defname>
+        </param>
+        <param>
+          <type>control_group_id</type>
+          <defname>control_group_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Act on a control group, selecting, setting, etc.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="104" column="1" bodyfile="lib/actions.py" bodystart="104" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1aa43c5d9a658772be725451a5b9c1e249" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.unload</definition>
+        <argsstring>(action, action_space, unload_id)</argsstring>
+        <name>unload</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>unload_id</type>
+          <defname>unload_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Unload a unit from a transport/bunker/nydus/etc.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="112" column="1" bodyfile="lib/actions.py" bodystart="112" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a6fbc9a64791ad0e6dddc5ad9a51e5e5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.build_queue</definition>
+        <argsstring>(action, action_space, build_queue_id)</argsstring>
+        <name>build_queue</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>build_queue_id</type>
+          <defname>build_queue_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Cancel a unit in the build queue.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="118" column="1" bodyfile="lib/actions.py" bodystart="118" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a2129f1b3173891d9a1d311d1dda40d78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.cmd_quick</definition>
+        <argsstring>(action, action_space, ability_id, queued)</argsstring>
+        <name>cmd_quick</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>ability_id</type>
+          <defname>ability_id</defname>
+        </param>
+        <param>
+          <type>queued</type>
+          <defname>queued</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Do a quick command like &apos;Stop&apos; or &apos;Stim&apos;.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="124" column="1" bodyfile="lib/actions.py" bodystart="124" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a6a71ca9bf1a3ce76be66fe022c827d4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.cmd_screen</definition>
+        <argsstring>(action, action_space, ability_id, queued, screen)</argsstring>
+        <name>cmd_screen</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>ability_id</type>
+          <defname>ability_id</defname>
+        </param>
+        <param>
+          <type>queued</type>
+          <defname>queued</defname>
+        </param>
+        <param>
+          <type>screen</type>
+          <defname>screen</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Do a command that needs a point on the screen.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="131" column="1" bodyfile="lib/actions.py" bodystart="131" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a60765a989aa093570dfcb690d81dd2d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.cmd_minimap</definition>
+        <argsstring>(action, action_space, ability_id, queued, minimap)</argsstring>
+        <name>cmd_minimap</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>ability_id</type>
+          <defname>ability_id</defname>
+        </param>
+        <param>
+          <type>queued</type>
+          <defname>queued</defname>
+        </param>
+        <param>
+          <type>minimap</type>
+          <defname>minimap</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Do a command that needs a point on the minimap.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="139" column="1" bodyfile="lib/actions.py" bodystart="139" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a30a09b1c2a0e2eb0799bb453dcc00842" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.autocast</definition>
+        <argsstring>(action, action_space, ability_id)</argsstring>
+        <name>autocast</name>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <param>
+          <type>action_space</type>
+          <defname>action_space</defname>
+        </param>
+        <param>
+          <type>ability_id</type>
+          <defname>ability_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Toggle autocast.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="147" column="1" bodyfile="lib/actions.py" bodystart="147" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1actions_1a0176618dbc8ee5a2b23007dc8b9fcad1" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions._define_position_based_enum</definition>
+        <argsstring>(name, options)</argsstring>
+        <name>_define_position_based_enum</name>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>options</type>
+          <defname>options</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="233" column="1" bodyfile="lib/actions.py" bodystart="233" bodyend="237"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/actions.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

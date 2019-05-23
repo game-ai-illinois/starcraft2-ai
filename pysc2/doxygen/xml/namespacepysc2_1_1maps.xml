@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1maps" kind="namespace" language="Python">
+    <compoundname>pysc2::maps</compoundname>
+    <innernamespace refid="namespacepysc2_1_1maps_1_1ladder">pysc2::maps::ladder</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1maps_1_1lib">pysc2::maps::lib</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1maps_1_1melee">pysc2::maps::melee</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1maps_1_1mini__games">pysc2::maps::mini_games</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1maps_1a7339e6c1eb478b31383819b34c166f9d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::maps.get</definition>
+        <argsstring></argsstring>
+        <name>get</name>
+        <initializer>=  lib.get</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/__init__.py" line="37" column="1" bodyfile="maps/__init__.py" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1maps_1a83ad28e5166305a4ae6b833cd8fbc312" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::maps.get_maps</definition>
+        <argsstring></argsstring>
+        <name>get_maps</name>
+        <initializer>=  lib.get_maps</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/__init__.py" line="38" column="1" bodyfile="maps/__init__.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="maps/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

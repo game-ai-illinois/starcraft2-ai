@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::dummy_observation::Unit</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a2d3589a320d10ad3825139405cfdd41d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.dummy_observation.Unit::unit_type</definition>
+        <argsstring></argsstring>
+        <name>unit_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="46" column="1" bodyfile="tests/dummy_observation.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ad8d75d8c395e4d5cc57d7a4a22ddef0d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.dummy_observation.Unit::player_relative</definition>
+        <argsstring></argsstring>
+        <name>player_relative</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="47" column="1" bodyfile="tests/dummy_observation.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ac7b740091edb61f73123d2b4c9a4fa0e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.dummy_observation.Unit::health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="48" column="1" bodyfile="tests/dummy_observation.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a398ccdb0016e39694ff69f1d119f988d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.dummy_observation.Unit::shields</definition>
+        <argsstring></argsstring>
+        <name>shields</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="49" column="1" bodyfile="tests/dummy_observation.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ae9c47af4d3c5ed579ae55a344f3822a6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.dummy_observation.Unit::energy</definition>
+        <argsstring></argsstring>
+        <name>energy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="50" column="1" bodyfile="tests/dummy_observation.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a0af1ece1cc8dd67bd225d7661852de33" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.dummy_observation.Unit::transport_slots_taken</definition>
+        <argsstring></argsstring>
+        <name>transport_slots_taken</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="51" column="1" bodyfile="tests/dummy_observation.py" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1aea9057527f8c666711f293e3f6a77bb9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.dummy_observation.Unit::build_progress</definition>
+        <argsstring></argsstring>
+        <name>build_progress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="52" column="1" bodyfile="tests/dummy_observation.py" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a4c8b7eef0f74a60b154607800a4dfcf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation.Unit.__init__</definition>
+        <argsstring>(self, unit_type, player_relative, health, shields=0, energy=0, transport_slots_taken=0, build_progress=1.0)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a2d3589a320d10ad3825139405cfdd41d" kindref="member">unit_type</ref></type>
+          <defname>unit_type</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ad8d75d8c395e4d5cc57d7a4a22ddef0d" kindref="member">player_relative</ref></type>
+          <defname>player_relative</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ac7b740091edb61f73123d2b4c9a4fa0e" kindref="member">health</ref></type>
+          <defname>health</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a398ccdb0016e39694ff69f1d119f988d" kindref="member">shields</ref></type>
+          <defname>shields</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ae9c47af4d3c5ed579ae55a344f3822a6" kindref="member">energy</ref></type>
+          <defname>energy</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a0af1ece1cc8dd67bd225d7661852de33" kindref="member">transport_slots_taken</ref></type>
+          <defname>transport_slots_taken</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1aea9057527f8c666711f293e3f6a77bb9" kindref="member">build_progress</ref></type>
+          <defname>build_progress</defname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="36" column="1" bodyfile="tests/dummy_observation.py" bodystart="44" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ab93c28fac293df1ec17ce06121297ac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation.Unit.fill</definition>
+        <argsstring>(self, unit_proto)</argsstring>
+        <name>fill</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>unit_proto</type>
+          <defname>unit_proto</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Fill a proto unit data object from this Unit.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="54" column="1" bodyfile="tests/dummy_observation.py" bodystart="54" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ae2fd3dc18600b2cb3805219dd547ff11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation.Unit.as_array</definition>
+        <argsstring>(self)</argsstring>
+        <name>as_array</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the unit represented as a numpy array.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="64" column="1" bodyfile="tests/dummy_observation.py" bodystart="64" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a5759fe39fdd593be8950fe318c818838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation.Unit.as_dict</definition>
+        <argsstring>(self)</argsstring>
+        <name>as_dict</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation.py" line="76" column="1" bodyfile="tests/dummy_observation.py" bodystart="76" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Class to hold unit data for the builder.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="848">
+        <label>pysc2.tests.dummy_observation.Unit</label>
+        <link refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit"/>
+        <childnode refid="849" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="849">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="850">
+        <label>pysc2.tests.dummy_observation.Unit</label>
+        <link refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit"/>
+        <childnode refid="851" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="851">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="tests/dummy_observation.py" line="33" column="1" bodyfile="tests/dummy_observation.py" bodystart="33" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a4c8b7eef0f74a60b154607800a4dfcf3" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ae2fd3dc18600b2cb3805219dd547ff11" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>as_array</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a5759fe39fdd593be8950fe318c818838" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>as_dict</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1aea9057527f8c666711f293e3f6a77bb9" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>build_progress</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ae9c47af4d3c5ed579ae55a344f3822a6" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>energy</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ab93c28fac293df1ec17ce06121297ac0" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>fill</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ac7b740091edb61f73123d2b4c9a4fa0e" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>health</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ad8d75d8c395e4d5cc57d7a4a22ddef0d" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>player_relative</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a398ccdb0016e39694ff69f1d119f988d" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>shields</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a0af1ece1cc8dd67bd225d7661852de33" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>transport_slots_taken</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a2d3589a320d10ad3825139405cfdd41d" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation::Unit</scope><name>unit_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

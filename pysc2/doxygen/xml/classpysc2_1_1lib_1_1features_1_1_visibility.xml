@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_visibility" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::Visibility</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_visibility_1a0a6f44d0e4c44d5a3b07c8138575fea4" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Visibility::HIDDEN</definition>
+        <argsstring></argsstring>
+        <name>HIDDEN</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="56" column="1" bodyfile="lib/features.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_visibility_1a61550f519149b951714f3d40ba1adc2c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Visibility::SEEN</definition>
+        <argsstring></argsstring>
+        <name>SEEN</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="57" column="1" bodyfile="lib/features.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_visibility_1a51aec684c91aecd2a377fbc645fb6443" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.Visibility::VISIBLE</definition>
+        <argsstring></argsstring>
+        <name>VISIBLE</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="58" column="1" bodyfile="lib/features.py" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Values for the `visibility` feature layers.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="882">
+        <label>IntEnum</label>
+      </node>
+      <node id="881">
+        <label>pysc2.lib.features.Visibility</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_visibility"/>
+        <childnode refid="882" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="885">
+        <label>int</label>
+      </node>
+      <node id="884">
+        <label>IntEnum</label>
+      </node>
+      <node id="883">
+        <label>pysc2.lib.features.Visibility</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_visibility"/>
+        <childnode refid="884" relation="public-inheritance">
+        </childnode>
+        <childnode refid="885" relation="usage">
+          <edgelabel>HIDDEN</edgelabel>
+          <edgelabel>SEEN</edgelabel>
+          <edgelabel>VISIBLE</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="54" column="1" bodyfile="lib/features.py" bodystart="54" bodyend="61"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_visibility_1a0a6f44d0e4c44d5a3b07c8138575fea4" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Visibility</scope><name>HIDDEN</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_visibility_1a61550f519149b951714f3d40ba1adc2c" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Visibility</scope><name>SEEN</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_visibility_1a51aec684c91aecd2a377fbc645fb6443" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Visibility</scope><name>VISIBLE</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

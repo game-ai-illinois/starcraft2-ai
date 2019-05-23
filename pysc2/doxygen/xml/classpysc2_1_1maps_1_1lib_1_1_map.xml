@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1maps_1_1lib_1_1_map" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::maps::lib::Map</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classpysc2_1_1maps_1_1ladder_1_1_ladder" prot="public" virt="non-virtual">pysc2.maps.ladder.Ladder</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1maps_1_1melee_1_1_melee" prot="public" virt="non-virtual">pysc2.maps.melee.Melee</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game" prot="public" virt="non-virtual">pysc2.maps.mini_games.MiniGame</derivedcompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1lib_1_1_map_1a4201f79683b533aaa76ee296bca9862a" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string pysc2.maps.lib.Map::directory</definition>
+        <argsstring></argsstring>
+        <name>directory</name>
+        <initializer>=  &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="62" column="1" bodyfile="maps/lib.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1lib_1_1_map_1abbeaa1936043d4e2ac896a73952bc7cd" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.maps.lib.Map::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="63" column="1" bodyfile="maps/lib.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1lib_1_1_map_1af2d3ca026051441ae2607a00f69bcab3" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.maps.lib.Map::download</definition>
+        <argsstring></argsstring>
+        <name>download</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="64" column="1" bodyfile="maps/lib.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1lib_1_1_map_1a8ad3432166948ae45fc1641e1b5e7cf2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.lib.Map::game_steps_per_episode</definition>
+        <argsstring></argsstring>
+        <name>game_steps_per_episode</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="65" column="1" bodyfile="maps/lib.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1lib_1_1_map_1a7dce4185a3d781a4fd6f6a38a0ff64aa" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.lib.Map::step_mul</definition>
+        <argsstring></argsstring>
+        <name>step_mul</name>
+        <initializer>=  8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="66" column="1" bodyfile="maps/lib.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1lib_1_1_map_1afa81bf47be6e6d9893f91f5265e4520e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.lib.Map::score_index</definition>
+        <argsstring></argsstring>
+        <name>score_index</name>
+        <initializer>=  -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="67" column="1" bodyfile="maps/lib.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1lib_1_1_map_1a46dae41b5720bd53a7846b4a97022951" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.lib.Map::score_multiplier</definition>
+        <argsstring></argsstring>
+        <name>score_multiplier</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="68" column="1" bodyfile="maps/lib.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1lib_1_1_map_1ade47838a6cb1202f48b38235c95de6d4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.maps.lib.Map::players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <initializer>=  None</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="69" column="1" bodyfile="maps/lib.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1maps_1_1lib_1_1_map_1a6d5499d1d1f2c0aaedbf7b7787a8ba05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.maps.lib.Map.path</definition>
+        <argsstring>(self)</argsstring>
+        <name>path</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The full path to the map file: directory, filename and file ending.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="72" column="1" bodyfile="maps/lib.py" bodystart="72" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1maps_1_1lib_1_1_map_1a07aee252bcbdc30771a9160cc7b604d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.maps.lib.Map.data</definition>
+        <argsstring>(self, run_config)</argsstring>
+        <name>data</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>run_config</type>
+          <defname>run_config</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the map data.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="80" column="1" bodyfile="maps/lib.py" bodystart="80" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1maps_1_1lib_1_1_map_1afdbca854775c5c09c0ce09f0a532261b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.maps.lib.Map.name</definition>
+        <argsstring>(self)</argsstring>
+        <name>name</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="91" column="1" bodyfile="maps/lib.py" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1maps_1_1lib_1_1_map_1a7c2eff51fb8cf13b42fa0cfe39bd02c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.maps.lib.Map.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="94" column="1" bodyfile="maps/lib.py" bodystart="94" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1maps_1_1lib_1_1_map_1a9c1ce36a2df01702d5b30e3189f5b565" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.maps.lib.Map.all_subclasses</definition>
+        <argsstring>(cls)</argsstring>
+        <name>all_subclasses</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>An iterator over all subclasses of `cls`.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/lib.py" line="105" column="1" bodyfile="maps/lib.py" bodystart="105" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Base map object to configure a map. To define a map just subclass this.
+
+Properties:
+  directory: Directory for the map
+  filename: Actual filename. You can skip the &quot;.SC2Map&quot; file ending.
+  download: Where to download the map.
+  game_steps_per_episode: Game steps per episode, independent of the step_mul.
+      0 (default) means no limit.
+  step_mul: How many game steps per agent step?
+  score_index: Which score to give for this map. -1 means the win/loss
+      reward. &gt;=0 is the index into score_cumulative.
+  score_multiplier: A score multiplier to allow make small scores good.
+  players: Max number of players for this map.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="361">
+        <label>pysc2.maps.mini_games.MiniGame</label>
+        <link refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game"/>
+        <childnode refid="357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>pysc2.maps.melee.Melee</label>
+        <link refid="classpysc2_1_1maps_1_1melee_1_1_melee"/>
+        <childnode refid="357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>pysc2.maps.ladder.Ladder</label>
+        <link refid="classpysc2_1_1maps_1_1ladder_1_1_ladder"/>
+        <childnode refid="357" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>pysc2.maps.lib.Map</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_map"/>
+        <childnode refid="358" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="362">
+        <label>pysc2.maps.lib.Map</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_map"/>
+        <childnode refid="363" relation="public-inheritance">
+        </childnode>
+        <childnode refid="364" relation="usage">
+          <edgelabel>score_index</edgelabel>
+          <edgelabel>game_steps_per_episode</edgelabel>
+          <edgelabel>score_multiplier</edgelabel>
+          <edgelabel>step_mul</edgelabel>
+        </childnode>
+      </node>
+      <node id="364">
+        <label>int</label>
+      </node>
+      <node id="363">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="maps/lib.py" line="47" column="1" bodyfile="maps/lib.py" bodystart="47" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a7c2eff51fb8cf13b42fa0cfe39bd02c2" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a9c1ce36a2df01702d5b30e3189f5b565" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>all_subclasses</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a07aee252bcbdc30771a9160cc7b604d1" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>data</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a4201f79683b533aaa76ee296bca9862a" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>directory</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1af2d3ca026051441ae2607a00f69bcab3" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>download</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1abbeaa1936043d4e2ac896a73952bc7cd" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>filename</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a8ad3432166948ae45fc1641e1b5e7cf2" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>game_steps_per_episode</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1afdbca854775c5c09c0ce09f0a532261b" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>name</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a6d5499d1d1f2c0aaedbf7b7787a8ba05" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>path</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1ade47838a6cb1202f48b38235c95de6d4" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>players</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1afa81bf47be6e6d9893f91f5265e4520e" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>score_index</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a46dae41b5720bd53a7846b4a97022951" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>score_multiplier</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a7dce4185a3d781a4fd6f6a38a0ff64aa" prot="public" virt="non-virtual"><scope>pysc2::maps::lib::Map</scope><name>step_mul</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1run__configs" kind="namespace" language="Python">
+    <compoundname>pysc2::run_configs</compoundname>
+    <innernamespace refid="namespacepysc2_1_1run__configs_1_1lib">pysc2::run_configs::lib</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1run__configs_1_1platforms">pysc2::run_configs::platforms</innernamespace>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1run__configs_1a99b9e4b2a9eec8259da8b92b1110a5d5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::run_configs.FLAGS</definition>
+        <argsstring></argsstring>
+        <name>FLAGS</name>
+        <initializer>=  flags.FLAGS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/__init__.py" line="28" column="1" bodyfile="run_configs/__init__.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1run__configs_1a79a4e191e37874fc0fd79a5832ccae31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get the config chosen by the flags.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/__init__.py" line="31" column="1" bodyfile="run_configs/__init__.py" bodystart="31" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="run_configs/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

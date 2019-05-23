@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1tests" kind="namespace" language="Python">
+    <compoundname>pysc2::tests</compoundname>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1dummy__observation">pysc2::tests::dummy_observation</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1dummy__observation__test">pysc2::tests::dummy_observation_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1easy__scripted__test">pysc2::tests::easy_scripted_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1maps__test">pysc2::tests::maps_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1multi__player__env__test">pysc2::tests::multi_player_env_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1multi__player__test">pysc2::tests::multi_player_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1obs__spec__test">pysc2::tests::obs_spec_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1observer__test">pysc2::tests::observer_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1ping__test">pysc2::tests::ping_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1protocol__error__test">pysc2::tests::protocol_error_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1random__agent__test">pysc2::tests::random_agent_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1render__test">pysc2::tests::render_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1replay__obs__test">pysc2::tests::replay_obs_test</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1utils">pysc2::tests::utils</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1versions__test">pysc2::tests::versions_test</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

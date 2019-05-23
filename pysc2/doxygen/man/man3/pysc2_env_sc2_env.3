@@ -1,0 +1,79 @@
+.TH "pysc2.env.sc2_env" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.env.sc2_env
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBDifficulty\fP"
+.br
+.ti -1c
+.RI "class \fBRace\fP"
+.br
+.ti -1c
+.RI "class \fBSC2Env\fP"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBsw\fP = stopwatch\&.sw"
+.br
+.ti -1c
+.RI "dictionary \fBpossible_results\fP"
+.br
+.ti -1c
+.RI "\fBActionSpace\fP = actions_lib\&.ActionSpace"
+.br
+.ti -1c
+.RI "\fBDimensions\fP = features\&.Dimensions"
+.br
+.ti -1c
+.RI "\fBAgentInterfaceFormat\fP = features\&.AgentInterfaceFormat"
+.br
+.ti -1c
+.RI "\fBparse_agent_interface_format\fP = features\&.parse_agent_interface_format"
+.br
+.ti -1c
+.RI "\fBAgent\fP = collections\&.namedtuple('Agent', ['race'])"
+.br
+.ti -1c
+.RI "\fBBot\fP = collections\&.namedtuple('Bot', ['race', 'difficulty'])"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "pysc2\&.env\&.sc2_env\&.ActionSpace = actions_lib\&.ActionSpace"
+
+.SS "pysc2\&.env\&.sc2_env\&.Agent = collections\&.namedtuple('Agent', ['race'])"
+
+.SS "pysc2\&.env\&.sc2_env\&.AgentInterfaceFormat = features\&.AgentInterfaceFormat"
+
+.SS "pysc2\&.env\&.sc2_env\&.Bot = collections\&.namedtuple('Bot', ['race', 'difficulty'])"
+
+.SS "pysc2\&.env\&.sc2_env\&.Dimensions = features\&.Dimensions"
+
+.SS "pysc2\&.env\&.sc2_env\&.parse_agent_interface_format = features\&.parse_agent_interface_format"
+
+.SS "dictionary pysc2\&.env\&.sc2_env\&.possible_results"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  {
+2     sc_pb\&.Victory: 1,
+3     sc_pb\&.Defeat: -1,
+4     sc_pb\&.Tie: 0,
+5     sc_pb\&.Undecided: 0,
+6 }
+.fi
+.SS "pysc2\&.env\&.sc2_env\&.sw = stopwatch\&.sw"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

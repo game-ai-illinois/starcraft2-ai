@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1actions_1_1_action_space" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::actions::ActionSpace</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Enum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1actions_1_1_action_space_1ac436954d571bb283b841d031f3805010" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.actions.ActionSpace::FEATURES</definition>
+        <argsstring></argsstring>
+        <name>FEATURES</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="32" column="1" bodyfile="lib/actions.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1actions_1_1_action_space_1a4f7698070ca8cdf94697061cb83ad78a" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.actions.ActionSpace::RGB</definition>
+        <argsstring></argsstring>
+        <name>RGB</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="33" column="1" bodyfile="lib/actions.py" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="26">
+        <label>pysc2.lib.actions.ActionSpace</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_action_space"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Enum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="30">
+        <label>int</label>
+      </node>
+      <node id="28">
+        <label>pysc2.lib.actions.ActionSpace</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_action_space"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>FEATURES</edgelabel>
+          <edgelabel>RGB</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Enum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/actions.py" line="31" column="1" bodyfile="lib/actions.py" bodystart="31" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_action_space_1ac436954d571bb283b841d031f3805010" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::ActionSpace</scope><name>FEATURES</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_action_space_1a4f7698070ca8cdf94697061cb83ad78a" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::ActionSpace</scope><name>RGB</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

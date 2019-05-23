@@ -1,0 +1,51 @@
+\hypertarget{classpysc2_1_1lib_1_1actions_1_1_arguments}{}\section{pysc2.\+lib.\+actions.\+Arguments Class Reference}
+\label{classpysc2_1_1lib_1_1actions_1_1_arguments}\index{pysc2.\+lib.\+actions.\+Arguments@{pysc2.\+lib.\+actions.\+Arguments}}
+Inheritance diagram for pysc2.\+lib.\+actions.\+Arguments\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classpysc2_1_1lib_1_1actions_1_1_arguments}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_arguments_ab78c631c19bfc340e35069612a5b1f22}{types}} (cls, kwargs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}The full list of argument types.
+
+Take a look at TYPES and FUNCTION_TYPES for more details.
+
+Attributes:
+  screen: A point on the screen.
+  minimap: A point on the minimap.
+  screen2: The second point for a rectangle. This is needed so that no
+      function takes the same type twice.
+  queued: Whether the action should be done now or later.
+  control_group_act: What to do with the control group.
+  control_group_id: Which control group to do it with.
+  select_point_act: What to do with the unit at the point.
+  select_add: Whether to add the unit to the selection or replace it.
+  select_unit_act: What to do when selecting a unit by id.
+  select_unit_id: Which unit to select by id.
+  select_worker: What to do when selecting a worker.
+  build_queue_id: Which build queue index to target.
+  unload_id: Which unit to target in a transport/nydus/command center.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_arguments_ab78c631c19bfc340e35069612a5b1f22}\label{classpysc2_1_1lib_1_1actions_1_1_arguments_ab78c631c19bfc340e35069612a5b1f22}} 
+\index{pysc2\+::lib\+::actions\+::\+Arguments@{pysc2\+::lib\+::actions\+::\+Arguments}!types@{types}}
+\index{types@{types}!pysc2\+::lib\+::actions\+::\+Arguments@{pysc2\+::lib\+::actions\+::\+Arguments}}
+\subsubsection{\texorpdfstring{types()}{types()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Arguments.\+types (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an Arguments of the possible Types.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{actions_8py}{actions.\+py}}\end{DoxyCompactItemize}

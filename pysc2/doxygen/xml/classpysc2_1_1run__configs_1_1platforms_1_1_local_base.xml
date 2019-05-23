@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1run__configs_1_1platforms_1_1_local_base" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::run_configs::platforms::LocalBase</compoundname>
+    <basecompoundref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config" prot="public" virt="non-virtual">pysc2.run_configs.lib.RunConfig</basecompoundref>
+    <derivedcompoundref refid="classpysc2_1_1run__configs_1_1platforms_1_1_cygwin" prot="public" virt="non-virtual">pysc2.run_configs.platforms.Cygwin</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1run__configs_1_1platforms_1_1_linux" prot="public" virt="non-virtual">pysc2.run_configs.platforms.Linux</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1run__configs_1_1platforms_1_1_mac_o_s" prot="public" virt="non-virtual">pysc2.run_configs.platforms.MacOS</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1run__configs_1_1platforms_1_1_windows" prot="public" virt="non-virtual">pysc2.run_configs.platforms.Windows</derivedcompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1run__configs_1_1platforms_1_1_local_base_1a378d8e58e961929cbfed37d58dcafd02" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.run_configs.platforms.LocalBase::_exec_name</definition>
+        <argsstring></argsstring>
+        <name>_exec_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/platforms.py" line="92" column="1" bodyfile="run_configs/platforms.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1platforms_1_1_local_base_1a9d70a5d03b43c39b76e413173bfb23c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.platforms.LocalBase.__init__</definition>
+        <argsstring>(self, base_dir, exec_name, cwd=None, env=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>base_dir</type>
+          <defname>base_dir</defname>
+        </param>
+        <param>
+          <type>exec_name</type>
+          <defname>exec_name</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1af8bd9eeb877d8de7ac75b455799d88bf" kindref="member">cwd</ref></type>
+          <defname>cwd</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aae2166085e6fd820345e8af02743b7aa" kindref="member">env</ref></type>
+          <defname>env</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/platforms.py" line="86" column="1" bodyfile="run_configs/platforms.py" bodystart="86" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1platforms_1_1_local_base_1a496abff1cd714158ea53bcbd05d7a4a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.platforms.LocalBase.start</definition>
+        <argsstring>(self, version=None, kwargs)</argsstring>
+        <name>start</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>version</type>
+          <defname>version</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Launch the game.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/platforms.py" line="94" column="1" bodyfile="run_configs/platforms.py" bodystart="94" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Base run config for public installs.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="344">
+        <label>pysc2.run_configs.platforms.MacOS</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_mac_o_s"/>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>pysc2.run_configs.platforms.Linux</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_linux"/>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>pysc2.run_configs.platforms.Cygwin</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_cygwin"/>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="339">
+        <label>pysc2.run_configs.platforms.LocalBase</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_local_base"/>
+        <childnode refid="340" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>object</label>
+      </node>
+      <node id="345">
+        <label>pysc2.run_configs.platforms.Windows</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_windows"/>
+        <childnode refid="339" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="340">
+        <label>pysc2.run_configs.lib.RunConfig</label>
+        <link refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config"/>
+        <childnode refid="341" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="346">
+        <label>pysc2.run_configs.platforms.LocalBase</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_local_base"/>
+        <childnode refid="347" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>object</label>
+      </node>
+      <node id="347">
+        <label>pysc2.run_configs.lib.RunConfig</label>
+        <link refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config"/>
+        <childnode refid="348" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="run_configs/platforms.py" line="83" column="1" bodyfile="run_configs/platforms.py" bodystart="83" bodyend="134"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1run__configs_1_1platforms_1_1_local_base_1a9d70a5d03b43c39b76e413173bfb23c7" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1abd1454befc5a4343a64b39c25ab20698" prot="public" virt="non-virtual" ambiguityscope="pysc2::run_configs::lib::RunConfig."><scope>pysc2::run_configs::platforms::LocalBase</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1platforms_1_1_local_base_1a378d8e58e961929cbfed37d58dcafd02" prot="private" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>_exec_name</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aaca5669c522ce76daf84075a40de9e3f" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>abs_replay_path</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a33621ff0a10545ef72e99fb96e4eb76c" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>all_subclasses</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1af8bd9eeb877d8de7ac75b455799d88bf" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>cwd</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aab93dda31495e5968f79bdf77e139710" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>data_dir</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aae2166085e6fd820345e8af02743b7aa" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>env</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1adc54814ab2a8ccdf0f19e11d006e30df" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>map_data</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1acd21dd2a75fcb4023287d6dc23a7a193" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>name</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1ad01a3bc9eb157d41f66de62931f27948" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>priority</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a59a4465acde9c23d45d3186275b4b9e9" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>replay_data</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aca6d18d30df342636c175478332b6aa3" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>replay_dir</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1ab57b5db47c2e8061b223eac014c77098" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>replay_paths</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a7ba199b4c7d8503dd9d8bbdbdf13ede8" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>save_replay</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1platforms_1_1_local_base_1a496abff1cd714158ea53bcbd05d7a4a3" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>start</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1ab335f1c1061e8b70ef0c1ecf8834d4a8" prot="public" virt="non-virtual"><scope>pysc2::run_configs::platforms::LocalBase</scope><name>tmp_dir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

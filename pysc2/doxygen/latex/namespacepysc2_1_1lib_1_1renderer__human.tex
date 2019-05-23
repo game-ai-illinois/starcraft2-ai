@@ -1,0 +1,72 @@
+\hypertarget{namespacepysc2_1_1lib_1_1renderer__human}{}\section{pysc2.\+lib.\+renderer\+\_\+human Namespace Reference}
+\label{namespacepysc2_1_1lib_1_1renderer__human}\index{pysc2.\+lib.\+renderer\+\_\+human@{pysc2.\+lib.\+renderer\+\_\+human}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1renderer__human_1_1___surface}{\+\_\+\+Surface}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1renderer__human_1_1_action_cmd}{Action\+Cmd}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1renderer__human_1_1_mouse_buttons}{Mouse\+Buttons}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1renderer__human_1_1_mouse_pos}{Mouse\+Pos}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1renderer__human_1_1_past_action}{Past\+Action}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1renderer__human_1_1_renderer_human}{Renderer\+Human}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1renderer__human_1_1_surf_type}{Surf\+Type}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1lib_1_1renderer__human_ac8b75284cbccdee5fe651010cff8b0ba}{with\+\_\+lock}} (lock)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1lib_1_1renderer__human_a7c996020daec061b02fc9323a98a7c7f}{clamp}} (n, smallest, largest)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1lib_1_1renderer__human_a1c2b1e37eac77e0d171c8a38dacc9f7b}{circle\+\_\+mask}} (shape, pt, radius)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepysc2_1_1lib_1_1renderer__human_a525c0fe2d94497910def33790b2de7bb}{sw}} = stopwatch.\+sw
+\item 
+\mbox{\hyperlink{namespacepysc2_1_1lib_1_1renderer__human_a635b7ec9724fdd7abf92a897cc68d1a3}{render\+\_\+lock}} = threading.\+Lock()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1renderer__human_a1c2b1e37eac77e0d171c8a38dacc9f7b}\label{namespacepysc2_1_1lib_1_1renderer__human_a1c2b1e37eac77e0d171c8a38dacc9f7b}} 
+\index{pysc2\+::lib\+::renderer\+\_\+human@{pysc2\+::lib\+::renderer\+\_\+human}!circle\+\_\+mask@{circle\+\_\+mask}}
+\index{circle\+\_\+mask@{circle\+\_\+mask}!pysc2\+::lib\+::renderer\+\_\+human@{pysc2\+::lib\+::renderer\+\_\+human}}
+\subsubsection{\texorpdfstring{circle\+\_\+mask()}{circle\_mask()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+renderer\+\_\+human.\+circle\+\_\+mask (\begin{DoxyParamCaption}\item[{}]{shape,  }\item[{}]{pt,  }\item[{}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1renderer__human_a7c996020daec061b02fc9323a98a7c7f}\label{namespacepysc2_1_1lib_1_1renderer__human_a7c996020daec061b02fc9323a98a7c7f}} 
+\index{pysc2\+::lib\+::renderer\+\_\+human@{pysc2\+::lib\+::renderer\+\_\+human}!clamp@{clamp}}
+\index{clamp@{clamp}!pysc2\+::lib\+::renderer\+\_\+human@{pysc2\+::lib\+::renderer\+\_\+human}}
+\subsubsection{\texorpdfstring{clamp()}{clamp()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+renderer\+\_\+human.\+clamp (\begin{DoxyParamCaption}\item[{}]{n,  }\item[{}]{smallest,  }\item[{}]{largest }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1renderer__human_ac8b75284cbccdee5fe651010cff8b0ba}\label{namespacepysc2_1_1lib_1_1renderer__human_ac8b75284cbccdee5fe651010cff8b0ba}} 
+\index{pysc2\+::lib\+::renderer\+\_\+human@{pysc2\+::lib\+::renderer\+\_\+human}!with\+\_\+lock@{with\+\_\+lock}}
+\index{with\+\_\+lock@{with\+\_\+lock}!pysc2\+::lib\+::renderer\+\_\+human@{pysc2\+::lib\+::renderer\+\_\+human}}
+\subsubsection{\texorpdfstring{with\+\_\+lock()}{with\_lock()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+renderer\+\_\+human.\+with\+\_\+lock (\begin{DoxyParamCaption}\item[{}]{lock }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make sure the lock is held while in this function.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1renderer__human_a635b7ec9724fdd7abf92a897cc68d1a3}\label{namespacepysc2_1_1lib_1_1renderer__human_a635b7ec9724fdd7abf92a897cc68d1a3}} 
+\index{pysc2\+::lib\+::renderer\+\_\+human@{pysc2\+::lib\+::renderer\+\_\+human}!render\+\_\+lock@{render\+\_\+lock}}
+\index{render\+\_\+lock@{render\+\_\+lock}!pysc2\+::lib\+::renderer\+\_\+human@{pysc2\+::lib\+::renderer\+\_\+human}}
+\subsubsection{\texorpdfstring{render\+\_\+lock}{render\_lock}}
+{\footnotesize\ttfamily pysc2.\+lib.\+renderer\+\_\+human.\+render\+\_\+lock = threading.\+Lock()}
+
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1renderer__human_a525c0fe2d94497910def33790b2de7bb}\label{namespacepysc2_1_1lib_1_1renderer__human_a525c0fe2d94497910def33790b2de7bb}} 
+\index{pysc2\+::lib\+::renderer\+\_\+human@{pysc2\+::lib\+::renderer\+\_\+human}!sw@{sw}}
+\index{sw@{sw}!pysc2\+::lib\+::renderer\+\_\+human@{pysc2\+::lib\+::renderer\+\_\+human}}
+\subsubsection{\texorpdfstring{sw}{sw}}
+{\footnotesize\ttfamily pysc2.\+lib.\+renderer\+\_\+human.\+sw = stopwatch.\+sw}
+

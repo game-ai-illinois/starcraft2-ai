@@ -1,0 +1,402 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features_test::AvailableActionsTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a55cbd4d16deaac1b6dfd09667bcf5644" prot="public" static="yes" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2.lib.features_test.AvailableActionsTest::always_expected</definition>
+        <argsstring></argsstring>
+        <name>always_expected</name>
+        <initializer>=  {
+      &quot;no_op&quot;, &quot;move_camera&quot;, &quot;select_point&quot;, &quot;select_rect&quot;,
+      &quot;select_control_group&quot;
+  }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="62" column="1" bodyfile="lib/features_test.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a278a84d8d5a7f838888362ac5155c6de" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features_test.AvailableActionsTest::obs</definition>
+        <argsstring></argsstring>
+        <name>obs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="69" column="1" bodyfile="lib/features_test.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a7bd625dacb0c1f3e691871778b8ba432" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features_test.AvailableActionsTest::features</definition>
+        <argsstring></argsstring>
+        <name>features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="73" column="1" bodyfile="lib/features_test.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a085183352ca922ab9a9c064bf97c2a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.setUp</definition>
+        <argsstring>(self)</argsstring>
+        <name>setUp</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="67" column="1" bodyfile="lib/features_test.py" bodystart="67" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a1c9bfef603273fcfbdf206f7a0ef7620" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.hideSpecificActions</definition>
+        <argsstring>(self, hide_specific_actions)</argsstring>
+        <name>hideSpecificActions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>hide_specific_actions</type>
+          <defname>hide_specific_actions</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="72" column="1" bodyfile="lib/features_test.py" bodystart="72" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1af4d9c7bad6bec5202f096d73cfc641b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.assertAvail</definition>
+        <argsstring>(self, expected)</argsstring>
+        <name>assertAvail</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>expected</type>
+          <defname>expected</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="77" column="1" bodyfile="lib/features_test.py" bodystart="77" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a2a9f056fe14cf0acb0bc47e4e1be6c61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testAlways</definition>
+        <argsstring>(self)</argsstring>
+        <name>testAlways</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="82" column="1" bodyfile="lib/features_test.py" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a5e280b23d7546871414c4eb0beced74b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testSelectUnit</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSelectUnit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="85" column="1" bodyfile="lib/features_test.py" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1ab667d51eb6a9b38da9ac0ababe007daf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testSelectIdleWorkder</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSelectIdleWorkder</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="89" column="1" bodyfile="lib/features_test.py" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a0c4201958e89dce9568dc9f2d778ae5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testSelectArmy</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSelectArmy</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="93" column="1" bodyfile="lib/features_test.py" bodystart="93" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1afc40ca9b4dfc4f1386afff0dff62c85c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testSelectWarpGates</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSelectWarpGates</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="97" column="1" bodyfile="lib/features_test.py" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1af14c6e97325e81deefa0a4e2dca95ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testSelectLarva</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSelectLarva</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="101" column="1" bodyfile="lib/features_test.py" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a5daf15a6ed60b693b5af58dc78942297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testQuick</definition>
+        <argsstring>(self)</argsstring>
+        <name>testQuick</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="105" column="1" bodyfile="lib/features_test.py" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a04b287433102571ee2a0d2fe8f092957" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testScreen</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScreen</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="109" column="1" bodyfile="lib/features_test.py" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1abb7f4f31b32926091d499c71d49f2c5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testScreenMinimap</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScreenMinimap</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="113" column="1" bodyfile="lib/features_test.py" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1aa45dcbb1016274aeeed4205e52fbd929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testScreenAutocast</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScreenAutocast</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="117" column="1" bodyfile="lib/features_test.py" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a553d3edfd2942d466b6ba94f4c4e0deb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testScreenQuick</definition>
+        <argsstring>(self)</argsstring>
+        <name>testScreenQuick</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="121" column="1" bodyfile="lib/features_test.py" bodystart="121" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1ad6f0fbdcb2d4c10d1a78cfbbaf5035cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testGeneral</definition>
+        <argsstring>(self)</argsstring>
+        <name>testGeneral</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="136" column="1" bodyfile="lib/features_test.py" bodystart="136" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a46f45bb4380146cc1b12ee89ecd7f784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testGeneralType</definition>
+        <argsstring>(self)</argsstring>
+        <name>testGeneralType</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="143" column="1" bodyfile="lib/features_test.py" bodystart="143" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a6c75f62739b0fda29d141508915d19f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.AvailableActionsTest.testMany</definition>
+        <argsstring>(self)</argsstring>
+        <name>testMany</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="157" column="1" bodyfile="lib/features_test.py" bodystart="157" bodyend="210"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="95">
+        <label>pysc2.lib.features_test.AvailableActionsTest</label>
+        <link refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test"/>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>TestCase</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="97">
+        <label>pysc2.lib.features_test.AvailableActionsTest</label>
+        <link refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>TestCase</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features_test.py" line="60" column="1" bodyfile="lib/features_test.py" bodystart="60" bodyend="211"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a55cbd4d16deaac1b6dfd09667bcf5644" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>always_expected</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1af4d9c7bad6bec5202f096d73cfc641b3" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>assertAvail</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a7bd625dacb0c1f3e691871778b8ba432" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>features</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a1c9bfef603273fcfbdf206f7a0ef7620" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>hideSpecificActions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a278a84d8d5a7f838888362ac5155c6de" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>obs</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a085183352ca922ab9a9c064bf97c2a29" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a2a9f056fe14cf0acb0bc47e4e1be6c61" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testAlways</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1ad6f0fbdcb2d4c10d1a78cfbbaf5035cd" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testGeneral</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a46f45bb4380146cc1b12ee89ecd7f784" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testGeneralType</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a6c75f62739b0fda29d141508915d19f1" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testMany</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a5daf15a6ed60b693b5af58dc78942297" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testQuick</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a04b287433102571ee2a0d2fe8f092957" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testScreen</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1aa45dcbb1016274aeeed4205e52fbd929" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testScreenAutocast</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1abb7f4f31b32926091d499c71d49f2c5d" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testScreenMinimap</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a553d3edfd2942d466b6ba94f4c4e0deb" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testScreenQuick</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a0c4201958e89dce9568dc9f2d778ae5a" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testSelectArmy</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1ab667d51eb6a9b38da9ac0ababe007daf" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testSelectIdleWorkder</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1af14c6e97325e81deefa0a4e2dca95ee6" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testSelectLarva</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1a5e280b23d7546871414c4eb0beced74b" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testSelectUnit</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_available_actions_test_1afc40ca9b4dfc4f1386afff0dff62c85c" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::AvailableActionsTest</scope><name>testSelectWarpGates</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1gfile" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::gfile</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1gfile_1ac87c43a35bfded2ce15d7c312d037e02" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::gfile.Exists</definition>
+        <argsstring></argsstring>
+        <name>Exists</name>
+        <initializer>=  os.path.exists</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/gfile.py" line="27" column="1" bodyfile="lib/gfile.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1gfile_1ab39639637b908772183d33dff2c89da2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::gfile.IsDirectory</definition>
+        <argsstring></argsstring>
+        <name>IsDirectory</name>
+        <initializer>=  os.path.isdir</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/gfile.py" line="28" column="1" bodyfile="lib/gfile.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1gfile_1ad9c302db7f255acdfd8787281e843c49" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::gfile.ListDir</definition>
+        <argsstring></argsstring>
+        <name>ListDir</name>
+        <initializer>=  os.listdir</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/gfile.py" line="29" column="1" bodyfile="lib/gfile.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1gfile_1a4cbb5541d2a02394c847f103936bbca0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::gfile.MakeDirs</definition>
+        <argsstring></argsstring>
+        <name>MakeDirs</name>
+        <initializer>=  os.makedirs</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/gfile.py" line="30" column="1" bodyfile="lib/gfile.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1gfile_1ab1fe784a279c20f90486ceae4cef0f8c" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::gfile.Open</definition>
+        <argsstring></argsstring>
+        <name>Open</name>
+        <initializer>=  open</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/gfile.py" line="31" column="1" bodyfile="lib/gfile.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/gfile.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

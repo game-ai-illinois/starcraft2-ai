@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1named__array__test" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::named_array_test</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1named__array__test_1_1_bad_enum" prot="public">pysc2::lib::named_array_test::BadEnum</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1named__array__test_1_1_bad_named_tuple" prot="public">pysc2::lib::named_array_test::BadNamedTuple</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1named__array__test_1_1_named_array_test" prot="public">pysc2::lib::named_array_test::NamedArrayTest</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1named__array__test_1_1_named_dict_test" prot="public">pysc2::lib::named_array_test::NamedDictTest</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1named__array__test_1_1_test_enum" prot="public">pysc2::lib::named_array_test::TestEnum</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1named__array__test_1_1_test_named_tuple" prot="public">pysc2::lib::named_array_test::TestNamedTuple</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/named_array_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,97 @@
+\hypertarget{classpysc2_1_1lib_1_1actions_1_1_function}{}\section{pysc2.\+lib.\+actions.\+Function Class Reference}
+\label{classpysc2_1_1lib_1_1actions_1_1_function}\index{pysc2.\+lib.\+actions.\+Function@{pysc2.\+lib.\+actions.\+Function}}
+Inheritance diagram for pysc2.\+lib.\+actions.\+Function\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=9.000000cm]{classpysc2_1_1lib_1_1actions_1_1_function}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_function_a2c4bb777e80bd4cdeaa012e85f85b4be}{ui\+\_\+func}} (cls, id\+\_\+, name, function\+\_\+type, avail\+\_\+fn=\mbox{\hyperlink{namespacepysc2_1_1lib_1_1actions_ae1dc5f547908d78c7367d3c734b29a59}{always}})
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_function_afa5332609b8f6e69057a0035add0a480}{ability}} (cls, id\+\_\+, name, function\+\_\+type, ability\+\_\+id, general\+\_\+id=0)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_function_a640d6d3480535d03e1b11cd4314ab221}{spec}} (cls, id\+\_\+, name, args)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_function_a31e8c8775ce3b7d55671b1494502aca7}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_function_a693e39932ef61edb079e977f8636626e}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_function_a82d083b88887fb4c9fa6dd99a399cedc}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, args)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1actions_1_1_function_a98ad5ff5cc2cbd2656c25dbf0d60c8a4}{str}} (self, space=False)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Represents a function action.
+
+Attributes:
+  id: The function id, which is what the agent will use.
+  name: The name of the function. Should be unique.
+  ability_id: The ability id to pass to sc2.
+  general_id: 0 for normal abilities, and the ability_id of another ability if
+      it can be represented by a more general action.
+  function_type: One of the functions in FUNCTION_TYPES for how to construct
+      the sc2 action proto out of python types.
+  args: A list of the types of args passed to function_type.
+  avail_fn: For non-abilities, this function returns whether the function is
+      valid.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_function_a82d083b88887fb4c9fa6dd99a399cedc}\label{classpysc2_1_1lib_1_1actions_1_1_function_a82d083b88887fb4c9fa6dd99a399cedc}} 
+\index{pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}!\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+call\+\_\+\+\_\+@{\+\_\+\+\_\+call\+\_\+\+\_\+}!pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+call\+\_\+\+\_\+()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Function.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A convenient way to create a FunctionCall from this Function.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_function_a31e8c8775ce3b7d55671b1494502aca7}\label{classpysc2_1_1lib_1_1actions_1_1_function_a31e8c8775ce3b7d55671b1494502aca7}} 
+\index{pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}!\+\_\+\+\_\+hash\+\_\+\+\_\+@{\+\_\+\+\_\+hash\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+hash\+\_\+\+\_\+@{\+\_\+\+\_\+hash\+\_\+\+\_\+}!pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+hash\+\_\+\+\_\+()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Function.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_function_a693e39932ef61edb079e977f8636626e}\label{classpysc2_1_1lib_1_1actions_1_1_function_a693e39932ef61edb079e977f8636626e}} 
+\index{pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}!\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+str\+\_\+\+\_\+@{\+\_\+\+\_\+str\+\_\+\+\_\+}!pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+str\+\_\+\+\_\+()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Function.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_function_afa5332609b8f6e69057a0035add0a480}\label{classpysc2_1_1lib_1_1actions_1_1_function_afa5332609b8f6e69057a0035add0a480}} 
+\index{pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}!ability@{ability}}
+\index{ability@{ability}!pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}}
+\subsubsection{\texorpdfstring{ability()}{ability()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Function.\+ability (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{id\+\_\+,  }\item[{}]{name,  }\item[{}]{function\+\_\+type,  }\item[{}]{ability\+\_\+id,  }\item[{}]{general\+\_\+id = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Define a function represented as a game ability.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_function_a640d6d3480535d03e1b11cd4314ab221}\label{classpysc2_1_1lib_1_1actions_1_1_function_a640d6d3480535d03e1b11cd4314ab221}} 
+\index{pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}!spec@{spec}}
+\index{spec@{spec}!pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}}
+\subsubsection{\texorpdfstring{spec()}{spec()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Function.\+spec (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{id\+\_\+,  }\item[{}]{name,  }\item[{}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a Function to be used in ValidActions.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_function_a98ad5ff5cc2cbd2656c25dbf0d60c8a4}\label{classpysc2_1_1lib_1_1actions_1_1_function_a98ad5ff5cc2cbd2656c25dbf0d60c8a4}} 
+\index{pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}!str@{str}}
+\index{str@{str}!pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}}
+\subsubsection{\texorpdfstring{str()}{str()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Function.\+str (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{space = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}String version. Set space=True to line them all up nicely.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1actions_1_1_function_a2c4bb777e80bd4cdeaa012e85f85b4be}\label{classpysc2_1_1lib_1_1actions_1_1_function_a2c4bb777e80bd4cdeaa012e85f85b4be}} 
+\index{pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}!ui\+\_\+func@{ui\+\_\+func}}
+\index{ui\+\_\+func@{ui\+\_\+func}!pysc2\+::lib\+::actions\+::\+Function@{pysc2\+::lib\+::actions\+::\+Function}}
+\subsubsection{\texorpdfstring{ui\+\_\+func()}{ui\_func()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+actions.\+Function.\+ui\+\_\+func (\begin{DoxyParamCaption}\item[{}]{cls,  }\item[{}]{id\+\_\+,  }\item[{}]{name,  }\item[{}]{function\+\_\+type,  }\item[{}]{avail\+\_\+fn = {\ttfamily \mbox{\hyperlink{namespacepysc2_1_1lib_1_1actions_ae1dc5f547908d78c7367d3c734b29a59}{always}}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Define a function representing a ui action.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{actions_8py}{actions.\+py}}\end{DoxyCompactItemize}

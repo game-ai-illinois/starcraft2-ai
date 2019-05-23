@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::AgentInterfaceFormat</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1aeda01352e50b49c7334d7955caa8496a" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.AgentInterfaceFormat::_feature_dimensions</definition>
+        <argsstring></argsstring>
+        <name>_feature_dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="423" column="1" bodyfile="lib/features.py" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1aeffb735f0777456cdc13ddb70138d06e" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.AgentInterfaceFormat::_rgb_dimensions</definition>
+        <argsstring></argsstring>
+        <name>_rgb_dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="424" column="1" bodyfile="lib/features.py" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a3790a07688bcbfc791e0862d1e911689" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.AgentInterfaceFormat::_action_space</definition>
+        <argsstring></argsstring>
+        <name>_action_space</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="425" column="1" bodyfile="lib/features.py" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a666751de23eeb972022ca3308652df0e" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.AgentInterfaceFormat::_camera_width_world_units</definition>
+        <argsstring></argsstring>
+        <name>_camera_width_world_units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="426" column="1" bodyfile="lib/features.py" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a00fe1d4201b1841dcf3312c52b7b48da" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.AgentInterfaceFormat::_use_feature_units</definition>
+        <argsstring></argsstring>
+        <name>_use_feature_units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="427" column="1" bodyfile="lib/features.py" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1ad5d9cd038cc90eba5b66e5ebae632cb2" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.AgentInterfaceFormat::_hide_specific_actions</definition>
+        <argsstring></argsstring>
+        <name>_hide_specific_actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="428" column="1" bodyfile="lib/features.py" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a422bdf9a3834a3aa2bace7b3f6f1f721" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.AgentInterfaceFormat::_action_dimensions</definition>
+        <argsstring></argsstring>
+        <name>_action_dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="431" column="1" bodyfile="lib/features.py" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a80c173fac4f02ee090925b0ba2eaa369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.AgentInterfaceFormat.__init__</definition>
+        <argsstring>(self, feature_dimensions=None, rgb_dimensions=None, action_space=None, camera_width_world_units=None, use_feature_units=False, hide_specific_actions=True)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1afb6336f68b4dd6a550a8483e59d8bf31" kindref="member">feature_dimensions</ref></type>
+          <defname>feature_dimensions</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a5531c5661ecd91f244bf3f9598d22d67" kindref="member">rgb_dimensions</ref></type>
+          <defname>rgb_dimensions</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1aebb7cd1ed5816051abe21703184cc16a" kindref="member">action_space</ref></type>
+          <defname>action_space</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a5140a9024f2fb47046074e511acd0dd0" kindref="member">camera_width_world_units</ref></type>
+          <defname>camera_width_world_units</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1abac891fe53cafd4798d13ca70db971f5" kindref="member">use_feature_units</ref></type>
+          <defname>use_feature_units</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1adbc6be15eae7945c226758c1bc666443" kindref="member">hide_specific_actions</ref></type>
+          <defname>hide_specific_actions</defname>
+          <defval>True</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initializer.
+
+Args:
+  feature_dimensions: Feature layer `Dimension`s. Either this or
+  rgb_dimensions (or both) must be set.
+  rgb_dimensions: RGB `Dimension`. Either this or feature_dimensions
+  (or both) must be set.
+  action_space: If you pass both feature and rgb sizes, then you must also
+  specify which you want to use for your actions as an ActionSpace enum.
+  camera_width_world_units: The width of your screen in world units. If your
+  feature_dimensions.screen=(64, 48) and camera_width is 24, then each
+  px represents 24 / 64 = 0.375 world units in each of x and y.
+  It&apos;ll then represent a camera of size (24, 0.375 * 48) = (24, 18)
+  world units.
+  use_feature_units: Whether to include feature unit data in observations.
+  hide_specific_actions: [bool] Some actions (eg cancel) have many
+  specific versions (cancel this building, cancel that spell) and can
+  be represented in a more general form. If a specific action is
+  available, the general will also be available. If you set
+  `hide_specific_actions` to False, the specific versions will also be
+  available, but if it&apos;s True, the specific ones will be hidden.
+  Similarly, when transforming back, a specific action will be returned
+  as the general action. This simplifies the action space, though can
+  lead to some actions in replays not being exactly representable using
+  only the general actions.
+
+Raises:
+  ValueError: if the parameters are inconsistent.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="360" column="1" bodyfile="lib/features.py" bodystart="367" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1afb6336f68b4dd6a550a8483e59d8bf31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.AgentInterfaceFormat.feature_dimensions</definition>
+        <argsstring>(self)</argsstring>
+        <name>feature_dimensions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="436" column="1" bodyfile="lib/features.py" bodystart="436" bodyend="438"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a5531c5661ecd91f244bf3f9598d22d67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.AgentInterfaceFormat.rgb_dimensions</definition>
+        <argsstring>(self)</argsstring>
+        <name>rgb_dimensions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="440" column="1" bodyfile="lib/features.py" bodystart="440" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1aebb7cd1ed5816051abe21703184cc16a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.AgentInterfaceFormat.action_space</definition>
+        <argsstring>(self)</argsstring>
+        <name>action_space</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="444" column="1" bodyfile="lib/features.py" bodystart="444" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a5140a9024f2fb47046074e511acd0dd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.AgentInterfaceFormat.camera_width_world_units</definition>
+        <argsstring>(self)</argsstring>
+        <name>camera_width_world_units</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="448" column="1" bodyfile="lib/features.py" bodystart="448" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1abac891fe53cafd4798d13ca70db971f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.AgentInterfaceFormat.use_feature_units</definition>
+        <argsstring>(self)</argsstring>
+        <name>use_feature_units</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="452" column="1" bodyfile="lib/features.py" bodystart="452" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1adbc6be15eae7945c226758c1bc666443" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.AgentInterfaceFormat.hide_specific_actions</definition>
+        <argsstring>(self)</argsstring>
+        <name>hide_specific_actions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="456" column="1" bodyfile="lib/features.py" bodystart="456" bodyend="458"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a8fa5a036defb7844b94946a505e28148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.AgentInterfaceFormat.action_dimensions</definition>
+        <argsstring>(self)</argsstring>
+        <name>action_dimensions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="460" column="1" bodyfile="lib/features.py" bodystart="460" bodyend="463"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Observation and action interface format specific to a particular agent.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="40">
+        <label>object</label>
+      </node>
+      <node id="39">
+        <label>pysc2.lib.features.AgentInterfaceFormat</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format"/>
+        <childnode refid="40" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="42">
+        <label>object</label>
+      </node>
+      <node id="41">
+        <label>pysc2.lib.features.AgentInterfaceFormat</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format"/>
+        <childnode refid="42" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="357" column="1" bodyfile="lib/features.py" bodystart="357" bodyend="464"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a80c173fac4f02ee090925b0ba2eaa369" prot="public" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a422bdf9a3834a3aa2bace7b3f6f1f721" prot="private" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>_action_dimensions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a3790a07688bcbfc791e0862d1e911689" prot="private" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>_action_space</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a666751de23eeb972022ca3308652df0e" prot="private" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>_camera_width_world_units</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1aeda01352e50b49c7334d7955caa8496a" prot="private" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>_feature_dimensions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1ad5d9cd038cc90eba5b66e5ebae632cb2" prot="private" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>_hide_specific_actions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1aeffb735f0777456cdc13ddb70138d06e" prot="private" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>_rgb_dimensions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a00fe1d4201b1841dcf3312c52b7b48da" prot="private" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>_use_feature_units</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a8fa5a036defb7844b94946a505e28148" prot="public" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>action_dimensions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1aebb7cd1ed5816051abe21703184cc16a" prot="public" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>action_space</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a5140a9024f2fb47046074e511acd0dd0" prot="public" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>camera_width_world_units</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1afb6336f68b4dd6a550a8483e59d8bf31" prot="public" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>feature_dimensions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1adbc6be15eae7945c226758c1bc666443" prot="public" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>hide_specific_actions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1a5531c5661ecd91f244bf3f9598d22d67" prot="public" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>rgb_dimensions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_agent_interface_format_1abac891fe53cafd4798d13ca70db971f5" prot="public" virt="non-virtual"><scope>pysc2::lib::features::AgentInterfaceFormat</scope><name>use_feature_units</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

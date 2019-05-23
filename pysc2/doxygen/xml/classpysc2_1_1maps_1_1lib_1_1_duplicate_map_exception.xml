@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1maps_1_1lib_1_1_duplicate_map_exception" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::maps::lib::DuplicateMapException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="218">
+        <label>Exception</label>
+      </node>
+      <node id="217">
+        <label>pysc2.maps.lib.DuplicateMapException</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_duplicate_map_exception"/>
+        <childnode refid="218" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="220">
+        <label>Exception</label>
+      </node>
+      <node id="219">
+        <label>pysc2.maps.lib.DuplicateMapException</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_duplicate_map_exception"/>
+        <childnode refid="220" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="maps/lib.py" line="39" column="1" bodyfile="maps/lib.py" bodystart="39" bodyend="43"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

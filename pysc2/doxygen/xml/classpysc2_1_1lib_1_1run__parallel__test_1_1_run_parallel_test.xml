@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::run_parallel_test::RunParallelTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test_1a9ee50abb779e56b37631c22327a4e496" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel_test.RunParallelTest.test_returns_expected_values</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_returns_expected_values</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="58" column="1" bodyfile="lib/run_parallel_test.py" bodystart="58" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test_1adb895ed2bebfa207517b06e8e7632776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel_test.RunParallelTest.test_run_in_parallel</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_run_in_parallel</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="65" column="1" bodyfile="lib/run_parallel_test.py" bodystart="65" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test_1a2a0625445818f5ca5a8c4c2e9a4c87c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel_test.RunParallelTest.test_avoids_deadlock</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_avoids_deadlock</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="71" column="1" bodyfile="lib/run_parallel_test.py" bodystart="71" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test_1ade5a57fb5693870e414687c016641b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel_test.RunParallelTest.test_exception</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_exception</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="79" column="1" bodyfile="lib/run_parallel_test.py" bodystart="79" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test_1a951bb84a715106116dc66f1ee6691479" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel_test.RunParallelTest.test_partial</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_partial</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="89" column="1" bodyfile="lib/run_parallel_test.py" bodystart="89" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="592">
+        <label>TestCase</label>
+      </node>
+      <node id="591">
+        <label>pysc2.lib.run_parallel_test.RunParallelTest</label>
+        <link refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test"/>
+        <childnode refid="592" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="594">
+        <label>TestCase</label>
+      </node>
+      <node id="593">
+        <label>pysc2.lib.run_parallel_test.RunParallelTest</label>
+        <link refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test"/>
+        <childnode refid="594" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/run_parallel_test.py" line="56" column="1" bodyfile="lib/run_parallel_test.py" bodystart="56" bodyend="95"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test_1a2a0625445818f5ca5a8c4c2e9a4c87c5" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::RunParallelTest</scope><name>test_avoids_deadlock</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test_1ade5a57fb5693870e414687c016641b9c" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::RunParallelTest</scope><name>test_exception</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test_1a951bb84a715106116dc66f1ee6691479" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::RunParallelTest</scope><name>test_partial</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test_1a9ee50abb779e56b37631c22327a4e496" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::RunParallelTest</scope><name>test_returns_expected_values</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_run_parallel_test_1adb895ed2bebfa207517b06e8e7632776" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::RunParallelTest</scope><name>test_run_in_parallel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

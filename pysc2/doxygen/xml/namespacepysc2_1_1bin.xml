@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1bin" kind="namespace" language="Python">
+    <compoundname>pysc2::bin</compoundname>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1agent">pysc2::bin::agent</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1agent__remote">pysc2::bin::agent_remote</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1gen__actions">pysc2::bin::gen_actions</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1gen__units">pysc2::bin::gen_units</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1gen__versions">pysc2::bin::gen_versions</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1map__list">pysc2::bin::map_list</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1play">pysc2::bin::play</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1play__vs__agent">pysc2::bin::play_vs_agent</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1replay__actions">pysc2::bin::replay_actions</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1replay__info">pysc2::bin::replay_info</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1run__tests">pysc2::bin::run_tests</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin_1_1valid__actions">pysc2::bin::valid_actions</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bin/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

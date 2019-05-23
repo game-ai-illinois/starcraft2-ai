@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1tests_1_1maps__test" kind="namespace" language="Python">
+    <compoundname>pysc2::tests::maps_test</compoundname>
+    <innerclass refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test" prot="public">pysc2::tests::maps_test::MapsTest</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1tests_1_1maps__test_1a0304381d3a6f931db42f939142620ba1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.maps_test.get_maps</definition>
+        <argsstring>(count=None)</argsstring>
+        <name>get_maps</name>
+        <param>
+          <type>count</type>
+          <defname>count</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test only a few random maps to minimize time.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/maps_test.py" line="37" column="1" bodyfile="tests/maps_test.py" bodystart="37" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/maps_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

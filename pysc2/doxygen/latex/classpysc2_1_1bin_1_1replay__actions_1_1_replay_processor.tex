@@ -1,0 +1,89 @@
+\hypertarget{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor}{}\section{pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor Class Reference}
+\label{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor}\index{pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor@{pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor}}
+Inheritance diagram for pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8640877e968c8b982a66f28ce5c3f775}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, proc\+\_\+id, \mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8903821002ce6c7057910d79cb809cac}{run\+\_\+config}}, \mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8d178d30db8f674180796af093c627d1}{replay\+\_\+queue}}, \mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a078296122e07fc1609673f321cf3f9d1}{stats\+\_\+queue}})
+\item 
+def \mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_acdd25278568d6e863bf275c38bc50120}{run}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_aa6240fbedbd2a9a742d64c69e61c4922}{process\+\_\+replay}} (self, controller, replay\+\_\+data, map\+\_\+data, player\+\_\+id)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a373f2c1abcccf2e8e74a14f3922a6bf7}{stats}}
+\item 
+\mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8903821002ce6c7057910d79cb809cac}{run\+\_\+config}}
+\item 
+\mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8d178d30db8f674180796af093c627d1}{replay\+\_\+queue}}
+\item 
+\mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a078296122e07fc1609673f321cf3f9d1}{stats\+\_\+queue}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A Process that pulls replays and processes them.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8640877e968c8b982a66f28ce5c3f775}\label{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8640877e968c8b982a66f28ce5c3f775}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{proc\+\_\+id,  }\item[{}]{run\+\_\+config,  }\item[{}]{replay\+\_\+queue,  }\item[{}]{stats\+\_\+queue }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_aa6240fbedbd2a9a742d64c69e61c4922}\label{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_aa6240fbedbd2a9a742d64c69e61c4922}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}!process\+\_\+replay@{process\+\_\+replay}}
+\index{process\+\_\+replay@{process\+\_\+replay}!pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}}
+\subsubsection{\texorpdfstring{process\+\_\+replay()}{process\_replay()}}
+{\footnotesize\ttfamily def pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor.\+process\+\_\+replay (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{controller,  }\item[{}]{replay\+\_\+data,  }\item[{}]{map\+\_\+data,  }\item[{}]{player\+\_\+id }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process a single replay, updating the stats.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_acdd25278568d6e863bf275c38bc50120}\label{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_acdd25278568d6e863bf275c38bc50120}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}!run@{run}}
+\index{run@{run}!pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8d178d30db8f674180796af093c627d1}\label{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8d178d30db8f674180796af093c627d1}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}!replay\+\_\+queue@{replay\+\_\+queue}}
+\index{replay\+\_\+queue@{replay\+\_\+queue}!pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}}
+\subsubsection{\texorpdfstring{replay\+\_\+queue}{replay\_queue}}
+{\footnotesize\ttfamily pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor.\+replay\+\_\+queue}
+
+\mbox{\Hypertarget{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8903821002ce6c7057910d79cb809cac}\label{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a8903821002ce6c7057910d79cb809cac}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}!run\+\_\+config@{run\+\_\+config}}
+\index{run\+\_\+config@{run\+\_\+config}!pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}}
+\subsubsection{\texorpdfstring{run\+\_\+config}{run\_config}}
+{\footnotesize\ttfamily pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor.\+run\+\_\+config}
+
+\mbox{\Hypertarget{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a373f2c1abcccf2e8e74a14f3922a6bf7}\label{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a373f2c1abcccf2e8e74a14f3922a6bf7}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}!stats@{stats}}
+\index{stats@{stats}!pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}}
+\subsubsection{\texorpdfstring{stats}{stats}}
+{\footnotesize\ttfamily pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor.\+stats}
+
+\mbox{\Hypertarget{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a078296122e07fc1609673f321cf3f9d1}\label{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_a078296122e07fc1609673f321cf3f9d1}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}!stats\+\_\+queue@{stats\+\_\+queue}}
+\index{stats\+\_\+queue@{stats\+\_\+queue}!pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor@{pysc2\+::bin\+::replay\+\_\+actions\+::\+Replay\+Processor}}
+\subsubsection{\texorpdfstring{stats\+\_\+queue}{stats\_queue}}
+{\footnotesize\ttfamily pysc2.\+bin.\+replay\+\_\+actions.\+Replay\+Processor.\+stats\+\_\+queue}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bin/\mbox{\hyperlink{replay__actions_8py}{replay\+\_\+actions.\+py}}\end{DoxyCompactItemize}

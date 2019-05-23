@@ -1,0 +1,55 @@
+.TH "pysc2.lib.video_writer.VideoWriter" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.video_writer.VideoWriter
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits FFmpegWriter\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, filename, frame_rate)"
+.br
+.ti -1c
+.RI "def \fBadd\fP (self, frame)"
+.br
+.ti -1c
+.RI "def \fB__del__\fP (self)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Write a video based on a numpy array.
+
+Subclass/wrap FFmpegWriter to make it easy to switch to a different library.
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.video_writer\&.VideoWriter\&.__init__ ( self,  filename,  frame_rate)"
+
+.SS "def pysc2\&.lib\&.video_writer\&.VideoWriter\&.__del__ ( self)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.video_writer\&.VideoWriter\&.add ( self,  frame)"
+
+.PP
+.nf
+Add a frame to the video based on a numpy array.
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

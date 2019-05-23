@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1colors" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::colors</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1colors_1_1_color" prot="public">pysc2::lib::colors::Color</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a37add41a750e4e281c149ca0b1e26171" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.black</definition>
+        <argsstring></argsstring>
+        <name>black</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(0, 0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="68" column="1" bodyfile="lib/colors.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.white</definition>
+        <argsstring></argsstring>
+        <name>white</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(255, 255, 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="69" column="1" bodyfile="lib/colors.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1acd944331427c35a1b9a0031140af69d1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.red</definition>
+        <argsstring></argsstring>
+        <name>red</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(255, 0, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="70" column="1" bodyfile="lib/colors.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a64e6bc776ebb60cd772930d20e8c6546" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.green</definition>
+        <argsstring></argsstring>
+        <name>green</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(0, 255, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="71" column="1" bodyfile="lib/colors.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a509484ea2ad8bba301d137a80c7bf4d5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.blue</definition>
+        <argsstring></argsstring>
+        <name>blue</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(0, 0, 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="72" column="1" bodyfile="lib/colors.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a617105e0d36f090c7b3746655fcf904e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.cyan</definition>
+        <argsstring></argsstring>
+        <name>cyan</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(0, 255, 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="73" column="1" bodyfile="lib/colors.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a9e788f470ae13da2f10d00cf3e541964" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.yellow</definition>
+        <argsstring></argsstring>
+        <name>yellow</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(255, 255, 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="74" column="1" bodyfile="lib/colors.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a6945028eea5ce10d8f5b215c20562eb2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.purple</definition>
+        <argsstring></argsstring>
+        <name>purple</name>
+        <initializer>=  <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(255, 0, 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="75" column="1" bodyfile="lib/colors.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1ad26728a45e354e2342bdbca4b84b6561" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.PLAYER_RELATIVE_PALETTE</definition>
+        <argsstring></argsstring>
+        <name>PLAYER_RELATIVE_PALETTE</name>
+        <initializer>=  numpy.array([
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a37add41a750e4e281c149ca0b1e26171" kindref="member">black</ref>,                 # Background.
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(0, 142, 0),      # Self. (Green).
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a9e788f470ae13da2f10d00cf3e541964" kindref="member">yellow</ref>,                # Ally.
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(129, 166, 196),  # Neutral. (Cyan.)
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(113, 25, 34),    # Enemy. (Red).
+])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="165" column="1" bodyfile="lib/colors.py" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a41162e76daca963013e431682a2012b9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.PLAYER_ABSOLUTE_PALETTE</definition>
+        <argsstring></argsstring>
+        <name>PLAYER_ABSOLUTE_PALETTE</name>
+        <initializer>=  numpy.array([
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a37add41a750e4e281c149ca0b1e26171" kindref="member">black</ref>,                 # Background
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(0, 142, 0),      # 1: Green
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(113, 25, 34),    # 2: Red
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(223, 215, 67),   # 3: Yellow
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(66, 26, 121),    # 4: Purple
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(222, 144, 50),   # 5: Orange
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(46, 72, 237),    # 6: Blue
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(207, 111, 176),  # 7: Pink
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(189, 251, 157),  # 8: Light <ref refid="namespacepysc2_1_1lib_1_1colors_1a64e6bc776ebb60cd772930d20e8c6546" kindref="member">green</ref>
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" kindref="member">white</ref> * 0.1,           # 9: Does the game ever have more than 8 players?
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" kindref="member">white</ref> * 0.1,           # 10: Does the game ever have more than 8 players?
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" kindref="member">white</ref> * 0.1,           # 11: Does the game ever have more than 8 players?
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" kindref="member">white</ref> * 0.1,           # 12: Does the game ever have more than 8 players?
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" kindref="member">white</ref> * 0.1,           # 13: Does the game ever have more than 8 players?
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" kindref="member">white</ref> * 0.1,           # 14: Does the game ever have more than 8 players?
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" kindref="member">white</ref> * 0.1,           # 15: Does the game ever have more than 8 players?
+    <ref refid="classpysc2_1_1lib_1_1colors_1_1_color" kindref="compound">Color</ref>(129, 166, 196),  # 16 Neutral: Cyan
+])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="173" column="1" bodyfile="lib/colors.py" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a49a89c28c4139d4865ac3afbaa75dadb" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.VISIBILITY_PALETTE</definition>
+        <argsstring></argsstring>
+        <name>VISIBILITY_PALETTE</name>
+        <initializer>=  numpy.array([
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a37add41a750e4e281c149ca0b1e26171" kindref="member">black</ref>,         # Hidden
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" kindref="member">white</ref> * 0.25,  # Fogged
+    <ref refid="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" kindref="member">white</ref> * 0.6,   # Visible
+])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="193" column="1" bodyfile="lib/colors.py" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a1be837fbf1fcca5bad293e5d6c15ae9a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.CAMERA_PALETTE</definition>
+        <argsstring></argsstring>
+        <name>CAMERA_PALETTE</name>
+        <initializer>=  numpy.array([<ref refid="namespacepysc2_1_1lib_1_1colors_1a37add41a750e4e281c149ca0b1e26171" kindref="member">black</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a0325dca99cc825280724506477c24bff" kindref="member">white</ref> * 0.6])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="199" column="1" bodyfile="lib/colors.py" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1a076e50289bc6951b799f3e001d170159" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.CREEP_PALETTE</definition>
+        <argsstring></argsstring>
+        <name>CREEP_PALETTE</name>
+        <initializer>=  numpy.array([<ref refid="namespacepysc2_1_1lib_1_1colors_1a37add41a750e4e281c149ca0b1e26171" kindref="member">black</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a6945028eea5ce10d8f5b215c20562eb2" kindref="member">purple</ref> * 0.4])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="200" column="1" bodyfile="lib/colors.py" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1ae0244020a31c05a609bdc2bff344eaf5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.POWER_PALETTE</definition>
+        <argsstring></argsstring>
+        <name>POWER_PALETTE</name>
+        <initializer>=  numpy.array([<ref refid="namespacepysc2_1_1lib_1_1colors_1a37add41a750e4e281c149ca0b1e26171" kindref="member">black</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a617105e0d36f090c7b3746655fcf904e" kindref="member">cyan</ref> * 0.7])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="201" column="1" bodyfile="lib/colors.py" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1aea6779f03892d10b11f7615e99443400" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.SELECTED_PALETTE</definition>
+        <argsstring></argsstring>
+        <name>SELECTED_PALETTE</name>
+        <initializer>=  numpy.array([<ref refid="namespacepysc2_1_1lib_1_1colors_1a37add41a750e4e281c149ca0b1e26171" kindref="member">black</ref>, <ref refid="namespacepysc2_1_1lib_1_1colors_1a64e6bc776ebb60cd772930d20e8c6546" kindref="member">green</ref> * 0.7])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="202" column="1" bodyfile="lib/colors.py" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1ac5b107d158a7a27a2c746e740761e34a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.effects</definition>
+        <argsstring></argsstring>
+        <name>effects</name>
+        <initializer>=  numpy.array([
+    [0, 0, 0],
+    [72, 173, 207],
+    [203, 76, 49],
+    [122, 98, 209],
+    [109, 183, 67],
+    [192, 80, 181],
+    [86, 185, 138],
+    [211, 63, 115],
+    [81, 128, 60],
+    [182, 135, 208],
+    [182, 174, 73],
+    [95, 123, 196],
+    [220, 146, 71],
+    [187, 102, 147],
+    [138, 109, 48],
+    [197, 103, 99],
+])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="216" column="1" bodyfile="lib/colors.py" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1lib_1_1colors_1ae31c7c64f1ab70352f47c7e6fe7a1124" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::lib::colors.distinct_colors</definition>
+        <argsstring></argsstring>
+        <name>distinct_colors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="237" column="1" bodyfile="lib/colors.py" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1colors_1ae002858f8d783860fb6fd2cb780144c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.smooth_hue_palette</definition>
+        <argsstring>(scale)</argsstring>
+        <name>smooth_hue_palette</name>
+        <param>
+          <type>scale</type>
+          <defname>scale</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Takes an array of ints and returns a corresponding colored rgb array.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="78" column="1" bodyfile="lib/colors.py" bodystart="78" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1colors_1a16abe444569e0f4247136c250a48e6a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.shuffled_hue</definition>
+        <argsstring>(scale)</argsstring>
+        <name>shuffled_hue</name>
+        <param>
+          <type>scale</type>
+          <defname>scale</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="124" column="1" bodyfile="lib/colors.py" bodystart="124" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1colors_1ab4af018d663e7de0ef7b62c729fb81a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.piece_wise_linear</definition>
+        <argsstring>(scale, points)</argsstring>
+        <name>piece_wise_linear</name>
+        <param>
+          <type>scale</type>
+          <defname>scale</defname>
+        </param>
+        <param>
+          <type>points</type>
+          <defname>points</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create a palette that is piece-wise linear given some colors at points.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="130" column="1" bodyfile="lib/colors.py" bodystart="130" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1colors_1ac3ee96fe4f9d521165e949a436b76968" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.winter</definition>
+        <argsstring>(scale)</argsstring>
+        <name>winter</name>
+        <param>
+          <type>scale</type>
+          <defname>scale</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="152" column="1" bodyfile="lib/colors.py" bodystart="152" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1colors_1a8f4a49eb3a5ca2bf529362e14e3d711c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.hot</definition>
+        <argsstring>(scale)</argsstring>
+        <name>hot</name>
+        <param>
+          <type>scale</type>
+          <defname>scale</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="157" column="1" bodyfile="lib/colors.py" bodystart="157" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1colors_1ae0af5a08f5570f8eb5b2b66fcf26ea15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.colors.unit_type</definition>
+        <argsstring>(scale=None)</argsstring>
+        <name>unit_type</name>
+        <param>
+          <type>scale</type>
+          <defname>scale</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns a palette that maps unit types to rgb colors.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/colors.py" line="205" column="1" bodyfile="lib/colors.py" bodystart="205" bodyend="215"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/colors.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

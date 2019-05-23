@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1environment_1_1_step_type" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::environment::StepType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1environment_1_1_step_type_1a397b3b1f59357b464448f3710d3005b8" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.env.environment.StepType::FIRST</definition>
+        <argsstring></argsstring>
+        <name>FIRST</name>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="62" column="1" bodyfile="env/environment.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1environment_1_1_step_type_1a04325a4421dd806cde9b98ba7e6b3cab" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.env.environment.StepType::MID</definition>
+        <argsstring></argsstring>
+        <name>MID</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="64" column="1" bodyfile="env/environment.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1environment_1_1_step_type_1af5c10775f021283b4365dcf60f469699" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.env.environment.StepType::LAST</definition>
+        <argsstring></argsstring>
+        <name>LAST</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="66" column="1" bodyfile="env/environment.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Defines the status of a `TimeStep` within a sequence.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="678">
+        <label>pysc2.env.environment.StepType</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_step_type"/>
+        <childnode refid="679" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="679">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="682">
+        <label>int</label>
+      </node>
+      <node id="680">
+        <label>pysc2.env.environment.StepType</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_step_type"/>
+        <childnode refid="681" relation="public-inheritance">
+        </childnode>
+        <childnode refid="682" relation="usage">
+          <edgelabel>MID</edgelabel>
+          <edgelabel>LAST</edgelabel>
+          <edgelabel>FIRST</edgelabel>
+        </childnode>
+      </node>
+      <node id="681">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/environment.py" line="59" column="1" bodyfile="env/environment.py" bodystart="59" bodyend="70"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1environment_1_1_step_type_1a397b3b1f59357b464448f3710d3005b8" prot="public" virt="non-virtual"><scope>pysc2::env::environment::StepType</scope><name>FIRST</name></member>
+      <member refid="classpysc2_1_1env_1_1environment_1_1_step_type_1af5c10775f021283b4365dcf60f469699" prot="public" virt="non-virtual"><scope>pysc2::env::environment::StepType</scope><name>LAST</name></member>
+      <member refid="classpysc2_1_1env_1_1environment_1_1_step_type_1a04325a4421dd806cde9b98ba7e6b3cab" prot="public" virt="non-virtual"><scope>pysc2::env::environment::StepType</scope><name>MID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

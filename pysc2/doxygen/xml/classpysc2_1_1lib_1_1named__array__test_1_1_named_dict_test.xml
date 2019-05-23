@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1named__array__test_1_1_named_dict_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::named_array_test::NamedDictTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1named__array__test_1_1_named_dict_test_1aa03b1f789100738ff34f6944d56d1c52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array_test.NamedDictTest.test_named_dict</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_named_dict</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array_test.py" line="33" column="1" bodyfile="lib/named_array_test.py" bodystart="33" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="435">
+        <label>TestCase</label>
+      </node>
+      <node id="434">
+        <label>pysc2.lib.named_array_test.NamedDictTest</label>
+        <link refid="classpysc2_1_1lib_1_1named__array__test_1_1_named_dict_test"/>
+        <childnode refid="435" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="437">
+        <label>TestCase</label>
+      </node>
+      <node id="436">
+        <label>pysc2.lib.named_array_test.NamedDictTest</label>
+        <link refid="classpysc2_1_1lib_1_1named__array__test_1_1_named_dict_test"/>
+        <childnode refid="437" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/named_array_test.py" line="31" column="1" bodyfile="lib/named_array_test.py" bodystart="31" bodyend="43"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1named__array__test_1_1_named_dict_test_1aa03b1f789100738ff34f6944d56d1c52" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array_test::NamedDictTest</scope><name>test_named_dict</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

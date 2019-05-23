@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1named__array" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::named_array</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1named__array_1_1_named_dict" prot="public">pysc2::lib::named_array::NamedDict</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array" prot="public">pysc2::lib::named_array::NamedNumpyArray</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1lib_1_1named__array_1a154711ec5ff637be6bf9e6cf1cd8749c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array._get_index</definition>
+        <argsstring>(obj, index)</argsstring>
+        <name>_get_index</name>
+        <param>
+          <type>obj</type>
+          <defname>obj</defname>
+        </param>
+        <param>
+          <type>index</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Turn a generalized index (int/slice/str) into a real index (int/slice).</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="194" column="1" bodyfile="lib/named_array.py" bodystart="194" bodyend="208"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/named_array.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

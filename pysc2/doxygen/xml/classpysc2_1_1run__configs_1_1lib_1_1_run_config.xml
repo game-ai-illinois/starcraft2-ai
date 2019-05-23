@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1run__configs_1_1lib_1_1_run_config" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::run_configs::lib::RunConfig</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classpysc2_1_1run__configs_1_1platforms_1_1_local_base" prot="public" virt="non-virtual">pysc2.run_configs.platforms.LocalBase</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aca6d18d30df342636c175478332b6aa3" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.run_configs.lib.RunConfig::replay_dir</definition>
+        <argsstring></argsstring>
+        <name>replay_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="46" column="1" bodyfile="run_configs/lib.py" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aab93dda31495e5968f79bdf77e139710" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.run_configs.lib.RunConfig::data_dir</definition>
+        <argsstring></argsstring>
+        <name>data_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="47" column="1" bodyfile="run_configs/lib.py" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1ab335f1c1061e8b70ef0c1ecf8834d4a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.run_configs.lib.RunConfig::tmp_dir</definition>
+        <argsstring></argsstring>
+        <name>tmp_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="48" column="1" bodyfile="run_configs/lib.py" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1af8bd9eeb877d8de7ac75b455799d88bf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.run_configs.lib.RunConfig::cwd</definition>
+        <argsstring></argsstring>
+        <name>cwd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="49" column="1" bodyfile="run_configs/lib.py" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aae2166085e6fd820345e8af02743b7aa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.run_configs.lib.RunConfig::env</definition>
+        <argsstring></argsstring>
+        <name>env</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="50" column="1" bodyfile="run_configs/lib.py" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1abd1454befc5a4343a64b39c25ab20698" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.lib.RunConfig.__init__</definition>
+        <argsstring>(self, replay_dir, data_dir, tmp_dir, cwd=None, env=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aca6d18d30df342636c175478332b6aa3" kindref="member">replay_dir</ref></type>
+          <defname>replay_dir</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aab93dda31495e5968f79bdf77e139710" kindref="member">data_dir</ref></type>
+          <defname>data_dir</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1ab335f1c1061e8b70ef0c1ecf8834d4a8" kindref="member">tmp_dir</ref></type>
+          <defname>tmp_dir</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1af8bd9eeb877d8de7ac75b455799d88bf" kindref="member">cwd</ref></type>
+          <defname>cwd</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aae2166085e6fd820345e8af02743b7aa" kindref="member">env</ref></type>
+          <defname>env</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize the runconfig with the various directories needed.
+
+Args:
+  replay_dir: Where to find replays. Might not be accessible to SC2.
+  data_dir: Where SC2 should find the data and battle.net cache.
+  tmp_dir: The temporary directory. None is system default.
+  cwd: Where to set the current working directory.
+  env: What to pass as the environment variables.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="36" column="1" bodyfile="run_configs/lib.py" bodystart="36" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1adc54814ab2a8ccdf0f19e11d006e30df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.lib.RunConfig.map_data</definition>
+        <argsstring>(self, map_name)</argsstring>
+        <name>map_data</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>map_name</type>
+          <defname>map_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the map data for a map by name or path.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="52" column="1" bodyfile="run_configs/lib.py" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aaca5669c522ce76daf84075a40de9e3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.lib.RunConfig.abs_replay_path</definition>
+        <argsstring>(self, replay_path)</argsstring>
+        <name>abs_replay_path</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>replay_path</type>
+          <defname>replay_path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the absolute path to the replay, outside the sandbox.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="57" column="1" bodyfile="run_configs/lib.py" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a59a4465acde9c23d45d3186275b4b9e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.lib.RunConfig.replay_data</definition>
+        <argsstring>(self, replay_path)</argsstring>
+        <name>replay_data</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>replay_path</type>
+          <defname>replay_path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the replay data given a path to the replay.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="61" column="1" bodyfile="run_configs/lib.py" bodystart="61" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1ab57b5db47c2e8061b223eac014c77098" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.lib.RunConfig.replay_paths</definition>
+        <argsstring>(self, replay_dir)</argsstring>
+        <name>replay_paths</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aca6d18d30df342636c175478332b6aa3" kindref="member">replay_dir</ref></type>
+          <defname>replay_dir</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A generator yielding the full path to the replays under `replay_dir`.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="66" column="1" bodyfile="run_configs/lib.py" bodystart="66" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a7ba199b4c7d8503dd9d8bbdbdf13ede8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.lib.RunConfig.save_replay</definition>
+        <argsstring>(self, replay_data, replay_dir, prefix=None)</argsstring>
+        <name>save_replay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a59a4465acde9c23d45d3186275b4b9e9" kindref="member">replay_data</ref></type>
+          <defname>replay_data</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aca6d18d30df342636c175478332b6aa3" kindref="member">replay_dir</ref></type>
+          <defname>replay_dir</defname>
+        </param>
+        <param>
+          <type>prefix</type>
+          <defname>prefix</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Save a replay to a directory, returning the path to the replay.
+
+Args:
+  replay_data: The result of controller.save_replay(), ie the binary data.
+  replay_dir: Where to save the replay. This can be absolute or relative.
+  prefix: Optional prefix for the replay filename.
+
+Returns:
+  The full path where the replay is saved.
+
+Raises:
+  ValueError: If the prefix contains the path seperator.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="76" column="1" bodyfile="run_configs/lib.py" bodystart="76" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a3fb702fa3f4fe48d6d4fe2f3cfe289e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.lib.RunConfig.start</definition>
+        <argsstring>(self, version=None, kwargs)</argsstring>
+        <name>start</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>version</type>
+          <defname>version</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Launch the game. Find the version and run sc_process.StarcraftProcess.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="107" column="1" bodyfile="run_configs/lib.py" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a33621ff0a10545ef72e99fb96e4eb76c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.lib.RunConfig.all_subclasses</definition>
+        <argsstring>(cls)</argsstring>
+        <name>all_subclasses</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>An iterator over all subclasses of `cls`.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="112" column="1" bodyfile="run_configs/lib.py" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1acd21dd2a75fcb4023287d6dc23a7a193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.lib.RunConfig.name</definition>
+        <argsstring>(cls)</argsstring>
+        <name>name</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="120" column="1" bodyfile="run_configs/lib.py" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1ad01a3bc9eb157d41f66de62931f27948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.lib.RunConfig.priority</definition>
+        <argsstring>(cls)</argsstring>
+        <name>priority</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>None means this isn&apos;t valid. Run the one with the max priority.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="124" column="1" bodyfile="run_configs/lib.py" bodystart="124" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Base class for different run configs.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="583">
+        <label>pysc2.run_configs.platforms.MacOS</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_mac_o_s"/>
+        <childnode refid="580" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="582">
+        <label>pysc2.run_configs.platforms.Linux</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_linux"/>
+        <childnode refid="580" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="581">
+        <label>pysc2.run_configs.platforms.Cygwin</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_cygwin"/>
+        <childnode refid="580" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="580">
+        <label>pysc2.run_configs.platforms.LocalBase</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_local_base"/>
+        <childnode refid="578" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="579">
+        <label>object</label>
+      </node>
+      <node id="584">
+        <label>pysc2.run_configs.platforms.Windows</label>
+        <link refid="classpysc2_1_1run__configs_1_1platforms_1_1_windows"/>
+        <childnode refid="580" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="578">
+        <label>pysc2.run_configs.lib.RunConfig</label>
+        <link refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config"/>
+        <childnode refid="579" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="586">
+        <label>object</label>
+      </node>
+      <node id="585">
+        <label>pysc2.run_configs.lib.RunConfig</label>
+        <link refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config"/>
+        <childnode refid="586" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="run_configs/lib.py" line="33" column="1" bodyfile="run_configs/lib.py" bodystart="33" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1abd1454befc5a4343a64b39c25ab20698" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aaca5669c522ce76daf84075a40de9e3f" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>abs_replay_path</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a33621ff0a10545ef72e99fb96e4eb76c" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>all_subclasses</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1af8bd9eeb877d8de7ac75b455799d88bf" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>cwd</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aab93dda31495e5968f79bdf77e139710" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>data_dir</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aae2166085e6fd820345e8af02743b7aa" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>env</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1adc54814ab2a8ccdf0f19e11d006e30df" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>map_data</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1acd21dd2a75fcb4023287d6dc23a7a193" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>name</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1ad01a3bc9eb157d41f66de62931f27948" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>priority</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a59a4465acde9c23d45d3186275b4b9e9" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>replay_data</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1aca6d18d30df342636c175478332b6aa3" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>replay_dir</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1ab57b5db47c2e8061b223eac014c77098" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>replay_paths</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a7ba199b4c7d8503dd9d8bbdbdf13ede8" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>save_replay</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1a3fb702fa3f4fe48d6d4fe2f3cfe289e8" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>start</name></member>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config_1ab335f1c1061e8b70ef0c1ecf8834d4a8" prot="public" virt="non-virtual"><scope>pysc2::run_configs::lib::RunConfig</scope><name>tmp_dir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

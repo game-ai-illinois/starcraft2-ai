@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1metrics_1_1_metrics" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::metrics::Metrics</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1metrics_1_1_metrics_1ab37401f172201cc69edf4c574bf3528f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.metrics.Metrics.__init__</definition>
+        <argsstring>(self, map_name)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>map_name</type>
+          <defname>map_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/metrics.py" line="34" column="1" bodyfile="lib/metrics.py" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1metrics_1_1_metrics_1ab47568f6fd6658a8e90a8f22fe226996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.metrics.Metrics.increment_instance</definition>
+        <argsstring>(self)</argsstring>
+        <name>increment_instance</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/metrics.py" line="37" column="1" bodyfile="lib/metrics.py" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1metrics_1_1_metrics_1a9be503f4e7cdac4e3d0b919cdff95a35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.metrics.Metrics.increment_episode</definition>
+        <argsstring>(self)</argsstring>
+        <name>increment_episode</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/metrics.py" line="40" column="1" bodyfile="lib/metrics.py" bodystart="40" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1metrics_1_1_metrics_1a3b13b00f7ab9a0d97e61011db7b40794" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.metrics.Metrics.measure_step_time</definition>
+        <argsstring>(self, num_steps=1)</argsstring>
+        <name>measure_step_time</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>num_steps</type>
+          <defname>num_steps</defname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a context manager to measure the time to perform N game steps.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/metrics.py" line="43" column="1" bodyfile="lib/metrics.py" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1metrics_1_1_metrics_1ac2559f001b888031e4c7ab49b651479a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.metrics.Metrics.measure_observation_time</definition>
+        <argsstring>(self)</argsstring>
+        <name>measure_observation_time</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a context manager to measure the time to get an observation.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/metrics.py" line="48" column="1" bodyfile="lib/metrics.py" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1metrics_1_1_metrics_1a2c2e9d83ab40f8d6df984ee21f30ecbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.metrics.Metrics.close</definition>
+        <argsstring>(self)</argsstring>
+        <name>close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/metrics.py" line="52" column="1" bodyfile="lib/metrics.py" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1metrics_1_1_metrics_1a4ae4ba202f9f230f27c4c9dfb224f77e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.metrics.Metrics.__del__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__del__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/metrics.py" line="55" column="1" bodyfile="lib/metrics.py" bodystart="55" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Interface for tracking the number and/or latency of episodes and steps.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="379">
+        <label>object</label>
+      </node>
+      <node id="378">
+        <label>pysc2.lib.metrics.Metrics</label>
+        <link refid="classpysc2_1_1lib_1_1metrics_1_1_metrics"/>
+        <childnode refid="379" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="381">
+        <label>object</label>
+      </node>
+      <node id="380">
+        <label>pysc2.lib.metrics.Metrics</label>
+        <link refid="classpysc2_1_1lib_1_1metrics_1_1_metrics"/>
+        <childnode refid="381" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/metrics.py" line="31" column="1" bodyfile="lib/metrics.py" bodystart="31" bodyend="57"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1metrics_1_1_metrics_1a4ae4ba202f9f230f27c4c9dfb224f77e" prot="public" virt="non-virtual"><scope>pysc2::lib::metrics::Metrics</scope><name>__del__</name></member>
+      <member refid="classpysc2_1_1lib_1_1metrics_1_1_metrics_1ab37401f172201cc69edf4c574bf3528f" prot="public" virt="non-virtual"><scope>pysc2::lib::metrics::Metrics</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1metrics_1_1_metrics_1a2c2e9d83ab40f8d6df984ee21f30ecbf" prot="public" virt="non-virtual"><scope>pysc2::lib::metrics::Metrics</scope><name>close</name></member>
+      <member refid="classpysc2_1_1lib_1_1metrics_1_1_metrics_1a9be503f4e7cdac4e3d0b919cdff95a35" prot="public" virt="non-virtual"><scope>pysc2::lib::metrics::Metrics</scope><name>increment_episode</name></member>
+      <member refid="classpysc2_1_1lib_1_1metrics_1_1_metrics_1ab47568f6fd6658a8e90a8f22fe226996" prot="public" virt="non-virtual"><scope>pysc2::lib::metrics::Metrics</scope><name>increment_instance</name></member>
+      <member refid="classpysc2_1_1lib_1_1metrics_1_1_metrics_1ac2559f001b888031e4c7ab49b651479a" prot="public" virt="non-virtual"><scope>pysc2::lib::metrics::Metrics</scope><name>measure_observation_time</name></member>
+      <member refid="classpysc2_1_1lib_1_1metrics_1_1_metrics_1a3b13b00f7ab9a0d97e61011db7b40794" prot="public" virt="non-virtual"><scope>pysc2::lib::metrics::Metrics</scope><name>measure_step_time</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

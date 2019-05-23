@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features__test_1_1_features_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features_test::FeaturesTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1ae155ba0432bbdf3c0637edde339a4bf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testFunctionsIdsAreConsistent</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFunctionsIdsAreConsistent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="386" column="1" bodyfile="lib/features_test.py" bodystart="386" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a9caf3659f3783bd5cb55e47fea09fdf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testAllVersionsOfAnAbilityHaveTheSameGeneral</definition>
+        <argsstring>(self)</argsstring>
+        <name>testAllVersionsOfAnAbilityHaveTheSameGeneral</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="390" column="1" bodyfile="lib/features_test.py" bodystart="390" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a174e0178a227e367c212dc99de396dab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testValidFunctionsAreConsistent</definition>
+        <argsstring>(self)</argsstring>
+        <name>testValidFunctionsAreConsistent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="395" column="1" bodyfile="lib/features_test.py" bodystart="395" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1af14dc6f548faff56839d0b6d2ffb0af9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.gen_random_function_call</definition>
+        <argsstring>(self, action_spec, func_id)</argsstring>
+        <name>gen_random_function_call</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>action_spec</type>
+          <defname>action_spec</defname>
+        </param>
+        <param>
+          <type>func_id</type>
+          <defname>func_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="406" column="1" bodyfile="lib/features_test.py" bodystart="406" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a4e3f221ce65b9d51eab877ba66bd8c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testIdsMatchIndex</definition>
+        <argsstring>(self)</argsstring>
+        <name>testIdsMatchIndex</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="411" column="1" bodyfile="lib/features_test.py" bodystart="411" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1ad4095c1ac9fa6ecfa7b0824eeb39972a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testReversingUnknownAction</definition>
+        <argsstring>(self)</argsstring>
+        <name>testReversingUnknownAction</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="420" column="1" bodyfile="lib/features_test.py" bodystart="420" bodyend="428"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a47c11cce3301e4e196d58febbbfdca1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testSpecificActionsAreReversible</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSpecificActionsAreReversible</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test that the `transform_action` and `reverse_action` are inverses.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="429" column="1" bodyfile="lib/features_test.py" bodystart="429" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1aaa465371eb5f843df3b7d0b8b7b8e3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testCanPickleSpecs</definition>
+        <argsstring>(self)</argsstring>
+        <name>testCanPickleSpecs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="461" column="1" bodyfile="lib/features_test.py" bodystart="461" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a9dfbb6050949524fbe9eaddc307c60a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testCanPickleFunctionCall</definition>
+        <argsstring>(self)</argsstring>
+        <name>testCanPickleFunctionCall</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="471" column="1" bodyfile="lib/features_test.py" bodystart="471" bodyend="474"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1aabcdc707b4f55ce05986959787f034c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testCanDeepcopyNumpyFunctionCall</definition>
+        <argsstring>(self)</argsstring>
+        <name>testCanDeepcopyNumpyFunctionCall</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="475" column="1" bodyfile="lib/features_test.py" bodystart="475" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a55941b95526a89d67c4f1ac577bc6cac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testSizeConstructors</definition>
+        <argsstring>(self)</argsstring>
+        <name>testSizeConstructors</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="482" column="1" bodyfile="lib/features_test.py" bodystart="482" bodyend="521"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1abd061b800bbe5cc61f11740d27411fb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testFlRgbActionSpec</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFlRgbActionSpec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="522" column="1" bodyfile="lib/features_test.py" bodystart="522" bodyend="540"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a9b48fdd9a34b1891d18561867d4cd7a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features_test.FeaturesTest.testFlRgbObservationSpec</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFlRgbObservationSpec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features_test.py" line="541" column="1" bodyfile="lib/features_test.py" bodystart="541" bodyend="552"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="259">
+        <label>TestCase</label>
+      </node>
+      <node id="258">
+        <label>pysc2.lib.features_test.FeaturesTest</label>
+        <link refid="classpysc2_1_1lib_1_1features__test_1_1_features_test"/>
+        <childnode refid="259" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="261">
+        <label>TestCase</label>
+      </node>
+      <node id="260">
+        <label>pysc2.lib.features_test.FeaturesTest</label>
+        <link refid="classpysc2_1_1lib_1_1features__test_1_1_features_test"/>
+        <childnode refid="261" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features_test.py" line="384" column="1" bodyfile="lib/features_test.py" bodystart="384" bodyend="553"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1af14dc6f548faff56839d0b6d2ffb0af9" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>gen_random_function_call</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a9caf3659f3783bd5cb55e47fea09fdf4" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testAllVersionsOfAnAbilityHaveTheSameGeneral</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1aabcdc707b4f55ce05986959787f034c1" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testCanDeepcopyNumpyFunctionCall</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a9dfbb6050949524fbe9eaddc307c60a9" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testCanPickleFunctionCall</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1aaa465371eb5f843df3b7d0b8b7b8e3c1" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testCanPickleSpecs</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1abd061b800bbe5cc61f11740d27411fb4" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testFlRgbActionSpec</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a9b48fdd9a34b1891d18561867d4cd7a8" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testFlRgbObservationSpec</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1ae155ba0432bbdf3c0637edde339a4bf3" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testFunctionsIdsAreConsistent</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a4e3f221ce65b9d51eab877ba66bd8c9a" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testIdsMatchIndex</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1ad4095c1ac9fa6ecfa7b0824eeb39972a" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testReversingUnknownAction</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a55941b95526a89d67c4f1ac577bc6cac" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testSizeConstructors</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a47c11cce3301e4e196d58febbbfdca1b" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testSpecificActionsAreReversible</name></member>
+      <member refid="classpysc2_1_1lib_1_1features__test_1_1_features_test_1a174e0178a227e367c212dc99de396dab" prot="public" virt="non-virtual"><scope>pysc2::lib::features_test::FeaturesTest</scope><name>testValidFunctionsAreConsistent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

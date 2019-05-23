@@ -1,0 +1,164 @@
+.TH "pysc2.lib.stopwatch.StopWatch" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.stopwatch.StopWatch
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBenabled\fP=True, \fBtrace\fP=False)"
+.br
+.ti -1c
+.RI "def \fB__call__\fP (self, name)"
+.br
+.ti -1c
+.RI "def \fBdecorate\fP (self, name_or_func)"
+.br
+.ti -1c
+.RI "def \fBpush\fP (self, name)"
+.br
+.ti -1c
+.RI "def \fBpop\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcur_stack\fP (self)"
+.br
+.ti -1c
+.RI "def \fBclear\fP (self)"
+.br
+.ti -1c
+.RI "def \fBadd\fP (self, name, duration)"
+.br
+.ti -1c
+.RI "def \fB__getitem__\fP (self, name)"
+.br
+.ti -1c
+.RI "def \fBtimes\fP (self)"
+.br
+.ti -1c
+.RI "def \fBmerge\fP (self, other)"
+.br
+.ti -1c
+.RI "def \fBstr\fP (self, threshold=0\&.1)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBparse\fP (s)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBenabled\fP"
+.br
+.ti -1c
+.RI "\fBtrace\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A context manager that tracks call count and latency, and other stats.
+
+Usage:
+    sw = stopwatch.Stopwatch()
+    with sw("foo"):
+      foo()
+    with sw("bar"):
+      bar()
+    @sw.decorate
+    def func():
+      pass
+    func()
+    print(sw)
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.__init__ ( self,  enabled = \fCTrue\fP,  trace = \fCFalse\fP)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.__call__ ( self,  name)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.__getitem__ ( self,  name)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.__str__ ( self)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.add ( self,  name,  duration)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.clear ( self)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.cur_stack ( self)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.decorate ( self,  name_or_func)"
+
+.PP
+.nf
+Decorate a function/method to check its timings.
+
+To use the function's name:
+  @sw.decorate
+  def func():
+pass
+
+To name it explicitly:
+  @sw.decorate("name")
+  def random_func_name():
+pass
+
+Args:
+  name_or_func: the name or the function to decorate.
+
+Returns:
+  If a name is passed, returns this as a decorator, otherwise returns the
+  decorated function.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.merge ( self,  other)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.parse ( s)\fC [static]\fP"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.pop ( self)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.push ( self,  name)"
+
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.str ( self,  threshold = \fC0\&.1\fP)"
+
+.PP
+.nf
+Return a string representation of the timings.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.stopwatch\&.StopWatch\&.times ( self)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "pysc2\&.lib\&.stopwatch\&.StopWatch\&.enabled"
+
+.SS "pysc2\&.lib\&.stopwatch\&.StopWatch\&.trace"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

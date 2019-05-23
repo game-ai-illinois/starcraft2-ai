@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1lib_1_1video__writer" kind="namespace" language="Python">
+    <compoundname>pysc2::lib::video_writer</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1video__writer_1_1_video_writer" prot="public">pysc2::lib::video_writer::VideoWriter</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lib/video_writer.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_feature_type" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::FeatureType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Enum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureType::SCALAR</definition>
+        <argsstring></argsstring>
+        <name>SCALAR</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="41" column="1" bodyfile="lib/features.py" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.features.FeatureType::CATEGORICAL</definition>
+        <argsstring></argsstring>
+        <name>CATEGORICAL</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="42" column="1" bodyfile="lib/features.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="263">
+        <label>enum::Enum</label>
+      </node>
+      <node id="262">
+        <label>pysc2.lib.features.FeatureType</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_feature_type"/>
+        <childnode refid="263" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="265">
+        <label>enum::Enum</label>
+      </node>
+      <node id="264">
+        <label>pysc2.lib.features.FeatureType</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_feature_type"/>
+        <childnode refid="265" relation="public-inheritance">
+        </childnode>
+        <childnode refid="266" relation="usage">
+          <edgelabel>CATEGORICAL</edgelabel>
+          <edgelabel>SCALAR</edgelabel>
+        </childnode>
+      </node>
+      <node id="266">
+        <label>int</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="40" column="1" bodyfile="lib/features.py" bodystart="40" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a8949fad00934fe5c01fc1fe471160919" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureType</scope><name>CATEGORICAL</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_feature_type_1a337be9da5251eee1cade6521de9aae6b" prot="public" virt="non-virtual"><scope>pysc2::lib::features::FeatureType</scope><name>SCALAR</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

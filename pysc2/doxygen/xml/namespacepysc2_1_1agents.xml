@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1agents" kind="namespace" language="Python">
+    <compoundname>pysc2::agents</compoundname>
+    <innernamespace refid="namespacepysc2_1_1agents_1_1base__agent">pysc2::agents::base_agent</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1agents_1_1random__agent">pysc2::agents::random_agent</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1agents_1_1scripted__agent">pysc2::agents::scripted_agent</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="agents/__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

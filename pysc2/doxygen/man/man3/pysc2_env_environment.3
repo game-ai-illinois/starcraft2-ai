@@ -1,0 +1,174 @@
+.TH "pysc2.env.environment" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.env.environment
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBBase\fP"
+.br
+.ti -1c
+.RI "class \fBStepType\fP"
+.br
+.ti -1c
+.RI "class \fBTimeStep\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBreset\fP (self)"
+.br
+.ti -1c
+.RI "def \fBstep\fP (self, action)"
+.br
+.ti -1c
+.RI "def \fBobservation_spec\fP (self)"
+.br
+.ti -1c
+.RI "def \fBaction_spec\fP (self)"
+.br
+.ti -1c
+.RI "def \fBclose\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__enter__\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__exit__\fP (self, unused_exception_type, unused_exc_value, unused_traceback)"
+.br
+.ti -1c
+.RI "def \fB__del__\fP (self)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def pysc2\&.env\&.environment\&.__del__ ( self)"
+
+.SS "def pysc2\&.env\&.environment\&.__enter__ ( self)"
+
+.PP
+.nf
+Allows the environment to be used in a with-statement context.
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.environment\&.__exit__ ( self,  unused_exception_type,  unused_exc_value,  unused_traceback)"
+
+.PP
+.nf
+Allows the environment to be used in a with-statement context.
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.environment\&.action_spec ( self)"
+
+.PP
+.nf
+Defines the actions that should be provided to `step`.
+
+Returns:
+  A tuple of specs (one per agent), where each spec is something that
+    defines the shape of the actions.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.environment\&.close ( self)"
+
+.PP
+.nf
+Frees any resources used by the environment.
+
+Implement this method for an environment backed by an external process.
+
+This method be used directly
+
+```python
+env = Env(...)
+# Use env.
+env.close()
+```
+
+or via a context manager
+
+```python
+with Env(...) as env:
+  # Use env.
+```
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.environment\&.observation_spec ( self)"
+
+.PP
+.nf
+Defines the observations provided by the environment.
+
+Returns:
+  A tuple of specs (one per agent), where each spec is a dict of shape
+    tuples.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.environment\&.reset ( self)"
+
+.PP
+.nf
+Abstract base class for Python RL environments.
+.fi
+.PP
+.PP
+.nf
+Starts a new sequence and returns the first `TimeStep` of this sequence.
+
+Returns:
+  A `TimeStep` namedtuple containing:
+    step_type: A `StepType` of `FIRST`.
+    reward: `None`, indicating the reward is undefined.
+    discount: `None`, indicating the discount is undefined.
+    observation: A NumPy array, or a dict, list or tuple of arrays
+      corresponding to `observation_spec()`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.env\&.environment\&.step ( self,  action)"
+
+.PP
+.nf
+Updates the environment according to the action and returns a `TimeStep`.
+
+If the environment returned a `TimeStep` with `StepType.LAST` at the
+previous step, this call to `step` will start a new sequence and `action`
+will be ignored.
+
+This method will also start a new sequence if called after the environment
+has been constructed and `restart` has not been called. Again, in this case
+`action` will be ignored.
+
+Args:
+  action: A NumPy array, or a dict, list or tuple of arrays corresponding to
+    `action_spec()`.
+
+Returns:
+  A `TimeStep` namedtuple containing:
+    step_type: A `StepType` value.
+    reward: Reward at this timestep.
+    discount: A discount in the range [0, 1].
+    observation: A NumPy array, or a dict, list or tuple of arrays
+      corresponding to `observation_spec()`.
+
+.fi
+.PP
+ 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

@@ -1,0 +1,143 @@
+\hypertarget{classpysc2_1_1lib_1_1features_1_1_features}{}\section{pysc2.\+lib.\+features.\+Features Class Reference}
+\label{classpysc2_1_1lib_1_1features_1_1_features}\index{pysc2.\+lib.\+features.\+Features@{pysc2.\+lib.\+features.\+Features}}
+Inheritance diagram for pysc2.\+lib.\+features.\+Features\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpysc2_1_1lib_1_1features_1_1_features}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_features_af12dfcaae0adbc89c662a44b8ce762de}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, agent\+\_\+interface\+\_\+format=None, map\+\_\+size=None)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_features_a4b1d691f5d9376c1116a6c81a927e865}{observation\+\_\+spec}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_features_a76e3d8bfc6e588ee9dddbbb34015ca7d}{action\+\_\+spec}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_features_a79fe09a0d35b8d7b6f761da2ddc72f67}{transform\+\_\+obs}} (self, obs)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_features_ad5a0a4cc33805616b7219e81d5be3d03}{available\+\_\+actions}} (self, obs)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_features_a4d30783f71487ebbf7ac3cf21873af65}{transform\+\_\+action}} (self, obs, func\+\_\+call, skip\+\_\+available=False)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_features_ae50848a35cd3c31833d1eb37662611f3}{reverse\+\_\+action}} (self, action)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Render feature layers from SC2 Observation protos into numpy arrays.
+
+This has the implementation details of how to render a starcraft environment.
+It translates between agent action/observation formats and starcraft
+action/observation formats, which should not be seen by agent authors. The
+starcraft protos contain more information than they should have access to.
+
+This is outside of the environment so that it can also be used in other
+contexts, eg a supervised dataset pipeline.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_features_af12dfcaae0adbc89c662a44b8ce762de}\label{classpysc2_1_1lib_1_1features_1_1_features_af12dfcaae0adbc89c662a44b8ce762de}} 
+\index{pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Features.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{agent\+\_\+interface\+\_\+format = {\ttfamily None},  }\item[{}]{map\+\_\+size = {\ttfamily None} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize a Features instance matching the specified interface format.
+
+Args:
+  agent_interface_format: See the documentation for `AgentInterfaceFormat`.
+  map_size: The size of the map in world units, needed for feature_units.
+
+Raises:
+  ValueError: if agent_interface_format isn't specified.
+  ValueError: if map_size isn't specified when use_feature_units is.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_features_a76e3d8bfc6e588ee9dddbbb34015ca7d}\label{classpysc2_1_1lib_1_1features_1_1_features_a76e3d8bfc6e588ee9dddbbb34015ca7d}} 
+\index{pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}!action\+\_\+spec@{action\+\_\+spec}}
+\index{action\+\_\+spec@{action\+\_\+spec}!pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}}
+\subsubsection{\texorpdfstring{action\+\_\+spec()}{action\_spec()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Features.\+action\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The action space pretty complicated and fills the ValidFunctions.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_features_ad5a0a4cc33805616b7219e81d5be3d03}\label{classpysc2_1_1lib_1_1features_1_1_features_ad5a0a4cc33805616b7219e81d5be3d03}} 
+\index{pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}!available\+\_\+actions@{available\+\_\+actions}}
+\index{available\+\_\+actions@{available\+\_\+actions}!pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}}
+\subsubsection{\texorpdfstring{available\+\_\+actions()}{available\_actions()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Features.\+available\+\_\+actions (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the list of available action ids.\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_features_a4b1d691f5d9376c1116a6c81a927e865}\label{classpysc2_1_1lib_1_1features_1_1_features_a4b1d691f5d9376c1116a6c81a927e865}} 
+\index{pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}!observation\+\_\+spec@{observation\+\_\+spec}}
+\index{observation\+\_\+spec@{observation\+\_\+spec}!pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}}
+\subsubsection{\texorpdfstring{observation\+\_\+spec()}{observation\_spec()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Features.\+observation\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The observation spec for the SC2 environment.
+
+It's worth noting that the image-like observations are in y,x/row,column
+order which is different than the actions which are in x,y order. This is
+due to conflicting conventions, and to facilitate printing of the images.
+
+Returns:
+  The dict of observation names to their tensor shapes. Shapes with a 0 can
+  vary in length, for example the number of valid actions depends on which
+  units you have selected.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_features_ae50848a35cd3c31833d1eb37662611f3}\label{classpysc2_1_1lib_1_1features_1_1_features_ae50848a35cd3c31833d1eb37662611f3}} 
+\index{pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}!reverse\+\_\+action@{reverse\+\_\+action}}
+\index{reverse\+\_\+action@{reverse\+\_\+action}!pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}}
+\subsubsection{\texorpdfstring{reverse\+\_\+action()}{reverse\_action()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Features.\+reverse\+\_\+action (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{action }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Transform an SC2-style action into an agent-style action.
+
+This should be the inverse of `transform_action`.
+
+Args:
+  action: a `sc_pb.Action` to be transformed.
+
+Returns:
+  A corresponding `actions.FunctionCall`.
+
+Raises:
+  ValueError: if it doesn't know how to transform this action.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_features_a4d30783f71487ebbf7ac3cf21873af65}\label{classpysc2_1_1lib_1_1features_1_1_features_a4d30783f71487ebbf7ac3cf21873af65}} 
+\index{pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}!transform\+\_\+action@{transform\+\_\+action}}
+\index{transform\+\_\+action@{transform\+\_\+action}!pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}}
+\subsubsection{\texorpdfstring{transform\+\_\+action()}{transform\_action()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Features.\+transform\+\_\+action (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obs,  }\item[{}]{func\+\_\+call,  }\item[{}]{skip\+\_\+available = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tranform an agent-style action to one that SC2 can consume.
+
+Args:
+  obs: a `sc_pb.Observation` from the previous frame.
+  func_call: a `FunctionCall` to be turned into a `sc_pb.Action`.
+  skip_available: If True, assume the action is available. This should only
+  be used for testing or if you expect to make actions that weren't
+  valid at the last observation.
+
+Returns:
+  a corresponding `sc_pb.Action`.
+
+Raises:
+  ValueError: if the action doesn't pass validation.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_features_a79fe09a0d35b8d7b6f761da2ddc72f67}\label{classpysc2_1_1lib_1_1features_1_1_features_a79fe09a0d35b8d7b6f761da2ddc72f67}} 
+\index{pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}!transform\+\_\+obs@{transform\+\_\+obs}}
+\index{transform\+\_\+obs@{transform\+\_\+obs}!pysc2\+::lib\+::features\+::\+Features@{pysc2\+::lib\+::features\+::\+Features}}
+\subsubsection{\texorpdfstring{transform\+\_\+obs()}{transform\_obs()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Features.\+transform\+\_\+obs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{obs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render some SC2 observations into something an agent can handle.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{features_8py}{features.\+py}}\end{DoxyCompactItemize}

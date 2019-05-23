@@ -1,0 +1,714 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1units_1_1_protoss" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::units::Protoss</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1aab1e235a0b3761beea540d595cae2034" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Adept</definition>
+        <argsstring></argsstring>
+        <name>Adept</name>
+        <initializer>=  311</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="71" column="1" bodyfile="lib/units.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1ab5094d7ed6f62bb738bedf92f351c4b0" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::AdeptPhaseShift</definition>
+        <argsstring></argsstring>
+        <name>AdeptPhaseShift</name>
+        <initializer>=  801</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="72" column="1" bodyfile="lib/units.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1ae267da492a452dd49f5cd7dae0831378" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Archon</definition>
+        <argsstring></argsstring>
+        <name>Archon</name>
+        <initializer>=  141</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="73" column="1" bodyfile="lib/units.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1aabcc746b55deea56c1eca3ea5593c2c9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Assimilator</definition>
+        <argsstring></argsstring>
+        <name>Assimilator</name>
+        <initializer>=  61</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="74" column="1" bodyfile="lib/units.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a93a5eecf786a58a4bc8047873081ee55" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Carrier</definition>
+        <argsstring></argsstring>
+        <name>Carrier</name>
+        <initializer>=  79</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="75" column="1" bodyfile="lib/units.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a48533f1869b6bd8234aa93c43bf0a634" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Colossus</definition>
+        <argsstring></argsstring>
+        <name>Colossus</name>
+        <initializer>=  4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="76" column="1" bodyfile="lib/units.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1ad96d108f1451b1afbe1d3d03c88b9a73" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::CyberneticsCore</definition>
+        <argsstring></argsstring>
+        <name>CyberneticsCore</name>
+        <initializer>=  72</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="77" column="1" bodyfile="lib/units.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a9c5cad74b4e6b434b9971850e0b57e27" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::DarkShrine</definition>
+        <argsstring></argsstring>
+        <name>DarkShrine</name>
+        <initializer>=  69</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="78" column="1" bodyfile="lib/units.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1ad5f624d6a0a052ff56a117e1e4628082" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::DarkTemplar</definition>
+        <argsstring></argsstring>
+        <name>DarkTemplar</name>
+        <initializer>=  76</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="79" column="1" bodyfile="lib/units.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a18be0f129d595f62e1ef3825ae4b3d53" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Disruptor</definition>
+        <argsstring></argsstring>
+        <name>Disruptor</name>
+        <initializer>=  694</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="80" column="1" bodyfile="lib/units.py" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a87a888de9350230bd59bb03965cefb56" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::DisruptorPhased</definition>
+        <argsstring></argsstring>
+        <name>DisruptorPhased</name>
+        <initializer>=  733</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="81" column="1" bodyfile="lib/units.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1aff303012ff624cc686ce930feaadf8d2" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::FleetBeacon</definition>
+        <argsstring></argsstring>
+        <name>FleetBeacon</name>
+        <initializer>=  64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="82" column="1" bodyfile="lib/units.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a6e30d1018cea28f6556c59622ed85190" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::ForceField</definition>
+        <argsstring></argsstring>
+        <name>ForceField</name>
+        <initializer>=  135</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="83" column="1" bodyfile="lib/units.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1afdf8acdee3ca621917fb925ac1e18f62" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Forge</definition>
+        <argsstring></argsstring>
+        <name>Forge</name>
+        <initializer>=  63</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="84" column="1" bodyfile="lib/units.py" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a8f9a9cd47c854b51c15b16d41df33abc" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Gateway</definition>
+        <argsstring></argsstring>
+        <name>Gateway</name>
+        <initializer>=  62</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="85" column="1" bodyfile="lib/units.py" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a7d4e5eebe7ba7b7c42fa0ac0b0049cf5" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::HighTemplar</definition>
+        <argsstring></argsstring>
+        <name>HighTemplar</name>
+        <initializer>=  75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="86" column="1" bodyfile="lib/units.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a7059d5c34abc005d6217f824029bfb8f" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Immortal</definition>
+        <argsstring></argsstring>
+        <name>Immortal</name>
+        <initializer>=  83</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="87" column="1" bodyfile="lib/units.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1ac2caf1f516c0af03c47e6662b0001705" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Interceptor</definition>
+        <argsstring></argsstring>
+        <name>Interceptor</name>
+        <initializer>=  85</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="88" column="1" bodyfile="lib/units.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1afc88a903915335b986b76a3d6d2279e5" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Mothership</definition>
+        <argsstring></argsstring>
+        <name>Mothership</name>
+        <initializer>=  10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="89" column="1" bodyfile="lib/units.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1aca00c11bcec4e1991b68737126a64d54" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::MothershipCore</definition>
+        <argsstring></argsstring>
+        <name>MothershipCore</name>
+        <initializer>=  488</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="90" column="1" bodyfile="lib/units.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a3c78a516ec4b388a185f9e2b989c7fd9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Nexus</definition>
+        <argsstring></argsstring>
+        <name>Nexus</name>
+        <initializer>=  59</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="91" column="1" bodyfile="lib/units.py" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1aaba4955b67d544ee249ff699f6a28e24" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Observer</definition>
+        <argsstring></argsstring>
+        <name>Observer</name>
+        <initializer>=  82</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="92" column="1" bodyfile="lib/units.py" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1aecab12894f997185dd3975a2e4a455f6" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::ObserverSurveillanceMode</definition>
+        <argsstring></argsstring>
+        <name>ObserverSurveillanceMode</name>
+        <initializer>=  1911</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="93" column="1" bodyfile="lib/units.py" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a468f02fce4c850ce84e0a795b2e1b1ac" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Oracle</definition>
+        <argsstring></argsstring>
+        <name>Oracle</name>
+        <initializer>=  495</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="94" column="1" bodyfile="lib/units.py" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a25a9082764b5cfd1ca747fc711d69c16" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Phoenix</definition>
+        <argsstring></argsstring>
+        <name>Phoenix</name>
+        <initializer>=  78</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="95" column="1" bodyfile="lib/units.py" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a6d3d288f4fd3452aa536804e3b6cebe3" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::PhotonCannon</definition>
+        <argsstring></argsstring>
+        <name>PhotonCannon</name>
+        <initializer>=  66</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="96" column="1" bodyfile="lib/units.py" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a1dc1a4af2e9e575550ebd541103681ed" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Probe</definition>
+        <argsstring></argsstring>
+        <name>Probe</name>
+        <initializer>=  84</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="97" column="1" bodyfile="lib/units.py" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a16e53617c97602979b12663daebf5ef3" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Pylon</definition>
+        <argsstring></argsstring>
+        <name>Pylon</name>
+        <initializer>=  60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="98" column="1" bodyfile="lib/units.py" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1ae980f8e5fc3aea730d18798a21f98f80" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::PylonOvercharged</definition>
+        <argsstring></argsstring>
+        <name>PylonOvercharged</name>
+        <initializer>=  894</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="99" column="1" bodyfile="lib/units.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a8715491c15b4509e9196d66e58507d9c" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::RoboticsBay</definition>
+        <argsstring></argsstring>
+        <name>RoboticsBay</name>
+        <initializer>=  70</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="100" column="1" bodyfile="lib/units.py" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a35e8e516ccc59e69c36878ce9fb7edfe" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::RoboticsFacility</definition>
+        <argsstring></argsstring>
+        <name>RoboticsFacility</name>
+        <initializer>=  71</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="101" column="1" bodyfile="lib/units.py" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a749cf405aab5328d86461897ec37fdda" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Sentry</definition>
+        <argsstring></argsstring>
+        <name>Sentry</name>
+        <initializer>=  77</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="102" column="1" bodyfile="lib/units.py" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1aab5f3cd1dfb95bd079d285da398620f9" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::ShieldBattery</definition>
+        <argsstring></argsstring>
+        <name>ShieldBattery</name>
+        <initializer>=  1910</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="103" column="1" bodyfile="lib/units.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1ab3be13459e7744a0737f32d9dfa84c42" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Stalker</definition>
+        <argsstring></argsstring>
+        <name>Stalker</name>
+        <initializer>=  74</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="104" column="1" bodyfile="lib/units.py" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a6da05426116644a427761d29655147ce" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Stargate</definition>
+        <argsstring></argsstring>
+        <name>Stargate</name>
+        <initializer>=  67</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="105" column="1" bodyfile="lib/units.py" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1aa0e38449de9806c51c4f098d2cfab316" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::StasisTrap</definition>
+        <argsstring></argsstring>
+        <name>StasisTrap</name>
+        <initializer>=  732</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="106" column="1" bodyfile="lib/units.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a7a969f3f0f667f0332b1c6e38d240f57" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Tempest</definition>
+        <argsstring></argsstring>
+        <name>Tempest</name>
+        <initializer>=  496</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="107" column="1" bodyfile="lib/units.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1ab4101fb6a723abba8302075f3a539a09" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::TemplarArchive</definition>
+        <argsstring></argsstring>
+        <name>TemplarArchive</name>
+        <initializer>=  68</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="108" column="1" bodyfile="lib/units.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1aea9522352ae5a983014eee41427b8058" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::TwilightCouncil</definition>
+        <argsstring></argsstring>
+        <name>TwilightCouncil</name>
+        <initializer>=  65</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="109" column="1" bodyfile="lib/units.py" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1ad1eb98ef3c9f5455a0eee5a90df6efa0" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::VoidRay</definition>
+        <argsstring></argsstring>
+        <name>VoidRay</name>
+        <initializer>=  80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="110" column="1" bodyfile="lib/units.py" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a575c328f01872b7abf8c4eae1595fea3" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::WarpGate</definition>
+        <argsstring></argsstring>
+        <name>WarpGate</name>
+        <initializer>=  133</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="111" column="1" bodyfile="lib/units.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a3a84083e21b81f7fac416388fe016aba" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::WarpPrism</definition>
+        <argsstring></argsstring>
+        <name>WarpPrism</name>
+        <initializer>=  81</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="112" column="1" bodyfile="lib/units.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a448c111c501f04b0daab55eb593fb250" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::WarpPrismPhasing</definition>
+        <argsstring></argsstring>
+        <name>WarpPrismPhasing</name>
+        <initializer>=  136</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="113" column="1" bodyfile="lib/units.py" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1units_1_1_protoss_1a4c808c05c5d50f5057a6243f483c724e" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.units.Protoss::Zealot</definition>
+        <argsstring></argsstring>
+        <name>Zealot</name>
+        <initializer>=  73</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/units.py" line="114" column="1" bodyfile="lib/units.py" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Protoss units.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="505">
+        <label>pysc2.lib.units.Protoss</label>
+        <link refid="classpysc2_1_1lib_1_1units_1_1_protoss"/>
+        <childnode refid="506" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="506">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="509">
+        <label>int</label>
+      </node>
+      <node id="507">
+        <label>pysc2.lib.units.Protoss</label>
+        <link refid="classpysc2_1_1lib_1_1units_1_1_protoss"/>
+        <childnode refid="508" relation="public-inheritance">
+        </childnode>
+        <childnode refid="509" relation="usage">
+          <edgelabel>Mothership</edgelabel>
+          <edgelabel>Immortal</edgelabel>
+          <edgelabel>DarkShrine</edgelabel>
+          <edgelabel>WarpGate</edgelabel>
+          <edgelabel>VoidRay</edgelabel>
+          <edgelabel>WarpPrismPhasing</edgelabel>
+          <edgelabel>Archon</edgelabel>
+          <edgelabel>Adept</edgelabel>
+          <edgelabel>Forge</edgelabel>
+          <edgelabel>WarpPrism</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="508">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/units.py" line="69" column="1" bodyfile="lib/units.py" bodystart="69" bodyend="117"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1aab1e235a0b3761beea540d595cae2034" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Adept</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1ab5094d7ed6f62bb738bedf92f351c4b0" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>AdeptPhaseShift</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1ae267da492a452dd49f5cd7dae0831378" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Archon</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1aabcc746b55deea56c1eca3ea5593c2c9" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Assimilator</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a93a5eecf786a58a4bc8047873081ee55" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Carrier</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a48533f1869b6bd8234aa93c43bf0a634" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Colossus</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1ad96d108f1451b1afbe1d3d03c88b9a73" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>CyberneticsCore</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a9c5cad74b4e6b434b9971850e0b57e27" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>DarkShrine</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1ad5f624d6a0a052ff56a117e1e4628082" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>DarkTemplar</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a18be0f129d595f62e1ef3825ae4b3d53" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Disruptor</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a87a888de9350230bd59bb03965cefb56" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>DisruptorPhased</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1aff303012ff624cc686ce930feaadf8d2" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>FleetBeacon</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a6e30d1018cea28f6556c59622ed85190" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>ForceField</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1afdf8acdee3ca621917fb925ac1e18f62" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Forge</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a8f9a9cd47c854b51c15b16d41df33abc" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Gateway</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a7d4e5eebe7ba7b7c42fa0ac0b0049cf5" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>HighTemplar</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a7059d5c34abc005d6217f824029bfb8f" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Immortal</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1ac2caf1f516c0af03c47e6662b0001705" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Interceptor</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1afc88a903915335b986b76a3d6d2279e5" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Mothership</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1aca00c11bcec4e1991b68737126a64d54" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>MothershipCore</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a3c78a516ec4b388a185f9e2b989c7fd9" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Nexus</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1aaba4955b67d544ee249ff699f6a28e24" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Observer</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1aecab12894f997185dd3975a2e4a455f6" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>ObserverSurveillanceMode</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a468f02fce4c850ce84e0a795b2e1b1ac" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Oracle</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a25a9082764b5cfd1ca747fc711d69c16" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Phoenix</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a6d3d288f4fd3452aa536804e3b6cebe3" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>PhotonCannon</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a1dc1a4af2e9e575550ebd541103681ed" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Probe</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a16e53617c97602979b12663daebf5ef3" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Pylon</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1ae980f8e5fc3aea730d18798a21f98f80" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>PylonOvercharged</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a8715491c15b4509e9196d66e58507d9c" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>RoboticsBay</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a35e8e516ccc59e69c36878ce9fb7edfe" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>RoboticsFacility</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a749cf405aab5328d86461897ec37fdda" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Sentry</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1aab5f3cd1dfb95bd079d285da398620f9" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>ShieldBattery</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1ab3be13459e7744a0737f32d9dfa84c42" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Stalker</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a6da05426116644a427761d29655147ce" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Stargate</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1aa0e38449de9806c51c4f098d2cfab316" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>StasisTrap</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a7a969f3f0f667f0332b1c6e38d240f57" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Tempest</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1ab4101fb6a723abba8302075f3a539a09" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>TemplarArchive</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1aea9522352ae5a983014eee41427b8058" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>TwilightCouncil</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1ad1eb98ef3c9f5455a0eee5a90df6efa0" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>VoidRay</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a575c328f01872b7abf8c4eae1595fea3" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>WarpGate</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a3a84083e21b81f7fac416388fe016aba" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>WarpPrism</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a448c111c501f04b0daab55eb593fb250" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>WarpPrismPhasing</name></member>
+      <member refid="classpysc2_1_1lib_1_1units_1_1_protoss_1a4c808c05c5d50f5057a6243f483c724e" prot="public" virt="non-virtual"><scope>pysc2::lib::units::Protoss</scope><name>Zealot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

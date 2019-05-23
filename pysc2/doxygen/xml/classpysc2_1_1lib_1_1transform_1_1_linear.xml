@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1transform_1_1_linear" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::transform::Linear</compoundname>
+    <basecompoundref refid="classpysc2_1_1lib_1_1transform_1_1_transform" prot="public" virt="non-virtual">pysc2.lib.transform.Transform</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.transform.Linear::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="56" column="1" bodyfile="lib/transform.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1transform_1_1_linear_1a01c3b2d7fafe75ff24327c57e3a684c9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.transform.Linear::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="62" column="1" bodyfile="lib/transform.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_linear_1a06a44d88ea3290ac1e9322188bfe3467" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.Linear.__init__</definition>
+        <argsstring>(self, scale=None, offset=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref></type>
+          <defname>scale</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a01c3b2d7fafe75ff24327c57e3a684c9" kindref="member">offset</ref></type>
+          <defname>offset</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="54" column="1" bodyfile="lib/transform.py" bodystart="54" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_linear_1aa540ebc88fcfb5e61bc2516ed5ca3077" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.Linear.fwd_dist</definition>
+        <argsstring>(self, dist)</argsstring>
+        <name>fwd_dist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dist</type>
+          <defname>dist</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="64" column="1" bodyfile="lib/transform.py" bodystart="64" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_linear_1ab5b6ab1a2dbfcdbe72e7476d0e6c71e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.Linear.fwd_pt</definition>
+        <argsstring>(self, pt)</argsstring>
+        <name>fwd_pt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pt</type>
+          <defname>pt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="67" column="1" bodyfile="lib/transform.py" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_linear_1a20b03bc9984ab9b5bffb93a157a448d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.Linear.back_dist</definition>
+        <argsstring>(self, dist)</argsstring>
+        <name>back_dist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dist</type>
+          <defname>dist</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="70" column="1" bodyfile="lib/transform.py" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_linear_1aab8bccdffa1f68f095af071b7cab7471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.Linear.back_pt</definition>
+        <argsstring>(self, pt)</argsstring>
+        <name>back_pt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pt</type>
+          <defname>pt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="73" column="1" bodyfile="lib/transform.py" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_linear_1a9c94d0303ddc2067febe43ba4ed58192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.Linear.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="76" column="1" bodyfile="lib/transform.py" bodystart="76" bodyend="79"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A linear transform with a scale and offset.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="325">
+        <label>pysc2.lib.transform.Linear</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_linear"/>
+        <childnode refid="326" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>pysc2.lib.transform.Transform</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_transform"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="328">
+        <label>pysc2.lib.transform.Linear</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_linear"/>
+        <childnode refid="329" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>pysc2.lib.transform.Transform</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_transform"/>
+        <childnode refid="330" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/transform.py" line="51" column="1" bodyfile="lib/transform.py" bodystart="51" bodyend="80"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a06a44d88ea3290ac1e9322188bfe3467" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Linear</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a9c94d0303ddc2067febe43ba4ed58192" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Linear</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a20b03bc9984ab9b5bffb93a157a448d1" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Linear</scope><name>back_dist</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_linear_1aab8bccdffa1f68f095af071b7cab7471" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Linear</scope><name>back_pt</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_linear_1aa540ebc88fcfb5e61bc2516ed5ca3077" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Linear</scope><name>fwd_dist</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab5b6ab1a2dbfcdbe72e7476d0e6c71e5" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Linear</scope><name>fwd_pt</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a01c3b2d7fafe75ff24327c57e3a684c9" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Linear</scope><name>offset</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Linear</scope><name>scale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

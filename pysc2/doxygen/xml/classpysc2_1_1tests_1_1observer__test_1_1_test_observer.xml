@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1observer__test_1_1_test_observer" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::observer_test::TestObserver</compoundname>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1observer__test_1_1_test_observer_1af1de11b8c98c8bbf6719fcc6b0a14b91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.observer_test.TestObserver.test_observer</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_observer</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/observer_test.py" line="34" column="1" bodyfile="tests/observer_test.py" bodystart="34" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="767">
+        <label>TestCase</label>
+      </node>
+      <node id="766">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="767" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="765">
+        <label>pysc2.tests.observer_test.TestObserver</label>
+        <link refid="classpysc2_1_1tests_1_1observer__test_1_1_test_observer"/>
+        <childnode refid="766" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="770">
+        <label>TestCase</label>
+      </node>
+      <node id="769">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="770" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="768">
+        <label>pysc2.tests.observer_test.TestObserver</label>
+        <link refid="classpysc2_1_1tests_1_1observer__test_1_1_test_observer"/>
+        <childnode refid="769" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/observer_test.py" line="32" column="1" bodyfile="tests/observer_test.py" bodystart="32" bodyend="68"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::observer_test::TestObserver</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::observer_test::TestObserver</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1observer__test_1_1_test_observer_1af1de11b8c98c8bbf6719fcc6b0a14b91" prot="public" virt="non-virtual"><scope>pysc2::tests::observer_test::TestObserver</scope><name>test_observer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

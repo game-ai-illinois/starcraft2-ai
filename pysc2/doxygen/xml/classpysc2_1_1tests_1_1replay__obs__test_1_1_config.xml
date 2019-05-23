@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1replay__obs__test_1_1_config" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::replay_obs_test::Config</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1a718f77f4c6ea365e1bca95a4223ce0bf" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.replay_obs_test.Config::map_name</definition>
+        <argsstring></argsstring>
+        <name>map_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="83" column="1" bodyfile="tests/replay_obs_test.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1a651e8aa31086c011dd0a7330346affe1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.replay_obs_test.Config::camera_width</definition>
+        <argsstring></argsstring>
+        <name>camera_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="86" column="1" bodyfile="tests/replay_obs_test.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1aaf049ddbfd4a171cf08ef217a981451a" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.replay_obs_test.Config::random_seed</definition>
+        <argsstring></argsstring>
+        <name>random_seed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="87" column="1" bodyfile="tests/replay_obs_test.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1ab14251df14bce385ecb13b6676e3fa1e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.replay_obs_test.Config::interface</definition>
+        <argsstring></argsstring>
+        <name>interface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="89" column="1" bodyfile="tests/replay_obs_test.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1a688afdf1bec9d559e11298cb1a16a6d4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.replay_obs_test.Config::actions</definition>
+        <argsstring></argsstring>
+        <name>actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="99" column="1" bodyfile="tests/replay_obs_test.py" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1a138bf9778d63f8e2211c21f93b968229" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.replay_obs_test.Config::num_observations</definition>
+        <argsstring></argsstring>
+        <name>num_observations</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="115" column="1" bodyfile="tests/replay_obs_test.py" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1ad37c2e73d565130c37c8a0e2e065029b" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.replay_obs_test.Config::player_id</definition>
+        <argsstring></argsstring>
+        <name>player_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="116" column="1" bodyfile="tests/replay_obs_test.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1a93f88965c69c40958a8953bb0d1ff86f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.replay_obs_test.Config.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/replay_obs_test.py" line="81" column="1" bodyfile="tests/replay_obs_test.py" bodystart="81" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Holds the configuration options.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="175">
+        <label>pysc2.tests.replay_obs_test.Config</label>
+        <link refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config"/>
+        <childnode refid="176" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="176">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="177">
+        <label>pysc2.tests.replay_obs_test.Config</label>
+        <link refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config"/>
+        <childnode refid="178" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="178">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="tests/replay_obs_test.py" line="78" column="1" bodyfile="tests/replay_obs_test.py" bodystart="78" bodyend="119"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1a93f88965c69c40958a8953bb0d1ff86f" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::Config</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1a688afdf1bec9d559e11298cb1a16a6d4" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::Config</scope><name>actions</name></member>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1a651e8aa31086c011dd0a7330346affe1" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::Config</scope><name>camera_width</name></member>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1ab14251df14bce385ecb13b6676e3fa1e" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::Config</scope><name>interface</name></member>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1a718f77f4c6ea365e1bca95a4223ce0bf" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::Config</scope><name>map_name</name></member>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1a138bf9778d63f8e2211c21f93b968229" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::Config</scope><name>num_observations</name></member>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1ad37c2e73d565130c37c8a0e2e065029b" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::Config</scope><name>player_id</name></member>
+      <member refid="classpysc2_1_1tests_1_1replay__obs__test_1_1_config_1aaf049ddbfd4a171cf08ef217a981451a" prot="public" virt="non-virtual"><scope>pysc2::tests::replay_obs_test::Config</scope><name>random_seed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,75 @@
+\hypertarget{namespacepysc2_1_1lib_1_1remote__controller}{}\section{pysc2.\+lib.\+remote\+\_\+controller Namespace Reference}
+\label{namespacepysc2_1_1lib_1_1remote__controller}\index{pysc2.\+lib.\+remote\+\_\+controller@{pysc2.\+lib.\+remote\+\_\+controller}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_connect_error}{Connect\+Error}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller}{Remote\+Controller}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1remote__controller_1_1_request_error}{Request\+Error}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1lib_1_1remote__controller_a834075572df5617084fb9618de135fc3}{check\+\_\+error}} (res, error\+\_\+enum)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1lib_1_1remote__controller_a469c0be9c668884747bc6317be726499}{decorate\+\_\+check\+\_\+error}} (error\+\_\+enum)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1lib_1_1remote__controller_a52dd1ac8e959e3c832344293a330a92a}{skip\+\_\+status}} (skipped)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1lib_1_1remote__controller_a8c5dd194ab269c652caa84cb3cf55188}{valid\+\_\+status}} (valid)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepysc2_1_1lib_1_1remote__controller_a89070c143c0a826424cc4e556f2c86ec}{sw}} = stopwatch.\+sw
+\item 
+\mbox{\hyperlink{namespacepysc2_1_1lib_1_1remote__controller_a5617a762b1212f364946016f69def53f}{Status}} = protocol.\+Status
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1remote__controller_a834075572df5617084fb9618de135fc3}\label{namespacepysc2_1_1lib_1_1remote__controller_a834075572df5617084fb9618de135fc3}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}!check\+\_\+error@{check\+\_\+error}}
+\index{check\+\_\+error@{check\+\_\+error}!pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}}
+\subsubsection{\texorpdfstring{check\+\_\+error()}{check\_error()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+check\+\_\+error (\begin{DoxyParamCaption}\item[{}]{res,  }\item[{}]{error\+\_\+enum }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Raise if the result has an error, otherwise return the result.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1lib_1_1remote__controller_a469c0be9c668884747bc6317be726499}\label{namespacepysc2_1_1lib_1_1remote__controller_a469c0be9c668884747bc6317be726499}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}!decorate\+\_\+check\+\_\+error@{decorate\+\_\+check\+\_\+error}}
+\index{decorate\+\_\+check\+\_\+error@{decorate\+\_\+check\+\_\+error}!pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}}
+\subsubsection{\texorpdfstring{decorate\+\_\+check\+\_\+error()}{decorate\_check\_error()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+decorate\+\_\+check\+\_\+error (\begin{DoxyParamCaption}\item[{}]{error\+\_\+enum }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator to call `check_error` on the return value.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1lib_1_1remote__controller_a52dd1ac8e959e3c832344293a330a92a}\label{namespacepysc2_1_1lib_1_1remote__controller_a52dd1ac8e959e3c832344293a330a92a}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}!skip\+\_\+status@{skip\+\_\+status}}
+\index{skip\+\_\+status@{skip\+\_\+status}!pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}}
+\subsubsection{\texorpdfstring{skip\+\_\+status()}{skip\_status()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+skip\+\_\+status (\begin{DoxyParamCaption}\item[{}]{skipped }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator to skip this call if we're in one of the skipped states.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1lib_1_1remote__controller_a8c5dd194ab269c652caa84cb3cf55188}\label{namespacepysc2_1_1lib_1_1remote__controller_a8c5dd194ab269c652caa84cb3cf55188}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}!valid\+\_\+status@{valid\+\_\+status}}
+\index{valid\+\_\+status@{valid\+\_\+status}!pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}}
+\subsubsection{\texorpdfstring{valid\+\_\+status()}{valid\_status()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+remote\+\_\+controller.\+valid\+\_\+status (\begin{DoxyParamCaption}\item[{}]{valid }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator to assert that we're in a valid state.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1remote__controller_a5617a762b1212f364946016f69def53f}\label{namespacepysc2_1_1lib_1_1remote__controller_a5617a762b1212f364946016f69def53f}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}!Status@{Status}}
+\index{Status@{Status}!pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}}
+\subsubsection{\texorpdfstring{Status}{Status}}
+{\footnotesize\ttfamily pysc2.\+lib.\+remote\+\_\+controller.\+Status = protocol.\+Status}
+
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1remote__controller_a89070c143c0a826424cc4e556f2c86ec}\label{namespacepysc2_1_1lib_1_1remote__controller_a89070c143c0a826424cc4e556f2c86ec}} 
+\index{pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}!sw@{sw}}
+\index{sw@{sw}!pysc2\+::lib\+::remote\+\_\+controller@{pysc2\+::lib\+::remote\+\_\+controller}}
+\subsubsection{\texorpdfstring{sw}{sw}}
+{\footnotesize\ttfamily pysc2.\+lib.\+remote\+\_\+controller.\+sw = stopwatch.\+sw}
+

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1tests_1_1multi__player__test" kind="namespace" language="Python">
+    <compoundname>pysc2::tests::multi_player_test</compoundname>
+    <innerclass refid="classpysc2_1_1tests_1_1multi__player__test_1_1_test_multiplayer" prot="public">pysc2::tests::multi_player_test::TestMultiplayer</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1tests_1_1multi__player__test_1a6cb13892915b630680c87703f6c6dd8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.multi_player_test.print_stage</definition>
+        <argsstring>(stage)</argsstring>
+        <name>print_stage</name>
+        <param>
+          <type>stage</type>
+          <defname>stage</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/multi_player_test.py" line="38" column="1" bodyfile="tests/multi_player_test.py" bodystart="38" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/multi_player_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

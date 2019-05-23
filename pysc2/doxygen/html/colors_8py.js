@@ -1,0 +1,27 @@
+var colors_8py =
+[
+    [ "Color", "classpysc2_1_1lib_1_1colors_1_1_color.html", "classpysc2_1_1lib_1_1colors_1_1_color" ],
+    [ "hot", "colors_8py.html#a8f4a49eb3a5ca2bf529362e14e3d711c", null ],
+    [ "piece_wise_linear", "colors_8py.html#ab4af018d663e7de0ef7b62c729fb81a2", null ],
+    [ "shuffled_hue", "colors_8py.html#a16abe444569e0f4247136c250a48e6a3", null ],
+    [ "smooth_hue_palette", "colors_8py.html#ae002858f8d783860fb6fd2cb780144c4", null ],
+    [ "unit_type", "colors_8py.html#ae0af5a08f5570f8eb5b2b66fcf26ea15", null ],
+    [ "winter", "colors_8py.html#ac3ee96fe4f9d521165e949a436b76968", null ],
+    [ "black", "colors_8py.html#a37add41a750e4e281c149ca0b1e26171", null ],
+    [ "blue", "colors_8py.html#a509484ea2ad8bba301d137a80c7bf4d5", null ],
+    [ "CAMERA_PALETTE", "colors_8py.html#a1be837fbf1fcca5bad293e5d6c15ae9a", null ],
+    [ "CREEP_PALETTE", "colors_8py.html#a076e50289bc6951b799f3e001d170159", null ],
+    [ "cyan", "colors_8py.html#a617105e0d36f090c7b3746655fcf904e", null ],
+    [ "distinct_colors", "colors_8py.html#ae31c7c64f1ab70352f47c7e6fe7a1124", null ],
+    [ "effects", "colors_8py.html#ac5b107d158a7a27a2c746e740761e34a", null ],
+    [ "green", "colors_8py.html#a64e6bc776ebb60cd772930d20e8c6546", null ],
+    [ "PLAYER_ABSOLUTE_PALETTE", "colors_8py.html#a41162e76daca963013e431682a2012b9", null ],
+    [ "PLAYER_RELATIVE_PALETTE", "colors_8py.html#ad26728a45e354e2342bdbca4b84b6561", null ],
+    [ "POWER_PALETTE", "colors_8py.html#ae0244020a31c05a609bdc2bff344eaf5", null ],
+    [ "purple", "colors_8py.html#a6945028eea5ce10d8f5b215c20562eb2", null ],
+    [ "red", "colors_8py.html#acd944331427c35a1b9a0031140af69d1", null ],
+    [ "SELECTED_PALETTE", "colors_8py.html#aea6779f03892d10b11f7615e99443400", null ],
+    [ "VISIBILITY_PALETTE", "colors_8py.html#a49a89c28c4139d4865ac3afbaa75dadb", null ],
+    [ "white", "colors_8py.html#a0325dca99cc825280724506477c24bff", null ],
+    [ "yellow", "colors_8py.html#a9e788f470ae13da2f10d00cf3e541964", null ]
+];

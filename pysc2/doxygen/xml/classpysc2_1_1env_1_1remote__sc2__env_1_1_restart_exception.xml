@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1remote__sc2__env_1_1_restart_exception" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::remote_sc2_env::RestartException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="575">
+        <label>Exception</label>
+      </node>
+      <node id="574">
+        <label>pysc2.env.remote_sc2_env.RestartException</label>
+        <link refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_restart_exception"/>
+        <childnode refid="575" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="577">
+        <label>Exception</label>
+      </node>
+      <node id="576">
+        <label>pysc2.env.remote_sc2_env.RestartException</label>
+        <link refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_restart_exception"/>
+        <childnode refid="577" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="env/remote_sc2_env.py" line="31" column="1" bodyfile="env/remote_sc2_env.py" bodystart="31" bodyend="35"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

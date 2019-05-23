@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1run__configs_1_1lib_1_1_version" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::run_configs::lib::Version</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">game_version</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">build_version</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">data_version</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">binary</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1run__configs_1_1lib_1_1_version_1a6bc3c64487463e6ec3b044454369b12d" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.run_configs.lib.Version::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/lib.py" line="30" column="1" bodyfile="run_configs/lib.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Represents a single version of the game.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="866">
+        <label>namedtuple</label>
+      </node>
+      <node id="869">
+        <label>data_version</label>
+      </node>
+      <node id="868">
+        <label>build_version</label>
+      </node>
+      <node id="865">
+        <label>pysc2.run_configs.lib.Version</label>
+        <link refid="classpysc2_1_1run__configs_1_1lib_1_1_version"/>
+        <childnode refid="866" relation="public-inheritance">
+        </childnode>
+        <childnode refid="867" relation="public-inheritance">
+        </childnode>
+        <childnode refid="868" relation="public-inheritance">
+        </childnode>
+        <childnode refid="869" relation="public-inheritance">
+        </childnode>
+        <childnode refid="870" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="867">
+        <label>game_version</label>
+      </node>
+      <node id="870">
+        <label>binary</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="872">
+        <label>namedtuple</label>
+      </node>
+      <node id="875">
+        <label>data_version</label>
+      </node>
+      <node id="874">
+        <label>build_version</label>
+      </node>
+      <node id="871">
+        <label>pysc2.run_configs.lib.Version</label>
+        <link refid="classpysc2_1_1run__configs_1_1lib_1_1_version"/>
+        <childnode refid="872" relation="public-inheritance">
+        </childnode>
+        <childnode refid="873" relation="public-inheritance">
+        </childnode>
+        <childnode refid="874" relation="public-inheritance">
+        </childnode>
+        <childnode refid="875" relation="public-inheritance">
+        </childnode>
+        <childnode refid="876" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="873">
+        <label>game_version</label>
+      </node>
+      <node id="876">
+        <label>binary</label>
+      </node>
+    </collaborationgraph>
+    <location file="run_configs/lib.py" line="27" column="1" bodyfile="run_configs/lib.py" bodystart="28" bodyend="33"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1run__configs_1_1lib_1_1_version_1a6bc3c64487463e6ec3b044454369b12d" prot="private" virt="non-virtual"><scope>pysc2::run_configs::lib::Version</scope><name>__slots__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

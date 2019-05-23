@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1bin_1_1play" kind="namespace" language="Python">
+    <compoundname>pysc2::bin::play</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1bin_1_1play_1a811859d3668269662298994543f792d8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::bin::play.FLAGS</definition>
+        <argsstring></argsstring>
+        <name>FLAGS</name>
+        <initializer>=  flags.FLAGS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/play.py" line="40" column="1" bodyfile="bin/play.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1play_1a79f12f105f52254b03258d902114533e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.play.main</definition>
+        <argsstring>(unused_argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>unused_argv</type>
+          <defname>unused_argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Run SC2 to play a game or a replay.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/play.py" line="81" column="1" bodyfile="bin/play.py" bodystart="81" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1play_1afe5c686e77a19a5e4407a43a95ec4cc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.play.get_replay_version</definition>
+        <argsstring>(replay_data)</argsstring>
+        <name>get_replay_version</name>
+        <param>
+          <type>replay_data</type>
+          <defname>replay_data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/play.py" line="194" column="1" bodyfile="bin/play.py" bodystart="194" bodyend="206"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1play_1a040fa25ba8942fd26fd7d38018aa1c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.play.entry_point</definition>
+        <argsstring>()</argsstring>
+        <name>entry_point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/play.py" line="207" column="1" bodyfile="bin/play.py" bodystart="207" bodyend="210"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bin/play.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

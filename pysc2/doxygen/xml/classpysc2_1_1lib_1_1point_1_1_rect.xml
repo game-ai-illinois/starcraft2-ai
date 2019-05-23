@@ -1,0 +1,447 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1point_1_1_rect" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::point::Rect</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">t</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">l</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">b</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">r</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1point_1_1_rect_1af43a1029abbe6d09142726ad531ab553" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.point.Rect::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="161" column="1" bodyfile="lib/point.py" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1affb16559d64650cec93cd02f448c71d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.__new__</definition>
+        <argsstring>(cls, args)</argsstring>
+        <name>__new__</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="163" column="1" bodyfile="lib/point.py" bodystart="163" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a3a6542b97c3101008cd499a000460054" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="183" column="1" bodyfile="lib/point.py" bodystart="183" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a82cab19de96eaed9dd5be49049ec0693" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.center</definition>
+        <argsstring>(self)</argsstring>
+        <name>center</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="187" column="1" bodyfile="lib/point.py" bodystart="187" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a3c193d3779c6b119d270800b7e17dd3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.top</definition>
+        <argsstring>(self)</argsstring>
+        <name>top</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="191" column="1" bodyfile="lib/point.py" bodystart="191" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a0a8927452de661789c8f9deb83a6789a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.left</definition>
+        <argsstring>(self)</argsstring>
+        <name>left</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="195" column="1" bodyfile="lib/point.py" bodystart="195" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1ad7b038b56a1f3e8a1a92e3838912b328" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.bottom</definition>
+        <argsstring>(self)</argsstring>
+        <name>bottom</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="199" column="1" bodyfile="lib/point.py" bodystart="199" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1aa79fc85774685f1efe137064583f4f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.right</definition>
+        <argsstring>(self)</argsstring>
+        <name>right</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="203" column="1" bodyfile="lib/point.py" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a98073512dd39e8597eadcc72c2dfe788" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.width</definition>
+        <argsstring>(self)</argsstring>
+        <name>width</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="207" column="1" bodyfile="lib/point.py" bodystart="207" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a061a0ec9b597355317015b647f730bb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.height</definition>
+        <argsstring>(self)</argsstring>
+        <name>height</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="211" column="1" bodyfile="lib/point.py" bodystart="211" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1ab24b464cf19b24fd4cefa3f709a54e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.tl</definition>
+        <argsstring>(self)</argsstring>
+        <name>tl</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="215" column="1" bodyfile="lib/point.py" bodystart="215" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a511508b661f4ccd695c0b2c977364433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.br</definition>
+        <argsstring>(self)</argsstring>
+        <name>br</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="219" column="1" bodyfile="lib/point.py" bodystart="219" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a5277829d3eca9056290854276660769c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.tr</definition>
+        <argsstring>(self)</argsstring>
+        <name>tr</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="223" column="1" bodyfile="lib/point.py" bodystart="223" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1aef68c28b9f99cbc10bc9f2276b6fde79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.bl</definition>
+        <argsstring>(self)</argsstring>
+        <name>bl</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="227" column="1" bodyfile="lib/point.py" bodystart="227" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a22e5621c8f853ee62bee5d206a5d5ef9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.size</definition>
+        <argsstring>(self)</argsstring>
+        <name>size</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="231" column="1" bodyfile="lib/point.py" bodystart="231" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a8518222f7f161ff6ddfc5de381e81803" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.area</definition>
+        <argsstring>(self)</argsstring>
+        <name>area</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="235" column="1" bodyfile="lib/point.py" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a3284effee8183e33f55f4744fb064fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.contains_point</definition>
+        <argsstring>(self, pt)</argsstring>
+        <name>contains_point</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pt</type>
+          <defname>pt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Is the point inside this rect?</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="239" column="1" bodyfile="lib/point.py" bodystart="239" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a80a7f8bdd7ca0d737e082fa835a03a4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.contains_circle</definition>
+        <argsstring>(self, pt, radius)</argsstring>
+        <name>contains_circle</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pt</type>
+          <defname>pt</defname>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Is the circle completely inside this rect?</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="244" column="1" bodyfile="lib/point.py" bodystart="244" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1point_1_1_rect_1a5d5843a9913820b8efca7dc21dfb0bd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.point.Rect.intersects_circle</definition>
+        <argsstring>(self, pt, radius)</argsstring>
+        <name>intersects_circle</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pt</type>
+          <defname>pt</defname>
+        </param>
+        <param>
+          <type>radius</type>
+          <defname>radius</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Does the circle intersect with this rect?</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/point.py" line="249" column="1" bodyfile="lib/point.py" bodystart="249" bodyend="267"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A basic Rect class. Assumes tl &lt;= br.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="524">
+        <label>b</label>
+      </node>
+      <node id="523">
+        <label>l</label>
+      </node>
+      <node id="525">
+        <label>r</label>
+      </node>
+      <node id="522">
+        <label>t</label>
+      </node>
+      <node id="520">
+        <label>pysc2.lib.point.Rect</label>
+        <link refid="classpysc2_1_1lib_1_1point_1_1_rect"/>
+        <childnode refid="521" relation="public-inheritance">
+        </childnode>
+        <childnode refid="522" relation="public-inheritance">
+        </childnode>
+        <childnode refid="523" relation="public-inheritance">
+        </childnode>
+        <childnode refid="524" relation="public-inheritance">
+        </childnode>
+        <childnode refid="525" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="521">
+        <label>namedtuple</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="530">
+        <label>b</label>
+      </node>
+      <node id="529">
+        <label>l</label>
+      </node>
+      <node id="531">
+        <label>r</label>
+      </node>
+      <node id="528">
+        <label>t</label>
+      </node>
+      <node id="526">
+        <label>pysc2.lib.point.Rect</label>
+        <link refid="classpysc2_1_1lib_1_1point_1_1_rect"/>
+        <childnode refid="527" relation="public-inheritance">
+        </childnode>
+        <childnode refid="528" relation="public-inheritance">
+        </childnode>
+        <childnode refid="529" relation="public-inheritance">
+        </childnode>
+        <childnode refid="530" relation="public-inheritance">
+        </childnode>
+        <childnode refid="531" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="527">
+        <label>namedtuple</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/point.py" line="159" column="1" bodyfile="lib/point.py" bodystart="159" bodyend="267"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1affb16559d64650cec93cd02f448c71d2" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>__new__</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1af43a1029abbe6d09142726ad531ab553" prot="private" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>__slots__</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a3a6542b97c3101008cd499a000460054" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a8518222f7f161ff6ddfc5de381e81803" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>area</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1aef68c28b9f99cbc10bc9f2276b6fde79" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>bl</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1ad7b038b56a1f3e8a1a92e3838912b328" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>bottom</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a511508b661f4ccd695c0b2c977364433" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>br</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a82cab19de96eaed9dd5be49049ec0693" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>center</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a80a7f8bdd7ca0d737e082fa835a03a4d" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>contains_circle</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a3284effee8183e33f55f4744fb064fe2" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>contains_point</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a061a0ec9b597355317015b647f730bb0" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>height</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a5d5843a9913820b8efca7dc21dfb0bd1" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>intersects_circle</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a0a8927452de661789c8f9deb83a6789a" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>left</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1aa79fc85774685f1efe137064583f4f99" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>right</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a22e5621c8f853ee62bee5d206a5d5ef9" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>size</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1ab24b464cf19b24fd4cefa3f709a54e06" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>tl</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a3c193d3779c6b119d270800b7e17dd3e" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>top</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a5277829d3eca9056290854276660769c" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>tr</name></member>
+      <member refid="classpysc2_1_1lib_1_1point_1_1_rect_1a98073512dd39e8597eadcc72c2dfe788" prot="public" virt="non-virtual"><scope>pysc2::lib::point::Rect</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

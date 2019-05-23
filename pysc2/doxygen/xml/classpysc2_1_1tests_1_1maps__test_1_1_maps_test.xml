@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1maps__test_1_1_maps_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::maps_test::MapsTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1maps__test_1_1_maps_test_1addff2e84120f337d9eaa10895353b5b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.maps_test.MapsTest.test_list_all_maps</definition>
+        <argsstring>(self, map_name)</argsstring>
+        <name>test_list_all_maps</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>map_name</type>
+          <defname>map_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Make sure all maps can be read.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/maps_test.py" line="47" column="1" bodyfile="tests/maps_test.py" bodystart="47" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1maps__test_1_1_maps_test_1ad1333103de04d377f36eebf9f18885a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.maps_test.MapsTest.test_load_random_map</definition>
+        <argsstring>(self, map_name)</argsstring>
+        <name>test_load_random_map</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>map_name</type>
+          <defname>map_name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Test loading a few random maps.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/maps_test.py" line="55" column="1" bodyfile="tests/maps_test.py" bodystart="55" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="366">
+        <label>TestCase</label>
+      </node>
+      <node id="365">
+        <label>pysc2.tests.maps_test.MapsTest</label>
+        <link refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test"/>
+        <childnode refid="366" relation="public-inheritance">
+        </childnode>
+        <childnode refid="367" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="367">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="366" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="369">
+        <label>TestCase</label>
+      </node>
+      <node id="368">
+        <label>pysc2.tests.maps_test.MapsTest</label>
+        <link refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test"/>
+        <childnode refid="369" relation="public-inheritance">
+        </childnode>
+        <childnode refid="370" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="369" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/maps_test.py" line="44" column="1" bodyfile="tests/maps_test.py" bodystart="44" bodyend="85"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::maps_test::MapsTest</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::maps_test::MapsTest</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test_1addff2e84120f337d9eaa10895353b5b1" prot="public" virt="non-virtual"><scope>pysc2::tests::maps_test::MapsTest</scope><name>test_list_all_maps</name></member>
+      <member refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test_1ad1333103de04d377f36eebf9f18885a0" prot="public" virt="non-virtual"><scope>pysc2::tests::maps_test::MapsTest</scope><name>test_load_random_map</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1actions_1_1_function" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::actions::Function</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">id</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">name</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ability_id</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">general_id</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">function_type</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">args</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">avail_fn</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1actions_1_1_function_1ace49708c8f95b972dd6e29c3d5f05907" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.actions.Function::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="357" column="1" bodyfile="lib/actions.py" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_function_1a2c4bb777e80bd4cdeaa012e85f85b4be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Function.ui_func</definition>
+        <argsstring>(cls, id_, name, function_type, avail_fn=always)</argsstring>
+        <name>ui_func</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>id_</type>
+          <defname>id_</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>function_type</type>
+          <defname>function_type</defname>
+        </param>
+        <param>
+          <type>avail_fn</type>
+          <defname>avail_fn</defname>
+          <defval><ref refid="namespacepysc2_1_1lib_1_1actions_1ae1dc5f547908d78c7367d3c734b29a59" kindref="member">always</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Define a function representing a ui action.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="360" column="1" bodyfile="lib/actions.py" bodystart="360" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_function_1afa5332609b8f6e69057a0035add0a480" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Function.ability</definition>
+        <argsstring>(cls, id_, name, function_type, ability_id, general_id=0)</argsstring>
+        <name>ability</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>id_</type>
+          <defname>id_</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>function_type</type>
+          <defname>function_type</defname>
+        </param>
+        <param>
+          <type>ability_id</type>
+          <defname>ability_id</defname>
+        </param>
+        <param>
+          <type>general_id</type>
+          <defname>general_id</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Define a function represented as a game ability.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="366" column="1" bodyfile="lib/actions.py" bodystart="366" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_function_1a640d6d3480535d03e1b11cd4314ab221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Function.spec</definition>
+        <argsstring>(cls, id_, name, args)</argsstring>
+        <name>spec</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>id_</type>
+          <defname>id_</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create a Function to be used in ValidActions.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="373" column="1" bodyfile="lib/actions.py" bodystart="373" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_function_1a31e8c8775ce3b7d55671b1494502aca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Function.__hash__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__hash__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="377" column="1" bodyfile="lib/actions.py" bodystart="377" bodyend="379"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_function_1a693e39932ef61edb079e977f8636626e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Function.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="380" column="1" bodyfile="lib/actions.py" bodystart="380" bodyend="382"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_function_1a82d083b88887fb4c9fa6dd99a399cedc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Function.__call__</definition>
+        <argsstring>(self, args)</argsstring>
+        <name>__call__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A convenient way to create a FunctionCall from this Function.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="383" column="1" bodyfile="lib/actions.py" bodystart="383" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1actions_1_1_function_1a98ad5ff5cc2cbd2656c25dbf0d60c8a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.actions.Function.str</definition>
+        <argsstring>(self, space=False)</argsstring>
+        <name>str</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>space</type>
+          <defname>space</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>String version. Set space=True to line them all up nicely.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/actions.py" line="387" column="1" bodyfile="lib/actions.py" bodystart="387" bodyend="393"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Represents a function action.
+
+Attributes:
+  id: The function id, which is what the agent will use.
+  name: The name of the function. Should be unique.
+  ability_id: The ability id to pass to sc2.
+  general_id: 0 for normal abilities, and the ability_id of another ability if
+      it can be represented by a more general action.
+  function_type: One of the functions in FUNCTION_TYPES for how to construct
+      the sc2 action proto out of python types.
+  args: A list of the types of args passed to function_type.
+  avail_fn: For non-abilities, this function returns whether the function is
+      valid.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="277">
+        <label>namedtuple</label>
+      </node>
+      <node id="282">
+        <label>function_type</label>
+      </node>
+      <node id="283">
+        <label>args</label>
+      </node>
+      <node id="284">
+        <label>avail_fn</label>
+      </node>
+      <node id="276">
+        <label>pysc2.lib.actions.Function</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_function"/>
+        <childnode refid="277" relation="public-inheritance">
+        </childnode>
+        <childnode refid="278" relation="public-inheritance">
+        </childnode>
+        <childnode refid="279" relation="public-inheritance">
+        </childnode>
+        <childnode refid="280" relation="public-inheritance">
+        </childnode>
+        <childnode refid="281" relation="public-inheritance">
+        </childnode>
+        <childnode refid="282" relation="public-inheritance">
+        </childnode>
+        <childnode refid="283" relation="public-inheritance">
+        </childnode>
+        <childnode refid="284" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>general_id</label>
+      </node>
+      <node id="278">
+        <label>id</label>
+      </node>
+      <node id="280">
+        <label>ability_id</label>
+      </node>
+      <node id="279">
+        <label>name</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="286">
+        <label>namedtuple</label>
+      </node>
+      <node id="291">
+        <label>function_type</label>
+      </node>
+      <node id="292">
+        <label>args</label>
+      </node>
+      <node id="293">
+        <label>avail_fn</label>
+      </node>
+      <node id="285">
+        <label>pysc2.lib.actions.Function</label>
+        <link refid="classpysc2_1_1lib_1_1actions_1_1_function"/>
+        <childnode refid="286" relation="public-inheritance">
+        </childnode>
+        <childnode refid="287" relation="public-inheritance">
+        </childnode>
+        <childnode refid="288" relation="public-inheritance">
+        </childnode>
+        <childnode refid="289" relation="public-inheritance">
+        </childnode>
+        <childnode refid="290" relation="public-inheritance">
+        </childnode>
+        <childnode refid="291" relation="public-inheritance">
+        </childnode>
+        <childnode refid="292" relation="public-inheritance">
+        </childnode>
+        <childnode refid="293" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>general_id</label>
+      </node>
+      <node id="287">
+        <label>id</label>
+      </node>
+      <node id="289">
+        <label>ability_id</label>
+      </node>
+      <node id="288">
+        <label>name</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/actions.py" line="340" column="1" bodyfile="lib/actions.py" bodystart="342" bodyend="394"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_function_1a82d083b88887fb4c9fa6dd99a399cedc" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Function</scope><name>__call__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_function_1a31e8c8775ce3b7d55671b1494502aca7" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Function</scope><name>__hash__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_function_1ace49708c8f95b972dd6e29c3d5f05907" prot="private" virt="non-virtual"><scope>pysc2::lib::actions::Function</scope><name>__slots__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_function_1a693e39932ef61edb079e977f8636626e" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Function</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_function_1afa5332609b8f6e69057a0035add0a480" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Function</scope><name>ability</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_function_1a640d6d3480535d03e1b11cd4314ab221" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Function</scope><name>spec</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_function_1a98ad5ff5cc2cbd2656c25dbf0d60c8a4" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Function</scope><name>str</name></member>
+      <member refid="classpysc2_1_1lib_1_1actions_1_1_function_1a2c4bb777e80bd4cdeaa012e85f85b4be" prot="public" virt="non-virtual"><scope>pysc2::lib::actions::Function</scope><name>ui_func</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

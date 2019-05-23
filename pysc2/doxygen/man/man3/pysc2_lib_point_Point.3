@@ -1,0 +1,265 @@
+.TH "pysc2.lib.point.Point" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.point.Point
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits namedtuple, x, and y\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBbuild\fP (cls, obj)"
+.br
+.ti -1c
+.RI "def \fBunit_rand\fP (cls)"
+.br
+.ti -1c
+.RI "def \fBassign_to\fP (self, obj)"
+.br
+.ti -1c
+.RI "def \fBdist\fP (self, other)"
+.br
+.ti -1c
+.RI "def \fBdist_sq\fP (self, other)"
+.br
+.ti -1c
+.RI "def \fBround\fP (self)"
+.br
+.ti -1c
+.RI "def \fBfloor\fP (self)"
+.br
+.ti -1c
+.RI "def \fBceil\fP (self)"
+.br
+.ti -1c
+.RI "def \fBabs\fP (self)"
+.br
+.ti -1c
+.RI "def \fBlen\fP (self)"
+.br
+.ti -1c
+.RI "def \fBscale\fP (self, target_len)"
+.br
+.ti -1c
+.RI "def \fBscale_max_size\fP (self, max_size)"
+.br
+.ti -1c
+.RI "def \fBscale_min_size\fP (self, min_size)"
+.br
+.ti -1c
+.RI "def \fBmin_dim\fP (self)"
+.br
+.ti -1c
+.RI "def \fBmax_dim\fP (self)"
+.br
+.ti -1c
+.RI "def \fBtranspose\fP (self)"
+.br
+.ti -1c
+.RI "def \fBrotate_deg\fP (self, angle)"
+.br
+.ti -1c
+.RI "def \fBrotate_rad\fP (self, angle)"
+.br
+.ti -1c
+.RI "def \fBrotate_rand\fP (self, angle=180)"
+.br
+.ti -1c
+.RI "def \fBcontained_circle\fP (self, pt, radius)"
+.br
+.ti -1c
+.RI "def \fBbound\fP (self, p1, p2=None)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__neg__\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__add__\fP (self, pt_or_val)"
+.br
+.ti -1c
+.RI "def \fB__sub__\fP (self, pt_or_val)"
+.br
+.ti -1c
+.RI "def \fB__mul__\fP (self, pt_or_val)"
+.br
+.ti -1c
+.RI "def \fB__truediv__\fP (self, pt_or_val)"
+.br
+.ti -1c
+.RI "def \fB__floordiv__\fP (self, pt_or_val)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A basic Point class.
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.point\&.Point\&.__add__ ( self,  pt_or_val)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.__floordiv__ ( self,  pt_or_val)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.__mul__ ( self,  pt_or_val)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.__neg__ ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.__str__ ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.__sub__ ( self,  pt_or_val)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.__truediv__ ( self,  pt_or_val)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.abs ( self)"
+
+.PP
+.nf
+Take the absolute value of `x` and `y`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.assign_to ( self,  obj)"
+
+.PP
+.nf
+Assign `x` and `y` to an object that has properties `x` and `y`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.bound ( self,  p1,  p2 = \fCNone\fP)"
+
+.PP
+.nf
+Bound this point within the rect defined by (`p1`, `p2`).
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.build ( cls,  obj)"
+
+.PP
+.nf
+Build a Point from an object that has properties `x` and `y`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.ceil ( self)"
+
+.PP
+.nf
+Round `x` and `y` up to integers.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.contained_circle ( self,  pt,  radius)"
+
+.PP
+.nf
+Is this point inside the circle defined by (`pt`, `radius`)?
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.dist ( self,  other)"
+
+.PP
+.nf
+Distance to some other point.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.dist_sq ( self,  other)"
+
+.PP
+.nf
+Distance squared to some other point.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.floor ( self)"
+
+.PP
+.nf
+Round `x` and `y` down to integers.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.len ( self)"
+
+.PP
+.nf
+Length of the vector to this point.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.max_dim ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.min_dim ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.rotate_deg ( self,  angle)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.rotate_rad ( self,  angle)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.rotate_rand ( self,  angle = \fC180\fP)"
+
+.SS "def pysc2\&.lib\&.point\&.Point\&.round ( self)"
+
+.PP
+.nf
+Round `x` and `y` to integers.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.scale ( self,  target_len)"
+
+.PP
+.nf
+Scale the vector to have the target length.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.scale_max_size ( self,  max_size)"
+
+.PP
+.nf
+Scale this value, keeping aspect ratio, but fitting inside `max_size`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.scale_min_size ( self,  min_size)"
+
+.PP
+.nf
+Scale this value, keeping aspect ratio, but fitting around `min_size`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.transpose ( self)"
+
+.PP
+.nf
+Flip x and y.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Point\&.unit_rand ( cls)"
+
+.PP
+.nf
+Return a Point with x, y chosen randomly with 0 <= x < 1, 0 <= y < 1.
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

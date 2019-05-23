@@ -1,0 +1,99 @@
+.TH "pysc2.lib.protocol.StarcraftProtocol" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.protocol.StarcraftProtocol
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, sock)"
+.br
+.ti -1c
+.RI "def \fBstatus\fP (self)"
+.br
+.ti -1c
+.RI "def \fBclose\fP (self)"
+.br
+.ti -1c
+.RI "def \fBread\fP (self)"
+.br
+.ti -1c
+.RI "def \fBwrite\fP (self, request)"
+.br
+.ti -1c
+.RI "def \fBsend_req\fP (self, request)"
+.br
+.ti -1c
+.RI "def \fBsend\fP (self, kwargs)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Defines the protocol for chatting with starcraft.
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.protocol\&.StarcraftProtocol\&.__init__ ( self,  sock)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.protocol\&.StarcraftProtocol\&.close ( self)"
+
+.SS "def pysc2\&.lib\&.protocol\&.StarcraftProtocol\&.read ( self)"
+
+.PP
+.nf
+Read a Response, do some validation, and return it.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.protocol\&.StarcraftProtocol\&.send ( self,  kwargs)"
+
+.PP
+.nf
+Create and send a specific request, and return the response.
+
+For example: send(ping=sc_pb.RequestPing()) => sc_pb.ResponsePing
+
+Args:
+  **kwargs: A single kwarg with the name and value to fill in to Request.
+
+Returns:
+  The Response corresponding to your request.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.protocol\&.StarcraftProtocol\&.send_req ( self,  request)"
+
+.PP
+.nf
+Write a pre-filled Request and return the Response.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.protocol\&.StarcraftProtocol\&.status ( self)"
+
+.SS "def pysc2\&.lib\&.protocol\&.StarcraftProtocol\&.write ( self,  request)"
+
+.PP
+.nf
+Write a Request.
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['obs',['obs',['../classpysc2_1_1lib_1_1features__test_1_1_available_actions_test.html#a278a84d8d5a7f838888362ac5155c6de',1,'pysc2::lib::features_test::AvailableActionsTest']]],
+  ['obs_5fspec',['obs_spec',['../classpysc2_1_1agents_1_1base__agent_1_1_base_agent.html#ad6cefb81724b9d234887cea543c4f06e',1,'pysc2::agents::base_agent::BaseAgent']]],
+  ['observation_5ftext_5fproto',['observation_text_proto',['../namespacepysc2_1_1lib_1_1features__test.html#adce0a02e86e8ca843a83f901dbb707fc',1,'pysc2::lib::features_test']]],
+  ['observer',['Observer',['../classpysc2_1_1lib_1_1units_1_1_protoss.html#aaba4955b67d544ee249ff699f6a28e24',1,'pysc2::lib::units::Protoss']]],
+  ['observersurveillancemode',['ObserverSurveillanceMode',['../classpysc2_1_1lib_1_1units_1_1_protoss.html#aecab12894f997185dd3975a2e4a455f6',1,'pysc2::lib::units::Protoss']]],
+  ['offset',['offset',['../classpysc2_1_1lib_1_1transform_1_1_linear.html#a01c3b2d7fafe75ff24327c57e3a684c9',1,'pysc2::lib::transform::Linear']]],
+  ['open',['Open',['../namespacepysc2_1_1lib_1_1gfile.html#ab1fe784a279c20f90486ceae4cef0f8c',1,'pysc2::lib::gfile']]],
+  ['oracle',['Oracle',['../classpysc2_1_1lib_1_1units_1_1_protoss.html#a468f02fce4c850ce84e0a795b2e1b1ac',1,'pysc2::lib::units::Protoss']]],
+  ['orbitalcommand',['OrbitalCommand',['../classpysc2_1_1lib_1_1units_1_1_terran.html#a3b1d7138c281fc4923221ec20f0e8f73',1,'pysc2::lib::units::Terran']]],
+  ['orbitalcommandflying',['OrbitalCommandFlying',['../classpysc2_1_1lib_1_1units_1_1_terran.html#ac623db2a98aacf920b91b157888ae6c4',1,'pysc2::lib::units::Terran']]],
+  ['origin',['origin',['../namespacepysc2_1_1lib_1_1point.html#a99891351bc447e5e8e500a7566148d4f',1,'pysc2::lib::point']]],
+  ['overlord',['Overlord',['../classpysc2_1_1lib_1_1units_1_1_zerg.html#a981687f44b59cb78fec24a05b7435acb',1,'pysc2::lib::units::Zerg']]],
+  ['overlordtransport',['OverlordTransport',['../classpysc2_1_1lib_1_1units_1_1_zerg.html#a1a67df81a2aa1cba1fa2bf478c0e7612',1,'pysc2::lib::units::Zerg']]],
+  ['overlordtransportcocoon',['OverlordTransportCocoon',['../classpysc2_1_1lib_1_1units_1_1_zerg.html#a75d768affb2feb4cb65601093f4cffa2',1,'pysc2::lib::units::Zerg']]],
+  ['overseer',['Overseer',['../classpysc2_1_1lib_1_1units_1_1_zerg.html#a4814c1d2661f5c1faacebcd587297d19',1,'pysc2::lib::units::Zerg']]],
+  ['overseercocoon',['OverseerCocoon',['../classpysc2_1_1lib_1_1units_1_1_zerg.html#ab29dc9e79fcdbd295a83d14e5498a31a',1,'pysc2::lib::units::Zerg']]],
+  ['overseeroversightmode',['OverseerOversightMode',['../classpysc2_1_1lib_1_1units_1_1_zerg.html#ae69f34f5005c6e70a2b9e4886af7e417',1,'pysc2::lib::units::Zerg']]],
+  ['owner',['owner',['../classpysc2_1_1lib_1_1features_1_1_feature_unit.html#af878a27434fcd99e7714eacda482087f',1,'pysc2.lib.features.FeatureUnit.owner()'],['../classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit.html#a19974dba093e0d15e69c4d3a791a351e',1,'pysc2.tests.dummy_observation.FeatureUnit.owner()']]]
+];

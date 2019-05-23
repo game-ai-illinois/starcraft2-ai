@@ -1,0 +1,305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::protocol::StarcraftProtocol</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a647783ef9b0fbe60d79e85c3bbd83000" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.protocol.StarcraftProtocol::_status</definition>
+        <argsstring></argsstring>
+        <name>_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="76" column="1" bodyfile="lib/protocol.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a47cfeda9f8082fc1c5a7801bbf22f151" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.protocol.StarcraftProtocol::_sock</definition>
+        <argsstring></argsstring>
+        <name>_sock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="77" column="1" bodyfile="lib/protocol.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a65fca7cc64f33165f660c46142568895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol.__init__</definition>
+        <argsstring>(self, sock)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sock</type>
+          <defname>sock</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="75" column="1" bodyfile="lib/protocol.py" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a0dce2570a5feaa1da6e3d282fc2ea83a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol.status</definition>
+        <argsstring>(self)</argsstring>
+        <name>status</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="80" column="1" bodyfile="lib/protocol.py" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a0388e8e80a71a4a63a000bc52ec92653" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol.close</definition>
+        <argsstring>(self)</argsstring>
+        <name>close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="83" column="1" bodyfile="lib/protocol.py" bodystart="83" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a7633ee8d525381b124b9c09017e2d50d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol.read</definition>
+        <argsstring>(self)</argsstring>
+        <name>read</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Read a Response, do some validation, and return it.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="90" column="1" bodyfile="lib/protocol.py" bodystart="90" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a03ee4d6020768e77fd68d290ffa423a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol.write</definition>
+        <argsstring>(self, request)</argsstring>
+        <name>write</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Write a Request.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="112" column="1" bodyfile="lib/protocol.py" bodystart="112" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a12f0a3837aad92c813ca60416dcc6a89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol.send_req</definition>
+        <argsstring>(self, request)</argsstring>
+        <name>send_req</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Write a pre-filled Request and return the Response.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="119" column="1" bodyfile="lib/protocol.py" bodystart="119" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1aac34f8adc8d90d432394760daa65beda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol.send</definition>
+        <argsstring>(self, kwargs)</argsstring>
+        <name>send</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create and send a specific request, and return the response.
+
+For example: send(ping=sc_pb.RequestPing()) =&gt; sc_pb.ResponsePing
+
+Args:
+  **kwargs: A single kwarg with the name and value to fill in to Request.
+
+Returns:
+  The Response corresponding to your request.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="124" column="1" bodyfile="lib/protocol.py" bodystart="124" bodyend="138"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a1574ccb43767ca4aab8ecf4af7d9aafc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol._log_packet</definition>
+        <argsstring>(self, packet)</argsstring>
+        <name>_log_packet</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>packet</type>
+          <defname>packet</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="139" column="1" bodyfile="lib/protocol.py" bodystart="139" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a910f0a3a6c33d1f9cf929385198c8eb4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol._log</definition>
+        <argsstring>(self, s)</argsstring>
+        <name>_log</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Log a string. It flushes but doesn&apos;t append \n, so do that yourself.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="150" column="1" bodyfile="lib/protocol.py" bodystart="150" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1acf35697729dfff564189241c945bdb06" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol._read</definition>
+        <argsstring>(self)</argsstring>
+        <name>_read</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Actually read the response and parse it, returning a Response.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="157" column="1" bodyfile="lib/protocol.py" bodystart="157" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a3b1e64be1a18c5b6a7ee7957001d318a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.protocol.StarcraftProtocol._write</definition>
+        <argsstring>(self, request)</argsstring>
+        <name>_write</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>request</type>
+          <defname>request</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Actually serialize and write the request.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/protocol.py" line="169" column="1" bodyfile="lib/protocol.py" bodystart="169" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Defines the protocol for chatting with starcraft.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="663">
+        <label>object</label>
+      </node>
+      <node id="662">
+        <label>pysc2.lib.protocol.StarcraftProtocol</label>
+        <link refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol"/>
+        <childnode refid="663" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="665">
+        <label>object</label>
+      </node>
+      <node id="664">
+        <label>pysc2.lib.protocol.StarcraftProtocol</label>
+        <link refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol"/>
+        <childnode refid="665" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/protocol.py" line="72" column="1" bodyfile="lib/protocol.py" bodystart="72" bodyend="176"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a65fca7cc64f33165f660c46142568895" prot="public" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a910f0a3a6c33d1f9cf929385198c8eb4" prot="private" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>_log</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a1574ccb43767ca4aab8ecf4af7d9aafc" prot="private" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>_log_packet</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1acf35697729dfff564189241c945bdb06" prot="private" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>_read</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a47cfeda9f8082fc1c5a7801bbf22f151" prot="private" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>_sock</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a647783ef9b0fbe60d79e85c3bbd83000" prot="private" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>_status</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a3b1e64be1a18c5b6a7ee7957001d318a" prot="private" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>_write</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a0388e8e80a71a4a63a000bc52ec92653" prot="public" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>close</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a7633ee8d525381b124b9c09017e2d50d" prot="public" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>read</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1aac34f8adc8d90d432394760daa65beda" prot="public" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>send</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a12f0a3837aad92c813ca60416dcc6a89" prot="public" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>send_req</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a0dce2570a5feaa1da6e3d282fc2ea83a" prot="public" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>status</name></member>
+      <member refid="classpysc2_1_1lib_1_1protocol_1_1_starcraft_protocol_1a03ee4d6020768e77fd68d290ffa423a5" prot="public" virt="non-virtual"><scope>pysc2::lib::protocol::StarcraftProtocol</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1protocol_1_1_protocol_error" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::protocol::ProtocolError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>SC2 responded with an error message likely due to a bad request or bug.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="502">
+        <label>Exception</label>
+      </node>
+      <node id="501">
+        <label>pysc2.lib.protocol.ProtocolError</label>
+        <link refid="classpysc2_1_1lib_1_1protocol_1_1_protocol_error"/>
+        <childnode refid="502" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="504">
+        <label>Exception</label>
+      </node>
+      <node id="503">
+        <label>pysc2.lib.protocol.ProtocolError</label>
+        <link refid="classpysc2_1_1lib_1_1protocol_1_1_protocol_error"/>
+        <childnode refid="504" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/protocol.py" line="53" column="1" bodyfile="lib/protocol.py" bodystart="53" bodyend="59"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

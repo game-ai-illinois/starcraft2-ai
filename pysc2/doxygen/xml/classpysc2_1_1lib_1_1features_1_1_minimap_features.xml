@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_minimap_features" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::MinimapFeatures</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">height_map</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">visibility_map</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">creep</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">camera</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">player_id</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">player_relative</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">selected</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_minimap_features_1ae6b1b5a38e33b9c65fe60fe365e945e7" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.features.MinimapFeatures::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  ()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="243" column="1" bodyfile="lib/features.py" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_minimap_features_1a1f02bf52fac52f980a4f09afbbe34731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.MinimapFeatures.__new__</definition>
+        <argsstring>(cls, kwargs)</argsstring>
+        <name>__new__</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="245" column="1" bodyfile="lib/features.py" bodystart="245" bodyend="259"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>The set of minimap feature layers.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="396">
+        <label>player_relative</label>
+      </node>
+      <node id="395">
+        <label>player_id</label>
+      </node>
+      <node id="393">
+        <label>creep</label>
+      </node>
+      <node id="394">
+        <label>camera</label>
+      </node>
+      <node id="390">
+        <label>namedtuple</label>
+      </node>
+      <node id="392">
+        <label>visibility_map</label>
+      </node>
+      <node id="397">
+        <label>selected</label>
+      </node>
+      <node id="389">
+        <label>pysc2.lib.features.MinimapFeatures</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_minimap_features"/>
+        <childnode refid="390" relation="public-inheritance">
+        </childnode>
+        <childnode refid="391" relation="public-inheritance">
+        </childnode>
+        <childnode refid="392" relation="public-inheritance">
+        </childnode>
+        <childnode refid="393" relation="public-inheritance">
+        </childnode>
+        <childnode refid="394" relation="public-inheritance">
+        </childnode>
+        <childnode refid="395" relation="public-inheritance">
+        </childnode>
+        <childnode refid="396" relation="public-inheritance">
+        </childnode>
+        <childnode refid="397" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>height_map</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="405">
+        <label>player_relative</label>
+      </node>
+      <node id="404">
+        <label>player_id</label>
+      </node>
+      <node id="402">
+        <label>creep</label>
+      </node>
+      <node id="403">
+        <label>camera</label>
+      </node>
+      <node id="399">
+        <label>namedtuple</label>
+      </node>
+      <node id="401">
+        <label>visibility_map</label>
+      </node>
+      <node id="406">
+        <label>selected</label>
+      </node>
+      <node id="398">
+        <label>pysc2.lib.features.MinimapFeatures</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_minimap_features"/>
+        <childnode refid="399" relation="public-inheritance">
+        </childnode>
+        <childnode refid="400" relation="public-inheritance">
+        </childnode>
+        <childnode refid="401" relation="public-inheritance">
+        </childnode>
+        <childnode refid="402" relation="public-inheritance">
+        </childnode>
+        <childnode refid="403" relation="public-inheritance">
+        </childnode>
+        <childnode refid="404" relation="public-inheritance">
+        </childnode>
+        <childnode refid="405" relation="public-inheritance">
+        </childnode>
+        <childnode refid="406" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="400">
+        <label>height_map</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="239" column="1" bodyfile="lib/features.py" bodystart="241" bodyend="260"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_minimap_features_1a1f02bf52fac52f980a4f09afbbe34731" prot="public" virt="non-virtual"><scope>pysc2::lib::features::MinimapFeatures</scope><name>__new__</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_minimap_features_1ae6b1b5a38e33b9c65fe60fe365e945e7" prot="private" virt="non-virtual"><scope>pysc2::lib::features::MinimapFeatures</scope><name>__slots__</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

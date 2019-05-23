@@ -1,0 +1,97 @@
+\hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env}{}\section{pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+S\+C2\+Test\+Env Class Reference}
+\label{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env}\index{pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+S\+C2\+Test\+Env@{pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+S\+C2\+Test\+Env}}
+Inheritance diagram for pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+S\+C2\+Test\+Env\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_a1b3b490081a13ad71d95e11ea649c467}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \+\_\+only\+\_\+use\+\_\+kwargs=None, map\+\_\+name=None, players=None, agent\+\_\+interface\+\_\+format=None, discount=1., visualize=False, step\+\_\+mul=None, save\+\_\+replay\+\_\+episodes=0, replay\+\_\+dir=None, game\+\_\+steps\+\_\+per\+\_\+episode=None, score\+\_\+index=None, score\+\_\+multiplier=None, random\+\_\+seed=None, disable\+\_\+fog=False)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_ad9a54c6db41759dbfd25d042552fbb61}{save\+\_\+replay}} (self, args, kwargs)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_a21adbb6c71fbb4da2f27281744f06fa6}{episode\+\_\+length}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}A TestEnvironment to swap in for `starcraft2.env.sc2_env.SC2Env`.
+
+Repeatedly returns a mock observation for 10 calls to `step` whereupon it
+sets discount to 0. and changes state to READY_TO_END_EPISODE.
+
+Example:
+
+```
+@mock.patch(
+    'starcraft2.env.sc2_env.SC2Env',
+    mock_sc2_env.SC2TestEnv)
+def test_method(self):
+  env = sc2_env.SC2Env('nonexisting map')  # Really a SC2TestEnv.
+  ...
+```
+
+See base class for more details.
+\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_a1b3b490081a13ad71d95e11ea649c467}\label{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_a1b3b490081a13ad71d95e11ea649c467}} 
+\index{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+S\+C2\+Test\+Env.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{\+\_\+only\+\_\+use\+\_\+kwargs = {\ttfamily None},  }\item[{}]{map\+\_\+name = {\ttfamily None},  }\item[{}]{players = {\ttfamily None},  }\item[{}]{agent\+\_\+interface\+\_\+format = {\ttfamily None},  }\item[{}]{discount = {\ttfamily 1.},  }\item[{}]{visualize = {\ttfamily False},  }\item[{}]{step\+\_\+mul = {\ttfamily None},  }\item[{}]{save\+\_\+replay\+\_\+episodes = {\ttfamily 0},  }\item[{}]{replay\+\_\+dir = {\ttfamily None},  }\item[{}]{game\+\_\+steps\+\_\+per\+\_\+episode = {\ttfamily None},  }\item[{}]{score\+\_\+index = {\ttfamily None},  }\item[{}]{score\+\_\+multiplier = {\ttfamily None},  }\item[{}]{random\+\_\+seed = {\ttfamily None},  }\item[{}]{disable\+\_\+fog = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes an SC2TestEnv.
+
+Args:
+  _only_use_kwargs: Don't pass args, only kwargs.
+  map_name: Map name. Ignored.
+  players: A list of Agent and Bot instances that specify who will play.
+  agent_interface_format: A sequence containing one AgentInterfaceFormat
+per agent, matching the order of agents specified in the players list.
+Or a single AgentInterfaceFormat to be used for all agents.
+  discount: Unused.
+  visualize: Unused.
+  step_mul: Unused.
+  save_replay_episodes: Unused.
+  replay_dir: Unused.
+  game_steps_per_episode: Unused.
+  score_index: Unused.
+  score_multiplier: Unused.
+  random_seed: Unused.
+  disable_fog: Unused.
+
+Raises:
+  ValueError: if args are passed.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_ad9a54c6db41759dbfd25d042552fbb61}\label{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_ad9a54c6db41759dbfd25d042552fbb61}} 
+\index{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env}!save\+\_\+replay@{save\+\_\+replay}}
+\index{save\+\_\+replay@{save\+\_\+replay}!pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env}}
+\subsubsection{\texorpdfstring{save\+\_\+replay()}{save\_replay()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+S\+C2\+Test\+Env.\+save\+\_\+replay (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{args,  }\item[{}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Does nothing.\end{DoxyVerb}
+ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_a21adbb6c71fbb4da2f27281744f06fa6}\label{classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_a21adbb6c71fbb4da2f27281744f06fa6}} 
+\index{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env}!episode\+\_\+length@{episode\+\_\+length}}
+\index{episode\+\_\+length@{episode\+\_\+length}!pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env@{pysc2\+::env\+::mock\+\_\+sc2\+\_\+env\+::\+S\+C2\+Test\+Env}}
+\subsubsection{\texorpdfstring{episode\+\_\+length}{episode\_length}}
+{\footnotesize\ttfamily pysc2.\+env.\+mock\+\_\+sc2\+\_\+env.\+S\+C2\+Test\+Env.\+episode\+\_\+length}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+env/\mbox{\hyperlink{mock__sc2__env_8py}{mock\+\_\+sc2\+\_\+env.\+py}}\end{DoxyCompactItemize}

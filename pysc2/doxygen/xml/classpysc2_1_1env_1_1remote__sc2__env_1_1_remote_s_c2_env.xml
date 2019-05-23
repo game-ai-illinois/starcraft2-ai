@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::remote_sc2_env::RemoteSC2Env</compoundname>
+    <basecompoundref refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env" prot="public" virt="non-virtual">pysc2.env.sc2_env.SC2Env</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a97e7bed30c78f9b3d4547fde4b71ee3e" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_map_name</definition>
+        <argsstring></argsstring>
+        <name>_map_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="103" column="1" bodyfile="env/remote_sc2_env.py" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a8558599c335b0230e755683e9fb5635f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_num_agents</definition>
+        <argsstring></argsstring>
+        <name>_num_agents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="105" column="1" bodyfile="env/remote_sc2_env.py" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a9fbc8c46328cf89f7ce542c9acdb45f1" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_discount</definition>
+        <argsstring></argsstring>
+        <name>_discount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="106" column="1" bodyfile="env/remote_sc2_env.py" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1aef841669c0f087686fd7989f63ca06ed" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_step_mul</definition>
+        <argsstring></argsstring>
+        <name>_step_mul</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="107" column="1" bodyfile="env/remote_sc2_env.py" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a99058ae305d4b00a903c99e2faee1798" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_save_replay_episodes</definition>
+        <argsstring></argsstring>
+        <name>_save_replay_episodes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="108" column="1" bodyfile="env/remote_sc2_env.py" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1af279f073caaf61a8c64d599f01e6b118" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_replay_dir</definition>
+        <argsstring></argsstring>
+        <name>_replay_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="109" column="1" bodyfile="env/remote_sc2_env.py" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1af7bd015e88f89f0443e2555ae0a3654e" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_score_index</definition>
+        <argsstring></argsstring>
+        <name>_score_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="111" column="1" bodyfile="env/remote_sc2_env.py" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a88176e8e13a2e7ae41ddda75e9af5e77" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_score_multiplier</definition>
+        <argsstring></argsstring>
+        <name>_score_multiplier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="112" column="1" bodyfile="env/remote_sc2_env.py" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1aadb34536af35ebf7af648d68095360a3" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_episode_length</definition>
+        <argsstring></argsstring>
+        <name>_episode_length</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="113" column="1" bodyfile="env/remote_sc2_env.py" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a0d7cddf5fd734389b276305851980cf0" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_run_config</definition>
+        <argsstring></argsstring>
+        <name>_run_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="115" column="1" bodyfile="env/remote_sc2_env.py" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a27174b66dd6c462a42d52f58524ceea9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_parallel</definition>
+        <argsstring></argsstring>
+        <name>_parallel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="116" column="1" bodyfile="env/remote_sc2_env.py" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a9308776298d8073ad3123739f2b0bbff" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.env.remote_sc2_env.RemoteSC2Env::_controllers</definition>
+        <argsstring></argsstring>
+        <name>_controllers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="130" column="1" bodyfile="env/remote_sc2_env.py" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a24badc19f47472b86e579ded70a36b97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.remote_sc2_env.RemoteSC2Env.__init__</definition>
+        <argsstring>(self, _only_use_kwargs=None, map_name=None, host=&quot;127.0.0.1&quot;, host_port=None, lan_port=None, race=None, agent_interface_format=None, discount=1., visualize=False, step_mul=None, replay_dir=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>_only_use_kwargs</type>
+          <defname>_only_use_kwargs</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>map_name</type>
+          <defname>map_name</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+          <defval>&quot;127.0.0.1&quot;</defval>
+        </param>
+        <param>
+          <type>host_port</type>
+          <defname>host_port</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>lan_port</type>
+          <defname>lan_port</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>race</type>
+          <defname>race</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>agent_interface_format</type>
+          <defname>agent_interface_format</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>discount</type>
+          <defname>discount</defname>
+          <defval>1.</defval>
+        </param>
+        <param>
+          <type>visualize</type>
+          <defname>visualize</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>step_mul</type>
+          <defname>step_mul</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>replay_dir</type>
+          <defname>replay_dir</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Create a SC2 Env that connects to a remote instance of the game.
+
+This assumes that the game is already up and running, and it only needs to
+join. You need some other script to launch the process and call
+RequestCreateGame. It also assumes that it&apos;s a multiplayer game, and that
+the ports are consecutive.
+
+You must pass a resolution that you want to play at. You can send either
+feature layer resolution or rgb resolution or both. If you send both you
+must also choose which to use as your action space. Regardless of which you
+choose you must send both the screen and minimap resolutions.
+
+For each of the 4 resolutions, either specify size or both width and
+height. If you specify size then both width and height will take that value.
+
+Args:
+  _only_use_kwargs: Don&apos;t pass args, only kwargs.
+  map_name: Name of a SC2 map. Run bin/map_list to get the full list of
+  known maps. Alternatively, pass a Map instance. Take a look at the
+  docs in maps/README.md for more information on available maps.
+  host: Host where the server is running.
+  host_port: The port for the host.
+  lan_port: Where to connect to the other SC2 instance.
+  race: Race for this agent.
+  agent_interface_format: AgentInterfaceFormat object describing the
+  format of communication between the agent and the environment.
+  discount: Returned as part of the observation.
+  visualize: Whether to pop up a window showing the camera and feature
+  layers. This won&apos;t work without access to a window manager.
+  step_mul: How many game steps per agent step (action/observation). None
+  means use the map default.
+  replay_dir: Directory to save a replay.
+
+Raises:
+  ValueError: if the race is invalid.
+  ValueError: if the resolutions aren&apos;t specified correctly.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="44" column="1" bodyfile="env/remote_sc2_env.py" bodystart="55" bodyend="124"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a2eeff0f0203d3deb39709a8dca390165" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.remote_sc2_env.RemoteSC2Env._connect_remote</definition>
+        <argsstring>(self, host, host_port, lan_port, race, map_inst, interface)</argsstring>
+        <name>_connect_remote</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>host</type>
+          <defname>host</defname>
+        </param>
+        <param>
+          <type>host_port</type>
+          <defname>host_port</defname>
+        </param>
+        <param>
+          <type>lan_port</type>
+          <defname>lan_port</defname>
+        </param>
+        <param>
+          <type>race</type>
+          <defname>race</defname>
+        </param>
+        <param>
+          <type>map_inst</type>
+          <defname>map_inst</defname>
+        </param>
+        <param>
+          <type>interface</type>
+          <defname>interface</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Make sure this stays synced with bin/agent_remote.py.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="125" column="1" bodyfile="env/remote_sc2_env.py" bodystart="126" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a5f2c02dafc2edbecd291e661c72838ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.remote_sc2_env.RemoteSC2Env._restart</definition>
+        <argsstring>(self)</argsstring>
+        <name>_restart</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/remote_sc2_env.py" line="147" column="1" bodyfile="env/remote_sc2_env.py" bodystart="147" bodyend="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A Remote Starcraft II environment for playing vs other agents or humans.
+
+Unlike SC2Env, this doesn&apos;t actually start any instances and only connects
+to a remote instance.
+
+This assumes a 2 player game, and works best with play_vs_agent.py.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="541">
+        <label>pysc2.env.sc2_env.SC2Env</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env"/>
+        <childnode refid="542" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="542">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="543" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="540">
+        <label>pysc2.env.remote_sc2_env.RemoteSC2Env</label>
+        <link refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env"/>
+        <childnode refid="541" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="543">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="545">
+        <label>pysc2.env.sc2_env.SC2Env</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env"/>
+        <childnode refid="546" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="546">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="547" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="544">
+        <label>pysc2.env.remote_sc2_env.RemoteSC2Env</label>
+        <link refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env"/>
+        <childnode refid="545" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="547">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/remote_sc2_env.py" line="35" column="1" bodyfile="env/remote_sc2_env.py" bodystart="35" bodyend="152"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a24badc19f47472b86e579ded70a36b97" prot="public" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1ac2a49052b728228f1ed327d31ab37fcc" prot="public" virt="non-virtual" ambiguityscope="pysc2::env::sc2_env::SC2Env."><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a2eeff0f0203d3deb39709a8dca390165" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_connect_remote</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a9308776298d8073ad3123739f2b0bbff" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_controllers</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a9fbc8c46328cf89f7ce542c9acdb45f1" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_discount</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1aadb34536af35ebf7af648d68095360a3" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_episode_length</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a97e7bed30c78f9b3d4547fde4b71ee3e" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_map_name</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a8558599c335b0230e755683e9fb5635f" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_num_agents</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a27174b66dd6c462a42d52f58524ceea9" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_parallel</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1af279f073caaf61a8c64d599f01e6b118" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_replay_dir</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a5f2c02dafc2edbecd291e661c72838ae" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_restart</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a0d7cddf5fd734389b276305851980cf0" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_run_config</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a99058ae305d4b00a903c99e2faee1798" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_save_replay_episodes</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1af7bd015e88f89f0443e2555ae0a3654e" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_score_index</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1a88176e8e13a2e7ae41ddda75e9af5e77" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_score_multiplier</name></member>
+      <member refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env_1aef841669c0f087686fd7989f63ca06ed" prot="private" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>_step_mul</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1af686189f9be833a222756233fed0191f" prot="public" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>action_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a87aad830e9c5bb6741e3774e685766ae" prot="public" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>close</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a37bf2e2d461e4268feaa30862cd520cb" prot="public" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>observation_spec</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a11123fe4b74625eca2d88a2b837d681f" prot="public" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>reset</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1a55d7cb43c5efffa9cc249a5fd37cfba6" prot="public" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>save_replay</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1aa4cf7a2cf39426085b9d14ef2ecac855" prot="public" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>send_chat_messages</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env_1afde565357f8e64e50a8e03df0c1a1d4c" prot="public" virt="non-virtual"><scope>pysc2::env::remote_sc2_env::RemoteSC2Env</scope><name>step</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

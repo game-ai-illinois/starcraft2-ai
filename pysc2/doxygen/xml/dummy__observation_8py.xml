@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dummy__observation_8py" kind="file" language="Python">
+    <compoundname>dummy_observation.py</compoundname>
+    <innerclass refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit" prot="public">pysc2::tests::dummy_observation::Unit</innerclass>
+    <innerclass refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit" prot="public">pysc2::tests::dummy_observation::FeatureUnit</innerclass>
+    <innerclass refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder" prot="public">pysc2::tests::dummy_observation::Builder</innerclass>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1dummy__observation">pysc2::tests::dummy_observation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacepysc2_1_1tests_1_1dummy__observation" refkind="compound"><highlight class="comment">#!/usr/bin/python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Copyright<sp/>2018<sp/>Google<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS-IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">#<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;For<sp/>test<sp/>code<sp/>-<sp/>build<sp/>a<sp/>dummy<sp/>ResponseObservation<sp/>proto.</highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral">This<sp/>can<sp/>then<sp/>e.g.<sp/>be<sp/>passed<sp/>to<sp/>features.transform_obs.</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absolute_import</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>division</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_function</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>math</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1lib" kindref="compound">pysc2.lib</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>features</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>s2clientprotocol<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>raw_pb2</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>s2clientprotocol<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sc2api_pb2<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>sc_pb</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit" kindref="compound">Unit</ref>(object):</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Class<sp/>to<sp/>hold<sp/>unit<sp/>data<sp/>for<sp/>the<sp/>builder.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a4c8b7eef0f74a60b154607800a4dfcf3" kindref="member">__init__</ref>(</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self,</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>unit_type,<sp/><sp/></highlight><highlight class="comment">#<sp/>see<sp/>lib/units.py</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>player_relative,<sp/><sp/></highlight><highlight class="comment">#<sp/>features.PlayerRelative,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>health,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>shields=0,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>energy=0,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>transport_slots_taken=0,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>build_progress=1.0):</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a2d3589a320d10ad3825139405cfdd41d" kindref="member">unit_type</ref><sp/>=<sp/>unit_type</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ad8d75d8c395e4d5cc57d7a4a22ddef0d" kindref="member">player_relative</ref><sp/>=<sp/>player_relative</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ac7b740091edb61f73123d2b4c9a4fa0e" kindref="member">health</ref><sp/>=<sp/>health</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a398ccdb0016e39694ff69f1d119f988d" kindref="member">shields</ref><sp/>=<sp/>shields</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ae9c47af4d3c5ed579ae55a344f3822a6" kindref="member">energy</ref><sp/>=<sp/>energy</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a0af1ece1cc8dd67bd225d7661852de33" kindref="member">transport_slots_taken</ref><sp/>=<sp/>transport_slots_taken</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1aea9057527f8c666711f293e3f6a77bb9" kindref="member">build_progress</ref><sp/>=<sp/>build_progress</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ab93c28fac293df1ec17ce06121297ac0" kindref="member">fill</ref>(self,<sp/>unit_proto):</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Fill<sp/>a<sp/>proto<sp/>unit<sp/>data<sp/>object<sp/>from<sp/>this<sp/>Unit.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>unit_proto.unit_type<sp/>=<sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a2d3589a320d10ad3825139405cfdd41d" kindref="member">unit_type</ref></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>unit_proto.player_relative<sp/>=<sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ad8d75d8c395e4d5cc57d7a4a22ddef0d" kindref="member">player_relative</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>unit_proto.health<sp/>=<sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ac7b740091edb61f73123d2b4c9a4fa0e" kindref="member">health</ref></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>unit_proto.shields<sp/>=<sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a398ccdb0016e39694ff69f1d119f988d" kindref="member">shields</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>unit_proto.energy<sp/>=<sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ae9c47af4d3c5ed579ae55a344f3822a6" kindref="member">energy</ref></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>unit_proto.transport_slots_taken<sp/>=<sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a0af1ece1cc8dd67bd225d7661852de33" kindref="member">transport_slots_taken</ref></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>unit_proto.build_progress<sp/>=<sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1aea9057527f8c666711f293e3f6a77bb9" kindref="member">build_progress</ref></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ae2fd3dc18600b2cb3805219dd547ff11" kindref="member">as_array</ref>(self):</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Return<sp/>the<sp/>unit<sp/>represented<sp/>as<sp/>a<sp/>numpy<sp/>array.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>np.array([</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a2d3589a320d10ad3825139405cfdd41d" kindref="member">unit_type</ref>,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ad8d75d8c395e4d5cc57d7a4a22ddef0d" kindref="member">player_relative</ref>,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ac7b740091edb61f73123d2b4c9a4fa0e" kindref="member">health</ref>,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a398ccdb0016e39694ff69f1d119f988d" kindref="member">shields</ref>,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1ae9c47af4d3c5ed579ae55a344f3822a6" kindref="member">energy</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a0af1ece1cc8dd67bd225d7661852de33" kindref="member">transport_slots_taken</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int(self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1aea9057527f8c666711f293e3f6a77bb9" kindref="member">build_progress</ref><sp/>*<sp/>100)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>],<sp/>dtype=np.int32)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_unit_1a5759fe39fdd593be8950fe318c818838" kindref="member">as_dict</ref>(self):</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vars(self)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit" kindref="compound">FeatureUnit</ref>(object):</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Class<sp/>to<sp/>hold<sp/>feature<sp/>unit<sp/>data<sp/>for<sp/>the<sp/>builder.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a29f045250d5535e17083bbcf76552ce3" kindref="member">__init__</ref>(</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>unit_type,<sp/><sp/></highlight><highlight class="comment">#<sp/>see<sp/>lib/units</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>alliance,<sp/><sp/></highlight><highlight class="comment">#<sp/>features.PlayerRelative,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>owner,<sp/><sp/></highlight><highlight class="comment">#<sp/>1-15,<sp/>16=neutral</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pos,<sp/><sp/></highlight><highlight class="comment">#<sp/>common_pb2.Point,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>radius,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>health,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>health_max,</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>is_on_screen,</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>shield=0,</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>shield_max=0,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>energy=0,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>energy_max=0,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cargo_space_taken=0,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cargo_space_max=0,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>build_progress=1.0,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>facing=0.0,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>display_type=raw_pb2.Visible,<sp/><sp/></highlight><highlight class="comment">#<sp/>raw_pb.DisplayType</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cloak=raw_pb2.NotCloaked,<sp/><sp/></highlight><highlight class="comment">#<sp/>raw_pb.CloakState</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>is_selected=False,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>is_blip=False,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>is_powered=True,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mineral_contents=0,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>vespene_contents=0,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assigned_harvesters=0,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ideal_harvesters=0,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>weapon_cooldown=0.0):</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a6a9aea1b01b0bef42000625eddd10014" kindref="member">unit_type</ref><sp/>=<sp/>unit_type</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a36f00d3e41958c8cdc28475030b3c8ca" kindref="member">alliance</ref><sp/>=<sp/>alliance</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a19974dba093e0d15e69c4d3a791a351e" kindref="member">owner</ref><sp/>=<sp/>owner</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a7c8159cf661d25eb9b130b5209b8b6b2" kindref="member">pos</ref><sp/>=<sp/>pos</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1aa77c7afeb2b7b2f1126b45c800447123" kindref="member">radius</ref><sp/>=<sp/>radius</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1afa837c7dc75f853f013d5ce4ccac5762" kindref="member">health</ref><sp/>=<sp/>health</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a33704cb99306a4827b4e4e0ca3398ac8" kindref="member">health_max</ref><sp/>=<sp/>health_max</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1ad9a4ffd45f7af2c034c5463496e12795" kindref="member">is_on_screen</ref><sp/>=<sp/>is_on_screen</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1ab551432b8b74984fbf45c160bc3fa216" kindref="member">shield</ref><sp/>=<sp/>shield</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a2741bc9f9169631f189e4147ce0ec834" kindref="member">shield_max</ref><sp/>=<sp/>shield_max</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1ae008fd2fe0f833f0fdeac21a2e572908" kindref="member">energy</ref><sp/>=<sp/>energy</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a29a4b2b63ee5fa9f0b19c95615f73c52" kindref="member">energy_max</ref><sp/>=<sp/>energy_max</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a31a95dbb0529fd0367f93e6446119107" kindref="member">cargo_space_taken</ref><sp/>=<sp/>cargo_space_taken</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a4b4308329ef1e737110a2677ef70c9c1" kindref="member">cargo_space_max</ref><sp/>=<sp/>cargo_space_max</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a2bee7ca309a259d0aae8185cec757507" kindref="member">build_progress</ref><sp/>=<sp/>build_progress</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1ae4c36a8f2291ab7964e4df4857a4f294" kindref="member">facing</ref><sp/>=<sp/>facing</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1afabea5e860553376cf3214b299735e95" kindref="member">display_type</ref><sp/>=<sp/>display_type</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1ab5a1aa4dffa1fe0b4fad110a2d8aca34" kindref="member">cloak</ref><sp/>=<sp/>cloak</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a81174e04c9c837ea4236b1c016c1d2b6" kindref="member">is_selected</ref><sp/>=<sp/>is_selected</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a2f3c12be40ced78a4c7924c3fc286379" kindref="member">is_blip</ref><sp/>=<sp/>is_blip</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a07e6b73d0e672906022fb4f789f18b17" kindref="member">is_powered</ref><sp/>=<sp/>is_powered</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a890c00229e399d71a82aeda964cb0b51" kindref="member">mineral_contents</ref><sp/>=<sp/>mineral_contents</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a963db004b55761026732a1214aebf98e" kindref="member">vespene_contents</ref><sp/>=<sp/>vespene_contents</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1ac32fb034d2d1b73d71fcb584d0f6da2a" kindref="member">assigned_harvesters</ref><sp/>=<sp/>assigned_harvesters</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a4519fc0dcdaa63a954bfdb8af3bd8b89" kindref="member">ideal_harvesters</ref><sp/>=<sp/>ideal_harvesters</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1aac10330f3e9ea923e3acff05e87928d9" kindref="member">weapon_cooldown</ref><sp/>=<sp/>weapon_cooldown</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_feature_unit_1a427b9dbadc0902aa5484f00f8a05de60" kindref="member">as_dict</ref>(self):</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>vars(self)</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder" kindref="compound">Builder</ref>(object):</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;For<sp/>test<sp/>code<sp/>-<sp/>build<sp/>a<sp/>dummy<sp/>ResponseObservation<sp/>proto.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a6605dc28807b3a5ecf40cbbb1f4efe49" kindref="member">__init__</ref>(self,<sp/>obs_spec):</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a6f0f6cd7cc941859f9a0ce4ee499b91b" kindref="member">_obs_spec</ref><sp/>=<sp/>obs_spec</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1abd297ef0cda99662727f732bec2bc0bb" kindref="member">_single_select</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a887a2e65cbecf97aa5ec362f2de89b45" kindref="member">_multi_select</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a878a11ae2c2398842b08d85c60ae8ddd" kindref="member">_feature_units</ref><sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1abc12bdd5824b2fb1c4ad73f49d9a24c2" kindref="member">single_select</ref>(self,<sp/>unit):</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1abd297ef0cda99662727f732bec2bc0bb" kindref="member">_single_select</ref><sp/>=<sp/>unit</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1abd244158d236d9f802b95119b8aca326" kindref="member">multi_select</ref>(self,<sp/>units):</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a887a2e65cbecf97aa5ec362f2de89b45" kindref="member">_multi_select</ref><sp/>=<sp/>units</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1aa93d367215f3fdc8aa7adae07999577a" kindref="member">feature_units</ref>(self,<sp/>feature_units):</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a878a11ae2c2398842b08d85c60ae8ddd" kindref="member">_feature_units</ref><sp/>=<sp/>feature_units</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1ab74de5b9e8e2073e12b5712a90cea67d" kindref="member">build</ref>(self):</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Builds<sp/>and<sp/>returns<sp/>a<sp/>proto<sp/>ResponseObservation.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>response_observation<sp/>=<sp/>sc_pb.ResponseObservation()</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>obs<sp/>=<sp/>response_observation.observation</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.game_loop<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.player_id<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.minerals<sp/>=<sp/>20</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.vespene<sp/>=<sp/>50</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.food_cap<sp/>=<sp/>36</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.food_used<sp/>=<sp/>21</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.food_army<sp/>=<sp/>6</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.food_workers<sp/>=<sp/>15</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.idle_worker_count<sp/>=<sp/>2</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.army_count<sp/>=<sp/>6</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.warp_gate_count<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.player_common.larva_count<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.abilities.add(ability_id=1,<sp/>requires_point=</highlight><highlight class="keyword">True</highlight><highlight class="normal">)<sp/><sp/></highlight><highlight class="comment">#<sp/>Smart</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>obs.score.score<sp/>=<sp/>300</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details<sp/>=<sp/>obs.score.score_details</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.idle_production_time<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.idle_worker_time<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.total_value_units<sp/>=<sp/>190</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.total_value_structures<sp/>=<sp/>230</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.killed_value_units<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.killed_value_structures<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.collected_minerals<sp/>=<sp/>2130</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.collected_vespene<sp/>=<sp/>560</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.collection_rate_minerals<sp/>=<sp/>50</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.collection_rate_vespene<sp/>=<sp/>20</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.spent_minerals<sp/>=<sp/>2000</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>score_details.spent_vespene<sp/>=<sp/>500</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">fill(image_data,<sp/>size,<sp/>bits):</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>image_data.bits_per_pixel<sp/>=<sp/>bits</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>image_data.size.y<sp/>=<sp/>size[0]</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>image_data.size.x<sp/>=<sp/>size[1]</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>image_data.data<sp/>=<sp/>b</highlight><highlight class="stringliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>*<sp/>int(math.ceil(size[0]<sp/>*<sp/>size[1]<sp/>*<sp/>bits<sp/>/<sp/>8))</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;feature_screen&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a6f0f6cd7cc941859f9a0ce4ee499b91b" kindref="member">_obs_spec</ref>:</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>feature<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>features.SCREEN_FEATURES:</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fill(getattr(obs.feature_layer_data.renders,<sp/>feature.name),</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a6f0f6cd7cc941859f9a0ce4ee499b91b" kindref="member">_obs_spec</ref>[</highlight><highlight class="stringliteral">&apos;feature_screen&apos;</highlight><highlight class="normal">][1:],<sp/>8)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;feature_minimap&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a6f0f6cd7cc941859f9a0ce4ee499b91b" kindref="member">_obs_spec</ref>:</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>feature<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>features.MINIMAP_FEATURES:</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fill(getattr(obs.feature_layer_data.minimap_renders,<sp/>feature.name),</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a6f0f6cd7cc941859f9a0ce4ee499b91b" kindref="member">_obs_spec</ref>[</highlight><highlight class="stringliteral">&apos;feature_minimap&apos;</highlight><highlight class="normal">][1:],<sp/>8)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;rgb_screen&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a6f0f6cd7cc941859f9a0ce4ee499b91b" kindref="member">_obs_spec</ref>:</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fill(obs.render_data.map,<sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a6f0f6cd7cc941859f9a0ce4ee499b91b" kindref="member">_obs_spec</ref>[</highlight><highlight class="stringliteral">&apos;rgb_screen&apos;</highlight><highlight class="normal">][:2],<sp/>24)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;rgb_minimap&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a6f0f6cd7cc941859f9a0ce4ee499b91b" kindref="member">_obs_spec</ref>:</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fill(obs.render_data.minimap,<sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a6f0f6cd7cc941859f9a0ce4ee499b91b" kindref="member">_obs_spec</ref>[</highlight><highlight class="stringliteral">&apos;rgb_minimap&apos;</highlight><highlight class="normal">][:2],<sp/>24)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1abd297ef0cda99662727f732bec2bc0bb" kindref="member">_single_select</ref>:</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1abd297ef0cda99662727f732bec2bc0bb" kindref="member">_single_select</ref>.fill(obs.ui_data.single.unit)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a887a2e65cbecf97aa5ec362f2de89b45" kindref="member">_multi_select</ref>:</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>unit<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a887a2e65cbecf97aa5ec362f2de89b45" kindref="member">_multi_select</ref>:</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obs.ui_data.multi.units.add(**unit.as_dict())</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a878a11ae2c2398842b08d85c60ae8ddd" kindref="member">_feature_units</ref>:</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>feature_unit<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1tests_1_1dummy__observation_1_1_builder_1a878a11ae2c2398842b08d85c60ae8ddd" kindref="member">_feature_units</ref>:</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obs.raw_data.units.add(**feature_unit.as_dict())</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>response_observation</highlight></codeline>
+    </programlisting>
+    <location file="tests/dummy_observation.py"/>
+  </compounddef>
+</doxygen>

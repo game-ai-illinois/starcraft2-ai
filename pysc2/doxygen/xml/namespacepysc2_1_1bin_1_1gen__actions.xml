@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1bin_1_1gen__actions" kind="namespace" language="Python">
+    <compoundname>pysc2::bin::gen_actions</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1bin_1_1gen__actions_1aefe00fb4c7c7afb7a385c6e5ab636932" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::bin::gen_actions.FLAGS</definition>
+        <argsstring></argsstring>
+        <name>FLAGS</name>
+        <initializer>=  flags.FLAGS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="36" column="1" bodyfile="bin/gen_actions.py" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1bin_1_1gen__actions_1a5a093178fed9158dfcd923fc9fc58143" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::bin::gen_actions.used_abilities</definition>
+        <argsstring></argsstring>
+        <name>used_abilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="172" column="1" bodyfile="bin/gen_actions.py" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1bin_1_1gen__actions_1a6737a7178651d41e1d24b7a1c1bb1d28" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::bin::gen_actions.frivolous</definition>
+        <argsstring></argsstring>
+        <name>frivolous</name>
+        <initializer>=  {6, 7}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="210" column="1" bodyfile="bin/gen_actions.py" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1bin_1_1gen__actions_1a1ae1aae9850befe1a62c33fd578801f5" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::bin::gen_actions.cancel_slot</definition>
+        <argsstring></argsstring>
+        <name>cancel_slot</name>
+        <initializer>=  {313, 1039, 305, 307, 309, 1832, 1834, 3672}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="212" column="1" bodyfile="bin/gen_actions.py" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1bin_1_1gen__actions_1a6216003b8762b47f8435217866a835dc" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::bin::gen_actions.unload_unit</definition>
+        <argsstring></argsstring>
+        <name>unload_unit</name>
+        <initializer>=  {410, 415, 397, 1440, 2373, 1409, 914, 3670}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="213" column="1" bodyfile="bin/gen_actions.py" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1bin_1_1gen__actions_1a0307e2d975de651565c206a6c6a01c8f" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::bin::gen_actions.skip_abilities</definition>
+        <argsstring></argsstring>
+        <name>skip_abilities</name>
+        <initializer>=  <ref refid="namespacepysc2_1_1bin_1_1gen__actions_1a1ae1aae9850befe1a62c33fd578801f5" kindref="member">cancel_slot</ref> | <ref refid="namespacepysc2_1_1bin_1_1gen__actions_1a6216003b8762b47f8435217866a835dc" kindref="member">unload_unit</ref> | <ref refid="namespacepysc2_1_1bin_1_1gen__actions_1a6737a7178651d41e1d24b7a1c1bb1d28" kindref="member">frivolous</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="215" column="1" bodyfile="bin/gen_actions.py" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1gen__actions_1a9090887c898a2c4409b89c99fbb99923" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.gen_actions.get_data</definition>
+        <argsstring>()</argsstring>
+        <name>get_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Retrieve static data from the game.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="39" column="1" bodyfile="bin/gen_actions.py" bodystart="39" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1gen__actions_1ae37ff2f0164ef736edd6510ba2aa8447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.gen_actions.generate_name</definition>
+        <argsstring>(ability)</argsstring>
+        <name>generate_name</name>
+        <param>
+          <type>ability</type>
+          <defname>ability</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="58" column="1" bodyfile="bin/gen_actions.py" bodystart="58" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1gen__actions_1a47a7b6e94de45d68e5030e9c22103d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.gen_actions.sort_key</definition>
+        <argsstring>(data, ability)</argsstring>
+        <name>sort_key</name>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <param>
+          <type>ability</type>
+          <defname>ability</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="63" column="1" bodyfile="bin/gen_actions.py" bodystart="63" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1gen__actions_1ae7964605a3f83d58077a0df3aa2c3457" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.gen_actions.generate_csv</definition>
+        <argsstring>(data)</argsstring>
+        <name>generate_csv</name>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate a CSV of the abilities for easy commenting.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="72" column="1" bodyfile="bin/gen_actions.py" bodystart="72" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1gen__actions_1aafeb066969266460340f11b56032cff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.gen_actions.generate_py_abilities</definition>
+        <argsstring>(data)</argsstring>
+        <name>generate_py_abilities</name>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Generate the list of functions in actions.py.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="127" column="1" bodyfile="bin/gen_actions.py" bodystart="127" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1bin_1_1gen__actions_1a550e27248d0dabe71d49e78780f6ea34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.gen_actions.main</definition>
+        <argsstring>(unused_argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>unused_argv</type>
+          <defname>unused_argv</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/gen_actions.py" line="160" column="1" bodyfile="bin/gen_actions.py" bodystart="160" bodyend="171"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bin/gen_actions.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

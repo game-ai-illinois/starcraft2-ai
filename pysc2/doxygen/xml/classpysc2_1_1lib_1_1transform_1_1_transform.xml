@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1transform_1_1_transform" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::transform::Transform</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classpysc2_1_1lib_1_1transform_1_1_chain" prot="public" virt="non-virtual">pysc2.lib.transform.Chain</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1lib_1_1transform_1_1_linear" prot="public" virt="non-virtual">pysc2.lib.transform.Linear</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord" prot="public" virt="non-virtual">pysc2.lib.transform.PixelToCoord</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_transform_1a0e63ffb003a6567418d8205eca488ec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.Transform.fwd_dist</definition>
+        <argsstring>(self, dist)</argsstring>
+        <name>fwd_dist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dist</type>
+          <defname>dist</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="38" column="1" bodyfile="lib/transform.py" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_transform_1a0df7bdb41fe83c2f8e16f98a5690f0ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.Transform.fwd_pt</definition>
+        <argsstring>(self, pt)</argsstring>
+        <name>fwd_pt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pt</type>
+          <defname>pt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="41" column="1" bodyfile="lib/transform.py" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_transform_1a3a632e40b0dc24f7491187dff96582ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.Transform.back_dist</definition>
+        <argsstring>(self, dist)</argsstring>
+        <name>back_dist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dist</type>
+          <defname>dist</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="44" column="1" bodyfile="lib/transform.py" bodystart="44" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_transform_1a2b1e85dd14f1db61e20bbbc2d92d3e0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.Transform.back_pt</definition>
+        <argsstring>(self, pt)</argsstring>
+        <name>back_pt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pt</type>
+          <defname>pt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="47" column="1" bodyfile="lib/transform.py" bodystart="47" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Base class for coordinate transforms.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="844">
+        <label>pysc2.lib.transform.Linear</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_linear"/>
+        <childnode refid="841" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="845">
+        <label>pysc2.lib.transform.PixelToCoord</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord"/>
+        <childnode refid="841" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="841">
+        <label>pysc2.lib.transform.Transform</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_transform"/>
+        <childnode refid="842" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="842">
+        <label>object</label>
+      </node>
+      <node id="843">
+        <label>pysc2.lib.transform.Chain</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_chain"/>
+        <childnode refid="841" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="846">
+        <label>pysc2.lib.transform.Transform</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_transform"/>
+        <childnode refid="847" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="847">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/transform.py" line="35" column="1" bodyfile="lib/transform.py" bodystart="35" bodyend="51"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_transform_1a3a632e40b0dc24f7491187dff96582ad" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Transform</scope><name>back_dist</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_transform_1a2b1e85dd14f1db61e20bbbc2d92d3e0c" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Transform</scope><name>back_pt</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_transform_1a0e63ffb003a6567418d8205eca488ec2" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Transform</scope><name>fwd_dist</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_transform_1a0df7bdb41fe83c2f8e16f98a5690f0ba" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::Transform</scope><name>fwd_pt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

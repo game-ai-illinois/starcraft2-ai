@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2" kind="namespace" language="Python">
+    <compoundname>pysc2</compoundname>
+    <innernamespace refid="namespacepysc2_1_1agents">pysc2::agents</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1bin">pysc2::bin</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1env">pysc2::env</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1lib">pysc2::lib</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1maps">pysc2::maps</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1run__configs">pysc2::run_configs</innernamespace>
+    <innernamespace refid="namespacepysc2_1_1tests">pysc2::tests</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1a4969f2ab86cf3a085754b1077889ed94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.load_tests</definition>
+        <argsstring>(loader, standard_tests, unused_pattern)</argsstring>
+        <name>load_tests</name>
+        <param>
+          <type>loader</type>
+          <defname>loader</defname>
+        </param>
+        <param>
+          <type>standard_tests</type>
+          <defname>standard_tests</defname>
+        </param>
+        <param>
+          <type>unused_pattern</type>
+          <defname>unused_pattern</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Our tests end in `_test.py`, so need to override the test discovery.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="__init__.py" line="19" column="1" bodyfile="__init__.py" bodystart="19" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="__init__.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

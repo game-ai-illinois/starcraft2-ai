@@ -1,0 +1,142 @@
+.TH "pysc2.lib.renderer_human._Surface" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.renderer_human._Surface
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBsurf\fP, \fBsurf_type\fP, \fBsurf_rect\fP, \fBworld_to_surf\fP, \fBworld_to_obs\fP, \fBdraw\fP)"
+.br
+.ti -1c
+.RI "def \fBdraw_arc\fP (self, color, world_loc, world_radius, start_angle, stop_angle, thickness=1)"
+.br
+.ti -1c
+.RI "def \fBdraw_circle\fP (self, color, world_loc, world_radius, thickness=0)"
+.br
+.ti -1c
+.RI "def \fBdraw_rect\fP (self, color, world_rect, thickness=0)"
+.br
+.ti -1c
+.RI "def \fBblit_np_array\fP (self, array)"
+.br
+.ti -1c
+.RI "def \fBwrite_screen\fP (self, font, color, screen_pos, text, align='left', valign='top')"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBsurf\fP"
+.br
+.ti -1c
+.RI "\fBsurf_type\fP"
+.br
+.ti -1c
+.RI "\fBsurf_rect\fP"
+.br
+.ti -1c
+.RI "\fBworld_to_surf\fP"
+.br
+.ti -1c
+.RI "\fBworld_to_obs\fP"
+.br
+.ti -1c
+.RI "\fBdraw\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A surface to display on screen.
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.renderer_human\&._Surface\&.__init__ ( self,  surf,  surf_type,  surf_rect,  world_to_surf,  world_to_obs,  draw)"
+
+.PP
+.nf
+A surface to display on screen.
+
+Args:
+  surf: The actual pygame.Surface (or subsurface).
+  surf_type: A SurfType, used to tell how to treat clicks in that area.
+  surf_rect: Rect of the surface relative to the window.
+  world_to_surf: Convert a world point to a pixel on the surface.
+  world_to_obs: Convert a world point to a pixel in the observation.
+  draw: A function that draws onto the surface.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.renderer_human\&._Surface\&.blit_np_array ( self,  array)"
+
+.PP
+.nf
+Fill this surface using the contents of a numpy array.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&._Surface\&.draw_arc ( self,  color,  world_loc,  world_radius,  start_angle,  stop_angle,  thickness = \fC1\fP)"
+
+.PP
+.nf
+Draw an arc using world coordinates, radius, start and stop angles.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&._Surface\&.draw_circle ( self,  color,  world_loc,  world_radius,  thickness = \fC0\fP)"
+
+.PP
+.nf
+Draw a circle using world coordinates and radius.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&._Surface\&.draw_rect ( self,  color,  world_rect,  thickness = \fC0\fP)"
+
+.PP
+.nf
+Draw a rectangle using world coordinates.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&._Surface\&.write_screen ( self,  font,  color,  screen_pos,  text,  align = \fC'left'\fP,  valign = \fC'top'\fP)"
+
+.PP
+.nf
+Write to the screen in font.size relative coordinates.
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "pysc2\&.lib\&.renderer_human\&._Surface\&.draw"
+
+.SS "pysc2\&.lib\&.renderer_human\&._Surface\&.surf"
+
+.SS "pysc2\&.lib\&.renderer_human\&._Surface\&.surf_rect"
+
+.SS "pysc2\&.lib\&.renderer_human\&._Surface\&.surf_type"
+
+.SS "pysc2\&.lib\&.renderer_human\&._Surface\&.world_to_obs"
+
+.SS "pysc2\&.lib\&.renderer_human\&._Surface\&.world_to_surf"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

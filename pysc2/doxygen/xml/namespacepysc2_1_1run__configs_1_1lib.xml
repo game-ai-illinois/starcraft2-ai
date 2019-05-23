@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1run__configs_1_1lib" kind="namespace" language="Python">
+    <compoundname>pysc2::run_configs::lib</compoundname>
+    <innerclass refid="classpysc2_1_1run__configs_1_1lib_1_1_run_config" prot="public">pysc2::run_configs::lib::RunConfig</innerclass>
+    <innerclass refid="classpysc2_1_1run__configs_1_1lib_1_1_version" prot="public">pysc2::run_configs::lib::Version</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="run_configs/lib.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

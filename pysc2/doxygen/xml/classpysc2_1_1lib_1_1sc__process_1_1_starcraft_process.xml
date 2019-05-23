@@ -1,0 +1,473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::sc_process::StarcraftProcess</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1ae3234d19fef31ab0a5698b8dfea3a799" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.sc_process.StarcraftProcess::_proc</definition>
+        <argsstring></argsstring>
+        <name>_proc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="76" column="1" bodyfile="lib/sc_process.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a3d38aa6ed40b473bb10041087e9ea4ab" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.sc_process.StarcraftProcess::_controller</definition>
+        <argsstring></argsstring>
+        <name>_controller</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="77" column="1" bodyfile="lib/sc_process.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a502aeb58b123dfa16b4bc1c4fe1e21a5" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.sc_process.StarcraftProcess::_tmp_dir</definition>
+        <argsstring></argsstring>
+        <name>_tmp_dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="79" column="1" bodyfile="lib/sc_process.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a1577b1c8076dac47a8839f1d923c12f8" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.sc_process.StarcraftProcess::_host</definition>
+        <argsstring></argsstring>
+        <name>_host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="80" column="1" bodyfile="lib/sc_process.py" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a22afa274e14569b60f9b1597d9e1bc77" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.sc_process.StarcraftProcess::_port</definition>
+        <argsstring></argsstring>
+        <name>_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="81" column="1" bodyfile="lib/sc_process.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1ad1ac64868e04f225d0b2fb4facafcc2c" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.sc_process.StarcraftProcess::_version</definition>
+        <argsstring></argsstring>
+        <name>_version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="82" column="1" bodyfile="lib/sc_process.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a2ed5e56a2a9ee1fd1ff65d9391d64576" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess.__init__</definition>
+        <argsstring>(self, run_config, exec_path, version, full_screen=False, extra_args=None, verbose=False, host=None, port=None, connect=True, timeout_seconds=None, window_size=(640, 480), window_loc=(50, 50), kwargs)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>run_config</type>
+          <defname>run_config</defname>
+        </param>
+        <param>
+          <type>exec_path</type>
+          <defname>exec_path</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1afa21c71cb3b5c67ef329b5bd334d3880" kindref="member">version</ref></type>
+          <defname>version</defname>
+        </param>
+        <param>
+          <type>full_screen</type>
+          <defname>full_screen</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type>extra_args</type>
+          <defname>extra_args</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>verbose</type>
+          <defname>verbose</defname>
+          <defval>False</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a8d43a3929ca3e95b1a8c67cd6a7a787b" kindref="member">host</ref></type>
+          <defname>host</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a35b59673e9fe0b5e3d5966629b50570c" kindref="member">port</ref></type>
+          <defname>port</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>connect</type>
+          <defname>connect</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type>timeout_seconds</type>
+          <defname>timeout_seconds</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>window_size</type>
+          <defname>window_size</defname>
+          <defval>(640, 480)</defval>
+        </param>
+        <param>
+          <type>window_loc</type>
+          <defname>window_loc</defname>
+          <defval>(50, 50)</defval>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Launch the SC2 process.
+
+Args:
+  run_config: `run_configs.lib.RunConfig` object.
+  exec_path: Path to the binary to run.
+  version: `run_configs.lib.Version` object.
+  full_screen: Whether to launch the game window full_screen on win/mac.
+  extra_args: List of additional args for the SC2 process.
+  verbose: Whether to have the SC2 process do verbose logging.
+  host: IP for the game to listen on for its websocket. This is
+  usually &quot;127.0.0.1&quot;, or &quot;::1&quot;, but could be others as well.
+  port: Port SC2 should listen on for the websocket.
+  connect: Whether to create a RemoteController to connect.
+  timeout_seconds: Timeout for the remote controller.
+  window_size: Screen size if not full screen.
+  window_loc: Screen location if not full screen.
+  **kwargs: Extra arguments for _launch (useful for subclasses).
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="54" column="1" bodyfile="lib/sc_process.py" bodystart="57" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a08f5107eb70dd338f76b625a50ebec01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess.close</definition>
+        <argsstring>(self)</argsstring>
+        <name>close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Shut down the game and clean up.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="122" column="1" bodyfile="lib/sc_process.py" bodystart="122" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a82f3d7c4a499bca4b47d59e6686f759e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess.controller</definition>
+        <argsstring>(self)</argsstring>
+        <name>controller</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="136" column="1" bodyfile="lib/sc_process.py" bodystart="136" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a8d43a3929ca3e95b1a8c67cd6a7a787b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess.host</definition>
+        <argsstring>(self)</argsstring>
+        <name>host</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="140" column="1" bodyfile="lib/sc_process.py" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a35b59673e9fe0b5e3d5966629b50570c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess.port</definition>
+        <argsstring>(self)</argsstring>
+        <name>port</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="144" column="1" bodyfile="lib/sc_process.py" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1afa21c71cb3b5c67ef329b5bd334d3880" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess.version</definition>
+        <argsstring>(self)</argsstring>
+        <name>version</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="148" column="1" bodyfile="lib/sc_process.py" bodystart="148" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a3cdbe783d29d2863ba10ec403cb16e30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess.__enter__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__enter__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="151" column="1" bodyfile="lib/sc_process.py" bodystart="151" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a5f633ebeb0a4bb91de5945ed98526970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess.__exit__</definition>
+        <argsstring>(self, unused_exception_type, unused_exc_value, unused_traceback)</argsstring>
+        <name>__exit__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>unused_exception_type</type>
+          <defname>unused_exception_type</defname>
+        </param>
+        <param>
+          <type>unused_exc_value</type>
+          <defname>unused_exc_value</defname>
+        </param>
+        <param>
+          <type>unused_traceback</type>
+          <defname>unused_traceback</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="154" column="1" bodyfile="lib/sc_process.py" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a2ea4b975a739f0580d91403fe35bc0f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess.__del__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__del__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="157" column="1" bodyfile="lib/sc_process.py" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a3937176eb8f9c0baf4f18b455fb42243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess.running</definition>
+        <argsstring>(self)</argsstring>
+        <name>running</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="186" column="1" bodyfile="lib/sc_process.py" bodystart="186" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a2be12bbd972fefec4ea4f34c7bcb25fe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess._check_exists</definition>
+        <argsstring>(self, exec_path)</argsstring>
+        <name>_check_exists</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>exec_path</type>
+          <defname>exec_path</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="161" column="1" bodyfile="lib/sc_process.py" bodystart="161" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a6764ceb16a84a1e518ce44912e740d5a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess._launch</definition>
+        <argsstring>(self, run_config, args, kwargs)</argsstring>
+        <name>_launch</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>run_config</type>
+          <defname>run_config</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Launch the process and return the process object.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="168" column="1" bodyfile="lib/sc_process.py" bodystart="168" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a7b36da058fc09066509767bd118cc19d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.sc_process.StarcraftProcess._shutdown</definition>
+        <argsstring>(self)</argsstring>
+        <name>_shutdown</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Terminate the sub-process.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/sc_process.py" line="178" column="1" bodyfile="lib/sc_process.py" bodystart="178" bodyend="184"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Launch a starcraft server, initialize a controller, and later, clean up.
+
+This is best used from run_configs, which decides which version to run, and
+where to find it.
+
+It is important to call `close` or use it as a context manager, otherwise
+you&apos;ll likely leak temp files and SC2 processes.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="658">
+        <label>pysc2.lib.sc_process.StarcraftProcess</label>
+        <link refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process"/>
+        <childnode refid="659" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="659">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="660">
+        <label>pysc2.lib.sc_process.StarcraftProcess</label>
+        <link refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process"/>
+        <childnode refid="661" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="661">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/sc_process.py" line="44" column="1" bodyfile="lib/sc_process.py" bodystart="44" bodyend="191"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a2ea4b975a739f0580d91403fe35bc0f1" prot="public" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>__del__</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a3cdbe783d29d2863ba10ec403cb16e30" prot="public" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>__enter__</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a5f633ebeb0a4bb91de5945ed98526970" prot="public" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>__exit__</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a2ed5e56a2a9ee1fd1ff65d9391d64576" prot="public" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a2be12bbd972fefec4ea4f34c7bcb25fe" prot="private" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>_check_exists</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a3d38aa6ed40b473bb10041087e9ea4ab" prot="private" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>_controller</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a1577b1c8076dac47a8839f1d923c12f8" prot="private" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>_host</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a6764ceb16a84a1e518ce44912e740d5a" prot="private" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>_launch</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a22afa274e14569b60f9b1597d9e1bc77" prot="private" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>_port</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1ae3234d19fef31ab0a5698b8dfea3a799" prot="private" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>_proc</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a7b36da058fc09066509767bd118cc19d" prot="private" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>_shutdown</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a502aeb58b123dfa16b4bc1c4fe1e21a5" prot="private" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>_tmp_dir</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1ad1ac64868e04f225d0b2fb4facafcc2c" prot="private" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>_version</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a08f5107eb70dd338f76b625a50ebec01" prot="public" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>close</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a82f3d7c4a499bca4b47d59e6686f759e" prot="public" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>controller</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a8d43a3929ca3e95b1a8c67cd6a7a787b" prot="public" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>host</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a35b59673e9fe0b5e3d5966629b50570c" prot="public" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>port</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a3937176eb8f9c0baf4f18b455fb42243" prot="public" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>running</name></member>
+      <member refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1afa21c71cb3b5c67ef329b5bd334d3880" prot="public" virt="non-virtual"><scope>pysc2::lib::sc_process::StarcraftProcess</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

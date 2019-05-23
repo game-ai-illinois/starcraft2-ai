@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1maps_1_1lib_1_1_no_map_exception" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::maps::lib::NoMapException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="448">
+        <label>Exception</label>
+      </node>
+      <node id="447">
+        <label>pysc2.maps.lib.NoMapException</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_no_map_exception"/>
+        <childnode refid="448" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="450">
+        <label>Exception</label>
+      </node>
+      <node id="449">
+        <label>pysc2.maps.lib.NoMapException</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_no_map_exception"/>
+        <childnode refid="450" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="maps/lib.py" line="43" column="1" bodyfile="maps/lib.py" bodystart="43" bodyend="47"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

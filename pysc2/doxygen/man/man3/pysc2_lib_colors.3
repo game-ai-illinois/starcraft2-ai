@@ -1,0 +1,224 @@
+.TH "pysc2.lib.colors" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.colors
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBColor\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBsmooth_hue_palette\fP (scale)"
+.br
+.ti -1c
+.RI "def \fBshuffled_hue\fP (scale)"
+.br
+.ti -1c
+.RI "def \fBpiece_wise_linear\fP (scale, points)"
+.br
+.ti -1c
+.RI "def \fBwinter\fP (scale)"
+.br
+.ti -1c
+.RI "def \fBhot\fP (scale)"
+.br
+.ti -1c
+.RI "def \fBunit_type\fP (scale=None)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBblack\fP = \fBColor\fP(0, 0, 0)"
+.br
+.ti -1c
+.RI "\fBwhite\fP = \fBColor\fP(255, 255, 255)"
+.br
+.ti -1c
+.RI "\fBred\fP = \fBColor\fP(255, 0, 0)"
+.br
+.ti -1c
+.RI "\fBgreen\fP = \fBColor\fP(0, 255, 0)"
+.br
+.ti -1c
+.RI "\fBblue\fP = \fBColor\fP(0, 0, 255)"
+.br
+.ti -1c
+.RI "\fBcyan\fP = \fBColor\fP(0, 255, 255)"
+.br
+.ti -1c
+.RI "\fByellow\fP = \fBColor\fP(255, 255, 0)"
+.br
+.ti -1c
+.RI "\fBpurple\fP = \fBColor\fP(255, 0, 255)"
+.br
+.ti -1c
+.RI "\fBPLAYER_RELATIVE_PALETTE\fP"
+.br
+.ti -1c
+.RI "\fBPLAYER_ABSOLUTE_PALETTE\fP"
+.br
+.ti -1c
+.RI "\fBVISIBILITY_PALETTE\fP"
+.br
+.ti -1c
+.RI "\fBCAMERA_PALETTE\fP = numpy\&.array([\fBblack\fP, \fBwhite\fP * 0\&.6])"
+.br
+.ti -1c
+.RI "\fBCREEP_PALETTE\fP = numpy\&.array([\fBblack\fP, \fBpurple\fP * 0\&.4])"
+.br
+.ti -1c
+.RI "\fBPOWER_PALETTE\fP = numpy\&.array([\fBblack\fP, \fBcyan\fP * 0\&.7])"
+.br
+.ti -1c
+.RI "\fBSELECTED_PALETTE\fP = numpy\&.array([\fBblack\fP, \fBgreen\fP * 0\&.7])"
+.br
+.ti -1c
+.RI "\fBeffects\fP"
+.br
+.ti -1c
+.RI "\fBdistinct_colors\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.colors\&.hot ( scale)"
+
+.SS "def pysc2\&.lib\&.colors\&.piece_wise_linear ( scale,  points)"
+
+.PP
+.nf
+Create a palette that is piece-wise linear given some colors at points.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.colors\&.shuffled_hue ( scale)"
+
+.SS "def pysc2\&.lib\&.colors\&.smooth_hue_palette ( scale)"
+
+.PP
+.nf
+Takes an array of ints and returns a corresponding colored rgb array.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.colors\&.unit_type ( scale = \fCNone\fP)"
+
+.PP
+.nf
+Returns a palette that maps unit types to rgb colors.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.colors\&.winter ( scale)"
+
+.SH "Variable Documentation"
+.PP 
+.SS "pysc2\&.lib\&.colors\&.black = \fBColor\fP(0, 0, 0)"
+
+.SS "pysc2\&.lib\&.colors\&.blue = \fBColor\fP(0, 0, 255)"
+
+.SS "pysc2\&.lib\&.colors\&.CAMERA_PALETTE = numpy\&.array([\fBblack\fP, \fBwhite\fP * 0\&.6])"
+
+.SS "pysc2\&.lib\&.colors\&.CREEP_PALETTE = numpy\&.array([\fBblack\fP, \fBpurple\fP * 0\&.4])"
+
+.SS "pysc2\&.lib\&.colors\&.cyan = \fBColor\fP(0, 255, 255)"
+
+.SS "pysc2\&.lib\&.colors\&.distinct_colors"
+
+.SS "pysc2\&.lib\&.colors\&.effects"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  numpy\&.array([
+2     [0, 0, 0],
+3     [72, 173, 207],
+4     [203, 76, 49],
+5     [122, 98, 209],
+6     [109, 183, 67],
+7     [192, 80, 181],
+8     [86, 185, 138],
+9     [211, 63, 115],
+10     [81, 128, 60],
+11     [182, 135, 208],
+12     [182, 174, 73],
+13     [95, 123, 196],
+14     [220, 146, 71],
+15     [187, 102, 147],
+16     [138, 109, 48],
+17     [197, 103, 99],
+18 ])
+.fi
+.SS "pysc2\&.lib\&.colors\&.green = \fBColor\fP(0, 255, 0)"
+
+.SS "pysc2\&.lib\&.colors\&.PLAYER_ABSOLUTE_PALETTE"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  numpy\&.array([
+2     black,                 # Background
+3     Color(0, 142, 0),      # 1: Green
+4     Color(113, 25, 34),    # 2: Red
+5     Color(223, 215, 67),   # 3: Yellow
+6     Color(66, 26, 121),    # 4: Purple
+7     Color(222, 144, 50),   # 5: Orange
+8     Color(46, 72, 237),    # 6: Blue
+9     Color(207, 111, 176),  # 7: Pink
+10     Color(189, 251, 157),  # 8: Light green
+11     white * 0\&.1,           # 9: Does the game ever have more than 8 players?
+12     white * 0\&.1,           # 10: Does the game ever have more than 8 players?
+13     white * 0\&.1,           # 11: Does the game ever have more than 8 players?
+14     white * 0\&.1,           # 12: Does the game ever have more than 8 players?
+15     white * 0\&.1,           # 13: Does the game ever have more than 8 players?
+16     white * 0\&.1,           # 14: Does the game ever have more than 8 players?
+17     white * 0\&.1,           # 15: Does the game ever have more than 8 players?
+18     Color(129, 166, 196),  # 16 Neutral: Cyan
+19 ])
+.fi
+.SS "pysc2\&.lib\&.colors\&.PLAYER_RELATIVE_PALETTE"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  numpy\&.array([
+2     black,                 # Background\&.
+3     Color(0, 142, 0),      # Self\&. (Green)\&.
+4     yellow,                # Ally\&.
+5     Color(129, 166, 196),  # Neutral\&. (Cyan\&.)
+6     Color(113, 25, 34),    # Enemy\&. (Red)\&.
+7 ])
+.fi
+.SS "pysc2\&.lib\&.colors\&.POWER_PALETTE = numpy\&.array([\fBblack\fP, \fBcyan\fP * 0\&.7])"
+
+.SS "pysc2\&.lib\&.colors\&.purple = \fBColor\fP(255, 0, 255)"
+
+.SS "pysc2\&.lib\&.colors\&.red = \fBColor\fP(255, 0, 0)"
+
+.SS "pysc2\&.lib\&.colors\&.SELECTED_PALETTE = numpy\&.array([\fBblack\fP, \fBgreen\fP * 0\&.7])"
+
+.SS "pysc2\&.lib\&.colors\&.VISIBILITY_PALETTE"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  numpy\&.array([
+2     black,         # Hidden
+3     white * 0\&.25,  # Fogged
+4     white * 0\&.6,   # Visible
+5 ])
+.fi
+.SS "pysc2\&.lib\&.colors\&.white = \fBColor\fP(255, 255, 255)"
+
+.SS "pysc2\&.lib\&.colors\&.yellow = \fBColor\fP(255, 255, 0)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

@@ -1,0 +1,188 @@
+.TH "pysc2.lib.features" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.features
+.SH SYNOPSIS
+.br
+.PP
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBAgentInterfaceFormat\fP"
+.br
+.ti -1c
+.RI "class \fBDimensions\fP"
+.br
+.ti -1c
+.RI "class \fBEffects\fP"
+.br
+.ti -1c
+.RI "class \fBFeature\fP"
+.br
+.ti -1c
+.RI "class \fBFeatures\fP"
+.br
+.ti -1c
+.RI "class \fBFeatureType\fP"
+.br
+.ti -1c
+.RI "class \fBFeatureUnit\fP"
+.br
+.ti -1c
+.RI "class \fBMinimapFeatures\fP"
+.br
+.ti -1c
+.RI "class \fBPlayer\fP"
+.br
+.ti -1c
+.RI "class \fBPlayerRelative\fP"
+.br
+.ti -1c
+.RI "class \fBScoreCumulative\fP"
+.br
+.ti -1c
+.RI "class \fBScreenFeatures\fP"
+.br
+.ti -1c
+.RI "class \fBUnitLayer\fP"
+.br
+.ti -1c
+.RI "class \fBVisibility\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBparse_agent_interface_format\fP (feature_screen=None, feature_minimap=None, rgb_screen=None, rgb_minimap=None, action_space=None, camera_width_world_units=None, use_feature_units=False)"
+.br
+.ti -1c
+.RI "def \fBfeatures_from_game_info\fP (game_info, use_feature_units=False, action_space=None, hide_specific_actions=True)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBsw\fP = stopwatch\&.sw"
+.br
+.ti -1c
+.RI "\fBSCREEN_FEATURES\fP"
+.br
+.ti -1c
+.RI "\fBMINIMAP_FEATURES\fP"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.features\&.features_from_game_info ( game_info,  use_feature_units = \fCFalse\fP,  action_space = \fCNone\fP,  hide_specific_actions = \fCTrue\fP)"
+
+.PP
+.nf
+Construct a Features object using data extracted from game info.
+
+Args:
+  game_info: A `sc_pb.ResponseGameInfo` from the game.
+  use_feature_units: Whether to include the feature unit observation.
+  action_space: If you pass both feature and rgb sizes, then you must also
+      specify which you want to use for your actions as an ActionSpace enum.
+  hide_specific_actions: [bool] Some actions (eg cancel) have many
+      specific versions (cancel this building, cancel that spell) and can
+      be represented in a more general form. If a specific action is
+      available, the general will also be available. If you set
+      `hide_specific_actions` to False, the specific versions will also be
+      available, but if it's True, the specific ones will be hidden.
+      Similarly, when transforming back, a specific action will be returned
+      as the general action. This simplifies the action space, though can
+      lead to some actions in replays not being exactly representable using
+      only the general actions.
+
+Returns:
+  A features object matching the specified parameterisation.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.features\&.parse_agent_interface_format ( feature_screen = \fCNone\fP,  feature_minimap = \fCNone\fP,  rgb_screen = \fCNone\fP,  rgb_minimap = \fCNone\fP,  action_space = \fCNone\fP,  camera_width_world_units = \fCNone\fP,  use_feature_units = \fCFalse\fP)"
+
+.PP
+.nf
+Creates an AgentInterfaceFormat object from keyword args.
+
+Convenient when using dictionaries or command-line arguments for config.
+
+Note that the feature_* and rgb_* properties define the respective spatial
+observation dimensions and accept:
+    * None or 0 to disable that spatial observation.
+    * A single int for a square observation with that side length.
+    * A (int, int) tuple for a rectangular (width, height) observation.
+
+Args:
+  feature_screen: If specified, so must feature_minimap be.
+  feature_minimap: If specified, so must feature_screen be.
+  rgb_screen: If specified, so must rgb_minimap be.
+  rgb_minimap: If specified, so must rgb_screen be.
+  action_space: ["FEATURES", "RGB"].
+  camera_width_world_units: An int.
+  use_feature_units: A boolean, defaults to False.
+
+Returns:
+  An `AgentInterfaceFormat` object.
+
+Raises:
+  ValueError: If an invalid parameter is specified.
+
+.fi
+.PP
+ 
+.SH "Variable Documentation"
+.PP 
+.SS "pysc2\&.lib\&.features\&.MINIMAP_FEATURES"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  MinimapFeatures(
+2     height_map=(256, FeatureType\&.SCALAR, colors\&.winter),
+3     visibility_map=(4, FeatureType\&.CATEGORICAL, colors\&.VISIBILITY_PALETTE),
+4     creep=(2, FeatureType\&.CATEGORICAL, colors\&.CREEP_PALETTE),
+5     camera=(2, FeatureType\&.CATEGORICAL, colors\&.CAMERA_PALETTE),
+6     player_id=(17, FeatureType\&.CATEGORICAL, colors\&.PLAYER_ABSOLUTE_PALETTE),
+7     player_relative=(5, FeatureType\&.CATEGORICAL,
+8                      colors\&.PLAYER_RELATIVE_PALETTE),
+9     selected=(2, FeatureType\&.CATEGORICAL, colors\&.winter),
+10 )
+.fi
+.SS "pysc2\&.lib\&.features\&.SCREEN_FEATURES"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  ScreenFeatures(
+2     height_map=(256, FeatureType\&.SCALAR, colors\&.winter, False),
+3     visibility_map=(4, FeatureType\&.CATEGORICAL,
+4                     colors\&.VISIBILITY_PALETTE, False),
+5     creep=(2, FeatureType\&.CATEGORICAL, colors\&.CREEP_PALETTE, False),
+6     power=(2, FeatureType\&.CATEGORICAL, colors\&.POWER_PALETTE, False),
+7     player_id=(17, FeatureType\&.CATEGORICAL,
+8                colors\&.PLAYER_ABSOLUTE_PALETTE, False),
+9     player_relative=(5, FeatureType\&.CATEGORICAL,
+10                      colors\&.PLAYER_RELATIVE_PALETTE, False),
+11     unit_type=(max(static_data\&.UNIT_TYPES) + 1, FeatureType\&.CATEGORICAL,
+12                colors\&.unit_type, False),
+13     selected=(2, FeatureType\&.CATEGORICAL, colors\&.SELECTED_PALETTE, False),
+14     unit_hit_points=(1600, FeatureType\&.SCALAR, colors\&.hot, True),
+15     unit_hit_points_ratio=(256, FeatureType\&.SCALAR, colors\&.hot, False),
+16     unit_energy=(1000, FeatureType\&.SCALAR, colors\&.hot, True),
+17     unit_energy_ratio=(256, FeatureType\&.SCALAR, colors\&.hot, False),
+18     unit_shields=(1000, FeatureType\&.SCALAR, colors\&.hot, True),
+19     unit_shields_ratio=(256, FeatureType\&.SCALAR, colors\&.hot, False),
+20     unit_density=(16, FeatureType\&.SCALAR, colors\&.hot, True),
+21     unit_density_aa=(256, FeatureType\&.SCALAR, colors\&.hot, False),
+22     effects=(16, FeatureType\&.CATEGORICAL, colors\&.effects, False),
+23 )
+.fi
+.SS "pysc2\&.lib\&.features\&.sw = stopwatch\&.sw"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

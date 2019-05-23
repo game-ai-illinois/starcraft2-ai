@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1env_1_1environment" kind="namespace" language="Python">
+    <compoundname>pysc2::env::environment</compoundname>
+    <innerclass refid="classpysc2_1_1env_1_1environment_1_1_base" prot="public">pysc2::env::environment::Base</innerclass>
+    <innerclass refid="classpysc2_1_1env_1_1environment_1_1_step_type" prot="public">pysc2::env::environment::StepType</innerclass>
+    <innerclass refid="classpysc2_1_1env_1_1environment_1_1_time_step" prot="public">pysc2::env::environment::TimeStep</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1environment_1ac382d147632a99ed4f259f8f0359d1c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.reset</definition>
+        <argsstring>(self)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Abstract base class for Python RL environments.</verbatim><verbatim>Starts a new sequence and returns the first `TimeStep` of this sequence.
+
+Returns:
+  A `TimeStep` namedtuple containing:
+    step_type: A `StepType` of `FIRST`.
+    reward: `None`, indicating the reward is undefined.
+    discount: `None`, indicating the discount is undefined.
+    observation: A NumPy array, or a dict, list or tuple of arrays
+      corresponding to `observation_spec()`.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="74" column="1" bodyfile="env/environment.py" bodystart="74" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1environment_1a33a961f4eae86ee2fd8faf7bfa56ec28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.step</definition>
+        <argsstring>(self, action)</argsstring>
+        <name>step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Updates the environment according to the action and returns a `TimeStep`.
+
+If the environment returned a `TimeStep` with `StepType.LAST` at the
+previous step, this call to `step` will start a new sequence and `action`
+will be ignored.
+
+This method will also start a new sequence if called after the environment
+has been constructed and `restart` has not been called. Again, in this case
+`action` will be ignored.
+
+Args:
+  action: A NumPy array, or a dict, list or tuple of arrays corresponding to
+    `action_spec()`.
+
+Returns:
+  A `TimeStep` namedtuple containing:
+    step_type: A `StepType` value.
+    reward: Reward at this timestep.
+    discount: A discount in the range [0, 1].
+    observation: A NumPy array, or a dict, list or tuple of arrays
+      corresponding to `observation_spec()`.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="87" column="1" bodyfile="env/environment.py" bodystart="87" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1environment_1a0fee225a83b098e54d402bb36016a26c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.observation_spec</definition>
+        <argsstring>(self)</argsstring>
+        <name>observation_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Defines the observations provided by the environment.
+
+Returns:
+  A tuple of specs (one per agent), where each spec is a dict of shape
+    tuples.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="112" column="1" bodyfile="env/environment.py" bodystart="112" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1environment_1a74074388916b1ee75fe907ba1ef89cd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.action_spec</definition>
+        <argsstring>(self)</argsstring>
+        <name>action_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Defines the actions that should be provided to `step`.
+
+Returns:
+  A tuple of specs (one per agent), where each spec is something that
+    defines the shape of the actions.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="121" column="1" bodyfile="env/environment.py" bodystart="121" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1environment_1a12f1f831e94b51902434a752e0b2785f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.close</definition>
+        <argsstring>(self)</argsstring>
+        <name>close</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Frees any resources used by the environment.
+
+Implement this method for an environment backed by an external process.
+
+This method be used directly
+
+```python
+env = Env(...)
+# Use env.
+env.close()
+```
+
+or via a context manager
+
+```python
+with Env(...) as env:
+  # Use env.
+```
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="129" column="1" bodyfile="env/environment.py" bodystart="129" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1environment_1a896e68af7de52dfdd215668735cb8a05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.__enter__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__enter__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Allows the environment to be used in a with-statement context.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="151" column="1" bodyfile="env/environment.py" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1environment_1a2d6e14089315a0f114774a210e08737a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.__exit__</definition>
+        <argsstring>(self, unused_exception_type, unused_exc_value, unused_traceback)</argsstring>
+        <name>__exit__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>unused_exception_type</type>
+          <defname>unused_exception_type</defname>
+        </param>
+        <param>
+          <type>unused_exc_value</type>
+          <defname>unused_exc_value</defname>
+        </param>
+        <param>
+          <type>unused_traceback</type>
+          <defname>unused_traceback</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Allows the environment to be used in a with-statement context.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="155" column="1" bodyfile="env/environment.py" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1environment_1adb20b87cd19dde16fe8b2b12d1bf2a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.environment.__del__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__del__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/environment.py" line="159" column="1" bodyfile="env/environment.py" bodystart="159" bodyend="162"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="env/environment.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

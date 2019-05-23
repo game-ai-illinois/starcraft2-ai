@@ -1,0 +1,137 @@
+.TH "pysc2.lib.point.Rect" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.point.Rect
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits namedtuple, t, l, b, and r\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__new__\fP (cls, args)"
+.br
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcenter\fP (self)"
+.br
+.ti -1c
+.RI "def \fBtop\fP (self)"
+.br
+.ti -1c
+.RI "def \fBleft\fP (self)"
+.br
+.ti -1c
+.RI "def \fBbottom\fP (self)"
+.br
+.ti -1c
+.RI "def \fBright\fP (self)"
+.br
+.ti -1c
+.RI "def \fBwidth\fP (self)"
+.br
+.ti -1c
+.RI "def \fBheight\fP (self)"
+.br
+.ti -1c
+.RI "def \fBtl\fP (self)"
+.br
+.ti -1c
+.RI "def \fBbr\fP (self)"
+.br
+.ti -1c
+.RI "def \fBtr\fP (self)"
+.br
+.ti -1c
+.RI "def \fBbl\fP (self)"
+.br
+.ti -1c
+.RI "def \fBsize\fP (self)"
+.br
+.ti -1c
+.RI "def \fBarea\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcontains_point\fP (self, pt)"
+.br
+.ti -1c
+.RI "def \fBcontains_circle\fP (self, pt, radius)"
+.br
+.ti -1c
+.RI "def \fBintersects_circle\fP (self, pt, radius)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+A basic Rect class. Assumes tl <= br.
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.point\&.Rect\&.__new__ ( cls,  args)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.__str__ ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.area ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.bl ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.bottom ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.br ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.center ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.contains_circle ( self,  pt,  radius)"
+
+.PP
+.nf
+Is the circle completely inside this rect?
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Rect\&.contains_point ( self,  pt)"
+
+.PP
+.nf
+Is the point inside this rect?
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Rect\&.height ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.intersects_circle ( self,  pt,  radius)"
+
+.PP
+.nf
+Does the circle intersect with this rect?
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.point\&.Rect\&.left ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.right ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.size ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.tl ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.top ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.tr ( self)"
+
+.SS "def pysc2\&.lib\&.point\&.Rect\&.width ( self)"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

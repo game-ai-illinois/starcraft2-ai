@@ -1,0 +1,78 @@
+.TH "pysc2.lib.metrics.Metrics" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.metrics.Metrics
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, map_name)"
+.br
+.ti -1c
+.RI "def \fBincrement_instance\fP (self)"
+.br
+.ti -1c
+.RI "def \fBincrement_episode\fP (self)"
+.br
+.ti -1c
+.RI "def \fBmeasure_step_time\fP (self, num_steps=1)"
+.br
+.ti -1c
+.RI "def \fBmeasure_observation_time\fP (self)"
+.br
+.ti -1c
+.RI "def \fBclose\fP (self)"
+.br
+.ti -1c
+.RI "def \fB__del__\fP (self)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Interface for tracking the number and/or latency of episodes and steps.
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.metrics\&.Metrics\&.__init__ ( self,  map_name)"
+
+.SS "def pysc2\&.lib\&.metrics\&.Metrics\&.__del__ ( self)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.metrics\&.Metrics\&.close ( self)"
+
+.SS "def pysc2\&.lib\&.metrics\&.Metrics\&.increment_episode ( self)"
+
+.SS "def pysc2\&.lib\&.metrics\&.Metrics\&.increment_instance ( self)"
+
+.SS "def pysc2\&.lib\&.metrics\&.Metrics\&.measure_observation_time ( self)"
+
+.PP
+.nf
+Return a context manager to measure the time to get an observation.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.metrics\&.Metrics\&.measure_step_time ( self,  num_steps = \fC1\fP)"
+
+.PP
+.nf
+Return a context manager to measure the time to perform N game steps.
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

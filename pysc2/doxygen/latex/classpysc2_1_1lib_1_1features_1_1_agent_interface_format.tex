@@ -1,0 +1,119 @@
+\hypertarget{classpysc2_1_1lib_1_1features_1_1_agent_interface_format}{}\section{pysc2.\+lib.\+features.\+Agent\+Interface\+Format Class Reference}
+\label{classpysc2_1_1lib_1_1features_1_1_agent_interface_format}\index{pysc2.\+lib.\+features.\+Agent\+Interface\+Format@{pysc2.\+lib.\+features.\+Agent\+Interface\+Format}}
+Inheritance diagram for pysc2.\+lib.\+features.\+Agent\+Interface\+Format\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpysc2_1_1lib_1_1features_1_1_agent_interface_format}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a80c173fac4f02ee090925b0ba2eaa369}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_afb6336f68b4dd6a550a8483e59d8bf31}{feature\+\_\+dimensions}}=None, \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a5531c5661ecd91f244bf3f9598d22d67}{rgb\+\_\+dimensions}}=None, \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_aebb7cd1ed5816051abe21703184cc16a}{action\+\_\+space}}=None, \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a5140a9024f2fb47046074e511acd0dd0}{camera\+\_\+width\+\_\+world\+\_\+units}}=None, \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_abac891fe53cafd4798d13ca70db971f5}{use\+\_\+feature\+\_\+units}}=False, \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_adbc6be15eae7945c226758c1bc666443}{hide\+\_\+specific\+\_\+actions}}=True)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_afb6336f68b4dd6a550a8483e59d8bf31}{feature\+\_\+dimensions}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a5531c5661ecd91f244bf3f9598d22d67}{rgb\+\_\+dimensions}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_aebb7cd1ed5816051abe21703184cc16a}{action\+\_\+space}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a5140a9024f2fb47046074e511acd0dd0}{camera\+\_\+width\+\_\+world\+\_\+units}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_abac891fe53cafd4798d13ca70db971f5}{use\+\_\+feature\+\_\+units}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_adbc6be15eae7945c226758c1bc666443}{hide\+\_\+specific\+\_\+actions}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a8fa5a036defb7844b94946a505e28148}{action\+\_\+dimensions}} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Observation and action interface format specific to a particular agent.\end{DoxyVerb}
+ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a80c173fac4f02ee090925b0ba2eaa369}\label{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a80c173fac4f02ee090925b0ba2eaa369}} 
+\index{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}!\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}}
+\index{\+\_\+\+\_\+init\+\_\+\+\_\+@{\+\_\+\+\_\+init\+\_\+\+\_\+}!pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}}
+\subsubsection{\texorpdfstring{\+\_\+\+\_\+init\+\_\+\+\_\+()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Agent\+Interface\+Format.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{feature\+\_\+dimensions = {\ttfamily None},  }\item[{}]{rgb\+\_\+dimensions = {\ttfamily None},  }\item[{}]{action\+\_\+space = {\ttfamily None},  }\item[{}]{camera\+\_\+width\+\_\+world\+\_\+units = {\ttfamily None},  }\item[{}]{use\+\_\+feature\+\_\+units = {\ttfamily False},  }\item[{}]{hide\+\_\+specific\+\_\+actions = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializer.
+
+Args:
+  feature_dimensions: Feature layer `Dimension`s. Either this or
+  rgb_dimensions (or both) must be set.
+  rgb_dimensions: RGB `Dimension`. Either this or feature_dimensions
+  (or both) must be set.
+  action_space: If you pass both feature and rgb sizes, then you must also
+  specify which you want to use for your actions as an ActionSpace enum.
+  camera_width_world_units: The width of your screen in world units. If your
+  feature_dimensions.screen=(64, 48) and camera_width is 24, then each
+  px represents 24 / 64 = 0.375 world units in each of x and y.
+  It'll then represent a camera of size (24, 0.375 * 48) = (24, 18)
+  world units.
+  use_feature_units: Whether to include feature unit data in observations.
+  hide_specific_actions: [bool] Some actions (eg cancel) have many
+  specific versions (cancel this building, cancel that spell) and can
+  be represented in a more general form. If a specific action is
+  available, the general will also be available. If you set
+  `hide_specific_actions` to False, the specific versions will also be
+  available, but if it's True, the specific ones will be hidden.
+  Similarly, when transforming back, a specific action will be returned
+  as the general action. This simplifies the action space, though can
+  lead to some actions in replays not being exactly representable using
+  only the general actions.
+
+Raises:
+  ValueError: if the parameters are inconsistent.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a8fa5a036defb7844b94946a505e28148}\label{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a8fa5a036defb7844b94946a505e28148}} 
+\index{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}!action\+\_\+dimensions@{action\+\_\+dimensions}}
+\index{action\+\_\+dimensions@{action\+\_\+dimensions}!pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}}
+\subsubsection{\texorpdfstring{action\+\_\+dimensions()}{action\_dimensions()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Agent\+Interface\+Format.\+action\+\_\+dimensions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_aebb7cd1ed5816051abe21703184cc16a}\label{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_aebb7cd1ed5816051abe21703184cc16a}} 
+\index{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}!action\+\_\+space@{action\+\_\+space}}
+\index{action\+\_\+space@{action\+\_\+space}!pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}}
+\subsubsection{\texorpdfstring{action\+\_\+space()}{action\_space()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Agent\+Interface\+Format.\+action\+\_\+space (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a5140a9024f2fb47046074e511acd0dd0}\label{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a5140a9024f2fb47046074e511acd0dd0}} 
+\index{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}!camera\+\_\+width\+\_\+world\+\_\+units@{camera\+\_\+width\+\_\+world\+\_\+units}}
+\index{camera\+\_\+width\+\_\+world\+\_\+units@{camera\+\_\+width\+\_\+world\+\_\+units}!pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}}
+\subsubsection{\texorpdfstring{camera\+\_\+width\+\_\+world\+\_\+units()}{camera\_width\_world\_units()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Agent\+Interface\+Format.\+camera\+\_\+width\+\_\+world\+\_\+units (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_afb6336f68b4dd6a550a8483e59d8bf31}\label{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_afb6336f68b4dd6a550a8483e59d8bf31}} 
+\index{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}!feature\+\_\+dimensions@{feature\+\_\+dimensions}}
+\index{feature\+\_\+dimensions@{feature\+\_\+dimensions}!pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}}
+\subsubsection{\texorpdfstring{feature\+\_\+dimensions()}{feature\_dimensions()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Agent\+Interface\+Format.\+feature\+\_\+dimensions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_adbc6be15eae7945c226758c1bc666443}\label{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_adbc6be15eae7945c226758c1bc666443}} 
+\index{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}!hide\+\_\+specific\+\_\+actions@{hide\+\_\+specific\+\_\+actions}}
+\index{hide\+\_\+specific\+\_\+actions@{hide\+\_\+specific\+\_\+actions}!pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}}
+\subsubsection{\texorpdfstring{hide\+\_\+specific\+\_\+actions()}{hide\_specific\_actions()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Agent\+Interface\+Format.\+hide\+\_\+specific\+\_\+actions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a5531c5661ecd91f244bf3f9598d22d67}\label{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_a5531c5661ecd91f244bf3f9598d22d67}} 
+\index{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}!rgb\+\_\+dimensions@{rgb\+\_\+dimensions}}
+\index{rgb\+\_\+dimensions@{rgb\+\_\+dimensions}!pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}}
+\subsubsection{\texorpdfstring{rgb\+\_\+dimensions()}{rgb\_dimensions()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Agent\+Interface\+Format.\+rgb\+\_\+dimensions (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_abac891fe53cafd4798d13ca70db971f5}\label{classpysc2_1_1lib_1_1features_1_1_agent_interface_format_abac891fe53cafd4798d13ca70db971f5}} 
+\index{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}!use\+\_\+feature\+\_\+units@{use\+\_\+feature\+\_\+units}}
+\index{use\+\_\+feature\+\_\+units@{use\+\_\+feature\+\_\+units}!pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format@{pysc2\+::lib\+::features\+::\+Agent\+Interface\+Format}}
+\subsubsection{\texorpdfstring{use\+\_\+feature\+\_\+units()}{use\_feature\_units()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+Agent\+Interface\+Format.\+use\+\_\+feature\+\_\+units (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\mbox{\hyperlink{features_8py}{features.\+py}}\end{DoxyCompactItemize}

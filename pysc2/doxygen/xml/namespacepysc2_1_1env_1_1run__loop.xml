@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1env_1_1run__loop" kind="namespace" language="Python">
+    <compoundname>pysc2::env::run_loop</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1run__loop_1a159e3d003c8be4a25d29941afdb2b091" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.run_loop.run_loop</definition>
+        <argsstring>(agents, env, max_frames=0, max_episodes=0)</argsstring>
+        <name>run_loop</name>
+        <param>
+          <type>agents</type>
+          <defname>agents</defname>
+        </param>
+        <param>
+          <type>env</type>
+          <defname>env</defname>
+        </param>
+        <param>
+          <type>max_frames</type>
+          <defname>max_frames</defname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>max_episodes</type>
+          <defname>max_episodes</defname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A run loop to have agents and an environment interact.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/run_loop.py" line="23" column="1" bodyfile="env/run_loop.py" bodystart="23" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="env/run_loop.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

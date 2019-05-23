@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1render__test_1_1_test_render" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::render_test::TestRender</compoundname>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1render__test_1_1_test_render_1a9f7f747372422dc5ef289af15886e4a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.render_test.TestRender.test_render</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_render</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/render_test.py" line="37" column="1" bodyfile="tests/render_test.py" bodystart="37" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="793">
+        <label>pysc2.tests.render_test.TestRender</label>
+        <link refid="classpysc2_1_1tests_1_1render__test_1_1_test_render"/>
+        <childnode refid="794" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="795">
+        <label>TestCase</label>
+      </node>
+      <node id="794">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="795" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="796">
+        <label>pysc2.tests.render_test.TestRender</label>
+        <link refid="classpysc2_1_1tests_1_1render__test_1_1_test_render"/>
+        <childnode refid="797" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="798">
+        <label>TestCase</label>
+      </node>
+      <node id="797">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="798" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/render_test.py" line="35" column="1" bodyfile="tests/render_test.py" bodystart="35" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::render_test::TestRender</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::render_test::TestRender</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1render__test_1_1_test_render_1a9f7f747372422dc5ef289af15886e4a8" prot="public" virt="non-virtual"><scope>pysc2::tests::render_test::TestRender</scope><name>test_render</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

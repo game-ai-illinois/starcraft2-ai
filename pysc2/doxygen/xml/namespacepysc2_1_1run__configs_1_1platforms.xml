@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1run__configs_1_1platforms" kind="namespace" language="Python">
+    <compoundname>pysc2::run_configs::platforms</compoundname>
+    <innerclass refid="classpysc2_1_1run__configs_1_1platforms_1_1_cygwin" prot="public">pysc2::run_configs::platforms::Cygwin</innerclass>
+    <innerclass refid="classpysc2_1_1run__configs_1_1platforms_1_1_linux" prot="public">pysc2::run_configs::platforms::Linux</innerclass>
+    <innerclass refid="classpysc2_1_1run__configs_1_1platforms_1_1_local_base" prot="public">pysc2::run_configs::platforms::LocalBase</innerclass>
+    <innerclass refid="classpysc2_1_1run__configs_1_1platforms_1_1_mac_o_s" prot="public">pysc2::run_configs::platforms::MacOS</innerclass>
+    <innerclass refid="classpysc2_1_1run__configs_1_1platforms_1_1_windows" prot="public">pysc2::run_configs::platforms::Windows</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1run__configs_1_1platforms_1aeccba4e9f636af93aa60c2e34b85674f" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::run_configs::platforms.VERSIONS</definition>
+        <argsstring></argsstring>
+        <name>VERSIONS</name>
+        <initializer>=  {ver.game_version: ver for ver in [
+    <ref refid="classpysc2_1_1run__configs_1_1lib_1_1_version" kindref="compound">lib.Version</ref>(&quot;3.16.1&quot;, 55958, &quot;5BD7C31B44525DAB46E64C4602A81DC2&quot;, None),
+    lib.Version(&quot;3.17.0&quot;, 56787, &quot;DFD1F6607F2CF19CB4E1C996B2563D9B&quot;, None),
+    lib.Version(&quot;3.17.1&quot;, 56787, &quot;3F2FCED08798D83B873B5543BEFA6C4B&quot;, None),
+    lib.Version(&quot;3.17.2&quot;, 56787, &quot;C690FC543082D35EA0AAA876B8362BEA&quot;, None),
+    lib.Version(&quot;3.18.0&quot;, 57507, &quot;1659EF34997DA3470FF84A14431E3A86&quot;, None),
+    lib.Version(&quot;3.19.0&quot;, 58400, &quot;2B06AEE58017A7DF2A3D452D733F1019&quot;, None),
+    lib.Version(&quot;3.19.1&quot;, 58400, &quot;D9B568472880CC4719D1B698C0D86984&quot;, None),
+    lib.Version(&quot;4.0.0&quot;, 59587, &quot;9B4FD995C61664831192B7DA46F8C1A1&quot;, None),
+    lib.Version(&quot;4.0.2&quot;, 59587, &quot;B43D9EE00A363DAFAD46914E3E4AF362&quot;, None),
+    lib.Version(&quot;4.1.0&quot;, 60196, &quot;1B8ACAB0C663D5510941A9871B3E9FBE&quot;, None),
+    lib.Version(&quot;4.1.1&quot;, 60321, &quot;5C021D8A549F4A776EE9E9C1748FFBBC&quot;, None),
+    lib.Version(&quot;4.1.2&quot;, 60321, &quot;33D9FE28909573253B7FC352CE7AEA40&quot;, None),
+    lib.Version(&quot;4.2.0&quot;, 62347, &quot;C0C0E9D37FCDBC437CE386C6BE2D1F93&quot;, None),
+    lib.Version(&quot;4.2.1&quot;, 62848, &quot;29BBAC5AFF364B6101B661DB468E3A37&quot;, None),
+    lib.Version(&quot;4.2.2&quot;, 63454, &quot;3CB54C86777E78557C984AB1CF3494A0&quot;, None),
+    lib.Version(&quot;4.3.0&quot;, 64469, &quot;C92B3E9683D5A59E08FC011F4BE167FF&quot;, None),
+    lib.Version(&quot;4.3.1&quot;, 65094, &quot;E5A21037AA7A25C03AC441515F4E0644&quot;, None),
+    lib.Version(&quot;4.3.2&quot;, 65384, &quot;B6D73C85DFB70F5D01DEABB2517BF11C&quot;, None),
+]}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/platforms.py" line="34" column="1" bodyfile="run_configs/platforms.py" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1run__configs_1_1platforms_1a5c7fa28f05507c849c00d25fc7879784" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::run_configs::platforms.FLAGS</definition>
+        <argsstring></argsstring>
+        <name>FLAGS</name>
+        <initializer>=  flags.FLAGS</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/platforms.py" line="57" column="1" bodyfile="run_configs/platforms.py" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1run__configs_1_1platforms_1afa49686c7f1bb1471995d774a768a23b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.platforms._get_version</definition>
+        <argsstring>(game_version)</argsstring>
+        <name>_get_version</name>
+        <param>
+          <type>game_version</type>
+          <defname>game_version</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/platforms.py" line="60" column="1" bodyfile="run_configs/platforms.py" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacepysc2_1_1run__configs_1_1platforms_1a23a425c0be1038b10f661616d882d8a3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.run_configs.platforms._read_execute_info</definition>
+        <argsstring>(path, parents)</argsstring>
+        <name>_read_execute_info</name>
+        <param>
+          <type>path</type>
+          <defname>path</defname>
+        </param>
+        <param>
+          <type>parents</type>
+          <defname>parents</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Read the ExecuteInfo.txt file and return the base directory.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="run_configs/platforms.py" line="69" column="1" bodyfile="run_configs/platforms.py" bodystart="69" bodyend="82"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="run_configs/platforms.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

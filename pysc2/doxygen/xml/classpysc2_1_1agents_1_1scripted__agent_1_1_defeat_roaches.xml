@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1agents_1_1scripted__agent_1_1_defeat_roaches" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::agents::scripted_agent::DefeatRoaches</compoundname>
+    <basecompoundref refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent" prot="public" virt="non-virtual">pysc2.agents.base_agent.BaseAgent</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1agents_1_1scripted__agent_1_1_defeat_roaches_1a681a94d365c4725ba8fa30bbc682e4ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.agents.scripted_agent.DefeatRoaches.step</definition>
+        <argsstring>(self, obs)</argsstring>
+        <name>step</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="agents/scripted_agent.py" line="134" column="1" bodyfile="agents/scripted_agent.py" bodystart="134" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>An agent specifically for solving the DefeatRoaches map.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="195">
+        <label>pysc2.agents.scripted_agent.DefeatRoaches</label>
+        <link refid="classpysc2_1_1agents_1_1scripted__agent_1_1_defeat_roaches"/>
+        <childnode refid="196" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>object</label>
+      </node>
+      <node id="196">
+        <label>pysc2.agents.base_agent.BaseAgent</label>
+        <link refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent"/>
+        <childnode refid="197" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="198">
+        <label>pysc2.agents.scripted_agent.DefeatRoaches</label>
+        <link refid="classpysc2_1_1agents_1_1scripted__agent_1_1_defeat_roaches"/>
+        <childnode refid="199" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>object</label>
+      </node>
+      <node id="199">
+        <label>pysc2.agents.base_agent.BaseAgent</label>
+        <link refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent"/>
+        <childnode refid="200" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="agents/scripted_agent.py" line="131" column="1" bodyfile="agents/scripted_agent.py" bodystart="131" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a03935d754145f417240d25e0192c57bc" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::DefeatRoaches</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a550b216b98ae40b2da1b2fd9015d3019" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::DefeatRoaches</scope><name>action_spec</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a46c85c12c80d0ceceff90c5889f0a13a" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::DefeatRoaches</scope><name>episodes</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1ad6cefb81724b9d234887cea543c4f06e" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::DefeatRoaches</scope><name>obs_spec</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a9814c84f6f2eefa13b69f45f36afcca4" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::DefeatRoaches</scope><name>reset</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1a9081eba1a1a529a08d1309e35a1f7ad9" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::DefeatRoaches</scope><name>reward</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1afba8f06273c8740b105573f1a422ba05" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::DefeatRoaches</scope><name>setup</name></member>
+      <member refid="classpysc2_1_1agents_1_1scripted__agent_1_1_defeat_roaches_1a681a94d365c4725ba8fa30bbc682e4ac" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::DefeatRoaches</scope><name>step</name></member>
+      <member refid="classpysc2_1_1agents_1_1base__agent_1_1_base_agent_1aac3b906e1bc4bfc1fad84e8a1fb6ef87" prot="public" virt="non-virtual"><scope>pysc2::agents::scripted_agent::DefeatRoaches</scope><name>steps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

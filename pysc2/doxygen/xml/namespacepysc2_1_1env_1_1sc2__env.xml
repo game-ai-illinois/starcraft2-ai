@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1env_1_1sc2__env" kind="namespace" language="Python">
+    <compoundname>pysc2::env::sc2_env</compoundname>
+    <innerclass refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty" prot="public">pysc2::env::sc2_env::Difficulty</innerclass>
+    <innerclass refid="classpysc2_1_1env_1_1sc2__env_1_1_race" prot="public">pysc2::env::sc2_env::Race</innerclass>
+    <innerclass refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env" prot="public">pysc2::env::sc2_env::SC2Env</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1env_1_1sc2__env_1a841ede07ac5c57ba50d466779e15be0d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::env::sc2_env.sw</definition>
+        <argsstring></argsstring>
+        <name>sw</name>
+        <initializer>=  stopwatch.sw</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="40" column="1" bodyfile="env/sc2_env.py" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1env_1_1sc2__env_1ad382d1020d678d6c22500f6cc39d92c8" prot="public" static="no" mutable="no">
+        <type>dictionary</type>
+        <definition>dictionary pysc2::env::sc2_env.possible_results</definition>
+        <argsstring></argsstring>
+        <name>possible_results</name>
+        <initializer>=  {
+    sc_pb.Victory: 1,
+    sc_pb.Defeat: -1,
+    sc_pb.Tie: 0,
+    sc_pb.Undecided: 0,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="43" column="1" bodyfile="env/sc2_env.py" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1env_1_1sc2__env_1a8eec3d3e603fa33797611efcefa84651" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::env::sc2_env.ActionSpace</definition>
+        <argsstring></argsstring>
+        <name>ActionSpace</name>
+        <initializer>=  actions_lib.ActionSpace</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="72" column="1" bodyfile="env/sc2_env.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1env_1_1sc2__env_1a5491576d8402c644a9f252e24af50b83" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::env::sc2_env.Dimensions</definition>
+        <argsstring></argsstring>
+        <name>Dimensions</name>
+        <initializer>=  features.Dimensions</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="73" column="1" bodyfile="env/sc2_env.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1env_1_1sc2__env_1a23974fe1ec8ca094b260a877f21de1e9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::env::sc2_env.AgentInterfaceFormat</definition>
+        <argsstring></argsstring>
+        <name>AgentInterfaceFormat</name>
+        <initializer>=  features.AgentInterfaceFormat</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="74" column="1" bodyfile="env/sc2_env.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1env_1_1sc2__env_1acadcfd286ccfe70e40ef888fd474b6c5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::env::sc2_env.parse_agent_interface_format</definition>
+        <argsstring></argsstring>
+        <name>parse_agent_interface_format</name>
+        <initializer>=  features.parse_agent_interface_format</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="75" column="1" bodyfile="env/sc2_env.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1env_1_1sc2__env_1a2e7053f7bfd9f28ddacc6454432eefd9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::env::sc2_env.Agent</definition>
+        <argsstring></argsstring>
+        <name>Agent</name>
+        <initializer>=  collections.namedtuple(&quot;Agent&quot;, [&quot;race&quot;])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="78" column="1" bodyfile="env/sc2_env.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacepysc2_1_1env_1_1sc2__env_1adcae68abde72c555b8e0412ea5bcb931" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2::env::sc2_env.Bot</definition>
+        <argsstring></argsstring>
+        <name>Bot</name>
+        <initializer>=  collections.namedtuple(&quot;Bot&quot;, [&quot;race&quot;, &quot;difficulty&quot;])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="79" column="1" bodyfile="env/sc2_env.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacepysc2_1_1env_1_1sc2__env_1ae58dd150a4f71348bdec7637a59448b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.env.sc2_env._pick_unused_ports</definition>
+        <argsstring>(num_ports, retry_interval_secs=3, retry_attempts=5)</argsstring>
+        <name>_pick_unused_ports</name>
+        <param>
+          <type>num_ports</type>
+          <defname>num_ports</defname>
+        </param>
+        <param>
+          <type>retry_interval_secs</type>
+          <defname>retry_interval_secs</defname>
+          <defval>3</defval>
+        </param>
+        <param>
+          <type>retry_attempts</type>
+          <defname>retry_attempts</defname>
+          <defval>5</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Returns a list of `num_ports` unused ports.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="82" column="1" bodyfile="env/sc2_env.py" bodystart="82" bodyend="100"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="env/sc2_env.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

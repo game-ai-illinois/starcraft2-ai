@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::transform::PixelToCoord</compoundname>
+    <basecompoundref refid="classpysc2_1_1lib_1_1transform_1_1_transform" prot="public" virt="non-virtual">pysc2.lib.transform.Transform</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1a989286ec7cd07a77ad059ac5911189bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.PixelToCoord.fwd_dist</definition>
+        <argsstring>(self, dist)</argsstring>
+        <name>fwd_dist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dist</type>
+          <defname>dist</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="113" column="1" bodyfile="lib/transform.py" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1a3dd8a0723fc99be0e7a9f8718c6d27b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.PixelToCoord.fwd_pt</definition>
+        <argsstring>(self, pt)</argsstring>
+        <name>fwd_pt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pt</type>
+          <defname>pt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="116" column="1" bodyfile="lib/transform.py" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1adce4b1eb4d28b6f1504f3257e8436ffb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.PixelToCoord.back_dist</definition>
+        <argsstring>(self, dist)</argsstring>
+        <name>back_dist</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>dist</type>
+          <defname>dist</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="119" column="1" bodyfile="lib/transform.py" bodystart="119" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1a9ab006ef8ecd006a7b82ebff60a0427b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.PixelToCoord.back_pt</definition>
+        <argsstring>(self, pt)</argsstring>
+        <name>back_pt</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>pt</type>
+          <defname>pt</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="122" column="1" bodyfile="lib/transform.py" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1aaff3334808ec5d0a71f78c951b550570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.transform.PixelToCoord.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/transform.py" line="125" column="1" bodyfile="lib/transform.py" bodystart="125" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Take a point within a pixel and use the tl, or tl to pixel center.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="465">
+        <label>pysc2.lib.transform.PixelToCoord</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord"/>
+        <childnode refid="466" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="466">
+        <label>pysc2.lib.transform.Transform</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_transform"/>
+        <childnode refid="467" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="467">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="468">
+        <label>pysc2.lib.transform.PixelToCoord</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord"/>
+        <childnode refid="469" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="469">
+        <label>pysc2.lib.transform.Transform</label>
+        <link refid="classpysc2_1_1lib_1_1transform_1_1_transform"/>
+        <childnode refid="470" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="470">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/transform.py" line="110" column="1" bodyfile="lib/transform.py" bodystart="110" bodyend="128"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1aaff3334808ec5d0a71f78c951b550570" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::PixelToCoord</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1adce4b1eb4d28b6f1504f3257e8436ffb" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::PixelToCoord</scope><name>back_dist</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1a9ab006ef8ecd006a7b82ebff60a0427b" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::PixelToCoord</scope><name>back_pt</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1a989286ec7cd07a77ad059ac5911189bb" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::PixelToCoord</scope><name>fwd_dist</name></member>
+      <member refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1a3dd8a0723fc99be0e7a9f8718c6d27b7" prot="public" virt="non-virtual"><scope>pysc2::lib::transform::PixelToCoord</scope><name>fwd_pt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

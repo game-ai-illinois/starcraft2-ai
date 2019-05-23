@@ -1,0 +1,271 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="units_8py" kind="file" language="Python">
+    <compoundname>units.py</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1units_1_1_neutral" prot="public">pysc2::lib::units::Neutral</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1units_1_1_protoss" prot="public">pysc2::lib::units::Protoss</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1units_1_1_terran" prot="public">pysc2::lib::units::Terran</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1units_1_1_zerg" prot="public">pysc2::lib::units::Zerg</innerclass>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1units">pysc2::lib::units</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacepysc2_1_1lib_1_1units" refkind="compound"><highlight class="comment">#<sp/>Copyright<sp/>2017<sp/>Google<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS-IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;Define<sp/>the<sp/>static<sp/>list<sp/>of<sp/>units<sp/>for<sp/>SC2.<sp/>Generated<sp/>by<sp/>bin/gen_units.py.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absolute_import</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>division</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_function</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>enum</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">#<sp/>pylint:<sp/>disable=invalid-name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classpysc2_1_1lib_1_1units_1_1_neutral" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1units_1_1_neutral" kindref="compound">Neutral</ref>(enum.IntEnum):</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Neutral<sp/>units.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>BattleStationMineralField<sp/>=<sp/>886</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>BattleStationMineralField750<sp/>=<sp/>887</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>CollapsibleRockTowerDebris<sp/>=<sp/>490</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>CollapsibleRockTowerDiagonal<sp/>=<sp/>588</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>CollapsibleRockTowerPushUnit<sp/>=<sp/>561</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>CollapsibleTerranTowerDebris<sp/>=<sp/>485</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>CollapsibleTerranTowerDiagonal<sp/>=<sp/>589</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>CollapsibleTerranTowerPushUnit<sp/>=<sp/>562</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>CollapsibleTerranTowerPushUnitRampLeft<sp/>=<sp/>559</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>CollapsibleTerranTowerPushUnitRampRight<sp/>=<sp/>560</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>CollapsibleTerranTowerRampLeft<sp/>=<sp/>590</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>CollapsibleTerranTowerRampRight<sp/>=<sp/>591</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>DebrisRampLeft<sp/>=<sp/>486</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>DebrisRampRight<sp/>=<sp/>487</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>DestructibleDebris6x6<sp/>=<sp/>365</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>DestructibleDebrisRampDiagonalHugeBLUR<sp/>=<sp/>377</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>DestructibleDebrisRampDiagonalHugeULBR<sp/>=<sp/>376</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>DestructibleRock6x6<sp/>=<sp/>371</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>DestructibleRockEx1DiagonalHugeBLUR<sp/>=<sp/>641</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>KarakFemale<sp/>=<sp/>324</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>LabMineralField<sp/>=<sp/>665</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>LabMineralField750<sp/>=<sp/>666</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>MineralField<sp/>=<sp/>341</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>MineralField750<sp/>=<sp/>483</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>ProtossVespeneGeyser<sp/>=<sp/>608</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>PurifierMineralField<sp/>=<sp/>884</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>PurifierMineralField750<sp/>=<sp/>885</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>PurifierRichMineralField<sp/>=<sp/>796</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>PurifierRichMineralField750<sp/>=<sp/>797</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>PurifierVespeneGeyser<sp/>=<sp/>880</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>RichMineralField<sp/>=<sp/>146</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>RichMineralField750<sp/>=<sp/>147</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>RichVespeneGeyser<sp/>=<sp/>344</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>Scantipede<sp/>=<sp/>335</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>ShakurasVespeneGeyser<sp/>=<sp/>881</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>SpacePlatformGeyser<sp/>=<sp/>343</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>UnbuildableBricksDestructible<sp/>=<sp/>473</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>UnbuildablePlatesDestructible<sp/>=<sp/>474</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>UtilityBot<sp/>=<sp/>330</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>VespeneGeyser<sp/>=<sp/>342</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>XelNagaTower<sp/>=<sp/>149</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classpysc2_1_1lib_1_1units_1_1_protoss" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1units_1_1_protoss" kindref="compound">Protoss</ref>(enum.IntEnum):</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Protoss<sp/>units.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>Adept<sp/>=<sp/>311</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>AdeptPhaseShift<sp/>=<sp/>801</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>Archon<sp/>=<sp/>141</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>Assimilator<sp/>=<sp/>61</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>Carrier<sp/>=<sp/>79</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>Colossus<sp/>=<sp/>4</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>CyberneticsCore<sp/>=<sp/>72</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>DarkShrine<sp/>=<sp/>69</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>DarkTemplar<sp/>=<sp/>76</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>Disruptor<sp/>=<sp/>694</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>DisruptorPhased<sp/>=<sp/>733</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>FleetBeacon<sp/>=<sp/>64</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>ForceField<sp/>=<sp/>135</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>Forge<sp/>=<sp/>63</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>Gateway<sp/>=<sp/>62</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>HighTemplar<sp/>=<sp/>75</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>Immortal<sp/>=<sp/>83</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>Interceptor<sp/>=<sp/>85</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>Mothership<sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>MothershipCore<sp/>=<sp/>488</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>Nexus<sp/>=<sp/>59</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>Observer<sp/>=<sp/>82</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>ObserverSurveillanceMode<sp/>=<sp/>1911</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>Oracle<sp/>=<sp/>495</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>Phoenix<sp/>=<sp/>78</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>PhotonCannon<sp/>=<sp/>66</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>Probe<sp/>=<sp/>84</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>Pylon<sp/>=<sp/>60</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>PylonOvercharged<sp/>=<sp/>894</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>RoboticsBay<sp/>=<sp/>70</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>RoboticsFacility<sp/>=<sp/>71</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>Sentry<sp/>=<sp/>77</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>ShieldBattery<sp/>=<sp/>1910</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>Stalker<sp/>=<sp/>74</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>Stargate<sp/>=<sp/>67</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>StasisTrap<sp/>=<sp/>732</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>Tempest<sp/>=<sp/>496</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>TemplarArchive<sp/>=<sp/>68</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>TwilightCouncil<sp/>=<sp/>65</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>VoidRay<sp/>=<sp/>80</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>WarpGate<sp/>=<sp/>133</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>WarpPrism<sp/>=<sp/>81</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>WarpPrismPhasing<sp/>=<sp/>136</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>Zealot<sp/>=<sp/>73</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="classpysc2_1_1lib_1_1units_1_1_terran" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1units_1_1_terran" kindref="compound">Terran</ref>(enum.IntEnum):</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Terran<sp/>units.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>Armory<sp/>=<sp/>29</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>AutoTurret<sp/>=<sp/>31</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>Banshee<sp/>=<sp/>55</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>Barracks<sp/>=<sp/>21</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>BarracksFlying<sp/>=<sp/>46</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>BarracksReactor<sp/>=<sp/>38</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>BarracksTechLab<sp/>=<sp/>37</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>Battlecruiser<sp/>=<sp/>57</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>Bunker<sp/>=<sp/>24</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>CommandCenter<sp/>=<sp/>18</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>CommandCenterFlying<sp/>=<sp/>36</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>Cyclone<sp/>=<sp/>692</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>EngineeringBay<sp/>=<sp/>22</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>Factory<sp/>=<sp/>27</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>FactoryFlying<sp/>=<sp/>43</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>FactoryReactor<sp/>=<sp/>40</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>FactoryTechLab<sp/>=<sp/>39</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/>FusionCore<sp/>=<sp/>30</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>Ghost<sp/>=<sp/>50</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>GhostAcademy<sp/>=<sp/>26</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>Hellion<sp/>=<sp/>53</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>Hellbat<sp/>=<sp/>484</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>KD8Charge<sp/>=<sp/>830</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>Liberator<sp/>=<sp/>689</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>LiberatorAG<sp/>=<sp/>734</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>MULE<sp/>=<sp/>268</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>Marauder<sp/>=<sp/>51</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>Marine<sp/>=<sp/>48</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>Medivac<sp/>=<sp/>54</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/>MissileTurret<sp/>=<sp/>23</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>Nuke<sp/>=<sp/>58</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/>OrbitalCommand<sp/>=<sp/>132</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>OrbitalCommandFlying<sp/>=<sp/>134</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/>PlanetaryFortress<sp/>=<sp/>130</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>PointDefenseDrone<sp/>=<sp/>11</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/>Raven<sp/>=<sp/>56</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>Reactor<sp/>=<sp/>6</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>Reaper<sp/>=<sp/>49</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>Refinery<sp/>=<sp/>20</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>RepairDrone<sp/>=<sp/>1913</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>SCV<sp/>=<sp/>45</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>SensorTower<sp/>=<sp/>25</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>SiegeTank<sp/>=<sp/>33</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/>SiegeTankSieged<sp/>=<sp/>32</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>Starport<sp/>=<sp/>28</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>StarportFlying<sp/>=<sp/>44</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>StarportReactor<sp/>=<sp/>42</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>StarportTechLab<sp/>=<sp/>41</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>SupplyDepot<sp/>=<sp/>19</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>SupplyDepotLowered<sp/>=<sp/>47</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>TechLab<sp/>=<sp/>5</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>Thor<sp/>=<sp/>52</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>ThorHighImpactMode<sp/>=<sp/>691</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>VikingAssault<sp/>=<sp/>34</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>VikingFighter<sp/>=<sp/>35</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/>WidowMine<sp/>=<sp/>498</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>WidowMineBurrowed<sp/>=<sp/>500</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="classpysc2_1_1lib_1_1units_1_1_zerg" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1units_1_1_zerg" kindref="compound">Zerg</ref>(enum.IntEnum):</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Zerg<sp/>units.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/>Baneling<sp/>=<sp/>9</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>BanelingBurrowed<sp/>=<sp/>115</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>BanelingCocoon<sp/>=<sp/>8</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>BanelingNest<sp/>=<sp/>96</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/>BroodLord<sp/>=<sp/>114</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>BroodLordCocoon<sp/>=<sp/>113</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/>Broodling<sp/>=<sp/>289</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>BroodlingEscort<sp/>=<sp/>143</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>Changeling<sp/>=<sp/>12</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>ChangelingMarine<sp/>=<sp/>15</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>ChangelingMarineShield<sp/>=<sp/>14</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>ChangelingZealot<sp/>=<sp/>13</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/>ChangelingZergling<sp/>=<sp/>17</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>ChangelingZerglingWings<sp/>=<sp/>16</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/>Corruptor<sp/>=<sp/>112</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>CreepTumor<sp/>=<sp/>87</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/>CreepTumorBurrowed<sp/>=<sp/>137</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/>CreepTumorQueen<sp/>=<sp/>138</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/>Drone<sp/>=<sp/>104</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/>DroneBurrowed<sp/>=<sp/>116</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>Cocoon<sp/>=<sp/>103</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>EvolutionChamber<sp/>=<sp/>90</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>Extractor<sp/>=<sp/>88</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/>GreaterSpire<sp/>=<sp/>102</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>Hatchery<sp/>=<sp/>86</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>Hive<sp/>=<sp/>101</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>Hydralisk<sp/>=<sp/>107</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>HydraliskBurrowed<sp/>=<sp/>117</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>HydraliskDen<sp/>=<sp/>91</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>InfestationPit<sp/>=<sp/>94</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>InfestedTerran<sp/>=<sp/>7</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/>InfestedTerranBurrowed<sp/>=<sp/>120</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>InfestedTerranCocoon<sp/>=<sp/>150</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>Infestor<sp/>=<sp/>111</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>InfestorBurrowed<sp/>=<sp/>127</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/>Lair<sp/>=<sp/>100</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>Larva<sp/>=<sp/>151</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/>Locust<sp/>=<sp/>489</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>LocustFlying<sp/>=<sp/>693</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/>Lurker<sp/>=<sp/>502</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>LurkerBurrowed<sp/>=<sp/>503</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/>LurkerDen<sp/>=<sp/>504</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>LurkerCocoon<sp/>=<sp/>501</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/>Mutalisk<sp/>=<sp/>108</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/>NydusCanal<sp/>=<sp/>142</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>NydusNetwork<sp/>=<sp/>95</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>Overlord<sp/>=<sp/>106</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/>OverlordTransport<sp/>=<sp/>893</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/>OverlordTransportCocoon<sp/>=<sp/>892</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>Overseer<sp/>=<sp/>129</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/>OverseerCocoon<sp/>=<sp/>128</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>OverseerOversightMode<sp/>=<sp/>1912</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/>Queen<sp/>=<sp/>126</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/>QueenBurrowed<sp/>=<sp/>125</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/>Ravager<sp/>=<sp/>688</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>RavagerBurrowed<sp/>=<sp/>690</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/>RavagerCocoon<sp/>=<sp/>687</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>Roach<sp/>=<sp/>110</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>RoachBurrowed<sp/>=<sp/>118</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>RoachWarren<sp/>=<sp/>97</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>SpawningPool<sp/>=<sp/>89</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>SpineCrawler<sp/>=<sp/>98</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/>SpineCrawlerUprooted<sp/>=<sp/>139</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>Spire<sp/>=<sp/>92</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>SporeCrawler<sp/>=<sp/>99</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/>SporeCrawlerUprooted<sp/>=<sp/>140</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>SwarmHost<sp/>=<sp/>494</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>SwarmHostBurrowed<sp/>=<sp/>493</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/>Ultralisk<sp/>=<sp/>109</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/>UltraliskBurrowed<sp/>=<sp/>131</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>UltraliskCavern<sp/>=<sp/>93</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/>Viper<sp/>=<sp/>499</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>Zergling<sp/>=<sp/>105</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/>ZerglingBurrowed<sp/>=<sp/>119</highlight></codeline>
+    </programlisting>
+    <location file="lib/units.py"/>
+  </compounddef>
+</doxygen>

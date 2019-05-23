@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1maps_1_1melee" kind="namespace" language="Python">
+    <compoundname>pysc2::maps::melee</compoundname>
+    <innerclass refid="classpysc2_1_1maps_1_1melee_1_1_melee" prot="public">pysc2::maps::melee::Melee</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1maps_1_1melee_1a2069212e8a83fa5c67348752f1508ffb" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::maps::melee.melee_maps</definition>
+        <argsstring></argsstring>
+        <name>melee_maps</name>
+        <initializer>=  [
+    # &quot;Empty128&quot;,  # Not really playable, but may be useful in the future.
+    &quot;Flat32&quot;,
+    &quot;Flat48&quot;,
+    &quot;Flat64&quot;,
+    &quot;Flat96&quot;,
+    &quot;Flat128&quot;,
+    &quot;Simple64&quot;,
+    &quot;Simple96&quot;,
+    &quot;Simple128&quot;,
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/melee.py" line="30" column="1" bodyfile="maps/melee.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="maps/melee.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

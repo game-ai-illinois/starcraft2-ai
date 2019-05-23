@@ -1,0 +1,162 @@
+.TH "pysc2.lib.features.Features" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.features.Features
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, agent_interface_format=None, map_size=None)"
+.br
+.ti -1c
+.RI "def \fBobservation_spec\fP (self)"
+.br
+.ti -1c
+.RI "def \fBaction_spec\fP (self)"
+.br
+.ti -1c
+.RI "def \fBtransform_obs\fP (self, obs)"
+.br
+.ti -1c
+.RI "def \fBavailable_actions\fP (self, obs)"
+.br
+.ti -1c
+.RI "def \fBtransform_action\fP (self, obs, func_call, skip_available=False)"
+.br
+.ti -1c
+.RI "def \fBreverse_action\fP (self, action)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Render feature layers from SC2 Observation protos into numpy arrays.
+
+This has the implementation details of how to render a starcraft environment.
+It translates between agent action/observation formats and starcraft
+action/observation formats, which should not be seen by agent authors. The
+starcraft protos contain more information than they should have access to.
+
+This is outside of the environment so that it can also be used in other
+contexts, eg a supervised dataset pipeline.
+
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.features\&.Features\&.__init__ ( self,  agent_interface_format = \fCNone\fP,  map_size = \fCNone\fP)"
+
+.PP
+.nf
+Initialize a Features instance matching the specified interface format.
+
+Args:
+  agent_interface_format: See the documentation for `AgentInterfaceFormat`.
+  map_size: The size of the map in world units, needed for feature_units.
+
+Raises:
+  ValueError: if agent_interface_format isn't specified.
+  ValueError: if map_size isn't specified when use_feature_units is.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.features\&.Features\&.action_spec ( self)"
+
+.PP
+.nf
+The action space pretty complicated and fills the ValidFunctions.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.features\&.Features\&.available_actions ( self,  obs)"
+
+.PP
+.nf
+Return the list of available action ids.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.features\&.Features\&.observation_spec ( self)"
+
+.PP
+.nf
+The observation spec for the SC2 environment.
+
+It's worth noting that the image-like observations are in y,x/row,column
+order which is different than the actions which are in x,y order. This is
+due to conflicting conventions, and to facilitate printing of the images.
+
+Returns:
+  The dict of observation names to their tensor shapes. Shapes with a 0 can
+  vary in length, for example the number of valid actions depends on which
+  units you have selected.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.features\&.Features\&.reverse_action ( self,  action)"
+
+.PP
+.nf
+Transform an SC2-style action into an agent-style action.
+
+This should be the inverse of `transform_action`.
+
+Args:
+  action: a `sc_pb.Action` to be transformed.
+
+Returns:
+  A corresponding `actions.FunctionCall`.
+
+Raises:
+  ValueError: if it doesn't know how to transform this action.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.features\&.Features\&.transform_action ( self,  obs,  func_call,  skip_available = \fCFalse\fP)"
+
+.PP
+.nf
+Tranform an agent-style action to one that SC2 can consume.
+
+Args:
+  obs: a `sc_pb.Observation` from the previous frame.
+  func_call: a `FunctionCall` to be turned into a `sc_pb.Action`.
+  skip_available: If True, assume the action is available. This should only
+  be used for testing or if you expect to make actions that weren't
+  valid at the last observation.
+
+Returns:
+  a corresponding `sc_pb.Action`.
+
+Raises:
+  ValueError: if the action doesn't pass validation.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.features\&.Features\&.transform_obs ( self,  obs)"
+
+.PP
+.nf
+Render some SC2 observations into something an agent can handle.
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

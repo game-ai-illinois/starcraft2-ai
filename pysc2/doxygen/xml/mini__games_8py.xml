@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="mini__games_8py" kind="file" language="Python">
+    <compoundname>mini_games.py</compoundname>
+    <innerclass refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game" prot="public">pysc2::maps::mini_games::MiniGame</innerclass>
+    <innernamespace refid="namespacepysc2_1_1maps_1_1mini__games">pysc2::maps::mini_games</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacepysc2_1_1maps_1_1mini__games" refkind="compound"><highlight class="comment">#<sp/>Copyright<sp/>2017<sp/>Google<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS-IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;Define<sp/>the<sp/>mini<sp/>game<sp/>map<sp/>configs.<sp/>These<sp/>are<sp/>maps<sp/>made<sp/>by<sp/>Deepmind.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absolute_import</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>division</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_function</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1maps" kindref="compound">pysc2.maps</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>lib</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game" kindref="compound">MiniGame</ref>(<ref refid="classpysc2_1_1maps_1_1lib_1_1_map" kindref="compound">lib.Map</ref>):</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>directory<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;mini_games&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>download<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;https://github.com/deepmind/pysc2#get-the-maps&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>players<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>score_index<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>game_steps_per_episode<sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>step_mul<sp/>=<sp/>8</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">mini_games<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;BuildMarines&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="comment">#<sp/>900s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CollectMineralsAndGas&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="comment">#<sp/>420s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;CollectMineralShards&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="comment">#<sp/>120s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;DefeatRoaches&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="comment">#<sp/>120s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;DefeatZerglingsAndBanelings&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="comment">#<sp/>120s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;FindAndDefeatZerglings&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="comment">#<sp/>180s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;MoveToBeacon&quot;</highlight><highlight class="normal">,<sp/><sp/></highlight><highlight class="comment">#<sp/>120s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">]</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>name<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>mini_games:</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>globals()[name]<sp/>=<sp/>type(name,<sp/>(MiniGame,),<sp/>dict(filename=name))</highlight></codeline>
+    </programlisting>
+    <location file="maps/mini_games.py"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::run_parallel_test::Barrier</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1ac8c9432b90c8b37ec7e5f0b5db77a473" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.run_parallel_test.Barrier::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="30" column="1" bodyfile="lib/run_parallel_test.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1aa4e9eeac4fac8f01df640fb2b881bf6d" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.run_parallel_test.Barrier::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="31" column="1" bodyfile="lib/run_parallel_test.py" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1a0439c79d387511bcea1606fea651388e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.run_parallel_test.Barrier::cond</definition>
+        <argsstring></argsstring>
+        <name>cond</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="32" column="1" bodyfile="lib/run_parallel_test.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1a77e987f83cb0038718cddacc812e063c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel_test.Barrier.__init__</definition>
+        <argsstring>(self, n)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1ac8c9432b90c8b37ec7e5f0b5db77a473" kindref="member">n</ref></type>
+          <defname>n</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="29" column="1" bodyfile="lib/run_parallel_test.py" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1a0d5f345a8b99d03145c5c742e0f197f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel_test.Barrier.wait</definition>
+        <argsstring>(self)</argsstring>
+        <name>wait</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="34" column="1" bodyfile="lib/run_parallel_test.py" bodystart="34" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1a5216f6a490702f42fcead15daf544589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.run_parallel_test.Barrier.clear</definition>
+        <argsstring>(self)</argsstring>
+        <name>clear</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/run_parallel_test.py" line="46" column="1" bodyfile="lib/run_parallel_test.py" bodystart="46" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="112">
+        <label>pysc2.lib.run_parallel_test.Barrier</label>
+        <link refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier"/>
+        <childnode refid="113" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="113">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="114">
+        <label>pysc2.lib.run_parallel_test.Barrier</label>
+        <link refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier"/>
+        <childnode refid="115" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="115">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/run_parallel_test.py" line="27" column="1" bodyfile="lib/run_parallel_test.py" bodystart="27" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1a77e987f83cb0038718cddacc812e063c" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::Barrier</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1a5216f6a490702f42fcead15daf544589" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::Barrier</scope><name>clear</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1a0439c79d387511bcea1606fea651388e" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::Barrier</scope><name>cond</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1aa4e9eeac4fac8f01df640fb2b881bf6d" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::Barrier</scope><name>count</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1ac8c9432b90c8b37ec7e5f0b5db77a473" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::Barrier</scope><name>n</name></member>
+      <member refid="classpysc2_1_1lib_1_1run__parallel__test_1_1_barrier_1a0d5f345a8b99d03145c5c742e0f197f7" prot="public" virt="non-virtual"><scope>pysc2::lib::run_parallel_test::Barrier</scope><name>wait</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

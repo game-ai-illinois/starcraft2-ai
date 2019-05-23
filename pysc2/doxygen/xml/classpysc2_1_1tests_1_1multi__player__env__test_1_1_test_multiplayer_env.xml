@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1multi__player__env__test_1_1_test_multiplayer_env" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::multi_player_env_test::TestMultiplayerEnv</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1multi__player__env__test_1_1_test_multiplayer_env_1a0d2fb6ccbffbc900ef133c369a72059c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.multi_player_env_test.TestMultiplayerEnv.test_multi_player_env</definition>
+        <argsstring>(self, agent_interface_format)</argsstring>
+        <name>test_multi_player_env</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>agent_interface_format</type>
+          <defname>agent_interface_format</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/multi_player_env_test.py" line="45" column="1" bodyfile="tests/multi_player_env_test.py" bodystart="45" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="743">
+        <label>pysc2.tests.multi_player_env_test.TestMultiplayerEnv</label>
+        <link refid="classpysc2_1_1tests_1_1multi__player__env__test_1_1_test_multiplayer_env"/>
+        <childnode refid="744" relation="public-inheritance">
+        </childnode>
+        <childnode refid="745" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="744">
+        <label>TestCase</label>
+      </node>
+      <node id="745">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="744" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="746">
+        <label>pysc2.tests.multi_player_env_test.TestMultiplayerEnv</label>
+        <link refid="classpysc2_1_1tests_1_1multi__player__env__test_1_1_test_multiplayer_env"/>
+        <childnode refid="747" relation="public-inheritance">
+        </childnode>
+        <childnode refid="748" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="747">
+        <label>TestCase</label>
+      </node>
+      <node id="748">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="747" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/multi_player_env_test.py" line="31" column="1" bodyfile="tests/multi_player_env_test.py" bodystart="31" bodyend="60"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::multi_player_env_test::TestMultiplayerEnv</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::multi_player_env_test::TestMultiplayerEnv</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1multi__player__env__test_1_1_test_multiplayer_env_1a0d2fb6ccbffbc900ef133c369a72059c" prot="public" virt="non-virtual"><scope>pysc2::tests::multi_player_env_test::TestMultiplayerEnv</scope><name>test_multi_player_env</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1random__agent__test_1_1_test_random_agent" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::random_agent_test::TestRandomAgent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1random__agent__test_1_1_test_random_agent_1a1423d35d427938157aee716940a5a2c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.random_agent_test.TestRandomAgent.test_random_agent</definition>
+        <argsstring>(self, agent_interface_format)</argsstring>
+        <name>test_random_agent</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>agent_interface_format</type>
+          <defname>agent_interface_format</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/random_agent_test.py" line="38" column="1" bodyfile="tests/random_agent_test.py" bodystart="38" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="788">
+        <label>TestCase</label>
+      </node>
+      <node id="787">
+        <label>pysc2.tests.random_agent_test.TestRandomAgent</label>
+        <link refid="classpysc2_1_1tests_1_1random__agent__test_1_1_test_random_agent"/>
+        <childnode refid="788" relation="public-inheritance">
+        </childnode>
+        <childnode refid="789" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="789">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="788" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="791">
+        <label>TestCase</label>
+      </node>
+      <node id="790">
+        <label>pysc2.tests.random_agent_test.TestRandomAgent</label>
+        <link refid="classpysc2_1_1tests_1_1random__agent__test_1_1_test_random_agent"/>
+        <childnode refid="791" relation="public-inheritance">
+        </childnode>
+        <childnode refid="792" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="792">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="791" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/random_agent_test.py" line="30" column="1" bodyfile="tests/random_agent_test.py" bodystart="30" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::random_agent_test::TestRandomAgent</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::random_agent_test::TestRandomAgent</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1random__agent__test_1_1_test_random_agent_1a1423d35d427938157aee716940a5a2c2" prot="public" virt="non-virtual"><scope>pysc2::tests::random_agent_test::TestRandomAgent</scope><name>test_random_agent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

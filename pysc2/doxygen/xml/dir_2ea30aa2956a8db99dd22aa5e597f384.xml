@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_2ea30aa2956a8db99dd22aa5e597f384" kind="dir">
+    <compoundname>bin</compoundname>
+    <innerfile refid="bin_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="agent_8py">agent.py</innerfile>
+    <innerfile refid="agent__remote_8py">agent_remote.py</innerfile>
+    <innerfile refid="gen__actions_8py">gen_actions.py</innerfile>
+    <innerfile refid="gen__units_8py">gen_units.py</innerfile>
+    <innerfile refid="gen__versions_8py">gen_versions.py</innerfile>
+    <innerfile refid="map__list_8py">map_list.py</innerfile>
+    <innerfile refid="play_8py">play.py</innerfile>
+    <innerfile refid="play__vs__agent_8py">play_vs_agent.py</innerfile>
+    <innerfile refid="replay__actions_8py">replay_actions.py</innerfile>
+    <innerfile refid="replay__info_8py">replay_info.py</innerfile>
+    <innerfile refid="run__tests_8py">run_tests.py</innerfile>
+    <innerfile refid="valid__actions_8py">valid_actions.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="bin/"/>
+  </compounddef>
+</doxygen>

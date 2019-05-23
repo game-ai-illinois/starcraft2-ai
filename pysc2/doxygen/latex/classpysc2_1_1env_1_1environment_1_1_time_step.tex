@@ -1,0 +1,64 @@
+\hypertarget{classpysc2_1_1env_1_1environment_1_1_time_step}{}\section{pysc2.\+env.\+environment.\+Time\+Step Class Reference}
+\label{classpysc2_1_1env_1_1environment_1_1_time_step}\index{pysc2.\+env.\+environment.\+Time\+Step@{pysc2.\+env.\+environment.\+Time\+Step}}
+Inheritance diagram for pysc2.\+env.\+environment.\+Time\+Step\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.082126cm]{classpysc2_1_1env_1_1environment_1_1_time_step}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1environment_1_1_time_step_a18be60fc3df62720fad06b591f1e6ba4}{first}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1environment_1_1_time_step_a78c8f32550b9e2111308630b6e35089c}{mid}} (self)
+\item 
+def \mbox{\hyperlink{classpysc2_1_1env_1_1environment_1_1_time_step_a81781d0bdeae3de43ffebd4bc08cebac}{last}} (self)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Returned with every call to `step` and `reset` on an environment.
+
+A `TimeStep` contains the data emitted by an environment at each step of
+interaction. A `TimeStep` holds a `step_type`, an `observation`, and an
+associated `reward` and `discount`.
+
+The first `TimeStep` in a sequence will have `StepType.FIRST`. The final
+`TimeStep` will have `StepType.LAST`. All other `TimeStep`s in a sequence will
+have `StepType.MID.
+
+Attributes:
+  step_type: A `StepType` enum value.
+  reward: A scalar, or `None` if `step_type` is `StepType.FIRST`, i.e. at the
+    start of a sequence.
+  discount: A discount value in the range `[0, 1]`, or `None` if `step_type`
+    is `StepType.FIRST`, i.e. at the start of a sequence.
+  observation: A NumPy array, or a dict, list or tuple of arrays.
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpysc2_1_1env_1_1environment_1_1_time_step_a18be60fc3df62720fad06b591f1e6ba4}\label{classpysc2_1_1env_1_1environment_1_1_time_step_a18be60fc3df62720fad06b591f1e6ba4}} 
+\index{pysc2\+::env\+::environment\+::\+Time\+Step@{pysc2\+::env\+::environment\+::\+Time\+Step}!first@{first}}
+\index{first@{first}!pysc2\+::env\+::environment\+::\+Time\+Step@{pysc2\+::env\+::environment\+::\+Time\+Step}}
+\subsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+Time\+Step.\+first (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1env_1_1environment_1_1_time_step_a81781d0bdeae3de43ffebd4bc08cebac}\label{classpysc2_1_1env_1_1environment_1_1_time_step_a81781d0bdeae3de43ffebd4bc08cebac}} 
+\index{pysc2\+::env\+::environment\+::\+Time\+Step@{pysc2\+::env\+::environment\+::\+Time\+Step}!last@{last}}
+\index{last@{last}!pysc2\+::env\+::environment\+::\+Time\+Step@{pysc2\+::env\+::environment\+::\+Time\+Step}}
+\subsubsection{\texorpdfstring{last()}{last()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+Time\+Step.\+last (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classpysc2_1_1env_1_1environment_1_1_time_step_a78c8f32550b9e2111308630b6e35089c}\label{classpysc2_1_1env_1_1environment_1_1_time_step_a78c8f32550b9e2111308630b6e35089c}} 
+\index{pysc2\+::env\+::environment\+::\+Time\+Step@{pysc2\+::env\+::environment\+::\+Time\+Step}!mid@{mid}}
+\index{mid@{mid}!pysc2\+::env\+::environment\+::\+Time\+Step@{pysc2\+::env\+::environment\+::\+Time\+Step}}
+\subsubsection{\texorpdfstring{mid()}{mid()}}
+{\footnotesize\ttfamily def pysc2.\+env.\+environment.\+Time\+Step.\+mid (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+env/\mbox{\hyperlink{environment_8py}{environment.\+py}}\end{DoxyCompactItemize}

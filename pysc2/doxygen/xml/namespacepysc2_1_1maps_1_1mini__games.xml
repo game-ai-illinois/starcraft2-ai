@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1maps_1_1mini__games" kind="namespace" language="Python">
+    <compoundname>pysc2::maps::mini_games</compoundname>
+    <innerclass refid="classpysc2_1_1maps_1_1mini__games_1_1_mini_game" prot="public">pysc2::maps::mini_games::MiniGame</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacepysc2_1_1maps_1_1mini__games_1a28f8f5f6a0c66560571e208cd6fdae9d" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list pysc2::maps::mini_games.mini_games</definition>
+        <argsstring></argsstring>
+        <name>mini_games</name>
+        <initializer>=  [
+    &quot;BuildMarines&quot;,  # 900s
+    &quot;CollectMineralsAndGas&quot;,  # 420s
+    &quot;CollectMineralShards&quot;,  # 120s
+    &quot;DefeatRoaches&quot;,  # 120s
+    &quot;DefeatZerglingsAndBanelings&quot;,  # 120s
+    &quot;FindAndDefeatZerglings&quot;,  # 180s
+    &quot;MoveToBeacon&quot;,  # 120s
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/mini_games.py" line="32" column="1" bodyfile="maps/mini_games.py" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="maps/mini_games.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

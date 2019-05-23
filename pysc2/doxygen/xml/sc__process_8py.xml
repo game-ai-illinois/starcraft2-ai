@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="sc__process_8py" kind="file" language="Python">
+    <compoundname>sc_process.py</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1sc__process_1_1_s_c2_launch_error" prot="public">pysc2::lib::sc_process::SC2LaunchError</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process" prot="public">pysc2::lib::sc_process::StarcraftProcess</innerclass>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1sc__process">pysc2::lib::sc_process</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacepysc2_1_1lib_1_1sc__process" refkind="compound"><highlight class="comment">#<sp/>Copyright<sp/>2017-2018<sp/>Google<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS-IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;Launch<sp/>the<sp/>game<sp/>and<sp/>set<sp/>up<sp/>communication.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absolute_import</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>division</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_function</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>absl<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>shutil</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>subprocess</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>tempfile</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>time</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>absl<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>flags</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>future.builtins<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>range<sp/><sp/></highlight><highlight class="comment">#<sp/>pylint:<sp/>disable=redefined-builtin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>portpicker</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1lib" kindref="compound">pysc2.lib</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>remote_controller</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1lib" kindref="compound">pysc2.lib</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>stopwatch</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">flags.DEFINE_bool(</highlight><highlight class="stringliteral">&quot;sc2_verbose&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">False</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Enable<sp/>SC2<sp/>verbose<sp/>logging.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">FLAGS<sp/>=<sp/>flags.FLAGS</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">sw<sp/>=<sp/>stopwatch.sw</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="classpysc2_1_1lib_1_1sc__process_1_1_s_c2_launch_error" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_s_c2_launch_error" kindref="compound">SC2LaunchError</ref>(Exception):</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">pass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process" kindref="compound">StarcraftProcess</ref>(object):</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Launch<sp/>a<sp/>starcraft<sp/>server,<sp/>initialize<sp/>a<sp/>controller,<sp/>and<sp/>later,<sp/>clean<sp/>up.</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/>This<sp/>is<sp/>best<sp/>used<sp/>from<sp/>run_configs,<sp/>which<sp/>decides<sp/>which<sp/>version<sp/>to<sp/>run,<sp/>and</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/>where<sp/>to<sp/>find<sp/>it.</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/>It<sp/>is<sp/>important<sp/>to<sp/>call<sp/>`close`<sp/>or<sp/>use<sp/>it<sp/>as<sp/>a<sp/>context<sp/>manager,<sp/>otherwise</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/>you&apos;ll<sp/>likely<sp/>leak<sp/>temp<sp/>files<sp/>and<sp/>SC2<sp/>processes.</highlight></codeline>
+<codeline lineno="52"><highlight class="stringliteral"><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a2ed5e56a2a9ee1fd1ff65d9391d64576" kindref="member">__init__</ref>(self,<sp/>run_config,<sp/>exec_path,<sp/>version,<sp/>full_screen=False,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>extra_args=None,<sp/>verbose=False,<sp/>host=None,<sp/>port=None,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>connect=True,<sp/>timeout_seconds=None,<sp/>window_size=(640,<sp/>480),</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>window_loc=(50,<sp/>50),<sp/>**kwargs):</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Launch<sp/>the<sp/>SC2<sp/>process.</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>run_config:<sp/>`run_configs.lib.RunConfig`<sp/>object.</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>exec_path:<sp/>Path<sp/>to<sp/>the<sp/>binary<sp/>to<sp/>run.</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>version:<sp/>`run_configs.lib.Version`<sp/>object.</highlight></codeline>
+<codeline lineno="64"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>full_screen:<sp/>Whether<sp/>to<sp/>launch<sp/>the<sp/>game<sp/>window<sp/>full_screen<sp/>on<sp/>win/mac.</highlight></codeline>
+<codeline lineno="65"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>extra_args:<sp/>List<sp/>of<sp/>additional<sp/>args<sp/>for<sp/>the<sp/>SC2<sp/>process.</highlight></codeline>
+<codeline lineno="66"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>verbose:<sp/>Whether<sp/>to<sp/>have<sp/>the<sp/>SC2<sp/>process<sp/>do<sp/>verbose<sp/>logging.</highlight></codeline>
+<codeline lineno="67"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>host:<sp/>IP<sp/>for<sp/>the<sp/>game<sp/>to<sp/>listen<sp/>on<sp/>for<sp/>its<sp/>websocket.<sp/>This<sp/>is</highlight></codeline>
+<codeline lineno="68"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usually<sp/>&quot;127.0.0.1&quot;,<sp/>or<sp/>&quot;::1&quot;,<sp/>but<sp/>could<sp/>be<sp/>others<sp/>as<sp/>well.</highlight></codeline>
+<codeline lineno="69"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>port:<sp/>Port<sp/>SC2<sp/>should<sp/>listen<sp/>on<sp/>for<sp/>the<sp/>websocket.</highlight></codeline>
+<codeline lineno="70"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>connect:<sp/>Whether<sp/>to<sp/>create<sp/>a<sp/>RemoteController<sp/>to<sp/>connect.</highlight></codeline>
+<codeline lineno="71"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>timeout_seconds:<sp/>Timeout<sp/>for<sp/>the<sp/>remote<sp/>controller.</highlight></codeline>
+<codeline lineno="72"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>window_size:<sp/>Screen<sp/>size<sp/>if<sp/>not<sp/>full<sp/>screen.</highlight></codeline>
+<codeline lineno="73"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>window_loc:<sp/>Screen<sp/>location<sp/>if<sp/>not<sp/>full<sp/>screen.</highlight></codeline>
+<codeline lineno="74"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>**kwargs:<sp/>Extra<sp/>arguments<sp/>for<sp/>_launch<sp/>(useful<sp/>for<sp/>subclasses).</highlight></codeline>
+<codeline lineno="75"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>self._proc<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>self._controller<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>self._check_exists(exec_path)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>self._tmp_dir<sp/>=<sp/>tempfile.mkdtemp(prefix=</highlight><highlight class="stringliteral">&quot;sc-&quot;</highlight><highlight class="normal">,<sp/>dir=run_config.tmp_dir)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>self._host<sp/>=<sp/>host<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;127.0.0.1&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>self._port<sp/>=<sp/>port<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>portpicker.pick_unused_port()</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>self._version<sp/>=<sp/>version</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>args<sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exec_path,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-listen&quot;</highlight><highlight class="normal">,<sp/>self._host,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-port&quot;</highlight><highlight class="normal">,<sp/>str(self._port),</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-dataDir&quot;</highlight><highlight class="normal">,<sp/>os.path.join(run_config.data_dir,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-tempDir&quot;</highlight><highlight class="normal">,<sp/>os.path.join(self._tmp_dir,<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>]</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self._host:</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>args<sp/>+=<sp/>[</highlight><highlight class="stringliteral">&quot;-ipv6&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>full_screen:</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>args<sp/>+=<sp/>[</highlight><highlight class="stringliteral">&quot;-displayMode&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;1&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>args<sp/>+=<sp/>[</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-displayMode&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;0&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-windowwidth&quot;</highlight><highlight class="normal">,<sp/>str(window_size[0]),</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-windowheight&quot;</highlight><highlight class="normal">,<sp/>str(window_size[1]),</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-windowx&quot;</highlight><highlight class="normal">,<sp/>str(window_loc[0]),</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;-windowy&quot;</highlight><highlight class="normal">,<sp/>str(window_loc[1]),</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>]</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>verbose<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>FLAGS.sc2_verbose:</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>args<sp/>+=<sp/>[</highlight><highlight class="stringliteral">&quot;-verbose&quot;</highlight><highlight class="normal">]</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self._version<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self._version.data_version:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>args<sp/>+=<sp/>[</highlight><highlight class="stringliteral">&quot;-dataVersion&quot;</highlight><highlight class="normal">,<sp/>self._version.data_version.upper()]</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>extra_args:</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>args<sp/>+=<sp/>extra_args</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>logging.info(</highlight><highlight class="stringliteral">&quot;Launching<sp/>SC2:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">.join(args))</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1lib_1_1sc__process_1a1c4ebd1d83ad46d099f15a6331d31621" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;startup&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self._proc<sp/>=<sp/>self._launch(run_config,<sp/>args,<sp/>**kwargs)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>connect:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self._controller<sp/>=<sp/><ref refid="classpysc2_1_1lib_1_1remote__controller_1_1_remote_controller" kindref="compound">remote_controller.RemoteController</ref>(</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self._host,<sp/>self._port,<sp/>self,<sp/>timeout_seconds=timeout_seconds)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.close()</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>@sw.decorate</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a08f5107eb70dd338f76b625a50ebec01" kindref="member">close</ref>(self):</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Shut<sp/>down<sp/>the<sp/>game<sp/>and<sp/>clean<sp/>up.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>hasattr(self,<sp/></highlight><highlight class="stringliteral">&quot;_controller&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self._controller:</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self._controller.quit()</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self._controller.<ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a08f5107eb70dd338f76b625a50ebec01" kindref="member">close</ref>()</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self._controller<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>self._shutdown()</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>hasattr(self,<sp/></highlight><highlight class="stringliteral">&quot;_port&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self._port:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>portpicker.return_port(self._port)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self._port<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>hasattr(self,<sp/></highlight><highlight class="stringliteral">&quot;_tmp_dir&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>os.path.exists(self._tmp_dir):</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>shutil.rmtree(self._tmp_dir)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>@property</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a82f3d7c4a499bca4b47d59e6686f759e" kindref="member">controller</ref>(self):</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self._controller</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>@property</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a8d43a3929ca3e95b1a8c67cd6a7a787b" kindref="member">host</ref>(self):</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self._host</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>@property</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a35b59673e9fe0b5e3d5966629b50570c" kindref="member">port</ref>(self):</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self._port</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>@property</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1afa21c71cb3b5c67ef329b5bd334d3880" kindref="member">version</ref>(self):</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self._version</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a3cdbe783d29d2863ba10ec403cb16e30" kindref="member">__enter__</ref>(self):</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.controller</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a5f633ebeb0a4bb91de5945ed98526970" kindref="member">__exit__</ref>(self,<sp/>unused_exception_type,<sp/>unused_exc_value,<sp/>unused_traceback):</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>self.close()</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a2ea4b975a739f0580d91403fe35bc0f1" kindref="member">__del__</ref>(self):</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Prefer<sp/>using<sp/>a<sp/>context<sp/>manager,<sp/>but<sp/>this<sp/>cleans<sp/>most<sp/>other<sp/>cases.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>self.close()</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">_check_exists(self,<sp/>exec_path):</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>os.path.isfile(exec_path):</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>RuntimeError(</highlight><highlight class="stringliteral">&quot;Trying<sp/>to<sp/>run<sp/>&apos;%s&apos;,<sp/>but<sp/>it<sp/>doesn&apos;t<sp/>exist&quot;</highlight><highlight class="normal"><sp/>%<sp/>exec_path)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>os.access(exec_path,<sp/>os.X_OK):</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>RuntimeError(</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Trying<sp/>to<sp/>run<sp/>&apos;%s&apos;,<sp/>but<sp/>it<sp/>isn&apos;t<sp/>executable.&quot;</highlight><highlight class="normal"><sp/>%<sp/>exec_path)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">_launch(self,<sp/>run_config,<sp/>args,<sp/>**kwargs):</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Launch<sp/>the<sp/>process<sp/>and<sp/>return<sp/>the<sp/>process<sp/>object.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>kwargs</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>with<sp/><ref refid="namespacepysc2_1_1lib_1_1sc__process_1a1c4ebd1d83ad46d099f15a6331d31621" kindref="member">sw</ref>(</highlight><highlight class="stringliteral">&quot;popen&quot;</highlight><highlight class="normal">):</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>subprocess.Popen(args,<sp/>cwd=run_config.cwd,<sp/>env=run_config.env)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">except</highlight><highlight class="normal"><sp/>OSError:</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>logging.exception(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>launch&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_s_c2_launch_error" kindref="compound">SC2LaunchError</ref>(</highlight><highlight class="stringliteral">&quot;Failed<sp/>to<sp/>launch:<sp/>%s&quot;</highlight><highlight class="normal"><sp/>%<sp/>args)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">_shutdown(self):</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Terminate<sp/>the<sp/>sub-process.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self._proc:</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>_shutdown_proc(self._proc,<sp/>3)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>logging.info(</highlight><highlight class="stringliteral">&quot;Shutdown<sp/>with<sp/>return<sp/>code:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>ret)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self._proc<sp/>=<sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>@property</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1sc__process_1_1_starcraft_process_1a3937176eb8f9c0baf4f18b455fb42243" kindref="member">running</ref>(self):</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>poll<sp/>returns<sp/>None<sp/>if<sp/>it&apos;s<sp/>running,<sp/>otherwise<sp/>the<sp/>exit<sp/>code.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self._proc<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>(self._proc.poll()<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">_shutdown_proc(p,<sp/>timeout):</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Wait<sp/>for<sp/>a<sp/>proc<sp/>to<sp/>shut<sp/>down,<sp/>then<sp/>terminate<sp/>or<sp/>kill<sp/>it<sp/>after<sp/>`timeout`.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>freq<sp/>=<sp/>10<sp/><sp/></highlight><highlight class="comment">#<sp/>how<sp/>often<sp/>to<sp/>check<sp/>per<sp/>second</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>_<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(1<sp/>+<sp/>timeout<sp/>*<sp/>freq):</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>p.poll()</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>ret<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>logging.info(</highlight><highlight class="stringliteral">&quot;Shutdown<sp/>gracefully.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>time.sleep(1<sp/>/<sp/>freq)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>logging.warning(</highlight><highlight class="stringliteral">&quot;Killing<sp/>the<sp/>process.&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/>p.kill()</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p.wait()</highlight></codeline>
+    </programlisting>
+    <location file="lib/sc_process.py"/>
+  </compounddef>
+</doxygen>

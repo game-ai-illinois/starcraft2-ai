@@ -1,0 +1,88 @@
+.TH "pysc2.lib.actions.ArgumentType" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.actions.ArgumentType
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits namedtuple, id, name, sizes, fn, and values\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__str__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBenum\fP (cls, options, values)"
+.br
+.ti -1c
+.RI "def \fBscalar\fP (cls, value)"
+.br
+.ti -1c
+.RI "def \fBpoint\fP (cls)"
+.br
+.ti -1c
+.RI "def \fBspec\fP (cls, id_, name, sizes)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Represents a single argument type.
+
+Attributes:
+  id: The argument id. This is unique.
+  name: The name of the argument, also unique.
+  sizes: The max+1 of each of the dimensions this argument takes.
+  fn: The function to convert the list of integers into something more
+      meaningful to be set in the protos to send to the game.
+  values: An enum representing the values this argument type could hold. None
+      if this isn't an enum argument type.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.actions\&.ArgumentType\&.__str__ ( self)"
+
+.SS "def pysc2\&.lib\&.actions\&.ArgumentType\&.enum ( cls,  options,  values)"
+
+.PP
+.nf
+Create an ArgumentType where you choose one of a set of known values.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.ArgumentType\&.point ( cls)"
+
+.PP
+.nf
+Create an ArgumentType that is represented by a point.Point.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.ArgumentType\&.scalar ( cls,  value)"
+
+.PP
+.nf
+Create an ArgumentType with a single scalar in range(value).
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.actions\&.ArgumentType\&.spec ( cls,  id_,  name,  sizes)"
+
+.PP
+.nf
+Create an ArgumentType to be used in ValidActions.
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

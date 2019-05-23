@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::bin::replay_actions::ReplayProcessor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Process</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a373f2c1abcccf2e8e74a14f3922a6bf7" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayProcessor::stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="171" column="1" bodyfile="bin/replay_actions.py" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a8903821002ce6c7057910d79cb809cac" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayProcessor::run_config</definition>
+        <argsstring></argsstring>
+        <name>run_config</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="172" column="1" bodyfile="bin/replay_actions.py" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a8d178d30db8f674180796af093c627d1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayProcessor::replay_queue</definition>
+        <argsstring></argsstring>
+        <name>replay_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="173" column="1" bodyfile="bin/replay_actions.py" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a078296122e07fc1609673f321cf3f9d1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayProcessor::stats_queue</definition>
+        <argsstring></argsstring>
+        <name>stats_queue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="174" column="1" bodyfile="bin/replay_actions.py" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a8640877e968c8b982a66f28ce5c3f775" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_actions.ReplayProcessor.__init__</definition>
+        <argsstring>(self, proc_id, run_config, replay_queue, stats_queue)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>proc_id</type>
+          <defname>proc_id</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a8903821002ce6c7057910d79cb809cac" kindref="member">run_config</ref></type>
+          <defname>run_config</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a8d178d30db8f674180796af093c627d1" kindref="member">replay_queue</ref></type>
+          <defname>replay_queue</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a078296122e07fc1609673f321cf3f9d1" kindref="member">stats_queue</ref></type>
+          <defname>stats_queue</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="169" column="1" bodyfile="bin/replay_actions.py" bodystart="169" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1acdd25278568d6e863bf275c38bc50120" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_actions.ReplayProcessor.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="176" column="1" bodyfile="bin/replay_actions.py" bodystart="176" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1aa6240fbedbd2a9a742d64c69e61c4922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_actions.ReplayProcessor.process_replay</definition>
+        <argsstring>(self, controller, replay_data, map_data, player_id)</argsstring>
+        <name>process_replay</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>controller</type>
+          <defname>controller</defname>
+        </param>
+        <param>
+          <type>replay_data</type>
+          <defname>replay_data</defname>
+        </param>
+        <param>
+          <type>map_data</type>
+          <defname>map_data</defname>
+        </param>
+        <param>
+          <type>player_id</type>
+          <defname>player_id</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Process a single replay, updating the stats.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="240" column="1" bodyfile="bin/replay_actions.py" bodystart="240" bodyend="294"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1abd16f08a7fcb7d591b49a4d185a1a580" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_actions.ReplayProcessor._print</definition>
+        <argsstring>(self, s)</argsstring>
+        <name>_print</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="232" column="1" bodyfile="bin/replay_actions.py" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a37ca8b7b73d3e28ac2fc68c91edc7733" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_actions.ReplayProcessor._update_stage</definition>
+        <argsstring>(self, stage)</argsstring>
+        <name>_update_stage</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>stage</type>
+          <defname>stage</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="236" column="1" bodyfile="bin/replay_actions.py" bodystart="236" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A Process that pulls replays and processes them.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="558">
+        <label>pysc2.bin.replay_actions.ReplayProcessor</label>
+        <link refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor"/>
+        <childnode refid="559" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="559">
+        <label>multiprocessing::Process</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="560">
+        <label>pysc2.bin.replay_actions.ReplayProcessor</label>
+        <link refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor"/>
+        <childnode refid="561" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="561">
+        <label>multiprocessing::Process</label>
+      </node>
+    </collaborationgraph>
+    <location file="bin/replay_actions.py" line="166" column="1" bodyfile="bin/replay_actions.py" bodystart="166" bodyend="295"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a8640877e968c8b982a66f28ce5c3f775" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayProcessor</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1abd16f08a7fcb7d591b49a4d185a1a580" prot="private" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayProcessor</scope><name>_print</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a37ca8b7b73d3e28ac2fc68c91edc7733" prot="private" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayProcessor</scope><name>_update_stage</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1aa6240fbedbd2a9a742d64c69e61c4922" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayProcessor</scope><name>process_replay</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a8d178d30db8f674180796af093c627d1" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayProcessor</scope><name>replay_queue</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1acdd25278568d6e863bf275c38bc50120" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayProcessor</scope><name>run</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a8903821002ce6c7057910d79cb809cac" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayProcessor</scope><name>run_config</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a373f2c1abcccf2e8e74a14f3922a6bf7" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayProcessor</scope><name>stats</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor_1a078296122e07fc1609673f321cf3f9d1" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayProcessor</scope><name>stats_queue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

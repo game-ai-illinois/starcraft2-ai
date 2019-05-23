@@ -1,0 +1,300 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::named_array::NamedNumpyArray</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ndarray</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1abe0a817c0553481b98320b31ca686331" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.named_array.NamedNumpyArray::_index_names</definition>
+        <argsstring></argsstring>
+        <name>_index_names</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="125" column="1" bodyfile="lib/named_array.py" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a430c1d678e959482fa73622ba8dc276a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array.NamedNumpyArray.__new__</definition>
+        <argsstring>(cls, values, names, args, kwargs)</argsstring>
+        <name>__new__</name>
+        <param>
+          <type>cls</type>
+          <defname>cls</defname>
+        </param>
+        <param>
+          <type>values</type>
+          <defname>values</defname>
+        </param>
+        <param>
+          <type>names</type>
+          <defname>names</defname>
+        </param>
+        <param>
+          <type>args</type>
+          <defname>args</defname>
+        </param>
+        <param>
+          <type>kwargs</type>
+          <defname>kwargs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="65" column="1" bodyfile="lib/named_array.py" bodystart="65" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a2bd5549c57fae992baaa4c99a0e3bcfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array.NamedNumpyArray.__array_finalize__</definition>
+        <argsstring>(self, obj)</argsstring>
+        <name>__array_finalize__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obj</type>
+          <defname>obj</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="122" column="1" bodyfile="lib/named_array.py" bodystart="122" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a965ef9165993aa61f2a828c2d74d8e2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array.NamedNumpyArray.__getattr__</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>__getattr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="127" column="1" bodyfile="lib/named_array.py" bodystart="127" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1ae20f52f3047bba90d9deb658d8145306" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array.NamedNumpyArray.__setattr__</definition>
+        <argsstring>(self, name, value)</argsstring>
+        <name>__setattr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="133" column="1" bodyfile="lib/named_array.py" bodystart="133" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a2b0e1e4edb82572b308b1144cc1e2835" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array.NamedNumpyArray.__getitem__</definition>
+        <argsstring>(self, indices)</argsstring>
+        <name>__getitem__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>indices</type>
+          <defname>indices</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Get by indexing lookup.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="139" column="1" bodyfile="lib/named_array.py" bodystart="139" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a5731267b4680b51ed45c4ecd3255dbf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array.NamedNumpyArray.__setitem__</definition>
+        <argsstring>(self, indices, value)</argsstring>
+        <name>__setitem__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>indices</type>
+          <defname>indices</defname>
+        </param>
+        <param>
+          <type>value</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="157" column="1" bodyfile="lib/named_array.py" bodystart="157" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a3b773f155fcf8ff1a25074f7e44b1f90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array.NamedNumpyArray.__getslice__</definition>
+        <argsstring>(self, i, j)</argsstring>
+        <name>__getslice__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <param>
+          <type>j</type>
+          <defname>j</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="166" column="1" bodyfile="lib/named_array.py" bodystart="166" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a8642b7f0cc04d088f9e46ddf375cee65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array.NamedNumpyArray.__setslice__</definition>
+        <argsstring>(self, i, j, seq)</argsstring>
+        <name>__setslice__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>i</type>
+          <defname>i</defname>
+        </param>
+        <param>
+          <type>j</type>
+          <defname>j</defname>
+        </param>
+        <param>
+          <type>seq</type>
+          <defname>seq</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="170" column="1" bodyfile="lib/named_array.py" bodystart="170" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a60a056d2104ac21e599185e1f5da7367" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.named_array.NamedNumpyArray.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>A repr, parsing the original and adding the names param.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/named_array.py" line="173" column="1" bodyfile="lib/named_array.py" bodystart="173" bodyend="193"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A subclass of ndarray that lets you give names to indices.
+
+This is a normal ndarray in the sense that you can always index by numbers and
+slices, though elipses don&apos;t work. Also, all elements have the same type,
+unlike a record array.
+
+Names should be a list of names per dimension in the ndarray shape. The names
+should be a list or tuple of strings, a namedtuple class (with names taken
+from _fields), or an IntEnum. Alternatively if you don&apos;t want to give a name
+to a particular dimension, use None. If your array only has one dimension, the
+second level of list can be skipped.
+
+Example usage:
+  a = named_array.NamedNumpyArray([1, 3, 6], [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;])
+  a.a, a[1], a[&quot;c&quot;] =&gt; 1, 3, 6
+  b = named_array.NamedNumpyArray([[1, 3], [6, 8]], [[&quot;a&quot;, &quot;b&quot;], None])
+  b.a, b[1], b[&quot;a&quot;, 1] =&gt; [1, 3], [6, 8], 3
+  c = named_array.NamedNumpyArray([[1, 3], [6, 8]], [None, [&quot;a&quot;, &quot;b&quot;]])
+  c[0].a, b[1, 0], b[1, &quot;b&quot;] =&gt; 1, 6, 8
+Look at the tests for more examples including using enums and named tuples.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="438">
+        <label>pysc2.lib.named_array.NamedNumpyArray</label>
+        <link refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array"/>
+        <childnode refid="439" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="439">
+        <label>np::ndarray</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="440">
+        <label>pysc2.lib.named_array.NamedNumpyArray</label>
+        <link refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array"/>
+        <childnode refid="441" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>np::ndarray</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/named_array.py" line="40" column="1" bodyfile="lib/named_array.py" bodystart="40" bodyend="194"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a2bd5549c57fae992baaa4c99a0e3bcfb" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array::NamedNumpyArray</scope><name>__array_finalize__</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a965ef9165993aa61f2a828c2d74d8e2b" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array::NamedNumpyArray</scope><name>__getattr__</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a2b0e1e4edb82572b308b1144cc1e2835" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array::NamedNumpyArray</scope><name>__getitem__</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a3b773f155fcf8ff1a25074f7e44b1f90" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array::NamedNumpyArray</scope><name>__getslice__</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a430c1d678e959482fa73622ba8dc276a" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array::NamedNumpyArray</scope><name>__new__</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a60a056d2104ac21e599185e1f5da7367" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array::NamedNumpyArray</scope><name>__repr__</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1ae20f52f3047bba90d9deb658d8145306" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array::NamedNumpyArray</scope><name>__setattr__</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a5731267b4680b51ed45c4ecd3255dbf0" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array::NamedNumpyArray</scope><name>__setitem__</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1a8642b7f0cc04d088f9e46ddf375cee65" prot="public" virt="non-virtual"><scope>pysc2::lib::named_array::NamedNumpyArray</scope><name>__setslice__</name></member>
+      <member refid="classpysc2_1_1lib_1_1named__array_1_1_named_numpy_array_1abe0a817c0553481b98320b31ca686331" prot="private" virt="non-virtual"><scope>pysc2::lib::named_array::NamedNumpyArray</scope><name>_index_names</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

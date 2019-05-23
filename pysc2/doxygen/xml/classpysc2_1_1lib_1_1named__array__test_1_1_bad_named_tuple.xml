@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1named__array__test_1_1_bad_named_tuple" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::named_array_test::BadNamedTuple</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">namedtuple</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">a</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">b</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="106">
+        <label>a</label>
+      </node>
+      <node id="107">
+        <label>b</label>
+      </node>
+      <node id="105">
+        <label>namedtuple</label>
+      </node>
+      <node id="104">
+        <label>pysc2.lib.named_array_test.BadNamedTuple</label>
+        <link refid="classpysc2_1_1lib_1_1named__array__test_1_1_bad_named_tuple"/>
+        <childnode refid="105" relation="public-inheritance">
+        </childnode>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="110">
+        <label>a</label>
+      </node>
+      <node id="111">
+        <label>b</label>
+      </node>
+      <node id="109">
+        <label>namedtuple</label>
+      </node>
+      <node id="108">
+        <label>pysc2.lib.named_array_test.BadNamedTuple</label>
+        <link refid="classpysc2_1_1lib_1_1named__array__test_1_1_bad_named_tuple"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+        <childnode refid="110" relation="public-inheritance">
+        </childnode>
+        <childnode refid="111" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/named_array_test.py" line="59" column="1" bodyfile="lib/named_array_test.py" bodystart="59" bodyend="63"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

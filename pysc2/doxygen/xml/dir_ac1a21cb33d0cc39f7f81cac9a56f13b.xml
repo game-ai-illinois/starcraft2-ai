@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_ac1a21cb33d0cc39f7f81cac9a56f13b" kind="dir">
+    <compoundname>maps</compoundname>
+    <innerfile refid="maps_2____init_____8py">__init__.py</innerfile>
+    <innerfile refid="ladder_8py">ladder.py</innerfile>
+    <innerfile refid="maps_2lib_8py">lib.py</innerfile>
+    <innerfile refid="melee_8py">melee.py</innerfile>
+    <innerfile refid="mini__games_8py">mini_games.py</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="maps/"/>
+  </compounddef>
+</doxygen>

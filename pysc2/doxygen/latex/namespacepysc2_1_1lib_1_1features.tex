@@ -1,0 +1,169 @@
+\hypertarget{namespacepysc2_1_1lib_1_1features}{}\section{pysc2.\+lib.\+features Namespace Reference}
+\label{namespacepysc2_1_1lib_1_1features}\index{pysc2.\+lib.\+features@{pysc2.\+lib.\+features}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_agent_interface_format}{Agent\+Interface\+Format}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_dimensions}{Dimensions}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_effects}{Effects}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_feature}{Feature}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_features}{Features}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_feature_type}{Feature\+Type}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_feature_unit}{Feature\+Unit}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_minimap_features}{Minimap\+Features}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_player}{Player}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_player_relative}{Player\+Relative}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_score_cumulative}{Score\+Cumulative}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_screen_features}{Screen\+Features}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_unit_layer}{Unit\+Layer}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1lib_1_1features_1_1_visibility}{Visibility}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1lib_1_1features_a5075b8a72e7dbe879edda0d3dbe902fe}{parse\+\_\+agent\+\_\+interface\+\_\+format}} (feature\+\_\+screen=None, feature\+\_\+minimap=None, rgb\+\_\+screen=None, rgb\+\_\+minimap=None, action\+\_\+space=None, camera\+\_\+width\+\_\+world\+\_\+units=None, use\+\_\+feature\+\_\+units=False)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1lib_1_1features_a633aa1ab712129e68a37ec8e7ddbef10}{features\+\_\+from\+\_\+game\+\_\+info}} (game\+\_\+info, use\+\_\+feature\+\_\+units=False, action\+\_\+space=None, hide\+\_\+specific\+\_\+actions=True)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepysc2_1_1lib_1_1features_a062cf1836da62c7466fa1666e71541d3}{sw}} = stopwatch.\+sw
+\item 
+\mbox{\hyperlink{namespacepysc2_1_1lib_1_1features_a13e90de46283a5e5191bab0451492127}{S\+C\+R\+E\+E\+N\+\_\+\+F\+E\+A\+T\+U\+R\+ES}}
+\item 
+\mbox{\hyperlink{namespacepysc2_1_1lib_1_1features_aa68d4b004db555d191b198bcf0d0e699}{M\+I\+N\+I\+M\+A\+P\+\_\+\+F\+E\+A\+T\+U\+R\+ES}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1features_a633aa1ab712129e68a37ec8e7ddbef10}\label{namespacepysc2_1_1lib_1_1features_a633aa1ab712129e68a37ec8e7ddbef10}} 
+\index{pysc2\+::lib\+::features@{pysc2\+::lib\+::features}!features\+\_\+from\+\_\+game\+\_\+info@{features\+\_\+from\+\_\+game\+\_\+info}}
+\index{features\+\_\+from\+\_\+game\+\_\+info@{features\+\_\+from\+\_\+game\+\_\+info}!pysc2\+::lib\+::features@{pysc2\+::lib\+::features}}
+\subsubsection{\texorpdfstring{features\+\_\+from\+\_\+game\+\_\+info()}{features\_from\_game\_info()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+features\+\_\+from\+\_\+game\+\_\+info (\begin{DoxyParamCaption}\item[{}]{game\+\_\+info,  }\item[{}]{use\+\_\+feature\+\_\+units = {\ttfamily False},  }\item[{}]{action\+\_\+space = {\ttfamily None},  }\item[{}]{hide\+\_\+specific\+\_\+actions = {\ttfamily True} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Construct a Features object using data extracted from game info.
+
+Args:
+  game_info: A `sc_pb.ResponseGameInfo` from the game.
+  use_feature_units: Whether to include the feature unit observation.
+  action_space: If you pass both feature and rgb sizes, then you must also
+      specify which you want to use for your actions as an ActionSpace enum.
+  hide_specific_actions: [bool] Some actions (eg cancel) have many
+      specific versions (cancel this building, cancel that spell) and can
+      be represented in a more general form. If a specific action is
+      available, the general will also be available. If you set
+      `hide_specific_actions` to False, the specific versions will also be
+      available, but if it's True, the specific ones will be hidden.
+      Similarly, when transforming back, a specific action will be returned
+      as the general action. This simplifies the action space, though can
+      lead to some actions in replays not being exactly representable using
+      only the general actions.
+
+Returns:
+  A features object matching the specified parameterisation.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1lib_1_1features_a5075b8a72e7dbe879edda0d3dbe902fe}\label{namespacepysc2_1_1lib_1_1features_a5075b8a72e7dbe879edda0d3dbe902fe}} 
+\index{pysc2\+::lib\+::features@{pysc2\+::lib\+::features}!parse\+\_\+agent\+\_\+interface\+\_\+format@{parse\+\_\+agent\+\_\+interface\+\_\+format}}
+\index{parse\+\_\+agent\+\_\+interface\+\_\+format@{parse\+\_\+agent\+\_\+interface\+\_\+format}!pysc2\+::lib\+::features@{pysc2\+::lib\+::features}}
+\subsubsection{\texorpdfstring{parse\+\_\+agent\+\_\+interface\+\_\+format()}{parse\_agent\_interface\_format()}}
+{\footnotesize\ttfamily def pysc2.\+lib.\+features.\+parse\+\_\+agent\+\_\+interface\+\_\+format (\begin{DoxyParamCaption}\item[{}]{feature\+\_\+screen = {\ttfamily None},  }\item[{}]{feature\+\_\+minimap = {\ttfamily None},  }\item[{}]{rgb\+\_\+screen = {\ttfamily None},  }\item[{}]{rgb\+\_\+minimap = {\ttfamily None},  }\item[{}]{action\+\_\+space = {\ttfamily None},  }\item[{}]{camera\+\_\+width\+\_\+world\+\_\+units = {\ttfamily None},  }\item[{}]{use\+\_\+feature\+\_\+units = {\ttfamily False} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates an AgentInterfaceFormat object from keyword args.
+
+Convenient when using dictionaries or command-line arguments for config.
+
+Note that the feature_* and rgb_* properties define the respective spatial
+observation dimensions and accept:
+    * None or 0 to disable that spatial observation.
+    * A single int for a square observation with that side length.
+    * A (int, int) tuple for a rectangular (width, height) observation.
+
+Args:
+  feature_screen: If specified, so must feature_minimap be.
+  feature_minimap: If specified, so must feature_screen be.
+  rgb_screen: If specified, so must rgb_minimap be.
+  rgb_minimap: If specified, so must rgb_screen be.
+  action_space: ["FEATURES", "RGB"].
+  camera_width_world_units: An int.
+  use_feature_units: A boolean, defaults to False.
+
+Returns:
+  An `AgentInterfaceFormat` object.
+
+Raises:
+  ValueError: If an invalid parameter is specified.
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1features_aa68d4b004db555d191b198bcf0d0e699}\label{namespacepysc2_1_1lib_1_1features_aa68d4b004db555d191b198bcf0d0e699}} 
+\index{pysc2\+::lib\+::features@{pysc2\+::lib\+::features}!M\+I\+N\+I\+M\+A\+P\+\_\+\+F\+E\+A\+T\+U\+R\+ES@{M\+I\+N\+I\+M\+A\+P\+\_\+\+F\+E\+A\+T\+U\+R\+ES}}
+\index{M\+I\+N\+I\+M\+A\+P\+\_\+\+F\+E\+A\+T\+U\+R\+ES@{M\+I\+N\+I\+M\+A\+P\+\_\+\+F\+E\+A\+T\+U\+R\+ES}!pysc2\+::lib\+::features@{pysc2\+::lib\+::features}}
+\subsubsection{\texorpdfstring{M\+I\+N\+I\+M\+A\+P\+\_\+\+F\+E\+A\+T\+U\+R\+ES}{MINIMAP\_FEATURES}}
+{\footnotesize\ttfamily pysc2.\+lib.\+features.\+M\+I\+N\+I\+M\+A\+P\+\_\+\+F\+E\+A\+T\+U\+R\+ES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  MinimapFeatures(
+2     height\_map=(256, FeatureType.SCALAR, colors.winter),
+3     visibility\_map=(4, FeatureType.CATEGORICAL, colors.VISIBILITY\_PALETTE),
+4     creep=(2, FeatureType.CATEGORICAL, colors.CREEP\_PALETTE),
+5     camera=(2, FeatureType.CATEGORICAL, colors.CAMERA\_PALETTE),
+6     player\_id=(17, FeatureType.CATEGORICAL, colors.PLAYER\_ABSOLUTE\_PALETTE),
+7     player\_relative=(5, FeatureType.CATEGORICAL,
+8                      colors.PLAYER\_RELATIVE\_PALETTE),
+9     selected=(2, FeatureType.CATEGORICAL, colors.winter),
+10 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1features_a13e90de46283a5e5191bab0451492127}\label{namespacepysc2_1_1lib_1_1features_a13e90de46283a5e5191bab0451492127}} 
+\index{pysc2\+::lib\+::features@{pysc2\+::lib\+::features}!S\+C\+R\+E\+E\+N\+\_\+\+F\+E\+A\+T\+U\+R\+ES@{S\+C\+R\+E\+E\+N\+\_\+\+F\+E\+A\+T\+U\+R\+ES}}
+\index{S\+C\+R\+E\+E\+N\+\_\+\+F\+E\+A\+T\+U\+R\+ES@{S\+C\+R\+E\+E\+N\+\_\+\+F\+E\+A\+T\+U\+R\+ES}!pysc2\+::lib\+::features@{pysc2\+::lib\+::features}}
+\subsubsection{\texorpdfstring{S\+C\+R\+E\+E\+N\+\_\+\+F\+E\+A\+T\+U\+R\+ES}{SCREEN\_FEATURES}}
+{\footnotesize\ttfamily pysc2.\+lib.\+features.\+S\+C\+R\+E\+E\+N\+\_\+\+F\+E\+A\+T\+U\+R\+ES}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  ScreenFeatures(
+2     height\_map=(256, FeatureType.SCALAR, colors.winter, \textcolor{keyword}{False}),
+3     visibility\_map=(4, FeatureType.CATEGORICAL,
+4                     colors.VISIBILITY\_PALETTE, \textcolor{keyword}{False}),
+5     creep=(2, FeatureType.CATEGORICAL, colors.CREEP\_PALETTE, \textcolor{keyword}{False}),
+6     power=(2, FeatureType.CATEGORICAL, colors.POWER\_PALETTE, \textcolor{keyword}{False}),
+7     player\_id=(17, FeatureType.CATEGORICAL,
+8                colors.PLAYER\_ABSOLUTE\_PALETTE, \textcolor{keyword}{False}),
+9     player\_relative=(5, FeatureType.CATEGORICAL,
+10                      colors.PLAYER\_RELATIVE\_PALETTE, \textcolor{keyword}{False}),
+11     unit\_type=(max(static\_data.UNIT\_TYPES) + 1, FeatureType.CATEGORICAL,
+12                colors.unit\_type, \textcolor{keyword}{False}),
+13     selected=(2, FeatureType.CATEGORICAL, colors.SELECTED\_PALETTE, \textcolor{keyword}{False}),
+14     unit\_hit\_points=(1600, FeatureType.SCALAR, colors.hot, \textcolor{keyword}{True}),
+15     unit\_hit\_points\_ratio=(256, FeatureType.SCALAR, colors.hot, \textcolor{keyword}{False}),
+16     unit\_energy=(1000, FeatureType.SCALAR, colors.hot, \textcolor{keyword}{True}),
+17     unit\_energy\_ratio=(256, FeatureType.SCALAR, colors.hot, \textcolor{keyword}{False}),
+18     unit\_shields=(1000, FeatureType.SCALAR, colors.hot, \textcolor{keyword}{True}),
+19     unit\_shields\_ratio=(256, FeatureType.SCALAR, colors.hot, \textcolor{keyword}{False}),
+20     unit\_density=(16, FeatureType.SCALAR, colors.hot, \textcolor{keyword}{True}),
+21     unit\_density\_aa=(256, FeatureType.SCALAR, colors.hot, \textcolor{keyword}{False}),
+22     effects=(16, FeatureType.CATEGORICAL, colors.effects, \textcolor{keyword}{False}),
+23 )
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepysc2_1_1lib_1_1features_a062cf1836da62c7466fa1666e71541d3}\label{namespacepysc2_1_1lib_1_1features_a062cf1836da62c7466fa1666e71541d3}} 
+\index{pysc2\+::lib\+::features@{pysc2\+::lib\+::features}!sw@{sw}}
+\index{sw@{sw}!pysc2\+::lib\+::features@{pysc2\+::lib\+::features}}
+\subsubsection{\texorpdfstring{sw}{sw}}
+{\footnotesize\ttfamily pysc2.\+lib.\+features.\+sw = stopwatch.\+sw}
+

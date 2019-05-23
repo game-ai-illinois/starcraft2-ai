@@ -1,0 +1,443 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::stopwatch::StopWatch</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a40c14ed0dd64d6953dca4648b22f972a" prot="private" static="yes" mutable="no">
+        <type>tuple</type>
+        <definition>tuple pysc2.lib.stopwatch.StopWatch::__slots__</definition>
+        <argsstring></argsstring>
+        <name>__slots__</name>
+        <initializer>=  (&quot;_times&quot;, &quot;_local&quot;, &quot;<ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a7ef71d8389c2f81c3194986f4343736e" kindref="member">enabled</ref>&quot;, &quot;<ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a953ca11fe39ca3fb2d7a8c9b5cab0695" kindref="member">trace</ref>&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="157" column="1" bodyfile="lib/stopwatch.py" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a803d0f0d1991a248d88c93ae23a6c4ce" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.stopwatch.StopWatch::_times</definition>
+        <argsstring></argsstring>
+        <name>_times</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="160" column="1" bodyfile="lib/stopwatch.py" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a2ad64a5df9efcdd55f381773c632f219" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.stopwatch.StopWatch::_local</definition>
+        <argsstring></argsstring>
+        <name>_local</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="161" column="1" bodyfile="lib/stopwatch.py" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a7ef71d8389c2f81c3194986f4343736e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.stopwatch.StopWatch::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="162" column="1" bodyfile="lib/stopwatch.py" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a953ca11fe39ca3fb2d7a8c9b5cab0695" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.stopwatch.StopWatch::trace</definition>
+        <argsstring></argsstring>
+        <name>trace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="163" column="1" bodyfile="lib/stopwatch.py" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1ac8f219c810684d77e8d2d94f5e7aa271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.__init__</definition>
+        <argsstring>(self, enabled=True, trace=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a7ef71d8389c2f81c3194986f4343736e" kindref="member">enabled</ref></type>
+          <defname>enabled</defname>
+          <defval>True</defval>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a953ca11fe39ca3fb2d7a8c9b5cab0695" kindref="member">trace</ref></type>
+          <defname>trace</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="159" column="1" bodyfile="lib/stopwatch.py" bodystart="159" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a37f8cde10a5ad19daa03b1502deef325" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.__call__</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>__call__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="165" column="1" bodyfile="lib/stopwatch.py" bodystart="165" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a506109bfd7df110925425466a59c0c13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.decorate</definition>
+        <argsstring>(self, name_or_func)</argsstring>
+        <name>decorate</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name_or_func</type>
+          <defname>name_or_func</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Decorate a function/method to check its timings.
+
+To use the function&apos;s name:
+  @sw.decorate
+  def func():
+pass
+
+To name it explicitly:
+  @sw.decorate(&quot;name&quot;)
+  def random_func_name():
+pass
+
+Args:
+  name_or_func: the name or the function to decorate.
+
+Returns:
+  If a name is passed, returns this as a decorator, otherwise returns the
+  decorated function.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="173" column="1" bodyfile="lib/stopwatch.py" bodystart="173" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a2f99d8b7587c25a4184da0ed7f3570b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.push</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>push</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="204" column="1" bodyfile="lib/stopwatch.py" bodystart="204" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a875fd6c31e7c755974a76d2e6928ff43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.pop</definition>
+        <argsstring>(self)</argsstring>
+        <name>pop</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="211" column="1" bodyfile="lib/stopwatch.py" bodystart="211" bodyend="216"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a759df931b3202016cd9a30698c77be1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.cur_stack</definition>
+        <argsstring>(self)</argsstring>
+        <name>cur_stack</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="217" column="1" bodyfile="lib/stopwatch.py" bodystart="217" bodyend="219"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a771061ad85cf730f642317c091c95a10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.clear</definition>
+        <argsstring>(self)</argsstring>
+        <name>clear</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="220" column="1" bodyfile="lib/stopwatch.py" bodystart="220" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a3462ad000bfa5c8b6a92482772840d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.add</definition>
+        <argsstring>(self, name, duration)</argsstring>
+        <name>add</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <param>
+          <type>duration</type>
+          <defname>duration</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="223" column="1" bodyfile="lib/stopwatch.py" bodystart="223" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1ad8dc8f5cf6bb11796e0309c8f7717cf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.__getitem__</definition>
+        <argsstring>(self, name)</argsstring>
+        <name>__getitem__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>name</type>
+          <defname>name</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="226" column="1" bodyfile="lib/stopwatch.py" bodystart="226" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a30e36bd45ab8e1398b6ca5d52e6a255d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.times</definition>
+        <argsstring>(self)</argsstring>
+        <name>times</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="230" column="1" bodyfile="lib/stopwatch.py" bodystart="230" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a59d7e0986c4de0c33aa63c027e109a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.merge</definition>
+        <argsstring>(self, other)</argsstring>
+        <name>merge</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>other</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="233" column="1" bodyfile="lib/stopwatch.py" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a163c0391e3f3faef71eb21de71b60391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.str</definition>
+        <argsstring>(self, threshold=0.1)</argsstring>
+        <name>str</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>threshold</type>
+          <defname>threshold</defname>
+          <defval>0.1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return a string representation of the timings.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="249" column="1" bodyfile="lib/stopwatch.py" bodystart="249" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a1f7ffa52fb52dba1b9e4a2e941670478" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="279" column="1" bodyfile="lib/stopwatch.py" bodystart="279" bodyend="284"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a74d4c6108011d2d25c32d24f6aeaf47d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.stopwatch.StopWatch.parse</definition>
+        <argsstring>(s)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>s</type>
+          <defname>s</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/stopwatch.py" line="238" column="1" bodyfile="lib/stopwatch.py" bodystart="238" bodyend="248"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>A context manager that tracks call count and latency, and other stats.
+
+Usage:
+    sw = stopwatch.Stopwatch()
+    with sw(&quot;foo&quot;):
+      foo()
+    with sw(&quot;bar&quot;):
+      bar()
+    @sw.decorate
+    def func():
+      pass
+    func()
+    print(sw)
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="683">
+        <label>pysc2.lib.stopwatch.StopWatch</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch"/>
+        <childnode refid="684" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="684">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="685">
+        <label>pysc2.lib.stopwatch.StopWatch</label>
+        <link refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch"/>
+        <childnode refid="686" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="686">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/stopwatch.py" line="142" column="1" bodyfile="lib/stopwatch.py" bodystart="142" bodyend="285"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a37f8cde10a5ad19daa03b1502deef325" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>__call__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1ad8dc8f5cf6bb11796e0309c8f7717cf9" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>__getitem__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1ac8f219c810684d77e8d2d94f5e7aa271" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a40c14ed0dd64d6953dca4648b22f972a" prot="private" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>__slots__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a1f7ffa52fb52dba1b9e4a2e941670478" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a2ad64a5df9efcdd55f381773c632f219" prot="private" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>_local</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a803d0f0d1991a248d88c93ae23a6c4ce" prot="private" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>_times</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a3462ad000bfa5c8b6a92482772840d28" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>add</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a771061ad85cf730f642317c091c95a10" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>clear</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a759df931b3202016cd9a30698c77be1f" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>cur_stack</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a506109bfd7df110925425466a59c0c13" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>decorate</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a7ef71d8389c2f81c3194986f4343736e" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>enabled</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a59d7e0986c4de0c33aa63c027e109a47" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>merge</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a74d4c6108011d2d25c32d24f6aeaf47d" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>parse</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a875fd6c31e7c755974a76d2e6928ff43" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>pop</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a2f99d8b7587c25a4184da0ed7f3570b1" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>push</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a163c0391e3f3faef71eb21de71b60391" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>str</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a30e36bd45ab8e1398b6ca5d52e6a255d" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>times</name></member>
+      <member refid="classpysc2_1_1lib_1_1stopwatch_1_1_stop_watch_1a953ca11fe39ca3fb2d7a8c9b5cab0695" prot="public" virt="non-virtual"><scope>pysc2::lib::stopwatch::StopWatch</scope><name>trace</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,308 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::bin::replay_actions::ReplayStats</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a3f2353273907db292357ff4d6974d455" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::replays</definition>
+        <argsstring></argsstring>
+        <name>replays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="69" column="1" bodyfile="bin/replay_actions.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1aebc6e49ad7cb6a3cca4fb0aae371ec42" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::steps</definition>
+        <argsstring></argsstring>
+        <name>steps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="70" column="1" bodyfile="bin/replay_actions.py" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a23f8c5cfa630734292c265e0819a1261" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::camera_move</definition>
+        <argsstring></argsstring>
+        <name>camera_move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="71" column="1" bodyfile="bin/replay_actions.py" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1ac0e08b0dfe1a14b2e32c1c0d123cc862" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::select_pt</definition>
+        <argsstring></argsstring>
+        <name>select_pt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="72" column="1" bodyfile="bin/replay_actions.py" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a2f6381eb34da9ea54162c49284236276" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::select_rect</definition>
+        <argsstring></argsstring>
+        <name>select_rect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="73" column="1" bodyfile="bin/replay_actions.py" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1aa8a49da671c72bc25483a64602ce22f6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::control_group</definition>
+        <argsstring></argsstring>
+        <name>control_group</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="74" column="1" bodyfile="bin/replay_actions.py" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1afd0127821e5bf89a050e988069fec437" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::maps</definition>
+        <argsstring></argsstring>
+        <name>maps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="75" column="1" bodyfile="bin/replay_actions.py" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a972fabc8b774ed459571917fa7a1b6a8" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::races</definition>
+        <argsstring></argsstring>
+        <name>races</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="76" column="1" bodyfile="bin/replay_actions.py" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a2e0ef03b777626e6e0388f65773b62ff" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::unit_ids</definition>
+        <argsstring></argsstring>
+        <name>unit_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="77" column="1" bodyfile="bin/replay_actions.py" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a43698086bf36b7b254aa929da0d85bef" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::valid_abilities</definition>
+        <argsstring></argsstring>
+        <name>valid_abilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="78" column="1" bodyfile="bin/replay_actions.py" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a61b2c42a1c03c9d097cf27d6fac5ba88" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::made_abilities</definition>
+        <argsstring></argsstring>
+        <name>made_abilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="79" column="1" bodyfile="bin/replay_actions.py" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1abc6999e91114dc655c618a6f01711426" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::valid_actions</definition>
+        <argsstring></argsstring>
+        <name>valid_actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="80" column="1" bodyfile="bin/replay_actions.py" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1ad557a262e17fdee51133c04a18ab2abc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::made_actions</definition>
+        <argsstring></argsstring>
+        <name>made_actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="81" column="1" bodyfile="bin/replay_actions.py" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1aa7697abe01d65e2c2329d3d6ea8963a0" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::crashing_replays</definition>
+        <argsstring></argsstring>
+        <name>crashing_replays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="82" column="1" bodyfile="bin/replay_actions.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1ab6e0f694ff1176c17c4c2d31d2feae1e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.bin.replay_actions.ReplayStats::invalid_replays</definition>
+        <argsstring></argsstring>
+        <name>invalid_replays</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="83" column="1" bodyfile="bin/replay_actions.py" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1ab1aafbc6a5f11db453dd1e4b8a698403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_actions.ReplayStats.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="68" column="1" bodyfile="bin/replay_actions.py" bodystart="68" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1abe193d5eba7267856df8fcd16d933c65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_actions.ReplayStats.merge</definition>
+        <argsstring>(self, other)</argsstring>
+        <name>merge</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>other</type>
+          <defname>other</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Merge another ReplayStats into this one.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="85" column="1" bodyfile="bin/replay_actions.py" bodystart="85" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1aa96247c1aec6dc567cd1a3bd4e78138a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.bin.replay_actions.ReplayStats.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="bin/replay_actions.py" line="107" column="1" bodyfile="bin/replay_actions.py" bodystart="107" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Summary stats of the replays seen so far.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="562">
+        <label>pysc2.bin.replay_actions.ReplayStats</label>
+        <link refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats"/>
+        <childnode refid="563" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="563">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="564">
+        <label>pysc2.bin.replay_actions.ReplayStats</label>
+        <link refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats"/>
+        <childnode refid="565" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="565">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="bin/replay_actions.py" line="65" column="1" bodyfile="bin/replay_actions.py" bodystart="65" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1ab1aafbc6a5f11db453dd1e4b8a698403" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1aa96247c1aec6dc567cd1a3bd4e78138a" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a23f8c5cfa630734292c265e0819a1261" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>camera_move</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1aa8a49da671c72bc25483a64602ce22f6" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>control_group</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1aa7697abe01d65e2c2329d3d6ea8963a0" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>crashing_replays</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1ab6e0f694ff1176c17c4c2d31d2feae1e" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>invalid_replays</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a61b2c42a1c03c9d097cf27d6fac5ba88" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>made_abilities</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1ad557a262e17fdee51133c04a18ab2abc" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>made_actions</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1afd0127821e5bf89a050e988069fec437" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>maps</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1abe193d5eba7267856df8fcd16d933c65" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>merge</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a972fabc8b774ed459571917fa7a1b6a8" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>races</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a3f2353273907db292357ff4d6974d455" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>replays</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1ac0e08b0dfe1a14b2e32c1c0d123cc862" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>select_pt</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a2f6381eb34da9ea54162c49284236276" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>select_rect</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1aebc6e49ad7cb6a3cca4fb0aae371ec42" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>steps</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a2e0ef03b777626e6e0388f65773b62ff" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>unit_ids</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1a43698086bf36b7b254aa929da0d85bef" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>valid_abilities</name></member>
+      <member refid="classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats_1abc6999e91114dc655c618a6f01711426" prot="public" virt="non-virtual"><scope>pysc2::bin::replay_actions::ReplayStats</scope><name>valid_actions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

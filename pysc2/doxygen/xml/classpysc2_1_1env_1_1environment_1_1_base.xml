@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1environment_1_1_base" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::environment::Base</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+    <derivedcompoundref refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper" prot="public" virt="non-virtual">pysc2.env.base_env_wrapper.BaseEnvWrapper</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment" prot="public" virt="non-virtual">pysc2.env.mock_sc2_env._TestEnvironment</derivedcompoundref>
+    <derivedcompoundref refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env" prot="public" virt="non-virtual">pysc2.env.sc2_env.SC2Env</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="122">
+        <label>pysc2.env.sc2_env.SC2Env</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_s_c2_env"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>pysc2.env.base_env_wrapper.BaseEnvWrapper</label>
+        <link refid="classpysc2_1_1env_1_1base__env__wrapper_1_1_base_env_wrapper"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="117" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>pysc2.env.lan_sc2_env.LanSC2Env</label>
+        <link refid="classpysc2_1_1env_1_1lan__sc2__env_1_1_lan_s_c2_env"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>pysc2.env.remote_sc2_env.RemoteSC2Env</label>
+        <link refid="classpysc2_1_1env_1_1remote__sc2__env_1_1_remote_s_c2_env"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>pysc2.env.mock_sc2_env._TestEnvironment</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="117">
+        <label>object</label>
+      </node>
+      <node id="121">
+        <label>pysc2.env.mock_sc2_env.SC2TestEnv</label>
+        <link refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env"/>
+        <childnode refid="120" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>pysc2.env.available_actions_printer.AvailableActionsPrinter</label>
+        <link refid="classpysc2_1_1env_1_1available__actions__printer_1_1_available_actions_printer"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="125">
+        <label>pysc2.env.environment.Base</label>
+        <link refid="classpysc2_1_1env_1_1environment_1_1_base"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/environment.py" line="70" column="1" bodyfile="env/environment.py" bodystart="70" bodyend="-1"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

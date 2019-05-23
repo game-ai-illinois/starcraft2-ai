@@ -1,0 +1,97 @@
+\hypertarget{namespacepysc2_1_1bin_1_1replay__actions}{}\section{pysc2.\+bin.\+replay\+\_\+actions Namespace Reference}
+\label{namespacepysc2_1_1bin_1_1replay__actions}\index{pysc2.\+bin.\+replay\+\_\+actions@{pysc2.\+bin.\+replay\+\_\+actions}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_process_stats}{Process\+Stats}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_processor}{Replay\+Processor}}
+\item 
+class \mbox{\hyperlink{classpysc2_1_1bin_1_1replay__actions_1_1_replay_stats}{Replay\+Stats}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1bin_1_1replay__actions_ab484faf8c35388d9fcf8b72cb02ef6a6}{sorted\+\_\+dict\+\_\+str}} (d)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1bin_1_1replay__actions_aae5d5407eba33910938aa3a851836a0c}{valid\+\_\+replay}} (info, ping)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1bin_1_1replay__actions_a1193b2acf3514b1b6e766a66ba50b8cb}{stats\+\_\+printer}} (stats\+\_\+queue)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1bin_1_1replay__actions_a2d0b55d645d0906bf8af148c7fff86dc}{replay\+\_\+queue\+\_\+filler}} (replay\+\_\+queue, replay\+\_\+list)
+\item 
+def \mbox{\hyperlink{namespacepysc2_1_1bin_1_1replay__actions_a6d919b81161cbb5230b4f4fcdea2e465}{main}} (unused\+\_\+argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacepysc2_1_1bin_1_1replay__actions_a1a549256e121c8c750ee834e58fc3eae}{F\+L\+A\+GS}} = flags.\+F\+L\+A\+GS
+\item 
+\mbox{\hyperlink{namespacepysc2_1_1bin_1_1replay__actions_abe4e72943d72eb48de33710405cbde7c}{size}} = point.\+Point(16, 16)
+\item 
+\mbox{\hyperlink{namespacepysc2_1_1bin_1_1replay__actions_aef1e28f8981f99f5f95ab179996427db}{interface}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacepysc2_1_1bin_1_1replay__actions_a6d919b81161cbb5230b4f4fcdea2e465}\label{namespacepysc2_1_1bin_1_1replay__actions_a6d919b81161cbb5230b4f4fcdea2e465}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}!main@{main}}
+\index{main@{main}!pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def pysc2.\+bin.\+replay\+\_\+actions.\+main (\begin{DoxyParamCaption}\item[{}]{unused\+\_\+argv }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dump stats about all the actions that are in use in a set of replays.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1bin_1_1replay__actions_a2d0b55d645d0906bf8af148c7fff86dc}\label{namespacepysc2_1_1bin_1_1replay__actions_a2d0b55d645d0906bf8af148c7fff86dc}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}!replay\+\_\+queue\+\_\+filler@{replay\+\_\+queue\+\_\+filler}}
+\index{replay\+\_\+queue\+\_\+filler@{replay\+\_\+queue\+\_\+filler}!pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}}
+\subsubsection{\texorpdfstring{replay\+\_\+queue\+\_\+filler()}{replay\_queue\_filler()}}
+{\footnotesize\ttfamily def pysc2.\+bin.\+replay\+\_\+actions.\+replay\+\_\+queue\+\_\+filler (\begin{DoxyParamCaption}\item[{}]{replay\+\_\+queue,  }\item[{}]{replay\+\_\+list }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A thread that fills the replay_queue with replay filenames.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1bin_1_1replay__actions_ab484faf8c35388d9fcf8b72cb02ef6a6}\label{namespacepysc2_1_1bin_1_1replay__actions_ab484faf8c35388d9fcf8b72cb02ef6a6}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}!sorted\+\_\+dict\+\_\+str@{sorted\+\_\+dict\+\_\+str}}
+\index{sorted\+\_\+dict\+\_\+str@{sorted\+\_\+dict\+\_\+str}!pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}}
+\subsubsection{\texorpdfstring{sorted\+\_\+dict\+\_\+str()}{sorted\_dict\_str()}}
+{\footnotesize\ttfamily def pysc2.\+bin.\+replay\+\_\+actions.\+sorted\+\_\+dict\+\_\+str (\begin{DoxyParamCaption}\item[{}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacepysc2_1_1bin_1_1replay__actions_a1193b2acf3514b1b6e766a66ba50b8cb}\label{namespacepysc2_1_1bin_1_1replay__actions_a1193b2acf3514b1b6e766a66ba50b8cb}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}!stats\+\_\+printer@{stats\+\_\+printer}}
+\index{stats\+\_\+printer@{stats\+\_\+printer}!pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}}
+\subsubsection{\texorpdfstring{stats\+\_\+printer()}{stats\_printer()}}
+{\footnotesize\ttfamily def pysc2.\+bin.\+replay\+\_\+actions.\+stats\+\_\+printer (\begin{DoxyParamCaption}\item[{}]{stats\+\_\+queue }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A thread that consumes stats_queue and prints them every 10 seconds.\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacepysc2_1_1bin_1_1replay__actions_aae5d5407eba33910938aa3a851836a0c}\label{namespacepysc2_1_1bin_1_1replay__actions_aae5d5407eba33910938aa3a851836a0c}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}!valid\+\_\+replay@{valid\+\_\+replay}}
+\index{valid\+\_\+replay@{valid\+\_\+replay}!pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}}
+\subsubsection{\texorpdfstring{valid\+\_\+replay()}{valid\_replay()}}
+{\footnotesize\ttfamily def pysc2.\+bin.\+replay\+\_\+actions.\+valid\+\_\+replay (\begin{DoxyParamCaption}\item[{}]{info,  }\item[{}]{ping }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make sure the replay isn't corrupt, and is worth looking at.\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacepysc2_1_1bin_1_1replay__actions_a1a549256e121c8c750ee834e58fc3eae}\label{namespacepysc2_1_1bin_1_1replay__actions_a1a549256e121c8c750ee834e58fc3eae}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}!F\+L\+A\+GS@{F\+L\+A\+GS}}
+\index{F\+L\+A\+GS@{F\+L\+A\+GS}!pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}}
+\subsubsection{\texorpdfstring{F\+L\+A\+GS}{FLAGS}}
+{\footnotesize\ttfamily pysc2.\+bin.\+replay\+\_\+actions.\+F\+L\+A\+GS = flags.\+F\+L\+A\+GS}
+
+\mbox{\Hypertarget{namespacepysc2_1_1bin_1_1replay__actions_aef1e28f8981f99f5f95ab179996427db}\label{namespacepysc2_1_1bin_1_1replay__actions_aef1e28f8981f99f5f95ab179996427db}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}!interface@{interface}}
+\index{interface@{interface}!pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}}
+\subsubsection{\texorpdfstring{interface}{interface}}
+{\footnotesize\ttfamily pysc2.\+bin.\+replay\+\_\+actions.\+interface}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 =  sc\_pb.InterfaceOptions(
+2     raw=\textcolor{keyword}{True}, score=\textcolor{keyword}{False},
+3     feature\_layer=sc\_pb.SpatialCameraSetup(width=24))
+\end{DoxyCode}
+\mbox{\Hypertarget{namespacepysc2_1_1bin_1_1replay__actions_abe4e72943d72eb48de33710405cbde7c}\label{namespacepysc2_1_1bin_1_1replay__actions_abe4e72943d72eb48de33710405cbde7c}} 
+\index{pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}!size@{size}}
+\index{size@{size}!pysc2\+::bin\+::replay\+\_\+actions@{pysc2\+::bin\+::replay\+\_\+actions}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily pysc2.\+bin.\+replay\+\_\+actions.\+size = point.\+Point(16, 16)}
+

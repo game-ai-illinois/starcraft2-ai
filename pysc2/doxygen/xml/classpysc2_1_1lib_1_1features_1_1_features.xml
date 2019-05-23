@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1features_1_1_features" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::features::Features</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_features_1a0bb37b9909fce8b0589a09769079262f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.Features::_agent_interface_format</definition>
+        <argsstring></argsstring>
+        <name>_agent_interface_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="623" column="1" bodyfile="lib/features.py" bodystart="623" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_features_1a49f6d5fc745e3b57363513852041f56d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.Features::_valid_functions</definition>
+        <argsstring></argsstring>
+        <name>_valid_functions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="631" column="1" bodyfile="lib/features.py" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_features_1a03b505e8e3f699667aa93ca09ab153ac" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.Features::_world_to_world_tl</definition>
+        <argsstring></argsstring>
+        <name>_world_to_world_tl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="642" column="1" bodyfile="lib/features.py" bodystart="642" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_features_1ad6796520d6f46e9d9370dcd7b823f1c1" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.Features::_world_tl_to_world_camera_rel</definition>
+        <argsstring></argsstring>
+        <name>_world_tl_to_world_camera_rel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="644" column="1" bodyfile="lib/features.py" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1features_1_1_features_1abaa5c9f33c4e8d07b16552512f20d3f8" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.features.Features::_world_to_feature_screen_px</definition>
+        <argsstring></argsstring>
+        <name>_world_to_feature_screen_px</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="648" column="1" bodyfile="lib/features.py" bodystart="648" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_features_1af12dfcaae0adbc89c662a44b8ce762de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Features.__init__</definition>
+        <argsstring>(self, agent_interface_format=None, map_size=None)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>agent_interface_format</type>
+          <defname>agent_interface_format</defname>
+          <defval>None</defval>
+        </param>
+        <param>
+          <type>map_size</type>
+          <defname>map_size</defname>
+          <defval>None</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize a Features instance matching the specified interface format.
+
+Args:
+  agent_interface_format: See the documentation for `AgentInterfaceFormat`.
+  map_size: The size of the map in world units, needed for feature_units.
+
+Raises:
+  ValueError: if agent_interface_format isn&apos;t specified.
+  ValueError: if map_size isn&apos;t specified when use_feature_units is.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="609" column="1" bodyfile="lib/features.py" bodystart="609" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_features_1a4b1d691f5d9376c1116a6c81a927e865" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Features.observation_spec</definition>
+        <argsstring>(self)</argsstring>
+        <name>observation_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The observation spec for the SC2 environment.
+
+It&apos;s worth noting that the image-like observations are in y,x/row,column
+order which is different than the actions which are in x,y order. This is
+due to conflicting conventions, and to facilitate printing of the images.
+
+Returns:
+  The dict of observation names to their tensor shapes. Shapes with a 0 can
+  vary in length, for example the number of valid actions depends on which
+  units you have selected.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="660" column="1" bodyfile="lib/features.py" bodystart="660" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_features_1a76e3d8bfc6e588ee9dddbbb34015ca7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Features.action_spec</definition>
+        <argsstring>(self)</argsstring>
+        <name>action_spec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The action space pretty complicated and fills the ValidFunctions.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="709" column="1" bodyfile="lib/features.py" bodystart="709" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_features_1a79fe09a0d35b8d7b6f761da2ddc72f67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Features.transform_obs</definition>
+        <argsstring>(self, obs)</argsstring>
+        <name>transform_obs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Render some SC2 observations into something an agent can handle.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="714" column="1" bodyfile="lib/features.py" bodystart="714" bodyend="891"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_features_1ad5a0a4cc33805616b7219e81d5be3d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Features.available_actions</definition>
+        <argsstring>(self, obs)</argsstring>
+        <name>available_actions</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Return the list of available action ids.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="893" column="1" bodyfile="lib/features.py" bodystart="893" bodyend="916"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_features_1a4d30783f71487ebbf7ac3cf21873af65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Features.transform_action</definition>
+        <argsstring>(self, obs, func_call, skip_available=False)</argsstring>
+        <name>transform_action</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>obs</type>
+          <defname>obs</defname>
+        </param>
+        <param>
+          <type>func_call</type>
+          <defname>func_call</defname>
+        </param>
+        <param>
+          <type>skip_available</type>
+          <defname>skip_available</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tranform an agent-style action to one that SC2 can consume.
+
+Args:
+  obs: a `sc_pb.Observation` from the previous frame.
+  func_call: a `FunctionCall` to be turned into a `sc_pb.Action`.
+  skip_available: If True, assume the action is available. This should only
+  be used for testing or if you expect to make actions that weren&apos;t
+  valid at the last observation.
+
+Returns:
+  a corresponding `sc_pb.Action`.
+
+Raises:
+  ValueError: if the action doesn&apos;t pass validation.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="918" column="1" bodyfile="lib/features.py" bodystart="918" bodyend="983"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_features_1ae50848a35cd3c31833d1eb37662611f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Features.reverse_action</definition>
+        <argsstring>(self, action)</argsstring>
+        <name>reverse_action</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>action</type>
+          <defname>action</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Transform an SC2-style action into an agent-style action.
+
+This should be the inverse of `transform_action`.
+
+Args:
+  action: a `sc_pb.Action` to be transformed.
+
+Returns:
+  A corresponding `actions.FunctionCall`.
+
+Raises:
+  ValueError: if it doesn&apos;t know how to transform this action.
+</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="985" column="1" bodyfile="lib/features.py" bodystart="985" bodyend="1084"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_features_1a50e1c8ff5b600a9769a7a79b73af181e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Features._init_camera</definition>
+        <argsstring>(self, feature_dimensions, map_size, camera_width_world_units)</argsstring>
+        <name>_init_camera</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>feature_dimensions</type>
+          <defname>feature_dimensions</defname>
+        </param>
+        <param>
+          <type>map_size</type>
+          <defname>map_size</defname>
+        </param>
+        <param>
+          <type>camera_width_world_units</type>
+          <defname>camera_width_world_units</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Initialize the feature_units camera.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="634" column="1" bodyfile="lib/features.py" bodystart="635" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1features_1_1_features_1aa7ad734fa0b8135583714d0be7d765d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.features.Features._update_camera</definition>
+        <argsstring>(self, camera_center)</argsstring>
+        <name>_update_camera</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>camera_center</type>
+          <defname>camera_center</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Update the camera transform based on the new camera center.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/features.py" line="654" column="1" bodyfile="lib/features.py" bodystart="654" bodyend="659"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Render feature layers from SC2 Observation protos into numpy arrays.
+
+This has the implementation details of how to render a starcraft environment.
+It translates between agent action/observation formats and starcraft
+action/observation formats, which should not be seen by agent authors. The
+starcraft protos contain more information than they should have access to.
+
+This is outside of the environment so that it can also be used in other
+contexts, eg a supervised dataset pipeline.
+</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="254">
+        <label>pysc2.lib.features.Features</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_features"/>
+        <childnode refid="255" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="256">
+        <label>pysc2.lib.features.Features</label>
+        <link refid="classpysc2_1_1lib_1_1features_1_1_features"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/features.py" line="597" column="1" bodyfile="lib/features.py" bodystart="597" bodyend="1084"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1af12dfcaae0adbc89c662a44b8ce762de" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1a0bb37b9909fce8b0589a09769079262f" prot="private" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>_agent_interface_format</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1a50e1c8ff5b600a9769a7a79b73af181e" prot="private" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>_init_camera</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1aa7ad734fa0b8135583714d0be7d765d7" prot="private" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>_update_camera</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1a49f6d5fc745e3b57363513852041f56d" prot="private" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>_valid_functions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1ad6796520d6f46e9d9370dcd7b823f1c1" prot="private" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>_world_tl_to_world_camera_rel</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1abaa5c9f33c4e8d07b16552512f20d3f8" prot="private" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>_world_to_feature_screen_px</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1a03b505e8e3f699667aa93ca09ab153ac" prot="private" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>_world_to_world_tl</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1a76e3d8bfc6e588ee9dddbbb34015ca7d" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>action_spec</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1ad5a0a4cc33805616b7219e81d5be3d03" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>available_actions</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1a4b1d691f5d9376c1116a6c81a927e865" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>observation_spec</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1ae50848a35cd3c31833d1eb37662611f3" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>reverse_action</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1a4d30783f71487ebbf7ac3cf21873af65" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>transform_action</name></member>
+      <member refid="classpysc2_1_1lib_1_1features_1_1_features_1a79fe09a0d35b8d7b6f761da2ddc72f67" prot="public" virt="non-virtual"><scope>pysc2::lib::features::Features</scope><name>transform_obs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

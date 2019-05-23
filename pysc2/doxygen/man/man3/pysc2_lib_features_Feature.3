@@ -1,0 +1,103 @@
+.TH "pysc2.lib.features.Feature" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.features.Feature
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits namedtuple, index, name, layer_set, full_name, scale, type, palette, and clip\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBunpack\fP (self, obs)"
+.br
+.ti -1c
+.RI "def \fBcolor\fP (self, plane)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBunpack_layer\fP (plane)"
+.br
+.ti -1c
+.RI "def \fBunpack_rgb_image\fP (plane)"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "dictionary \fBdtypes\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Define properties of a feature layer.
+
+Attributes:
+  index: Index of this layer into the set of layers.
+  name: The name of the layer within the set.
+  layer_set: Which set of feature layers to look at in the observation proto.
+  full_name: The full name including for visualization.
+  scale: Max value (+1) of this layer, used to scale the values.
+  type: A FeatureType for scalar vs categorical.
+  palette: A color palette for rendering.
+  clip: Whether to clip the values for coloring.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.features\&.Feature\&.color ( self,  plane)"
+
+.SS "def pysc2\&.lib\&.features\&.Feature\&.unpack ( self,  obs)"
+
+.PP
+.nf
+Return a correctly shaped numpy array for this feature.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.features\&.Feature\&.unpack_layer ( plane)\fC [static]\fP"
+
+.PP
+.nf
+Return a correctly shaped numpy array given the feature layer bytes.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.features\&.Feature\&.unpack_rgb_image ( plane)\fC [static]\fP"
+
+.PP
+.nf
+Return a correctly shaped numpy array given the image bytes.
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "dictionary pysc2\&.lib\&.features\&.Feature\&.dtypes\fC [static]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=  {
+      1: np\&.uint8,
+      8: np\&.uint8,
+      16: np\&.uint16,
+      32: np\&.int32,
+  }
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

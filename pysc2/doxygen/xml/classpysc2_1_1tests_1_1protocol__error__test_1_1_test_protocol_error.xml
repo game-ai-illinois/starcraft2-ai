@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1protocol__error__test_1_1_test_protocol_error" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::protocol_error_test::TestProtocolError</compoundname>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1protocol__error__test_1_1_test_protocol_error_1ac8b66360b42ba2224e2fc6c8945d8ba5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.protocol_error_test.TestProtocolError.test_error</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_error</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/protocol_error_test.py" line="33" column="1" bodyfile="tests/protocol_error_test.py" bodystart="33" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Verify that we blow up if SC2 thinks we did something wrong.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="781">
+        <label>pysc2.tests.protocol_error_test.TestProtocolError</label>
+        <link refid="classpysc2_1_1tests_1_1protocol__error__test_1_1_test_protocol_error"/>
+        <childnode refid="782" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="783">
+        <label>TestCase</label>
+      </node>
+      <node id="782">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="783" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="784">
+        <label>pysc2.tests.protocol_error_test.TestProtocolError</label>
+        <link refid="classpysc2_1_1tests_1_1protocol__error__test_1_1_test_protocol_error"/>
+        <childnode refid="785" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="786">
+        <label>TestCase</label>
+      </node>
+      <node id="785">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="786" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/protocol_error_test.py" line="30" column="1" bodyfile="tests/protocol_error_test.py" bodystart="30" bodyend="42"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::protocol_error_test::TestProtocolError</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::protocol_error_test::TestProtocolError</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1protocol__error__test_1_1_test_protocol_error_1ac8b66360b42ba2224e2fc6c8945d8ba5" prot="public" virt="non-virtual"><scope>pysc2::tests::protocol_error_test::TestProtocolError</scope><name>test_error</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

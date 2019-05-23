@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::env::sc2_env::Difficulty</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1ad18cddab1aeb3e4bfa8e5d053db9cc7a" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Difficulty::very_easy</definition>
+        <argsstring></argsstring>
+        <name>very_easy</name>
+        <initializer>=  sc_pb.VeryEasy</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="60" column="1" bodyfile="env/sc2_env.py" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a91ae2b79485f42d369c2188187818e85" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Difficulty::easy</definition>
+        <argsstring></argsstring>
+        <name>easy</name>
+        <initializer>=  sc_pb.Easy</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="61" column="1" bodyfile="env/sc2_env.py" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a706a666a3a2e916bfefdcd0dd57ff6ae" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Difficulty::medium</definition>
+        <argsstring></argsstring>
+        <name>medium</name>
+        <initializer>=  sc_pb.Medium</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="62" column="1" bodyfile="env/sc2_env.py" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1af78449b9e9abe19205a4b318265da564" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Difficulty::medium_hard</definition>
+        <argsstring></argsstring>
+        <name>medium_hard</name>
+        <initializer>=  sc_pb.MediumHard</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="63" column="1" bodyfile="env/sc2_env.py" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1abaa3239dd900a199541dfe84245615bc" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Difficulty::hard</definition>
+        <argsstring></argsstring>
+        <name>hard</name>
+        <initializer>=  sc_pb.Hard</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="64" column="1" bodyfile="env/sc2_env.py" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a5993c03de5b86b5da9d6c2c651df1132" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Difficulty::harder</definition>
+        <argsstring></argsstring>
+        <name>harder</name>
+        <initializer>=  sc_pb.Harder</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="65" column="1" bodyfile="env/sc2_env.py" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a9d4a5c2e15f804b56949a6bc72c973b1" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Difficulty::very_hard</definition>
+        <argsstring></argsstring>
+        <name>very_hard</name>
+        <initializer>=  sc_pb.VeryHard</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="66" column="1" bodyfile="env/sc2_env.py" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a8e11dd0c16f631023aec02f99d414a12" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Difficulty::cheat_vision</definition>
+        <argsstring></argsstring>
+        <name>cheat_vision</name>
+        <initializer>=  sc_pb.CheatVision</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="67" column="1" bodyfile="env/sc2_env.py" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a982b1d88aef08815c846126ce7319be0" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Difficulty::cheat_money</definition>
+        <argsstring></argsstring>
+        <name>cheat_money</name>
+        <initializer>=  sc_pb.CheatMoney</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="68" column="1" bodyfile="env/sc2_env.py" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a9e46cdfe4b569bccdfb8cea96e95d1a4" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>pysc2.env.sc2_env.Difficulty::cheat_insane</definition>
+        <argsstring></argsstring>
+        <name>cheat_insane</name>
+        <initializer>=  sc_pb.CheatInsane</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="env/sc2_env.py" line="69" column="1" bodyfile="env/sc2_env.py" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Bot difficulties.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="201">
+        <label>pysc2.env.sc2_env.Difficulty</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty"/>
+        <childnode refid="202" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="203">
+        <label>pysc2.env.sc2_env.Difficulty</label>
+        <link refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty"/>
+        <childnode refid="204" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="204">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="env/sc2_env.py" line="58" column="1" bodyfile="env/sc2_env.py" bodystart="58" bodyend="72"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a9e46cdfe4b569bccdfb8cea96e95d1a4" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Difficulty</scope><name>cheat_insane</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a982b1d88aef08815c846126ce7319be0" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Difficulty</scope><name>cheat_money</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a8e11dd0c16f631023aec02f99d414a12" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Difficulty</scope><name>cheat_vision</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a91ae2b79485f42d369c2188187818e85" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Difficulty</scope><name>easy</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1abaa3239dd900a199541dfe84245615bc" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Difficulty</scope><name>hard</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a5993c03de5b86b5da9d6c2c651df1132" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Difficulty</scope><name>harder</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a706a666a3a2e916bfefdcd0dd57ff6ae" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Difficulty</scope><name>medium</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1af78449b9e9abe19205a4b318265da564" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Difficulty</scope><name>medium_hard</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1ad18cddab1aeb3e4bfa8e5d053db9cc7a" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Difficulty</scope><name>very_easy</name></member>
+      <member refid="classpysc2_1_1env_1_1sc2__env_1_1_difficulty_1a9d4a5c2e15f804b56949a6bc72c973b1" prot="public" virt="non-virtual"><scope>pysc2::env::sc2_env::Difficulty</scope><name>very_hard</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

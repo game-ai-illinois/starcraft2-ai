@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1remote__controller_1_1_request_error" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::remote_controller::RequestError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1remote__controller_1_1_request_error_1a97e49b4d4a788e0100334a2c337557c5" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.remote_controller.RequestError::res</definition>
+        <argsstring></argsstring>
+        <name>res</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="45" column="1" bodyfile="lib/remote_controller.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1remote__controller_1_1_request_error_1a7e77ea61ab686acc1cfb87a2a51a1dc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.remote_controller.RequestError.__init__</definition>
+        <argsstring>(self, description, res)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>description</type>
+          <defname>description</defname>
+        </param>
+        <param>
+          <type><ref refid="classpysc2_1_1lib_1_1remote__controller_1_1_request_error_1a97e49b4d4a788e0100334a2c337557c5" kindref="member">res</ref></type>
+          <defname>res</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/remote_controller.py" line="43" column="1" bodyfile="lib/remote_controller.py" bodystart="43" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="567">
+        <label>Exception</label>
+      </node>
+      <node id="566">
+        <label>pysc2.lib.remote_controller.RequestError</label>
+        <link refid="classpysc2_1_1lib_1_1remote__controller_1_1_request_error"/>
+        <childnode refid="567" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="569">
+        <label>Exception</label>
+      </node>
+      <node id="568">
+        <label>pysc2.lib.remote_controller.RequestError</label>
+        <link refid="classpysc2_1_1lib_1_1remote__controller_1_1_request_error"/>
+        <childnode refid="569" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="lib/remote_controller.py" line="41" column="1" bodyfile="lib/remote_controller.py" bodystart="41" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_request_error_1a7e77ea61ab686acc1cfb87a2a51a1dc3" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RequestError</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1remote__controller_1_1_request_error_1a97e49b4d4a788e0100334a2c337557c5" prot="public" virt="non-virtual"><scope>pysc2::lib::remote_controller::RequestError</scope><name>res</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

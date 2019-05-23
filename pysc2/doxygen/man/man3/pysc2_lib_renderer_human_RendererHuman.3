@@ -1,0 +1,521 @@
+.TH "pysc2.lib.renderer_human.RendererHuman" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.renderer_human.RendererHuman
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, fps=22\&.4, step_mul=1, render_sync=False, render_feature_grid=True, video=None)"
+.br
+.ti -1c
+.RI "def \fBclose\fP (self)"
+.br
+.ti -1c
+.RI "def \fBinit\fP (self, game_info, static_data)"
+.br
+.ti -1c
+.RI "def \fBinit_window\fP (self)"
+.br
+.ti -1c
+.RI "def \fBzoom\fP (self, factor)"
+.br
+.ti -1c
+.RI "def \fBget_mouse_pos\fP (self, window_pos=None)"
+.br
+.ti -1c
+.RI "def \fBclear_queued_action\fP (self)"
+.br
+.ti -1c
+.RI "def \fBsave_replay\fP (self, run_config, controller)"
+.br
+.ti -1c
+.RI "def \fBget_actions\fP (self, run_config, controller)"
+.br
+.ti -1c
+.RI "def \fBcamera_action\fP (self, mouse_pos)"
+.br
+.ti -1c
+.RI "def \fBcamera_action_raw\fP (self, world_pos)"
+.br
+.ti -1c
+.RI "def \fBselect_action\fP (self, pos1, pos2, ctrl, shift)"
+.br
+.ti -1c
+.RI "def \fBselect_idle_worker\fP (self, ctrl, shift)"
+.br
+.ti -1c
+.RI "def \fBselect_army\fP (self, shift)"
+.br
+.ti -1c
+.RI "def \fBselect_warp_gates\fP (self, shift)"
+.br
+.ti -1c
+.RI "def \fBselect_larva\fP (self)"
+.br
+.ti -1c
+.RI "def \fBcontrol_group\fP (self, control_group_id, ctrl, shift, alt)"
+.br
+.ti -1c
+.RI "def \fBunit_action\fP (self, cmd, pos, shift)"
+.br
+.ti -1c
+.RI "def \fBget_unit_name\fP (self, surf, name, radius)"
+.br
+.ti -1c
+.RI "def \fBdraw_units\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBdraw_selection\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBdraw_build_target\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBdraw_overlay\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBdraw_help\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBdraw_commands\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBdraw_panel\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBdraw_actions\fP (self)"
+.br
+.ti -1c
+.RI "def \fBprepare_actions\fP (self, obs)"
+.br
+.ti -1c
+.RI "def \fBdraw_base_map\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBdraw_mini_map\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBcheck_valid_queued_action\fP (self)"
+.br
+.ti -1c
+.RI "def \fBdraw_rendered_map\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBdraw_screen\fP (self, surf)"
+.br
+.ti -1c
+.RI "def \fBdraw_feature_layer\fP (self, surf, feature)"
+.br
+.ti -1c
+.RI "def \fBall_surfs\fP (self, fn, args, kwargs)"
+.br
+.ti -1c
+.RI "def \fBrender\fP (self, obs)"
+.br
+.ti -1c
+.RI "def \fBrender_thread\fP (self)"
+.br
+.ti -1c
+.RI "def \fBrender_obs\fP (self, obs)"
+.br
+.ti -1c
+.RI "def \fBrun\fP (self, run_config, controller, max_game_steps=0, max_episodes=0, game_steps_per_episode=0, \fBsave_replay\fP=False)"
+.br
+.ti -1c
+.RI "def \fB__del__\fP (self)"
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "dictionary \fBcamera_actions\fP"
+.br
+.ti -1c
+.RI "dictionary \fBcmd_group_keys\fP"
+.br
+.ti -1c
+.RI "list \fBshortcuts\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Render starcraft obs with pygame such that it's playable by humans.
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.__init__ ( self,  fps = \fC22\&.4\fP,  step_mul = \fC1\fP,  render_sync = \fCFalse\fP,  render_feature_grid = \fCTrue\fP,  video = \fCNone\fP)"
+
+.PP
+.nf
+Create a renderer for use by humans.
+
+Make sure to call `init` with the game info, or just use `run`.
+
+Args:
+  fps: How fast should the game be run.
+  step_mul: How many game steps to take per observation.
+  render_sync: Whether to wait for the obs to render before continuing.
+  render_feature_grid: When RGB and feature layers are available, whether
+  to render the grid of feature layers.
+  video: A filename to write the video to. Implicitly enables render_sync.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.__del__ ( self)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.all_surfs ( self,  fn,  args,  kwargs)"
+
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.camera_action ( self,  mouse_pos)"
+
+.PP
+.nf
+Return a `sc_pb.Action` with the camera movement filled.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.camera_action_raw ( self,  world_pos)"
+
+.PP
+.nf
+Return a `sc_pb.Action` with the camera movement filled.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.check_valid_queued_action ( self)"
+
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.clear_queued_action ( self)"
+
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.close ( self)"
+
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.control_group ( self,  control_group_id,  ctrl,  shift,  alt)"
+
+.PP
+.nf
+Act on a control group, selecting, setting, etc.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_actions ( self)"
+
+.PP
+.nf
+Draw the actions so that they can be inspected for accuracy.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_base_map ( self,  surf)"
+
+.PP
+.nf
+Draw the base map.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_build_target ( self,  surf)"
+
+.PP
+.nf
+Draw the build target.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_commands ( self,  surf)"
+
+.PP
+.nf
+Draw the list of available commands.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_feature_layer ( self,  surf,  feature)"
+
+.PP
+.nf
+Draw a feature layer.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_help ( self,  surf)"
+
+.PP
+.nf
+Draw the help dialog.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_mini_map ( self,  surf)"
+
+.PP
+.nf
+Draw the minimap.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_overlay ( self,  surf)"
+
+.PP
+.nf
+Draw the overlay describing resources.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_panel ( self,  surf)"
+
+.PP
+.nf
+Draw the unit selection or build queue.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_rendered_map ( self,  surf)"
+
+.PP
+.nf
+Draw the rendered pixels.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_screen ( self,  surf)"
+
+.PP
+.nf
+Draw the screen area.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_selection ( self,  surf)"
+
+.PP
+.nf
+Draw the selection rectange.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.draw_units ( self,  surf)"
+
+.PP
+.nf
+Draw the units and buildings.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.get_actions ( self,  run_config,  controller)"
+
+.PP
+.nf
+Get actions from the UI, apply to controller, and return an ActionCmd.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.get_mouse_pos ( self,  window_pos = \fCNone\fP)"
+
+.PP
+.nf
+Return a MousePos filled with the world position and surf it hit.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.get_unit_name ( self,  surf,  name,  radius)"
+
+.PP
+.nf
+Get a length limited unit name for drawing units.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.init ( self,  game_info,  static_data)"
+
+.PP
+.nf
+Take the game info and the static data needed to set up the game.
+
+This must be called before render or get_actions for each game or restart.
+
+Args:
+  game_info: A `sc_pb.ResponseGameInfo` object for this game.
+  static_data: A `StaticData` object for this game.
+
+Raises:
+  ValueError: if there is nothing to render.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.init_window ( self)"
+
+.PP
+.nf
+Initialize the pygame window and lay out the surfaces.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.prepare_actions ( self,  obs)"
+
+.PP
+.nf
+Keep a list of the past actions so they can be drawn.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.render ( self,  obs)"
+
+.PP
+.nf
+Push an observation onto the queue to be rendered.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.render_obs ( self,  obs)"
+
+.PP
+.nf
+Render a frame given an observation.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.render_thread ( self)"
+
+.PP
+.nf
+A render loop that pulls observations off the queue to render.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.run ( self,  run_config,  controller,  max_game_steps = \fC0\fP,  max_episodes = \fC0\fP,  game_steps_per_episode = \fC0\fP,  save_replay = \fCFalse\fP)"
+
+.PP
+.nf
+Run loop that gets observations, renders them, and sends back actions.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.save_replay ( self,  run_config,  controller)"
+
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.select_action ( self,  pos1,  pos2,  ctrl,  shift)"
+
+.PP
+.nf
+Return a `sc_pb.Action` with the selection filled.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.select_army ( self,  shift)"
+
+.PP
+.nf
+Select the entire army.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.select_idle_worker ( self,  ctrl,  shift)"
+
+.PP
+.nf
+Select an idle worker.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.select_larva ( self)"
+
+.PP
+.nf
+Select all larva.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.select_warp_gates ( self,  shift)"
+
+.PP
+.nf
+Select all warp gates.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.unit_action ( self,  cmd,  pos,  shift)"
+
+.PP
+.nf
+Return a `sc_pb.Action` filled with the cmd and appropriate target.
+.fi
+.PP
+ 
+.SS "def pysc2\&.lib\&.renderer_human\&.RendererHuman\&.zoom ( self,  factor)"
+
+.PP
+.nf
+Zoom the window in/out.
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "dictionary pysc2\&.lib\&.renderer_human\&.RendererHuman\&.camera_actions\fC [static]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=  {  # camera moves by 3 world units\&.
+      pygame\&.K_LEFT: point\&.Point(-3, 0),
+      pygame\&.K_RIGHT: point\&.Point(3, 0),
+      pygame\&.K_UP: point\&.Point(0, 3),
+      pygame\&.K_DOWN: point\&.Point(0, -3),
+  }
+.fi
+.SS "dictionary pysc2\&.lib\&.renderer_human\&.RendererHuman\&.cmd_group_keys\fC [static]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=  {
+      pygame\&.K_0: 0,
+      pygame\&.K_1: 1,
+      pygame\&.K_2: 2,
+      pygame\&.K_3: 3,
+      pygame\&.K_4: 4,
+      pygame\&.K_5: 5,
+      pygame\&.K_6: 6,
+      pygame\&.K_7: 7,
+      pygame\&.K_8: 8,
+      pygame\&.K_9: 9,
+  }
+.fi
+.SS "list pysc2\&.lib\&.renderer_human\&.RendererHuman\&.shortcuts\fC [static]\fP"
+\fBInitial value:\fP
+.PP
+.nf
+=  [
+      ("F1", "Select idle worker"),
+      ("F2", "Select army"),
+      ("F3", "Select larva (zerg) or warp gates (protoss)"),
+      ("F4", "Quit the game"),
+      ("F5", "Restart the map"),
+      ("F7", "Toggle RGB rendering"),
+      ("F8", "Toggle synchronous rendering"),
+      ("F9", "Save a replay"),
+      ("Ctrl++", "Zoom in"),
+      ("Ctrl+-", "Zoom out"),
+      ("PgUp/PgDn", "Increase/decrease the max game speed"),
+      ("Ctrl+PgUp/PgDn", "Increase/decrease the step multiplier"),
+      ("Pause", "Pause the game"),
+      ("?", "This help screen"),
+  ]
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

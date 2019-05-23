@@ -1,0 +1,188 @@
+.TH "pysc2.run_configs.lib.RunConfig" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.run_configs.lib.RunConfig
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits object\&.
+.PP
+Inherited by \fBpysc2\&.run_configs\&.platforms\&.LocalBase\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, \fBreplay_dir\fP, \fBdata_dir\fP, \fBtmp_dir\fP, \fBcwd\fP=None, \fBenv\fP=None)"
+.br
+.ti -1c
+.RI "def \fBmap_data\fP (self, map_name)"
+.br
+.ti -1c
+.RI "def \fBabs_replay_path\fP (self, replay_path)"
+.br
+.ti -1c
+.RI "def \fBreplay_data\fP (self, replay_path)"
+.br
+.ti -1c
+.RI "def \fBreplay_paths\fP (self, \fBreplay_dir\fP)"
+.br
+.ti -1c
+.RI "def \fBsave_replay\fP (self, \fBreplay_data\fP, \fBreplay_dir\fP, prefix=None)"
+.br
+.ti -1c
+.RI "def \fBstart\fP (self, version=None, kwargs)"
+.br
+.ti -1c
+.RI "def \fBall_subclasses\fP (cls)"
+.br
+.ti -1c
+.RI "def \fBname\fP (cls)"
+.br
+.ti -1c
+.RI "def \fBpriority\fP (cls)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBreplay_dir\fP"
+.br
+.ti -1c
+.RI "\fBdata_dir\fP"
+.br
+.ti -1c
+.RI "\fBtmp_dir\fP"
+.br
+.ti -1c
+.RI "\fBcwd\fP"
+.br
+.ti -1c
+.RI "\fBenv\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Base class for different run configs.
+.fi
+.PP
+ 
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def pysc2\&.run_configs\&.lib\&.RunConfig\&.__init__ ( self,  replay_dir,  data_dir,  tmp_dir,  cwd = \fCNone\fP,  env = \fCNone\fP)"
+
+.PP
+.nf
+Initialize the runconfig with the various directories needed.
+
+Args:
+  replay_dir: Where to find replays. Might not be accessible to SC2.
+  data_dir: Where SC2 should find the data and battle.net cache.
+  tmp_dir: The temporary directory. None is system default.
+  cwd: Where to set the current working directory.
+  env: What to pass as the environment variables.
+
+.fi
+.PP
+ 
+.SH "Member Function Documentation"
+.PP 
+.SS "def pysc2\&.run_configs\&.lib\&.RunConfig\&.abs_replay_path ( self,  replay_path)"
+
+.PP
+.nf
+Return the absolute path to the replay, outside the sandbox.
+.fi
+.PP
+ 
+.SS "def pysc2\&.run_configs\&.lib\&.RunConfig\&.all_subclasses ( cls)"
+
+.PP
+.nf
+An iterator over all subclasses of `cls`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.run_configs\&.lib\&.RunConfig\&.map_data ( self,  map_name)"
+
+.PP
+.nf
+Return the map data for a map by name or path.
+.fi
+.PP
+ 
+.SS "def pysc2\&.run_configs\&.lib\&.RunConfig\&.name ( cls)"
+
+.SS "def pysc2\&.run_configs\&.lib\&.RunConfig\&.priority ( cls)"
+
+.PP
+.nf
+None means this isn't valid. Run the one with the max priority.
+.fi
+.PP
+ 
+.SS "def pysc2\&.run_configs\&.lib\&.RunConfig\&.replay_data ( self,  replay_path)"
+
+.PP
+.nf
+Return the replay data given a path to the replay.
+.fi
+.PP
+ 
+.SS "def pysc2\&.run_configs\&.lib\&.RunConfig\&.replay_paths ( self,  replay_dir)"
+
+.PP
+.nf
+A generator yielding the full path to the replays under `replay_dir`.
+.fi
+.PP
+ 
+.SS "def pysc2\&.run_configs\&.lib\&.RunConfig\&.save_replay ( self,  replay_data,  replay_dir,  prefix = \fCNone\fP)"
+
+.PP
+.nf
+Save a replay to a directory, returning the path to the replay.
+
+Args:
+  replay_data: The result of controller.save_replay(), ie the binary data.
+  replay_dir: Where to save the replay. This can be absolute or relative.
+  prefix: Optional prefix for the replay filename.
+
+Returns:
+  The full path where the replay is saved.
+
+Raises:
+  ValueError: If the prefix contains the path seperator.
+
+.fi
+.PP
+ 
+.SS "def pysc2\&.run_configs\&.lib\&.RunConfig\&.start ( self,  version = \fCNone\fP,  kwargs)"
+
+.PP
+.nf
+Launch the game. Find the version and run sc_process.StarcraftProcess.
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "pysc2\&.run_configs\&.lib\&.RunConfig\&.cwd"
+
+.SS "pysc2\&.run_configs\&.lib\&.RunConfig\&.data_dir"
+
+.SS "pysc2\&.run_configs\&.lib\&.RunConfig\&.env"
+
+.SS "pysc2\&.run_configs\&.lib\&.RunConfig\&.replay_dir"
+
+.SS "pysc2\&.run_configs\&.lib\&.RunConfig\&.tmp_dir"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

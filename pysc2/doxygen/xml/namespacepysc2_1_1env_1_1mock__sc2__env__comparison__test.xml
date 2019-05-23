@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1env_1_1mock__sc2__env__comparison__test" kind="namespace" language="Python">
+    <compoundname>pysc2::env::mock_sc2_env_comparison_test</compoundname>
+    <innerclass refid="classpysc2_1_1env_1_1mock__sc2__env__comparison__test_1_1_test_compare_environments" prot="public">pysc2::env::mock_sc2_env_comparison_test::TestCompareEnvironments</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="env/mock_sc2_env_comparison_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1static__data_1_1_static_data" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::static_data::StaticData</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">object</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1static__data_1_1_static_data_1ad59dfc4163626b27d1ebe5ed19007d82" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.static_data.StaticData::_units</definition>
+        <argsstring></argsstring>
+        <name>_units</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/static_data.py" line="28" column="1" bodyfile="lib/static_data.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1static__data_1_1_static_data_1a6ebab25509b36b48e03c0a2ba1e93b6f" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.static_data.StaticData::_abilities</definition>
+        <argsstring></argsstring>
+        <name>_abilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/static_data.py" line="29" column="1" bodyfile="lib/static_data.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1static__data_1_1_static_data_1aa2d5d7a5f21ebfbe7e97df472d6b38fb" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.lib.static_data.StaticData::_general_abilities</definition>
+        <argsstring></argsstring>
+        <name>_general_abilities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/static_data.py" line="30" column="1" bodyfile="lib/static_data.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1static__data_1_1_static_data_1a74d9bde243396eb9e5a77214b084906c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.static_data.StaticData.__init__</definition>
+        <argsstring>(self, data)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>data</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Takes data from RequestData.</verbatim> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/static_data.py" line="26" column="1" bodyfile="lib/static_data.py" bodystart="26" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1static__data_1_1_static_data_1ac7d6c11371cf3d5cc131657cdbaa8bbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.static_data.StaticData.abilities</definition>
+        <argsstring>(self)</argsstring>
+        <name>abilities</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/static_data.py" line="38" column="1" bodyfile="lib/static_data.py" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1static__data_1_1_static_data_1ad73c4df07a81420cc5412531d99a3652" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.static_data.StaticData.units</definition>
+        <argsstring>(self)</argsstring>
+        <name>units</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/static_data.py" line="42" column="1" bodyfile="lib/static_data.py" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1lib_1_1static__data_1_1_static_data_1a38efb3d17d6da0a579e40568097db20c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.lib.static_data.StaticData.general_abilities</definition>
+        <argsstring>(self)</argsstring>
+        <name>general_abilities</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/static_data.py" line="46" column="1" bodyfile="lib/static_data.py" bodystart="46" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Expose static data in a more useful form than the raw protos.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="670">
+        <label>pysc2.lib.static_data.StaticData</label>
+        <link refid="classpysc2_1_1lib_1_1static__data_1_1_static_data"/>
+        <childnode refid="671" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="671">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="672">
+        <label>pysc2.lib.static_data.StaticData</label>
+        <link refid="classpysc2_1_1lib_1_1static__data_1_1_static_data"/>
+        <childnode refid="673" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="673">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/static_data.py" line="23" column="1" bodyfile="lib/static_data.py" bodystart="23" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1static__data_1_1_static_data_1a74d9bde243396eb9e5a77214b084906c" prot="public" virt="non-virtual"><scope>pysc2::lib::static_data::StaticData</scope><name>__init__</name></member>
+      <member refid="classpysc2_1_1lib_1_1static__data_1_1_static_data_1a6ebab25509b36b48e03c0a2ba1e93b6f" prot="private" virt="non-virtual"><scope>pysc2::lib::static_data::StaticData</scope><name>_abilities</name></member>
+      <member refid="classpysc2_1_1lib_1_1static__data_1_1_static_data_1aa2d5d7a5f21ebfbe7e97df472d6b38fb" prot="private" virt="non-virtual"><scope>pysc2::lib::static_data::StaticData</scope><name>_general_abilities</name></member>
+      <member refid="classpysc2_1_1lib_1_1static__data_1_1_static_data_1ad59dfc4163626b27d1ebe5ed19007d82" prot="private" virt="non-virtual"><scope>pysc2::lib::static_data::StaticData</scope><name>_units</name></member>
+      <member refid="classpysc2_1_1lib_1_1static__data_1_1_static_data_1ac7d6c11371cf3d5cc131657cdbaa8bbc" prot="public" virt="non-virtual"><scope>pysc2::lib::static_data::StaticData</scope><name>abilities</name></member>
+      <member refid="classpysc2_1_1lib_1_1static__data_1_1_static_data_1a38efb3d17d6da0a579e40568097db20c" prot="public" virt="non-virtual"><scope>pysc2::lib::static_data::StaticData</scope><name>general_abilities</name></member>
+      <member refid="classpysc2_1_1lib_1_1static__data_1_1_static_data_1ad73c4df07a81420cc5412531d99a3652" prot="public" virt="non-virtual"><scope>pysc2::lib::static_data::StaticData</scope><name>units</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

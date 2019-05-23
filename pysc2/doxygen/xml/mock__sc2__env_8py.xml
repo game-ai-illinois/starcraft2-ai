@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="mock__sc2__env_8py" kind="file" language="Python">
+    <compoundname>mock_sc2_env.py</compoundname>
+    <innerclass refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment" prot="public">pysc2::env::mock_sc2_env::_TestEnvironment</innerclass>
+    <innerclass refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env" prot="public">pysc2::env::mock_sc2_env::SC2TestEnv</innerclass>
+    <innernamespace refid="namespacepysc2_1_1env_1_1mock__sc2__env">pysc2::env::mock_sc2_env</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacepysc2_1_1env_1_1mock__sc2__env" refkind="compound"><highlight class="comment">#<sp/>Copyright<sp/>2017<sp/>Google<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS-IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;Mocking<sp/>the<sp/>Starcraft<sp/>II<sp/>environment.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absolute_import</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>division</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_function</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numpy<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>np</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1env" kindref="compound">pysc2.env</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>environment</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1env" kindref="compound">pysc2.env</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sc2_env</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1lib" kindref="compound">pysc2.lib</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>features</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1lib" kindref="compound">pysc2.lib</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>point</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1tests" kindref="compound">pysc2.tests</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>dummy_observation</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">DUMMY_MAP_SIZE<sp/>=<sp/>point.Point(256,<sp/>256)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment" kindref="compound">_TestEnvironment</ref>(<ref refid="classpysc2_1_1env_1_1environment_1_1_base" kindref="compound">environment.Base</ref>):</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;A<sp/>simple<sp/>generic<sp/>test<sp/>environment.</highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/>This<sp/>class<sp/>is<sp/>a<sp/>lightweight<sp/>implementation<sp/>of<sp/>`environment.Base`<sp/>that<sp/>returns</highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/>the<sp/>same<sp/>timesteps<sp/>on<sp/>every<sp/>observation<sp/>call.<sp/>By<sp/>default,<sp/>each<sp/>returned</highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/>timestep<sp/>(one<sp/>per<sp/>agent)<sp/>is<sp/>reward<sp/>0.,<sp/>discount<sp/>1.,<sp/>and<sp/>the<sp/>observations<sp/>are</highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/><sp/>zero<sp/>`np.ndarrays`<sp/>of<sp/>dtype<sp/>`np.int32`<sp/>and<sp/>the<sp/>shape<sp/>specified<sp/>by<sp/>the</highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/><sp/>environment&apos;s<sp/>spec.</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/><sp/>However,<sp/>the<sp/>behavior<sp/>of<sp/>the<sp/>`TestEnvironment`<sp/>can<sp/>be<sp/>configured<sp/>using<sp/>the</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/>object&apos;s<sp/>attributes.</highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"><sp/><sp/>Attributes:</highlight></codeline>
+<codeline lineno="43"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>next_timestep:<sp/>The<sp/>`environment.TimeStep`s<sp/>to<sp/>return<sp/>on<sp/>the<sp/>next<sp/>call<sp/>to</highlight></codeline>
+<codeline lineno="44"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>`step`.<sp/>When<sp/>necessary,<sp/>some<sp/>fields<sp/>will<sp/>be<sp/>overridden<sp/>to<sp/>ensure<sp/>the</highlight></codeline>
+<codeline lineno="45"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>`step_type`<sp/>contract.</highlight></codeline>
+<codeline lineno="46"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>episode_length:<sp/>if<sp/>the<sp/>episode<sp/>length<sp/>(number<sp/>of<sp/>transitions)<sp/>exceeds</highlight></codeline>
+<codeline lineno="47"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>`episode_length`<sp/>on<sp/>a<sp/>call<sp/>to<sp/>`step`,<sp/>the<sp/>`step-type`<sp/>will<sp/>be<sp/>set<sp/>to</highlight></codeline>
+<codeline lineno="48"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>`environment.StepType.LAST`,<sp/>forcing<sp/>an<sp/>end<sp/>of<sp/>episode.<sp/>This<sp/>allows<sp/>a</highlight></codeline>
+<codeline lineno="49"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>stub<sp/>of<sp/>a<sp/>production<sp/>environment<sp/>to<sp/>have<sp/>end_episodes.<sp/>Will<sp/>be<sp/>ignored<sp/>if</highlight></codeline>
+<codeline lineno="50"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>set<sp/>to<sp/>`float(&apos;inf&apos;)`<sp/>(the<sp/>default).</highlight></codeline>
+<codeline lineno="51"><highlight class="stringliteral"><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1ad3acb8d357a313a916e134895503f4bd" kindref="member">__init__</ref>(self,<sp/>num_agents,<sp/>observation_spec,<sp/>action_spec):</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Initializes<sp/>the<sp/>TestEnvironment.</highlight></codeline>
+<codeline lineno="55"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="56"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>The<sp/>`next_observation`<sp/>is<sp/>initialized<sp/>to<sp/>be<sp/>reward<sp/>=<sp/>0.,<sp/>discount<sp/>=<sp/>1.,</highlight></codeline>
+<codeline lineno="57"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>and<sp/>an<sp/>appropriately<sp/>sized<sp/>observation<sp/>of<sp/>all<sp/>zeros.<sp/>`episode_length`<sp/>is<sp/>set</highlight></codeline>
+<codeline lineno="58"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>to<sp/>`float(&apos;inf&apos;)`.</highlight></codeline>
+<codeline lineno="59"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="60"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="61"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>num_agents:<sp/>The<sp/>number<sp/>of<sp/>agents.</highlight></codeline>
+<codeline lineno="62"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>observation_spec:<sp/>The<sp/>observation<sp/>specs<sp/>for<sp/>each<sp/>player.</highlight></codeline>
+<codeline lineno="63"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>action_spec:<sp/>The<sp/>action<sp/>specs<sp/>for<sp/>each<sp/>player.</highlight></codeline>
+<codeline lineno="64"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1aec53e5fc827f152dae5856b8ec62769c" kindref="member">_num_agents</ref><sp/>=<sp/>num_agents</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1aa4e4504a23723dc472fd386e3ebb62aa" kindref="member">_observation_spec</ref><sp/>=<sp/>observation_spec</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a692191e235be23468598bc3669f10ada" kindref="member">_action_spec</ref><sp/>=<sp/>action_spec</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a2ac235f5ba0e9edc3eff67613863ffd5" kindref="member">_episode_steps</ref><sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1ae8d2e3dc5088a409252d626f2d35203d" kindref="member">next_timestep</ref><sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpysc2_1_1env_1_1environment_1_1_time_step" kindref="compound">environment.TimeStep</ref>(</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>step_type=environment.StepType.MID,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reward=0.,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>discount=1.,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation=self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1afedef0677752a681f390afcfd1baf226" kindref="member">_default_observation</ref>(obs_spec,<sp/>agent_index))</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>agent_index,<sp/>obs_spec<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>enumerate(observation_spec)]</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a2c0bd6e676d1490b3b528831ca501534" kindref="member">episode_length</ref><sp/>=<sp/>float(</highlight><highlight class="stringliteral">&apos;inf&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a995a511044613e7d5f4452a6238cd3eb" kindref="member">reset</ref>(self):</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Restarts<sp/>episode<sp/>and<sp/>returns<sp/>`next_observation`<sp/>with<sp/>`StepType.FIRST`.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a2ac235f5ba0e9edc3eff67613863ffd5" kindref="member">_episode_steps</ref><sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1affd351d46e26ada4c242072c08418ae1" kindref="member">step</ref>([</highlight><highlight class="keywordtype">None</highlight><highlight class="normal">]<sp/>*<sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1aec53e5fc827f152dae5856b8ec62769c" kindref="member">_num_agents</ref>)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1affd351d46e26ada4c242072c08418ae1" kindref="member">step</ref>(self,<sp/>actions):</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Returns<sp/>`next_observation`<sp/>modifying<sp/>its<sp/>`step_type`<sp/>if<sp/>necessary.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(actions)<sp/>!=<sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1aec53e5fc827f152dae5856b8ec62769c" kindref="member">_num_agents</ref>:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>ValueError(</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;Expected<sp/>%d<sp/>actions,<sp/>received<sp/>%d.&apos;</highlight><highlight class="normal"><sp/>%<sp/>(</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1aec53e5fc827f152dae5856b8ec62769c" kindref="member">_num_agents</ref>,<sp/>len(actions)))</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a2ac235f5ba0e9edc3eff67613863ffd5" kindref="member">_episode_steps</ref><sp/>==<sp/>0:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step_type<sp/>=<sp/>environment.StepType.FIRST</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a2ac235f5ba0e9edc3eff67613863ffd5" kindref="member">_episode_steps</ref><sp/>&gt;=<sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a2c0bd6e676d1490b3b528831ca501534" kindref="member">episode_length</ref>:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step_type<sp/>=<sp/>environment.StepType.LAST</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>step_type<sp/>=<sp/>environment.StepType.MID</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>timesteps<sp/>=<sp/>[]</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>timestep<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1ae8d2e3dc5088a409252d626f2d35203d" kindref="member">next_timestep</ref>:</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>step_type<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>environment.StepType.FIRST:</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timesteps.append(timestep._replace(</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>step_type=step_type,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>reward=0.,</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>discount=1.))</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>step_type<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>environment.StepType.LAST:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timesteps.append(timestep._replace(</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>step_type=step_type))</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>timesteps.append(timestep)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>timesteps[0].step_type<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/>environment.StepType.LAST:</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a2ac235f5ba0e9edc3eff67613863ffd5" kindref="member">_episode_steps</ref><sp/>=<sp/>0</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a2ac235f5ba0e9edc3eff67613863ffd5" kindref="member">_episode_steps</ref><sp/>+=<sp/>1</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>timesteps</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1ae7ce75b41709291c06f255bf682172bb" kindref="member">action_spec</ref>(self):</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;See<sp/>base<sp/>class.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a692191e235be23468598bc3669f10ada" kindref="member">_action_spec</ref></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a231da0c879e81efdb7a929be37f22311" kindref="member">observation_spec</ref>(self):</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;See<sp/>base<sp/>class.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1aa4e4504a23723dc472fd386e3ebb62aa" kindref="member">_observation_spec</ref></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">_default_observation(self,<sp/>obs_spec,<sp/>agent_index):</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Returns<sp/>an<sp/>observation<sp/>based<sp/>on<sp/>the<sp/>observation<sp/>spec.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>observation<sp/>=<sp/>{}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>key,<sp/>spec<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>obs_spec.items():</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>observation[key]<sp/>=<sp/>np.zeros(shape=spec,<sp/>dtype=np.int32)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>observation</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env" kindref="compound">SC2TestEnv</ref>(<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment" kindref="compound">_TestEnvironment</ref>):</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;A<sp/>TestEnvironment<sp/>to<sp/>swap<sp/>in<sp/>for<sp/>`starcraft2.env.sc2_env.SC2Env`.</highlight></codeline>
+<codeline lineno="137"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="138"><highlight class="stringliteral"><sp/><sp/>Repeatedly<sp/>returns<sp/>a<sp/>mock<sp/>observation<sp/>for<sp/>10<sp/>calls<sp/>to<sp/>`step`<sp/>whereupon<sp/>it</highlight></codeline>
+<codeline lineno="139"><highlight class="stringliteral"><sp/><sp/>sets<sp/>discount<sp/>to<sp/>0.<sp/>and<sp/>changes<sp/>state<sp/>to<sp/>READY_TO_END_EPISODE.</highlight></codeline>
+<codeline lineno="140"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="141"><highlight class="stringliteral"><sp/><sp/>Example:</highlight></codeline>
+<codeline lineno="142"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="143"><highlight class="stringliteral"><sp/><sp/>```</highlight></codeline>
+<codeline lineno="144"><highlight class="stringliteral"><sp/><sp/>@mock.patch(</highlight></codeline>
+<codeline lineno="145"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>&apos;starcraft2.env.sc2_env.SC2Env&apos;,</highlight></codeline>
+<codeline lineno="146"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>mock_sc2_env.SC2TestEnv)</highlight></codeline>
+<codeline lineno="147"><highlight class="stringliteral"><sp/><sp/>def<sp/>test_method(self):</highlight></codeline>
+<codeline lineno="148"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>env<sp/>=<sp/>sc2_env.SC2Env(&apos;nonexisting<sp/>map&apos;)<sp/><sp/>#<sp/>Really<sp/>a<sp/>SC2TestEnv.</highlight></codeline>
+<codeline lineno="149"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>...</highlight></codeline>
+<codeline lineno="150"><highlight class="stringliteral"><sp/><sp/>```</highlight></codeline>
+<codeline lineno="151"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="152"><highlight class="stringliteral"><sp/><sp/>See<sp/>base<sp/>class<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="153"><highlight class="stringliteral"><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a1b3b490081a13ad71d95e11ea649c467" kindref="member">__init__</ref>(self,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_only_use_kwargs=None,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_name=None,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>players=None,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>agent_interface_format=None,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>discount=1.,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>visualize=False,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>step_mul=None,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>save_replay_episodes=0,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>replay_dir=None,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>game_steps_per_episode=None,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score_index=None,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>score_multiplier=None,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>random_seed=None,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>disable_fog=False):</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Initializes<sp/>an<sp/>SC2TestEnv.</highlight></codeline>
+<codeline lineno="171"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="172"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Args:</highlight></codeline>
+<codeline lineno="173"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>_only_use_kwargs:<sp/>Don&apos;t<sp/>pass<sp/>args,<sp/>only<sp/>kwargs.</highlight></codeline>
+<codeline lineno="174"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>map_name:<sp/>Map<sp/>name.<sp/>Ignored.</highlight></codeline>
+<codeline lineno="175"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>players:<sp/>A<sp/>list<sp/>of<sp/>Agent<sp/>and<sp/>Bot<sp/>instances<sp/>that<sp/>specify<sp/>who<sp/>will<sp/>play.</highlight></codeline>
+<codeline lineno="176"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>agent_interface_format:<sp/>A<sp/>sequence<sp/>containing<sp/>one<sp/>AgentInterfaceFormat</highlight></codeline>
+<codeline lineno="177"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>per<sp/>agent,<sp/>matching<sp/>the<sp/>order<sp/>of<sp/>agents<sp/>specified<sp/>in<sp/>the<sp/>players<sp/>list.</highlight></codeline>
+<codeline lineno="178"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Or<sp/>a<sp/>single<sp/>AgentInterfaceFormat<sp/>to<sp/>be<sp/>used<sp/>for<sp/>all<sp/>agents.</highlight></codeline>
+<codeline lineno="179"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>discount:<sp/>Unused.</highlight></codeline>
+<codeline lineno="180"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>visualize:<sp/>Unused.</highlight></codeline>
+<codeline lineno="181"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>step_mul:<sp/>Unused.</highlight></codeline>
+<codeline lineno="182"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>save_replay_episodes:<sp/>Unused.</highlight></codeline>
+<codeline lineno="183"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>replay_dir:<sp/>Unused.</highlight></codeline>
+<codeline lineno="184"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>game_steps_per_episode:<sp/>Unused.</highlight></codeline>
+<codeline lineno="185"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>score_index:<sp/>Unused.</highlight></codeline>
+<codeline lineno="186"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>score_multiplier:<sp/>Unused.</highlight></codeline>
+<codeline lineno="187"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>random_seed:<sp/>Unused.</highlight></codeline>
+<codeline lineno="188"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>disable_fog:<sp/>Unused.</highlight></codeline>
+<codeline lineno="189"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="190"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>Raises:</highlight></codeline>
+<codeline lineno="191"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/>ValueError:<sp/>if<sp/>args<sp/>are<sp/>passed.</highlight></codeline>
+<codeline lineno="192"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>map_name<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>discount<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>visualize<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>step_mul<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>save_replay_episodes<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>replay_dir<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>game_steps_per_episode<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>score_index<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>score_multiplier<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>random_seed<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>del<sp/>disable_fog<sp/><sp/></highlight><highlight class="comment">#<sp/>Unused.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>_only_use_kwargs:</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>ValueError(</highlight><highlight class="stringliteral">&apos;All<sp/>arguments<sp/>must<sp/>be<sp/>passed<sp/>as<sp/>keyword<sp/>arguments.&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">not</highlight><highlight class="normal"><sp/>players:</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>num_agents<sp/>=<sp/>1</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>num_agents<sp/>=<sp/>sum(1<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>p<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>players<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isinstance(p,<sp/>sc2_env.Agent))</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>agent_interface_format<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>ValueError(</highlight><highlight class="stringliteral">&apos;Please<sp/>specify<sp/>agent_interface_format.&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>isinstance(agent_interface_format,<sp/>sc2_env.AgentInterfaceFormat):</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>agent_interface_format<sp/>=<sp/>[agent_interface_format]<sp/>*<sp/>num_agents</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>len(agent_interface_format)<sp/>!=<sp/>num_agents:</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>ValueError(</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;The<sp/>number<sp/>of<sp/>entries<sp/>in<sp/>agent_interface_format<sp/>should<sp/>&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&apos;correspond<sp/>1-1<sp/>with<sp/>the<sp/>number<sp/>of<sp/>agents.&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a52f34f13c5f57f73e218cc1cd9a45139" kindref="member">_features</ref><sp/>=<sp/>[</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>features.Features(interface_format,<sp/>map_size=DUMMY_MAP_SIZE)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>interface_format<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>agent_interface_format]</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>super(SC2TestEnv,<sp/>self).<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a1b3b490081a13ad71d95e11ea649c467" kindref="member">__init__</ref>(</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num_agents=num_agents,</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>action_spec=tuple(f.action_spec()<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>f<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a52f34f13c5f57f73e218cc1cd9a45139" kindref="member">_features</ref>),</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>observation_spec=tuple(f.observation_spec()<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>f<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1a52f34f13c5f57f73e218cc1cd9a45139" kindref="member">_features</ref>))</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1___test_environment_1a2c0bd6e676d1490b3b528831ca501534" kindref="member">episode_length</ref><sp/>=<sp/>10</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1env_1_1mock__sc2__env_1_1_s_c2_test_env_1ad9a54c6db41759dbfd25d042552fbb61" kindref="member">save_replay</ref>(self,<sp/>*args,<sp/>**kwargs):</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Does<sp/>nothing.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">_default_observation(self,<sp/>obs_spec,<sp/>agent_index):</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Returns<sp/>a<sp/>mock<sp/>observation<sp/>from<sp/>an<sp/>SC2Env.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>response_observation<sp/>=<sp/>dummy_observation.Builder(obs_spec).build()</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>features_<sp/>=<sp/>self._features[agent_index]</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>observation<sp/>=<sp/>features_.transform_obs(response_observation)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Add<sp/>bounding<sp/>box<sp/>for<sp/>the<sp/>minimap<sp/>camera<sp/>in<sp/>top<sp/>left<sp/>of<sp/>feature<sp/>screen.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&apos;feature_minimap&apos;</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>observation:</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>minimap_camera<sp/>=<sp/>observation.feature_minimap.camera</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>minimap_camera.fill(0)</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>height,<sp/>width<sp/>=<sp/>[dim<sp/>//<sp/>2<sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>dim<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>minimap_camera.shape]</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>minimap_camera[:height,<sp/>:width].fill(1)</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>observation</highlight></codeline>
+    </programlisting>
+    <location file="env/mock_sc2_env.py"/>
+  </compounddef>
+</doxygen>

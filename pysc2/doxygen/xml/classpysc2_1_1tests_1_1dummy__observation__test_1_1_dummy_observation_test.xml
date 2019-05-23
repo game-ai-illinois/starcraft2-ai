@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::dummy_observation_test::DummyObservationTest</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TestCase</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a48ede07c7794b936bda1117fb9b28069" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.dummy_observation_test.DummyObservationTest::_features</definition>
+        <argsstring></argsstring>
+        <name>_features</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="44" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1ae7027b9f5837eb0e75f6c8a3f00f9d2d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.dummy_observation_test.DummyObservationTest::_obs_spec</definition>
+        <argsstring></argsstring>
+        <name>_obs_spec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="55" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1ad8563817446d2c86a22d1b76da3accb9" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>pysc2.tests.dummy_observation_test.DummyObservationTest::_builder</definition>
+        <argsstring></argsstring>
+        <name>_builder</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="56" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a90c890d9d56733790183fe8dcc53a916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest.setUp</definition>
+        <argsstring>(self)</argsstring>
+        <name>setUp</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="43" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="43" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1affe2dfa9a11280cca802b80ba8a869a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest.testFeatureScreenMatchesSpec</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFeatureScreenMatchesSpec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="58" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="58" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a5c5ac3c3392eaad94fe6471e7cc9def0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest.testFeatureMinimapMatchesSpec</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFeatureMinimapMatchesSpec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="64" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="64" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1aad2ea391040824fc0fafce2e1977edec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest.testRgbScreenMatchesSpec</definition>
+        <argsstring>(self)</argsstring>
+        <name>testRgbScreenMatchesSpec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="70" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a1c3bb18eb8dafe864dff78378087640f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest.testRgbMinimapMatchesSpec</definition>
+        <argsstring>(self)</argsstring>
+        <name>testRgbMinimapMatchesSpec</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="74" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="74" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1ace9d92fbc949b4d83b9bb2a1e30e296b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest.testNoSingleSelect</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNoSingleSelect</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="78" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a5c63e3a39253ff187c1287501a5e6aeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest.testWithSingleSelect</definition>
+        <argsstring>(self)</argsstring>
+        <name>testWithSingleSelect</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="82" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="82" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1aa0a667046ce3bb0b9275d1a989a63034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest.testNoMultiSelect</definition>
+        <argsstring>(self)</argsstring>
+        <name>testNoMultiSelect</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="87" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1af4726de0b495c433f04588fba6aa469d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest.testWithMultiSelect</definition>
+        <argsstring>(self)</argsstring>
+        <name>testWithMultiSelect</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="91" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a8109cde8b155117150fce42a1519f5d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest.testFeatureUnitsAreAdded</definition>
+        <argsstring>(self)</argsstring>
+        <name>testFeatureUnitsAreAdded</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="98" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="98" bodyend="131"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a3df308a3e00d7f0fde7b35ac7ee322fc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest._get_obs</definition>
+        <argsstring>(self)</argsstring>
+        <name>_get_obs</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="132" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a8223459bb25b5fd5e559b4508af972a9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest._check_layer</definition>
+        <argsstring>(self, layer, x, y, bits)</argsstring>
+        <name>_check_layer</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>layer</type>
+          <defname>layer</defname>
+        </param>
+        <param>
+          <type>x</type>
+          <defname>x</defname>
+        </param>
+        <param>
+          <type>y</type>
+          <defname>y</defname>
+        </param>
+        <param>
+          <type>bits</type>
+          <defname>bits</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="135" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="135" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a8a9019ce58a75ec50ad1b41709b37744" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest._check_attributes_match</definition>
+        <argsstring>(self, a, b, attributes)</argsstring>
+        <name>_check_attributes_match</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>a</type>
+          <defname>a</defname>
+        </param>
+        <param>
+          <type>b</type>
+          <defname>b</defname>
+        </param>
+        <param>
+          <type>attributes</type>
+          <defname>attributes</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="140" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a9f983a536fc66c967109ebf514041e63" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest._check_unit</definition>
+        <argsstring>(self, proto, builder)</argsstring>
+        <name>_check_unit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>proto</type>
+          <defname>proto</defname>
+        </param>
+        <param>
+          <type>builder</type>
+          <defname>builder</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="144" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a5a00568c56aa1f77d3a71db0ed7e413f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.dummy_observation_test.DummyObservationTest._check_feature_unit</definition>
+        <argsstring>(self, proto, builder)</argsstring>
+        <name>_check_feature_unit</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>proto</type>
+          <defname>proto</defname>
+        </param>
+        <param>
+          <type>builder</type>
+          <defname>builder</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/dummy_observation_test.py" line="147" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="147" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="214">
+        <label>TestCase</label>
+      </node>
+      <node id="213">
+        <label>pysc2.tests.dummy_observation_test.DummyObservationTest</label>
+        <link refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test"/>
+        <childnode refid="214" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="216">
+        <label>TestCase</label>
+      </node>
+      <node id="215">
+        <label>pysc2.tests.dummy_observation_test.DummyObservationTest</label>
+        <link refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test"/>
+        <childnode refid="216" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/dummy_observation_test.py" line="41" column="1" bodyfile="tests/dummy_observation_test.py" bodystart="41" bodyend="162"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1ad8563817446d2c86a22d1b76da3accb9" prot="private" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>_builder</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a8a9019ce58a75ec50ad1b41709b37744" prot="private" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>_check_attributes_match</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a5a00568c56aa1f77d3a71db0ed7e413f" prot="private" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>_check_feature_unit</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a8223459bb25b5fd5e559b4508af972a9" prot="private" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>_check_layer</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a9f983a536fc66c967109ebf514041e63" prot="private" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>_check_unit</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a48ede07c7794b936bda1117fb9b28069" prot="private" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>_features</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a3df308a3e00d7f0fde7b35ac7ee322fc" prot="private" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>_get_obs</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1ae7027b9f5837eb0e75f6c8a3f00f9d2d" prot="private" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>_obs_spec</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a90c890d9d56733790183fe8dcc53a916" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a5c5ac3c3392eaad94fe6471e7cc9def0" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>testFeatureMinimapMatchesSpec</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1affe2dfa9a11280cca802b80ba8a869a0" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>testFeatureScreenMatchesSpec</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a8109cde8b155117150fce42a1519f5d2" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>testFeatureUnitsAreAdded</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1aa0a667046ce3bb0b9275d1a989a63034" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>testNoMultiSelect</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1ace9d92fbc949b4d83b9bb2a1e30e296b" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>testNoSingleSelect</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a1c3bb18eb8dafe864dff78378087640f" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>testRgbMinimapMatchesSpec</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1aad2ea391040824fc0fafce2e1977edec" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>testRgbScreenMatchesSpec</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1af4726de0b495c433f04588fba6aa469d" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>testWithMultiSelect</name></member>
+      <member refid="classpysc2_1_1tests_1_1dummy__observation__test_1_1_dummy_observation_test_1a5c63e3a39253ff187c1287501a5e6aeb" prot="public" virt="non-virtual"><scope>pysc2::tests::dummy_observation_test::DummyObservationTest</scope><name>testWithSingleSelect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

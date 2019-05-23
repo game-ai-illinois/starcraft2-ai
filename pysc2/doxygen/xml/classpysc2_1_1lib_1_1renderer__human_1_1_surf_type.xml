@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::lib::renderer_human::SurfType</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">IntEnum</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type_1a7854f73f0eb878d17d146e5f603bd024" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.renderer_human.SurfType::CHROME</definition>
+        <argsstring></argsstring>
+        <name>CHROME</name>
+        <initializer>=  1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="86" column="1" bodyfile="lib/renderer_human.py" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type_1aaf7635c1cbc6f99928ab8d29561e92ae" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.renderer_human.SurfType::SCREEN</definition>
+        <argsstring></argsstring>
+        <name>SCREEN</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="87" column="1" bodyfile="lib/renderer_human.py" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type_1aa77b3a54e99ed18cd1e3ec089cd56d46" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.renderer_human.SurfType::MINIMAP</definition>
+        <argsstring></argsstring>
+        <name>MINIMAP</name>
+        <initializer>=  4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="88" column="1" bodyfile="lib/renderer_human.py" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type_1acc1556c3552924c44fb21a5cee484bcb" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.renderer_human.SurfType::FEATURE</definition>
+        <argsstring></argsstring>
+        <name>FEATURE</name>
+        <initializer>=  8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="89" column="1" bodyfile="lib/renderer_human.py" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type_1ab8ecc884170fdef25831364e0e122da7" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.lib.renderer_human.SurfType::RGB</definition>
+        <argsstring></argsstring>
+        <name>RGB</name>
+        <initializer>=  16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lib/renderer_human.py" line="90" column="1" bodyfile="lib/renderer_human.py" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim>Used to tell what a mouse click refers to.</verbatim> </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="696">
+        <label>pysc2.lib.renderer_human.SurfType</label>
+        <link refid="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type"/>
+        <childnode refid="697" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="697">
+        <label>IntEnum</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="698">
+        <label>pysc2.lib.renderer_human.SurfType</label>
+        <link refid="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type"/>
+        <childnode refid="699" relation="public-inheritance">
+        </childnode>
+        <childnode refid="700" relation="usage">
+          <edgelabel>MINIMAP</edgelabel>
+          <edgelabel>RGB</edgelabel>
+          <edgelabel>FEATURE</edgelabel>
+          <edgelabel>CHROME</edgelabel>
+          <edgelabel>SCREEN</edgelabel>
+        </childnode>
+      </node>
+      <node id="700">
+        <label>int</label>
+      </node>
+      <node id="699">
+        <label>IntEnum</label>
+      </node>
+    </collaborationgraph>
+    <location file="lib/renderer_human.py" line="84" column="1" bodyfile="lib/renderer_human.py" bodystart="84" bodyend="93"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type_1a7854f73f0eb878d17d146e5f603bd024" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::SurfType</scope><name>CHROME</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type_1acc1556c3552924c44fb21a5cee484bcb" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::SurfType</scope><name>FEATURE</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type_1aa77b3a54e99ed18cd1e3ec089cd56d46" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::SurfType</scope><name>MINIMAP</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type_1ab8ecc884170fdef25831364e0e122da7" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::SurfType</scope><name>RGB</name></member>
+      <member refid="classpysc2_1_1lib_1_1renderer__human_1_1_surf_type_1aaf7635c1cbc6f99928ab8d29561e92ae" prot="public" virt="non-virtual"><scope>pysc2::lib::renderer_human::SurfType</scope><name>SCREEN</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

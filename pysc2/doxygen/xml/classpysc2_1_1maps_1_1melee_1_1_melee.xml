@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1maps_1_1melee_1_1_melee" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::maps::melee::Melee</compoundname>
+    <basecompoundref refid="classpysc2_1_1maps_1_1lib_1_1_map" prot="public" virt="non-virtual">pysc2.maps.lib.Map</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1melee_1_1_melee_1a74ef6f2f3e839293fe27b80608a5db52" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string pysc2.maps.melee.Melee::directory</definition>
+        <argsstring></argsstring>
+        <name>directory</name>
+        <initializer>=  &quot;Melee&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/melee.py" line="24" column="1" bodyfile="maps/melee.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1melee_1_1_melee_1ae2f0a3c320ab19f62ccb5291900acefb" prot="public" static="yes" mutable="no">
+        <type>string</type>
+        <definition>string pysc2.maps.melee.Melee::download</definition>
+        <argsstring></argsstring>
+        <name>download</name>
+        <initializer>=  &quot;https://github.com/Blizzard/s2client-proto#map-packs&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/melee.py" line="25" column="1" bodyfile="maps/melee.py" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1melee_1_1_melee_1a44c28f932ecb9b1c15935ac8678f2ea1" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.melee.Melee::players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <initializer>=  2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/melee.py" line="26" column="1" bodyfile="maps/melee.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpysc2_1_1maps_1_1melee_1_1_melee_1adc7b6fbbd52e49b0c93f620610ccdaab" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int pysc2.maps.melee.Melee::game_steps_per_episode</definition>
+        <argsstring></argsstring>
+        <name>game_steps_per_episode</name>
+        <initializer>=  16 * 60 * 30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="maps/melee.py" line="27" column="1" bodyfile="maps/melee.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="371">
+        <label>pysc2.maps.melee.Melee</label>
+        <link refid="classpysc2_1_1maps_1_1melee_1_1_melee"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="372">
+        <label>pysc2.maps.lib.Map</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_map"/>
+        <childnode refid="373" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>object</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="374">
+        <label>pysc2.maps.melee.Melee</label>
+        <link refid="classpysc2_1_1maps_1_1melee_1_1_melee"/>
+        <childnode refid="375" relation="public-inheritance">
+        </childnode>
+        <childnode refid="377" relation="usage">
+          <edgelabel>game_steps_per_episode</edgelabel>
+          <edgelabel>players</edgelabel>
+        </childnode>
+      </node>
+      <node id="375">
+        <label>pysc2.maps.lib.Map</label>
+        <link refid="classpysc2_1_1maps_1_1lib_1_1_map"/>
+        <childnode refid="376" relation="public-inheritance">
+        </childnode>
+        <childnode refid="377" relation="usage">
+          <edgelabel>score_index</edgelabel>
+          <edgelabel>game_steps_per_episode</edgelabel>
+          <edgelabel>score_multiplier</edgelabel>
+          <edgelabel>step_mul</edgelabel>
+        </childnode>
+      </node>
+      <node id="377">
+        <label>int</label>
+      </node>
+      <node id="376">
+        <label>object</label>
+      </node>
+    </collaborationgraph>
+    <location file="maps/melee.py" line="23" column="1" bodyfile="maps/melee.py" bodystart="23" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a7c2eff51fb8cf13b42fa0cfe39bd02c2" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>__str__</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a9c1ce36a2df01702d5b30e3189f5b565" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>all_subclasses</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a07aee252bcbdc30771a9160cc7b604d1" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>data</name></member>
+      <member refid="classpysc2_1_1maps_1_1melee_1_1_melee_1a74ef6f2f3e839293fe27b80608a5db52" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>directory</name></member>
+      <member refid="classpysc2_1_1maps_1_1melee_1_1_melee_1ae2f0a3c320ab19f62ccb5291900acefb" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>download</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1abbeaa1936043d4e2ac896a73952bc7cd" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>filename</name></member>
+      <member refid="classpysc2_1_1maps_1_1melee_1_1_melee_1adc7b6fbbd52e49b0c93f620610ccdaab" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>game_steps_per_episode</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1afdbca854775c5c09c0ce09f0a532261b" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>name</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a6d5499d1d1f2c0aaedbf7b7787a8ba05" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>path</name></member>
+      <member refid="classpysc2_1_1maps_1_1melee_1_1_melee_1a44c28f932ecb9b1c15935ac8678f2ea1" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>players</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1afa81bf47be6e6d9893f91f5265e4520e" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>score_index</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a46dae41b5720bd53a7846b4a97022951" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>score_multiplier</name></member>
+      <member refid="classpysc2_1_1maps_1_1lib_1_1_map_1a7dce4185a3d781a4fd6f6a38a0ff64aa" prot="public" virt="non-virtual"><scope>pysc2::maps::melee::Melee</scope><name>step_mul</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

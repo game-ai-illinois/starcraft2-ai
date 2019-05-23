@@ -1,0 +1,399 @@
+.TH "pysc2.lib.units.Zerg" 3 "Fri Sep 28 2018" "UIUCscaipy2" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+pysc2.lib.units.Zerg
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits IntEnum\&.
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBBaneling\fP = 9"
+.br
+.ti -1c
+.RI "int \fBBanelingBurrowed\fP = 115"
+.br
+.ti -1c
+.RI "int \fBBanelingCocoon\fP = 8"
+.br
+.ti -1c
+.RI "int \fBBanelingNest\fP = 96"
+.br
+.ti -1c
+.RI "int \fBBroodLord\fP = 114"
+.br
+.ti -1c
+.RI "int \fBBroodLordCocoon\fP = 113"
+.br
+.ti -1c
+.RI "int \fBBroodling\fP = 289"
+.br
+.ti -1c
+.RI "int \fBBroodlingEscort\fP = 143"
+.br
+.ti -1c
+.RI "int \fBChangeling\fP = 12"
+.br
+.ti -1c
+.RI "int \fBChangelingMarine\fP = 15"
+.br
+.ti -1c
+.RI "int \fBChangelingMarineShield\fP = 14"
+.br
+.ti -1c
+.RI "int \fBChangelingZealot\fP = 13"
+.br
+.ti -1c
+.RI "int \fBChangelingZergling\fP = 17"
+.br
+.ti -1c
+.RI "int \fBChangelingZerglingWings\fP = 16"
+.br
+.ti -1c
+.RI "int \fBCorruptor\fP = 112"
+.br
+.ti -1c
+.RI "int \fBCreepTumor\fP = 87"
+.br
+.ti -1c
+.RI "int \fBCreepTumorBurrowed\fP = 137"
+.br
+.ti -1c
+.RI "int \fBCreepTumorQueen\fP = 138"
+.br
+.ti -1c
+.RI "int \fBDrone\fP = 104"
+.br
+.ti -1c
+.RI "int \fBDroneBurrowed\fP = 116"
+.br
+.ti -1c
+.RI "int \fBCocoon\fP = 103"
+.br
+.ti -1c
+.RI "int \fBEvolutionChamber\fP = 90"
+.br
+.ti -1c
+.RI "int \fBExtractor\fP = 88"
+.br
+.ti -1c
+.RI "int \fBGreaterSpire\fP = 102"
+.br
+.ti -1c
+.RI "int \fBHatchery\fP = 86"
+.br
+.ti -1c
+.RI "int \fBHive\fP = 101"
+.br
+.ti -1c
+.RI "int \fBHydralisk\fP = 107"
+.br
+.ti -1c
+.RI "int \fBHydraliskBurrowed\fP = 117"
+.br
+.ti -1c
+.RI "int \fBHydraliskDen\fP = 91"
+.br
+.ti -1c
+.RI "int \fBInfestationPit\fP = 94"
+.br
+.ti -1c
+.RI "int \fBInfestedTerran\fP = 7"
+.br
+.ti -1c
+.RI "int \fBInfestedTerranBurrowed\fP = 120"
+.br
+.ti -1c
+.RI "int \fBInfestedTerranCocoon\fP = 150"
+.br
+.ti -1c
+.RI "int \fBInfestor\fP = 111"
+.br
+.ti -1c
+.RI "int \fBInfestorBurrowed\fP = 127"
+.br
+.ti -1c
+.RI "int \fBLair\fP = 100"
+.br
+.ti -1c
+.RI "int \fBLarva\fP = 151"
+.br
+.ti -1c
+.RI "int \fBLocust\fP = 489"
+.br
+.ti -1c
+.RI "int \fBLocustFlying\fP = 693"
+.br
+.ti -1c
+.RI "int \fBLurker\fP = 502"
+.br
+.ti -1c
+.RI "int \fBLurkerBurrowed\fP = 503"
+.br
+.ti -1c
+.RI "int \fBLurkerDen\fP = 504"
+.br
+.ti -1c
+.RI "int \fBLurkerCocoon\fP = 501"
+.br
+.ti -1c
+.RI "int \fBMutalisk\fP = 108"
+.br
+.ti -1c
+.RI "int \fBNydusCanal\fP = 142"
+.br
+.ti -1c
+.RI "int \fBNydusNetwork\fP = 95"
+.br
+.ti -1c
+.RI "int \fBOverlord\fP = 106"
+.br
+.ti -1c
+.RI "int \fBOverlordTransport\fP = 893"
+.br
+.ti -1c
+.RI "int \fBOverlordTransportCocoon\fP = 892"
+.br
+.ti -1c
+.RI "int \fBOverseer\fP = 129"
+.br
+.ti -1c
+.RI "int \fBOverseerCocoon\fP = 128"
+.br
+.ti -1c
+.RI "int \fBOverseerOversightMode\fP = 1912"
+.br
+.ti -1c
+.RI "int \fBQueen\fP = 126"
+.br
+.ti -1c
+.RI "int \fBQueenBurrowed\fP = 125"
+.br
+.ti -1c
+.RI "int \fBRavager\fP = 688"
+.br
+.ti -1c
+.RI "int \fBRavagerBurrowed\fP = 690"
+.br
+.ti -1c
+.RI "int \fBRavagerCocoon\fP = 687"
+.br
+.ti -1c
+.RI "int \fBRoach\fP = 110"
+.br
+.ti -1c
+.RI "int \fBRoachBurrowed\fP = 118"
+.br
+.ti -1c
+.RI "int \fBRoachWarren\fP = 97"
+.br
+.ti -1c
+.RI "int \fBSpawningPool\fP = 89"
+.br
+.ti -1c
+.RI "int \fBSpineCrawler\fP = 98"
+.br
+.ti -1c
+.RI "int \fBSpineCrawlerUprooted\fP = 139"
+.br
+.ti -1c
+.RI "int \fBSpire\fP = 92"
+.br
+.ti -1c
+.RI "int \fBSporeCrawler\fP = 99"
+.br
+.ti -1c
+.RI "int \fBSporeCrawlerUprooted\fP = 140"
+.br
+.ti -1c
+.RI "int \fBSwarmHost\fP = 494"
+.br
+.ti -1c
+.RI "int \fBSwarmHostBurrowed\fP = 493"
+.br
+.ti -1c
+.RI "int \fBUltralisk\fP = 109"
+.br
+.ti -1c
+.RI "int \fBUltraliskBurrowed\fP = 131"
+.br
+.ti -1c
+.RI "int \fBUltraliskCavern\fP = 93"
+.br
+.ti -1c
+.RI "int \fBViper\fP = 499"
+.br
+.ti -1c
+.RI "int \fBZergling\fP = 105"
+.br
+.ti -1c
+.RI "int \fBZerglingBurrowed\fP = 119"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+
+.PP
+.nf
+Zerg units.
+.fi
+.PP
+ 
+.SH "Member Data Documentation"
+.PP 
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Baneling = 9\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.BanelingBurrowed = 115\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.BanelingCocoon = 8\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.BanelingNest = 96\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Broodling = 289\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.BroodlingEscort = 143\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.BroodLord = 114\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.BroodLordCocoon = 113\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Changeling = 12\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.ChangelingMarine = 15\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.ChangelingMarineShield = 14\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.ChangelingZealot = 13\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.ChangelingZergling = 17\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.ChangelingZerglingWings = 16\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Cocoon = 103\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Corruptor = 112\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.CreepTumor = 87\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.CreepTumorBurrowed = 137\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.CreepTumorQueen = 138\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Drone = 104\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.DroneBurrowed = 116\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.EvolutionChamber = 90\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Extractor = 88\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.GreaterSpire = 102\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Hatchery = 86\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Hive = 101\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Hydralisk = 107\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.HydraliskBurrowed = 117\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.HydraliskDen = 91\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.InfestationPit = 94\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.InfestedTerran = 7\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.InfestedTerranBurrowed = 120\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.InfestedTerranCocoon = 150\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Infestor = 111\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.InfestorBurrowed = 127\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Lair = 100\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Larva = 151\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Locust = 489\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.LocustFlying = 693\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Lurker = 502\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.LurkerBurrowed = 503\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.LurkerCocoon = 501\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.LurkerDen = 504\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Mutalisk = 108\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.NydusCanal = 142\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.NydusNetwork = 95\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Overlord = 106\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.OverlordTransport = 893\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.OverlordTransportCocoon = 892\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Overseer = 129\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.OverseerCocoon = 128\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.OverseerOversightMode = 1912\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Queen = 126\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.QueenBurrowed = 125\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Ravager = 688\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.RavagerBurrowed = 690\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.RavagerCocoon = 687\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Roach = 110\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.RoachBurrowed = 118\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.RoachWarren = 97\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.SpawningPool = 89\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.SpineCrawler = 98\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.SpineCrawlerUprooted = 139\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Spire = 92\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.SporeCrawler = 99\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.SporeCrawlerUprooted = 140\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.SwarmHost = 494\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.SwarmHostBurrowed = 493\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Ultralisk = 109\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.UltraliskBurrowed = 131\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.UltraliskCavern = 93\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Viper = 499\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.Zergling = 105\fC [static]\fP"
+
+.SS "int pysc2\&.lib\&.units\&.Zerg\&.ZerglingBurrowed = 119\fC [static]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for UIUCscaipy2 from the source code\&.

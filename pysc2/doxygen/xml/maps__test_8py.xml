@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="maps__test_8py" kind="file" language="Python">
+    <compoundname>maps_test.py</compoundname>
+    <innerclass refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test" prot="public">pysc2::tests::maps_test::MapsTest</innerclass>
+    <innernamespace refid="namespacepysc2_1_1tests_1_1maps__test">pysc2::tests::maps_test</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacepysc2_1_1tests_1_1maps__test" refkind="compound"><highlight class="comment">#!/usr/bin/python</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Copyright<sp/>2017<sp/>Google<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS-IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">#<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;Test<sp/>that<sp/>some<sp/>of<sp/>the<sp/>maps<sp/>work.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absolute_import</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>division</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_function</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>absl<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>logging</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>random</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>absl.testing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absltest</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>absl.testing<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>parameterized</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>future.builtins<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>range<sp/><sp/></highlight><highlight class="comment">#<sp/>pylint:<sp/>disable=redefined-builtin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pysc2<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>maps</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>pysc2<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>run_configs</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1tests" kindref="compound">pysc2.tests</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>utils</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>s2clientprotocol<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>common_pb2<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>sc_common</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>s2clientprotocol<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>sc2api_pb2<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>sc_pb</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="namespacepysc2_1_1tests_1_1maps__test_1a0304381d3a6f931db42f939142620ba1" kindref="member">get_maps</ref>(count=None):</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Test<sp/>only<sp/>a<sp/>few<sp/>random<sp/>maps<sp/>to<sp/>minimize<sp/>time.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>all_maps<sp/>=<sp/>maps.get_maps()</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>count<sp/>=<sp/>count<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/>len(all_maps)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sorted(random.sample(all_maps.keys(),<sp/>min(count,<sp/>len(all_maps))))</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test" kindref="compound">MapsTest</ref>(parameterized.TestCase,<sp/><ref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" kindref="compound">utils.TestCase</ref>):</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>@parameterized.parameters(<ref refid="namespacepysc2_1_1tests_1_1maps__test_1a0304381d3a6f931db42f939142620ba1" kindref="member">get_maps</ref>())</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test_1addff2e84120f337d9eaa10895353b5b1" kindref="member">test_list_all_maps</ref>(self,<sp/>map_name):</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Make<sp/>sure<sp/>all<sp/>maps<sp/>can<sp/>be<sp/>read.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>run_config<sp/>=<sp/>run_configs.get()</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>map_inst<sp/>=<sp/>maps.get(map_name)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>logging.info(</highlight><highlight class="stringliteral">&quot;map:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>map_inst.name)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>self.assertTrue(map_inst.data(run_config),<sp/>msg=</highlight><highlight class="stringliteral">&quot;Failed<sp/>on<sp/>%s&quot;</highlight><highlight class="normal"><sp/>%<sp/>map_inst)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>@parameterized.parameters(<ref refid="namespacepysc2_1_1tests_1_1maps__test_1a0304381d3a6f931db42f939142620ba1" kindref="member">get_maps</ref>(5))</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1tests_1_1maps__test_1_1_maps_test_1ad1333103de04d377f36eebf9f18885a0" kindref="member">test_load_random_map</ref>(self,<sp/>map_name):</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Test<sp/>loading<sp/>a<sp/>few<sp/>random<sp/>maps.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>m<sp/>=<sp/>maps.get(map_name)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>run_config<sp/>=<sp/>run_configs.get()</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>with<sp/>run_config.start()<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>controller:</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>logging.info(</highlight><highlight class="stringliteral">&quot;Loading<sp/>map:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>m.name)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>create<sp/>=<sp/>sc_pb.RequestCreateGame(local_map=sc_pb.LocalMap(</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_path=m.path,<sp/>map_data=m.data(run_config)))</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>create.player_setup.add(type=sc_pb.Participant)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>create.player_setup.add(type=sc_pb.Computer,<sp/>race=sc_common.Random,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>difficulty=sc_pb.VeryEasy)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>join<sp/>=<sp/>sc_pb.RequestJoinGame(race=sc_common.Random,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options=sc_pb.InterfaceOptions(raw=</highlight><highlight class="keyword">True</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>controller.create_game(create)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>controller.join_game(join)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Verify<sp/>it<sp/>has<sp/>the<sp/>right<sp/>mods<sp/>and<sp/>isn&apos;t<sp/>running<sp/>into<sp/>licensing<sp/>issues.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>info<sp/>=<sp/>controller.game_info()</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>logging.info(</highlight><highlight class="stringliteral">&quot;Mods<sp/>for<sp/>%s:<sp/>%s&quot;</highlight><highlight class="normal">,<sp/>m.name,<sp/>info.mod_names)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.assertIn(</highlight><highlight class="stringliteral">&quot;Mods/Void.SC2Mod&quot;</highlight><highlight class="normal">,<sp/>info.mod_names)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.assertIn(</highlight><highlight class="stringliteral">&quot;Mods/VoidMulti.SC2Mod&quot;</highlight><highlight class="normal">,<sp/>info.mod_names)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/>Verify<sp/>it<sp/>can<sp/>be<sp/>played<sp/>without<sp/>making<sp/>actions.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>_<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(3):</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controller.step()</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>controller.observe()</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>absltest.main()</highlight></codeline>
+    </programlisting>
+    <location file="tests/maps_test.py"/>
+  </compounddef>
+</doxygen>

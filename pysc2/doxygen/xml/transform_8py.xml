@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="transform_8py" kind="file" language="Python">
+    <compoundname>transform.py</compoundname>
+    <innerclass refid="classpysc2_1_1lib_1_1transform_1_1_transform" prot="public">pysc2::lib::transform::Transform</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1transform_1_1_linear" prot="public">pysc2::lib::transform::Linear</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1transform_1_1_chain" prot="public">pysc2::lib::transform::Chain</innerclass>
+    <innerclass refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord" prot="public">pysc2::lib::transform::PixelToCoord</innerclass>
+    <innernamespace refid="namespacepysc2_1_1lib_1_1transform">pysc2::lib::transform</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacepysc2_1_1lib_1_1transform" refkind="compound"><highlight class="comment">#<sp/>Copyright<sp/>2017<sp/>Google<sp/>Inc.<sp/>All<sp/>Rights<sp/>Reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">#<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">#<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">#</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">#<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">#<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS-IS&quot;<sp/>BASIS,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">#<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">#<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">#<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="stringliteral">&quot;&quot;&quot;Transform<sp/>coordinates<sp/>for<sp/>rendering<sp/>in<sp/>various<sp/>ways.</highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral">It&apos;s<sp/>best<sp/>to<sp/>name<sp/>these<sp/>as<sp/>`a_to_b`<sp/>for<sp/>example<sp/>`screen_to_world`.<sp/>The</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral">`fwd`<sp/>methods<sp/>take<sp/>a<sp/>point<sp/>or<sp/>distance<sp/>in<sp/>coordinate<sp/>system<sp/>`a`<sp/>and</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral">convert<sp/>it<sp/>to<sp/>a<sp/>point<sp/>or<sp/>distance<sp/>in<sp/>coordinate<sp/>system<sp/>`b`.<sp/>The<sp/>`back`<sp/>methods</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral">do<sp/>the<sp/>reverse<sp/>going<sp/>from<sp/>`b`<sp/>to<sp/>`a`.</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral">These<sp/>can<sp/>then<sp/>be<sp/>chained<sp/>as<sp/>b_to_c.fwd(a_to_b.fwd(pt))<sp/>which<sp/>will<sp/>take</highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral">something<sp/>in<sp/>`a`<sp/>and<sp/>return<sp/>something<sp/>in<sp/>`c`.<sp/>It&apos;s<sp/>better<sp/>to<sp/>use<sp/>the<sp/>Chain</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral">transform<sp/>to<sp/>create<sp/>`a_to_c`.</highlight></codeline>
+<codeline lineno="24"><highlight class="stringliteral">&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>absolute_import</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>division</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>__future__<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>print_function</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>numbers</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/><ref refid="namespacepysc2_1_1lib" kindref="compound">pysc2.lib</ref><sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>point</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classpysc2_1_1lib_1_1transform_1_1_transform" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_transform" kindref="compound">Transform</ref>(object):</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Base<sp/>class<sp/>for<sp/>coordinate<sp/>transforms.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_transform_1a0e63ffb003a6567418d8205eca488ec2" kindref="member">fwd_dist</ref>(self,<sp/>dist):</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>NotImplementedError()</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_transform_1a0df7bdb41fe83c2f8e16f98a5690f0ba" kindref="member">fwd_pt</ref>(self,<sp/>pt):</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>NotImplementedError()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_transform_1a3a632e40b0dc24f7491187dff96582ad" kindref="member">back_dist</ref>(self,<sp/>dist):</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>NotImplementedError()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_transform_1a2b1e85dd14f1db61e20bbbc2d92d3e0c" kindref="member">back_pt</ref>(self,<sp/>pt):</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">raise</highlight><highlight class="normal"><sp/>NotImplementedError()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classpysc2_1_1lib_1_1transform_1_1_linear" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_linear" kindref="compound">Linear</ref>(<ref refid="classpysc2_1_1lib_1_1transform_1_1_transform" kindref="compound">Transform</ref>):</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;A<sp/>linear<sp/>transform<sp/>with<sp/>a<sp/>scale<sp/>and<sp/>offset.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a06a44d88ea3290ac1e9322188bfe3467" kindref="member">__init__</ref>(self,<sp/>scale=None,<sp/>offset=None):</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>scale<sp/></highlight><highlight class="keywordflow">is</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">None</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref><sp/>=<sp/><ref refid="classpysc2_1_1lib_1_1point_1_1_point" kindref="compound">point.Point</ref>(1,<sp/>1)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">elif</highlight><highlight class="normal"><sp/>isinstance(scale,<sp/>numbers.Number):</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref><sp/>=<sp/><ref refid="classpysc2_1_1lib_1_1point_1_1_point" kindref="compound">point.Point</ref>(scale,<sp/>scale)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref><sp/>=<sp/>scale</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">assert</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref>.x<sp/>!=<sp/>0<sp/></highlight><highlight class="keywordflow">and</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref>.y<sp/>!=<sp/>0</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a01c3b2d7fafe75ff24327c57e3a684c9" kindref="member">offset</ref><sp/>=<sp/>offset<sp/></highlight><highlight class="keywordflow">or</highlight><highlight class="normal"><sp/><ref refid="classpysc2_1_1lib_1_1point_1_1_point" kindref="compound">point.Point</ref>(0,<sp/>0)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1aa540ebc88fcfb5e61bc2516ed5ca3077" kindref="member">fwd_dist</ref>(self,<sp/>dist):</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dist<sp/>*<sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref>.x</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab5b6ab1a2dbfcdbe72e7476d0e6c71e5" kindref="member">fwd_pt</ref>(self,<sp/>pt):</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pt<sp/>*<sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref><sp/>+<sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a01c3b2d7fafe75ff24327c57e3a684c9" kindref="member">offset</ref></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a20b03bc9984ab9b5bffb93a157a448d1" kindref="member">back_dist</ref>(self,<sp/>dist):</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dist<sp/>/<sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref>.x</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1aab8bccdffa1f68f095af071b7cab7471" kindref="member">back_pt</ref>(self,<sp/>pt):</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(pt<sp/>-<sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a01c3b2d7fafe75ff24327c57e3a684c9" kindref="member">offset</ref>)<sp/>/<sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a9c94d0303ddc2067febe43ba4ed58192" kindref="member">__str__</ref>(self):</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Linear(scale=%s,<sp/>offset=%s)&quot;</highlight><highlight class="normal"><sp/>%<sp/>(self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1ab3878c47278f90e9b5356776e73b517b" kindref="member">scale</ref>,<sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_linear_1a01c3b2d7fafe75ff24327c57e3a684c9" kindref="member">offset</ref>)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classpysc2_1_1lib_1_1transform_1_1_chain" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_chain" kindref="compound">Chain</ref>(<ref refid="classpysc2_1_1lib_1_1transform_1_1_transform" kindref="compound">Transform</ref>):</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Chain<sp/>a<sp/>set<sp/>of<sp/>transforms:<sp/>Chain(a_to_b,<sp/>b_to_c)<sp/>=&gt;<sp/>a_to_c.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1a1d57ca10d7be4c654ce06576bbb4ad18" kindref="member">__init__</ref>(self,<sp/>*args):</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1a445a392e9d972836f6ec6d3b43018192" kindref="member">transforms</ref><sp/>=<sp/>args</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1a25df9664f373ccc03b5b10a8f377403f" kindref="member">fwd_dist</ref>(self,<sp/>dist):</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>transform<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1a445a392e9d972836f6ec6d3b43018192" kindref="member">transforms</ref>:</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dist<sp/>=<sp/>transform.fwd_dist(dist)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dist</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1a5f3eaf18a7e2894fe6cda71aa2494f90" kindref="member">fwd_pt</ref>(self,<sp/>pt):</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>transform<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1a445a392e9d972836f6ec6d3b43018192" kindref="member">transforms</ref>:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pt<sp/>=<sp/>transform.fwd_pt(pt)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pt</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1aba80172f3b617b23cf5b77157d9eec39" kindref="member">back_dist</ref>(self,<sp/>dist):</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>transform<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>reversed(self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1a445a392e9d972836f6ec6d3b43018192" kindref="member">transforms</ref>):</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dist<sp/>=<sp/>transform.back_dist(dist)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dist</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1a120a678dc48fe4c20793c451a6e97ee1" kindref="member">back_pt</ref>(self,<sp/>pt):</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>transform<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>reversed(self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1a445a392e9d972836f6ec6d3b43018192" kindref="member">transforms</ref>):</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pt<sp/>=<sp/>transform.back_pt(pt)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pt</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1ab85b58ce2f473803c1e19ff01efc2dcb" kindref="member">__str__</ref>(self):</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Chain(%s)&quot;</highlight><highlight class="normal"><sp/>%<sp/>(self.<ref refid="classpysc2_1_1lib_1_1transform_1_1_chain_1a445a392e9d972836f6ec6d3b43018192" kindref="member">transforms</ref>,)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord" kindref="compound">PixelToCoord</ref>(<ref refid="classpysc2_1_1lib_1_1transform_1_1_transform" kindref="compound">Transform</ref>):</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="stringliteral">&quot;&quot;&quot;Take<sp/>a<sp/>point<sp/>within<sp/>a<sp/>pixel<sp/>and<sp/>use<sp/>the<sp/>tl,<sp/>or<sp/>tl<sp/>to<sp/>pixel<sp/>center.&quot;&quot;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1a989286ec7cd07a77ad059ac5911189bb" kindref="member">fwd_dist</ref>(self,<sp/>dist):</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dist</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1a3dd8a0723fc99be0e7a9f8718c6d27b7" kindref="member">fwd_pt</ref>(self,<sp/>pt):</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pt.floor()</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1adce4b1eb4d28b6f1504f3257e8436ffb" kindref="member">back_dist</ref>(self,<sp/>dist):</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dist</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1a9ab006ef8ecd006a7b82ebff60a0427b" kindref="member">back_pt</ref>(self,<sp/>pt):</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pt.floor()<sp/>+<sp/>0.5</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classpysc2_1_1lib_1_1transform_1_1_pixel_to_coord_1aaff3334808ec5d0a71f78c951b550570" kindref="member">__str__</ref>(self):</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;PixelToCoord()&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="lib/transform.py"/>
+  </compounddef>
+</doxygen>

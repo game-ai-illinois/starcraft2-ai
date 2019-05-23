@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="namespacepysc2_1_1tests_1_1multi__player__env__test" kind="namespace" language="Python">
+    <compoundname>pysc2::tests::multi_player_env_test</compoundname>
+    <innerclass refid="classpysc2_1_1tests_1_1multi__player__env__test_1_1_test_multiplayer_env" prot="public">pysc2::tests::multi_player_env_test::TestMultiplayerEnv</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tests/multi_player_env_test.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classpysc2_1_1tests_1_1ping__test_1_1_test_ping" kind="class" language="Python" prot="public">
+    <compoundname>pysc2::tests::ping_test::TestPing</compoundname>
+    <basecompoundref refid="classpysc2_1_1tests_1_1utils_1_1_test_case" prot="public" virt="non-virtual">pysc2.tests.utils.TestCase</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpysc2_1_1tests_1_1ping__test_1_1_test_ping_1a99b966ba8b49cc947c3ea28a458c6dce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def pysc2.tests.ping_test.TestPing.test_ping</definition>
+        <argsstring>(self)</argsstring>
+        <name>test_ping</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tests/ping_test.py" line="31" column="1" bodyfile="tests/ping_test.py" bodystart="31" bodyend="43"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="777">
+        <label>TestCase</label>
+      </node>
+      <node id="775">
+        <label>pysc2.tests.ping_test.TestPing</label>
+        <link refid="classpysc2_1_1tests_1_1ping__test_1_1_test_ping"/>
+        <childnode refid="776" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="776">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="777" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="780">
+        <label>TestCase</label>
+      </node>
+      <node id="778">
+        <label>pysc2.tests.ping_test.TestPing</label>
+        <link refid="classpysc2_1_1tests_1_1ping__test_1_1_test_ping"/>
+        <childnode refid="779" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="779">
+        <label>pysc2.tests.utils.TestCase</label>
+        <link refid="classpysc2_1_1tests_1_1utils_1_1_test_case"/>
+        <childnode refid="780" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="tests/ping_test.py" line="29" column="1" bodyfile="tests/ping_test.py" bodystart="29" bodyend="44"/>
+    <listofallmembers>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1a2b119fadd4e4bc8426e9d8649bc8026b" prot="public" virt="non-virtual"><scope>pysc2::tests::ping_test::TestPing</scope><name>setUp</name></member>
+      <member refid="classpysc2_1_1tests_1_1utils_1_1_test_case_1acc0033ea0db648be45dc53eaf0dc72b7" prot="public" virt="non-virtual"><scope>pysc2::tests::ping_test::TestPing</scope><name>tearDown</name></member>
+      <member refid="classpysc2_1_1tests_1_1ping__test_1_1_test_ping_1a99b966ba8b49cc947c3ea28a458c6dce" prot="public" virt="non-virtual"><scope>pysc2::tests::ping_test::TestPing</scope><name>test_ping</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
